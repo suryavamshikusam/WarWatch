@@ -1,27 +1,1422 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Javascript Assignment</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WarWatch — US · Israel · Iran</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,700&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root {
+  --bg:       #1a1a1a;
+  --bg2:      #222222;
+  --bg3:      #2a2a2a;
+  --card:     #212121;
+  --border:   rgba(255,255,255,0.07);
+  --border2:  rgba(255,255,255,0.12);
+  --text:     #ececec;
+  --text2:    #9a9a9a;
+  --text3:    #5c5c5c;
+  --red:      #e05555;
+  --red-s:    rgba(224,85,85,0.12);
+  --amber:    #d4892a;
+  --amber-s:  rgba(212,137,42,0.12);
+  --green:    #3daa72;
+  --green-s:  rgba(61,170,114,0.12);
+  --blue:     #5b9cf6;
+  --blue-s:   rgba(91,156,246,0.12);
+  --ff-disp:  'Playfair Display', serif;
+  --ff-body:  'IBM Plex Sans', sans-serif;
+  --ff-mono:  'IBM Plex Mono', monospace;
+  --r: 10px;
+  --r-lg: 16px;
+}
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--ff-body);
+  font-size: 16px;
+  line-height: 1.75;
+}
 
-    <link rel="stylesheet" href="style.css">
-    <script src="script.js"></script>
+/* ─── NAV ─── */
+nav {
+  position: sticky; top: 0; z-index: 200;
+  background: rgba(26,26,26,0.95);
+  backdrop-filter: blur(20px);
+  border-bottom: 1px solid var(--border);
+  padding: 0 40px;
+  height: 58px;
+  display: flex; align-items: center; gap: 0;
+}
+.logo {
+  font-family: var(--ff-mono);
+  font-size: 15px; font-weight: 500;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--text); margin-right: 36px;
+}
+.logo span { color: var(--red); }
+.nav-links { display: flex; gap: 2px; }
+.nl {
+  font-size: 12.5px; font-weight: 400; letter-spacing: .01em;
+  color: var(--text2); padding: 5px 13px; border-radius: 6px;
+  cursor: pointer; text-decoration: none; transition: all .15s;
+}
+.nl:hover { color: var(--text); background: var(--bg2); }
+.nl.on { color: var(--text); background: var(--bg3); font-weight: 500; }
+.nav-right { margin-left: auto; display: flex; align-items: center; gap: 10px; }
+.live-pill {
+  display: flex; align-items: center; gap: 6px;
+  font-family: var(--ff-mono); font-size: 11px; font-weight: 500;
+  letter-spacing: .06em; text-transform: uppercase;
+  color: var(--red); background: var(--red-s);
+  padding: 5px 13px; border-radius: 20px;
+}
+.live-dot {
+  width: 6px; height: 6px; border-radius: 50%;
+  background: var(--red); animation: blink 1.6s infinite;
+}
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:.25} }
+
+/* ─── ALERT BAR ─── */
+.alert {
+  background: var(--red-s); border-bottom: 1px solid rgba(224,85,85,0.18);
+  padding: 11px 40px; display: flex; align-items: center; gap: 12px;
+}
+.alert-tag {
+  font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase;
+  color: #fff; background: var(--red); padding: 3px 10px; border-radius: 3px; flex-shrink: 0;
+}
+.alert-msg { font-size: 14px; color: var(--red); font-style: italic; }
+
+/* ─── LAYOUT WRAPPER ─── */
+.page-layout {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 40px;
+}
+
+/* ─── MAIN CONTENT ─── */
+.main-content {
+  padding-bottom: 80px;
+}
+
+/* ─── TENSION BAR (top, static) ─── */
+.tension-bar {
+  background: var(--card);
+  border-bottom: 1px solid var(--border2);
+  padding: 16px 40px;
+}
+.tension-bar-inner {
+  max-width: 1240px; margin: 0 auto;
+  display: flex; align-items: center; gap: 24px; flex-wrap: wrap;
+}
+.tb-label {
+  font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
+  letter-spacing: .12em; text-transform: uppercase; color: var(--text3);
+  white-space: nowrap; flex-shrink: 0;
+  display: flex; align-items: center; gap: 7px;
+}
+.tp-live-dot { width: 5px; height: 5px; border-radius: 50%; background: var(--red); animation: blink 1.6s infinite; flex-shrink: 0; }
+.tb-sep { width: 1px; height: 30px; background: var(--border2); flex-shrink: 0; }
+.tb-meters { display: flex; gap: 10px; flex: 1; flex-wrap: nowrap; overflow: hidden; }
+.tp-item {
+  display: flex; flex-direction: column; gap: 8px;
+  min-width: 0; flex: 1;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 12px 16px;
+}
+.tp-item {
+  display: flex; flex-direction: column; gap: 5px;
+  min-width: 0; flex: 1;
+  background: var(--bg3);
+  border: 1px solid var(--border2);
+  border-radius: 10px;
+  padding: 12px 14px;
+}
+.tp-row { display: flex; justify-content: space-between; align-items: baseline; gap: 6px; }
+.tp-lbl { font-size: 13px; color: var(--text); font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.tp-lvl { font-family: var(--ff-mono); font-size: 12px; font-weight: 700; letter-spacing: .06em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
+.bar-bg { height: 6px; background: rgba(255,255,255,0.08); border-radius: 3px; overflow: hidden; margin-top: 4px; }
+.bar { height: 100%; border-radius: 3px; width: 0; transition: width 1.2s cubic-bezier(.4,0,.2,1); }
+
+/* ─── HERO ─── */
+.hero { padding: 60px 0 44px; }
+.hero-eyebrow {
+  font-family: var(--ff-mono);
+  font-size: 15px; font-weight: 500; letter-spacing: .10em;
+  text-transform: uppercase; color: var(--text2); margin-bottom: 24px;
+}
+.hero-title {
+  font-family: var(--ff-disp);
+  font-size: clamp(40px, 5vw, 64px);
+  font-weight: 700; line-height: 1.06;
+  color: var(--text); margin-bottom: 18px;
+  letter-spacing: -.4px;
+}
+.hero-title em { color: var(--red); font-weight: 400; font-style: italic; }
+.hero-sub {
+  font-size: 17px; color: var(--text2); font-weight: 300;
+  max-width: 540px; margin-bottom: 44px; line-height: 1.85;
+}
+.hero-stats { display: flex; gap: 12px; flex-wrap: wrap; }
+.hstat {
+  background: var(--card);
+  border: 1px solid var(--border);
+  border-radius: var(--r);
+  padding: 18px 22px; min-width: 110px;
+}
+.hstat-n {
+  font-family: var(--ff-disp);
+  font-size: 32px; font-weight: 700; line-height: 1; color: var(--text);
+}
+.hstat-l { font-size: 12px; color: var(--text3); margin-top: 8px; font-family: var(--ff-mono); letter-spacing: .04em; }
+
+/* ─── SECTION HEADER ─── */
+.sh {
+  margin-bottom: 24px; padding-bottom: 16px;
+  border-bottom: 1px solid var(--border);
+  display: flex; align-items: baseline; justify-content: space-between;
+}
+.sh-title {
+  font-family: var(--ff-disp);
+  font-size: 30px; font-weight: 600; color: var(--text);
+}
+.sh-sub { font-family: var(--ff-mono); font-size: 10.5px; color: var(--text3); letter-spacing: .06em; }
+
+/* ─── NEWS ─── */
+.section-wrap { margin-bottom: 60px; }
+.news-list {
+  display: flex; flex-direction: column;
+  gap: 1px; background: var(--border);
+  border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden;
+}
+.ni {
+  background: var(--card); padding: 32px 36px;
+  cursor: pointer; transition: background .15s;
+}
+.ni:hover { background: #272727; }
+.ni-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px; }
+.ni-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+.ni-time {
+  font-family: var(--ff-mono); font-size: 11px; color: var(--text3);
+  margin-left: auto; white-space: nowrap; padding-top: 3px;
+}
+.ni-headline {
+  font-family: var(--ff-disp);
+  font-size: 22px; font-weight: 600; color: var(--text);
+  line-height: 1.35; margin-bottom: 14px; letter-spacing: -.1px;
+}
+.ni-simple { font-size: 15px; color: var(--text2); line-height: 1.85; margin-bottom: 14px; font-weight: 300; }
+.ni-full { display: none; font-size: 15px; color: var(--text2); line-height: 1.9; margin-bottom: 16px; font-weight: 300; }
+.ni-full p { margin-bottom: 14px; }
+.ni-full p:last-child { margin-bottom: 0; }
+.ni-full strong { color: var(--text); font-weight: 500; }
+.why-box {
+  background: var(--amber-s); border-left: 2px solid var(--amber);
+  padding: 14px 18px; border-radius: 0 8px 8px 0; margin-top: 14px;
+}
+.why-lbl {
+  font-family: var(--ff-mono); font-size: 9.5px; font-weight: 500;
+  letter-spacing: .1em; text-transform: uppercase; color: var(--amber);
+  margin-bottom: 6px;
+}
+.why-txt { font-size: 14px; color: var(--text2); line-height: 1.75; }
+.read-btn {
+  font-family: var(--ff-mono); font-size: 11px; letter-spacing: .06em;
+  color: var(--blue); cursor: pointer; background: none; border: none;
+  padding: 0; transition: opacity .15s; margin-top: 14px; display: block;
+}
+.read-btn:hover { opacity: .55; }
+.orgs-row { margin-top: 18px; padding-top: 14px; border-top: 1px solid var(--border); }
+.orgs-lbl {
+  font-family: var(--ff-mono); font-size: 9.5px; letter-spacing: .1em;
+  color: var(--text3); margin-bottom: 9px; text-transform: uppercase;
+}
+.pills { display: flex; gap: 6px; flex-wrap: wrap; }
+.pill { font-family: var(--ff-mono); font-size: 10.5px; font-weight: 500; padding: 3px 10px; border-radius: 20px; letter-spacing: .04em; }
+.p-blue { background: var(--blue-s); color: var(--blue); }
+.p-red { background: var(--red-s); color: var(--red); }
+.p-amber { background: var(--amber-s); color: var(--amber); }
+.p-green { background: var(--green-s); color: var(--green); }
+.p-gray { background: var(--bg2); color: var(--text2); }
+
+.badge { font-family: var(--ff-mono); font-size: 9.5px; font-weight: 500; letter-spacing: .07em; padding: 3px 10px; border-radius: 20px; text-transform: uppercase; }
+.b-crit { background: var(--red-s); color: var(--red); }
+.b-high { background: rgba(212,137,42,0.14); color: #d4892a; }
+.b-med  { background: var(--amber-s); color: var(--amber); }
+.b-blue { background: var(--blue-s); color: var(--blue); }
+.b-gray { background: var(--bg2); color: var(--text2); }
+
+/* ─── TWO COL inside main ─── */
+.two-col {
+  display: grid;
+  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
+  gap: 24px; margin-bottom: 60px;
+}
+@media(max-width: 720px){ .two-col { grid-template-columns: 1fr; } }
+
+/* ─── SIDEBAR CARDS ─── */
+.side-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--r-lg); overflow: hidden; margin-bottom: 18px;
+}
+.sc-head { padding: 20px 24px 16px; border-bottom: 1px solid var(--border); }
+.sc-title { font-family: var(--ff-disp); font-size: 20px; font-weight: 600; color: var(--text); }
+
+.person {
+  display: flex; gap: 14px; padding: 20px 24px;
+  border-bottom: 1px solid var(--border); align-items: flex-start;
+  transition: background .15s;
+}
+.person:last-child { border-bottom: none; }
+.person:hover { background: #272727; }
+.av {
+  width: 42px; height: 42px; border-radius: 8px;
+  display: flex; align-items: center; justify-content: center;
+  font-family: var(--ff-mono); font-size: 13px; font-weight: 500; flex-shrink: 0;
+}
+.pname { font-size: 14.5px; font-weight: 500; color: var(--text); line-height: 1.3; }
+.ptitle { font-family: var(--ff-mono); font-size: 10.5px; color: var(--text3); margin-bottom: 2px; letter-spacing: .04em; text-transform: uppercase; }
+.pdesc { font-size: 13px; color: var(--text2); line-height: 1.7; margin-top: 4px; font-weight: 300; }
+.pside {
+  font-family: var(--ff-mono); font-size: 9px; font-weight: 500;
+  padding: 2px 7px; border-radius: 3px;
+  display: inline-block; margin-top: 6px; letter-spacing: .06em; text-transform: uppercase;
+}
+
+.gloss-item {
+  padding: 13px 24px; border-bottom: 1px solid var(--border);
+  display: flex; gap: 12px; align-items: flex-start;
+}
+.gloss-item:last-child { border-bottom: none; }
+.gtag {
+  font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
+  color: var(--blue); background: var(--blue-s);
+  padding: 2px 8px; border-radius: 3px; flex-shrink: 0; margin-top: 2px; letter-spacing: .04em;
+}
+.gtext { font-size: 13px; color: var(--text2); line-height: 1.75; font-weight: 300; }
+
+/* ─── TIMELINE ─── */
+.tl { display: flex; flex-direction: column; margin-bottom: 60px; }
+.tl-item { display: flex; gap: 22px; padding: 24px 0; border-bottom: 1px solid var(--border); }
+.tl-item:last-child { border-bottom: none; }
+.tl-left { display: flex; flex-direction: column; align-items: center; min-width: 60px; }
+.tl-yr {
+  font-family: var(--ff-mono); font-size: 10px; font-weight: 500;
+  color: var(--red); letter-spacing: .06em; text-align: center; white-space: nowrap; text-transform: uppercase;
+}
+.tl-line { width: 1px; background: var(--border2); flex: 1; margin-top: 8px; }
+.tl-dot {
+  width: 10px; height: 10px; border-radius: 50%;
+  border: 2px solid var(--border2); background: var(--bg);
+  flex-shrink: 0; margin-top: 6px;
+}
+.tl-dot.hot { border-color: var(--red); background: var(--red); }
+.tl-title {
+  font-family: var(--ff-disp);
+  font-size: 20px; font-weight: 600; color: var(--text);
+  line-height: 1.35; margin-bottom: 10px;
+}
+.tl-body { font-size: 15px; color: var(--text2); line-height: 1.9; font-weight: 300; }
+.tl-link {
+  font-family: var(--ff-mono); font-size: 11px; color: var(--amber);
+  border-left: 2px solid var(--amber); padding-left: 10px;
+  margin-top: 12px; line-height: 1.65; letter-spacing: .01em;
+}
+
+/* ─── ORGS GRID ─── */
+.orgs-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(195px, 1fr));
+  gap: 12px; margin-bottom: 60px;
+}
+.org-card {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 20px;
+}
+.oa {
+  font-family: var(--ff-mono); font-size: 18px; font-weight: 500;
+  color: var(--red); margin-bottom: 6px; letter-spacing: .04em;
+}
+.of { font-size: 12.5px; font-weight: 500; color: var(--text); margin-bottom: 6px; }
+.od { font-size: 12px; color: var(--text2); line-height: 1.65; font-weight: 300; }
+
+/* ─── CHAIN ─── */
+.chain { display: flex; flex-direction: column; gap: 0; margin-bottom: 60px; }
+.chain-item {
+  background: var(--card); border: 1px solid var(--border);
+  border-radius: var(--r); padding: 24px 28px; position: relative; overflow: hidden;
+}
+.chain-item::before {
+  content: attr(data-n);
+  position: absolute; top: 10px; right: 16px;
+  font-family: var(--ff-mono); font-size: 52px; font-weight: 500;
+  color: var(--border2); line-height: 1; pointer-events: none; letter-spacing: -.02em;
+}
+.chain-arrow { text-align: center; padding: 9px 0; color: var(--text3); font-size: 16px; }
+.ct { font-size: 16px; font-weight: 500; color: var(--text); margin-bottom: 10px; line-height: 1.5; padding-right: 52px; }
+.cb { font-size: 14px; color: var(--text2); line-height: 1.9; font-weight: 300; }
+
+/* ─── FOOTER ─── */
+footer {
+  border-top: 1px solid var(--border);
+  padding: 36px 40px; max-width: 1240px; margin: 0 auto;
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 16px; flex-wrap: wrap;
+}
+.footer-logo {
+  font-family: var(--ff-mono); font-size: 14px; font-weight: 500;
+  letter-spacing: .08em; text-transform: uppercase; color: var(--text);
+}
+.footer-logo span { color: var(--red); }
+.footer-r { font-family: var(--ff-mono); font-size: 11px; color: var(--text3); text-align: right; line-height: 1.8; }
+
+/* ─── ANIM ─── */
+@keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
+.hero { animation: fadeUp .5s ease both; }
+.main-content { animation: fadeUp .5s .08s ease both; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 2px; }
+
+@media(max-width: 720px) {
+  .two-col { grid-template-columns: 1fr; }
+  .tension-bar { padding: 12px 20px; }
+  .tb-sep { display: none; }
+  .page-layout { padding: 0 20px; }
+}
+/* ─── PAGE SWITCHING ─── */
+.page { display: none; }
+.page.active { display: block; }
+.nl { background: none; border: none; font-family: var(--ff-body); }
+
+</style>
 </head>
-
 <body>
 
-    <button class="btn" id="btn1">Admin</button>
-    <button class="btn" id="btn2">User</button>
+<nav>
+  <div class="logo">War<span>Watch</span></div>
+  <div class="nav-links">
+    <button class="nl on" onclick="switchPage('live',this)">Live</button>
+    <button class="nl" onclick="switchPage('history',this)">Timeline</button>
+    <button class="nl" onclick="switchPage('live',this)">People</button>
+    <button class="nl" onclick="switchPage('connections',this)">Organisations</button>
+    <button class="nl" onclick="switchPage('connections',this)">Why connected</button>
+  </div>
+  <div class="nav-right">
+    <div class="live-pill"><div class="live-dot"></div>Live updates</div>
+  </div>
+</nav>
 
-    <div id="card1" class="card">
-        <h2>Admin Card</h2>
-        <p>You are using admin portal right now!</p>
+<div class="alert">
+  <span class="alert-tag">Critical</span>
+  <span class="alert-msg" id="alert-msg"></span><span class="alert-cursor">▋</span>
+</div>
+
+<style>
+.alert-cursor {
+  color: var(--red);
+  animation: cur-blink .7s step-end infinite;
+  font-size: 13px;
+  margin-left: 1px;
+}
+@keyframes cur-blink { 0%,100%{opacity:1} 50%{opacity:0} }
+</style>
+
+<script>
+(function(){
+  const alerts = [
+    "US strikes on Iran's Fordow nuclear facility reported · Iran fires retaliatory missiles at US bases in Iraq · 2 hours ago",
+    "Brent crude surges to $97/barrel after Kharg Island strike threat · OPEC holds emergency call · 3 hours ago",
+    "Israel places Kharg Island on active target list · IDF reconnaissance flights over Persian Gulf confirmed · 6 hours ago",
+    "UN Security Council convenes emergency session · Russia and China call strikes 'illegal aggression' · 1 hour ago",
+    "Iran's IRGC declares full war footing · Strait of Hormuz briefly blockaded before reopening · 4 hours ago",
+  ];
+  const el = document.getElementById('alert-msg');
+  let alertIdx = 0, charIdx = 0, deleting = false, pauseTimer = null;
+
+  function type() {
+    const current = alerts[alertIdx];
+    if (!deleting) {
+      el.textContent = current.slice(0, ++charIdx);
+      if (charIdx === current.length) {
+        deleting = true;
+        pauseTimer = setTimeout(type, 2800);
+        return;
+      }
+      setTimeout(type, 28);
+    } else {
+      el.textContent = current.slice(0, --charIdx);
+      if (charIdx === 0) {
+        deleting = false;
+        alertIdx = (alertIdx + 1) % alerts.length;
+        setTimeout(type, 400);
+        return;
+      }
+      setTimeout(type, 14);
+    }
+  }
+  type();
+})();
+</script>
+
+<!-- TENSION BAR -->
+<div class="tension-bar">
+  <div class="tension-bar-inner">
+    <div class="tb-label"><div class="tp-live-dot"></div>Tension meters</div>
+    <div class="tb-sep"></div>
+    <div class="tb-meters">
+      <div class="tp-item">
+        <div class="tp-lbl">US vs Iran</div>
+        <div class="tp-lvl" style="color:var(--red)">Critical</div>
+        <div class="bar-bg"><div class="bar" data-w="88" style="background:var(--red)"></div></div>
+      </div>
+      <div class="tp-item">
+        <div class="tp-lbl">Israel vs Iran</div>
+        <div class="tp-lvl" style="color:#c87830">High</div>
+        <div class="bar-bg"><div class="bar" data-w="75" style="background:#c87830"></div></div>
+      </div>
+      <div class="tp-item">
+        <div class="tp-lbl">Gaza ceasefire</div>
+        <div class="tp-lvl" style="color:var(--green)">Holding</div>
+        <div class="bar-bg"><div class="bar" data-w="40" style="background:var(--green)"></div></div>
+      </div>
+      <div class="tp-item">
+        <div class="tp-lbl">Nuclear progress</div>
+        <div class="tp-lvl" style="color:var(--amber)">High</div>
+        <div class="bar-bg"><div class="bar" data-w="70" style="background:var(--amber)"></div></div>
+      </div>
+      <div class="tp-item">
+        <div class="tp-lbl">Regional war risk</div>
+        <div class="tp-lvl" style="color:var(--red)">Elevated</div>
+        <div class="bar-bg"><div class="bar" data-w="62" style="background:var(--red)"></div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+window.addEventListener('load', () => {
+  document.querySelectorAll('.bar[data-w]').forEach((bar, i) => {
+    setTimeout(() => {
+      bar.style.width = bar.dataset.w + '%';
+    }, 300 + i * 150);
+  });
+});
+</script>
+
+<div class="page-layout">
+
+  <!-- ─── MAIN ─── -->
+  <div class="main-content">
+
+
+<!-- ═══ PAGE 1: LIVE ═══ -->
+<div id="page-live" class="page active">
+    <!-- HERO -->
+    <div class="hero" id="live">
+      <div class="hero-eyebrow">US · Israel · Iran · 2026</div>
+      <h1 class="hero-title">The conflict,<br><em>explained clearly.</em></h1>
+      <p class="hero-sub">A running record of the most consequential confrontation since the Gulf War — with full context, plain language, and every organisation named.</p>
+      <div class="hero-stats">
+        <div class="hstat"><div class="hstat-n" style="color:var(--red)">CRITICAL</div><div class="hstat-l">Today's tension</div></div>
+        <div class="hstat"><div class="hstat-n">47</div><div class="hstat-l">Days escalated</div></div>
+        <div class="hstat"><div class="hstat-n">16</div><div class="hstat-l">Updates today</div></div>
+        <div class="hstat"><div class="hstat-n">1979</div><div class="hstat-l">Root cause year</div></div>
+      </div>
     </div>
 
-    <div id="card2" class="card">
-        <h2>User Card</h2>
-        <p>You are using user portal right now!</p>
+    <!-- TWO COL -->
+    <div class="two-col">
+      <!-- NEWS -->
+      <div>
+        <div class="sh"><div class="sh-title">Latest updates</div><div class="sh-sub">16 today</div></div>
+        <div class="news-list">
+
+          <div class="ni" onclick="toggleFull(this)">
+            <div class="ni-top">
+              <div class="ni-badges"><span class="badge b-crit">Critical</span><span class="badge b-blue">US</span><span class="badge b-gray">Iran</span></div>
+              <span class="ni-time">2 hrs ago</span>
+            </div>
+            <div class="ni-headline">US bombs Iran's Fordow nuclear facility — the biggest strike in conflict history</div>
+            <div class="ni-simple">America sent warplanes and missiles to destroy the underground factory in Iran where they were building nuclear weapons. This is the first time the US has directly attacked Iranian soil.</div>
+            <div class="ni-full">
+              <p>The <strong>United States Air Force (USAF)</strong> launched a major operation using B-2 stealth bombers carrying GBU-57 bunker-buster bombs against the <strong>Fordow Fuel Enrichment Plant (FFEP)</strong> — Iran's most fortified nuclear site, buried 90 metres underground near Qom.</p>
+              <p>The <strong>Islamic Republic of Iran (IRI)</strong> had been enriching uranium to 84% purity — just one step below the 90% needed for a nuclear weapon. Intelligence from the <strong>Central Intelligence Agency (CIA)</strong>, Israel's <strong>Mossad</strong>, and the UK's <strong>MI6</strong> all concluded Iran was 2–3 weeks from completing its first bomb.</p>
+              <p>The <strong>International Atomic Energy Agency (IAEA)</strong> had been unable to inspect the site for 8 months after Iran expelled its inspectors. This was the final red line for the US-Israel alliance.</p>
+              <p>President Trump authorised the strike after Israeli Prime Minister Netanyahu gave a 48-hour ultimatum: act now or Israel would strike alone, risking a wider uncontrolled regional war. The <strong>US Central Command (CENTCOM)</strong>, based in Qatar, coordinated the operation.</p>
+              <p>Iran's <strong>Islamic Revolutionary Guard Corps (IRGC)</strong> immediately went on full war footing. The <strong>UN Security Council (UNSC)</strong> convened an emergency session within hours. Global oil prices jumped 18% in a single trading session.</p>
+            </div>
+            <div class="why-box">
+              <div class="why-lbl">Why did this happen now?</div>
+              <div class="why-txt">Iran was 2 weeks from a nuclear bomb. Israel issued an ultimatum — act now or we will. The US chose to strike first to prevent a larger uncontrolled war. This directly follows Iran expelling IAEA inspectors 8 months ago and enriching uranium to near-weapons grade.</div>
+            </div>
+            <button class="read-btn">Read full analysis ↓</button>
+            <div class="orgs-row" onclick="event.stopPropagation()">
+              <div class="orgs-lbl">Organisations involved</div>
+              <div class="pills">
+                <span class="pill p-blue">USAF</span><span class="pill p-blue">CIA</span><span class="pill p-blue">CENTCOM</span><span class="pill p-blue">Mossad</span><span class="pill p-blue">MI6</span><span class="pill p-red">IRGC</span><span class="pill p-red">IRI</span><span class="pill p-green">IAEA</span><span class="pill p-green">UNSC</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ni" onclick="toggleFull(this)">
+            <div class="ni-top">
+              <div class="ni-badges"><span class="badge b-high">High</span><span class="badge b-gray">Iran</span><span class="badge b-blue">US</span></div>
+              <span class="ni-time">4 hrs ago</span>
+            </div>
+            <div class="ni-headline">Iran fires ballistic missiles at US bases in Iraq and Syria</div>
+            <div class="ni-simple">After the US bombing, Iran fought back by launching large missiles at American military camps in Iraq and Syria. Most were intercepted by US missile defence systems. No casualties confirmed.</div>
+            <div class="ni-full">
+              <p>Within 4 hours of the US strikes, the <strong>Islamic Revolutionary Guard Corps (IRGC)</strong> launched 22 ballistic missiles at two targets: <strong>Ain al-Assad Air Base</strong> in western Iraq and <strong>Al-Tanf Garrison</strong> in Syria.</p>
+              <p>The <strong>US Army Patriot (PAC-3)</strong> air defence systems and Israeli <strong>Arrow-3</strong> interceptors shot down 19 of 22 missiles. Three landed inside base perimeters but in uninhabited zones — no US casualties were confirmed.</p>
+              <p>Iran's <strong>Supreme National Security Council (SNSC)</strong> called the strike only the "first wave" and threatened further escalation. The <strong>Strait of Hormuz</strong> was briefly blockaded by Iranian naval vessels before reopening under international pressure.</p>
+            </div>
+            <div class="why-box">
+              <div class="why-lbl">How is this connected to the past?</div>
+              <div class="why-txt">In January 2020, the US killed Iran's top general Soleimani at Baghdad airport. Iran retaliated then by firing missiles at the exact same Ain al-Assad base. History is repeating — same target, same playbook, six years later.</div>
+            </div>
+            <button class="read-btn">Read full analysis ↓</button>
+            <div class="orgs-row" onclick="event.stopPropagation()">
+              <div class="orgs-lbl">Organisations involved</div>
+              <div class="pills">
+                <span class="pill p-red">IRGC</span><span class="pill p-red">SNSC</span><span class="pill p-blue">PAC-3</span><span class="pill p-blue">Arrow-3</span><span class="pill p-amber">Iraq Govt</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="ni" onclick="toggleFull(this)">
+            <div class="ni-top">
+              <div class="ni-badges"><span class="badge b-med">Medium</span><span class="badge b-blue">Israel</span><span class="badge b-gray">Iran</span></div>
+              <span class="ni-time">6 hrs ago</span>
+            </div>
+            <div class="ni-headline">Kharg Island — Iran's oil lifeline — now on Israel's target list</div>
+            <div class="ni-simple">Kharg Island is where Iran ships 90% of its oil to the world. Israel has placed it on its strike list, which could trigger a global oil price crisis felt as far as India.</div>
+            <div class="ni-full">
+              <p><strong>Kharg Island</strong> in the Persian Gulf handles over 90% of Iran's oil exports — approximately 1.5 million barrels per day. This single location generates nearly all of Iran's foreign currency.</p>
+              <p>The <strong>Israel Defense Forces (IDF)</strong> confirmed to the <strong>Knesset</strong> that Kharg Island is "actively on the target list" if Iran escalates further. Brent crude jumped from $74 to $97 per barrel in 48 hours.</p>
+              <p>India imports approximately 7% of its oil from Iran. The <strong>Indian Ministry of Petroleum and Natural Gas (MoPNG)</strong> has directed state refiners to urgently seek alternative supply from the UAE, Iraq, and the US Gulf Coast.</p>
+            </div>
+            <div class="why-box">
+              <div class="why-lbl">Why does this affect India and you?</div>
+              <div class="why-txt">If Kharg Island is bombed, global oil could exceed $130 per barrel. Petrol in India could surpass ₹120/litre. Food delivery, auto fares, flight tickets — everything transported by vehicle becomes more expensive.</div>
+            </div>
+            <button class="read-btn">Read full analysis ↓</button>
+            <div class="orgs-row" onclick="event.stopPropagation()">
+              <div class="orgs-lbl">Organisations involved</div>
+              <div class="pills">
+                <span class="pill p-blue">IDF</span><span class="pill p-blue">Knesset</span><span class="pill p-amber">OPEC</span><span class="pill p-green">MoPNG</span>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- SIDEBAR CARDS -->
+      <div>
+        <div class="side-card" id="people">
+          <div class="sc-head"><div class="sc-title">Key people</div></div>
+          <div class="person">
+            <div class="av" style="background:var(--blue-s);color:var(--blue)">DT</div>
+            <div>
+              <div class="ptitle">US President</div>
+              <div class="pname">Donald Trump</div>
+              <div class="pdesc">Authorised the strikes. Wants to prevent Iran from getting a nuclear weapon. Strong ally of Netanyahu.</div>
+              <span class="pside" style="background:var(--blue-s);color:var(--blue)">US</span>
+            </div>
+          </div>
+          <div class="person">
+            <div class="av" style="background:var(--blue-s);color:var(--blue)">BB</div>
+            <div>
+              <div class="ptitle">Prime Minister, Israel</div>
+              <div class="pname">Benjamin Netanyahu</div>
+              <div class="pdesc">Israel's longest-serving PM. Has pushed for military action against Iran for over a decade. Issued the ultimatum to the US.</div>
+              <span class="pside" style="background:var(--blue-s);color:var(--blue)">Israel</span>
+            </div>
+          </div>
+          <div class="person">
+            <div class="av" style="background:var(--red-s);color:var(--red)">AK</div>
+            <div>
+              <div class="ptitle">Supreme Leader, Iran</div>
+              <div class="pname">Ali Khamenei</div>
+              <div class="pdesc">The most powerful person in Iran — above the President. Has final say on all military and nuclear decisions.</div>
+              <span class="pside" style="background:var(--red-s);color:var(--red)">Iran</span>
+            </div>
+          </div>
+          <div class="person">
+            <div class="av" style="background:var(--amber-s);color:var(--amber)">MP</div>
+            <div>
+              <div class="ptitle">President, Iran</div>
+              <div class="pname">Masoud Pezeshkian</div>
+              <div class="pdesc">Iran's elected president who wanted diplomacy. Overruled by Khamenei. His political position is severely weakened.</div>
+              <span class="pside" style="background:var(--red-s);color:var(--red)">Iran</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="side-card">
+          <div class="sc-head"><div class="sc-title">Quick glossary</div></div>
+          <div class="gloss-item"><span class="gtag">IRGC</span><span class="gtext">Islamic Revolutionary Guard Corps — Iran's elite military. Controls missiles and nuclear programme. Answers only to Khamenei.</span></div>
+          <div class="gloss-item"><span class="gtag">IDF</span><span class="gtext">Israel Defense Forces — Israel's combined army, navy, and air force.</span></div>
+          <div class="gloss-item"><span class="gtag">IAEA</span><span class="gtext">International Atomic Energy Agency — UN body that checks if countries are secretly building nuclear weapons.</span></div>
+          <div class="gloss-item"><span class="gtag">CENTCOM</span><span class="gtext">US Central Command — America's military HQ for the Middle East, based in Qatar.</span></div>
+          <div class="gloss-item"><span class="gtag">Hamas</span><span class="gtext">Militant group ruling Gaza. Carried out the Oct 7, 2023 attack. Funded and armed by Iran.</span></div>
+          <div class="gloss-item"><span class="gtag">Hezbollah</span><span class="gtext">Iran's proxy army in Lebanon. Has 150,000+ rockets aimed at Israel.</span></div>
+        </div>
+      </div>
     </div>
 
+  <div class="section-wrap">
+    <div class="sh" id="orgs"><div class="sh-title">All organisations involved</div><div class="sh-sub">Full names and roles</div></div>
+    <div class="orgs-grid">
+      <div class="org-card"><div class="oa">IRGC</div><div class="of">Islamic Revolutionary Guard Corps</div><div class="od">Iran's elite military. Controls all missiles and nuclear sites. Answers only to Khamenei, not the elected government.</div></div>
+      <div class="org-card"><div class="oa">IDF</div><div class="of">Israel Defense Forces</div><div class="od">Israel's combined military — army, navy, air force. Mandatory service for all Israeli citizens over 18.</div></div>
+      <div class="org-card"><div class="oa">IAEA</div><div class="of">International Atomic Energy Agency</div><div class="od">UN body monitoring nuclear programmes globally. Iran expelled their inspectors in 2024, triggering today's crisis.</div></div>
+      <div class="org-card"><div class="oa">CENTCOM</div><div class="of">US Central Command</div><div class="od">US military HQ for the Middle East. Coordinates all US operations in the region. Based in Qatar.</div></div>
+      <div class="org-card"><div class="oa">CIA</div><div class="of">Central Intelligence Agency</div><div class="od">America's main spy agency. Provided intelligence on Iran's nuclear progress used to plan and justify the strikes.</div></div>
+      <div class="org-card"><div class="oa">Mossad</div><div class="of">Israel's National Intelligence Agency</div><div class="od">Israel's spy agency. Has previously sabotaged Iranian nuclear sites and eliminated Iranian nuclear scientists.</div></div>
+      <div class="org-card"><div class="oa">Hamas</div><div class="of">Harakat al-Muqawama al-Islamiyya</div><div class="od">Militant group controlling Gaza. Carried out Oct 7, 2023 attack. Funded and armed by Iran.</div></div>
+      <div class="org-card"><div class="oa">Hezbollah</div><div class="of">Hizb Allah — Party of God</div><div class="od">Iran's most powerful proxy army based in Lebanon. Has 150,000+ rockets aimed at Israel.</div></div>
+      <div class="org-card"><div class="oa">UNSC</div><div class="of">UN Security Council</div><div class="od">15-member UN body for international peace. Five permanent members with veto power. Currently in emergency session.</div></div>
+      <div class="org-card"><div class="oa">OPEC</div><div class="of">Organization of Petroleum Exporting Countries</div><div class="od">13-nation group controlling 40% of world oil supply. Key player whenever Middle East conflict threatens oil.</div></div>
+      <div class="org-card"><div class="oa">JCPOA</div><div class="of">Joint Comprehensive Plan of Action</div><div class="od">The 2015 nuclear deal between Iran and world powers. Trump pulled the US out in 2018. Its collapse directly led to today's crisis.</div></div>
+      <div class="org-card"><div class="oa">Knesset</div><div class="of">Israeli Parliament</div><div class="od">Israel's 120-member parliament in Jerusalem. Approves major military decisions.</div></div>
+    </div>
+  </div>
+</div><!-- /page-live -->
+
+<!-- ═══ PAGE 2: HISTORY ═══ -->
+<div id="page-history" class="page">
+    <!-- TIMELINE -->
+    <div class="section-wrap">
+      <div class="sh" id="timeline"><div class="sh-title">Timeline — how it started</div><div class="sh-sub">1948 to today</div></div>
+
+      <style>
+        .tl-chain { display: flex; flex-direction: column; gap: 0; }
+
+        .tl-card {
+          background: var(--card);
+          border: 1px solid var(--border2);
+          border-radius: 16px;
+          padding: 28px 32px;
+          position: relative;
+          overflow: hidden;
+          opacity: 0;
+          transform: translateY(24px);
+          transition: opacity .55s ease, transform .55s ease, border-color .4s ease, background .4s ease;
+        }
+        .tl-card.visible {
+          opacity: 1;
+          transform: translateY(0);
+        }
+        .tl-card.active {
+          border-color: rgba(255,255,255,0.22);
+          background: #272727;
+        }
+        .tl-card.active-red  { border-color: rgba(224,85,85,.5);  background: rgba(224,85,85,0.07); }
+        .tl-card.active-green{ border-color: rgba(61,170,114,.5); background: rgba(61,170,114,0.06); }
+        .tl-card.active-amber{ border-color: rgba(212,137,42,.5); background: rgba(212,137,42,0.06); }
+
+        .tl-card-year {
+          font-family: var(--ff-mono);
+          font-size: 11px; font-weight: 500; letter-spacing: .12em;
+          text-transform: uppercase;
+          display: inline-flex; align-items: center; gap: 8px;
+          padding: 5px 14px; border-radius: 20px;
+          margin-bottom: 16px;
+          background: rgba(255,255,255,0.05);
+          color: var(--text3);
+          border: 1px solid rgba(255,255,255,0.08);
+          transition: background .4s, color .4s, border-color .4s, box-shadow .4s, text-shadow .4s;
+        }
+        .tl-card.active .tl-card-year {
+          background: rgba(255,255,255,0.12); color: #ffffff; border-color: rgba(255,255,255,0.3);
+          box-shadow: 0 0 10px rgba(255,255,255,0.15), 0 0 24px rgba(255,255,255,0.08);
+          text-shadow: 0 0 8px rgba(255,255,255,0.6);
+        }
+        .tl-card.active-red .tl-card-year {
+          background: rgba(224,85,85,0.2); color: #ff8080; border-color: rgba(224,85,85,.6);
+          box-shadow: 0 0 10px rgba(224,85,85,0.4), 0 0 28px rgba(224,85,85,0.2), inset 0 0 8px rgba(224,85,85,0.1);
+          text-shadow: 0 0 8px rgba(255,100,100,0.9), 0 0 16px rgba(224,85,85,0.6);
+        }
+        .tl-card.active-green .tl-card-year {
+          background: rgba(61,170,114,0.2); color: #6fe8b4; border-color: rgba(61,170,114,.6);
+          box-shadow: 0 0 10px rgba(61,170,114,0.4), 0 0 28px rgba(61,170,114,0.2), inset 0 0 8px rgba(61,170,114,0.1);
+          text-shadow: 0 0 8px rgba(80,220,150,0.9), 0 0 16px rgba(61,170,114,0.6);
+        }
+        .tl-card.active-amber .tl-card-year {
+          background: rgba(212,137,42,0.2); color: #ffc060; border-color: rgba(212,137,42,.6);
+          box-shadow: 0 0 10px rgba(212,137,42,0.4), 0 0 28px rgba(212,137,42,0.2), inset 0 0 8px rgba(212,137,42,0.1);
+          text-shadow: 0 0 8px rgba(255,180,60,0.9), 0 0 16px rgba(212,137,42,0.6);
+        }
+
+        .tl-card-title {
+          font-family: var(--ff-disp);
+          font-size: 20px; font-weight: 600; line-height: 1.35;
+          color: var(--text2);
+          margin-bottom: 12px; padding-right: 60px;
+          transition: color .4s;
+        }
+        .tl-card.active      .tl-card-title { color: #ffffff; }
+        .tl-card.active-red  .tl-card-title { color: #ff7070; }
+        .tl-card.active-green .tl-card-title { color: #5dd4a0; }
+        .tl-card.active-amber .tl-card-title { color: #f0ac50; }
+
+        .tl-card-body {
+          font-size: 14px; font-weight: 300; color: var(--text3);
+          line-height: 1.85;
+          transition: color .4s;
+        }
+        .tl-card.active .tl-card-body,
+        .tl-card.active-red .tl-card-body,
+        .tl-card.active-green .tl-card-body,
+        .tl-card.active-amber .tl-card-body { color: var(--text2); }
+
+        .tl-card-note {
+          margin-top: 16px;
+          padding: 10px 14px;
+          border-radius: 8px;
+          font-family: var(--ff-mono);
+          font-size: 11.5px; line-height: 1.65; letter-spacing: .01em;
+          opacity: 0;
+          max-height: 0;
+          overflow: hidden;
+          transform: translateY(6px);
+          transition: opacity .35s ease, transform .35s ease, max-height .4s ease, margin-top .35s ease;
+          border-left: 2px solid transparent;
+          margin-top: 0;
+        }
+        .tl-card:hover .tl-card-note,
+        .tl-card.active .tl-card-note,
+        .tl-card.active-red .tl-card-note,
+        .tl-card.active-green .tl-card-note,
+        .tl-card.active-amber .tl-card-note {
+          opacity: 1;
+          max-height: 120px;
+          transform: translateY(0);
+          margin-top: 16px;
+        }
+
+        .tl-card.active      .tl-card-note { background: rgba(255,255,255,0.05); color: var(--text2); border-color: rgba(255,255,255,0.2); }
+        .tl-card.active-red  .tl-card-note { background: rgba(224,85,85,0.1);   color: #e07070; border-color: var(--red); }
+        .tl-card.active-green .tl-card-note{ background: rgba(61,170,114,0.1);  color: #5dd4a0; border-color: var(--green); }
+        .tl-card.active-amber .tl-card-note{ background: rgba(212,137,42,0.1);  color: #f0ac50; border-color: var(--amber); }
+
+        .tl-card:hover .tl-card-note {
+          background: rgba(255,255,255,0.05);
+          color: var(--text2);
+          border-color: rgba(255,255,255,0.25);
+        }
+        .tl-card.active-red:hover  .tl-card-note { background: rgba(224,85,85,0.12);  color: #ff8888; border-color: rgba(224,85,85,.7); }
+        .tl-card.active-green:hover .tl-card-note{ background: rgba(61,170,114,0.12); color: #6fe8b4; border-color: rgba(61,170,114,.7); }
+        .tl-card.active-amber:hover .tl-card-note{ background: rgba(212,137,42,0.12); color: #ffc060; border-color: rgba(212,137,42,.7); }
+
+        .tl-card-ghost {
+          position: absolute; top: 8px; right: 14px;
+          font-family: var(--ff-mono); font-size: 52px; font-weight: 500;
+          color: rgba(255,255,255,0.04); line-height: 1; pointer-events: none;
+          transition: color .4s;
+        }
+        .tl-card.active .tl-card-ghost      { color: rgba(255,255,255,0.08); }
+        .tl-card.active-red .tl-card-ghost  { color: rgba(224,85,85,0.12); }
+        .tl-card.active-green .tl-card-ghost{ color: rgba(61,170,114,0.12); }
+        .tl-card.active-amber .tl-card-ghost{ color: rgba(212,137,42,0.12); }
+
+        /* curvy SVG arrow connector */
+        .tl-connector {
+          display: flex; justify-content: center;
+          padding: 4px 0;
+          opacity: 0;
+          transition: opacity .5s ease;
+        }
+        .tl-connector.visible { opacity: 1; }
+        .tl-connector svg { overflow: visible; }
+        .tl-connector path {
+          fill: none;
+          stroke: rgba(255,255,255,0.18);
+          stroke-width: 1.5;
+          stroke-linecap: round;
+          stroke-dasharray: 120;
+          stroke-dashoffset: 120;
+          transition: stroke-dashoffset .7s cubic-bezier(.4,0,.2,1), stroke .4s;
+        }
+        .tl-connector.active-red   path { stroke: rgba(224,85,85,.5); }
+        .tl-connector.active-green path { stroke: rgba(61,170,114,.5); }
+        .tl-connector.active-amber path { stroke: rgba(212,137,42,.5); }
+        .tl-connector.drawn path { stroke-dashoffset: 0; }
+
+        /* arrowhead polygon */
+        .tl-connector polygon {
+          fill: rgba(255,255,255,0.18);
+          opacity: 0;
+          transition: fill .4s, opacity .3s .6s;
+        }
+        .tl-connector.active-red   polygon { fill: rgba(224,85,85,.5); }
+        .tl-connector.active-green polygon { fill: rgba(61,170,114,.5); }
+        .tl-connector.active-amber polygon { fill: rgba(212,137,42,.5); }
+        .tl-connector.drawn polygon { opacity: 1; }
+      </style>
+
+      <div class="tl-chain" id="tl-chain">
+
+        <!-- 1948 -->
+        <div class="tl-card" data-color="neutral">
+          <div class="tl-card-ghost">1948</div>
+          <div class="tl-card-year">1948</div>
+          <div class="tl-card-title">Israel is founded — and immediately attacked</div>
+          <div class="tl-card-body">After the Holocaust in World War II, Jewish people established the state of Israel in the Middle East. The very next day, five Arab countries attacked it. Israel survived. But the conflict over land and identity has never been fully resolved — it remains at the heart of everything happening today.</div>
+        </div>
+
+        <div class="tl-connector">
+          <svg width="60" height="56" viewBox="0 0 60 62">
+            <path d="M30 0 C10 16, 50 34, 30 53"/>
+            <polygon points="30,60 24,51 36,51"/>
+          </svg>
+        </div>
+
+        <!-- 1979 -->
+        <div class="tl-card" data-color="red">
+          <div class="tl-card-ghost">1979</div>
+          <div class="tl-card-year">1979 · Root cause</div>
+          <div class="tl-card-title">Iran's Islamic Revolution — the moment everything changed</div>
+          <div class="tl-card-body">Religious leader Ayatollah Khomeini overthrew Iran's pro-American government. The new leadership declared Israel an enemy and America "the Great Satan." Iran began funding Hamas and Hezbollah to fight Israel. This single event is the root cause of today's entire conflict — without 1979, none of this exists.</div>
+          <div class="tl-card-note">Root cause. Every event that follows grows from here.</div>
+        </div>
+
+        <div class="tl-connector">
+          <svg width="60" height="56" viewBox="0 0 60 62">
+            <path d="M30 0 C50 16, 10 34, 30 53"/>
+            <polygon points="30,60 24,51 36,51"/>
+          </svg>
+        </div>
+
+        <!-- 2003 -->
+        <div class="tl-card" data-color="neutral">
+          <div class="tl-card-ghost">2003</div>
+          <div class="tl-card-year">2003</div>
+          <div class="tl-card-title">World discovers Iran's secret nuclear programme</div>
+          <div class="tl-card-body">Iran had been secretly building uranium enrichment facilities for years. When the IAEA discovered this, the West imposed heavy economic sanctions. Iran refused to stop. The nuclear standoff that eventually led to today's strikes began here.</div>
+        </div>
+
+        <div class="tl-connector">
+          <svg width="60" height="56" viewBox="0 0 60 62">
+            <path d="M30 0 C10 16, 50 34, 30 53"/>
+            <polygon points="30,60 24,51 36,51"/>
+          </svg>
+        </div>
+
+        <!-- 2015 -->
+        <div class="tl-card" data-color="green">
+          <div class="tl-card-ghost">2015</div>
+          <div class="tl-card-year">2015 · Brief peace</div>
+          <div class="tl-card-title">JCPOA nuclear deal — a brief moment of peace</div>
+          <div class="tl-card-body">Under President Obama, the US and Iran signed the JCPOA — Iran agreed to slow its nuclear programme in exchange for sanctions relief. Iran's economy improved. But in 2018, Trump pulled the US out. Iran immediately restarted its programme. The collapse of this deal directly led to today's crisis.</div>
+          <div class="tl-card-note">Connected to today: had the US not left the deal in 2018, Iran would never have gotten this close to a bomb.</div>
+        </div>
+
+        <div class="tl-connector">
+          <svg width="60" height="56" viewBox="0 0 60 62">
+            <path d="M30 0 C50 16, 10 34, 30 53"/>
+            <polygon points="30,60 24,51 36,51"/>
+          </svg>
+        </div>
+
+        <!-- 2020 -->
+        <div class="tl-card" data-color="amber">
+          <div class="tl-card-ghost">2020</div>
+          <div class="tl-card-year">Jan 2020 · Turning point</div>
+          <div class="tl-card-title">US kills Iran's top general Qasem Soleimani</div>
+          <div class="tl-card-body">The US killed Iran's most powerful military commander in a drone strike at Baghdad airport. Soleimani ran Iran's entire proxy army network across the Middle East. Iran retaliated by firing missiles at US bases in Iraq — including Ain al-Assad Air Base. Iran vowed long-term revenge.</div>
+          <div class="tl-card-note">Directly connected to today: Iran fired missiles at the exact same Ain al-Assad base again today. Same target, same playbook, six years later.</div>
+        </div>
+
+        <div class="tl-connector">
+          <svg width="60" height="56" viewBox="0 0 60 62">
+            <path d="M30 0 C10 16, 50 34, 30 53"/>
+            <polygon points="30,60 24,51 36,51"/>
+          </svg>
+        </div>
+
+        <!-- 2023 -->
+        <div class="tl-card" data-color="red">
+          <div class="tl-card-ghost">2023</div>
+          <div class="tl-card-year">Oct 2023 · The spark</div>
+          <div class="tl-card-title">Hamas attacks Israel — 1,200 killed</div>
+          <div class="tl-card-body">Hamas fighters broke through Israel's border and attacked villages, killing 1,200 people — the deadliest day for Jewish people since the Holocaust. Israel declared war on Gaza. Iran celebrated. The US deployed two aircraft carrier groups to the region. This event escalated the entire conflict to what we see today.</div>
+          <div class="tl-card-note">The spark that ignited today's fire. Every event from Oct 7 onwards flows directly from this day.</div>
+        </div>
+
+        <div class="tl-connector">
+          <svg width="60" height="56" viewBox="0 0 60 62">
+            <path d="M30 0 C50 16, 10 34, 30 53"/>
+            <polygon points="30,60 24,51 36,51"/>
+          </svg>
+        </div>
+
+        <!-- Today -->
+        <div class="tl-card" data-color="red">
+          <div class="tl-card-ghost">Now</div>
+          <div class="tl-card-year">Today · Critical</div>
+          <div class="tl-card-title">US strikes Iran's nuclear sites — the world holds its breath</div>
+          <div class="tl-card-body">The US has made its biggest move. Nuclear facilities are severely damaged. Iran has retaliated. The world watches to see whether this ends the conflict — or triggers a full regional war involving Saudi Arabia, Turkey, Russia, and China. Every event listed above made today inevitable.</div>
+          <div class="tl-card-note">This is the result of 45 years of connected history. Every step above led here.</div>
+        </div>
+
+      </div>
+
+      <script>
+      (function(){
+        const colorClass = { red:'active-red', green:'active-green', amber:'active-amber', neutral:'active' };
+        const cards = document.querySelectorAll('.tl-card');
+        const connectors = document.querySelectorAll('.tl-connector');
+
+        const obs = new IntersectionObserver((entries) => {
+          entries.forEach(entry => {
+            const el = entry.target;
+            if (entry.isIntersecting) {
+              // card slide-in
+              if (el.classList.contains('tl-card')) {
+                el.classList.add('visible');
+                setTimeout(() => {
+                  const color = el.dataset.color;
+                  cards.forEach(c => c.classList.remove('active','active-red','active-green','active-amber'));
+                  el.classList.add(colorClass[color] || 'active');
+                }, 100);
+              }
+              // connector draw
+              if (el.classList.contains('tl-connector')) {
+                el.classList.add('visible');
+                // inherit color from previous card
+                const allConnectors = Array.from(connectors);
+                const idx = allConnectors.indexOf(el);
+                const prevCard = cards[idx];
+                if (prevCard) {
+                  const c = prevCard.dataset.color;
+                  if (c === 'red')   el.classList.add('active-red');
+                  if (c === 'green') el.classList.add('active-green');
+                  if (c === 'amber') el.classList.add('active-amber');
+                }
+                setTimeout(() => el.classList.add('drawn'), 80);
+              }
+            }
+          });
+        }, { threshold: 0.35 });
+
+        cards.forEach(c => obs.observe(c));
+        connectors.forEach(c => obs.observe(c));
+      })();
+      </script>
+    </div>
+
+</div><!-- /page-history -->
+
+<!-- ═══ PAGE 3: CONNECTIONS ═══ -->
+<div id="page-connections" class="page">
+
+    <!-- WHY CONNECTED -->
+    <div class="section-wrap">
+      <div class="sh" id="why"><div class="sh-title">Why each event is connected</div><div class="sh-sub">The chain of cause and effect</div></div>
+      <div class="chain">
+        <div class="chain-item" data-n="1"><div class="ct">Iran's 1979 revolution created a government whose founding principle is opposition to Israel and the US</div><div class="cb">Before 1979, Iran and the US were allies. The revolution replaced Iran's pro-American government with religious leaders who viewed America and Israel as enemies — not as a changeable policy, but as a core founding principle of the state. Every single event in this conflict traces back to this single moment in history.</div></div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item" data-n="2"><div class="ct">Iran funded Hamas and Hezbollah to fight Israel without fighting directly</div><div class="cb">Iran knew it could not defeat Israel and the US in direct warfare. So it built proxy armies — groups in other countries that fight on Iran's behalf. Hamas in Gaza and Hezbollah in Lebanon became Iran's weapons against Israel. Decades of funding, missiles, and training built the threat that exists today.</div></div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item" data-n="3"><div class="ct">Hamas used that support to carry out the October 7, 2023 attack on Israel</div><div class="cb">The attack that killed 1,200 Israelis was made possible by decades of Iranian funding and weapons. Iran did not order the specific date — but Hamas could never have launched an operation of this scale without Iran's long-term support. This is the direct link between Iran and that day.</div></div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item" data-n="4"><div class="ct">As Israel dismantled Hamas in Gaza, Iran had to choose — act directly or lose all credibility</div><div class="cb">Iran's entire regional strategy depended on its proxy armies. As Israel destroyed Hamas, Iran faced a choice: intervene directly and risk war, or watch its proxy be eliminated and lose all influence. In April 2024, Iran chose to act — attacking Israel directly for the first time in its history.</div></div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item" data-n="5"><div class="ct">Iran accelerated its nuclear programme — seeing a bomb as the only true guarantee of survival</div><div class="cb">Iran studied countries like Iraq and Libya — both gave up their weapons programmes and were later attacked. Iran's conclusion: a nuclear weapon is the only protection that cannot be negotiated away or bombed away. So Iran pushed its enrichment programme to near-completion.</div></div>
+        <div class="chain-arrow">↓</div>
+        <div class="chain-item" data-n="6" style="border-color:rgba(224,85,85,.2);background:rgba(224,85,85,0.06)"><div class="ct" style="color:var(--red)">Today — the result of 45 years of connected choices</div><div class="cb">A nuclear Iran changes the Middle East permanently. It emboldens every proxy group Iran funds. It forces Saudi Arabia and Turkey to pursue their own nuclear programmes. The US and Israel concluded that preventing this — even at the cost of a serious confrontation — was better than living with it.</div></div>
+      </div>
+    </div>
+
+</div><!-- /page-connections -->
+
+  </div><!-- /main-content -->
+
+
+</div><!-- /page-layout -->
+
+<footer>
+  <div class="footer-logo">War<span>Watch</span></div>
+  <div class="footer-r">Sources: NDTV · Reuters · AP · Al Jazeera · Times of Israel<br>AI summaries · Updated every 6 hours</div>
+</footer>
+
+function switchPage(id, btn) {
+  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+  document.querySelectorAll('.nl').forEach(b => b.classList.remove('on'));
+  document.getElementById('page-' + id).classList.add('active');
+  btn.classList.add('on');
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+  // re-trigger bar animations
+  setTimeout(() => {
+    document.querySelectorAll('.bar[data-w]').forEach((bar, i) => {
+      bar.style.width = '0';
+      setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 300 + i * 150);
+    });
+  }, 100);
+  // re-init timeline observer when switching to history
+  if (id === 'history') {
+    const colorClass = { red:'active-red', green:'active-green', amber:'active-amber', neutral:'active' };
+    const cards = document.querySelectorAll('.tl-card');
+    const connectors = document.querySelectorAll('.tl-connector');
+    const obs = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        const el = entry.target;
+        if (entry.isIntersecting) {
+          if (el.classList.contains('tl-card')) {
+            el.classList.add('visible');
+            setTimeout(() => {
+              const color = el.dataset.color;
+              cards.forEach(c => c.classList.remove('active','active-red','active-green','active-amber'));
+              el.classList.add(colorClass[color] || 'active');
+            }, 100);
+          }
+          if (el.classList.contains('tl-connector')) {
+            el.classList.add('visible');
+            const idx = Array.from(connectors).indexOf(el);
+            const prevCard = cards[idx];
+            if (prevCard) {
+              const c = prevCard.dataset.color;
+              if (c === 'red')   el.classList.add('active-red');
+              if (c === 'green') el.classList.add('active-green');
+              if (c === 'amber') el.classList.add('active-amber');
+            }
+            setTimeout(() => el.classList.add('drawn'), 80);
+          }
+        }
+      });
+    }, { threshold: 0.35 });
+    cards.forEach(c => obs.observe(c));
+    connectors.forEach(c => obs.observe(c));
+  }
+}
+</script>
+
+<script>
+function toggleFull(ni) {
+  const full = ni.querySelector('.ni-full');
+  const btn = ni.querySelector('.read-btn');
+  if (!full) return;
+  const open = full.style.display === 'block';
+  full.style.display = open ? 'none' : 'block';
+  if (btn) btn.textContent = open ? 'Read full analysis ↓' : 'Close ↑';
+}
+document.querySelectorAll('.nl').forEach(l => {
+  l.addEventListener('click', () => {
+    document.querySelectorAll('.nl').forEach(x => x.classList.remove('on'));
+    l.classList.add('on');
+  });
+});
+
+// ── Org popup ──
+const ORGS = {
+  'USAF':     { full: 'United States Air Force', desc: 'America\'s air and aerospace force. Conducted the B-2 stealth bomber strikes on Fordow using GBU-57 bunker-buster bombs.', side: 'US' },
+  'CIA':      { full: 'Central Intelligence Agency', desc: 'America\'s primary spy agency. Provided intelligence on Iran\'s nuclear progress used to plan and justify the strikes.', side: 'US' },
+  'CENTCOM':  { full: 'US Central Command', desc: 'America\'s military headquarters for the Middle East and Central Asia. Coordinated all US operations in the region. Based in Qatar.', side: 'US' },
+  'Mossad':   { full: 'Israel\'s National Intelligence Agency', desc: 'Israel\'s spy agency. Has previously sabotaged Iranian nuclear sites and eliminated Iranian nuclear scientists.', side: 'Israel' },
+  'MI6':      { full: 'Secret Intelligence Service (SIS)', desc: 'Britain\'s foreign intelligence service. Provided corroborating intelligence on Iran\'s near-complete nuclear weapon.', side: 'UK' },
+  'IRGC':     { full: 'Islamic Revolutionary Guard Corps', desc: 'Iran\'s elite military, separate from the regular army. Controls all ballistic missiles and nuclear sites. Answers only to Khamenei.', side: 'Iran' },
+  'IRI':      { full: 'Islamic Republic of Iran', desc: 'The Iranian state. Had enriched uranium to 84% purity — one step below weapons grade — before the US strikes.', side: 'Iran' },
+  'FFEP':     { full: 'Fordow Fuel Enrichment Plant', desc: 'Iran\'s most fortified nuclear enrichment facility, buried 90 metres underground near Qom. The primary target of the US strikes.', side: 'Iran' },
+  'IAEA':     { full: 'International Atomic Energy Agency', desc: 'UN body that monitors nuclear programmes. Iran expelled its inspectors 8 months ago, triggering the crisis that led to today\'s strikes.', side: 'UN' },
+  'UNSC':     { full: 'UN Security Council', desc: '15-member UN body for international peace and security. Five permanent veto members: US, UK, France, Russia, China. Currently in emergency session.', side: 'UN' },
+  'SNSC':     { full: 'Supreme National Security Council', desc: 'Iran\'s top national security body. Called today\'s US strikes only the "first wave" and threatened further escalation.', side: 'Iran' },
+  'PAC-3':    { full: 'Patriot Advanced Capability-3', desc: 'US Army advanced air defence missile system. Intercepted 19 of 22 Iranian ballistic missiles fired at US bases in Iraq and Syria.', side: 'US' },
+  'Arrow-3':  { full: 'Arrow-3 Interceptor System', desc: 'Israeli high-altitude missile defence system. Helped intercept Iranian ballistic missiles fired at US bases in the region.', side: 'Israel' },
+  'IDF':      { full: 'Israel Defense Forces', desc: 'Israel\'s combined military — army, navy, and air force. Mandatory service for all Israeli citizens over 18. Has placed Kharg Island on its active target list.', side: 'Israel' },
+  'Knesset':  { full: 'Israeli Parliament', desc: 'Israel\'s 120-member parliament in Jerusalem. Israel\'s intelligence chief confirmed to the Knesset that Kharg Island is actively on the target list.', side: 'Israel' },
+  'OPEC':     { full: 'Organization of Petroleum Exporting Countries', desc: '13-nation group controlling 40% of world oil supply. Held an emergency call after Kharg Island strike threat sent Brent crude from $74 to $97 per barrel.', side: 'Intl' },
+  'MoPNG':    { full: 'Ministry of Petroleum and Natural Gas', desc: 'India\'s ministry overseeing oil and gas. Directed state refiners to urgently seek alternative supply from UAE, Iraq, and the US Gulf Coast.', side: 'India' },
+  'Hamas':    { full: 'Harakat al-Muqawama al-Islamiyya', desc: 'Militant group controlling Gaza. Carried out the Oct 7, 2023 attack killing 1,200 Israelis. Funded and armed by Iran for decades.', side: 'Gaza' },
+  'Hezbollah':{ full: 'Hizb Allah — Party of God', desc: 'Iran\'s most powerful proxy army, based in Lebanon. Has 150,000+ rockets aimed at Israel. Designated terrorist by US, EU, UK, and Arab League.', side: 'Lebanon' },
+  'JCPOA':    { full: 'Joint Comprehensive Plan of Action', desc: 'The 2015 nuclear deal between Iran and world powers. Trump pulled the US out in 2018. Its collapse directly led to today\'s crisis.', side: 'Intl' },
+  'Iraq Govt':{ full: 'Government of Iraq', desc: 'Officially neutral but in an impossible position — 70% of its population shares Iran\'s Shia faith yet it depends on US military protection. Issued formal protests.', side: 'Iraq' },
+};
+
+const SIDE_COLOR = {
+  US: 'var(--blue)', Israel: '#7b9ef0', UK: '#9b8de0',
+  Iran: 'var(--red)', UN: 'var(--green)', India: 'var(--amber)',
+  Gaza: '#e08060', Lebanon: '#c87830', Iraq: '#a09060', Intl: 'var(--text3)'
+};
+
+// Create popup element
+const popup = document.createElement('div');
+popup.id = 'org-popup';
+popup.innerHTML = `
+  <div id="org-popup-abbr"></div>
+  <div id="org-popup-full"></div>
+  <div id="org-popup-side"></div>
+  <div id="org-popup-desc"></div>
+`;
+document.body.appendChild(popup);
+
+// Style it
+const ps = document.createElement('style');
+ps.textContent = `
+  #org-popup {
+    position: fixed;
+    z-index: 999;
+    width: 260px;
+    background: #2a2a2a;
+    border: 1px solid rgba(255,255,255,0.15);
+    border-radius: 14px;
+    padding: 18px 20px;
+    box-shadow: 0 8px 40px rgba(0,0,0,0.6), 0 2px 12px rgba(0,0,0,0.4);
+    pointer-events: none;
+    opacity: 0;
+    transform: scale(0.94) translateY(4px);
+    transition: opacity .2s ease, transform .2s ease;
+  }
+  #org-popup.show {
+    opacity: 1;
+    transform: scale(1) translateY(0);
+    pointer-events: auto;
+  }
+  #org-popup-abbr {
+    font-family: var(--ff-mono);
+    font-size: 18px; font-weight: 500;
+    letter-spacing: .04em;
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  #org-popup-full {
+    font-family: var(--ff-body);
+    font-size: 11px; font-weight: 400;
+    color: var(--text3);
+    margin-bottom: 10px;
+    line-height: 1.4;
+  }
+  #org-popup-side {
+    display: inline-block;
+    font-family: var(--ff-mono);
+    font-size: 9.5px; font-weight: 500;
+    letter-spacing: .08em; text-transform: uppercase;
+    padding: 2px 9px; border-radius: 20px;
+    margin-bottom: 12px;
+    border: 1px solid currentColor;
+  }
+  #org-popup-desc {
+    font-family: var(--ff-body);
+    font-size: 12.5px; font-weight: 300;
+    color: var(--text2);
+    line-height: 1.7;
+  }
+  .pill { cursor: pointer; transition: opacity .15s, transform .15s; }
+  .pill:hover { opacity: .8; transform: scale(1.06); }
+  .pill.active-pill { outline: 2px solid rgba(255,255,255,0.35); outline-offset: 1px; }
+`;
+document.head.appendChild(ps);
+
+let activepill = null;
+let hideTimer = null;
+
+function showOrgPopup(pill, key) {
+  const org = ORGS[key];
+  if (!org) return;
+
+  if (activepill) activepill.classList.remove('active-pill');
+  activepill = pill;
+  pill.classList.add('active-pill');
+
+  document.getElementById('org-popup-abbr').textContent = key;
+  document.getElementById('org-popup-full').textContent = org.full;
+  document.getElementById('org-popup-desc').textContent = org.desc;
+  const sideEl = document.getElementById('org-popup-side');
+  sideEl.textContent = org.side;
+  sideEl.style.color = SIDE_COLOR[org.side] || 'var(--text3)';
+
+  // Position: to the right of the pill, vertically centred on it
+  const rect = pill.getBoundingClientRect();
+  const pw = 260, ph = 160;
+  let left = rect.right + 12;
+  let top  = rect.top + rect.height / 2 - ph / 2;
+
+  // Flip left if not enough room
+  if (left + pw > window.innerWidth - 16) left = rect.left - pw - 12;
+  // Clamp vertically
+  top = Math.max(12, Math.min(top, window.innerHeight - ph - 12));
+
+  popup.style.left = left + 'px';
+  popup.style.top  = top  + 'px';
+  popup.classList.add('show');
+
+  clearTimeout(hideTimer);
+}
+
+function hideOrgPopup() {
+  hideTimer = setTimeout(() => {
+    popup.classList.remove('show');
+    if (activepill) { activepill.classList.remove('active-pill'); activepill = null; }
+  }, 120);
+}
+
+// Attach click handlers to all pills
+function attachPillHandlers() {
+  document.querySelectorAll('.pill').forEach(pill => {
+    const key = pill.textContent.trim().replace(/·.*/, '').trim();
+    if (!ORGS[key]) return;
+    pill.addEventListener('click', e => {
+      e.stopPropagation();
+      if (popup.classList.contains('show') && activepill === pill) {
+        hideOrgPopup();
+      } else {
+        showOrgPopup(pill, key);
+      }
+    });
+  });
+}
+
+popup.addEventListener('mouseenter', () => clearTimeout(hideTimer));
+popup.addEventListener('mouseleave', hideOrgPopup);
+document.addEventListener('click', e => {
+  if (!popup.contains(e.target) && !e.target.classList.contains('pill')) hideOrgPopup();
+});
+
+attachPillHandlers();
+</script>
+
+<!-- ── LIVE DATA INJECTION ──────────────────────────────────────────────
+     live_data.js is generated by dashboard.py every 6 hours.
+     If it's absent (e.g. first load or local dev), the page shows
+     the static fallback content already in the HTML — nothing breaks.
+──────────────────────────────────────────────────────────────────────── -->
+<script src="live_data.js" onerror="console.log('live_data.js not found')"></script>
+<script>
+(function () {
+  const D = window.WARWATCH_LIVE;
+  if (!D) return; // no live data — keep static HTML as-is
+
+  // ── helpers ──────────────────────────────────────────────────────────
+  const lvlColor = {
+    LOW: 'var(--green)', MEDIUM: 'var(--amber)',
+    HIGH: '#c87830',     CRITICAL: 'var(--red)'
+  };
+  const actorPill = {
+    US:'p-blue', Israel:'p-blue', Iran:'p-red',
+    Hamas:'p-red', Hezbollah:'p-red', Other:'p-gray', Monitor:'p-gray'
+  };
+  const sigBadge = { HIGH:'b-crit', MEDIUM:'b-high', LOW:'b-gray', Analysis:'b-gray' };
+
+  // ── 1. Alert typewriter strings ───────────────────────────────────────
+  if (D.alerts && D.alerts.length) {
+    window.__ww_alerts = D.alerts;
+  }
+
+  // ── 2. Hero stats ─────────────────────────────────────────────────────
+  if (D.heroStats) {
+    const s = D.heroStats;
+    const stats = document.querySelectorAll('.hstat');
+    if (stats[0]) {
+      stats[0].querySelector('.hstat-n').textContent = s.tension || 'CRITICAL';
+      stats[0].querySelector('.hstat-n').style.color = lvlColor[s.tension] || 'var(--red)';
+    }
+    if (stats[2]) stats[2].querySelector('.hstat-n').textContent = s.updatesToday || '—';
+    if (stats[3]) {
+      stats[3].querySelector('.hstat-n').textContent = s.sourcesUsed || '—';
+      stats[3].querySelector('.hstat-l').textContent = 'Articles analysed';
+    }
+  }
+
+  // ── 3. Tension meters ─────────────────────────────────────────────────
+  if (D.tensionMeters) {
+    const items = document.querySelectorAll('.tp-item');
+    D.tensionMeters.forEach((m, i) => {
+      if (!items[i]) return;
+      items[i].querySelector('.tp-lbl').textContent = m.label;
+      const lvlEl = items[i].querySelector('.tp-lvl');
+      lvlEl.textContent = m.lvl;
+      lvlEl.style.color = m.color;
+      const bar = items[i].querySelector('.bar');
+      bar.dataset.w = m.pct;
+      bar.style.background = m.color;
+    });
+  }
+
+  // ── 4. News cards (replace static cards with live bot reports) ────────
+  if (D.newsCards && D.newsCards.length) {
+    const list = document.querySelector('.news-list');
+    const shSub = document.querySelector('.sh-sub');
+    if (shSub) shSub.textContent = `${D.newsCards.length} updates · ${D.generatedAt}`;
+    if (list) {
+      list.innerHTML = D.newsCards.map(c => `
+        <div class="ni" onclick="toggleFull(this)">
+          <div class="ni-top">
+            <div class="ni-badges">
+              <span class="badge ${sigBadge[c.badgeLabel] || 'b-gray'}">${c.badgeLabel}</span>
+              <span class="badge ${actorPill[c.actor] || 'p-gray'} b-gray">${c.actor}</span>
+            </div>
+            <span class="ni-time">${c.time}</span>
+          </div>
+          <div class="ni-headline">${c.headline}</div>
+          <div class="ni-simple">${c.summary}</div>
+          ${c.whyTxt ? `
+          <div class="why-box">
+            <div class="why-lbl">Context</div>
+            <div class="why-txt">${c.whyTxt}</div>
+          </div>` : ''}
+          <button class="read-btn">Read full analysis ↓</button>
+        </div>
+      `).join('');
+    }
+  }
+
+  // ── 5. "Last updated" shown in footer ────────────────────────────────
+  const footerR = document.querySelector('.footer-r');
+  if (footerR && D.generatedAt) {
+    footerR.innerHTML = `Sources: NDTV · Groq · Llama 3.3<br>
+      Last updated: ${D.generatedAt} · ${D.totalReports} reports logged`;
+  }
+
+  // ── 6. Sidebar executive summary card (append after people card) ──────
+  if (D.execSummary) {
+    const sc = document.querySelector('.side-card');
+    if (sc) {
+      const summaryCard = document.createElement('div');
+      summaryCard.className = 'side-card';
+      summaryCard.innerHTML = `
+        <div class="sc-head">
+          <div class="sc-title">Latest AI Summary</div>
+        </div>
+        <div style="padding:16px 20px">
+          <div style="font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.1em;
+            text-transform:uppercase;color:var(--text3);margin-bottom:10px">
+            ${D.generatedAt}
+          </div>
+          <p style="font-size:13px;color:var(--text2);line-height:1.75;font-weight:300">
+            ${D.execSummary}
+          </p>
+          ${D.sentiment ? `
+          <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border)">
+            <div style="font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.1em;
+              text-transform:uppercase;color:var(--text3);margin-bottom:8px">Tone</div>
+            <span style="font-family:var(--ff-mono);font-size:11px;font-weight:500;
+              color:var(--amber)">${D.sentiment.overall_tone || ''}</span>
+          </div>` : ''}
+        </div>
+      `;
+      sc.parentNode.insertBefore(summaryCard, sc);
+    }
+  }
+
+  // ── 7. Re-trigger bar animations (new bars from tension meters) ───────
+  setTimeout(() => {
+    document.querySelectorAll('.bar[data-w]').forEach((bar, i) => {
+      bar.style.width = '0';
+      setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 300 + i * 150);
+    });
+  }, 200);
+
+  // ── 8. Re-attach pill handlers for any newly rendered pills ──────────
+  if (typeof attachPillHandlers === 'function') attachPillHandlers();
+
+})();
+</script>
 </body>
 </html>
