@@ -193,12 +193,13 @@ nav {
 .section-wrap { margin-bottom: 60px; }
 .news-list {
   display: flex; flex-direction: column;
-  gap: 1px; background: var(--border);
-  border: 1px solid var(--border); border-radius: var(--r-lg); overflow: hidden;
+  gap: 3px; background: var(--bg);
+  border: 1px solid var(--border); border-radius: var(--r-lg);
 }
 .ni {
-  background: var(--card); padding: 32px 36px;
+  background: var(--card); padding: 22px 28px;
   cursor: pointer; transition: background .15s;
+  border-radius: 0; position: relative; z-index: 0;
 }
 .ni:hover { background: #272727; }
 .ni-top { display: flex; align-items: flex-start; gap: 10px; margin-bottom: 18px; }
@@ -209,13 +210,16 @@ nav {
 }
 .ni-headline {
   font-family: var(--ff-disp);
-  font-size: 22px; font-weight: 600; color: var(--text);
-  line-height: 1.35; margin-bottom: 14px; letter-spacing: -.1px;
+  font-size: 18px; font-weight: 600; color: var(--text);
+  line-height: 1.35; margin-bottom: 10px; letter-spacing: -.1px;
 }
-.ni-simple { font-size: 15px; color: var(--text2); line-height: 1.85; margin-bottom: 14px; font-weight: 300; }
+.ni-simple { font-size: 13.5px; color: var(--text2); line-height: 1.8; margin-bottom: 10px; font-weight: 300; }
 .ni-full { display: none; font-size: 15px; color: var(--text2); line-height: 1.9; margin-bottom: 16px; font-weight: 300; }
 .ni-full p { margin-bottom: 14px; }
 .ni-full p:last-child { margin-bottom: 0; }
+
+
+
 .ni-full strong { color: var(--text); font-weight: 500; }
 .why-box {
   background: var(--amber-s); border-left: 2px solid var(--amber);
@@ -256,8 +260,8 @@ nav {
 /* ─── TWO COL inside main ─── */
 .two-col {
   display: grid;
-  grid-template-columns: minmax(0, 1.55fr) minmax(0, 1fr);
-  gap: 24px; margin-bottom: 60px;
+  grid-template-columns: 1fr;
+  gap: 28px; margin-bottom: 60px;
 }
 @media(max-width: 720px){ .two-col { grid-template-columns: 1fr; } }
 
@@ -376,10 +380,97 @@ footer {
 .footer-logo span { color: var(--red); }
 .footer-r { font-family: var(--ff-mono); font-size: 11px; color: var(--text3); text-align: right; line-height: 1.8; }
 
+
+/* ─── RECENT GLOW ─── */
+@property --a{syntax:"<angle>";initial-value:0deg;inherits:false}
+@keyframes gspin{to{--a:360deg}}
+.ni-recent{position:relative;z-index:0;}
+.ni-recent::before{
+  content:'';position:absolute;inset:-2px;border-radius:12px;
+  background:conic-gradient(from var(--a),transparent 0deg,transparent 60deg,#ff6030 110deg,#ffaa00 150deg,#ff6030 190deg,transparent 240deg,transparent 360deg);
+  animation:gspin 2.5s linear infinite;z-index:0;
+}
+.ni-recent::after{
+  content:'';position:absolute;inset:1.5px;background:var(--card);border-radius:10px;z-index:1;
+}
+.ni-recent > *{position:relative;z-index:2;}
+
 /* ─── ANIM ─── */
 @keyframes fadeUp { from{opacity:0;transform:translateY(10px)} to{opacity:1;transform:translateY(0)} }
 .hero { animation: fadeUp .5s ease both; }
 .main-content { animation: fadeUp .5s .08s ease both; }
+
+/* ─── INDIA IMPACT BOX ─── */
+.india-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 14px;
+}
+.india-card {
+  background: var(--card);
+  border: 1px solid rgba(255,153,51,0.18);
+  border-radius: var(--r-lg);
+  padding: 24px 26px;
+  cursor: pointer;
+  transition: background .15s, border-color .2s;
+  position: relative;
+  overflow: hidden;
+}
+.india-card::before {
+  content: '';
+  position: absolute; top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, #ff9933, #fff, #138808);
+  opacity: 0.7;
+}
+.india-card:hover {
+  background: #252520;
+  border-color: rgba(255,153,51,0.35);
+}
+.india-card-top {
+  display: flex; align-items: center; gap: 8px;
+  margin-bottom: 14px;
+}
+.india-time {
+  font-family: var(--ff-mono); font-size: 11px;
+  color: var(--text3); margin-left: auto;
+}
+.india-headline {
+  font-family: var(--ff-disp);
+  font-size: 17px; font-weight: 600; color: var(--text);
+  line-height: 1.35; margin-bottom: 14px; letter-spacing: -.1px;
+}
+.india-bullets {
+  display: flex; flex-direction: column; gap: 8px;
+  margin-bottom: 14px;
+}
+.india-bullet {
+  font-size: 13px; color: var(--text2);
+  line-height: 1.6; font-weight: 300;
+  padding-left: 2px;
+}
+.india-full {
+  display: none;
+  margin-bottom: 14px;
+}
+.india-full p {
+  font-size: 14px; color: var(--text2);
+  line-height: 1.85; font-weight: 300;
+  margin-bottom: 12px;
+}
+.india-full p:last-child { margin-bottom: 0; }
+.india-full.open { display: block; }
+.india-read-btn {
+  font-family: var(--ff-mono); font-size: 11px; letter-spacing: .06em;
+  color: #ff9933; cursor: pointer; background: none; border: none;
+  padding: 0; transition: opacity .15s; display: block;
+}
+.india-read-btn:hover { opacity: .6; }
+.india-source-tag {
+  font-family: var(--ff-mono); font-size: 9.5px; letter-spacing: .06em;
+  color: var(--text3); margin-top: 10px; padding-top: 10px;
+  border-top: 1px solid var(--border);
+}
 ::-webkit-scrollbar { width: 4px; }
 ::-webkit-scrollbar-thumb { background: var(--bg3); border-radius: 2px; }
 
@@ -389,11 +480,6 @@ footer {
   .tb-sep { display: none; }
   .page-layout { padding: 0 20px; }
 }
-/* ─── PAGE SWITCHING ─── */
-.page { display: none; }
-.page.active { display: block; }
-.nl { background: none; border: none; font-family: var(--ff-body); }
-
 </style>
 </head>
 <body>
@@ -401,11 +487,11 @@ footer {
 <nav>
   <div class="logo">War<span>Watch</span></div>
   <div class="nav-links">
-    <button class="nl on" onclick="switchPage('live',this)">Live</button>
-    <button class="nl" onclick="switchPage('history',this)">Timeline</button>
-    <button class="nl" onclick="switchPage('live',this)">People</button>
-    <button class="nl" onclick="switchPage('connections',this)">Organisations</button>
-    <button class="nl" onclick="switchPage('connections',this)">Why connected</button>
+    <a class="nl on" href="#live">Live</a>
+    <a class="nl" href="#timeline">Timeline</a>
+    <a class="nl" href="#people">People</a>
+    <a class="nl" href="#orgs">Organisations</a>
+    <a class="nl" href="#why">Why connected</a>
   </div>
   <div class="nav-right">
     <div class="live-pill"><div class="live-dot"></div>Live updates</div>
@@ -509,14 +595,15 @@ window.addEventListener('load', () => {
 });
 </script>
 
+<div style="width:100%;max-height:340px;overflow:hidden;line-height:0">
+  <img src="war.png" alt="The Conflict" style="width:100%;max-height:340px;object-fit:cover;object-position:center top;display:block">
+</div>
+
 <div class="page-layout">
 
   <!-- ─── MAIN ─── -->
   <div class="main-content">
 
-
-<!-- ═══ PAGE 1: LIVE ═══ -->
-<div id="page-live" class="page active">
     <!-- HERO -->
     <div class="hero" id="live">
       <div class="hero-eyebrow">US · Israel · Iran · 2026</div>
@@ -537,7 +624,7 @@ window.addEventListener('load', () => {
         <div class="sh"><div class="sh-title">Latest updates</div><div class="sh-sub">16 today</div></div>
         <div class="news-list">
 
-          <div class="ni" onclick="toggleFull(this)">
+          <div class="ni">
             <div class="ni-top">
               <div class="ni-badges"><span class="badge b-crit">Critical</span><span class="badge b-blue">US</span><span class="badge b-gray">Iran</span></div>
               <span class="ni-time">2 hrs ago</span>
@@ -555,7 +642,7 @@ window.addEventListener('load', () => {
               <div class="why-lbl">Why did this happen now?</div>
               <div class="why-txt">Iran was 2 weeks from a nuclear bomb. Israel issued an ultimatum — act now or we will. The US chose to strike first to prevent a larger uncontrolled war. This directly follows Iran expelling IAEA inspectors 8 months ago and enriching uranium to near-weapons grade.</div>
             </div>
-            <button class="read-btn">Read full analysis ↓</button>
+            <button class="read-btn" onclick="toggleFull(this, event)">Read full analysis ↓</button>
             <div class="orgs-row" onclick="event.stopPropagation()">
               <div class="orgs-lbl">Organisations involved</div>
               <div class="pills">
@@ -564,7 +651,7 @@ window.addEventListener('load', () => {
             </div>
           </div>
 
-          <div class="ni" onclick="toggleFull(this)">
+          <div class="ni">
             <div class="ni-top">
               <div class="ni-badges"><span class="badge b-high">High</span><span class="badge b-gray">Iran</span><span class="badge b-blue">US</span></div>
               <span class="ni-time">4 hrs ago</span>
@@ -580,7 +667,7 @@ window.addEventListener('load', () => {
               <div class="why-lbl">How is this connected to the past?</div>
               <div class="why-txt">In January 2020, the US killed Iran's top general Soleimani at Baghdad airport. Iran retaliated then by firing missiles at the exact same Ain al-Assad base. History is repeating — same target, same playbook, six years later.</div>
             </div>
-            <button class="read-btn">Read full analysis ↓</button>
+            <button class="read-btn" onclick="toggleFull(this, event)">Read full analysis ↓</button>
             <div class="orgs-row" onclick="event.stopPropagation()">
               <div class="orgs-lbl">Organisations involved</div>
               <div class="pills">
@@ -589,7 +676,7 @@ window.addEventListener('load', () => {
             </div>
           </div>
 
-          <div class="ni" onclick="toggleFull(this)">
+          <div class="ni">
             <div class="ni-top">
               <div class="ni-badges"><span class="badge b-med">Medium</span><span class="badge b-blue">Israel</span><span class="badge b-gray">Iran</span></div>
               <span class="ni-time">6 hrs ago</span>
@@ -605,7 +692,7 @@ window.addEventListener('load', () => {
               <div class="why-lbl">Why does this affect India and you?</div>
               <div class="why-txt">If Kharg Island is bombed, global oil could exceed $130 per barrel. Petrol in India could surpass ₹120/litre. Food delivery, auto fares, flight tickets — everything transported by vehicle becomes more expensive.</div>
             </div>
-            <button class="read-btn">Read full analysis ↓</button>
+            <button class="read-btn" onclick="toggleFull(this, event)">Read full analysis ↓</button>
             <div class="orgs-row" onclick="event.stopPropagation()">
               <div class="orgs-lbl">Organisations involved</div>
               <div class="pills">
@@ -617,81 +704,11 @@ window.addEventListener('load', () => {
         </div>
       </div>
 
-      <!-- SIDEBAR CARDS -->
-      <div>
-        <div class="side-card" id="people">
-          <div class="sc-head"><div class="sc-title">Key people</div></div>
-          <div class="person">
-            <div class="av" style="background:var(--blue-s);color:var(--blue)">DT</div>
-            <div>
-              <div class="ptitle">US President</div>
-              <div class="pname">Donald Trump</div>
-              <div class="pdesc">Authorised the strikes. Wants to prevent Iran from getting a nuclear weapon. Strong ally of Netanyahu.</div>
-              <span class="pside" style="background:var(--blue-s);color:var(--blue)">US</span>
-            </div>
-          </div>
-          <div class="person">
-            <div class="av" style="background:var(--blue-s);color:var(--blue)">BB</div>
-            <div>
-              <div class="ptitle">Prime Minister, Israel</div>
-              <div class="pname">Benjamin Netanyahu</div>
-              <div class="pdesc">Israel's longest-serving PM. Has pushed for military action against Iran for over a decade. Issued the ultimatum to the US.</div>
-              <span class="pside" style="background:var(--blue-s);color:var(--blue)">Israel</span>
-            </div>
-          </div>
-          <div class="person">
-            <div class="av" style="background:var(--red-s);color:var(--red)">AK</div>
-            <div>
-              <div class="ptitle">Supreme Leader, Iran</div>
-              <div class="pname">Ali Khamenei</div>
-              <div class="pdesc">The most powerful person in Iran — above the President. Has final say on all military and nuclear decisions.</div>
-              <span class="pside" style="background:var(--red-s);color:var(--red)">Iran</span>
-            </div>
-          </div>
-          <div class="person">
-            <div class="av" style="background:var(--amber-s);color:var(--amber)">MP</div>
-            <div>
-              <div class="ptitle">President, Iran</div>
-              <div class="pname">Masoud Pezeshkian</div>
-              <div class="pdesc">Iran's elected president who wanted diplomacy. Overruled by Khamenei. His political position is severely weakened.</div>
-              <span class="pside" style="background:var(--red-s);color:var(--red)">Iran</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="side-card">
-          <div class="sc-head"><div class="sc-title">Quick glossary</div></div>
-          <div class="gloss-item"><span class="gtag">IRGC</span><span class="gtext">Islamic Revolutionary Guard Corps — Iran's elite military. Controls missiles and nuclear programme. Answers only to Khamenei.</span></div>
-          <div class="gloss-item"><span class="gtag">IDF</span><span class="gtext">Israel Defense Forces — Israel's combined army, navy, and air force.</span></div>
-          <div class="gloss-item"><span class="gtag">IAEA</span><span class="gtext">International Atomic Energy Agency — UN body that checks if countries are secretly building nuclear weapons.</span></div>
-          <div class="gloss-item"><span class="gtag">CENTCOM</span><span class="gtext">US Central Command — America's military HQ for the Middle East, based in Qatar.</span></div>
-          <div class="gloss-item"><span class="gtag">Hamas</span><span class="gtext">Militant group ruling Gaza. Carried out the Oct 7, 2023 attack. Funded and armed by Iran.</span></div>
-          <div class="gloss-item"><span class="gtag">Hezbollah</span><span class="gtext">Iran's proxy army in Lebanon. Has 150,000+ rockets aimed at Israel.</span></div>
-        </div>
-      </div>
+      <!-- SIDEBAR -->
+      <div style="display:none">
     </div>
 
-  <div class="section-wrap">
-    <div class="sh" id="orgs"><div class="sh-title">All organisations involved</div><div class="sh-sub">Full names and roles</div></div>
-    <div class="orgs-grid">
-      <div class="org-card"><div class="oa">IRGC</div><div class="of">Islamic Revolutionary Guard Corps</div><div class="od">Iran's elite military. Controls all missiles and nuclear sites. Answers only to Khamenei, not the elected government.</div></div>
-      <div class="org-card"><div class="oa">IDF</div><div class="of">Israel Defense Forces</div><div class="od">Israel's combined military — army, navy, air force. Mandatory service for all Israeli citizens over 18.</div></div>
-      <div class="org-card"><div class="oa">IAEA</div><div class="of">International Atomic Energy Agency</div><div class="od">UN body monitoring nuclear programmes globally. Iran expelled their inspectors in 2024, triggering today's crisis.</div></div>
-      <div class="org-card"><div class="oa">CENTCOM</div><div class="of">US Central Command</div><div class="od">US military HQ for the Middle East. Coordinates all US operations in the region. Based in Qatar.</div></div>
-      <div class="org-card"><div class="oa">CIA</div><div class="of">Central Intelligence Agency</div><div class="od">America's main spy agency. Provided intelligence on Iran's nuclear progress used to plan and justify the strikes.</div></div>
-      <div class="org-card"><div class="oa">Mossad</div><div class="of">Israel's National Intelligence Agency</div><div class="od">Israel's spy agency. Has previously sabotaged Iranian nuclear sites and eliminated Iranian nuclear scientists.</div></div>
-      <div class="org-card"><div class="oa">Hamas</div><div class="of">Harakat al-Muqawama al-Islamiyya</div><div class="od">Militant group controlling Gaza. Carried out Oct 7, 2023 attack. Funded and armed by Iran.</div></div>
-      <div class="org-card"><div class="oa">Hezbollah</div><div class="of">Hizb Allah — Party of God</div><div class="od">Iran's most powerful proxy army based in Lebanon. Has 150,000+ rockets aimed at Israel.</div></div>
-      <div class="org-card"><div class="oa">UNSC</div><div class="of">UN Security Council</div><div class="od">15-member UN body for international peace. Five permanent members with veto power. Currently in emergency session.</div></div>
-      <div class="org-card"><div class="oa">OPEC</div><div class="of">Organization of Petroleum Exporting Countries</div><div class="od">13-nation group controlling 40% of world oil supply. Key player whenever Middle East conflict threatens oil.</div></div>
-      <div class="org-card"><div class="oa">JCPOA</div><div class="of">Joint Comprehensive Plan of Action</div><div class="od">The 2015 nuclear deal between Iran and world powers. Trump pulled the US out in 2018. Its collapse directly led to today's crisis.</div></div>
-      <div class="org-card"><div class="oa">Knesset</div><div class="of">Israeli Parliament</div><div class="od">Israel's 120-member parliament in Jerusalem. Approves major military decisions.</div></div>
-    </div>
-  </div>
-</div><!-- /page-live -->
 
-<!-- ═══ PAGE 2: HISTORY ═══ -->
-<div id="page-history" class="page">
     <!-- TIMELINE -->
     <div class="section-wrap">
       <div class="sh" id="timeline"><div class="sh-title">Timeline — how it started</div><div class="sh-sub">1948 to today</div></div>
@@ -1013,10 +1030,24 @@ window.addEventListener('load', () => {
       </script>
     </div>
 
-</div><!-- /page-history -->
-
-<!-- ═══ PAGE 3: CONNECTIONS ═══ -->
-<div id="page-connections" class="page">
+    <!-- ORGS -->
+    <div class="section-wrap">
+      <div class="sh" id="orgs"><div class="sh-title">All organisations involved</div><div class="sh-sub">Full names and roles</div></div>
+      <div class="orgs-grid">
+        <div class="org-card"><div class="oa">IRGC</div><div class="of">Islamic Revolutionary Guard Corps</div><div class="od">Iran's elite military. Controls all missiles and nuclear sites. Answers only to Khamenei, not the elected government.</div></div>
+        <div class="org-card"><div class="oa">IDF</div><div class="of">Israel Defense Forces</div><div class="od">Israel's combined military — army, navy, air force. Mandatory service for all Israeli citizens over 18.</div></div>
+        <div class="org-card"><div class="oa">IAEA</div><div class="of">International Atomic Energy Agency</div><div class="od">UN body monitoring nuclear programmes globally. Iran expelled their inspectors in 2024, triggering today's crisis.</div></div>
+        <div class="org-card"><div class="oa">CENTCOM</div><div class="of">US Central Command</div><div class="od">US military HQ for the Middle East. Coordinates all US operations in the region. Based in Qatar.</div></div>
+        <div class="org-card"><div class="oa">CIA</div><div class="of">Central Intelligence Agency</div><div class="od">America's main spy agency. Provided intelligence on Iran's nuclear progress used to plan and justify the strikes.</div></div>
+        <div class="org-card"><div class="oa">Mossad</div><div class="of">Israel's National Intelligence Agency</div><div class="od">Israel's spy agency. Has previously sabotaged Iranian nuclear sites and eliminated Iranian nuclear scientists.</div></div>
+        <div class="org-card"><div class="oa">Hamas</div><div class="of">Harakat al-Muqawama al-Islamiyya</div><div class="od">Militant group controlling Gaza. Carried out Oct 7, 2023 attack. Funded and armed by Iran.</div></div>
+        <div class="org-card"><div class="oa">Hezbollah</div><div class="of">Hizb Allah — Party of God</div><div class="od">Iran's most powerful proxy army based in Lebanon. Has 150,000+ rockets aimed at Israel.</div></div>
+        <div class="org-card"><div class="oa">UNSC</div><div class="of">UN Security Council</div><div class="od">15-member UN body for international peace. Five permanent members with veto power. Currently in emergency session.</div></div>
+        <div class="org-card"><div class="oa">OPEC</div><div class="of">Organization of Petroleum Exporting Countries</div><div class="od">13-nation group controlling 40% of world oil supply. Key player whenever Middle East conflict threatens oil.</div></div>
+        <div class="org-card"><div class="oa">JCPOA</div><div class="of">Joint Comprehensive Plan of Action</div><div class="od">The 2015 nuclear deal between Iran and world powers. Trump pulled the US out in 2018. Its collapse directly led to today's crisis.</div></div>
+        <div class="org-card"><div class="oa">Knesset</div><div class="of">Israeli Parliament</div><div class="od">Israel's 120-member parliament in Jerusalem. Approves major military decisions.</div></div>
+      </div>
+    </div>
 
     <!-- WHY CONNECTED -->
     <div class="section-wrap">
@@ -1036,8 +1067,6 @@ window.addEventListener('load', () => {
       </div>
     </div>
 
-</div><!-- /page-connections -->
-
   </div><!-- /main-content -->
 
 
@@ -1048,65 +1077,18 @@ window.addEventListener('load', () => {
   <div class="footer-r">Sources: NDTV · Reuters · AP · Al Jazeera · Times of Israel<br>AI summaries · Updated every 6 hours</div>
 </footer>
 
-function switchPage(id, btn) {
-  document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
-  document.querySelectorAll('.nl').forEach(b => b.classList.remove('on'));
-  document.getElementById('page-' + id).classList.add('active');
-  btn.classList.add('on');
-  window.scrollTo({ top: 0, behavior: 'smooth' });
-  // re-trigger bar animations
-  setTimeout(() => {
-    document.querySelectorAll('.bar[data-w]').forEach((bar, i) => {
-      bar.style.width = '0';
-      setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 300 + i * 150);
-    });
-  }, 100);
-  // re-init timeline observer when switching to history
-  if (id === 'history') {
-    const colorClass = { red:'active-red', green:'active-green', amber:'active-amber', neutral:'active' };
-    const cards = document.querySelectorAll('.tl-card');
-    const connectors = document.querySelectorAll('.tl-connector');
-    const obs = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        const el = entry.target;
-        if (entry.isIntersecting) {
-          if (el.classList.contains('tl-card')) {
-            el.classList.add('visible');
-            setTimeout(() => {
-              const color = el.dataset.color;
-              cards.forEach(c => c.classList.remove('active','active-red','active-green','active-amber'));
-              el.classList.add(colorClass[color] || 'active');
-            }, 100);
-          }
-          if (el.classList.contains('tl-connector')) {
-            el.classList.add('visible');
-            const idx = Array.from(connectors).indexOf(el);
-            const prevCard = cards[idx];
-            if (prevCard) {
-              const c = prevCard.dataset.color;
-              if (c === 'red')   el.classList.add('active-red');
-              if (c === 'green') el.classList.add('active-green');
-              if (c === 'amber') el.classList.add('active-amber');
-            }
-            setTimeout(() => el.classList.add('drawn'), 80);
-          }
-        }
-      });
-    }, { threshold: 0.35 });
-    cards.forEach(c => obs.observe(c));
-    connectors.forEach(c => obs.observe(c));
-  }
-}
-</script>
-
 <script>
-function toggleFull(ni) {
-  const full = ni.querySelector('.ni-full');
-  const btn = ni.querySelector('.read-btn');
+function toggleFull(btn, event) {
+  if (event) event.stopPropagation();
+  // Accept either the button or the card itself
+  var card = btn.classList.contains('ni') ? btn : btn.closest('.ni');
+  if (!card) return;
+  const full = card.querySelector('.ni-full');
+  const readBtn = card.querySelector('.read-btn');
   if (!full) return;
   const open = full.style.display === 'block';
   full.style.display = open ? 'none' : 'block';
-  if (btn) btn.textContent = open ? 'Read full analysis ↓' : 'Close ↑';
+  if (readBtn) readBtn.textContent = open ? 'Read full analysis ↓' : 'Close ↑';
 }
 document.querySelectorAll('.nl').forEach(l => {
   l.addEventListener('click', () => {
@@ -1282,12 +1264,14 @@ document.addEventListener('click', e => {
 attachPillHandlers();
 </script>
 
+
+
 <!-- ── LIVE DATA INJECTION ──────────────────────────────────────────────
      live_data.js is generated by dashboard.py every 6 hours.
      If it's absent (e.g. first load or local dev), the page shows
      the static fallback content already in the HTML — nothing breaks.
 ──────────────────────────────────────────────────────────────────────── -->
-<script src="live_data.js" onerror="console.log('live_data.js not found')"></script>
+<script src="live_data.js" onerror="void 0"></script>
 <script>
 (function () {
   const D = window.WARWATCH_LIVE;
@@ -1345,8 +1329,14 @@ attachPillHandlers();
     const shSub = document.querySelector('.sh-sub');
     if (shSub) shSub.textContent = `${D.newsCards.length} updates · ${D.generatedAt}`;
     if (list) {
-      list.innerHTML = D.newsCards.map(c => `
-        <div class="ni" onclick="toggleFull(this)">
+      list.innerHTML = D.newsCards.map(c => {
+        // Build expanded content: prefer fullAnalysis, fall back to summary + whyTxt
+        let fullHtml = '';
+        if (c.fullAnalysis) {
+          fullHtml = c.fullAnalysis.split('\n').filter(p => p.trim()).map(p => `<p>${p}</p>`).join('');
+        }
+        return `
+        <div class="ni">
           <div class="ni-top">
             <div class="ni-badges">
               <span class="badge ${sigBadge[c.badgeLabel] || 'b-gray'}">${c.badgeLabel}</span>
@@ -1361,10 +1351,19 @@ attachPillHandlers();
             <div class="why-lbl">Context</div>
             <div class="why-txt">${c.whyTxt}</div>
           </div>` : ''}
-          <button class="read-btn">Read full analysis ↓</button>
+          <div class="ni-full" style="display:none">${fullHtml}</div>
+          <button class="read-btn" onclick="toggleFull(this, event)">Read full analysis \u2193</button>
+          ${c.orgs && c.orgs.length ? `
+          <div class="orgs-row" onclick="event.stopPropagation()">
+            <div class="orgs-lbl">Organisations involved</div>
+            <div class="pills">
+              ${c.orgs.map(o => `<span class="pill ${actorPill[o] || 'p-gray'}">${o}</span>`).join('')}
+            </div>
+          </div>` : ''}
         </div>
-      `).join('');
+      `}).join('');
     }
+    setTimeout(markRecentCards, 100);
   }
 
   // ── 5. "Last updated" shown in footer ────────────────────────────────
@@ -1376,32 +1375,18 @@ attachPillHandlers();
 
   // ── 6. Sidebar executive summary card (append after people card) ──────
   if (D.execSummary) {
-    const sc = document.querySelector('.side-card');
-    if (sc) {
+    const newsList = document.querySelector('.news-list');
+    if (newsList) {
       const summaryCard = document.createElement('div');
-      summaryCard.className = 'side-card';
+      summaryCard.style.cssText = 'background:var(--card);border:1px solid var(--border);border-radius:var(--r-lg);padding:20px 28px;margin-bottom:16px;display:flex;align-items:flex-start;gap:24px;flex-wrap:wrap;';
       summaryCard.innerHTML = `
-        <div class="sc-head">
-          <div class="sc-title">Latest AI Summary</div>
+        <div style="flex:1;min-width:200px">
+          <div style="font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:6px">Latest AI Summary · ${D.generatedAt}</div>
+          <p style="font-size:13.5px;color:var(--text2);line-height:1.75;font-weight:300;margin:0">${D.execSummary}</p>
         </div>
-        <div style="padding:16px 20px">
-          <div style="font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.1em;
-            text-transform:uppercase;color:var(--text3);margin-bottom:10px">
-            ${D.generatedAt}
-          </div>
-          <p style="font-size:13px;color:var(--text2);line-height:1.75;font-weight:300">
-            ${D.execSummary}
-          </p>
-          ${D.sentiment ? `
-          <div style="margin-top:14px;padding-top:12px;border-top:1px solid var(--border)">
-            <div style="font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.1em;
-              text-transform:uppercase;color:var(--text3);margin-bottom:8px">Tone</div>
-            <span style="font-family:var(--ff-mono);font-size:11px;font-weight:500;
-              color:var(--amber)">${D.sentiment.overall_tone || ''}</span>
-          </div>` : ''}
-        </div>
+        ${D.sentiment ? `<div style="flex-shrink:0;text-align:right"><div style="font-family:var(--ff-mono);font-size:9.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--text3);margin-bottom:4px">Tone</div><span style="font-family:var(--ff-mono);font-size:12px;font-weight:500;color:var(--amber)">${D.sentiment.overall_tone || ''}</span></div>` : ''}
       `;
-      sc.parentNode.insertBefore(summaryCard, sc);
+      newsList.parentNode.insertBefore(summaryCard, newsList);
     }
   }
 
@@ -1416,7 +1401,295 @@ attachPillHandlers();
   // ── 8. Re-attach pill handlers for any newly rendered pills ──────────
   if (typeof attachPillHandlers === 'function') attachPillHandlers();
 
+  // ── Mark recent cards (within 6 hours) with glow ──────────────────────
+  function markRecentCards() {
+    document.querySelectorAll('.ni').forEach(function(card) {
+      var timeEl = card.querySelector('.ni-time');
+      if (!timeEl) return;
+      var txt = timeEl.textContent.trim();
+      var isRecent = false;
+      if (txt === 'just now') isRecent = true;
+      else if (txt.includes('min ago')) isRecent = true;
+      else if (txt.includes('hr ago') || txt.includes('hrs ago')) {
+        var hrs = parseInt(txt);
+        if (!isNaN(hrs) && hrs <= 6) isRecent = true;
+      }
+      if (isRecent) card.classList.add('ni-recent');
+    });
+  }
+  setTimeout(markRecentCards, 1200);
+
 })();
 </script>
+
+<script>
+function toggleIndia(card) {
+  var full = card.querySelector('.india-full');
+  var btn  = card.querySelector('.india-read-btn');
+  if (!full) return;
+  var isOpen = full.classList.contains('open');
+  full.classList.toggle('open', !isOpen);
+  if (readBtn) readBtn.textContent = isOpen ? 'Read more ↓' : 'Show less ↑';
+}
+
+(function() {
+  var D = window.WARWATCH_LIVE;
+  if (!D || !D.indiaImpact || !D.indiaImpact.length) return;
+
+  var catBadge = {
+    Energy:'b-high', Diaspora:'b-crit', Diplomacy:'b-med',
+    Security:'b-crit', Economy:'b-high', Other:'b-gray'
+  };
+  var catIcon = { Energy:'&#x26fd;', Diaspora:'&#x1f465;', Diplomacy:'&#x1f91d;',
+    Security:'&#x1f6e1;', Economy:'&#x1f4c8;', Other:'&#x1f1ee;&#x1f1f3;' };
+  var sigIcon = { HIGH:'&#x1f534;', MEDIUM:'&#x1f7e1;', LOW:'&#x1f7e2;' };
+
+  var list = document.getElementById('india-list');
+  var sub  = document.getElementById('india-sh-sub');
+  if (!list) return;
+
+  if (sub) sub.textContent = D.indiaImpact.length + ' India angles · ' + (D.generatedAt || '');
+
+  list.innerHTML = D.indiaImpact.map(function(item) {
+    var cat   = item.category || 'Other';
+    var badge = catBadge[cat] || 'b-gray';
+    var icon  = catIcon[cat]  || '&#x1f1ee;&#x1f1f3;';
+    var sents = (item.detail || '').split('. ').filter(function(s){ return s.trim().length > 4; }).slice(0,3);
+    var bullets = sents.map(function(s){
+      return '<div class="india-bullet">' + icon + ' ' + s.trim().replace(/[.]?$/,'') + '.</div>';
+    }).join('');
+    var paras = item.full_detail
+      ? item.full_detail.split('\n').filter(function(p){ return p.trim(); }).map(function(p){ return '<p>'+p+'</p>'; }).join('')
+      : '<p>' + (item.detail || '') + '</p>';
+    var srcTag = item.source ? '<div class="india-source-tag">Source: ' + item.source + '</div>' : '';
+    var sig    = (sigIcon[item.significance] || '') + ' ' + (item.significance || '').toLowerCase();
+    var t      = D.generatedAt ? D.generatedAt.slice(5,16) : '';
+    return '<div class="india-card" onclick="toggleIndia(this)">'
+      + '<div class="india-card-top">'
+      + '<span class="badge ' + badge + '">' + cat + '</span>'
+      + '<span class="badge b-gray" style="font-size:9px">' + sig + '</span>'
+      + '<span class="india-time">' + t + '</span>'
+      + '</div>'
+      + '<div class="india-headline">' + (item.headline || '') + '</div>'
+      + '<div class="india-bullets">' + bullets + '</div>'
+      + '<div class="india-full">' + paras + srcTag + '</div>'
+      + '<button class="india-read-btn">Read more ↓</button>'
+      + '</div>';
+  }).join('');
+})();
+</script>
+
+<!-- ── INDIA FLOATING DRAWER ──────────────────────────────────────────── -->
+<style>
+.india-fab {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 999;
+  height: 48px;
+  border-radius: 999px 0 0 999px;
+  background: #1a1a1a;
+  border: 1.5px solid rgba(255,255,255,0.12);
+  border-right: none;
+  cursor: pointer;
+  box-shadow: -4px 0 20px rgba(0,0,0,0.5);
+  display: flex; align-items: center;
+  gap: 0;
+  padding: 0 16px 0 4px;
+  transition: background .2s, box-shadow .2s;
+}
+.india-fab:hover { background: #252525; box-shadow: -4px 0 24px rgba(0,0,0,0.6); }
+.india-fab-icon {
+  width: 38px; height: 38px;
+  border-radius: 50%;
+  background: #1a1a1a;
+  border: 1.5px solid rgba(255,255,255,0.1);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 22px;
+  flex-shrink: 0;
+}
+.india-fab-inner {
+  font-family: var(--ff-mono);
+  font-size: 11px; font-weight: 600;
+  letter-spacing: .08em; text-transform: uppercase;
+  color: #fff;
+  white-space: nowrap;
+  margin-left: 9px;
+}
+
+.india-drawer {
+  position: fixed;
+  right: -560px;
+  top: 0; bottom: 0;
+  width: 540px;
+  z-index: 998;
+  background: #1e1e1e;
+  border-left: 1px solid rgba(255,255,255,0.08);
+  display: flex; flex-direction: column;
+  transition: right .3s cubic-bezier(.4,0,.2,1);
+  overflow: hidden;
+}
+.india-drawer.open { right: 0; }
+
+.india-drawer-head {
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+  display: flex; align-items: center; justify-content: space-between;
+  flex-shrink: 0;
+}
+.india-drawer-title {
+  font-family: var(--ff-disp);
+  font-size: 18px; font-weight: 600; color: var(--text);
+  display: flex; align-items: center; gap: 8px;
+}
+.india-drawer-close {
+  background: none; border: none; color: var(--text3);
+  font-size: 20px; cursor: pointer; padding: 2px 6px;
+  transition: color .15s;
+}
+.india-drawer-close:hover { color: var(--text); }
+
+.india-drawer-body {
+  flex: 1; overflow-y: auto; padding: 12px;
+  display: flex; flex-direction: column; gap: 8px;
+}
+.india-drawer-body::-webkit-scrollbar { width: 4px; }
+.india-drawer-body::-webkit-scrollbar-track { background: transparent; }
+.india-drawer-body::-webkit-scrollbar-thumb { background: rgba(255,255,255,0.1); border-radius: 2px; }
+
+.idc {
+  background: var(--card);
+  border: 1px solid rgba(255,153,51,0.15);
+  border-radius: 10px;
+  padding: 14px 16px;
+  cursor: pointer;
+  transition: background .15s;
+}
+.idc:hover { background: #272727; }
+.idc-top { display: flex; align-items: center; gap: 6px; margin-bottom: 7px; }
+.idc-headline {
+  font-size: 13px; font-weight: 500; color: var(--text);
+  line-height: 1.45; margin-bottom: 5px;
+}
+.idc-detail {
+  font-size: 12px; color: var(--text2); line-height: 1.7;
+  font-weight: 300; display: none;
+}
+.idc.expanded .idc-detail { display: block; }
+.idc-read {
+  font-family: var(--ff-mono); font-size: 10px; color: var(--blue);
+  background: none; border: none; cursor: pointer; padding: 4px 0 0; display: block;
+}
+</style>
+
+<button class="india-fab" onclick="toggleIndiaDrawer()" title="India News">
+  <span class="india-fab-icon">🇮🇳</span>
+  <span class="india-fab-inner">News!</span>
+</button>
+
+<div class="india-drawer" id="indiaDrawer">
+  <div class="india-drawer-head">
+    <div class="india-drawer-title">India & the War</div>
+    <button class="india-drawer-close" onclick="toggleIndiaDrawer()">✕</button>
+  </div>
+  <div class="india-drawer-body" id="indiaDrawerBody">
+    <div style="font-size:12px;color:var(--text3);text-align:center;padding:20px">Loading...</div>
+  </div>
+</div>
+
+<script>
+function toggleIndiaDrawer() {
+  var drawer = document.getElementById('indiaDrawer');
+  var fab = document.querySelector('.india-fab');
+  drawer.classList.toggle('open');
+  fab.style.display = drawer.classList.contains('open') ? 'none' : 'flex';
+}
+
+(function() {
+  var D = window.WARWATCH_LIVE;
+  var body = document.getElementById('indiaDrawerBody');
+  if (!body) return;
+
+  var catBadge = {
+    Energy:'b-high', Diaspora:'b-crit', Diplomacy:'b-med',
+    Security:'b-crit', Economy:'b-high', Other:'b-gray'
+  };
+
+  // Use live data if available, else use static fallback
+  var staticItems = [
+    { headline: "India scrambles for oil alternatives as Iran supply threatened", detail: "India imports ~7% of its oil from Iran. Disruption means higher petrol prices. Ministry of Petroleum directed refiners to seek supply from UAE, Iraq, US Gulf.", category: "Energy", significance: "HIGH" },
+    { headline: "Indian Consulate Dubai opens 24×7 control room", detail: "Over 3.5 million Indians live in UAE alone. MEA advisory issued: avoid non-essential travel to Iran, Israel, Lebanon.", category: "Diaspora", significance: "HIGH" },
+    { headline: "India walks diplomatic tightrope", detail: "India has strategic ties with Iran via Chabahar port, and is also a US Quad partner with deep Israel defence ties. India abstained from UN votes condemning strikes.", category: "Diplomacy", significance: "MEDIUM" }
+  ];
+
+  var items = (D && D.indiaImpact && D.indiaImpact.length) ? D.indiaImpact : staticItems;
+  var summary = D && D.indiaSummary ? D.indiaSummary : '';
+  var generatedAt = D && D.generatedAt ? D.generatedAt : '';
+
+  function timeAgo(ts) {
+    if (!ts) return 'just now';
+    try {
+      var parts = ts.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/);
+      if (!parts) return ts;
+      var dt = new Date(Date.UTC(+parts[1],+parts[2]-1,+parts[3],+parts[4],+parts[5]));
+      var diff = Math.floor((Date.now() - dt.getTime()) / 1000);
+      if (diff < 60) return 'just now';
+      if (diff < 3600) return Math.floor(diff/60) + ' min ago';
+      if (diff < 86400) { var h=Math.floor(diff/3600); return h + ' hr' + (h>1?'s':'') + ' ago'; }
+      var d=Math.floor(diff/86400); return d + ' day' + (d>1?'s':'') + ' ago';
+    } catch(e) { return ts; }
+  }
+
+  var sigBadgeMap = { HIGH:'b-crit', MEDIUM:'b-high', LOW:'b-gray' };
+
+  var html = '';
+
+  // AI Summary block
+  if (summary) {
+    var paras = summary.split('\n').filter(function(p){ return p.trim(); });
+    html += '<div style="background:rgba(255,153,51,0.07);border:1px solid rgba(255,153,51,0.18);border-radius:10px;padding:14px 16px;margin-bottom:4px">'
+      + '<div style="font-family:var(--ff-mono);font-size:9px;letter-spacing:.1em;text-transform:uppercase;color:#d4892a;margin-bottom:8px">🤖 AI Summary · ' + timeAgo(generatedAt) + '</div>'
+      + paras.map(function(p){ return '<p style="font-size:12.5px;color:var(--text2);line-height:1.75;font-weight:300;margin:0 0 8px">' + p + '</p>'; }).join('')
+      + '</div>';
+  }
+
+  // News cards
+  if (!items.length) {
+    html += '<div style="font-size:12px;color:var(--text3);text-align:center;padding:20px">No India impact data yet.</div>';
+  } else {
+    html += items.map(function(item, i) {
+      var cat = item.category || 'Other';
+      var badge = catBadge[cat] || 'b-gray';
+      var sigBadge = sigBadgeMap[item.significance] || 'b-gray';
+      var detail = item.full_detail || item.detail || '';
+      return '<div class="idc" id="idc-' + i + '">'
+        + '<div class="idc-top">'
+        + '<span class="badge ' + sigBadge + '">' + (item.significance||'').toLowerCase() + '</span>'
+        + '<span class="badge ' + badge + '">' + cat + '</span>'
+        + '<span style="margin-left:auto;font-family:var(--ff-mono);font-size:10px;color:var(--text3)">' + timeAgo(generatedAt) + '</span>'
+        + '</div>'
+        + '<div class="idc-headline">' + (item.headline || '') + '</div>'
+        + '<div style="font-size:12px;color:var(--text2);line-height:1.7;font-weight:300;margin-bottom:6px">' + (item.detail||'') + '</div>'
+        + (detail ? '<div class="idc-detail" style="display:none;font-size:12px;color:var(--text2);line-height:1.75;font-weight:300;margin-top:8px">' + detail + '</div><button class="idc-read" onclick="toggleIdc(' + i + ',event)">Read full analysis ↓</button>' : '')
+        + '</div>';
+    }).join('');
+  }
+
+  body.innerHTML = html;
+})();
+
+function toggleIdc(i, e) {
+  if (e) e.stopPropagation();
+  var card = document.getElementById('idc-' + i);
+  var full = card.querySelector('.idc-detail');
+  var btn = card.querySelector('.idc-read');
+  if (!full) return;
+  var open = full.style.display === 'block';
+  full.style.display = open ? 'none' : 'block';
+  if (btn) btn.textContent = open ? 'Read full analysis ↓' : 'Close ↑';
+}
+</script>
+
 </body>
 </html>
