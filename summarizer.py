@@ -83,6 +83,7 @@ Each paragraph 2-4 sentences. Simple language, no jargon without explanation."""
 
 
 
+def generate_report(articles):
     if not articles:
         return {"error": "No articles found", "timestamp": datetime.utcnow().isoformat()}
 
