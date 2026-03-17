@@ -1,17 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 14:21 UTC",
+  "generatedAt": "2026-03-17 15:37 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iran: Iran Rejects Ceasefire Push \u00b7 Mojtaba has rejected ceasefire pushes and is very serious about revenge on the U\u2026",
-    "Iran: Hormuz Escape Route \u00b7 Ships are navigating the Hormuz Strait on Iran's terms, suggesting that Iran has\u2026",
-    "Iran: Exiled Iran Prince Backs Noble Prize Winner \u00b7 Exiled Iran Prince Reza Pahlavi has backed a Noble Prize winner to lead a justic\u2026",
-    "US: Trump Claims Surprise Over Iran Retaliation \u00b7 US President Trump has claimed surprise over Iran's retaliation against Gulf all\u2026"
+    "US: Trump Official Resigns Over Iran War \u00b7 A top Trump official has resigned over the Iran war, citing conscience as the re\u2026",
+    "Israel: Israel Claims Killing of Iranian Figure \u00b7 Israel has claimed the killing of Ali Larijani, a key Iranian figure, in a recen\u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-17 14:21 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-17 15:37 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -47,55 +45,29 @@ window.WARWATCH_LIVE = {
   ],
   "newsCards": [
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Iran Rejects Ceasefire Push",
-      "summary": "Mojtaba has rejected ceasefire pushes and is very serious about revenge on the US and Israel, according to reports. This has increased the tension in the region and raised concerns about further escalation.",
-      "whyTxt": "Iran's rejection of ceasefire pushes and its determination to seek revenge on the US and Israel has increased the escalation level.",
-      "orgs": [
-        "Iran"
-      ]
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Hormuz Escape Route",
-      "summary": "Ships are navigating the Hormuz Strait on Iran's terms, suggesting that Iran has significant control over the region. This has raised concerns about the safety of shipping lanes and the potential for further conflict.",
-      "whyTxt": "Iran's rejection of ceasefire pushes and its determination to seek revenge on the US and Israel has increased the escalation level.",
-      "orgs": [
-        "Iran"
-      ]
-    },
-    {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Exiled Iran Prince Backs Noble Prize Winner",
-      "summary": "Exiled Iran Prince Reza Pahlavi has backed a Noble Prize winner to lead a justice panel, potentially paving the way for a new leadership in Iran. However, the impact of this development on the current conflict is unclear.",
-      "whyTxt": "Iran's rejection of ceasefire pushes and its determination to seek revenge on the US and Israel has increased the escalation level.",
-      "orgs": [
-        "Iran"
-      ]
-    },
-    {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
       "time": "just now",
-      "headline": "Trump Claims Surprise Over Iran Retaliation",
-      "summary": "US President Trump has claimed surprise over Iran's retaliation against Gulf allies despite warnings, raising questions about the US's preparedness for the conflict. This has sparked debate about the US's strategy in the region.",
-      "whyTxt": "Iran's rejection of ceasefire pushes and its determination to seek revenge on the US and Israel has increased the escalation level.",
+      "headline": "Trump Official Resigns Over Iran War",
+      "summary": "A top Trump official has resigned over the Iran war, citing conscience as the reason. This development highlights the internal divisions within the US administration regarding the conflict.",
+      "whyTxt": "The killing of a key Iranian figure and the resignation of a top Trump official over the Iran war have contributed to the increased escalation level.",
       "orgs": [
         "US"
+      ]
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "just now",
+      "headline": "Israel Claims Killing of Iranian Figure",
+      "summary": "Israel has claimed the killing of Ali Larijani, a key Iranian figure, in a recent operation. This development is seen as a significant blow to Iran's wartime efforts.",
+      "whyTxt": "The killing of a key Iranian figure and the resignation of a top Trump official over the Iran war have contributed to the increased escalation level.",
+      "orgs": [
+        "Israel"
       ]
     },
     {
@@ -105,33 +77,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "The US's response to Iran's rejection of ceasefire pushes, Israel's military preparedness, and the impact of the conflict on global oil prices",
-      "whyTxt": "The US-Israel-Iran conflict continues to escalate with Iran rejecting ceasefire pushes and seeking revenge on the US and Israel. The situation remains tense with ships navigating the Hormuz Strait on Iran's terms. The conflict has not directly impacted India yet, but the situation is being closely monitored.",
+      "summary": "Monitor US administration responses to the resignation, Israel's next military moves, and Iran's potential retaliation in the next 6 hours.",
+      "whyTxt": "The US-Israel-Iran conflict has seen recent developments with a top Trump official resigning over the Iran war and Israel claiming the killing of a key Iranian figure. The situation remains tense with no clear signs of de-escalation. The US and Israel continue to take a strong stance against Iran, while Iran maintains its defensive position.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "TENSE",
-    "us_stance": "The US is maintaining a strong stance against Iran, but its surprise over Iran's retaliation has raised questions about its preparedness.",
-    "israel_stance": "Israel is closely monitoring the situation and is prepared to defend itself against any potential attacks from Iran.",
-    "iran_stance": "Iran is determined to seek revenge on the US and Israel, and its rejection of ceasefire pushes has increased the tension in the region."
+    "us_stance": "The US remains committed to its strong stance against Iran, with some officials willing to resign rather than support the war.",
+    "israel_stance": "Israel continues to take a strong military stance against Iran, with recent operations targeting key Iranian figures.",
+    "iran_stance": "Iran maintains its defensive position, with no clear signs of backing down in the face of US and Israeli pressure."
   },
   "terms": [
     {
-      "term": "Hormuz Strait",
-      "simple_explanation": "A strategic waterway in the Middle East that connects the Persian Gulf to the Gulf of Oman"
-    },
-    {
-      "term": "Ceasefire push",
-      "simple_explanation": "An effort to stop the fighting and establish a temporary peace"
+      "term": "Wartime 'Khamenei'",
+      "simple_explanation": "A reference to a high-ranking Iranian official, similar in importance to the Supreme Leader Ali Khamenei."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 12:03 UTC",
-      "l": "MEDIUM",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-16 13:53 UTC",
       "l": "HIGH",
@@ -226,8 +189,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 14:21 UTC",
       "l": "MEDIUM",
       "tone": "TENSE"
+    },
+    {
+      "t": "2026-03-17 15:37 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues to escalate with Iran rejecting ceasefire pushes and seeking revenge on the US and Israel. The situation remains tense with ships navigating the Hormuz Strait on Iran's terms. The conflict has not directly impacted India yet, but the situation is being closely monitored.",
-  "totalReports": 22
+  "execSummary": "The US-Israel-Iran conflict has seen recent developments with a top Trump official resigning over the Iran war and Israel claiming the killing of a key Iranian figure. The situation remains tense with no clear signs of de-escalation. The US and Israel continue to take a strong stance against Iran, while Iran maintains its defensive position.",
+  "totalReports": 23
 };
