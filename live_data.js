@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 21:53 UTC",
+  "generatedAt": "2026-03-17 22:25 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Israel: Israel Claims Victory \u00b7 Israel's foreign minister stated that the country has won the war with Iran, but\u2026",
-    "Canada: Canada Refuses to Join Offensive Action \u00b7 Canada stated that it was not consulted on the Iran war and will not join any of\u2026",
-    "US: US Pressures Media on Coverage \u00b7 The US is increasing pressure on media outlets to change their coverage of the M\u2026"
+    "Israel: Israel Vows To Neutralize Iran's New Supreme Leader \u00b7 Israel has vowed to neutralize Iran's new Supreme Leader Mojtaba Khamenei, incre\u2026",
+    "Iran: Iran Confirms Death Of Security Chief Larijani \u00b7 Iran has confirmed the death of its security chief Larijani, which is seen as a \u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-17 21:53 UTC",
-    "sourcesUsed": 8
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-17 22:25 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,10 +49,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "Israel",
-      "time": "just now",
-      "headline": "Israel Claims Victory",
-      "summary": "Israel's foreign minister stated that the country has won the war with Iran, but goals remain unmet. This statement may lead to further escalation or de-escalation depending on Iran's response.",
-      "whyTxt": "Israel's claim of victory and the US's increased pressure on media coverage may lead to further escalation.",
+      "time": "1 min ago",
+      "headline": "Israel Vows To Neutralize Iran's New Supreme Leader",
+      "summary": "Israel has vowed to neutralize Iran's new Supreme Leader Mojtaba Khamenei, increasing tensions between the two nations. This move is seen as a significant escalation of the conflict, with potential implications for regional stability.",
+      "whyTxt": "Israel's vow to neutralize Iran's new Supreme Leader has increased tensions and raised the risk of further conflict.",
       "orgs": [
         "Israel"
       ]
@@ -61,27 +60,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Canada",
-      "time": "just now",
-      "headline": "Canada Refuses to Join Offensive Action",
-      "summary": "Canada stated that it was not consulted on the Iran war and will not join any offensive action. This decision may impact the international community's response to the conflict.",
-      "whyTxt": "Israel's claim of victory and the US's increased pressure on media coverage may lead to further escalation.",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "1 min ago",
+      "headline": "Iran Confirms Death Of Security Chief Larijani",
+      "summary": "Iran has confirmed the death of its security chief Larijani, which is seen as a significant blow to the country's security apparatus. The circumstances surrounding his death are unclear, but it is likely to have implications for Iran's internal security and its ability to respond to external threats.",
+      "whyTxt": "Israel's vow to neutralize Iran's new Supreme Leader has increased tensions and raised the risk of further conflict.",
       "orgs": [
-        "Canada"
-      ]
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "just now",
-      "headline": "US Pressures Media on Coverage",
-      "summary": "The US is increasing pressure on media outlets to change their coverage of the Middle East war. This move may impact the way the conflict is reported and perceived by the public.",
-      "whyTxt": "Israel's claim of victory and the US's increased pressure on media coverage may lead to further escalation.",
-      "orgs": [
-        "US"
+        "Iran"
       ]
     },
     {
@@ -89,31 +75,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "just now",
+      "time": "1 min ago",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor Iran's response to Israel's claim of victory, the US's continued pressure on media coverage, and the international community's reaction to the conflict.",
-      "whyTxt": "The US-Israel-Iran war continues with Israel claiming victory, but goals remain unmet. The international community is watching closely, with Canada refusing to join offensive action and the US ramping up pressure on media coverage. India is advised to maintain a 90-day buffer stock of oil amid Middle East tensions.",
+      "summary": "Monitor Israel's military movements, Iran's response to the death of its security chief, and the US's stance on the conflict over the next 6 hours.",
+      "whyTxt": "The US-Israel-Iran conflict continues to escalate with Israel vowing to neutralize Iran's new Supreme Leader Mojtaba Khamenei and Iran confirming the death of its security chief Larijani. The situation remains tense with no clear signs of de-escalation. The conflict has significant implications for regional stability and global security.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "TENSE",
-    "us_stance": "The US is taking a firm stance on the conflict, increasing pressure on media coverage and potentially leading to further escalation.",
-    "israel_stance": "Israel claims to have won the war, but goals remain unmet, indicating a complex and ongoing situation.",
-    "iran_stance": "Iran's stance is not explicitly stated in the provided articles, but the country's response to Israel's claim of victory will be crucial in determining the conflict's trajectory."
+    "us_stance": "The US has not made any significant statements on the recent developments, but its support for Israel is likely to continue.",
+    "israel_stance": "Israel has taken a hardline stance against Iran, vowing to neutralize its new Supreme Leader and increasing the risk of further conflict.",
+    "iran_stance": "Iran has confirmed the death of its security chief and is likely to respond to Israel's vow to neutralize its new Supreme Leader, increasing the risk of further escalation."
   },
   "terms": [
     {
-      "term": "Buffer Stock",
-      "simple_explanation": "A buffer stock is a reserve of goods or resources, in this case, oil, maintained to ensure a steady supply in case of disruptions or shortages."
+      "term": "Neutralize",
+      "simple_explanation": "To render someone or something ineffective or powerless, often through military or diplomatic means."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 18:09 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-16 19:19 UTC",
       "l": "MEDIUM",
@@ -208,8 +189,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 21:53 UTC",
       "l": "MEDIUM",
       "tone": "TENSE"
+    },
+    {
+      "t": "2026-03-17 22:25 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues with Israel claiming victory, but goals remain unmet. The international community is watching closely, with Canada refusing to join offensive action and the US ramping up pressure on media coverage. India is advised to maintain a 90-day buffer stock of oil amid Middle East tensions.",
-  "totalReports": 27
+  "execSummary": "The US-Israel-Iran conflict continues to escalate with Israel vowing to neutralize Iran's new Supreme Leader Mojtaba Khamenei and Iran confirming the death of its security chief Larijani. The situation remains tense with no clear signs of de-escalation. The conflict has significant implications for regional stability and global security.",
+  "totalReports": 28
 };
