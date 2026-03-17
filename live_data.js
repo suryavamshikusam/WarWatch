@@ -1,71 +1,57 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 16:44 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-17 17:43 UTC",
+  "escalationLevel": "LOW",
   "alerts": [
-    "US: US Official Exits Over Iran \u00b7 A top US official has exited their position due to disagreements over Iran polic\u2026",
-    "Other: American Arrested In India \u00b7 An American, Matthew VanDyke, has been arrested in India over drone warfare trai\u2026"
+    "Other: Arrests in India \u00b7 7 individuals, including Americans and Ukrainians, were arrested in India under \u2026"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-17 16:44 UTC",
-    "sourcesUsed": 2
+    "tension": "LOW",
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-17 17:43 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 54,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 20,
+      "lvl": "LOW",
+      "color": "var(--green)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 46,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 12,
+      "lvl": "LOW",
+      "color": "var(--green)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 53,
+      "pct": 75,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 49,
+      "pct": 15,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 44,
+      "pct": 10,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "just now",
-      "headline": "US Official Exits Over Iran",
-      "summary": "A top US official has exited their position due to disagreements over Iran policy. This development has increased tensions between the US and Iran, with the US taking a harder stance against Iran.",
-      "whyTxt": "The exit of a top US official over Iran has increased tensions between the US and Iran.",
-      "orgs": [
-        "US"
-      ]
-    },
-    {
       "badgeClass": "b-gray",
       "badgeLabel": "Low",
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "just now",
-      "headline": "American Arrested In India",
-      "summary": "An American, Matthew VanDyke, has been arrested in India over drone warfare training. This development has implications for India's security and diplomacy, particularly with regards to its relations with the US and Iran.",
-      "whyTxt": "The exit of a top US official over Iran has increased tensions between the US and Iran.",
+      "headline": "Arrests in India",
+      "summary": "7 individuals, including Americans and Ukrainians, were arrested in India under anti-terror law. The arrests were made in accordance with Indian law and do not appear to be directly related to the US-Israel-Iran conflict.",
+      "whyTxt": "No significant military or diplomatic developments were reported in the provided articles.",
       "orgs": [
         "Other"
       ]
@@ -77,29 +63,19 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor US-Iran relations, India's response to the arrest of the American, and any developments regarding Israel's stance.",
-      "whyTxt": "The US-Israel-Iran conflict continues with recent developments including the exit of a top US official over Iran and the arrest of an American in India. The situation remains tense with no clear signs of de-escalation. The conflict's impact on India is also being felt, particularly with regards to the arrest of an American in India over drone warfare training.",
+      "summary": "Monitor for any statements from the US, Israel, or Iran regarding the conflict, as well as any developments in the Indian arrests under anti-terror law.",
+      "whyTxt": "The US-Israel-Iran conflict continues with no significant developments reported in the provided articles. However, an article from NDTV mentions the arrest of 7 individuals, including Americans and Ukrainians, in India under anti-terror law. The conflict's impact on India is currently limited to this internal security matter.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "TENSE",
-    "us_stance": "The US is taking a harder stance against Iran, with increased tensions and rhetoric.",
-    "israel_stance": "No new developments have been reported regarding Israel's stance.",
-    "iran_stance": "No new developments have been reported regarding Iran's stance."
+    "overall_tone": "STABLE",
+    "us_stance": "No significant statements or actions were reported from the US in the provided articles.",
+    "israel_stance": "No significant statements or actions were reported from Israel in the provided articles.",
+    "iran_stance": "No significant statements or actions were reported from Iran in the provided articles."
   },
-  "terms": [
-    {
-      "term": "Drone warfare training",
-      "simple_explanation": "Training on the use of drones for military or combat purposes."
-    }
-  ],
+  "terms": [],
   "history": [
-    {
-      "t": "2026-03-16 14:54 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-16 15:59 UTC",
       "l": "MEDIUM",
@@ -194,8 +170,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 16:44 UTC",
       "l": "MEDIUM",
       "tone": "TENSE"
+    },
+    {
+      "t": "2026-03-17 17:43 UTC",
+      "l": "LOW",
+      "tone": "STABLE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues with recent developments including the exit of a top US official over Iran and the arrest of an American in India. The situation remains tense with no clear signs of de-escalation. The conflict's impact on India is also being felt, particularly with regards to the arrest of an American in India over drone warfare training.",
-  "totalReports": 24
+  "execSummary": "The US-Israel-Iran conflict continues with no significant developments reported in the provided articles. However, an article from NDTV mentions the arrest of 7 individuals, including Americans and Ukrainians, in India under anti-terror law. The conflict's impact on India is currently limited to this internal security matter.",
+  "totalReports": 25
 };
