@@ -1,45 +1,44 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 09:30 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-17 10:26 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Israel: Israel Targets Iran's Security Chief \u00b7 Israel has targeted Iran's security chief Ali Larijani, with reports unclear on \u2026",
-    "Iran: Toxic Airborne Pollutants Pose Health Risks \u00b7 The bombing in Iran has released toxic airborne pollutants, posing serious healt\u2026",
-    "US: US Oil CEOs Caution Trump Admin \u00b7 US oil CEOs have cautioned the Trump administration on the worsening energy cris\u2026"
+    "Iran: Hormuz Shutdown \u00b7 The shutdown of the Hormuz Strait has affected Asia's crude oil supply, with pip\u2026",
+    "India: India Export Relief \u00b7 India has extended export relief as the Hormuz crisis hits shipments, with chang\u2026"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-17 09:30 UTC",
-    "sourcesUsed": 6
+    "tension": "MEDIUM",
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-17 10:26 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 80,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 60,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 72,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 52,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 30,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 75,
+      "pct": 55,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 70,
+      "pct": 50,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -48,25 +47,12 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "just now",
-      "headline": "Israel Targets Iran's Security Chief",
-      "summary": "Israel has targeted Iran's security chief Ali Larijani, with reports unclear on his current status. This move is seen as a significant escalation in the conflict.",
-      "whyTxt": "Israel's strike on Iran's security chief has heightened tensions and increased the risk of further retaliation.",
-      "orgs": [
-        "Israel"
-      ]
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "just now",
-      "headline": "Toxic Airborne Pollutants Pose Health Risks",
-      "summary": "The bombing in Iran has released toxic airborne pollutants, posing serious health risks to the population. This has raised concerns over the humanitarian impact of the conflict.",
-      "whyTxt": "Israel's strike on Iran's security chief has heightened tensions and increased the risk of further retaliation.",
+      "headline": "Hormuz Shutdown",
+      "summary": "The shutdown of the Hormuz Strait has affected Asia's crude oil supply, with pipelines unable to cover the loss. This has significant implications for global oil supplies and trade.",
+      "whyTxt": "The shutdown of the Hormuz Strait has significant implications for global oil supplies and trade.",
       "orgs": [
         "Iran"
       ]
@@ -74,14 +60,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
+      "actorClass": "p-gray",
+      "actor": "India",
       "time": "just now",
-      "headline": "US Oil CEOs Caution Trump Admin",
-      "summary": "US oil CEOs have cautioned the Trump administration on the worsening energy crisis amid the Iran war. This has sparked concerns over the global economic impact of the conflict.",
-      "whyTxt": "Israel's strike on Iran's security chief has heightened tensions and increased the risk of further retaliation.",
+      "headline": "India Export Relief",
+      "summary": "India has extended export relief as the Hormuz crisis hits shipments, with changes to export policies. This is an effort to mitigate the impact of the crisis on Indian trade.",
+      "whyTxt": "The shutdown of the Hormuz Strait has significant implications for global oil supplies and trade.",
       "orgs": [
-        "US"
+        "India"
       ]
     },
     {
@@ -91,21 +77,21 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor Israel's next move, Iran's response, and the impact on the global energy market in the next 6 hours.",
-      "whyTxt": "The US-Israel-Iran war continues to escalate with Israel targeting Iran's security chief and Iran responding with force. The conflict has sparked concerns over a worsening energy crisis and health risks from airborne pollutants. India's western neighbors are engaged in the conflict, potentially impacting India's economy and diaspora.",
+      "summary": "Monitor the situation in the Hormuz Strait, watch for updates on global oil prices, and track the responses of major countries affected by the crisis.",
+      "whyTxt": "The US-Israel-Iran war has led to the shutdown of the Hormuz Strait, affecting Asia's crude oil supply. India has extended export relief as the crisis hits shipments. The situation remains volatile, with multiple countries affected by the conflict.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "ESCALATING",
-    "us_stance": "The US has maintained a strong stance against Iran, with oil CEOs cautioning the administration on the energy crisis.",
-    "israel_stance": "Israel has continued to target Iranian forces, escalating the conflict.",
-    "iran_stance": "Iran has responded with force, heightening tensions in the region."
+    "overall_tone": "VOLATILE",
+    "us_stance": "The US has not made any significant statements on the Hormuz shutdown, but is likely to be affected by the crisis.",
+    "israel_stance": "Israel has not made any significant statements on the Hormuz shutdown, but is likely to be monitoring the situation closely.",
+    "iran_stance": "Iran has taken a strong stance on the Hormuz shutdown, with significant implications for global oil supplies and trade."
   },
   "terms": [
     {
-      "term": "Basij Force",
-      "simple_explanation": "The Basij Force is a paramilitary volunteer militia in Iran, known for its role in suppressing dissent and supporting the government."
+      "term": "Hormuz Strait",
+      "simple_explanation": "A vital shipping route for oil exports from the Middle East"
     }
   ],
   "history": [
@@ -203,8 +189,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 09:30 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-17 10:26 UTC",
+      "l": "MEDIUM",
+      "tone": "VOLATILE"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues to escalate with Israel targeting Iran's security chief and Iran responding with force. The conflict has sparked concerns over a worsening energy crisis and health risks from airborne pollutants. India's western neighbors are engaged in the conflict, potentially impacting India's economy and diaspora.",
-  "totalReports": 19
+  "execSummary": "The US-Israel-Iran war has led to the shutdown of the Hormuz Strait, affecting Asia's crude oil supply. India has extended export relief as the crisis hits shipments. The situation remains volatile, with multiple countries affected by the conflict.",
+  "totalReports": 20
 };
