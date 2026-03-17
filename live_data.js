@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 15:37 UTC",
+  "generatedAt": "2026-03-17 16:44 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "US: Trump Official Resigns Over Iran War \u00b7 A top Trump official has resigned over the Iran war, citing conscience as the re\u2026",
-    "Israel: Israel Claims Killing of Iranian Figure \u00b7 Israel has claimed the killing of Ali Larijani, a key Iranian figure, in a recen\u2026"
+    "US: US Official Exits Over Iran \u00b7 A top US official has exited their position due to disagreements over Iran polic\u2026",
+    "Other: American Arrested In India \u00b7 An American, Matthew VanDyke, has been arrested in India over drone warfare trai\u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-17 15:37 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-17 16:44 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,24 +50,24 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "just now",
-      "headline": "Trump Official Resigns Over Iran War",
-      "summary": "A top Trump official has resigned over the Iran war, citing conscience as the reason. This development highlights the internal divisions within the US administration regarding the conflict.",
-      "whyTxt": "The killing of a key Iranian figure and the resignation of a top Trump official over the Iran war have contributed to the increased escalation level.",
+      "headline": "US Official Exits Over Iran",
+      "summary": "A top US official has exited their position due to disagreements over Iran policy. This development has increased tensions between the US and Iran, with the US taking a harder stance against Iran.",
+      "whyTxt": "The exit of a top US official over Iran has increased tensions between the US and Iran.",
       "orgs": [
         "US"
       ]
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
+      "badgeClass": "b-gray",
+      "badgeLabel": "Low",
+      "actorClass": "p-gray",
+      "actor": "Other",
       "time": "just now",
-      "headline": "Israel Claims Killing of Iranian Figure",
-      "summary": "Israel has claimed the killing of Ali Larijani, a key Iranian figure, in a recent operation. This development is seen as a significant blow to Iran's wartime efforts.",
-      "whyTxt": "The killing of a key Iranian figure and the resignation of a top Trump official over the Iran war have contributed to the increased escalation level.",
+      "headline": "American Arrested In India",
+      "summary": "An American, Matthew VanDyke, has been arrested in India over drone warfare training. This development has implications for India's security and diplomacy, particularly with regards to its relations with the US and Iran.",
+      "whyTxt": "The exit of a top US official over Iran has increased tensions between the US and Iran.",
       "orgs": [
-        "Israel"
+        "Other"
       ]
     },
     {
@@ -77,29 +77,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor US administration responses to the resignation, Israel's next military moves, and Iran's potential retaliation in the next 6 hours.",
-      "whyTxt": "The US-Israel-Iran conflict has seen recent developments with a top Trump official resigning over the Iran war and Israel claiming the killing of a key Iranian figure. The situation remains tense with no clear signs of de-escalation. The US and Israel continue to take a strong stance against Iran, while Iran maintains its defensive position.",
+      "summary": "Monitor US-Iran relations, India's response to the arrest of the American, and any developments regarding Israel's stance.",
+      "whyTxt": "The US-Israel-Iran conflict continues with recent developments including the exit of a top US official over Iran and the arrest of an American in India. The situation remains tense with no clear signs of de-escalation. The conflict's impact on India is also being felt, particularly with regards to the arrest of an American in India over drone warfare training.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "TENSE",
-    "us_stance": "The US remains committed to its strong stance against Iran, with some officials willing to resign rather than support the war.",
-    "israel_stance": "Israel continues to take a strong military stance against Iran, with recent operations targeting key Iranian figures.",
-    "iran_stance": "Iran maintains its defensive position, with no clear signs of backing down in the face of US and Israeli pressure."
+    "us_stance": "The US is taking a harder stance against Iran, with increased tensions and rhetoric.",
+    "israel_stance": "No new developments have been reported regarding Israel's stance.",
+    "iran_stance": "No new developments have been reported regarding Iran's stance."
   },
   "terms": [
     {
-      "term": "Wartime 'Khamenei'",
-      "simple_explanation": "A reference to a high-ranking Iranian official, similar in importance to the Supreme Leader Ali Khamenei."
+      "term": "Drone warfare training",
+      "simple_explanation": "Training on the use of drones for military or combat purposes."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 13:53 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-16 14:54 UTC",
       "l": "MEDIUM",
@@ -194,8 +189,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 15:37 UTC",
       "l": "MEDIUM",
       "tone": "TENSE"
+    },
+    {
+      "t": "2026-03-17 16:44 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict has seen recent developments with a top Trump official resigning over the Iran war and Israel claiming the killing of a key Iranian figure. The situation remains tense with no clear signs of de-escalation. The US and Israel continue to take a strong stance against Iran, while Iran maintains its defensive position.",
-  "totalReports": 23
+  "execSummary": "The US-Israel-Iran conflict continues with recent developments including the exit of a top US official over Iran and the arrest of an American in India. The situation remains tense with no clear signs of de-escalation. The conflict's impact on India is also being felt, particularly with regards to the arrest of an American in India over drone warfare training.",
+  "totalReports": 24
 };
