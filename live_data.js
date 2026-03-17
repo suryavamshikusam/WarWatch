@@ -1,57 +1,57 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 17:43 UTC",
-  "escalationLevel": "LOW",
+  "generatedAt": "2026-03-17 18:38 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Other: Arrests in India \u00b7 7 individuals, including Americans and Ukrainians, were arrested in India under \u2026"
+    "Other: Global Shipping Costs Surge \u00b7 The war has affected sea routes, leading to a surge in global shipping costs. Th\u2026"
   ],
   "heroStats": {
-    "tension": "LOW",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-17 17:43 UTC",
-    "sourcesUsed": 1
+    "tension": "MEDIUM",
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-17 18:38 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 20,
-      "lvl": "LOW",
-      "color": "var(--green)"
+      "pct": 60,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 12,
-      "lvl": "LOW",
-      "color": "var(--green)"
+      "pct": 52,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 75,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 15,
+      "pct": 55,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 10,
+      "pct": 50,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "just now",
-      "headline": "Arrests in India",
-      "summary": "7 individuals, including Americans and Ukrainians, were arrested in India under anti-terror law. The arrests were made in accordance with Indian law and do not appear to be directly related to the US-Israel-Iran conflict.",
-      "whyTxt": "No significant military or diplomatic developments were reported in the provided articles.",
+      "headline": "Global Shipping Costs Surge",
+      "summary": "The war has affected sea routes, leading to a surge in global shipping costs. This has significant implications for international trade and commerce.",
+      "whyTxt": "The surge in global shipping costs due to Middle East tensions has increased the escalation level.",
       "orgs": [
         "Other"
       ]
@@ -63,24 +63,19 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor for any statements from the US, Israel, or Iran regarding the conflict, as well as any developments in the Indian arrests under anti-terror law.",
-      "whyTxt": "The US-Israel-Iran conflict continues with no significant developments reported in the provided articles. However, an article from NDTV mentions the arrest of 7 individuals, including Americans and Ukrainians, in India under anti-terror law. The conflict's impact on India is currently limited to this internal security matter.",
+      "summary": "Monitor the situation in the Middle East, watch for updates on global shipping costs, and track India's diplomatic efforts in the region.",
+      "whyTxt": "The US-Israel-Iran war has led to increased tensions in the Middle East, affecting global shipping costs and trade routes. India's basmati exports are driven by Gulf nations, and the country's Prime Minister has spoken to the UAE President to work together for restoration of peace. The situation remains volatile, with potential implications for India's economy and diaspora.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "STABLE",
-    "us_stance": "No significant statements or actions were reported from the US in the provided articles.",
-    "israel_stance": "No significant statements or actions were reported from Israel in the provided articles.",
-    "iran_stance": "No significant statements or actions were reported from Iran in the provided articles."
+    "overall_tone": "VOLATILE",
+    "us_stance": "The US stance is not explicitly mentioned in the provided articles.",
+    "israel_stance": "The Israel stance is not explicitly mentioned in the provided articles.",
+    "iran_stance": "The Iran stance is not explicitly mentioned in the provided articles."
   },
   "terms": [],
   "history": [
-    {
-      "t": "2026-03-16 15:59 UTC",
-      "l": "MEDIUM",
-      "tone": "VOLATILE"
-    },
     {
       "t": "2026-03-16 17:05 UTC",
       "l": "MEDIUM",
@@ -175,8 +170,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 17:43 UTC",
       "l": "LOW",
       "tone": "STABLE"
+    },
+    {
+      "t": "2026-03-17 18:38 UTC",
+      "l": "MEDIUM",
+      "tone": "VOLATILE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues with no significant developments reported in the provided articles. However, an article from NDTV mentions the arrest of 7 individuals, including Americans and Ukrainians, in India under anti-terror law. The conflict's impact on India is currently limited to this internal security matter.",
-  "totalReports": 25
+  "execSummary": "The US-Israel-Iran war has led to increased tensions in the Middle East, affecting global shipping costs and trade routes. India's basmati exports are driven by Gulf nations, and the country's Prime Minister has spoken to the UAE President to work together for restoration of peace. The situation remains volatile, with potential implications for India's economy and diaspora.",
+  "totalReports": 26
 };
