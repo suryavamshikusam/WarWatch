@@ -1,45 +1,45 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 08:29 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-17 09:30 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Russian Satellite Intel Guides Iranian Strikes \u00b7 Iran is using Russian satellite intel to guide its strikes on US forces, which h\u2026",
-    "Other: UK and Ukraine to Sign Defence Pact \u00b7 The UK and Ukraine are set to sign a defence pact to counter drone threats amid \u2026",
-    "Israel: Israel Launches Ground Operations in Lebanon \u00b7 Israel has launched limited ground operations in Lebanon, targeting Hezbollah st\u2026"
+    "Israel: Israel Targets Iran's Security Chief \u00b7 Israel has targeted Iran's security chief Ali Larijani, with reports unclear on \u2026",
+    "Iran: Toxic Airborne Pollutants Pose Health Risks \u00b7 The bombing in Iran has released toxic airborne pollutants, posing serious healt\u2026",
+    "US: US Oil CEOs Caution Trump Admin \u00b7 US oil CEOs have cautioned the Trump administration on the worsening energy cris\u2026"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-17 08:29 UTC",
-    "sourcesUsed": 13
+    "tension": "HIGH",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-17 09:30 UTC",
+    "sourcesUsed": 6
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 57,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 80,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 49,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 72,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 53,
+      "pct": 30,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
+      "pct": 75,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 47,
+      "pct": 70,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -48,12 +48,25 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "just now",
+      "headline": "Israel Targets Iran's Security Chief",
+      "summary": "Israel has targeted Iran's security chief Ali Larijani, with reports unclear on his current status. This move is seen as a significant escalation in the conflict.",
+      "whyTxt": "Israel's strike on Iran's security chief has heightened tensions and increased the risk of further retaliation.",
+      "orgs": [
+        "Israel"
+      ]
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "just now",
-      "headline": "Russian Satellite Intel Guides Iranian Strikes",
-      "summary": "Iran is using Russian satellite intel to guide its strikes on US forces, which has raised concerns about the escalating conflict. This development has significant implications for the US and its allies.",
-      "whyTxt": "The involvement of multiple countries and the ongoing strikes in the region are contributing to the escalation of the conflict.",
+      "headline": "Toxic Airborne Pollutants Pose Health Risks",
+      "summary": "The bombing in Iran has released toxic airborne pollutants, posing serious health risks to the population. This has raised concerns over the humanitarian impact of the conflict.",
+      "whyTxt": "Israel's strike on Iran's security chief has heightened tensions and increased the risk of further retaliation.",
       "orgs": [
         "Iran"
       ]
@@ -61,27 +74,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "just now",
-      "headline": "UK and Ukraine to Sign Defence Pact",
-      "summary": "The UK and Ukraine are set to sign a defence pact to counter drone threats amid the Iran war, which highlights the growing concern about the conflict's global implications. This pact may lead to increased cooperation between the two countries.",
-      "whyTxt": "The involvement of multiple countries and the ongoing strikes in the region are contributing to the escalation of the conflict.",
-      "orgs": [
-        "Other"
-      ]
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "Israel",
+      "actor": "US",
       "time": "just now",
-      "headline": "Israel Launches Ground Operations in Lebanon",
-      "summary": "Israel has launched limited ground operations in Lebanon, targeting Hezbollah strongholds, which has resulted in the death of nine people. This development has raised concerns about the conflict spreading to other regions.",
-      "whyTxt": "The involvement of multiple countries and the ongoing strikes in the region are contributing to the escalation of the conflict.",
+      "headline": "US Oil CEOs Caution Trump Admin",
+      "summary": "US oil CEOs have cautioned the Trump administration on the worsening energy crisis amid the Iran war. This has sparked concerns over the global economic impact of the conflict.",
+      "whyTxt": "Israel's strike on Iran's security chief has heightened tensions and increased the risk of further retaliation.",
       "orgs": [
-        "Israel"
+        "US"
       ]
     },
     {
@@ -91,21 +91,21 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "The response of European leaders to the US request for help in securing the Strait of Hormuz, the impact of the conflict on the global economy, and the potential for further escalation in the region.",
-      "whyTxt": "The US-Israel-Iran war continues to escalate with multiple countries getting involved, while India has started escorting vessels in the Strait of Hormuz. The situation remains tense with no clear resolution in sight. European leaders are hesitant to help the US secure the Strait of Hormuz, but inaction is not considered a viable option.",
+      "summary": "Monitor Israel's next move, Iran's response, and the impact on the global energy market in the next 6 hours.",
+      "whyTxt": "The US-Israel-Iran war continues to escalate with Israel targeting Iran's security chief and Iran responding with force. The conflict has sparked concerns over a worsening energy crisis and health risks from airborne pollutants. India's western neighbors are engaged in the conflict, potentially impacting India's economy and diaspora.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US remains committed to its stance on Iran, but is facing opposition from its allies.",
-    "israel_stance": "Israel is taking a strong stance against Iran and its allies, including Hezbollah.",
-    "iran_stance": "Iran is continuing to strike US forces and its allies, using Russian satellite intel to guide its attacks."
+    "us_stance": "The US has maintained a strong stance against Iran, with oil CEOs cautioning the administration on the energy crisis.",
+    "israel_stance": "Israel has continued to target Iranian forces, escalating the conflict.",
+    "iran_stance": "Iran has responded with force, heightening tensions in the region."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A vital shipping route in the Middle East that connects the Persian Gulf to the Gulf of Oman."
+      "term": "Basij Force",
+      "simple_explanation": "The Basij Force is a paramilitary volunteer militia in Iran, known for its role in suppressing dissent and supporting the government."
     }
   ],
   "history": [
@@ -198,8 +198,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 08:29 UTC",
       "l": "MEDIUM",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-17 09:30 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues to escalate with multiple countries getting involved, while India has started escorting vessels in the Strait of Hormuz. The situation remains tense with no clear resolution in sight. European leaders are hesitant to help the US secure the Strait of Hormuz, but inaction is not considered a viable option.",
-  "totalReports": 18
+  "execSummary": "The US-Israel-Iran war continues to escalate with Israel targeting Iran's security chief and Iran responding with force. The conflict has sparked concerns over a worsening energy crisis and health risks from airborne pollutants. India's western neighbors are engaged in the conflict, potentially impacting India's economy and diaspora.",
+  "totalReports": 19
 };
