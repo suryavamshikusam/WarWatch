@@ -514,40 +514,45 @@ footer {
 </style>
 
 <script>
-(function(){
-  const alerts = [
+// Runs after DOMContentLoaded so live_data.js (loaded at bottom of body) has already executed.
+document.addEventListener('DOMContentLoaded', function () {
+  var FALLBACK_ALERTS = [
     "US strikes on Iran's Fordow nuclear facility reported · Iran fires retaliatory missiles at US bases in Iraq · 2 hours ago",
     "Brent crude surges to $97/barrel after Kharg Island strike threat · OPEC holds emergency call · 3 hours ago",
     "Israel places Kharg Island on active target list · IDF reconnaissance flights over Persian Gulf confirmed · 6 hours ago",
     "UN Security Council convenes emergency session · Russia and China call strikes 'illegal aggression' · 1 hour ago",
     "Iran's IRGC declares full war footing · Strait of Hormuz briefly blockaded before reopening · 4 hours ago",
   ];
-  const el = document.getElementById('alert-msg');
-  let alertIdx = 0, charIdx = 0, deleting = false, pauseTimer = null;
+
+  var D = window.WARWATCH_LIVE;
+  var alerts = (D && D.alerts && D.alerts.length) ? D.alerts : FALLBACK_ALERTS;
+
+  // Update the badge label to match live escalation level
+  if (D && D.escalationLevel) {
+    var tag = document.querySelector('.alert-tag');
+    if (tag) {
+      var lvl = D.escalationLevel;
+      tag.textContent = lvl.charAt(0) + lvl.slice(1).toLowerCase();
+    }
+  }
+
+  var el = document.getElementById('alert-msg');
+  var alertIdx = 0, charIdx = 0, deleting = false;
 
   function type() {
-    const current = alerts[alertIdx];
+    var current = alerts[alertIdx];
     if (!deleting) {
       el.textContent = current.slice(0, ++charIdx);
-      if (charIdx === current.length) {
-        deleting = true;
-        pauseTimer = setTimeout(type, 2800);
-        return;
-      }
+      if (charIdx === current.length) { deleting = true; setTimeout(type, 2800); return; }
       setTimeout(type, 28);
     } else {
       el.textContent = current.slice(0, --charIdx);
-      if (charIdx === 0) {
-        deleting = false;
-        alertIdx = (alertIdx + 1) % alerts.length;
-        setTimeout(type, 400);
-        return;
-      }
+      if (charIdx === 0) { deleting = false; alertIdx = (alertIdx + 1) % alerts.length; setTimeout(type, 400); return; }
       setTimeout(type, 14);
     }
   }
   type();
-})();
+});
 </script>
 
 <!-- TENSION BAR -->
@@ -586,17 +591,20 @@ footer {
 </div>
 
 <script>
-window.addEventListener('load', () => {
-  document.querySelectorAll('.bar[data-w]').forEach((bar, i) => {
-    setTimeout(() => {
+// Fallback bar animation for when live_data.js is absent.
+// If WARWATCH_LIVE exists, the injection block handles animation instead.
+document.addEventListener('DOMContentLoaded', function () {
+  if (window.WARWATCH_LIVE && window.WARWATCH_LIVE.tensionMeters) return; // handled by injection
+  document.querySelectorAll('.bar[data-w]').forEach(function (bar, i) {
+    setTimeout(function () {
       bar.style.width = bar.dataset.w + '%';
-    }, 300 + i * 150);
+    }, 300 + i * 160);
   });
 });
 </script>
 
-<div style="width:100%;max-height:340px;overflow:hidden;line-height:0">
-  <img src="war.png" alt="The Conflict" style="width:100%;max-height:340px;object-fit:cover;object-position:center top;display:block">
+<div style="width:100%;max-height:420px;overflow:hidden;line-height:0;padding-top: 10px;">
+  <img src="war.png" alt="The Conflict" style="width:100%;max-height:460px;object-fit:cover;object-position:center;display:block">
 </div>
 
 <div class="page-layout">
@@ -1311,6 +1319,7 @@ attachPillHandlers();
   // ── 3. Tension meters ─────────────────────────────────────────────────
   if (D.tensionMeters) {
     const items = document.querySelectorAll('.tp-item');
+    // First pass: update labels/levels/colors and reset widths to 0
     D.tensionMeters.forEach((m, i) => {
       if (!items[i]) return;
       items[i].querySelector('.tp-lbl').textContent = m.label;
@@ -1318,9 +1327,21 @@ attachPillHandlers();
       lvlEl.textContent = m.lvl;
       lvlEl.style.color = m.color;
       const bar = items[i].querySelector('.bar');
-      bar.dataset.w = m.pct;
+      bar.style.transition = 'none';       // disable transition while resetting
+      bar.style.width = '0';               // reset so animation plays from scratch
       bar.style.background = m.color;
+      bar.dataset.w = m.pct;               // store the live percentage
     });
+    // Second pass: re-enable transition and animate to live values
+    // 80ms delay lets the width:0 reset paint before animating
+    setTimeout(() => {
+      document.querySelectorAll('.tp-item .bar[data-w]').forEach((bar, i) => {
+        bar.style.transition = '';         // restore CSS transition
+        setTimeout(() => {
+          bar.style.width = bar.dataset.w + '%';
+        }, i * 160);
+      });
+    }, 80);
   }
 
   // ── 4. News cards (replace static cards with live bot reports) ────────
@@ -1389,14 +1410,6 @@ attachPillHandlers();
       newsList.parentNode.insertBefore(summaryCard, newsList);
     }
   }
-
-  // ── 7. Re-trigger bar animations (new bars from tension meters) ───────
-  setTimeout(() => {
-    document.querySelectorAll('.bar[data-w]').forEach((bar, i) => {
-      bar.style.width = '0';
-      setTimeout(() => { bar.style.width = bar.dataset.w + '%'; }, 300 + i * 150);
-    });
-  }, 200);
 
   // ── 8. Re-attach pill handlers for any newly rendered pills ──────────
   if (typeof attachPillHandlers === 'function') attachPillHandlers();
