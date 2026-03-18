@@ -1,44 +1,45 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-17 23:34 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-18 03:19 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Iran Refuses to Restore Pre-War Norms in Hormuz \u00b7 Iran has stated that the Strait of Hormuz will not return to pre-war norms as th\u2026",
-    "US: US Faces Opposition from NATO Over Hormuz Support \u00b7 The US is facing opposition from NATO over its request for support in the Hormuz\u2026"
+    "US: US Hits Iran Missiles \u00b7 The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near t\u2026",
+    "Iran: Iranian Airstrikes in Tel Aviv \u00b7 Iran has carried out airstrikes in Tel Aviv, killing 2 Israelis and injuring sev\u2026",
+    "Iran: Debris Falls Over Dubai \u00b7 Debris has fallen over Dubai after air defences intercepted missiles from Iran, \u2026"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-17 23:34 UTC",
-    "sourcesUsed": 2
+    "tension": "HIGH",
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-18 03:19 UTC",
+    "sourcesUsed": 7
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 57,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 80,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 49,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 72,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 53,
+      "pct": 30,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
+      "pct": 75,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 47,
+      "pct": 70,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -47,12 +48,25 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "just now",
+      "headline": "US Hits Iran Missiles",
+      "summary": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, in a significant escalation of the conflict. This move is seen as a strong response to Iranian aggression in the region.",
+      "whyTxt": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, significantly escalating the conflict.",
+      "orgs": [
+        "US"
+      ]
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "just now",
-      "headline": "Iran Refuses to Restore Pre-War Norms in Hormuz",
-      "summary": "Iran has stated that the Strait of Hormuz will not return to pre-war norms as the conflict intensifies. This move is likely to increase tensions in the region and impact global oil supplies.",
-      "whyTxt": "Iran's statement on the Strait of Hormuz indicates a prolonged conflict, increasing the risk of further escalation.",
+      "headline": "Iranian Airstrikes in Tel Aviv",
+      "summary": "Iran has carried out airstrikes in Tel Aviv, killing 2 Israelis and injuring several others. This move is seen as a retaliation to the US strikes on Iranian missiles.",
+      "whyTxt": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, significantly escalating the conflict.",
       "orgs": [
         "Iran"
       ]
@@ -60,14 +74,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "just now",
-      "headline": "US Faces Opposition from NATO Over Hormuz Support",
-      "summary": "The US is facing opposition from NATO over its request for support in the Hormuz region. This development highlights the divisions within the international community regarding the conflict.",
-      "whyTxt": "Iran's statement on the Strait of Hormuz indicates a prolonged conflict, increasing the risk of further escalation.",
+      "headline": "Debris Falls Over Dubai",
+      "summary": "Debris has fallen over Dubai after air defences intercepted missiles from Iran, highlighting the spread of the conflict to other parts of the region. The incident has raised concerns about the safety of civilians in the region.",
+      "whyTxt": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, significantly escalating the conflict.",
       "orgs": [
-        "US"
+        "Iran"
       ]
     },
     {
@@ -77,29 +91,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor developments in the Strait of Hormuz, NATO's response to US requests for support, and potential implications for global oil prices.",
-      "whyTxt": "The US-Israel-Iran war is intensifying with Iran stating that the Strait of Hormuz won't return to pre-war norms. The US is facing opposition from NATO over support for Hormuz. India is not directly mentioned in the provided articles, but the conflict may have indirect implications for the country's energy security.",
+      "summary": "The response of the international community to the escalation of the conflict, the potential for further airstrikes and missile strikes, and the impact on global oil prices.",
+      "whyTxt": "The US-Israel-Iran conflict continues to escalate with airstrikes and missile strikes, while the global economy watches with bated breath. The US has hit Iranian missiles near the Strait of Hormuz, and Iran has retaliated with airstrikes in Tel Aviv. The situation remains volatile, with no clear end in sight.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is pushing for international support in the Hormuz region, but facing opposition from NATO.",
-    "israel_stance": "No new developments have been reported regarding Israel's stance in the conflict.",
-    "iran_stance": "Iran is taking a firm stance, refusing to restore pre-war norms in the Strait of Hormuz."
+    "us_stance": "The US has taken a strong stance against Iranian aggression, using significant military force to hit Iranian missiles.",
+    "israel_stance": "Israel has been targeted by Iranian airstrikes, and is likely to respond strongly to these attacks.",
+    "iran_stance": "Iran has retaliated to US strikes with airstrikes in Tel Aviv, and is likely to continue to escalate the conflict."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A strategic waterway in the Middle East through which a significant portion of the world's oil passes."
+      "term": "Bunker Buster",
+      "simple_explanation": "A type of bomb designed to penetrate deep into the ground before exploding, often used to target underground bunkers or tunnels."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 20:00 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-16 21:32 UTC",
       "l": "MEDIUM",
@@ -194,8 +203,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-17 23:34 UTC",
       "l": "MEDIUM",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-18 03:19 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "The US-Israel-Iran war is intensifying with Iran stating that the Strait of Hormuz won't return to pre-war norms. The US is facing opposition from NATO over support for Hormuz. India is not directly mentioned in the provided articles, but the conflict may have indirect implications for the country's energy security.",
-  "totalReports": 29
+  "execSummary": "The US-Israel-Iran conflict continues to escalate with airstrikes and missile strikes, while the global economy watches with bated breath. The US has hit Iranian missiles near the Strait of Hormuz, and Iran has retaliated with airstrikes in Tel Aviv. The situation remains volatile, with no clear end in sight.",
+  "totalReports": 30
 };
