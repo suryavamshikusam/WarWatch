@@ -1,73 +1,73 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 07:18 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-18 09:06 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Larijani's Message \u00b7 Iran's former speaker, Larijani, has sent a message of defiance to the US and Is\u2026",
-    "India: India's LPG Supply Concerns \u00b7 The Centre is pushing to expand India's PNG network as the Iran war raises conce\u2026"
+    "US: US Uses 'Bunker Busters' Against Iran \u00b7 The US has used 'bunker busters' against Iran, which are specialized bombs desig\u2026",
+    "Israel: Israel Claims Responsibility for Ali Larijani Killing \u00b7 Israel has claimed responsibility for the killing of Ali Larijani, citing Irania\u2026"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-18 07:18 UTC",
-    "sourcesUsed": 2
+    "tension": "HIGH",
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-18 09:06 UTC",
+    "sourcesUsed": 9
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 57,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 80,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 49,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 72,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 53,
+      "pct": 30,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
+      "pct": 75,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 47,
+      "pct": 70,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Larijani's Message",
-      "summary": "Iran's former speaker, Larijani, has sent a message of defiance to the US and Israel before his death, saying 'martyrs make Iran stronger'. This message is seen as a sign of Iran's resolve to continue fighting. The message has been widely reported in Iranian media and has sparked a wave of patriotism among Iranians.",
-      "whyTxt": "The conflict is spreading and affecting global energy markets, but a full-scale war has not been declared yet.",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "1 min ago",
+      "headline": "US Uses 'Bunker Busters' Against Iran",
+      "summary": "The US has used 'bunker busters' against Iran, which are specialized bombs designed to penetrate deep into the ground. This move is seen as an escalation of the conflict.",
+      "whyTxt": "The use of 'bunker busters' by the US and the killing of Ali Larijani by Israel have increased tensions in the region.",
       "orgs": [
-        "Iran"
+        "US"
       ]
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "India",
-      "time": "just now",
-      "headline": "India's LPG Supply Concerns",
-      "summary": "The Centre is pushing to expand India's PNG network as the Iran war raises concerns about LPG supply. This move is seen as a precautionary measure to secure India's energy supply. The expansion of the PNG network is expected to reduce India's reliance on imported LPG and mitigate the impact of the conflict on the country's energy market.",
-      "whyTxt": "The conflict is spreading and affecting global energy markets, but a full-scale war has not been declared yet.",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "1 min ago",
+      "headline": "Israel Claims Responsibility for Ali Larijani Killing",
+      "summary": "Israel has claimed responsibility for the killing of Ali Larijani, citing Iranian residents' intel. This move is seen as a significant escalation of the conflict.",
+      "whyTxt": "The use of 'bunker busters' by the US and the killing of Ali Larijani by Israel have increased tensions in the region.",
       "orgs": [
-        "India"
+        "Israel"
       ]
     },
     {
@@ -75,31 +75,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "just now",
+      "time": "1 min ago",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the situation in the Middle East, watch for any statements from world leaders, and track the global energy market for any significant changes in the next 6 hours.",
-      "whyTxt": "The US-Israel-Iran war continues with rising tensions, and India is taking steps to secure its energy supply. Iran's former speaker, Larijani, has sent a message of defiance to the US and Israel before his death. The conflict is affecting global energy markets, including India's LPG supply.",
+      "summary": "Monitor the situation in the Middle East, watch for any further military action by the US or Israel, and track the response from Iran and other countries in the region.",
+      "whyTxt": "The US has used 'bunker busters' against Iran, and Israel has claimed responsibility for the killing of Ali Larijani, citing Iranian residents' intel. The conflict is ongoing, with various countries reacting to the situation.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has not made any significant statements in the last 24 hours, but its military presence in the region remains strong.",
-    "israel_stance": "Israel has continued to carry out airstrikes against Iranian targets, and its military is on high alert.",
-    "iran_stance": "Iran has vowed to continue fighting and has sent a message of defiance to the US and Israel."
+    "us_stance": "The US is taking a strong stance against Iran, using military force to target its interests.",
+    "israel_stance": "Israel is also taking a strong stance against Iran, claiming responsibility for the killing of Ali Larijani.",
+    "iran_stance": "Iran is responding to the attacks, executing a man convicted of spying for Israel and vowing to retaliate against its enemies."
   },
   "terms": [
     {
-      "term": "PNG network",
-      "simple_explanation": "Piped Natural Gas network, which supplies natural gas to homes and businesses through pipelines"
+      "term": "Bunker Busters",
+      "simple_explanation": "Specialized bombs designed to penetrate deep into the ground, often used to target underground facilities."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 03:55 UTC",
-      "l": "MEDIUM",
-      "tone": "VOLATILE"
-    },
     {
       "t": "2026-03-17 05:19 UTC",
       "l": "MEDIUM",
@@ -194,8 +189,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 07:18 UTC",
       "l": "MEDIUM",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-18 09:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues with rising tensions, and India is taking steps to secure its energy supply. Iran's former speaker, Larijani, has sent a message of defiance to the US and Israel before his death. The conflict is affecting global energy markets, including India's LPG supply.",
-  "totalReports": 33
+  "execSummary": "The US has used 'bunker busters' against Iran, and Israel has claimed responsibility for the killing of Ali Larijani, citing Iranian residents' intel. The conflict is ongoing, with various countries reacting to the situation.",
+  "totalReports": 34
 };
