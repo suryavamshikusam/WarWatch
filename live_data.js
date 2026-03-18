@@ -1,26 +1,27 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 18:50 UTC",
+  "generatedAt": "2026-03-18 19:44 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Other: Dubai Real Estate Resilience \u00b7 Despite the ongoing war, Dubai's real estate market is showing signs of resilien\u2026",
-    "India: Indian Students in Iran \u00b7 The Indian government has been informed that 1,000 Indian students are yet to le\u2026"
+    "Iran: Qatar Gas Facility Attacked \u00b7 Iranian attacks on a gas facility in Qatar have caused extensive damage, highlig\u2026",
+    "US: US Eases Venezuela Oil Sanctions \u00b7 The US has eased oil sanctions on Venezuela to allow trade, aiming to mitigate t\u2026",
+    "India: Air India Resumes Dubai Flights \u00b7 Air India has announced the resumption of flights to Dubai, indicating a potenti\u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-18 18:50 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-18 19:44 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 60,
+      "pct": 57,
       "lvl": "MEDIUM",
       "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 52,
+      "pct": 49,
       "lvl": "MEDIUM",
       "color": "var(--amber)"
     },
@@ -32,40 +33,53 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 55,
+      "pct": 52,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 50,
+      "pct": 47,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "just now",
-      "headline": "Dubai Real Estate Resilience",
-      "summary": "Despite the ongoing war, Dubai's real estate market is showing signs of resilience, with investors seeking safe havens. This could indicate a level of economic stability in the region, but the situation remains uncertain.",
-      "whyTxt": "The conflict is spreading across the Middle East, with various nations taking sides, leading to increased tensions.",
+      "headline": "Qatar Gas Facility Attacked",
+      "summary": "Iranian attacks on a gas facility in Qatar have caused extensive damage, highlighting the conflict's potential to disrupt global energy supplies. The attack has raised concerns about the safety of critical infrastructure in the region.",
+      "whyTxt": "Iran's attacks on a gas facility in Qatar have raised concerns about the conflict's impact on global energy supplies.",
       "orgs": [
-        "Other"
+        "Iran"
       ]
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "just now",
+      "headline": "US Eases Venezuela Oil Sanctions",
+      "summary": "The US has eased oil sanctions on Venezuela to allow trade, aiming to mitigate the impact of rising oil prices due to the conflict. This move may help stabilize global energy markets.",
+      "whyTxt": "Iran's attacks on a gas facility in Qatar have raised concerns about the conflict's impact on global energy supplies.",
+      "orgs": [
+        "US"
+      ]
+    },
+    {
+      "badgeClass": "b-gray",
+      "badgeLabel": "Low",
       "actorClass": "p-gray",
       "actor": "India",
       "time": "just now",
-      "headline": "Indian Students in Iran",
-      "summary": "The Indian government has been informed that 1,000 Indian students are yet to leave Iran, raising concerns about their safety. The government is working to ensure their safe evacuation.",
-      "whyTxt": "The conflict is spreading across the Middle East, with various nations taking sides, leading to increased tensions.",
+      "headline": "Air India Resumes Dubai Flights",
+      "summary": "Air India has announced the resumption of flights to Dubai, indicating a potential return to normalcy for Indian nationals in the region. The move may help facilitate the evacuation of Indian citizens from the conflict zone.",
+      "whyTxt": "Iran's attacks on a gas facility in Qatar have raised concerns about the conflict's impact on global energy supplies.",
       "orgs": [
         "India"
       ]
@@ -77,29 +91,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the evacuation of Indian students from Iran, the US and Israeli military operations, and the Iranian response over the next 6 hours.",
-      "whyTxt": "The US-Israel-Iran war continues with ongoing developments, including the resilience of Dubai's real estate market and concerns over Indian students in Iran. The situation remains volatile, with multiple nations involved. The Indian government is working to ensure the safety of its citizens abroad.",
+      "summary": "Monitor the response of global energy markets to the conflict, watch for potential evacuations of Indian citizens from the region, and track the US's diplomatic efforts to de-escalate the situation.",
+      "whyTxt": "The US-Israel-Iran war has led to increased tensions in the Middle East, with Qatar reporting extensive damage to a gas facility due to Iranian attacks. The US has eased oil sanctions on Venezuela to mitigate the impact of rising oil prices. Air India has announced the resumption of flights to Dubai, indicating a potential return to normalcy for Indian nationals in the region.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "VOLATILE",
-    "us_stance": "The US is maintaining its support for Israel, while also engaging in diplomatic efforts to reduce tensions.",
-    "israel_stance": "Israel is continuing its military operations against Iranian targets, citing self-defense.",
-    "iran_stance": "Iran is retaliating against Israeli and US targets, accusing them of aggression."
+    "overall_tone": "ESCALATING",
+    "us_stance": "The US has taken a firm stance against Iran, easing oil sanctions on Venezuela to mitigate the conflict's impact on global energy supplies.",
+    "israel_stance": "Israel's stance on the conflict remains unclear, but its alliance with the US suggests a strong opposition to Iranian aggression.",
+    "iran_stance": "Iran has continued to assert its military capabilities, with attacks on a gas facility in Qatar highlighting its willingness to escalate the conflict."
   },
   "terms": [
     {
-      "term": "Real Estate Resilience",
-      "simple_explanation": "The ability of a real estate market to withstand or recover from economic shocks or crises."
+      "term": "Sanctions",
+      "simple_explanation": "Economic penalties imposed by one country on another to limit trade or commerce."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 15:37 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-17 16:44 UTC",
       "l": "MEDIUM",
@@ -194,8 +203,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 18:50 UTC",
       "l": "MEDIUM",
       "tone": "VOLATILE"
+    },
+    {
+      "t": "2026-03-18 19:44 UTC",
+      "l": "MEDIUM",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues with ongoing developments, including the resilience of Dubai's real estate market and concerns over Indian students in Iran. The situation remains volatile, with multiple nations involved. The Indian government is working to ensure the safety of its citizens abroad.",
-  "totalReports": 42
+  "execSummary": "The US-Israel-Iran war has led to increased tensions in the Middle East, with Qatar reporting extensive damage to a gas facility due to Iranian attacks. The US has eased oil sanctions on Venezuela to mitigate the impact of rising oil prices. Air India has announced the resumption of flights to Dubai, indicating a potential return to normalcy for Indian nationals in the region.",
+  "totalReports": 43
 };
