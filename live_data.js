@@ -1,27 +1,25 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 19:44 UTC",
+  "generatedAt": "2026-03-18 23:26 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iran: Qatar Gas Facility Attacked \u00b7 Iranian attacks on a gas facility in Qatar have caused extensive damage, highlig\u2026",
-    "US: US Eases Venezuela Oil Sanctions \u00b7 The US has eased oil sanctions on Venezuela to allow trade, aiming to mitigate t\u2026",
-    "India: Air India Resumes Dubai Flights \u00b7 Air India has announced the resumption of flights to Dubai, indicating a potenti\u2026"
+    "Other: Qatar Expels Iranian Embassy Staff \u00b7 Qatar has expelled Iranian embassy staff over a gas facility attack, increasing \u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-18 19:44 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-18 23:26 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 57,
+      "pct": 60,
       "lvl": "MEDIUM",
       "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 49,
+      "pct": 52,
       "lvl": "MEDIUM",
       "color": "var(--amber)"
     },
@@ -33,55 +31,29 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
+      "pct": 55,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 47,
+      "pct": 50,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Qatar Gas Facility Attacked",
-      "summary": "Iranian attacks on a gas facility in Qatar have caused extensive damage, highlighting the conflict's potential to disrupt global energy supplies. The attack has raised concerns about the safety of critical infrastructure in the region.",
-      "whyTxt": "Iran's attacks on a gas facility in Qatar have raised concerns about the conflict's impact on global energy supplies.",
-      "orgs": [
-        "Iran"
-      ]
-    },
-    {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "just now",
-      "headline": "US Eases Venezuela Oil Sanctions",
-      "summary": "The US has eased oil sanctions on Venezuela to allow trade, aiming to mitigate the impact of rising oil prices due to the conflict. This move may help stabilize global energy markets.",
-      "whyTxt": "Iran's attacks on a gas facility in Qatar have raised concerns about the conflict's impact on global energy supplies.",
-      "orgs": [
-        "US"
-      ]
-    },
-    {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
       "actorClass": "p-gray",
-      "actor": "India",
+      "actor": "Other",
       "time": "just now",
-      "headline": "Air India Resumes Dubai Flights",
-      "summary": "Air India has announced the resumption of flights to Dubai, indicating a potential return to normalcy for Indian nationals in the region. The move may help facilitate the evacuation of Indian citizens from the conflict zone.",
-      "whyTxt": "Iran's attacks on a gas facility in Qatar have raised concerns about the conflict's impact on global energy supplies.",
+      "headline": "Qatar Expels Iranian Embassy Staff",
+      "summary": "Qatar has expelled Iranian embassy staff over a gas facility attack, increasing tensions in the region. This move is seen as a significant escalation in the conflict between Iran and its neighbors.",
+      "whyTxt": "Qatar's expulsion of Iranian embassy staff has increased tensions between Iran and its neighbors.",
       "orgs": [
-        "India"
+        "Other"
       ]
     },
     {
@@ -91,29 +63,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the response of global energy markets to the conflict, watch for potential evacuations of Indian citizens from the region, and track the US's diplomatic efforts to de-escalate the situation.",
-      "whyTxt": "The US-Israel-Iran war has led to increased tensions in the Middle East, with Qatar reporting extensive damage to a gas facility due to Iranian attacks. The US has eased oil sanctions on Venezuela to mitigate the impact of rising oil prices. Air India has announced the resumption of flights to Dubai, indicating a potential return to normalcy for Indian nationals in the region.",
+      "summary": "Monitor Iran's response to the expulsion of its embassy staff, watch for any statements from the US or Israel, and track the impact on the global energy market.",
+      "whyTxt": "Qatar has expelled Iranian embassy staff over a gas facility attack, escalating tensions in the region. The US-Israel-Iran conflict continues to unfold with no direct involvement from India reported. The situation remains volatile, with multiple nations involved in the conflict.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "ESCALATING",
-    "us_stance": "The US has taken a firm stance against Iran, easing oil sanctions on Venezuela to mitigate the conflict's impact on global energy supplies.",
-    "israel_stance": "Israel's stance on the conflict remains unclear, but its alliance with the US suggests a strong opposition to Iranian aggression.",
-    "iran_stance": "Iran has continued to assert its military capabilities, with attacks on a gas facility in Qatar highlighting its willingness to escalate the conflict."
+    "overall_tone": "VOLATILE",
+    "us_stance": "The US has not made any official statements on the recent development, but it is likely to continue supporting its allies in the region.",
+    "israel_stance": "Israel has not commented on the expulsion of Iranian embassy staff, but it is expected to continue its aggressive stance against Iran.",
+    "iran_stance": "Iran has not responded to the expulsion of its embassy staff, but it is likely to retaliate against Qatar in the coming days."
   },
   "terms": [
     {
-      "term": "Sanctions",
-      "simple_explanation": "Economic penalties imposed by one country on another to limit trade or commerce."
+      "term": "Gas Facility Attack",
+      "simple_explanation": "An attack on a facility that processes and distributes natural gas."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 16:44 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-17 17:43 UTC",
       "l": "LOW",
@@ -208,8 +175,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 19:44 UTC",
       "l": "MEDIUM",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-18 23:26 UTC",
+      "l": "MEDIUM",
+      "tone": "VOLATILE"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has led to increased tensions in the Middle East, with Qatar reporting extensive damage to a gas facility due to Iranian attacks. The US has eased oil sanctions on Venezuela to mitigate the impact of rising oil prices. Air India has announced the resumption of flights to Dubai, indicating a potential return to normalcy for Indian nationals in the region.",
-  "totalReports": 43
+  "execSummary": "Qatar has expelled Iranian embassy staff over a gas facility attack, escalating tensions in the region. The US-Israel-Iran conflict continues to unfold with no direct involvement from India reported. The situation remains volatile, with multiple nations involved in the conflict.",
+  "totalReports": 44
 };
