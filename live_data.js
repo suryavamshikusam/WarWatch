@@ -1,59 +1,87 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 10:10 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-18 11:08 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Dubai Businesses Face Heat Of Iran War \u00b7 The war between the US, Israel, and Iran is affecting businesses in Dubai, with \u2026"
+    "Israel: Iran's Intelligence Minister Killed \u00b7 Iran's Intelligence Minister Esmail Khatib was killed in strikes, and Iran has v\u2026",
+    "US: US Eases Sanctions On Iranian-Linked Tankers \u00b7 The US has eased sanctions on Iranian-linked tankers to stabilize global oil mar\u2026",
+    "Ukraine: Ukraine Deploys Drone Experts To Middle East \u00b7 Ukraine has deployed 201 drone experts to the Middle East to counter Iran-made S\u2026"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-18 10:10 UTC",
-    "sourcesUsed": 1
+    "tension": "HIGH",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-18 11:08 UTC",
+    "sourcesUsed": 8
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 60,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 83,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 52,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 75,
+      "lvl": "HIGH",
+      "color": "#c87830"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 53,
+      "pct": 30,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 55,
+      "pct": 78,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 50,
+      "pct": 73,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "just now",
+      "headline": "Iran's Intelligence Minister Killed",
+      "summary": "Iran's Intelligence Minister Esmail Khatib was killed in strikes, and Iran has vowed vengeance. This development is likely to escalate the conflict further.",
+      "whyTxt": "The killing of Iran's Intelligence Minister and the US easing sanctions on Iranian-linked tankers have increased tensions in the region.",
+      "orgs": [
+        "Israel"
+      ]
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "just now",
+      "headline": "US Eases Sanctions On Iranian-Linked Tankers",
+      "summary": "The US has eased sanctions on Iranian-linked tankers to stabilize global oil markets. This move is seen as an attempt to mitigate the impact of the conflict on the global economy.",
+      "whyTxt": "The killing of Iran's Intelligence Minister and the US easing sanctions on Iranian-linked tankers have increased tensions in the region.",
+      "orgs": [
+        "US"
+      ]
+    },
+    {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
-      "actor": "Other",
+      "actor": "Ukraine",
       "time": "just now",
-      "headline": "Dubai Businesses Face Heat Of Iran War",
-      "summary": "The war between the US, Israel, and Iran is affecting businesses in Dubai, with many facing significant challenges. Internal demand is providing some hope for recovery, but the situation remains uncertain.",
-      "whyTxt": "The ongoing conflict between the US, Israel, and Iran is causing regional instability and economic uncertainty.",
+      "headline": "Ukraine Deploys Drone Experts To Middle East",
+      "summary": "Ukraine has deployed 201 drone experts to the Middle East to counter Iran-made Shahed drones. This development highlights the expanding scope of the conflict.",
+      "whyTxt": "The killing of Iran's Intelligence Minister and the US easing sanctions on Iranian-linked tankers have increased tensions in the region.",
       "orgs": [
-        "Other"
+        "Ukraine"
       ]
     },
     {
@@ -63,29 +91,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the responses of regional countries, the impact on global oil prices, and any potential diplomatic efforts to de-escalate the conflict.",
-      "whyTxt": "The US-Israel-Iran war is affecting businesses in Dubai, with internal demand providing some hope for recovery. The conflict is causing economic uncertainty in the region. The situation remains volatile, with various countries monitoring the developments closely.",
+      "summary": "Monitor the response of Iran to the killing of its Intelligence Minister, the impact of the US easing sanctions on Iranian-linked tankers, and the deployment of Ukrainian drone experts to the Middle East.",
+      "whyTxt": "The US-Israel-Iran conflict continues to escalate with Iran's Intelligence Minister Esmail Khatib being killed in strikes and the US easing sanctions on Iranian-linked tankers. The conflict is having a global impact, including on the Indian economy. The situation remains volatile with multiple developments unfolding.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "VOLATILE",
-    "us_stance": "The US is maintaining a strong stance against Iran, with ongoing military and economic pressure.",
-    "israel_stance": "Israel is continuing to take a firm stance against Iran, with a focus on regional security and defense.",
-    "iran_stance": "Iran is responding to the US and Israeli actions, with a mix of diplomatic and military measures."
+    "us_stance": "The US is attempting to stabilize global oil markets while maintaining pressure on Iran.",
+    "israel_stance": "Israel is continuing its strikes against Iranian targets, escalating the conflict.",
+    "iran_stance": "Iran has vowed vengeance for the killing of its Intelligence Minister and is likely to retaliate against Israeli and US interests."
   },
   "terms": [
     {
-      "term": "Regional instability",
-      "simple_explanation": "A situation where a region is experiencing conflict, uncertainty, or unrest, often affecting multiple countries."
+      "term": "Shahed drones",
+      "simple_explanation": "Iran-made drones used in the conflict"
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 06:37 UTC",
-      "l": "MEDIUM",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-17 07:40 UTC",
       "l": "MEDIUM",
@@ -180,8 +203,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 10:10 UTC",
       "l": "MEDIUM",
       "tone": "VOLATILE"
+    },
+    {
+      "t": "2026-03-18 11:08 UTC",
+      "l": "HIGH",
+      "tone": "VOLATILE"
     }
   ],
-  "execSummary": "The US-Israel-Iran war is affecting businesses in Dubai, with internal demand providing some hope for recovery. The conflict is causing economic uncertainty in the region. The situation remains volatile, with various countries monitoring the developments closely.",
-  "totalReports": 35
+  "execSummary": "The US-Israel-Iran conflict continues to escalate with Iran's Intelligence Minister Esmail Khatib being killed in strikes and the US easing sanctions on Iranian-linked tankers. The conflict is having a global impact, including on the Indian economy. The situation remains volatile with multiple developments unfolding.",
+  "totalReports": 36
 };
