@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 13:12 UTC",
+  "generatedAt": "2026-03-18 14:41 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iraq: Iraq Restarts Oil Exports Via Turkey \u00b7 Iraq has restarted oil exports via Turkey amid disruptions in the Strait of Horm\u2026",
-    "Israel: Larijani Killed \u00b7 Iran's Larijani was killed, with reports suggesting he was located and targeted \u2026",
-    "US or Israel: Qeshm Island Targeted \u00b7 Qeshm Island, a key location for Hormuz shipping, has been targeted in the confl\u2026"
+    "Iran: Iran's Leadership Crisis \u00b7 Iran's Supreme Leader has been absent from public eye, and several key military \u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-18 13:12 UTC",
-    "sourcesUsed": 7
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-18 14:41 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -46,42 +44,16 @@ window.WARWATCH_LIVE = {
   ],
   "newsCards": [
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Iraq",
-      "time": "just now",
-      "headline": "Iraq Restarts Oil Exports Via Turkey",
-      "summary": "Iraq has restarted oil exports via Turkey amid disruptions in the Strait of Hormuz, which has been a key flashpoint in the US-Israel-Iran conflict. This move is seen as an attempt to bypass the affected area and maintain oil exports.",
-      "whyTxt": "The continued disruptions in the Strait of Hormuz and the killing of key Iranian figures have contributed to the escalation of the conflict.",
-      "orgs": [
-        "Iraq"
-      ]
-    },
-    {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "just now",
-      "headline": "Larijani Killed",
-      "summary": "Iran's Larijani was killed, with reports suggesting he was located and targeted by Israeli forces. Larijani was a key figure in Iran and his killing has been seen as a significant escalation of the conflict.",
-      "whyTxt": "The continued disruptions in the Strait of Hormuz and the killing of key Iranian figures have contributed to the escalation of the conflict.",
+      "headline": "Iran's Leadership Crisis",
+      "summary": "Iran's Supreme Leader has been absent from public eye, and several key military brass have been killed, raising questions about who is running the country. This has created uncertainty and raised concerns about Iran's ability to respond to the ongoing conflict.",
+      "whyTxt": "The absence of Iran's Supreme Leader from public eye and the killing of key military brass have created uncertainty and raised concerns about the country's ability to respond to the ongoing conflict.",
       "orgs": [
-        "Israel"
-      ]
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "US or Israel",
-      "time": "just now",
-      "headline": "Qeshm Island Targeted",
-      "summary": "Qeshm Island, a key location for Hormuz shipping, has been targeted in the conflict. The island's strategic importance makes it a crucial location in the ongoing tensions.",
-      "whyTxt": "The continued disruptions in the Strait of Hormuz and the killing of key Iranian figures have contributed to the escalation of the conflict.",
-      "orgs": [
-        "US or Israel"
+        "Iran"
       ]
     },
     {
@@ -91,29 +63,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the situation in the Strait of Hormuz, the response of the international community to Iran's stance on nuclear weapon development, and the continued targeting of key Iranian figures.",
-      "whyTxt": "The US-Israel-Iran conflict continues to escalate, with Iran's stance on nuclear weapon development remaining unchanged and Iraq restarting oil exports via Turkey amid Strait of Hormuz disruptions. The conflict has also led to the return of over 2.6 lakh people to India from the Middle East since February 28. The situation remains tense, with key developments including the killing of Iran's Larijani and the targeting of Qeshm Island.",
+      "summary": "The next 6 hours will be crucial in determining the direction of the conflict, with key developments to monitor including any statements from Iran's government, the US and Israel's responses, and any changes in the military situation on the ground.",
+      "whyTxt": "The US-Israel-Iran conflict continues with uncertainty over Iran's leadership after the Supreme Leader's absence from public eye and key military brass being killed. The situation remains tense with no clear direction from Iran. The international community is watching closely for any signs of escalation or de-escalation.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "TENSE",
-    "us_stance": "The US has maintained its tough stance against Iran, with continued support for Israel.",
-    "israel_stance": "Israel has continued to target key Iranian figures and locations, escalating the conflict.",
-    "iran_stance": "Iran has maintained its stance on nuclear weapon development, refusing to back down amid international pressure."
+    "us_stance": "The US has not made any significant statements regarding the current situation in Iran, but it is likely to be closely monitoring the developments.",
+    "israel_stance": "Israel has been cautious in its response, but it is likely to be prepared for any eventuality.",
+    "iran_stance": "Iran's stance is unclear due to the uncertainty surrounding its leadership, but it is likely to continue to defend its interests."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A narrow waterway connecting the Persian Gulf to the Gulf of Oman, crucial for international oil trade."
+      "term": "Supreme Leader",
+      "simple_explanation": "The highest-ranking political and religious authority in Iran"
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 08:29 UTC",
-      "l": "MEDIUM",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-17 09:30 UTC",
       "l": "HIGH",
@@ -208,8 +175,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 13:12 UTC",
       "l": "MEDIUM",
       "tone": "TENSE"
+    },
+    {
+      "t": "2026-03-18 14:41 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues to escalate, with Iran's stance on nuclear weapon development remaining unchanged and Iraq restarting oil exports via Turkey amid Strait of Hormuz disruptions. The conflict has also led to the return of over 2.6 lakh people to India from the Middle East since February 28. The situation remains tense, with key developments including the killing of Iran's Larijani and the targeting of Qeshm Island.",
-  "totalReports": 37
+  "execSummary": "The US-Israel-Iran conflict continues with uncertainty over Iran's leadership after the Supreme Leader's absence from public eye and key military brass being killed. The situation remains tense with no clear direction from Iran. The international community is watching closely for any signs of escalation or de-escalation.",
+  "totalReports": 38
 };
