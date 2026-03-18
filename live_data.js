@@ -1,61 +1,48 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 14:41 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-18 15:52 UTC",
+  "escalationLevel": "LOW",
   "alerts": [
-    "Iran: Iran's Leadership Crisis \u00b7 Iran's Supreme Leader has been absent from public eye, and several key military \u2026"
+    "The provided article does not mention the US-Israel-Iran war, instead discussing a domestic Indian political issue. There is no direct information about the conflict. The article's focus is on a statement by HD Deve Gowda regarding M Kharge. As a result, there is no escalation or development to report in the context of the US-Israel-Iran war."
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-18 14:41 UTC",
+    "tension": "LOW",
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-18 15:52 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 54,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 20,
+      "lvl": "LOW",
+      "color": "var(--green)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 46,
-      "lvl": "MEDIUM",
-      "color": "var(--amber)"
+      "pct": 12,
+      "lvl": "LOW",
+      "color": "var(--green)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 53,
+      "pct": 75,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 49,
+      "pct": 15,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 44,
+      "pct": 10,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Iran's Leadership Crisis",
-      "summary": "Iran's Supreme Leader has been absent from public eye, and several key military brass have been killed, raising questions about who is running the country. This has created uncertainty and raised concerns about Iran's ability to respond to the ongoing conflict.",
-      "whyTxt": "The absence of Iran's Supreme Leader from public eye and the killing of key military brass have created uncertainty and raised concerns about the country's ability to respond to the ongoing conflict.",
-      "orgs": [
-        "Iran"
-      ]
-    },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
@@ -63,29 +50,19 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "The next 6 hours will be crucial in determining the direction of the conflict, with key developments to monitor including any statements from Iran's government, the US and Israel's responses, and any changes in the military situation on the ground.",
-      "whyTxt": "The US-Israel-Iran conflict continues with uncertainty over Iran's leadership after the Supreme Leader's absence from public eye and key military brass being killed. The situation remains tense with no clear direction from Iran. The international community is watching closely for any signs of escalation or de-escalation.",
+      "summary": "Monitor for any statements or actions from the US, Israel, or Iran that could indicate a shift in the conflict. Watch for reports on potential diplomatic efforts. Keep an eye on regional reactions to any developments.",
+      "whyTxt": "The provided article does not mention the US-Israel-Iran war, instead discussing a domestic Indian political issue. There is no direct information about the conflict. The article's focus is on a statement by HD Deve Gowda regarding M Kharge. As a result, there is no escalation or development to report in the context of the US-Israel-Iran war.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "TENSE",
-    "us_stance": "The US has not made any significant statements regarding the current situation in Iran, but it is likely to be closely monitoring the developments.",
-    "israel_stance": "Israel has been cautious in its response, but it is likely to be prepared for any eventuality.",
-    "iran_stance": "Iran's stance is unclear due to the uncertainty surrounding its leadership, but it is likely to continue to defend its interests."
+    "overall_tone": "STABLE",
+    "us_stance": "No information available.",
+    "israel_stance": "No information available.",
+    "iran_stance": "No information available."
   },
-  "terms": [
-    {
-      "term": "Supreme Leader",
-      "simple_explanation": "The highest-ranking political and religious authority in Iran"
-    }
-  ],
+  "terms": [],
   "history": [
-    {
-      "t": "2026-03-17 09:30 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-17 10:26 UTC",
       "l": "MEDIUM",
@@ -180,8 +157,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 14:41 UTC",
       "l": "MEDIUM",
       "tone": "TENSE"
+    },
+    {
+      "t": "2026-03-18 15:52 UTC",
+      "l": "LOW",
+      "tone": "STABLE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues with uncertainty over Iran's leadership after the Supreme Leader's absence from public eye and key military brass being killed. The situation remains tense with no clear direction from Iran. The international community is watching closely for any signs of escalation or de-escalation.",
-  "totalReports": 38
+  "execSummary": "The provided article does not mention the US-Israel-Iran war, instead discussing a domestic Indian political issue. There is no direct information about the conflict. The article's focus is on a statement by HD Deve Gowda regarding M Kharge. As a result, there is no escalation or development to report in the context of the US-Israel-Iran war.",
+  "totalReports": 39
 };
