@@ -1,48 +1,75 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 15:52 UTC",
-  "escalationLevel": "LOW",
+  "generatedAt": "2026-03-18 16:52 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "The provided article does not mention the US-Israel-Iran war, instead discussing a domestic Indian political issue. There is no direct information about the conflict. The article's focus is on a statement by HD Deve Gowda regarding M Kharge. As a result, there is no escalation or development to report in the context of the US-Israel-Iran war."
+    "Other: Hormuz Strait Shipping Drop \u00b7 The war has resulted in a 97% drop in shipping through the Hormuz Strait, which \u2026",
+    "US: Pentagon Supply Chain Concerns \u00b7 The Pentagon has expressed concerns about the risks posed by certain entities to\u2026"
   ],
   "heroStats": {
-    "tension": "LOW",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-18 15:52 UTC",
-    "sourcesUsed": 1
+    "tension": "MEDIUM",
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-18 16:52 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 20,
-      "lvl": "LOW",
-      "color": "var(--green)"
+      "pct": 54,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 12,
-      "lvl": "LOW",
-      "color": "var(--green)"
+      "pct": 46,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 75,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 15,
+      "pct": 49,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 10,
+      "pct": 44,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "just now",
+      "headline": "Hormuz Strait Shipping Drop",
+      "summary": "The war has resulted in a 97% drop in shipping through the Hormuz Strait, which is a critical waterway for international trade. This has led to increased tensions in the region and has the potential to impact global trade.",
+      "whyTxt": "The significant drop in shipping through the Hormuz Strait has increased tensions in the region.",
+      "orgs": [
+        "Other"
+      ]
+    },
+    {
+      "badgeClass": "b-gray",
+      "badgeLabel": "Low",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "just now",
+      "headline": "Pentagon Supply Chain Concerns",
+      "summary": "The Pentagon has expressed concerns about the risks posed by certain entities to military supply chains. This has the potential to impact the US military's ability to respond to the ongoing conflict.",
+      "whyTxt": "The significant drop in shipping through the Hormuz Strait has increased tensions in the region.",
+      "orgs": [
+        "US"
+      ]
+    },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
@@ -50,24 +77,19 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor for any statements or actions from the US, Israel, or Iran that could indicate a shift in the conflict. Watch for reports on potential diplomatic efforts. Keep an eye on regional reactions to any developments.",
-      "whyTxt": "The provided article does not mention the US-Israel-Iran war, instead discussing a domestic Indian political issue. There is no direct information about the conflict. The article's focus is on a statement by HD Deve Gowda regarding M Kharge. As a result, there is no escalation or development to report in the context of the US-Israel-Iran war.",
+      "summary": "Monitor the situation in the Hormuz Strait, watch for any developments in US-Iran relations, and track the impact of the conflict on global trade.",
+      "whyTxt": "The US-Israel-Iran war has resulted in a significant drop in shipping through the Hormuz Strait, with 97% of shipping being affected. This has led to increased tensions in the region. The Pentagon has also expressed concerns about the risks posed by certain entities to military supply chains.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "STABLE",
-    "us_stance": "No information available.",
-    "israel_stance": "No information available.",
-    "iran_stance": "No information available."
+    "overall_tone": "TENSE",
+    "us_stance": "The US is taking a cautious approach to the conflict, with the Pentagon expressing concerns about supply chain risks.",
+    "israel_stance": "There is no information available about Israel's stance in the provided articles.",
+    "iran_stance": "There is no information available about Iran's stance in the provided articles."
   },
   "terms": [],
   "history": [
-    {
-      "t": "2026-03-17 10:26 UTC",
-      "l": "MEDIUM",
-      "tone": "VOLATILE"
-    },
     {
       "t": "2026-03-17 11:56 UTC",
       "l": "MEDIUM",
@@ -162,8 +184,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 15:52 UTC",
       "l": "LOW",
       "tone": "STABLE"
+    },
+    {
+      "t": "2026-03-18 16:52 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The provided article does not mention the US-Israel-Iran war, instead discussing a domestic Indian political issue. There is no direct information about the conflict. The article's focus is on a statement by HD Deve Gowda regarding M Kharge. As a result, there is no escalation or development to report in the context of the US-Israel-Iran war.",
-  "totalReports": 39
+  "execSummary": "The US-Israel-Iran war has resulted in a significant drop in shipping through the Hormuz Strait, with 97% of shipping being affected. This has led to increased tensions in the region. The Pentagon has also expressed concerns about the risks posed by certain entities to military supply chains.",
+  "totalReports": 40
 };
