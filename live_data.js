@@ -1,73 +1,59 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 09:06 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-18 10:10 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "US: US Uses 'Bunker Busters' Against Iran \u00b7 The US has used 'bunker busters' against Iran, which are specialized bombs desig\u2026",
-    "Israel: Israel Claims Responsibility for Ali Larijani Killing \u00b7 Israel has claimed responsibility for the killing of Ali Larijani, citing Irania\u2026"
+    "Other: Dubai Businesses Face Heat Of Iran War \u00b7 The war between the US, Israel, and Iran is affecting businesses in Dubai, with \u2026"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-18 09:06 UTC",
-    "sourcesUsed": 9
+    "tension": "MEDIUM",
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-18 10:10 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 80,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 60,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 72,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 52,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 30,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 75,
+      "pct": 55,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 70,
+      "pct": 50,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "1 min ago",
-      "headline": "US Uses 'Bunker Busters' Against Iran",
-      "summary": "The US has used 'bunker busters' against Iran, which are specialized bombs designed to penetrate deep into the ground. This move is seen as an escalation of the conflict.",
-      "whyTxt": "The use of 'bunker busters' by the US and the killing of Ali Larijani by Israel have increased tensions in the region.",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "just now",
+      "headline": "Dubai Businesses Face Heat Of Iran War",
+      "summary": "The war between the US, Israel, and Iran is affecting businesses in Dubai, with many facing significant challenges. Internal demand is providing some hope for recovery, but the situation remains uncertain.",
+      "whyTxt": "The ongoing conflict between the US, Israel, and Iran is causing regional instability and economic uncertainty.",
       "orgs": [
-        "US"
-      ]
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "1 min ago",
-      "headline": "Israel Claims Responsibility for Ali Larijani Killing",
-      "summary": "Israel has claimed responsibility for the killing of Ali Larijani, citing Iranian residents' intel. This move is seen as a significant escalation of the conflict.",
-      "whyTxt": "The use of 'bunker busters' by the US and the killing of Ali Larijani by Israel have increased tensions in the region.",
-      "orgs": [
-        "Israel"
+        "Other"
       ]
     },
     {
@@ -75,31 +61,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "1 min ago",
+      "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the situation in the Middle East, watch for any further military action by the US or Israel, and track the response from Iran and other countries in the region.",
-      "whyTxt": "The US has used 'bunker busters' against Iran, and Israel has claimed responsibility for the killing of Ali Larijani, citing Iranian residents' intel. The conflict is ongoing, with various countries reacting to the situation.",
+      "summary": "Monitor the responses of regional countries, the impact on global oil prices, and any potential diplomatic efforts to de-escalate the conflict.",
+      "whyTxt": "The US-Israel-Iran war is affecting businesses in Dubai, with internal demand providing some hope for recovery. The conflict is causing economic uncertainty in the region. The situation remains volatile, with various countries monitoring the developments closely.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "ESCALATING",
-    "us_stance": "The US is taking a strong stance against Iran, using military force to target its interests.",
-    "israel_stance": "Israel is also taking a strong stance against Iran, claiming responsibility for the killing of Ali Larijani.",
-    "iran_stance": "Iran is responding to the attacks, executing a man convicted of spying for Israel and vowing to retaliate against its enemies."
+    "overall_tone": "VOLATILE",
+    "us_stance": "The US is maintaining a strong stance against Iran, with ongoing military and economic pressure.",
+    "israel_stance": "Israel is continuing to take a firm stance against Iran, with a focus on regional security and defense.",
+    "iran_stance": "Iran is responding to the US and Israeli actions, with a mix of diplomatic and military measures."
   },
   "terms": [
     {
-      "term": "Bunker Busters",
-      "simple_explanation": "Specialized bombs designed to penetrate deep into the ground, often used to target underground facilities."
+      "term": "Regional instability",
+      "simple_explanation": "A situation where a region is experiencing conflict, uncertainty, or unrest, often affecting multiple countries."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 05:19 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-17 06:37 UTC",
       "l": "MEDIUM",
@@ -194,8 +175,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 09:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-18 10:10 UTC",
+      "l": "MEDIUM",
+      "tone": "VOLATILE"
     }
   ],
-  "execSummary": "The US has used 'bunker busters' against Iran, and Israel has claimed responsibility for the killing of Ali Larijani, citing Iranian residents' intel. The conflict is ongoing, with various countries reacting to the situation.",
-  "totalReports": 34
+  "execSummary": "The US-Israel-Iran war is affecting businesses in Dubai, with internal demand providing some hope for recovery. The conflict is causing economic uncertainty in the region. The situation remains volatile, with various countries monitoring the developments closely.",
+  "totalReports": 35
 };
