@@ -1,59 +1,72 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 11:08 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-18 13:12 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Israel: Iran's Intelligence Minister Killed \u00b7 Iran's Intelligence Minister Esmail Khatib was killed in strikes, and Iran has v\u2026",
-    "US: US Eases Sanctions On Iranian-Linked Tankers \u00b7 The US has eased sanctions on Iranian-linked tankers to stabilize global oil mar\u2026",
-    "Ukraine: Ukraine Deploys Drone Experts To Middle East \u00b7 Ukraine has deployed 201 drone experts to the Middle East to counter Iran-made S\u2026"
+    "Iraq: Iraq Restarts Oil Exports Via Turkey \u00b7 Iraq has restarted oil exports via Turkey amid disruptions in the Strait of Horm\u2026",
+    "Israel: Larijani Killed \u00b7 Iran's Larijani was killed, with reports suggesting he was located and targeted \u2026",
+    "US or Israel: Qeshm Island Targeted \u00b7 Qeshm Island, a key location for Hormuz shipping, has been targeted in the confl\u2026"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-18 11:08 UTC",
-    "sourcesUsed": 8
+    "tension": "MEDIUM",
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-18 13:12 UTC",
+    "sourcesUsed": 7
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 83,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 54,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 75,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 46,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 30,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 78,
+      "pct": 49,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 73,
+      "pct": 44,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Iraq",
+      "time": "just now",
+      "headline": "Iraq Restarts Oil Exports Via Turkey",
+      "summary": "Iraq has restarted oil exports via Turkey amid disruptions in the Strait of Hormuz, which has been a key flashpoint in the US-Israel-Iran conflict. This move is seen as an attempt to bypass the affected area and maintain oil exports.",
+      "whyTxt": "The continued disruptions in the Strait of Hormuz and the killing of key Iranian figures have contributed to the escalation of the conflict.",
+      "orgs": [
+        "Iraq"
+      ]
+    },
+    {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "Israel",
       "time": "just now",
-      "headline": "Iran's Intelligence Minister Killed",
-      "summary": "Iran's Intelligence Minister Esmail Khatib was killed in strikes, and Iran has vowed vengeance. This development is likely to escalate the conflict further.",
-      "whyTxt": "The killing of Iran's Intelligence Minister and the US easing sanctions on Iranian-linked tankers have increased tensions in the region.",
+      "headline": "Larijani Killed",
+      "summary": "Iran's Larijani was killed, with reports suggesting he was located and targeted by Israeli forces. Larijani was a key figure in Iran and his killing has been seen as a significant escalation of the conflict.",
+      "whyTxt": "The continued disruptions in the Strait of Hormuz and the killing of key Iranian figures have contributed to the escalation of the conflict.",
       "orgs": [
         "Israel"
       ]
@@ -61,27 +74,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "just now",
-      "headline": "US Eases Sanctions On Iranian-Linked Tankers",
-      "summary": "The US has eased sanctions on Iranian-linked tankers to stabilize global oil markets. This move is seen as an attempt to mitigate the impact of the conflict on the global economy.",
-      "whyTxt": "The killing of Iran's Intelligence Minister and the US easing sanctions on Iranian-linked tankers have increased tensions in the region.",
-      "orgs": [
-        "US"
-      ]
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
       "actorClass": "p-gray",
-      "actor": "Ukraine",
+      "actor": "US or Israel",
       "time": "just now",
-      "headline": "Ukraine Deploys Drone Experts To Middle East",
-      "summary": "Ukraine has deployed 201 drone experts to the Middle East to counter Iran-made Shahed drones. This development highlights the expanding scope of the conflict.",
-      "whyTxt": "The killing of Iran's Intelligence Minister and the US easing sanctions on Iranian-linked tankers have increased tensions in the region.",
+      "headline": "Qeshm Island Targeted",
+      "summary": "Qeshm Island, a key location for Hormuz shipping, has been targeted in the conflict. The island's strategic importance makes it a crucial location in the ongoing tensions.",
+      "whyTxt": "The continued disruptions in the Strait of Hormuz and the killing of key Iranian figures have contributed to the escalation of the conflict.",
       "orgs": [
-        "Ukraine"
+        "US or Israel"
       ]
     },
     {
@@ -91,29 +91,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor the response of Iran to the killing of its Intelligence Minister, the impact of the US easing sanctions on Iranian-linked tankers, and the deployment of Ukrainian drone experts to the Middle East.",
-      "whyTxt": "The US-Israel-Iran conflict continues to escalate with Iran's Intelligence Minister Esmail Khatib being killed in strikes and the US easing sanctions on Iranian-linked tankers. The conflict is having a global impact, including on the Indian economy. The situation remains volatile with multiple developments unfolding.",
+      "summary": "Monitor the situation in the Strait of Hormuz, the response of the international community to Iran's stance on nuclear weapon development, and the continued targeting of key Iranian figures.",
+      "whyTxt": "The US-Israel-Iran conflict continues to escalate, with Iran's stance on nuclear weapon development remaining unchanged and Iraq restarting oil exports via Turkey amid Strait of Hormuz disruptions. The conflict has also led to the return of over 2.6 lakh people to India from the Middle East since February 28. The situation remains tense, with key developments including the killing of Iran's Larijani and the targeting of Qeshm Island.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "VOLATILE",
-    "us_stance": "The US is attempting to stabilize global oil markets while maintaining pressure on Iran.",
-    "israel_stance": "Israel is continuing its strikes against Iranian targets, escalating the conflict.",
-    "iran_stance": "Iran has vowed vengeance for the killing of its Intelligence Minister and is likely to retaliate against Israeli and US interests."
+    "overall_tone": "TENSE",
+    "us_stance": "The US has maintained its tough stance against Iran, with continued support for Israel.",
+    "israel_stance": "Israel has continued to target key Iranian figures and locations, escalating the conflict.",
+    "iran_stance": "Iran has maintained its stance on nuclear weapon development, refusing to back down amid international pressure."
   },
   "terms": [
     {
-      "term": "Shahed drones",
-      "simple_explanation": "Iran-made drones used in the conflict"
+      "term": "Strait of Hormuz",
+      "simple_explanation": "A narrow waterway connecting the Persian Gulf to the Gulf of Oman, crucial for international oil trade."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 07:40 UTC",
-      "l": "MEDIUM",
-      "tone": "VOLATILE"
-    },
     {
       "t": "2026-03-17 08:29 UTC",
       "l": "MEDIUM",
@@ -208,8 +203,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 11:08 UTC",
       "l": "HIGH",
       "tone": "VOLATILE"
+    },
+    {
+      "t": "2026-03-18 13:12 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues to escalate with Iran's Intelligence Minister Esmail Khatib being killed in strikes and the US easing sanctions on Iranian-linked tankers. The conflict is having a global impact, including on the Indian economy. The situation remains volatile with multiple developments unfolding.",
-  "totalReports": 36
+  "execSummary": "The US-Israel-Iran conflict continues to escalate, with Iran's stance on nuclear weapon development remaining unchanged and Iraq restarting oil exports via Turkey amid Strait of Hormuz disruptions. The conflict has also led to the return of over 2.6 lakh people to India from the Middle East since February 28. The situation remains tense, with key developments including the killing of Iran's Larijani and the targeting of Qeshm Island.",
+  "totalReports": 37
 };
