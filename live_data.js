@@ -1,87 +1,73 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 17:55 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-18 18:50 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iran: Iran Cluster Bomb Strike \u00b7 Iran has launched a cluster bomb strike on Israel, causing significant damage an\u2026",
-    "Israel: Destruction of Building in Beirut \u00b7 Israel has struck and destroyed a building in the heart of Beirut, further escal\u2026",
-    "Other: Impact on Dubai's Hospitality Sector \u00b7 The Israel-Iran war has started to impact the hospitality sector in Dubai, with \u2026"
+    "Other: Dubai Real Estate Resilience \u00b7 Despite the ongoing war, Dubai's real estate market is showing signs of resilien\u2026",
+    "India: Indian Students in Iran \u00b7 The Indian government has been informed that 1,000 Indian students are yet to le\u2026"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-18 17:55 UTC",
-    "sourcesUsed": 6
+    "tension": "MEDIUM",
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-18 18:50 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 80,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 60,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 72,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 52,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 30,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 75,
+      "pct": 55,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 70,
+      "pct": 50,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "just now",
-      "headline": "Iran Cluster Bomb Strike",
-      "summary": "Iran has launched a cluster bomb strike on Israel, causing significant damage and raising concerns about the escalation of the conflict. The strike has been widely condemned by the international community.",
-      "whyTxt": "The recent cluster bomb strike on Israel and the destruction of a building in Beirut have significantly raised tensions in the region.",
-      "orgs": [
-        "Iran"
-      ]
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "just now",
-      "headline": "Destruction of Building in Beirut",
-      "summary": "Israel has struck and destroyed a building in the heart of Beirut, further escalating the conflict. The strike has raised concerns about the safety of civilians in the region.",
-      "whyTxt": "The recent cluster bomb strike on Israel and the destruction of a building in Beirut have significantly raised tensions in the region.",
-      "orgs": [
-        "Israel"
-      ]
-    },
-    {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "just now",
-      "headline": "Impact on Dubai's Hospitality Sector",
-      "summary": "The Israel-Iran war has started to impact the hospitality sector in Dubai, with tourism dropping sharply. The decline in tourism has raised concerns about the economic impact of the conflict on the region.",
-      "whyTxt": "The recent cluster bomb strike on Israel and the destruction of a building in Beirut have significantly raised tensions in the region.",
+      "headline": "Dubai Real Estate Resilience",
+      "summary": "Despite the ongoing war, Dubai's real estate market is showing signs of resilience, with investors seeking safe havens. This could indicate a level of economic stability in the region, but the situation remains uncertain.",
+      "whyTxt": "The conflict is spreading across the Middle East, with various nations taking sides, leading to increased tensions.",
       "orgs": [
         "Other"
+      ]
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "India",
+      "time": "just now",
+      "headline": "Indian Students in Iran",
+      "summary": "The Indian government has been informed that 1,000 Indian students are yet to leave Iran, raising concerns about their safety. The government is working to ensure their safe evacuation.",
+      "whyTxt": "The conflict is spreading across the Middle East, with various nations taking sides, leading to increased tensions.",
+      "orgs": [
+        "India"
       ]
     },
     {
@@ -91,29 +77,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "The international community's response to the escalation of the conflict, the impact of the conflict on the global economy, and the safety of civilians in the region.",
-      "whyTxt": "The Israel-Iran war continues to escalate with recent strikes and retaliations, while the global community watches the situation unfold. The conflict has started to impact the global economy, particularly in the Middle East. The situation remains volatile with no clear end in sight.",
+      "summary": "Monitor the evacuation of Indian students from Iran, the US and Israeli military operations, and the Iranian response over the next 6 hours.",
+      "whyTxt": "The US-Israel-Iran war continues with ongoing developments, including the resilience of Dubai's real estate market and concerns over Indian students in Iran. The situation remains volatile, with multiple nations involved. The Indian government is working to ensure the safety of its citizens abroad.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "ESCALATING",
-    "us_stance": "The US has not made any significant statements on the conflict, but is likely to be monitoring the situation closely.",
-    "israel_stance": "Israel has continued to launch strikes against Iranian targets, and has shown no signs of backing down.",
-    "iran_stance": "Iran has vowed to avenge the killing of its intelligence minister and has continued to launch retaliatory strikes against Israel."
+    "overall_tone": "VOLATILE",
+    "us_stance": "The US is maintaining its support for Israel, while also engaging in diplomatic efforts to reduce tensions.",
+    "israel_stance": "Israel is continuing its military operations against Iranian targets, citing self-defense.",
+    "iran_stance": "Iran is retaliating against Israeli and US targets, accusing them of aggression."
   },
   "terms": [
     {
-      "term": "Cluster Bomb",
-      "simple_explanation": "A type of bomb that releases multiple smaller bombs over a wide area, causing significant damage and harm to civilians and infrastructure."
+      "term": "Real Estate Resilience",
+      "simple_explanation": "The ability of a real estate market to withstand or recover from economic shocks or crises."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 14:21 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-17 15:37 UTC",
       "l": "MEDIUM",
@@ -208,8 +189,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 17:55 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-18 18:50 UTC",
+      "l": "MEDIUM",
+      "tone": "VOLATILE"
     }
   ],
-  "execSummary": "The Israel-Iran war continues to escalate with recent strikes and retaliations, while the global community watches the situation unfold. The conflict has started to impact the global economy, particularly in the Middle East. The situation remains volatile with no clear end in sight.",
-  "totalReports": 41
+  "execSummary": "The US-Israel-Iran war continues with ongoing developments, including the resilience of Dubai's real estate market and concerns over Indian students in Iran. The situation remains volatile, with multiple nations involved. The Indian government is working to ensure the safety of its citizens abroad.",
+  "totalReports": 42
 };
