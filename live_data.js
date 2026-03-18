@@ -1,45 +1,44 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 03:19 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-18 05:12 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "US: US Hits Iran Missiles \u00b7 The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near t\u2026",
-    "Iran: Iranian Airstrikes in Tel Aviv \u00b7 Iran has carried out airstrikes in Tel Aviv, killing 2 Israelis and injuring sev\u2026",
-    "Iran: Debris Falls Over Dubai \u00b7 Debris has fallen over Dubai after air defences intercepted missiles from Iran, \u2026"
+    "Iran: Larijani Killing \u00b7 Ali Larijani, a key figure in Iran, was killed along with his son, which may imp\u2026",
+    "US: Trump's Response to NATO \u00b7 Trump has responded to NATO's criticism of the US's handling of the Iran war, st\u2026"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-18 03:19 UTC",
-    "sourcesUsed": 7
+    "tension": "MEDIUM",
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-18 05:12 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 80,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 57,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 72,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 49,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 30,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 75,
+      "pct": 52,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 70,
+      "pct": 47,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -48,25 +47,12 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "just now",
-      "headline": "US Hits Iran Missiles",
-      "summary": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, in a significant escalation of the conflict. This move is seen as a strong response to Iranian aggression in the region.",
-      "whyTxt": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, significantly escalating the conflict.",
-      "orgs": [
-        "US"
-      ]
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "just now",
-      "headline": "Iranian Airstrikes in Tel Aviv",
-      "summary": "Iran has carried out airstrikes in Tel Aviv, killing 2 Israelis and injuring several others. This move is seen as a retaliation to the US strikes on Iranian missiles.",
-      "whyTxt": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, significantly escalating the conflict.",
+      "headline": "Larijani Killing",
+      "summary": "Ali Larijani, a key figure in Iran, was killed along with his son, which may impact the US's ability to negotiate with Tehran. This event has raised concerns about the escalating violence in the region.",
+      "whyTxt": "The killing of Ali Larijani and his son has increased tensions between the US and Iran, making it challenging for the US to find a reliable partner in Tehran.",
       "orgs": [
         "Iran"
       ]
@@ -74,14 +60,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "just now",
-      "headline": "Debris Falls Over Dubai",
-      "summary": "Debris has fallen over Dubai after air defences intercepted missiles from Iran, highlighting the spread of the conflict to other parts of the region. The incident has raised concerns about the safety of civilians in the region.",
-      "whyTxt": "The US has used 5,000-pound 'bunker buster' bombs to hit Iranian missiles near the Strait of Hormuz, significantly escalating the conflict.",
+      "headline": "Trump's Response to NATO",
+      "summary": "Trump has responded to NATO's criticism of the US's handling of the Iran war, stating that the US needs no help. This statement has increased tensions between the US and its allies.",
+      "whyTxt": "The killing of Ali Larijani and his son has increased tensions between the US and Iran, making it challenging for the US to find a reliable partner in Tehran.",
       "orgs": [
-        "Iran"
+        "US"
       ]
     },
     {
@@ -91,29 +77,19 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "The response of the international community to the escalation of the conflict, the potential for further airstrikes and missile strikes, and the impact on global oil prices.",
-      "whyTxt": "The US-Israel-Iran conflict continues to escalate with airstrikes and missile strikes, while the global economy watches with bated breath. The US has hit Iranian missiles near the Strait of Hormuz, and Iran has retaliated with airstrikes in Tel Aviv. The situation remains volatile, with no clear end in sight.",
+      "summary": "The US's next move in negotiating with Tehran, Israel's response to the killing of Larijani and his son, and NATO's reaction to Trump's statement.",
+      "whyTxt": "The US-Israel-Iran conflict continues to escalate with the killing of Ali Larijani and his son, leaving the US to reassess who to talk to in Tehran. Trump has also pushed back against NATO's criticism of the US's handling of the Iran war. There is no direct impact on India reported in the given articles.",
       "orgs": []
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has taken a strong stance against Iranian aggression, using significant military force to hit Iranian missiles.",
-    "israel_stance": "Israel has been targeted by Iranian airstrikes, and is likely to respond strongly to these attacks.",
-    "iran_stance": "Iran has retaliated to US strikes with airstrikes in Tel Aviv, and is likely to continue to escalate the conflict."
+    "us_stance": "The US is taking a firm stance against Iran, with Trump pushing back against criticism from NATO.",
+    "israel_stance": "There is no direct mention of Israel's stance in the given articles.",
+    "iran_stance": "Iran's stance is not explicitly mentioned in the given articles, but the killing of Larijani and his son may indicate increased tensions."
   },
-  "terms": [
-    {
-      "term": "Bunker Buster",
-      "simple_explanation": "A type of bomb designed to penetrate deep into the ground before exploding, often used to target underground bunkers or tunnels."
-    }
-  ],
+  "terms": [],
   "history": [
-    {
-      "t": "2026-03-16 21:32 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-16 22:05 UTC",
       "l": "MEDIUM",
@@ -208,8 +184,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 03:19 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-18 05:12 UTC",
+      "l": "MEDIUM",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict continues to escalate with airstrikes and missile strikes, while the global economy watches with bated breath. The US has hit Iranian missiles near the Strait of Hormuz, and Iran has retaliated with airstrikes in Tel Aviv. The situation remains volatile, with no clear end in sight.",
-  "totalReports": 30
+  "execSummary": "The US-Israel-Iran conflict continues to escalate with the killing of Ali Larijani and his son, leaving the US to reassess who to talk to in Tehran. Trump has also pushed back against NATO's criticism of the US's handling of the Iran war. There is no direct impact on India reported in the given articles.",
+  "totalReports": 31
 };
