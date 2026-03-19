@@ -149,6 +149,16 @@ def _proxy_image(url: str) -> str:
     return f"https://images.weserv.nl/?url={quote(clean, safe='')}&w=800&h=450&fit=cover&output=jpg"
 
 
+def _proxy_image(url):
+    if not url:
+        return url
+    if "unsplash.com" in url:
+        return url
+    from urllib.parse import quote
+    clean = url.split("?")[0]
+    return f"https://images.weserv.nl/?url={quote(clean, safe='')}&w=800&h=450&fit=cover&output=jpg"
+
+
 def _extract_image_from_rss(item) -> str:
     """Try all known RSS image patterns. Returns best URL or empty string."""
 
