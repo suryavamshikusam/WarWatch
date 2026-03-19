@@ -1,73 +1,59 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 04:03 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-19 05:36 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iran: Iran Hits Qatar's LNG Plant \u00b7 Iran has launched a missile strike on Qatar's LNG plant, causing a fire on site.\u2026",
-    "US: Trump Warns Iran \u00b7 Trump has warned Iran that the US will take further action unless Iran stops its\u2026"
+    "Iran: Drones Spotted Over US Army Base \u00b7 Drones have been spotted over a US army base where a prominent US politician liv\u2026"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-19 04:03 UTC",
-    "sourcesUsed": 6
+    "tension": "MEDIUM",
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-19 05:36 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 80,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 54,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 72,
-      "lvl": "HIGH",
-      "color": "#c87830"
+      "pct": 46,
+      "lvl": "MEDIUM",
+      "color": "var(--amber)"
     },
     {
       "label": "Gaza ceasefire",
-      "pct": 30,
+      "pct": 53,
       "lvl": "Holding",
       "color": "var(--green)"
     },
     {
       "label": "Nuclear progress",
-      "pct": 75,
+      "pct": 49,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 70,
+      "pct": 44,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iran Hits Qatar's LNG Plant",
-      "summary": "Iran has launched a missile strike on Qatar's LNG plant, causing a fire on site. This attack is seen as a significant escalation of the conflict, with potential implications for global energy markets.",
-      "whyTxt": "Iran's missile strike on Qatar's LNG plant has significantly raised tensions in the region.",
+      "time": "just now",
+      "headline": "Drones Spotted Over US Army Base",
+      "summary": "Drones have been spotted over a US army base where a prominent US politician lives, amid the ongoing Iran war. This incident has raised concerns about the safety and security of US military personnel and facilities.",
+      "whyTxt": "The presence of drones over a US army base has increased tensions between the US and Iran.",
       "orgs": [
         "Iran"
-      ]
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "1 min ago",
-      "headline": "Trump Warns Iran",
-      "summary": "Trump has warned Iran that the US will take further action unless Iran stops its attacks. This statement has raised concerns about the potential for further escalation of the conflict.",
-      "whyTxt": "Iran's missile strike on Qatar's LNG plant has significantly raised tensions in the region.",
-      "orgs": [
-        "US"
       ]
     },
     {
@@ -75,31 +61,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "1 min ago",
+      "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor Iran's next move, watch for any response from Israel, and track the impact on global energy markets.",
-      "whyTxt": "The US-Israel-Iran war has escalated with Iran hitting Qatar's LNG plant, and Trump warning of further action unless Iran stops its attacks. The conflict has affected global energy markets, with potential implications for India's economy. India's diamond trading hub in Gujarat has also been impacted, with the industry facing significant losses.",
+      "summary": "Monitor for any further incidents involving drones or other military assets, watch for statements from US, Israeli, and Iranian leaders, and track any changes in the international community's response to the conflict.",
+      "whyTxt": "The US-Israel-Iran conflict is ongoing with reports of drones seen over a US army base. The situation remains tense with no clear signs of de-escalation. The international community is closely monitoring the situation for any further developments.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "ESCALATING",
-    "us_stance": "The US has taken a strong stance against Iran, warning of further action unless Iran stops its attacks.",
-    "israel_stance": "Israel has not made any official statements in the last 24 hours, but its actions are being closely monitored.",
-    "iran_stance": "Iran has continued to launch attacks on energy sites in the Gulf, despite warnings from the US and other countries."
+    "overall_tone": "TENSE",
+    "us_stance": "The US is maintaining a strong stance against Iran, with a focus on protecting its military personnel and facilities.",
+    "israel_stance": "Israel is closely monitoring the situation and is prepared to take action if necessary.",
+    "iran_stance": "Iran is continuing to assert its military capabilities and is not showing signs of backing down."
   },
   "terms": [
     {
-      "term": "LNG",
-      "simple_explanation": "Liquefied Natural Gas, a type of natural gas that is transported and stored in liquid form"
+      "term": "Drone",
+      "simple_explanation": "An unmanned aerial vehicle, often used for military or surveillance purposes."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 21:53 UTC",
-      "l": "MEDIUM",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-17 22:25 UTC",
       "l": "MEDIUM",
@@ -194,8 +175,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 04:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-19 05:36 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has escalated with Iran hitting Qatar's LNG plant, and Trump warning of further action unless Iran stops its attacks. The conflict has affected global energy markets, with potential implications for India's economy. India's diamond trading hub in Gujarat has also been impacted, with the industry facing significant losses.",
-  "totalReports": 46
+  "execSummary": "The US-Israel-Iran conflict is ongoing with reports of drones seen over a US army base. The situation remains tense with no clear signs of de-escalation. The international community is closely monitoring the situation for any further developments.",
+  "totalReports": 47
 };
