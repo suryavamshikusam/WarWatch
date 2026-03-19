@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 22:53 UTC",
-  "escalationLevel": "CRITICAL",
+  "generatedAt": "2026-03-19 23:23 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "US: Pentagon Requests $200bn for Iran War · 1 min ago",
-    "Israel: Netanyahu Calls for Ground Offensive · 1 min ago",
-    "US: 16 US Military Aircraft Destroyed · 1 min ago",
-    "Israel: Protests in Tel Aviv Call for End to War · 1 min ago",
-    "US: Trump Praises Japan's Support for Iran War · 1 min ago"
+    "Israel: Israel Intercepts Iranian Missiles · 0 min ago",
+    "US: US Supports Israel · 0 min ago",
+    "Iran: Iran Launches Missile Attacks · 0 min ago",
+    "Israel: Israel Prepares for Further Attacks · 0 min ago",
+    "US: US-Iran Tensions Escalate · 0 min ago"
   ],
   "heroStats": {
-    "tension": "CRITICAL",
-    "updatesToday": 22,
-    "lastUpdated": "2026-03-19 22:53 UTC",
-    "sourcesUsed": 10
+    "tension": "HIGH",
+    "updatesToday": 23,
+    "lastUpdated": "2026-03-19 23:23 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 90,
-      "lvl": "Critical",
+      "pct": 72,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 82,
-      "lvl": "Critical",
+      "pct": 64,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
@@ -35,13 +35,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 70,
+      "pct": 52,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 78,
+      "pct": 60,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -51,176 +51,171 @@ window.WARWATCH_LIVE = {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel Intercepts Iranian Missiles",
+      "summary": "The Israel Defense Forces have intercepted over 90% of Iranian missiles fired at Israel, with 270 out of 285 missiles being neutralized. This has raised concerns about the effectiveness of Iran's missile program. The interceptions have also led to a significant reduction in casualties and damage. The Israeli military has warned that interceptions of missiles with cluster warheads do not always neutralize the missiles' submunitions.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
       "actor": "US",
-      "time": "1 min ago",
-      "headline": "Pentagon Requests $200bn for Iran War",
-      "summary": "The Pentagon has requested $200bn from Congress to cover US costs for the war on Iran. This request has been made to ensure that the US is properly funded for the ongoing conflict. The request was first revealed by The Washington Post, citing unnamed officials, and has not been disputed by the US government.",
+      "time": "0 min ago",
+      "headline": "US Supports Israel",
+      "summary": "The US has reaffirmed its support for Israel, with the US Secretary of State stating that the US will continue to provide military aid to Israel. This has led to increased tensions with Iran, which has accused the US of fueling the conflict. The US has also imposed sanctions on Iranian officials and entities, further escalating the situation.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/it-takes-money-kill-bad-guys-pentagon-requests-200bn-congress-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-19T174745Z_1627668325_RC2S7KAIDDZE_RTRMADP_3_IRAN-CRISIS-USA-PROTEST-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "1 min ago",
-      "headline": "Netanyahu Calls for Ground Offensive",
-      "summary": "Israel's Prime Minister Netanyahu has stated that a ground offensive is required to bring about the collapse of the Iranian regime. This statement has been made in the context of the ongoing conflict between Israel and Iran. Netanyahu has also highlighted Israel's military successes and the crippling of Iran's nuclear and missile programs.",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iran Launches Missile Attacks",
+      "summary": "Iran has launched over 365 ballistic missiles at Israel since the start of the war, with the majority being intercepted by Israeli air defenses. The Iranian military has stated that the missile launches are in response to Israeli aggression. The attacks have raised concerns about the potential for further escalation.",
       "whyTxt": "",
       "orgs": [
-        "Israel"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-19/ty-article/.premium/netanyahu-says-a-revolution-in-iran-requires-a-ground-offensive/0000019d-07ba-d088-a5fd-b7bb26a20000",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
       "sourceLabel": "Haaretz",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-0785-d46f-affd-979f88390000%2Fdc%2Fb2%2Fae2e6d0d4de297a3c87a8e5ec72d%2F309043.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "1 min ago",
-      "headline": "16 US Military Aircraft Destroyed",
-      "summary": "The conflict has resulted in the destruction of 16 US military aircraft. This has been reported by NDTV, citing unnamed officials. The destruction of these aircraft has significant implications for the US military's ability to conduct operations in the region.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-16-us-military-aircraft-destroyed-since-start-of-iran-war-11240705#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fo9j2sdd4_kc135-aircraft_625x300_13_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "Israel",
-      "time": "1 min ago",
-      "headline": "Protests in Tel Aviv Call for End to War",
-      "summary": "Protests have been held in Tel Aviv calling for an end to the war with Iran. The protests have been organized by Israeli citizens who are opposed to the ongoing conflict. The protesters have accused the government of prolonging the conflict with no clear timeline or goals.",
+      "time": "0 min ago",
+      "headline": "Israel Prepares for Further Attacks",
+      "summary": "The Israeli military is preparing for further attacks from Iran, with the Israeli Prime Minister stating that Israel will not hesitate to defend itself. The Israeli military has also increased its presence along the border with Lebanon, where Hezbollah is based. The situation remains volatile, with the potential for further escalation.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/19/israelis-protest-in-tel-aviv-calling-for-end-to-iran-war?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2FWIDE-THUMB-Israel-1773954667.png&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
-      "time": "1 min ago",
-      "headline": "Trump Praises Japan's Support for Iran War",
-      "summary": "The US has praised Japan's support for the Iran war. This has been reported by Foreign Policy, citing unnamed officials. Japan has been a key ally of the US in the region and has provided significant support for the ongoing conflict.",
+      "time": "0 min ago",
+      "headline": "US-Iran Tensions Escalate",
+      "summary": "Tensions between the US and Iran have escalated, with the US imposing sanctions on Iranian officials and entities. Iran has responded by accusing the US of fueling the conflict. The situation remains volatile, with the potential for further escalation.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://foreignpolicy.com/2026/03/19/trump-takaichi-japan-iran-war-nato-strait-hormuz-troops/",
-      "sourceLabel": "Foreign Policy",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fforeignpolicy.com%2Fwp-content%2Fuploads%2F2026%2F03%2FTrumpJapan-GettyImages-2267395843.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "Saudi Arabia",
-      "time": "1 min ago",
-      "headline": "Saudi Arabia Has Right to Take Military Action",
-      "summary": "Saudi Arabia's foreign minister has stated that the country has the right to take military action against Iran. This statement has been made in the context of the ongoing conflict between Iran and its regional rivals. The situation remains volatile, with oil prices hitting record highs amid an unprecedented disruption to global energy flows.",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Regional Stability at Risk",
+      "summary": "The conflict has raised concerns about regional stability, with the potential for further escalation. The situation remains volatile, with the potential for other countries to become involved. The conflict has also led to a significant increase in oil prices, which has affected the global economy.",
       "whyTxt": "",
       "orgs": [
-        "Saudi Arabia"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-has-right-take-military-action-against-iran-foreign",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "1 min ago",
-      "headline": "Israel Widened Energy War with Iran",
-      "summary": "Israel has widened an energy war with Iran, which the US will find hard to stop. This has been reported by Haaretz, citing unnamed officials. The conflict has resulted in the destruction of critical energy assets, leading to a significant disruption in global energy flows.",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Global Energy Security at Risk",
+      "summary": "The conflict has raised concerns about global energy security, with the potential for further disruption to oil supplies. The situation remains volatile, with the potential for other countries to become involved. The conflict has also led to a significant increase in oil prices, which has affected the global economy.",
       "whyTxt": "",
       "orgs": [
-        "Israel"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/israel-widened-an-energy-war-with-iran-that-trump-will-find-hard-to-stop/0000019d-07fe-df92-a9df-effe30ae0000",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
       "sourceLabel": "Haaretz",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-0813-da5c-a7bd-2fb785a90000%2Fa8%2Fcb%2F6ecb2b6349469e33b60fec5c0f1c%2F275726-3.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has praised Japan's support for the Iran war and has requested $200bn from Congress to cover US costs for the war.",
-    "israel_stance": "Israel has widened an energy war with Iran and has stated that a ground offensive is required to bring about the collapse of the Iranian regime.",
-    "iran_stance": "Iran has retaliated with strikes on Qatari energy assets and has stated that it will continue to defend its interests in the region."
+    "us_stance": "The US has reaffirmed its support for Israel, with the US Secretary of State stating that the US will continue to provide military aid to Israel.",
+    "israel_stance": "Israel has stated that it will not hesitate to defend itself, with the Israeli Prime Minister stating that Israel will take all necessary measures to protect its citizens.",
+    "iran_stance": "Iran has accused the US and Israel of fueling the conflict, with the Iranian military stating that it will continue to launch missile attacks in response to Israeli aggression."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "The Strait of Hormuz is a critical waterway in the Middle East that connects the Persian Gulf to the Gulf of Oman. It is a key shipping route for oil and other goods, and its closure could have significant implications for global trade."
+      "term": "Ballistic missile",
+      "simple_explanation": "A ballistic missile is a type of missile that follows a ballistic trajectory, meaning it is guided by gravity and does not have a propulsion system. Ballistic missiles are often used for long-range attacks and can carry nuclear or conventional warheads."
     },
     {
-      "term": "NATO",
-      "simple_explanation": "The North Atlantic Treaty Organization (NATO) is a military alliance between 30 North American and European countries. It provides a collective defense against potential security threats."
+      "term": "Cluster warhead",
+      "simple_explanation": "A cluster warhead is a type of warhead that contains multiple submunitions, or bomblets, that are designed to explode over a wide area. Cluster warheads are often used to attack large targets, such as military bases or cities."
     },
     {
-      "term": "Ground offensive",
-      "simple_explanation": "A ground offensive is a military operation that involves the use of ground troops to attack an enemy's position. It is often used in conjunction with air and naval power to achieve a strategic objective."
+      "term": "Air defense system",
+      "simple_explanation": "An air defense system is a network of radar, command and control systems, and missile launchers that are designed to detect and intercept incoming missiles or aircraft. Air defense systems are used to protect against aerial attacks and can be used to defend against ballistic missiles, cruise missiles, and aircraft."
     },
     {
-      "term": "Energy war",
-      "simple_explanation": "An energy war refers to a conflict that involves the use of energy resources as a weapon. This can include attacks on energy infrastructure, such as oil refineries and pipelines, as well as the use of energy embargoes to restrict an enemy's access to energy resources."
+      "term": "Sanctions",
+      "simple_explanation": "Sanctions are economic penalties that are imposed on a country or entity in order to punish or coerce them into changing their behavior. Sanctions can include trade embargoes, asset freezes, and travel bans, and are often used to enforce international law or to punish human rights abuses."
     },
     {
-      "term": "Tit-for-tat strikes",
-      "simple_explanation": "Tit-for-tat strikes refer to a series of retaliatory attacks between two or more parties. Each side attacks the other in response to a perceived provocation, leading to an escalation of violence."
+      "term": "Diplomatic relations",
+      "simple_explanation": "Diplomatic relations refer to the formal relationships between countries, including the exchange of ambassadors, diplomatic missions, and official communications. Diplomatic relations are important for maintaining peace and stability between countries and can be used to resolve conflicts and promote cooperation."
     },
     {
-      "term": "Escalation dominance",
-      "simple_explanation": "Escalation dominance refers to a situation in which one side has the ability to escalate a conflict to a higher level of violence, while the other side is unable or unwilling to respond in kind. This can give the dominant side a strategic advantage in the conflict."
+      "term": "Energy security",
+      "simple_explanation": "Energy security refers to the ability of a country to ensure a stable and reliable supply of energy, including oil, gas, and other fuels. Energy security is important for maintaining economic stability and can be affected by conflicts, sanctions, and other disruptions to energy supplies."
     },
     {
-      "term": "Revolution",
-      "simple_explanation": "A revolution is a fundamental change in a society or political system. It can involve the overthrow of a government or the establishment of a new social order."
+      "term": "Regional stability",
+      "simple_explanation": "Regional stability refers to the ability of a region to maintain peace and stability, including the absence of conflict, terrorism, and other security threats. Regional stability is important for promoting economic development, cooperation, and human rights, and can be affected by conflicts, sanctions, and other disruptions."
     },
     {
-      "term": "Qatari energy assets",
-      "simple_explanation": "Qatari energy assets refer to the oil and gas resources of Qatar, a small country in the Middle East. These resources are critical to the global energy market, and attacks on them could have significant implications for energy prices and availability."
+      "term": "Global economy",
+      "simple_explanation": "The global economy refers to the international system of trade, finance, and commerce that connects countries and economies around the world. The global economy is affected by conflicts, sanctions, and other disruptions to trade and finance, and can have a significant impact on economic stability and development."
     },
     {
-      "term": "US military spending",
-      "simple_explanation": "US military spending refers to the amount of money that the US government allocates to its military each year. This spending can include funds for personnel, equipment, and operations, as well as research and development of new technologies."
+      "term": "Oil prices",
+      "simple_explanation": "Oil prices refer to the cost of crude oil, which is a major component of the global energy market. Oil prices can be affected by conflicts, sanctions, and other disruptions to oil supplies, and can have a significant impact on the global economy and energy security."
     },
     {
-      "term": "Global energy flows",
-      "simple_explanation": "Global energy flows refer to the movement of energy resources, such as oil and gas, around the world. These flows are critical to the global economy, and disruptions to them can have significant implications for energy prices and availability."
+      "term": "Hezbollah",
+      "simple_explanation": "Hezbollah is a militant group based in Lebanon that is supported by Iran and has been involved in conflicts with Israel. Hezbollah is considered a terrorist organization by many countries and has been subject to sanctions and other penalties."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 09:30 UTC",
-      "l": "HIGH",
-      "tone": "Israel's strike on I"
-    },
     {
       "t": "2026-03-17 10:26 UTC",
       "l": "MEDIUM",
@@ -455,40 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 22:53 UTC",
       "l": "CRITICAL",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-19 23:23 UTC",
+      "l": "HIGH",
+      "tone": "The high escalation "
     }
   ],
-  "execSummary": "The US-Israel-Iran war has escalated with the Pentagon requesting $200bn from Congress to cover US costs. Israel's Prime Minister Netanyahu has stated that a ground offensive is required to bring about the collapse of the Iranian regime. The conflict has resulted in the destruction of 16 US military aircraft and has led to protests in Tel Aviv calling for an end to the war. The situation remains volatile, with oil prices hitting record highs amid an unprecedented disruption to global energy flows. The US has praised Japan's support for the Iran war, while NATO's European members have refused to provide assistance in the Strait of Hormuz.",
-  "totalReports": 66,
+  "execSummary": "The US-Israel-Iran war has seen significant developments, with Israel intercepting over 90% of Iranian missiles. The conflict has raised concerns about regional stability and global energy security. India, a major oil importer, is closely watching the situation. The war has also led to a significant escalation in tensions between the US and Iran.",
+  "totalReports": 67,
   "indiaImpact": [
     {
       "headline": "India's Energy Security at Risk",
-      "detail": "The conflict in the Middle East has significant implications for India's energy security. India is heavily reliant on imports of oil and gas, and disruptions to global energy flows could have a major impact on the country's economy. The Indian government will need to carefully navigate this situation to ensure that the country's energy needs are met.",
+      "detail": "The conflict in the Middle East has raised concerns about India's energy security, with the potential for disruptions to oil supplies. India is a major oil importer and is heavily reliant on the Middle East for its energy needs. The conflict has already led to a significant increase in oil prices, which has affected the Indian economy.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has significant implications for India's energy security. India is heavily reliant on imports of oil and gas, and disruptions to global energy flows could have a major impact on the country's economy. The Indian government will need to carefully navigate this situation to ensure that the country's energy needs are met. This could involve diversifying the country's energy sources, increasing domestic production, and improving energy efficiency. The government will also need to work with international partners to ensure that the global energy market remains stable and secure.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fo9j2sdd4_kc135-aircraft_625x300_13_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/clumsy-tit-for-tat-strikes-energy-assets-gifts-iran-another-tactical-lever",
-      "source": "Middle East Eye"
+      "full_detail": "India is heavily reliant on the Middle East for its energy needs, with over 80% of its oil imports coming from the region. The conflict has already led to a significant increase in oil prices, which has affected the Indian economy. The Indian government has been working to diversify its energy sources, but the conflict has highlighted the need for greater energy security. The Indian government has also been working to promote diplomatic efforts to resolve the conflict and reduce the risk of further escalation.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "source": "Haaretz"
     },
     {
-      "headline": "Indian Nationals in the Middle East",
-      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict in the region could have a major impact on these individuals, and the Indian government will need to take steps to ensure their safety and security.",
+      "headline": "Indian Nationals in the Region",
+      "detail": "There are thousands of Indian nationals living and working in the Middle East, many of whom are at risk due to the conflict. The Indian government has been working to evacuate its citizens from the region, but the situation remains volatile. The conflict has also raised concerns about the potential for Indian nationals to be affected by the conflict, including the risk of injury or death.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict in the region could have a major impact on these individuals, and the Indian government will need to take steps to ensure their safety and security. This could involve providing emergency assistance, evacuating citizens from affected areas, and working with local authorities to ensure that Indian nationals are protected.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2FWIDE-THUMB-Israel-1773954667.png&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/it-takes-money-kill-bad-guys-pentagon-requests-200bn-congress-iran-war",
-      "source": "Middle East Eye"
+      "full_detail": "The Indian government has been working to evacuate its citizens from the region, but the situation remains volatile. The conflict has also raised concerns about the potential for Indian nationals to be affected by the conflict, including the risk of injury or death. The Indian government has been working to provide assistance to its citizens in the region, including providing emergency services and consular support.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "source": "Haaretz"
     },
     {
       "headline": "India's Diplomatic Efforts",
-      "detail": "The Indian government has been actively engaged in diplomatic efforts to resolve the conflict in the Middle East. This has included talks with regional leaders, as well as efforts to promote a peaceful resolution to the conflict. The Indian government will need to continue to play a constructive role in promoting peace and stability in the region.",
+      "detail": "The Indian government has been working to promote diplomatic efforts to resolve the conflict and reduce the risk of further escalation. India has been in contact with the US, Israel, and Iran, and has been working to promote a peaceful resolution to the conflict. The Indian government has also been working to promote regional stability and security, including through its membership in the Non-Aligned Movement.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been actively engaged in diplomatic efforts to resolve the conflict in the Middle East. This has included talks with regional leaders, as well as efforts to promote a peaceful resolution to the conflict. The Indian government will need to continue to play a constructive role in promoting peace and stability in the region. This could involve working with international partners, such as the US and the EU, to promote a negotiated settlement to the conflict. The Indian government will also need to engage with regional leaders, including those in Iran and Israel, to promote a peaceful resolution to the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fforeignpolicy.com%2Fwp-content%2Fuploads%2F2026%2F03%2FTrumpJapan-GettyImages-2267395843.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/israel-pm-netanyahu-s-iran-war-briefing-15-major-points-11773953398108.html",
-      "source": "LiveMint"
+      "full_detail": "The Indian government has been working to promote diplomatic efforts to resolve the conflict and reduce the risk of further escalation. India has been in contact with the US, Israel, and Iran, and has been working to promote a peaceful resolution to the conflict. The Indian government has also been working to promote regional stability and security, including through its membership in the Non-Aligned Movement. The Indian government has also been working to promote economic cooperation and development in the region, including through its membership in the Asian Infrastructure Investment Bank.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "source": "Haaretz"
+    },
+    {
+      "headline": "India's Economic Interests",
+      "detail": "The conflict in the Middle East has raised concerns about India's economic interests, including its trade and investment relationships with the region. India has significant trade and investment relationships with the Middle East, and the conflict has already led to a significant increase in oil prices, which has affected the Indian economy.",
+      "category": "Economy",
+      "significance": "HIGH",
+      "full_detail": "The conflict in the Middle East has raised concerns about India's economic interests, including its trade and investment relationships with the region. India has significant trade and investment relationships with the Middle East, and the conflict has already led to a significant increase in oil prices, which has affected the Indian economy. The Indian government has been working to diversify its trade and investment relationships, but the conflict has highlighted the need for greater economic security. The Indian government has also been working to promote economic cooperation and development in the region, including through its membership in the Asian Infrastructure Investment Bank.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019c-f236-d557-a3be-f2bf5cdd0001%2F0d%2F4d%2F651807b44bc0bfeed06e32aae7f5%2F142838-3.webp&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-20/ty-article/.premium/idf-data-over-90-of-iranian-missiles-fired-at-israel-have-been-intercepted/0000019d-07f4-da5c-a3bd-0ff67f790000",
+      "source": "Haaretz"
     }
   ],
   "indiaSummary": ""
