@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 11:49 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-19 12:44 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iran: Iran Proposes Tolls on Shipping · 0 min ago",
-    "China: China Restricts Fertiliser Exports · 0 min ago",
-    "US: US Counterterrorism Official Quits · 0 min ago",
-    "Iran: Persian Culture's Global Impact · 0 min ago",
-    "Global: Global Fertiliser Shortages · 0 min ago"
+    "Iran: Iranian Missile Attack Kills Palestinian Women · 0 min ago",
+    "China: China Offers to Help Taiwan with Energy Crisis · 0 min ago",
+    "UAE: Emirati Official: Iran's Attacks Will Strengthen Ties with Israel and US · 0 min ago",
+    "Israel: Israeli Crane Operators Exposed to Iranian Missiles · 0 min ago",
+    "Iran: West Bank Death Toll Rises to Four · 0 min ago"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-19 11:49 UTC",
-    "sourcesUsed": 4
+    "tension": "MEDIUM",
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-19 12:44 UTC",
+    "sourcesUsed": 5
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 72,
-      "lvl": "High",
-      "color": "var(--red)"
+      "pct": 50,
+      "lvl": "Medium",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 64,
-      "lvl": "High",
+      "pct": 42,
+      "lvl": "Medium",
       "color": "var(--red)"
     },
     {
@@ -35,15 +35,15 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
-      "lvl": "High",
+      "pct": 30,
+      "lvl": "Moderate",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 60,
-      "lvl": "Elevated",
-      "color": "var(--red)"
+      "pct": 38,
+      "lvl": "Moderate",
+      "color": "var(--amber)"
     }
   ],
   "newsCards": [
@@ -53,16 +53,16 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Proposes Tolls on Shipping",
-      "summary": "Iranian lawmakers have proposed a plan to impose tolls and taxes on ships passing through the strategic Strait of Hormuz. This move is seen as a response to the US-Israeli war on Iran and aims to generate revenue for the Islamic republic. The proposal has raised concerns among global shipping companies and could lead to increased costs for imports and exports. The Strait of Hormuz is a critical waterway for international trade, and any disruption could have significant economic implications.",
+      "headline": "Iranian Missile Attack Kills Palestinian Women",
+      "summary": "An Iranian missile attack on a beauty salon in the West Bank has killed three Palestinian women and injured eight more. The attack occurred in the town of Beit Awwa, near Hebron, and is the first incident of Palestinian casualties in the US-Israel war on Iran. The Israeli military has confirmed that the women were killed by a direct hit from a cluster munition missile.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-lawmakers-propose-tolls-shipping-through-strait-hormuz-media",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.bbc.com/news/articles/c0ljl23plpzo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fichef.bbci.co.uk%2Face%2Fstandard%2F240%2Fcpsprodpb%2F7ff7%2Flive%2F3e74ba80-234c-11f1-a79a-77e93010d956.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
@@ -70,16 +70,84 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "China",
       "time": "0 min ago",
-      "headline": "China Restricts Fertiliser Exports",
-      "summary": "China has clamped down on fertiliser exports to protect its domestic market, putting an additional strain on global markets that were already grappling with shortages caused by the US-Israeli war on Iran. China is among the largest fertiliser exporters, and its decision could lead to increased prices and reduced availability of fertilisers worldwide. This could have significant implications for global food security and agricultural production.",
+      "headline": "China Offers to Help Taiwan with Energy Crisis",
+      "summary": "China has offered to help Taiwan with its energy crisis in exchange for reunification. Taiwan imports about 70% of its crude oil, and China has stated that its abundant power supply is more than sufficient to meet Taiwan's electricity needs. This offer comes amid the US-Israel war on Iran, which has led to concerns about global energy security.",
       "whyTxt": "",
       "orgs": [
         "China"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-restricts-fertiliser-exports-further-crimping-war-tightened-supply",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-says-reunification-will-solve-taiwans-energy-crisis-amid-iran-war",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "UAE",
+      "time": "0 min ago",
+      "headline": "Emirati Official: Iran's Attacks Will Strengthen Ties with Israel and US",
+      "summary": "An Emirati official has stated that Iran's attacks on Gulf states will strengthen ties between Israel and the US. This comes as the US-Israel war on Iran continues to escalate, with multiple countries involved and various interests at stake.",
+      "whyTxt": "",
+      "orgs": [
+        "UAE"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.haaretz.com/middle-east-news/2026-03-18/ty-article/.premium/emirati-official-irans-attacks-on-gulf-will-strengthen-ties-with-israeli-u-s/0000019d-00e4-d17b-adff-3cf76bc80000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-0144-df92-a9df-e9c4c8ff0001%2F6e%2Fcf%2Fdf20928e4596ae7694c2f75b8969%2F820149.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-gray",
+      "badgeLabel": "Low",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israeli Crane Operators Exposed to Iranian Missiles",
+      "summary": "Seventy percent of crane operators in Israel are working during the war, exposed dozens of meters high. Even when there is a protected space below, there is almost no chance of reaching it in time. This has led to concerns about the safety of these workers.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-18/ty-article-magazine/.premium/high-in-the-air-israeli-crane-operators-left-exposed-to-iranian-missiles/0000019d-00cf-d318-a3fd-38ffbec40000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-00e9-da5c-a3bd-0eebd2670006%2Fde%2Fd2%2F591ba9504e3f9b8fdd8954c879f5%2F207779.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "West Bank Death Toll Rises to Four",
+      "summary": "A pregnant Palestinian woman has died from shrapnel wounds sustained during an Iranian missile attack, bringing the death toll to four. The attack occurred in the town of Beit Awa, near the city of Hebron, and is the first incident of Palestinian casualties in the US-Israel war on Iran.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-death-toll-rises-four-after-iran-missile-fire",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FA%2520Palestinian%2520civil%2520defence%2520worker%2520inspects%2520the%2520site%2520where%2520shrapnel%2520from%2520projectiles%2520fell%2520in%2520Beit%2520Awa%2520near%2520the%2520Israeli-occupied%2520West%2520Bank%2520city%2520of%2520Hebron%2520on%2520March%252018%252C%25202026.%2520AFP.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Thai Worker Killed in Israeli Farming Community",
+      "summary": "A Thai worker has been killed from shrapnel which hit a farming community in Israel. The incident occurred at the same time as the Iranian missile attack on the West Bank.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.bbc.com/news/articles/c0ljl23plpzo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fichef.bbci.co.uk%2Face%2Fstandard%2F240%2Fcpsprodpb%2F7ff7%2Flive%2F3e74ba80-234c-11f1-a79a-77e93010d956.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -87,123 +155,67 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Counterterrorism Official Quits",
-      "summary": "A senior US counterterrorism official, Joseph Kent, has quit in protest of the Iran war, citing that Iran posed no imminent threat to the US and that the war was started due to pressure from Israel and its powerful American lobby. The FBI has opened an investigation into Kent's alleged leak of classified information. This development highlights the divisions within the US administration regarding the war and the potential consequences of the conflict.",
+      "headline": "US-Israel War on Iran Continues to Escalate",
+      "summary": "The US-Israel war on Iran continues to escalate, with multiple countries involved and various interests at stake. The conflict has resulted in the deaths of several people, including Palestinian women and a Thai worker.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/discover/balkans-bengal-persians-culture-imprint-globe",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Persian Culture's Global Impact",
-      "summary": "The cultural influence of Persia, now modern-day Iran, can be seen in various parts of the world, including the Balkans and Bengal. This cultural exchange has been facilitated by historical trade and migration routes, and has left a lasting impact on the art, literature, and architecture of these regions. The appreciation of Persian culture is evident in the speech of Sayyid Ali Khamenei, who praised the Indian poet-philosopher Muhammad Iqbal as a 'luminous spark' that inspired the Iranian people.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/discover/balkans-bengal-persians-culture-imprint-globe",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMughal_Troops_Chase_the_Armies_of_Da%2527ud%2520%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Global",
-      "time": "0 min ago",
-      "headline": "Global Fertiliser Shortages",
-      "summary": "The US-Israeli war on Iran has led to global fertiliser shortages, with China's restriction on exports exacerbating the situation. This shortage could have significant implications for global food security and agricultural production, as fertilisers are essential for plant growth and crop yields. The shortage may also lead to increased prices and reduced availability of fertilisers worldwide.",
-      "whyTxt": "",
-      "orgs": [
-        "Global"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-restricts-fertiliser-exports-further-crimping-war-tightened-supply",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran's Economic Struggles",
-      "summary": "The US-Israeli war on Iran has had a significant impact on the country's economy, with sanctions and trade disruptions affecting its ability to export oil and import essential goods. The proposed tolls on shipping through the Strait of Hormuz may provide some relief, but the long-term effects of the war on Iran's economy remain uncertain.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/fbi-probing-counterterror-chief-who-quit-over-iran-war-reports-say",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.bbc.com/news/articles/c0ljl23plpzo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fichef.bbci.co.uk%2Face%2Fstandard%2F240%2Fcpsprodpb%2F7ff7%2Flive%2F3e74ba80-234c-11f1-a79a-77e93010d956.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US continues to support Israel in the conflict, with the administration maintaining that Iran poses a significant threat to regional security.",
-    "israel_stance": "Israel remains committed to its military campaign against Iran, citing the need to protect its national security and prevent the spread of Iranian influence in the region.",
-    "iran_stance": "Iran has responded to the US-Israeli war by proposing tolls on shipping through the Strait of Hormuz and restricting its oil exports, in an effort to exert pressure on the international community to intervene and end the conflict."
+    "us_stance": "The US has taken a strong stance against Iran, with ongoing military action and diplomatic efforts to isolate the country.",
+    "israel_stance": "Israel has been actively involved in the conflict, with a focus on defending its territory and interests.",
+    "iran_stance": "Iran has continued to launch missile attacks against Israel and other countries, despite international pressure to cease hostilities."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A strategic waterway located between Iran and Oman, through which a significant portion of the world's oil is transported. The strait is approximately 90 miles wide and connects the Persian Gulf to the Gulf of Oman."
+      "term": "Cluster munition",
+      "simple_explanation": "A type of missile that releases multiple smaller bombs, which can cause widespread damage and harm to civilians."
     },
     {
-      "term": "Fertiliser",
-      "simple_explanation": "A substance added to soil to promote plant growth and increase crop yields. Fertilisers can be made from natural or synthetic materials and are essential for agricultural production."
+      "term": "Gulf states",
+      "simple_explanation": "A group of countries in the Middle East, including Saudi Arabia, the UAE, and Qatar, that are located on the Persian Gulf."
     },
     {
-      "term": "Counterterrorism",
-      "simple_explanation": "The practice of preventing and combating terrorism, which involves the use of violence and intimidation to achieve political or ideological goals. Counterterrorism efforts often involve intelligence gathering, law enforcement, and military action."
+      "term": "Reunification",
+      "simple_explanation": "The process of bringing together two or more separate entities, such as countries or territories, under a single government or authority."
     },
     {
-      "term": "National Counterterrorism Center (NCTC)",
-      "simple_explanation": "A US government agency responsible for analyzing and disseminating terrorism-related intelligence. The NCTC was established in 2004 to coordinate counterterrorism efforts across the US government."
+      "term": "Crude oil",
+      "simple_explanation": "A type of oil that is extracted from the ground and refined into various petroleum products, such as gasoline and diesel fuel."
     },
     {
-      "term": "US-Israeli war",
-      "simple_explanation": "The ongoing conflict between the US, Israel, and Iran, which began with a series of military strikes and has since escalated into a full-scale war. The conflict has significant implications for regional security and global stability."
+      "term": "Shrapnel",
+      "simple_explanation": "Small pieces of metal that are released when a bomb or missile explodes, which can cause injury or damage."
     },
     {
-      "term": "Sanctions",
-      "simple_explanation": "Economic penalties imposed on a country or entity to restrict its trade and commerce. Sanctions can be used to pressure a country to change its behavior or to punish it for violating international norms."
+      "term": "Palestinian Red Crescent Society",
+      "simple_explanation": "A humanitarian organization that provides medical and other assistance to Palestinians in the West Bank and Gaza Strip."
     },
     {
-      "term": "Trade disruption",
-      "simple_explanation": "A disturbance or interruption to the normal flow of trade, which can be caused by a variety of factors including war, sanctions, and natural disasters. Trade disruptions can have significant economic and social impacts."
+      "term": "Taiwan Affairs Office",
+      "simple_explanation": "A government agency in China that is responsible for handling relations with Taiwan, which is considered a renegade province by the Chinese government."
     },
     {
-      "term": "Oil exports",
-      "simple_explanation": "The sale of oil from one country to another, which is a critical component of the global energy market. Oil exports can be affected by a range of factors, including geopolitical tensions, economic sanctions, and environmental concerns."
+      "term": "US-Israel war on Iran",
+      "simple_explanation": "A military conflict between the US, Israel, and Iran, which has resulted in the deaths of several people and the destruction of infrastructure."
     },
     {
-      "term": "Global food security",
-      "simple_explanation": "The availability and accessibility of food for all people, which is essential for human health and well-being. Global food security can be affected by a range of factors, including climate change, conflict, and economic instability."
+      "term": "Israeli-occupied West Bank",
+      "simple_explanation": "A territory that has been occupied by Israel since the 1967 war, which is home to several Palestinian cities and towns."
     },
     {
-      "term": "Agricultural production",
-      "simple_explanation": "The process of growing and harvesting crops, which is essential for food security and economic development. Agricultural production can be affected by a range of factors, including climate change, soil quality, and access to fertilisers and other inputs."
+      "term": "Energy crisis",
+      "simple_explanation": "A situation in which a country or region is facing a shortage of energy, which can have significant economic and social impacts."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 18:09 UTC",
-      "l": "MEDIUM",
-      "tone": "The conflict is esca"
-    },
     {
       "t": "2026-03-16 19:19 UTC",
       "l": "MEDIUM",
@@ -438,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 11:49 UTC",
       "l": "HIGH",
       "tone": "The proposal of toll"
+    },
+    {
+      "t": "2026-03-19 12:44 UTC",
+      "l": "MEDIUM",
+      "tone": "The conflict is esca"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues to escalate, with Iran proposing tolls on shipping through the Strait of Hormuz and China restricting fertiliser exports. The conflict has led to a senior US counterterrorism official quitting in protest, and the FBI has opened an investigation into the matter. The war has also affected global markets, with fertiliser shortages and oil price fluctuations. India's stakes in the conflict are significant, with potential impacts on its economy, diaspora, and energy security.",
-  "totalReports": 55,
+  "execSummary": "The US-Israel-Iran war has resulted in the deaths of three Palestinian women and a Thai worker. Iran's attacks on Gulf states are expected to strengthen ties between Israel and the US. China has offered to help Taiwan with its energy crisis in exchange for reunification. The conflict is escalating, with multiple countries involved and various interests at stake. The situation remains volatile, with no clear end in sight.",
+  "totalReports": 56,
   "indiaImpact": [
     {
       "headline": "India's Energy Security at Risk",
-      "detail": "The US-Israeli war on Iran has significant implications for India's energy security, as the country relies heavily on Iranian oil imports. The proposed tolls on shipping through the Strait of Hormuz could increase the cost of oil imports for India, which could have a negative impact on the country's economy.",
+      "detail": "The US-Israel war on Iran has led to concerns about global energy security, which could impact India's energy imports and economy. India is a major importer of crude oil, and any disruption to supplies could have significant consequences.",
       "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India is one of the largest importers of Iranian oil, and the country's energy security is heavily reliant on these imports. The proposed tolls on shipping through the Strait of Hormuz could increase the cost of oil imports for India, which could have a negative impact on the country's economy. Furthermore, the war has also led to a shortage of fertilisers, which could affect India's agricultural production and food security. The Indian government has been working to diversify its energy sources and reduce its reliance on Iranian oil, but the country still faces significant challenges in ensuring its energy security.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMughal_Troops_Chase_the_Armies_of_Da%2527ud%2520%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/discover/balkans-bengal-persians-culture-imprint-globe",
+      "significance": "MEDIUM",
+      "full_detail": "India is heavily reliant on imported crude oil to meet its energy needs, and any disruption to supplies could have significant consequences for the economy. The country has been working to diversify its energy sources and reduce its dependence on imported oil, but it remains vulnerable to global energy market fluctuations. The US-Israel war on Iran has led to concerns about the potential for further escalation in the region, which could impact India's energy security and economy.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-says-reunification-will-solve-taiwans-energy-crisis-amid-iran-war",
       "source": "Middle East Eye"
     },
     {
-      "headline": "Indian Diaspora in the Middle East",
-      "detail": "The US-Israeli war on Iran has significant implications for the Indian diaspora in the Middle East, as many Indians work in the region and could be affected by the conflict. The Indian government has been working to evacuate its citizens from the affected areas and provide assistance to those who have been displaced.",
+      "headline": "Indian Nationals in the Region",
+      "detail": "There are several Indian nationals living and working in the Middle East, including in countries such as the UAE and Israel. The conflict in the region could pose a risk to their safety and well-being.",
       "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The Indian diaspora in the Middle East is significant, with many Indians working in the region as expatriates. The US-Israeli war on Iran has created a challenging situation for these individuals, as they may be affected by the conflict and face difficulties in their daily lives. The Indian government has been working to evacuate its citizens from the affected areas and provide assistance to those who have been displaced. However, the situation remains uncertain, and the Indian government must continue to monitor the situation and provide support to its citizens in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-restricts-fertiliser-exports-further-crimping-war-tightened-supply",
-      "source": "Middle East Eye"
+      "significance": "LOW",
+      "full_detail": "There are several Indian nationals living and working in the Middle East, including in countries such as the UAE and Israel. The conflict in the region could pose a risk to their safety and well-being, and the Indian government may need to take steps to protect its citizens. However, the number of Indian nationals in the region is relatively small, and the risk to their safety is currently considered low.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fichef.bbci.co.uk%2Face%2Fstandard%2F240%2Fcpsprodpb%2F7ff7%2Flive%2F3e74ba80-234c-11f1-a79a-77e93010d956.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.bbc.com/news/articles/c0ljl23plpzo?at_medium=RSS&at_campaign=rss",
+      "source": "BBC"
     },
     {
       "headline": "India's Diplomatic Efforts",
-      "detail": "The Indian government has been working to promote diplomacy and dialogue in the region, in an effort to reduce tensions and find a peaceful resolution to the conflict. India has maintained good relations with both Iran and the US, and has been working to use its diplomatic influence to promote a peaceful resolution.",
+      "detail": "India has been working to promote peace and stability in the Middle East, and has been involved in diplomatic efforts to resolve the conflict. The country has good relations with both Israel and the UAE, and has been working to balance its relationships with these countries while also promoting its own interests.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been working to promote diplomacy and dialogue in the region, in an effort to reduce tensions and find a peaceful resolution to the conflict. India has maintained good relations with both Iran and the US, and has been working to use its diplomatic influence to promote a peaceful resolution. The Indian government has also been working to engage with other countries in the region, including Saudi Arabia and the UAE, to promote a coordinated response to the conflict. However, the situation remains challenging, and the Indian government must continue to work to promote diplomacy and dialogue in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-lawmakers-propose-tolls-shipping-through-strait-hormuz-media",
+      "full_detail": "India has been working to promote peace and stability in the Middle East, and has been involved in diplomatic efforts to resolve the conflict. The country has good relations with both Israel and the UAE, and has been working to balance its relationships with these countries while also promoting its own interests. India has also been working to strengthen its ties with other countries in the region, including Iran, and has been involved in efforts to promote regional cooperation and stability.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FA%2520Palestinian%2520civil%2520defence%2520worker%2520inspects%2520the%2520site%2520where%2520shrapnel%2520from%2520projectiles%2520fell%2520in%2520Beit%2520Awa%2520near%2520the%2520Israeli-occupied%2520West%2520Bank%2520city%2520of%2520Hebron%2520on%2520March%252018%252C%25202026.%2520AFP.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/west-bank-death-toll-rises-four-after-iran-missile-fire",
       "source": "Middle East Eye"
     },
     {
       "headline": "India's Economic Interests",
-      "detail": "The US-Israeli war on Iran has significant implications for India's economic interests, as the country relies heavily on trade with the Middle East. The proposed tolls on shipping through the Strait of Hormuz could increase the cost of trade for India, which could have a negative impact on the country's economy.",
+      "detail": "The US-Israel war on Iran could have significant economic implications for India, including the potential for disruption to trade and investment. India has significant trade and investment ties with countries in the Middle East, and any disruption to these relationships could have significant consequences for the economy.",
       "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "The US-Israeli war on Iran has significant implications for India's economic interests, as the country relies heavily on trade with the Middle East. The proposed tolls on shipping through the Strait of Hormuz could increase the cost of trade for India, which could have a negative impact on the country's economy. Furthermore, the war has also led to a shortage of fertilisers, which could affect India's agricultural production and food security. The Indian government has been working to diversify its trade relationships and reduce its reliance on the Middle East, but the country still faces significant challenges in ensuring its economic security.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/fbi-probing-counterterror-chief-who-quit-over-iran-war-reports-say",
-      "source": "Middle East Eye"
+      "significance": "MEDIUM",
+      "full_detail": "The US-Israel war on Iran could have significant economic implications for India, including the potential for disruption to trade and investment. India has significant trade and investment ties with countries in the Middle East, and any disruption to these relationships could have significant consequences for the economy. The country is heavily reliant on imported crude oil, and any disruption to supplies could have significant consequences for the economy. India has been working to diversify its energy sources and reduce its dependence on imported oil, but it remains vulnerable to global energy market fluctuations.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-0144-df92-a9df-e9c4c8ff0001%2F6e%2Fcf%2Fdf20928e4596ae7694c2f75b8969%2F820149.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/middle-east-news/2026-03-18/ty-article/.premium/emirati-official-irans-attacks-on-gulf-will-strengthen-ties-with-israeli-u-s/0000019d-00e4-d17b-adff-3cf76bc80000",
+      "source": "Haaretz"
     }
   ],
   "indiaSummary": ""
