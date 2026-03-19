@@ -1,17 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 14:46 UTC",
+  "generatedAt": "2026-03-19 15:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "UN: UN Chief Urges End to War · 1 min ago",
-    "US: US and Israel War Objectives Differ · 1 min ago",
-    "UK: UK MPs Raise Concerns Over New Israeli Ambassador · 1 min ago",
-    "Iran: Iran Retaliates Against Qatar's Natural Gas Complex · 1 min ago",
-    "US: US Director of National Intelligence Testifies Before Congress · 1 min ago"
+    "Iran: Iran Attacks Neighboring Countries · 0 min ago",
+    "US: US Senator Seeks to Block Arms Sales · 0 min ago",
+    "Qatar: Qatari PM Calls for De-Escalation · 0 min ago",
+    "UK and Allies: UK and Allies Condemn Iran Attacks · 0 min ago",
+    "Israel: Israel's Attack on Iranian Gas Field · 0 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-19 14:46 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-19 15:45 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -50,68 +50,17 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "UN",
-      "time": "1 min ago",
-      "headline": "UN Chief Urges End to War",
-      "summary": "United Nations Secretary General Antonio Guterres called on the US and Israel to stop the war and for Iran to stop attacking neighboring nations. This follows the escalation of US-Israeli attacks targeting Iran’s gas facilities, which led to Iran retaliating with strikes on Qatar’s natural gas complex. Guterres also urged a reopening of the Strait of Hormuz, which threatens the world economy. The UN chief's statement highlights the growing international concern over the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "UN"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-urges-us-and-israel-end-war-iran-stop-attacks-and-reopen-strait",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "1 min ago",
-      "headline": "US and Israel War Objectives Differ",
-      "summary": "US director of National Intelligence Tulsi Gabbard told the intelligence committee during a hearing that America and Israel do not share the same war aims in Iran. The US focuses on destroying Iran's ballistic missiles and navy, while Israel aims to disable the Iranian leadership. This difference in objectives highlights the complexity of the conflict and the potential for further escalation.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-and-israel-war-objectives-iran-are-not-same-says-national",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
-      "actorClass": "p-gray",
-      "actor": "UK",
-      "time": "1 min ago",
-      "headline": "UK MPs Raise Concerns Over New Israeli Ambassador",
-      "summary": "British MPs have raised concerns over Israel's new ambassador to the UK after he was accused of obstructing an investigation into leaks of classified information during the war on Gaza. The discipline division of the civil service in Israel recommended suspending Tzachi Braverman, who is Prime Minister Benjamin Netanyahu's chief of staff, for half a year. This development highlights the diplomatic fallout from the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "UK"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/uk-mps-raise-concerns-over-new-israeli-ambassador-uk-embroiled-domestic-scandal",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_17M5P8%2520%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iran Retaliates Against Qatar's Natural Gas Complex",
-      "summary": "Iran retaliated against Qatar's natural gas complex in response to US-Israeli attacks on its gas facilities. This escalation highlights the potential for further conflict in the region and the impact on global energy markets.",
+      "time": "0 min ago",
+      "headline": "Iran Attacks Neighboring Countries",
+      "summary": "Iran has launched retaliatory attacks on several countries in the region, including Israel, in response to the Israeli attack on an Iranian gas field. The attacks have been widely condemned by the international community, with the UK and its allies offering to help secure the Strait of Hormuz. The situation remains volatile, with the potential for further escalation.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-urges-us-and-israel-end-war-iran-stop-attacks-and-reopen-strait",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     },
@@ -120,15 +69,83 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
-      "time": "1 min ago",
-      "headline": "US Director of National Intelligence Testifies Before Congress",
-      "summary": "US director of National Intelligence Tulsi Gabbard testified before the intelligence committee, stating that the US and Israel do not share the same war objectives in Iran. This testimony highlights the complexity of the conflict and the potential for further escalation.",
+      "time": "0 min ago",
+      "headline": "US Senator Seeks to Block Arms Sales",
+      "summary": "US Senator Bernie Sanders has announced that he will seek to block nearly $659 million in US arms sales to Israel, citing the 'illegal, premeditated and unconstitutional war with Iran'. The move is seen as a significant challenge to US support for Israel and could have implications for the conflict.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-and-israel-war-objectives-iran-are-not-same-says-national",
+      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F00000196-b061-dce0-abfe-ff7d8b3b0000%2Ffd%2F47%2Fbeb7babe42a38cb6ceb0969bcc82%2F533420.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Qatar",
+      "time": "0 min ago",
+      "headline": "Qatari PM Calls for De-Escalation",
+      "summary": "Qatar's Prime Minister, Sheikh Mohammed bin Abdulrahman Al Thani, has called for an immediate cessation of hostilities in the region, stating that 'trust must be restored'. The move is seen as an attempt to reduce tensions and prevent further escalation.",
+      "whyTxt": "",
+      "orgs": [
+        "Qatar"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "UK and Allies",
+      "time": "0 min ago",
+      "headline": "UK and Allies Condemn Iran Attacks",
+      "summary": "The UK, France, Germany, Italy, the Netherlands, and Japan have issued a joint statement condemning Iran's attacks on the Gulf and offering to help secure the Strait of Hormuz. The move is seen as an attempt to reduce tensions and prevent further escalation.",
+      "whyTxt": "",
+      "orgs": [
+        "UK and Allies"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-and-allies-condemn-iran-attacks-and-announce-readiness-help-secure",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel's Attack on Iranian Gas Field",
+      "summary": "Israel's attack on an Iranian gas field has been widely condemned, with many seeing it as a provocative move that has escalated the conflict. The attack has significant implications for regional stability and global energy markets.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Turkey",
+      "time": "0 min ago",
+      "headline": "Turkish Foreign Minister's Statement",
+      "summary": "Turkish Foreign Minister Hakan Fidan has stated that Iran's attacks on regional countries are 'unacceptable', while also acknowledging that Israel started the war. The statement reflects Turkey's attempts to balance its relationships with both Iran and Israel.",
+      "whyTxt": "",
+      "orgs": [
+        "Turkey"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     },
@@ -136,74 +153,69 @@ window.WARWATCH_LIVE = {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "UN",
-      "time": "1 min ago",
-      "headline": "UN Chief Calls for Reopening of Strait of Hormuz",
-      "summary": "United Nations Secretary General Antonio Guterres called for the reopening of the Strait of Hormuz, which threatens the world economy. This development highlights the growing international concern over the conflict and its impact on global trade.",
+      "actor": "International Community",
+      "time": "0 min ago",
+      "headline": "International Community's Response",
+      "summary": "The international community has responded to the conflict with a mix of condemnation and calls for de-escalation. The UK and its allies have offered to help secure the Strait of Hormuz, while the US has been criticized for its support of Israel.",
       "whyTxt": "",
       "orgs": [
-        "UN"
+        "International Community"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-urges-us-and-israel-end-war-iran-stop-attacks-and-reopen-strait",
+      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US continues to pursue its objectives in Iran, focusing on destroying the country's ballistic missiles and navy.",
-    "israel_stance": "Israel aims to disable the Iranian leadership, highlighting the difference in objectives between the two allies.",
-    "iran_stance": "Iran continues to retaliate against US-Israeli attacks, highlighting the potential for further escalation in the conflict."
+    "us_stance": "The US has been criticized for its support of Israel, with some seeing it as a provocative move that has escalated the conflict.",
+    "israel_stance": "Israel has been accused of starting the war with its attack on an Iranian gas field, and its actions have been widely condemned.",
+    "iran_stance": "Iran has launched retaliatory attacks on regional countries, which have been condemned by the international community, but it sees itself as responding to Israeli aggression."
   },
   "terms": [
     {
       "term": "Strait of Hormuz",
-      "simple_explanation": "A strategic waterway in the Middle East that connects the Persian Gulf to the Gulf of Oman, and is a critical route for international oil shipments."
+      "simple_explanation": "A strategic waterway in the Middle East that connects the Persian Gulf to the Gulf of Oman, and is a critical route for international oil trade."
     },
     {
-      "term": "Ballistic missiles",
-      "simple_explanation": "Missiles that follow a ballistic trajectory, meaning they are guided only during the initial phase of flight, and then follow a curved path to their target."
+      "term": "Gas field",
+      "simple_explanation": "An area of land or sea that contains natural gas deposits, often extracted for energy production."
     },
     {
-      "term": "National Intelligence director",
-      "simple_explanation": "The head of the US intelligence community, responsible for overseeing and coordinating the country's intelligence agencies."
+      "term": "Retaliatory attacks",
+      "simple_explanation": "Military actions taken in response to an initial attack, often with the aim of inflicting damage or punishment on the aggressor."
     },
     {
-      "term": "Counterterrorism",
-      "simple_explanation": "The practice of preventing and combating terrorism, including the use of military force, intelligence gathering, and law enforcement."
+      "term": "De-escalation",
+      "simple_explanation": "The process of reducing tensions or conflict, often through diplomatic efforts or concessions."
     },
     {
-      "term": "Gaza",
-      "simple_explanation": "A region in the Middle East that has been a major point of conflict between Israel and the Palestinian people."
+      "term": "Premeditated",
+      "simple_explanation": "Planned or intentional, often implying a deliberate or calculated action."
     },
     {
-      "term": "Qatar's natural gas complex",
-      "simple_explanation": "A major energy facility in Qatar that produces and exports natural gas, and has been targeted by Iran in retaliation for US-Israeli attacks."
+      "term": "Unconstitutional",
+      "simple_explanation": "Contrary to the principles or laws of a country's constitution, often implying a violation of fundamental rights or principles."
     },
     {
-      "term": "US-Israeli attacks",
-      "simple_explanation": "Military strikes carried out by the US and Israel against Iranian targets, including gas facilities and military installations."
+      "term": "Escalation",
+      "simple_explanation": "An increase in the intensity or severity of a conflict, often leading to further violence or instability."
     },
     {
-      "term": "Iranian leadership",
-      "simple_explanation": "The top officials in the Iranian government, including the Supreme Leader and the President."
+      "term": "Diplomatic efforts",
+      "simple_explanation": "Attempts to resolve conflicts or disputes through negotiation, dialogue, or other peaceful means."
     },
     {
-      "term": "UN Secretary General",
-      "simple_explanation": "The head of the United Nations, responsible for promoting peace and security around the world."
+      "term": "Global energy markets",
+      "simple_explanation": "The international system of trade and commerce that supplies energy resources, such as oil and gas, to countries around the world."
     },
     {
-      "term": "International community",
-      "simple_explanation": "The global community of nations, including countries, international organizations, and non-governmental organizations, that work together to address common challenges and promote peace and security."
+      "term": "Regional stability",
+      "simple_explanation": "The state of security and calm in a particular region, often influenced by political, economic, and social factors."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 21:32 UTC",
-      "l": "MEDIUM",
-      "tone": "The direct contact b"
-    },
     {
       "t": "2026-03-16 22:05 UTC",
       "l": "MEDIUM",
@@ -438,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 14:46 UTC",
       "l": "HIGH",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-19 15:45 UTC",
+      "l": "HIGH",
+      "tone": "Iran's retaliatory a"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues to escalate, with the UN chief urging all parties to end the conflict. The US and Israel have different war objectives in Iran, with the US focusing on destroying Iran's ballistic missiles and navy, while Israel aims to disable the Iranian leadership. The conflict has significant implications for global energy markets and the world economy. The situation remains highly volatile, with multiple actors involved and various flashpoints emerging.",
-  "totalReports": 58,
+  "execSummary": "The US-Israel-Iran war has escalated with Iran's retaliatory attacks on the region, prompting international condemnation and calls for de-escalation. The conflict has significant implications for global energy markets and regional stability. The US has been criticized for its support of Israel, while the UK and its allies have offered to help secure the Strait of Hormuz. India's stakes in the conflict are primarily related to energy security and diaspora safety.",
+  "totalReports": 59,
   "indiaImpact": [
     {
-      "headline": "India's Energy Imports at Risk",
-      "detail": "The conflict in the Middle East has significant implications for India's energy imports, as the country relies heavily on oil and natural gas from the region. The closure of the Strait of Hormuz could have a major impact on India's energy security.",
+      "headline": "India's Energy Security at Risk",
+      "detail": "The conflict in the Middle East has significant implications for India's energy security, as the country relies heavily on imported oil and gas. The disruption of supplies through the Strait of Hormuz could have a major impact on India's economy.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "India is the third-largest oil consumer in the world, and relies heavily on imports to meet its energy needs. The conflict in the Middle East has significant implications for India's energy security, as the country relies on oil and natural gas from the region. The closure of the Strait of Hormuz could have a major impact on India's energy imports, and could lead to higher prices and shortages. India has been working to diversify its energy sources, but the country still relies heavily on imports from the Middle East.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_17M5P8%2520%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/uk-mps-raise-concerns-over-new-israeli-ambassador-uk-embroiled-domestic-scandal",
-      "source": "Middle East Eye"
+      "full_detail": "India is the third-largest consumer of oil in the world and relies heavily on imported oil and gas to meet its energy needs. The conflict in the Middle East has raised concerns about the security of these supplies, particularly if the Strait of Hormuz is disrupted. This could have a major impact on India's economy, as well as its ability to meet the energy needs of its growing population.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F00000196-b061-dce0-abfe-ff7d8b3b0000%2Ffd%2F47%2Fbeb7babe42a38cb6ceb0969bcc82%2F533420.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
+      "source": "Haaretz"
     },
     {
-      "headline": "Indian Nationals in the Region at Risk",
-      "detail": "The conflict in the Middle East has significant implications for Indian nationals living and working in the region. The Indian government has issued travel advisories for the region, and has urged citizens to exercise caution.",
+      "headline": "Indian Diaspora in the Region",
+      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict has raised concerns about their safety and well-being.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "There are thousands of Indian nationals living and working in the Middle East, and the conflict in the region has significant implications for their safety and security. The Indian government has issued travel advisories for the region, and has urged citizens to exercise caution. The government has also established a hotline for citizens to contact in case of an emergency.",
+      "full_detail": "There are estimated to be over 7 million Indian nationals living and working in the Middle East, with many more visiting the region for business or tourism. The conflict has raised concerns about their safety and well-being, particularly if the situation escalates further. The Indian government has been working to evacuate its citizens from the region and provide support to those affected by the conflict.",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/un-chief-urges-us-and-israel-end-war-iran-stop-attacks-and-reopen-strait",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts to Resolve the Conflict",
-      "detail": "India has been working to resolve the conflict in the Middle East through diplomatic efforts. The Indian government has been in touch with all parties involved, and has urged a peaceful resolution to the conflict.",
+      "headline": "India's Diplomatic Efforts",
+      "detail": "India has been engaged in diplomatic efforts to try to reduce tensions in the region and prevent further escalation. The country has called for de-escalation and a return to dialogue.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India has been working to resolve the conflict in the Middle East through diplomatic efforts. The Indian government has been in touch with all parties involved, and has urged a peaceful resolution to the conflict. India has also been working with other countries in the region to promote stability and security.",
+      "full_detail": "India has been working to reduce tensions in the region through diplomatic efforts, including calls for de-escalation and a return to dialogue. The country has also been engaging with other nations in the region to try to find a peaceful resolution to the conflict. India's diplomatic efforts are seen as important in helping to reduce the risk of further escalation and promoting regional stability.",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-and-israel-war-objectives-iran-are-not-same-says-national",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-and-allies-condemn-iran-attacks-and-announce-readiness-help-secure",
       "source": "Middle East Eye"
     },
     {
       "headline": "Impact on India's Economy",
-      "detail": "The conflict in the Middle East has significant implications for India's economy, as the country relies heavily on oil and natural gas from the region. The closure of the Strait of Hormuz could have a major impact on India's economy, and could lead to higher prices and shortages.",
+      "detail": "The conflict in the Middle East has significant implications for India's economy, particularly if the situation escalates further. The disruption of oil and gas supplies could have a major impact on India's energy sector and overall economy.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has significant implications for India's economy, as the country relies heavily on oil and natural gas from the region. The closure of the Strait of Hormuz could have a major impact on India's economy, and could lead to higher prices and shortages. India has been working to diversify its energy sources, but the country still relies heavily on imports from the Middle East. The conflict could also have an impact on India's trade with other countries in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_17M5P8%2520%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/uk-mps-raise-concerns-over-new-israeli-ambassador-uk-embroiled-domestic-scandal",
-      "source": "Middle East Eye"
+      "full_detail": "The conflict in the Middle East has significant implications for India's economy, particularly if the situation escalates further. The disruption of oil and gas supplies could have a major impact on India's energy sector, which is heavily reliant on imported fuels. This could also have a broader impact on India's economy, including higher inflation and reduced economic growth.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F00000196-b061-dce0-abfe-ff7d8b3b0000%2Ffd%2F47%2Fbeb7babe42a38cb6ceb0969bcc82%2F533420.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
+      "source": "Haaretz"
     }
   ],
   "indiaSummary": ""
