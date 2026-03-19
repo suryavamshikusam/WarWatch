@@ -409,10 +409,7 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
   window._rotatorCards = (D.newsCards && D.newsCards.length)
     ? D.newsCards.slice(0, 8)
     : null;
-  /* Defer so the rotator IIFE (below) has time to define _initRotator */
-  setTimeout(function() {
-    if (window._initRotator) window._initRotator();
-  }, 0);
+  if (window._initRotator) window._initRotator();
 
   /* Timeline */
   var tl = document.getElementById('timeline');
@@ -605,7 +602,7 @@ function openLink(url) {
   var cursor = document.getElementById('summary-cursor');
   var fullText = (window._latestSummaryText) || DEFAULT_TEXT;
   // Split into paragraphs, show max 3
-  var paras = fullText.split(/\n\n+/).filter(function(p){ return p.trim().length > 0; }).slice(0, 3);
+  var paras = fullText.split(/\n\n+/).filter(function(p){ return p.trim().length > 0; }).slice(0, 6);
   inner.innerHTML = '';
   paras.forEach(function(p, idx) {
     var el = document.createElement('p');
@@ -686,7 +683,7 @@ function openLink(url) {
         '<div class="rot-source">' + timeLbl + '</div>' +
         '<div class="rot-headline">' + (c.headline || '') + '</div>' +
         '<div class="rot-summary">' + (c.summary || '') + '</div>' +
-        '<img class="rot-image" src="' + imgSrc + '" loading="lazy" onerror="this.onerror=null;this.src=&quot;https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=800&h=450&q=80&fit=crop&quot;"/>' +
+        '<img class="rot-image" src="' + imgSrc + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=800&h=450&q=80&fit=crop\'"/>' +
         '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>';
       stage.appendChild(el);
       els.push(el);
@@ -705,10 +702,12 @@ function openLink(url) {
   }
 
   function goTo(idx, dir) {
-    if (animating || !els.length || idx === cur) return;
+    if (animating || !els.length) return;
+    var next = (idx + rotCards.length) % rotCards.length;
+    if (next === cur) return;
     animating = true;
     var prev = cur;
-    cur = (idx + rotCards.length) % rotCards.length;
+    cur = next;
     els[cur].className = 'rot-card ' + (dir > 0 ? 'rot-next' : 'rot-prev');
     void els[cur].offsetWidth;
     els[prev].className = 'rot-card ' + (dir > 0 ? 'rot-prev' : 'rot-next');
