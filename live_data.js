@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 19:41 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-19 20:19 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Israel: Netanyahu: Iran's Uranium Capacity Destroyed · 0 min ago",
-    "US: US Vows to Finish War with Iran · 0 min ago",
-    "Iran: Iran Warns of Total Destruction of Gulf Facilities · 0 min ago",
-    "Israel: Netanyahu: War with Iran Could End Faster · 0 min ago",
-    "US: US Service Members Killed in Iraq · 0 min ago"
+    "Israel: Israel Declares Iran's Uranium Enrichment Halted · 0 min ago",
+    "US: US Supports Israeli Military Operations · 0 min ago",
+    "Iran: Iran's Military Capabilities Weakened · 0 min ago",
+    "Other: Global Energy Markets Affected · 0 min ago",
+    "Other: Regional Stability at Risk · 0 min ago"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 19,
-    "lastUpdated": "2026-03-19 19:41 UTC",
-    "sourcesUsed": 4
+    "tension": "MEDIUM",
+    "updatesToday": 20,
+    "lastUpdated": "2026-03-19 20:19 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 72,
-      "lvl": "High",
-      "color": "var(--red)"
+      "pct": 50,
+      "lvl": "Medium",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 64,
-      "lvl": "High",
+      "pct": 42,
+      "lvl": "Medium",
       "color": "var(--red)"
     },
     {
@@ -35,15 +35,15 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
-      "lvl": "High",
+      "pct": 30,
+      "lvl": "Moderate",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 60,
-      "lvl": "Elevated",
-      "color": "var(--red)"
+      "pct": 38,
+      "lvl": "Moderate",
+      "color": "var(--amber)"
     }
   ],
   "newsCards": [
@@ -53,16 +53,16 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "Israel",
       "time": "0 min ago",
-      "headline": "Netanyahu: Iran's Uranium Capacity Destroyed",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu stated that Iran no longer has the capacity to enrich uranium or make ballistic missiles after 20 days of US-Israeli air attacks. This development is significant as it indicates a major setback for Iran's nuclear program. The statement was made during a news conference on Thursday, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation.",
+      "headline": "Israel Declares Iran's Uranium Enrichment Halted",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu announced that Iran's uranium enrichment and missile production capabilities have been dismantled. This development is a significant blow to Iran's military capabilities and has major implications for regional stability. The announcement comes after intense joint US-Israeli military operations against Iranian targets.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-iran-has-no-capacity-enrich-uranium-make-ballistic-missiles",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-3-14.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -70,16 +70,16 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Vows to Finish War with Iran",
-      "summary": "US Defence Secretary Pete Hegseth has vowed to 'finish' the war with Iran, stating that the conflict is not a 'forever war' or a 'quagmire'. The statement was made during a Pentagon press briefing on March 19, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation. The conflict has resulted in the deaths of six US service members in Iraq.",
+      "headline": "US Supports Israeli Military Operations",
+      "summary": "The United States has provided significant support to Israel's military operations against Iranian targets. This support has been crucial in dismantling Iran's military capabilities and has significant implications for regional stability. The US has reaffirmed its commitment to Israel's security and has vowed to continue supporting its military operations.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-war-with-iran-could-end-faster-than-people-think-benjamin-netanyahu-11240489#publisher=newsstand",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F00offhk4_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -87,140 +87,131 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Warns of Total Destruction of Gulf Facilities",
-      "summary": "Iran's Revolutionary Guards have warned that any repeat strike on Iranian energy infrastructure will trigger the total destruction of Gulf oil and gas facilities. The warning was made on Thursday, March 19, and it has sparked concerns about the potential consequences of the conflict. The US and Israel have been involved in air attacks on Iranian targets, and the conflict has resulted in the deaths of six US service members in Iraq.",
+      "headline": "Iran's Military Capabilities Weakened",
+      "summary": "The joint US-Israeli military operations have significantly weakened Iran's military capabilities. Iran's ability to enrich uranium and produce ballistic missiles has been dismantled, and its military infrastructure has been severely damaged. This development has major implications for regional stability and global energy markets.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-3-14.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "Israel",
+      "actorClass": "p-gray",
+      "actor": "Other",
       "time": "0 min ago",
-      "headline": "Netanyahu: War with Iran Could End Faster",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu has stated that the war with Iran could end 'faster than people think'. The statement was made during a news conference on Thursday, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation. The conflict has resulted in the deaths of six US service members in Iraq.",
+      "headline": "Global Energy Markets Affected",
+      "summary": "The conflict has significant implications for global energy markets. The disruption to Iranian oil exports has led to a surge in oil prices, affecting major importers like India. The situation remains volatile, with potential for further escalation and disruption to energy markets.",
       "whyTxt": "",
       "orgs": [
-        "Israel"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-war-with-iran-could-end-faster-than-people-think-benjamin-netanyahu-11240489#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F00offhk4_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
       "time": "0 min ago",
-      "headline": "US Service Members Killed in Iraq",
-      "summary": "Six US service members have been killed in Iraq, according to US Defence Secretary Pete Hegseth. The deaths were a result of the conflict with Iran, and they have sparked concerns about the potential consequences of the war. The US has vowed to 'finish' the war with Iran, while Iran has warned of retaliation.",
+      "headline": "Regional Stability at Risk",
+      "summary": "The conflict has significant implications for regional stability. The weakening of Iran's military capabilities has created a power vacuum, which could be exploited by other regional actors. The situation remains volatile, with potential for further escalation and destabilization of the region.",
       "whyTxt": "",
       "orgs": [
-        "US"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-iran-no-longer-has-uranium-enrichment-capacity-11240511#publisher=newsstand",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F5iu8bhhc_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US and Israel",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-green",
+      "actor": "India",
       "time": "0 min ago",
-      "headline": "Iran's Energy Infrastructure Under Attack",
-      "summary": "Iran's energy infrastructure has been under attack by the US and Israel, with multiple strikes reported in recent days. The attacks have resulted in significant damage to Iran's energy sector, and they have sparked concerns about the potential consequences of the conflict. Iran has warned of retaliation, and the conflict has resulted in the deaths of six US service members in Iraq.",
+      "headline": "India Watches Closely",
+      "summary": "India is closely watching the developments in the region. As a major importer of oil, India is concerned about the disruption to energy markets and the potential for further escalation. The Indian government has called for restraint and de-escalation of the conflict.",
       "whyTxt": "",
       "orgs": [
-        "US and Israel"
+        "India"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
       "time": "0 min ago",
-      "headline": "Israel's Netanyahu Claims Iran's Nuclear Program Destroyed",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu has claimed that Iran's nuclear program has been destroyed, with the country no longer having the capacity to enrich uranium or make ballistic missiles. The statement was made during a news conference on Thursday, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation.",
+      "headline": "International Community Responds",
+      "summary": "The international community has responded to the conflict with calls for restraint and de-escalation. The United Nations has urged all parties to exercise restraint and to seek a peaceful resolution to the conflict. The European Union has also called for de-escalation and a return to diplomatic efforts.",
       "whyTxt": "",
       "orgs": [
-        "Israel"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F5iu8bhhc_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
-    "overall_tone": "ESCALATING",
-    "us_stance": "The US has vowed to 'finish' the war with Iran, indicating a strong commitment to the conflict.",
-    "israel_stance": "Israel has claimed that Iran's nuclear program has been destroyed, and the country is committed to continuing its actions against Iran.",
-    "iran_stance": "Iran has warned of retaliation against the US and Israel, and the country has threatened to destroy Gulf oil and gas facilities in the event of another strike."
+    "overall_tone": "VOLATILE",
+    "us_stance": "The United States has reaffirmed its commitment to Israel's security and has vowed to continue supporting its military operations.",
+    "israel_stance": "Israel has declared that Iran's uranium enrichment and missile production capabilities have been dismantled, and has vowed to continue taking action to protect its security.",
+    "iran_stance": "Iran has not officially responded to the Israeli declaration, but is expected to retaliate against the joint US-Israeli military operations."
   },
   "terms": [
     {
-      "term": "Ballistic missiles",
-      "simple_explanation": "Ballistic missiles are projectiles that are propelled by a rocket engine and guided by a system of fins or wings. They are capable of carrying nuclear warheads and are considered a significant threat to national security."
+      "term": "Uranium Enrichment",
+      "simple_explanation": "Uranium enrichment is the process of increasing the concentration of the isotope uranium-235 in uranium. This process is necessary for the production of nuclear fuel and nuclear weapons."
     },
     {
-      "term": "Uranium enrichment",
-      "simple_explanation": "Uranium enrichment is the process of increasing the concentration of the isotope uranium-235 in a sample of uranium. This process is necessary for the production of nuclear fuel and can also be used to create nuclear weapons."
+      "term": "Ballistic Missiles",
+      "simple_explanation": "Ballistic missiles are missiles that follow a ballistic trajectory, meaning they are guided only during the initial phase of flight. They are capable of delivering nuclear warheads and have significant range and accuracy."
     },
     {
-      "term": "Revolutionary Guards",
-      "simple_explanation": "The Revolutionary Guards are a branch of the Iranian military that is responsible for defending the country's Islamic system and protecting its national interests. They are considered a powerful and influential force in Iranian politics."
+      "term": "Joint Military Operations",
+      "simple_explanation": "Joint military operations refer to military operations conducted by multiple countries or entities. These operations can involve a range of activities, including combat, logistics, and intelligence sharing."
     },
     {
-      "term": "Gulf oil and gas facilities",
-      "simple_explanation": "The Gulf oil and gas facilities refer to the network of pipelines, refineries, and other infrastructure that are used to extract, process, and transport oil and natural gas in the Persian Gulf region. These facilities are critical to the global energy supply and are considered a strategic target in the conflict."
+      "term": "Regional Stability",
+      "simple_explanation": "Regional stability refers to the level of peace and security in a given region. It is influenced by a range of factors, including the presence of military forces, the level of economic development, and the presence of conflict."
     },
     {
-      "term": "US-Israeli air attacks",
-      "simple_explanation": "The US-Israeli air attacks refer to the joint military operations that have been conducted by the US and Israel against Iranian targets. These attacks have included airstrikes and missile strikes, and have resulted in significant damage to Iran's military and energy infrastructure."
+      "term": "Global Energy Markets",
+      "simple_explanation": "Global energy markets refer to the international trade in energy resources, including oil, natural gas, and coal. These markets are influenced by a range of factors, including supply and demand, geopolitical events, and economic trends."
     },
     {
-      "term": "Pentagon press briefing",
-      "simple_explanation": "A Pentagon press briefing is a public statement made by a representative of the US Department of Defense, typically to provide information about military operations or to address questions from the media."
+      "term": "Power Vacuum",
+      "simple_explanation": "A power vacuum refers to a situation in which there is a lack of leadership or authority in a given region or country. This can create opportunities for other actors to fill the vacuum and exert influence."
     },
     {
-      "term": "News conference",
-      "simple_explanation": "A news conference is a public meeting where a person or organization provides information to the media and answers questions. In the context of the conflict, news conferences have been used by leaders such as Benjamin Netanyahu to provide updates and make statements about the situation."
+      "term": "De-escalation",
+      "simple_explanation": "De-escalation refers to the process of reducing tensions or conflict in a given situation. It can involve a range of activities, including diplomatic efforts, military withdrawals, and economic incentives."
     },
     {
-      "term": "Nuclear program",
-      "simple_explanation": "A nuclear program refers to a country's efforts to develop and maintain nuclear capabilities, including the production of nuclear fuel, the development of nuclear reactors, and the creation of nuclear weapons."
+      "term": "Diplomatic Efforts",
+      "simple_explanation": "Diplomatic efforts refer to the use of diplomacy to resolve conflicts or achieve goals. This can involve a range of activities, including negotiations, mediation, and dialogue."
     },
     {
-      "term": "Energy infrastructure",
-      "simple_explanation": "Energy infrastructure refers to the network of facilities and systems that are used to extract, process, and transport energy resources such as oil, natural gas, and electricity. In the context of the conflict, energy infrastructure has been a key target for military attacks."
-    },
-    {
-      "term": "Diaspora",
-      "simple_explanation": "The diaspora refers to a group of people who have been dispersed from their original homeland and are now living in other countries. In the context of the conflict, the diaspora may refer to Indian nationals living abroad who may be affected by the conflict."
+      "term": "International Community",
+      "simple_explanation": "The international community refers to the global community of nations and organizations. It is often used to describe the collective efforts of countries and organizations to address global challenges and promote peace and security."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 06:37 UTC",
-      "l": "MEDIUM",
-      "tone": "Iran's continued att"
-    },
     {
       "t": "2026-03-17 07:40 UTC",
       "l": "MEDIUM",
@@ -455,50 +446,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 19:41 UTC",
       "l": "HIGH",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-19 20:19 UTC",
+      "l": "MEDIUM",
+      "tone": "The joint US-Israeli"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has seen significant developments, with Israel's Prime Minister Benjamin Netanyahu stating that Iran no longer has the capacity to enrich uranium or make ballistic missiles. The US has vowed to 'finish' the war, while Iran has warned of total destruction of Gulf oil and gas facilities in the event of another strike. The conflict has resulted in the deaths of six US service members in Iraq. The situation remains volatile, with multiple actors involved and various interests at stake.",
-  "totalReports": 63,
+  "execSummary": "The US-Israeli joint military operations have dismantled key Iranian capabilities, with Israeli Prime Minister Benjamin Netanyahu declaring that Iran can no longer enrich uranium or build missiles. The conflict has significant implications for global energy markets and regional stability. India, a major importer of oil, is closely watching the developments. The situation remains volatile, with potential for further escalation.",
+  "totalReports": 64,
   "indiaImpact": [
     {
-      "headline": "Indian Nationals in Iran Face Uncertainty",
-      "detail": "Indian nationals living in Iran are facing uncertainty and concern due to the ongoing conflict. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas that are considered high-risk. The situation is being closely monitored by the Indian government, and efforts are being made to ensure the safety and well-being of Indian nationals in the region.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The Indian government has established a helpline for Indian nationals in Iran and has advised its citizens to register with the Indian embassy in Tehran. The government is also working to evacuate Indian nationals who wish to leave the country. The situation is being closely monitored, and the Indian government is in touch with the US, Israel, and Iran to ensure the safety and well-being of Indian nationals in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-3-14.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
-      "source": "Indian Express"
-    },
-    {
       "headline": "India's Energy Security at Risk",
-      "detail": "The conflict in the Middle East has raised concerns about India's energy security. India is heavily dependent on imports of oil and natural gas, and any disruption to the global energy supply could have significant consequences for the Indian economy. The Indian government is closely monitoring the situation and is working to diversify its energy sources and reduce its dependence on imports.",
+      "detail": "The disruption to Iranian oil exports has significant implications for India's energy security. As a major importer of oil, India is vulnerable to fluctuations in global energy markets. The Indian government has called for restraint and de-escalation of the conflict to minimize the impact on its energy security.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "The Indian government has been working to increase its use of renewable energy sources and to reduce its dependence on fossil fuels. The government has also been exploring new sources of energy, including nuclear power and shale gas. However, the conflict in the Middle East has highlighted the need for India to diversify its energy sources and to reduce its dependence on imports.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-iran-has-no-capacity-enrich-uranium-make-ballistic-missiles",
-      "source": "Middle East Eye"
+      "full_detail": "The disruption to Iranian oil exports has significant implications for India's energy security. As a major importer of oil, India is vulnerable to fluctuations in global energy markets. The Indian government has called for restraint and de-escalation of the conflict to minimize the impact on its energy security. The government has also taken steps to diversify its energy sources and reduce its dependence on Iranian oil. However, the situation remains volatile, and the potential for further disruption to energy markets is high.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "source": "LiveMint"
     },
     {
-      "headline": "India's Diplomatic Efforts to Ease Tensions",
-      "detail": "The Indian government has been making diplomatic efforts to ease tensions in the Middle East and to promote a peaceful resolution to the conflict. The government has been in touch with the US, Israel, and Iran, and has urged all parties to exercise restraint and to avoid any actions that could escalate the situation.",
+      "headline": "Indian Nationals in the Region",
+      "detail": "There are significant numbers of Indian nationals living and working in the region. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas affected by the conflict. The government has also established a crisis management cell to provide assistance to Indian nationals in the region.",
+      "category": "Diaspora",
+      "significance": "MEDIUM",
+      "full_detail": "There are significant numbers of Indian nationals living and working in the region. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas affected by the conflict. The government has also established a crisis management cell to provide assistance to Indian nationals in the region. The cell is working closely with the Indian embassy and consulate in the region to provide assistance and support to Indian nationals.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "source": "LiveMint"
+    },
+    {
+      "headline": "India's Diplomatic Efforts",
+      "detail": "The Indian government has called for restraint and de-escalation of the conflict. The government has also offered to provide diplomatic support to efforts to resolve the conflict peacefully. The Indian ambassador to the United Nations has met with other ambassadors to discuss the situation and to explore options for a peaceful resolution.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has a long history of diplomatic engagement in the Middle East and has played a key role in promoting peace and stability in the region. The government is committed to continuing its diplomatic efforts and to working with all parties to find a peaceful resolution to the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F5iu8bhhc_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-iran-no-longer-has-uranium-enrichment-capacity-11240511#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The Indian government has called for restraint and de-escalation of the conflict. The government has also offered to provide diplomatic support to efforts to resolve the conflict peacefully. The Indian ambassador to the United Nations has met with other ambassadors to discuss the situation and to explore options for a peaceful resolution. The government has also been in touch with other countries in the region to discuss the situation and to explore options for a peaceful resolution.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "source": "LiveMint"
     },
     {
-      "headline": "India's Economy at Risk Due to Conflict",
-      "detail": "The conflict in the Middle East has raised concerns about the impact on the Indian economy. The Indian economy is heavily dependent on exports, and any disruption to global trade could have significant consequences. The Indian government is closely monitoring the situation and is working to mitigate any potential risks.",
+      "headline": "Impact on Indian Economy",
+      "detail": "The conflict has significant implications for the Indian economy. The disruption to global energy markets has led to a surge in oil prices, which has affected India's trade deficit and inflation. The government has taken steps to mitigate the impact, including increasing fuel prices and reducing subsidies.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The Indian government has been working to diversify its exports and to reduce its dependence on any one market. The government has also been exploring new opportunities for trade and investment, including with countries in the Middle East. However, the conflict has highlighted the need for India to be prepared for any potential risks and to have contingency plans in place.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F00offhk4_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-war-with-iran-could-end-faster-than-people-think-benjamin-netanyahu-11240489#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The conflict has significant implications for the Indian economy. The disruption to global energy markets has led to a surge in oil prices, which has affected India's trade deficit and inflation. The government has taken steps to mitigate the impact, including increasing fuel prices and reducing subsidies. However, the situation remains volatile, and the potential for further disruption to energy markets is high. The government is closely monitoring the situation and is taking steps to reduce its dependence on imported oil.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
+      "source": "LiveMint"
     }
   ],
   "indiaSummary": ""
