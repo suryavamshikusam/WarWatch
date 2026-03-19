@@ -135,6 +135,20 @@ def _get_unsplash_fallback(title: str) -> str:
     return f"https://images.unsplash.com/photo-{UNSPLASH_PHOTO_IDS['default']}?w=800&h=450&q=80&fit=crop"
 
 
+def _proxy_image(url: str) -> str:
+    """
+    Wrap an image URL through images.weserv.nl to bypass hotlink protection.
+    Skips Unsplash URLs (they don't need proxying) and empty strings.
+    """
+    if not url:
+        return url
+    if "unsplash.com" in url:
+        return url
+    from urllib.parse import quote
+    clean = url.split("?")[0]  # strip tiny thumbnail params like ?height=81
+    return f"https://images.weserv.nl/?url={quote(clean, safe='')}&w=800&h=450&fit=cover&output=jpg"
+
+
 def _extract_image_from_rss(item) -> str:
     """Try all known RSS image patterns. Returns best URL or empty string."""
 
@@ -288,7 +302,7 @@ def _parse_feed(source_label: str, url: str, seen: set) -> list:
                 continue
 
             seen.add(link)
-            image_url = _extract_image_from_rss(item)
+            image_url = _proxy_image(_extract_image_from_rss(item))
 
             results.append({
                 "title":      title,
@@ -347,7 +361,7 @@ def fetch_all_articles() -> list:
         for art in missing:
             img = _fetch_og_image(art["url"])
             if img:
-                art["imageUrl"] = img
+                art["imageUrl"] = _proxy_image(img)
                 print(f"    ✓ {art['source']}: {art['title'][:50]}")
 
     # Unsplash fallback for any still missing
