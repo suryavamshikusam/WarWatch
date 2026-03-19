@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 15:45 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-19 16:51 UTC",
+  "escalationLevel": "CRITICAL",
   "alerts": [
-    "Iran: Iran Attacks Neighboring Countries · 0 min ago",
-    "US: US Senator Seeks to Block Arms Sales · 0 min ago",
-    "Qatar: Qatari PM Calls for De-Escalation · 0 min ago",
-    "UK and Allies: UK and Allies Condemn Iran Attacks · 0 min ago",
-    "Israel: Israel's Attack on Iranian Gas Field · 0 min ago"
+    "Iran: Iran Attacks Gulf Energy Facilities · 0 min ago",
+    "Qatar: Qatar Calls for Immediate End to War · 0 min ago",
+    "Iran: Iran's Internet Shutdown Reaches 20th Day · 0 min ago",
+    "Turkey: Turkey Unlikely to Face Gas Crisis · 0 min ago",
+    "Iran: Pregnant Woman Among Four Palestinians Killed · 0 min ago"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-19 15:45 UTC",
-    "sourcesUsed": 3
+    "tension": "CRITICAL",
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-19 16:51 UTC",
+    "sourcesUsed": 6
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 72,
-      "lvl": "High",
+      "pct": 90,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 64,
-      "lvl": "High",
+      "pct": 82,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
@@ -35,13 +35,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
+      "pct": 70,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 60,
+      "pct": 78,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -53,33 +53,16 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Attacks Neighboring Countries",
-      "summary": "Iran has launched retaliatory attacks on several countries in the region, including Israel, in response to the Israeli attack on an Iranian gas field. The attacks have been widely condemned by the international community, with the UK and its allies offering to help secure the Strait of Hormuz. The situation remains volatile, with the potential for further escalation.",
+      "headline": "Iran Attacks Gulf Energy Facilities",
+      "summary": "Iran has attacked several Gulf energy facilities, causing a surge in energy prices and a decline in stocks. The attack has resulted in a significant disruption to global energy supplies, with Brent crude jumping 7% and European gas prices rising by over 30%. The attack is seen as a retaliation for the Israeli strike on one of Iran's key gas fields.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Senator Seeks to Block Arms Sales",
-      "summary": "US Senator Bernie Sanders has announced that he will seek to block nearly $659 million in US arms sales to Israel, citing the 'illegal, premeditated and unconstitutional war with Iran'. The move is seen as a significant challenge to US support for Israel and could have implications for the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
-      "sourceLabel": "Haaretz",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F00000196-b061-dce0-abfe-ff7d8b3b0000%2Ffd%2F47%2Fbeb7babe42a38cb6ceb0969bcc82%2F533420.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-usa-war-live-updates-march-19-2026/article70760463.ece",
+      "sourceLabel": "The Hindu",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
@@ -87,140 +70,148 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Qatar",
       "time": "0 min ago",
-      "headline": "Qatari PM Calls for De-Escalation",
-      "summary": "Qatar's Prime Minister, Sheikh Mohammed bin Abdulrahman Al Thani, has called for an immediate cessation of hostilities in the region, stating that 'trust must be restored'. The move is seen as an attempt to reduce tensions and prevent further escalation.",
+      "headline": "Qatar Calls for Immediate End to War",
+      "summary": "Qatar has called for an immediate end to the US-Israeli war on Iran, becoming the first major Gulf energy producer to explicitly call for a halt to the conflict without conditions. The call for an immediate end to the war is seen as a significant development, as it indicates a growing concern among Gulf states about the impact of the conflict on regional stability.",
       "whyTxt": "",
       "orgs": [
         "Qatar"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
+      "sourceUrl": "https://www.middleeasteye.net/news/qatar-calls-immediate-end-us-israeli-war-after-attack-gas-facility",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FQatar-Thani-PM-AFP.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "UK and Allies",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "0 min ago",
-      "headline": "UK and Allies Condemn Iran Attacks",
-      "summary": "The UK, France, Germany, Italy, the Netherlands, and Japan have issued a joint statement condemning Iran's attacks on the Gulf and offering to help secure the Strait of Hormuz. The move is seen as an attempt to reduce tensions and prevent further escalation.",
+      "headline": "Iran's Internet Shutdown Reaches 20th Day",
+      "summary": "The internet shutdown in Iran has reached its 20th day, making it the longest in the country's history. The shutdown has resulted in a significant disruption to communication and information flows, with many Iranians relying on virtual private networks (VPNs) to access the internet.",
       "whyTxt": "",
       "orgs": [
-        "UK and Allies"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-and-allies-condemn-iran-attacks-and-announce-readiness-help-secure",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-internet-shutdown-now-longest-history-monitor",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FIRAN_PHONE_MOJTBA_AFP.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "0 min ago",
-      "headline": "Israel's Attack on Iranian Gas Field",
-      "summary": "Israel's attack on an Iranian gas field has been widely condemned, with many seeing it as a provocative move that has escalated the conflict. The attack has significant implications for regional stability and global energy markets.",
-      "whyTxt": "",
-      "orgs": [
-        "Israel"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-gray",
+      "badgeLabel": "Low",
       "actorClass": "p-gray",
       "actor": "Turkey",
       "time": "0 min ago",
-      "headline": "Turkish Foreign Minister's Statement",
-      "summary": "Turkish Foreign Minister Hakan Fidan has stated that Iran's attacks on regional countries are 'unacceptable', while also acknowledging that Israel started the war. The statement reflects Turkey's attempts to balance its relationships with both Iran and Israel.",
+      "headline": "Turkey Unlikely to Face Gas Crisis",
+      "summary": "Turkey is unlikely to face a gas crisis if Iran cuts supplies, according to analysts. The South Pars gas field, which Iran shares with Qatar, is the largest gas field in the world and contains an estimated 1,800 trillion cubic feet of usable gas.",
       "whyTxt": "",
       "orgs": [
         "Turkey"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
+      "sourceUrl": "https://www.middleeasteye.net/news/why-turkey-unlikely-face-gas-crisis-if-iran-cuts-supplies",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FTurkey-Istanbul-floating-gas-vehicle-5-29-2025-Yasin-Akgul-AFP.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Pregnant Woman Among Four Palestinians Killed",
+      "summary": "A pregnant woman is among four Palestinians killed in an Iranian missile attack on the occupied West Bank town of Beit Awa. The attack has resulted in a significant escalation of the conflict, with many Palestinians calling for an end to the violence.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/pregnant-woman-among-four-palestinians-killed-following-iranian-missile-attack",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fhebron%2520strike%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Israeli Media Reports Damage to Haifa Oil Refinery",
+      "summary": "Israeli media has reported damage to an oil refinery in Haifa following an Iranian missile attack. The attack has resulted in a significant disruption to Israel's energy supplies, with many calling for a response to the attack.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-media-reports-damages-haifa-oil-refinery-iran-attack",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "International Community",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "0 min ago",
-      "headline": "International Community's Response",
-      "summary": "The international community has responded to the conflict with a mix of condemnation and calls for de-escalation. The UK and its allies have offered to help secure the Strait of Hormuz, while the US has been criticized for its support of Israel.",
+      "headline": "Iran's Retaliation Against Israeli Strike",
+      "summary": "Iran has retaliated against an Israeli strike on one of its key gas fields, with many calling for a de-escalation of the conflict. The retaliation has resulted in a significant escalation of the conflict, with many countries calling for a peaceful resolution.",
       "whyTxt": "",
       "orgs": [
-        "International Community"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-internet-shutdown-now-longest-history-monitor",
+      "sourceLabel": "The Hindu",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has been criticized for its support of Israel, with some seeing it as a provocative move that has escalated the conflict.",
-    "israel_stance": "Israel has been accused of starting the war with its attack on an Iranian gas field, and its actions have been widely condemned.",
-    "iran_stance": "Iran has launched retaliatory attacks on regional countries, which have been condemned by the international community, but it sees itself as responding to Israeli aggression."
+    "us_stance": "The US has maintained a strong stance against Iran, with many calling for a de-escalation of the conflict.",
+    "israel_stance": "Israel has called for a strong response to the Iranian attacks, with many calling for a de-escalation of the conflict.",
+    "iran_stance": "Iran has maintained a strong stance against Israel and the US, with many calling for a de-escalation of the conflict."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A strategic waterway in the Middle East that connects the Persian Gulf to the Gulf of Oman, and is a critical route for international oil trade."
+      "term": "Brent crude",
+      "simple_explanation": "Brent crude is a type of oil that is used as a benchmark for oil prices. It is a type of light crude oil that is extracted from the North Sea and is used to price oil around the world."
     },
     {
-      "term": "Gas field",
-      "simple_explanation": "An area of land or sea that contains natural gas deposits, often extracted for energy production."
+      "term": "South Pars gas field",
+      "simple_explanation": "The South Pars gas field is the largest gas field in the world, located in the Persian Gulf. It is shared by Iran and Qatar and contains an estimated 1,800 trillion cubic feet of usable gas."
     },
     {
-      "term": "Retaliatory attacks",
-      "simple_explanation": "Military actions taken in response to an initial attack, often with the aim of inflicting damage or punishment on the aggressor."
+      "term": "Internet shutdown",
+      "simple_explanation": "An internet shutdown is a situation where the internet is intentionally blocked or restricted by a government or other authority. This can be done for a variety of reasons, including to suppress dissent or to prevent the spread of information."
     },
     {
-      "term": "De-escalation",
-      "simple_explanation": "The process of reducing tensions or conflict, often through diplomatic efforts or concessions."
+      "term": "VPN",
+      "simple_explanation": "A VPN, or virtual private network, is a technology that allows users to access the internet securely and privately. It works by creating a secure connection between the user's device and a server, allowing the user to access the internet without being tracked or monitored."
     },
     {
-      "term": "Premeditated",
-      "simple_explanation": "Planned or intentional, often implying a deliberate or calculated action."
-    },
-    {
-      "term": "Unconstitutional",
-      "simple_explanation": "Contrary to the principles or laws of a country's constitution, often implying a violation of fundamental rights or principles."
+      "term": "Gas crisis",
+      "simple_explanation": "A gas crisis is a situation where there is a shortage of gas, often resulting in higher prices and reduced availability. This can be caused by a variety of factors, including conflicts, natural disasters, or infrastructure problems."
     },
     {
       "term": "Escalation",
-      "simple_explanation": "An increase in the intensity or severity of a conflict, often leading to further violence or instability."
+      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict or situation. This can involve the use of more aggressive language, the deployment of more troops, or the use of more destructive weapons."
     },
     {
-      "term": "Diplomatic efforts",
-      "simple_explanation": "Attempts to resolve conflicts or disputes through negotiation, dialogue, or other peaceful means."
+      "term": "De-escalation",
+      "simple_explanation": "De-escalation refers to the process of reducing the intensity or severity of a conflict or situation. This can involve the use of diplomatic language, the withdrawal of troops, or the use of less destructive weapons."
     },
     {
-      "term": "Global energy markets",
-      "simple_explanation": "The international system of trade and commerce that supplies energy resources, such as oil and gas, to countries around the world."
+      "term": "Retaliation",
+      "simple_explanation": "Retaliation refers to the act of responding to an attack or provocation with a similar or greater level of force. This can involve the use of military force, economic sanctions, or other forms of punishment."
     },
     {
-      "term": "Regional stability",
-      "simple_explanation": "The state of security and calm in a particular region, often influenced by political, economic, and social factors."
+      "term": "Diplomacy",
+      "simple_explanation": "Diplomacy refers to the practice of conducting negotiations and other interactions between nations or other groups in order to resolve conflicts or achieve common goals. This can involve the use of diplomatic language, the exchange of ambassadors, or the negotiation of treaties and agreements."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-16 22:05 UTC",
-      "l": "MEDIUM",
-      "tone": "The ongoing rhetoric"
-    },
     {
       "t": "2026-03-17 01:24 UTC",
       "l": "MEDIUM",
@@ -455,50 +446,45 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 15:45 UTC",
       "l": "HIGH",
       "tone": "Iran's retaliatory a"
+    },
+    {
+      "t": "2026-03-19 16:51 UTC",
+      "l": "CRITICAL",
+      "tone": "The escalation of th"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has escalated with Iran's retaliatory attacks on the region, prompting international condemnation and calls for de-escalation. The conflict has significant implications for global energy markets and regional stability. The US has been criticized for its support of Israel, while the UK and its allies have offered to help secure the Strait of Hormuz. India's stakes in the conflict are primarily related to energy security and diaspora safety.",
-  "totalReports": 59,
+  "execSummary": "The US-Israel-Iran war has escalated with Iran attacking several Gulf energy facilities, causing a surge in energy prices and a decline in stocks. The conflict has resulted in the death of four Palestinians, including a pregnant woman, and damage to an oil refinery in Haifa. Qatar has called for an immediate end to the war, while Turkey is unlikely to face a gas crisis if Iran cuts supplies. The internet shutdown in Iran has reached its 20th day, making it the longest in the country's history.",
+  "totalReports": 60,
   "indiaImpact": [
     {
       "headline": "India's Energy Security at Risk",
-      "detail": "The conflict in the Middle East has significant implications for India's energy security, as the country relies heavily on imported oil and gas. The disruption of supplies through the Strait of Hormuz could have a major impact on India's economy.",
+      "detail": "The conflict between the US, Israel, and Iran has significant implications for India's energy security. As a major importer of oil, India is vulnerable to disruptions in global energy supplies, which could lead to higher prices and reduced availability.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "India is the third-largest consumer of oil in the world and relies heavily on imported oil and gas to meet its energy needs. The conflict in the Middle East has raised concerns about the security of these supplies, particularly if the Strait of Hormuz is disrupted. This could have a major impact on India's economy, as well as its ability to meet the energy needs of its growing population.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F00000196-b061-dce0-abfe-ff7d8b3b0000%2Ffd%2F47%2Fbeb7babe42a38cb6ceb0969bcc82%2F533420.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
-      "source": "Haaretz"
+      "full_detail": "India's energy security is at risk due to the conflict between the US, Israel, and Iran. As a major importer of oil, India is vulnerable to disruptions in global energy supplies, which could lead to higher prices and reduced availability. This could have significant implications for India's economy, as higher energy prices could lead to increased costs for businesses and consumers. Additionally, reduced availability of energy could lead to power outages and other disruptions, which could have significant impacts on India's economy and society.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-usa-war-live-updates-march-19-2026/article70760463.ece",
+      "source": "The Hindu"
     },
     {
-      "headline": "Indian Diaspora in the Region",
-      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict has raised concerns about their safety and well-being.",
+      "headline": "Indian Nationals in the Region at Risk",
+      "detail": "The conflict between the US, Israel, and Iran has significant implications for Indian nationals living and working in the region. As the conflict escalates, there is a growing risk of violence and instability, which could put Indian nationals at risk.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "There are estimated to be over 7 million Indian nationals living and working in the Middle East, with many more visiting the region for business or tourism. The conflict has raised concerns about their safety and well-being, particularly if the situation escalates further. The Indian government has been working to evacuate its citizens from the region and provide support to those affected by the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/qatari-pm-says-iran-attacks-are-very-dangerous-escalation-war-was",
+      "full_detail": "The conflict between the US, Israel, and Iran has significant implications for Indian nationals living and working in the region. As the conflict escalates, there is a growing risk of violence and instability, which could put Indian nationals at risk. This could lead to a range of challenges, including difficulty accessing basic services, reduced mobility, and increased risk of violence. The Indian government may need to take steps to protect its citizens, including evacuating them from the region or providing additional support and assistance.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fhebron%2520strike%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/qatar-calls-immediate-end-us-israeli-war-after-attack-gas-facility",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India has been engaged in diplomatic efforts to try to reduce tensions in the region and prevent further escalation. The country has called for de-escalation and a return to dialogue.",
+      "headline": "India's Diplomatic Efforts to De-escalate the Conflict",
+      "detail": "India has been actively engaged in diplomatic efforts to de-escalate the conflict between the US, Israel, and Iran. As a non-permanent member of the UN Security Council, India has a significant role to play in promoting peace and stability in the region.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India has been working to reduce tensions in the region through diplomatic efforts, including calls for de-escalation and a return to dialogue. The country has also been engaging with other nations in the region to try to find a peaceful resolution to the conflict. India's diplomatic efforts are seen as important in helping to reduce the risk of further escalation and promoting regional stability.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-and-allies-condemn-iran-attacks-and-announce-readiness-help-secure",
+      "full_detail": "India has been actively engaged in diplomatic efforts to de-escalate the conflict between the US, Israel, and Iran. As a non-permanent member of the UN Security Council, India has a significant role to play in promoting peace and stability in the region. This could involve a range of activities, including facilitating dialogue between the parties, promoting confidence-building measures, and supporting regional initiatives to reduce tensions. India's diplomatic efforts could have significant implications for the conflict, as they could help to reduce tensions and promote a peaceful resolution.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-internet-shutdown-now-longest-history-monitor",
       "source": "Middle East Eye"
-    },
-    {
-      "headline": "Impact on India's Economy",
-      "detail": "The conflict in the Middle East has significant implications for India's economy, particularly if the situation escalates further. The disruption of oil and gas supplies could have a major impact on India's energy sector and overall economy.",
-      "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has significant implications for India's economy, particularly if the situation escalates further. The disruption of oil and gas supplies could have a major impact on India's energy sector, which is heavily reliant on imported fuels. This could also have a broader impact on India's economy, including higher inflation and reduced economic growth.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F00000196-b061-dce0-abfe-ff7d8b3b0000%2Ffd%2F47%2Fbeb7babe42a38cb6ceb0969bcc82%2F533420.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/bernie-sanders-seeks-to-block-u-s-arms-sales-to-israel-over-illegal-iran-war/0000019d-069e-da5c-a3bd-0e9e63530000",
-      "source": "Haaretz"
     }
   ],
   "indiaSummary": ""
