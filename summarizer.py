@@ -171,13 +171,13 @@ Tone: {report.get('sentiment', {}).get('overall_tone', '')}
 
 Write exactly 3 paragraphs of flowing prose. No bullet points. No headers.
 
-Paragraph 1: What is happening RIGHT NOW — the most critical developments in the last 12-24 hours. Be specific. Name actors, places, weapons, numbers.
+Paragraph 1: What is happening RIGHT NOW — the most critical developments in the last 12-24 hours. Be specific. Name actors, places, numbers. Max 4 sentences.
 
-Paragraph 2: What led to this point — the immediate chain of events that escalated the conflict to where it is today. Context for someone who hasn't been following closely.
+Paragraph 2: What led to this point — the immediate chain of events. Context for someone who hasn't been following. Max 4 sentences.
 
-Paragraph 3: What the stakes are — why this matters globally, for oil markets, for the Middle East, for India. What the next 24-48 hours could bring.
+Paragraph 3: What the stakes are — for oil markets, for India, for the region. What the next 24 hours could bring. Max 4 sentences.
 
-Write 4-6 sentences per paragraph. Clear, authoritative, no jargon without explanation. Minimum 250 words."""
+Separate each paragraph with a blank line. Total output must be under 200 words. No headers, no bullets."""
 
     try:
         response = client.chat.completions.create(

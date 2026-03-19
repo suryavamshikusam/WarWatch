@@ -483,19 +483,43 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
 
 
 // ── AI-powered India vs War meters ────────────────────────────────────────
-function fetchIndiaMeters() {
+async function fetchIndiaMeters() {
   var D = window.WARWATCH_LIVE;
-  if (!D) return;
-  var el = document.querySelector('.meter-bar-fill[data-meter="india"]');
-  if (!el) return;
-  // Use escalation level to set India meter statically
-  var lvlMap = { CRITICAL: {pct:88,lvl:'Critical',color:'#e05555'}, HIGH: {pct:72,lvl:'High',color:'#e05555'}, MEDIUM: {pct:50,lvl:'Moderate',color:'#d4892a'}, LOW: {pct:25,lvl:'Low',color:'#3daa72'} };
-  var m = lvlMap[D.escalationLevel] || lvlMap.MEDIUM;
-  el.style.width = m.pct + '%';
-  el.style.background = m.color;
-  var lvlEl = el.closest('.tension-meter') && el.closest('.tension-meter').querySelector('.meter-level');
-  if (lvlEl) { lvlEl.textContent = m.lvl; lvlEl.style.color = m.color; }
+  var context = '';
+  if (D && D.indiaSummary) context = D.indiaSummary.slice(0, 600);
+  if (D && D.indiaImpact) context += ' ' + D.indiaImpact.map(function(i){ return i.headline; }).join('. ');
+
+  var prompt = 'Based on this India-war situation: "' + context + '"\n\nReturn ONLY valid JSON, no markdown:\n{"pct":72,"lvl":"High","color":"#d4892a"}\n\npct = 0-100 overall impact score of the war on India. lvl = one word (Low/Moderate/High/Severe/Critical). color = #3daa72 if low, #d4892a if moderate/high, #e05555 if severe/critical.';
+
+  try {
+    var res = await fetch('https://api.anthropic.com/v1/messages', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: 80, messages: [{ role: 'user', content: prompt }] })
+    });
+    var data = await res.json();
+    var text = (data.content && data.content[0] && data.content[0].text) || '';
+    var obj = JSON.parse(text.replace(/```json|```/g, '').trim());
+    var bar = document.getElementById('india-war-bar');
+    var lvl = document.getElementById('india-war-lvl');
+    if (bar && lvl) {
+      lvl.textContent = obj.lvl;
+      lvl.style.color = obj.color;
+      bar.style.background = obj.color;
+      setTimeout(function() { bar.style.width = obj.pct + '%'; }, 300);
+    }
+  } catch(e) {
+    // fallback
+    var bar = document.getElementById('india-war-bar');
+    var lvl = document.getElementById('india-war-lvl');
+    if (bar && lvl) {
+      lvl.textContent = 'High'; lvl.style.color = '#d4892a';
+      bar.style.background = '#d4892a';
+      setTimeout(function() { bar.style.width = '72%'; }, 300);
+    }
+  }
 }
+
 window.addEventListener('load', function() { setTimeout(fetchIndiaMeters, 800); });
 
 function toggleIndiaCard(btn) {
@@ -573,22 +597,20 @@ function openLink(url) {
 // ── AI Speaking Animation ──────────────────────────────────────────────────
 // Animate Latest AI Summary
 (function() {
-  var DEFAULT_TEXT = "The US-Israel-Iran conflict entered a dangerous new phase overnight as American jets struck Iranian facilities near Chabahar, Iranian drones hit infrastructure near Dubai airport, and Israel formally added Kharg Island to its active target list. All three escalations occurred within a 12-hour window — the most intense simultaneous pressure since the conflict began.";
+  var DEFAULT_TEXT = "The US-Israel-Iran conflict entered a dangerous new phase overnight as American jets struck Iranian facilities near Chabahar, Iranian drones hit infrastructure near Dubai airport, and Israel formally added Kharg Island to its active target list.\n\nAll three escalations occurred within a 12-hour window — the most intense simultaneous pressure since the conflict began. Iran has vowed retaliation while the US and Israel coordinate next steps.\n\nIndia faces significant exposure through oil prices, the Chabahar investment, and 3.5M diaspora in the Gulf. The next 24 hours will be critical.";
   var inner = document.getElementById('summary-text-inner');
   var cursor = document.getElementById('summary-cursor');
-  var text = (window._latestSummaryText) || DEFAULT_TEXT;
-  var words = text.split(' ');
-  var i = 0;
-  function addWord() {
-    if (i < words.length) {
-      inner.textContent += (i === 0 ? '' : ' ') + words[i];
-      i++;
-      setTimeout(addWord, 40 + Math.random() * 25);
-    } else {
-      if (cursor) setTimeout(function() { cursor.style.display = 'none'; }, 3500);
-    }
-  }
-  setTimeout(addWord, 600);
+  var fullText = (window._latestSummaryText) || DEFAULT_TEXT;
+  // Split into paragraphs, show max 3
+  var paras = fullText.split(/\n\n+/).filter(function(p){ return p.trim().length > 0; }).slice(0, 3);
+  inner.innerHTML = '';
+  paras.forEach(function(p, idx) {
+    var el = document.createElement('p');
+    el.style.cssText = 'margin:0 0 10px 0;line-height:1.75;';
+    el.textContent = p.trim();
+    inner.appendChild(el);
+  });
+  if (cursor) setTimeout(function() { cursor.style.display = 'none'; }, 500);
 })();
 
 // Animate Weekly AI Summary (paragraph by paragraph, word by word)
@@ -661,7 +683,7 @@ function openLink(url) {
         '<div class="rot-source">' + timeLbl + '</div>' +
         '<div class="rot-headline">' + (c.headline || '') + '</div>' +
         '<div class="rot-summary">' + (c.summary || '') + '</div>' +
-        '<img class="rot-image" src="' + imgSrc + '" loading="lazy"/>' +
+        '<img class="rot-image" src="' + imgSrc + '" loading="lazy" onerror="this.src='https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=800&h=450&q=80&fit=crop'"/>' +
         '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>';
       stage.appendChild(el);
       els.push(el);
