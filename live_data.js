@@ -1,17 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 20:19 UTC",
+  "generatedAt": "2026-03-19 21:01 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Israel: Israel Declares Iran's Uranium Enrichment Halted · 0 min ago",
-    "US: US Supports Israeli Military Operations · 0 min ago",
-    "Iran: Iran's Military Capabilities Weakened · 0 min ago",
-    "Other: Global Energy Markets Affected · 0 min ago",
-    "Other: Regional Stability at Risk · 0 min ago"
+    "Israel: Netanyahu Announces Ceasefire · 1 min ago",
+    "US: US Urges Calm · 1 min ago",
+    "Iran: Iran Increases Military Presence · 1 min ago",
+    "Other: Global Energy Markets Disrupted · 1 min ago",
+    "India: India Watches Closely · 1 min ago"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 20,
-    "lastUpdated": "2026-03-19 20:19 UTC",
+    "updatesToday": 21,
+    "lastUpdated": "2026-03-19 21:01 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -52,171 +52,170 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "Israel",
-      "time": "0 min ago",
-      "headline": "Israel Declares Iran's Uranium Enrichment Halted",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu announced that Iran's uranium enrichment and missile production capabilities have been dismantled. This development is a significant blow to Iran's military capabilities and has major implications for regional stability. The announcement comes after intense joint US-Israeli military operations against Iranian targets.",
+      "time": "1 min ago",
+      "headline": "Netanyahu Announces Ceasefire",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu announced that Israel will stop attacks on an Iranian gas field. The decision comes after increased international pressure to de-escalate the conflict. The gas field is a significant source of revenue for Iran, and the attacks had disrupted global energy markets. The ceasefire is a positive development, but the situation remains volatile.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Supports Israeli Military Operations",
-      "summary": "The United States has provided significant support to Israel's military operations against Iranian targets. This support has been crucial in dismantling Iran's military capabilities and has significant implications for regional stability. The US has reaffirmed its commitment to Israel's security and has vowed to continue supporting its military operations.",
+      "time": "1 min ago",
+      "headline": "US Urges Calm",
+      "summary": "The US has urged all parties to exercise restraint and avoid further escalation. The US has been in close contact with its allies in the region, including Israel and Saudi Arabia, to coordinate a response to the conflict. The US has significant military presence in the region and is committed to maintaining stability.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran's Military Capabilities Weakened",
-      "summary": "The joint US-Israeli military operations have significantly weakened Iran's military capabilities. Iran's ability to enrich uranium and produce ballistic missiles has been dismantled, and its military infrastructure has been severely damaged. This development has major implications for regional stability and global energy markets.",
+      "time": "1 min ago",
+      "headline": "Iran Increases Military Presence",
+      "summary": "Iran has increased its military presence in the region, deploying additional troops and equipment to its borders. The move is seen as a response to the Israeli attacks on its gas field. Iran has warned that it will retaliate if the attacks continue, and the situation remains volatile.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Global Energy Markets Affected",
-      "summary": "The conflict has significant implications for global energy markets. The disruption to Iranian oil exports has led to a surge in oil prices, affecting major importers like India. The situation remains volatile, with potential for further escalation and disruption to energy markets.",
+      "time": "1 min ago",
+      "headline": "Global Energy Markets Disrupted",
+      "summary": "The conflict has disrupted global energy markets, with oil prices increasing significantly. The disruption has significant implications for the global economy, particularly for countries that rely heavily on oil imports. India, a major importer of oil, is closely watching the developments.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Regional Stability at Risk",
-      "summary": "The conflict has significant implications for regional stability. The weakening of Iran's military capabilities has created a power vacuum, which could be exploited by other regional actors. The situation remains volatile, with potential for further escalation and destabilization of the region.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-green",
       "actor": "India",
-      "time": "0 min ago",
+      "time": "1 min ago",
       "headline": "India Watches Closely",
-      "summary": "India is closely watching the developments in the region. As a major importer of oil, India is concerned about the disruption to energy markets and the potential for further escalation. The Indian government has called for restraint and de-escalation of the conflict.",
+      "summary": "India is closely watching the developments in the region, given its significant energy interests. India imports a significant portion of its oil from the region and is concerned about the impact of the conflict on global energy markets. The Indian government has urged all parties to exercise restraint and avoid further escalation.",
       "whyTxt": "",
       "orgs": [
         "India"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "International Community Responds",
-      "summary": "The international community has responded to the conflict with calls for restraint and de-escalation. The United Nations has urged all parties to exercise restraint and to seek a peaceful resolution to the conflict. The European Union has also called for de-escalation and a return to diplomatic efforts.",
+      "actor": "Saudi Arabia",
+      "time": "1 min ago",
+      "headline": "Saudi Arabia Supports Israel",
+      "summary": "Saudi Arabia has expressed support for Israel's actions, citing the need to protect regional stability. The move is seen as a significant development, given the historical tensions between Saudi Arabia and Israel. The situation remains volatile, with significant implications for regional stability.",
       "whyTxt": "",
       "orgs": [
-        "Other"
+        "Saudi Arabia"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-red",
+      "actor": "Hamas",
+      "time": "1 min ago",
+      "headline": "Hamas Supports Iran",
+      "summary": "Hamas has expressed support for Iran, citing the need to resist Israeli aggression. The move is seen as a significant development, given the historical ties between Hamas and Iran. The situation remains volatile, with significant implications for regional stability.",
+      "whyTxt": "",
+      "orgs": [
+        "Hamas"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "VOLATILE",
-    "us_stance": "The United States has reaffirmed its commitment to Israel's security and has vowed to continue supporting its military operations.",
-    "israel_stance": "Israel has declared that Iran's uranium enrichment and missile production capabilities have been dismantled, and has vowed to continue taking action to protect its security.",
-    "iran_stance": "Iran has not officially responded to the Israeli declaration, but is expected to retaliate against the joint US-Israeli military operations."
+    "us_stance": "The US has urged all parties to exercise restraint and avoid further escalation, while maintaining its commitment to regional stability.",
+    "israel_stance": "Israel has announced a ceasefire, but the situation remains volatile, with significant implications for regional stability.",
+    "iran_stance": "Iran has increased its military presence in the region and has warned that it will retaliate if the attacks continue."
   },
   "terms": [
     {
-      "term": "Uranium Enrichment",
-      "simple_explanation": "Uranium enrichment is the process of increasing the concentration of the isotope uranium-235 in uranium. This process is necessary for the production of nuclear fuel and nuclear weapons."
+      "term": "Gas field",
+      "simple_explanation": "A gas field is an area of land or sea that contains significant reserves of natural gas. Natural gas is a fossil fuel that is used to generate electricity, heat homes, and power vehicles."
     },
     {
-      "term": "Ballistic Missiles",
-      "simple_explanation": "Ballistic missiles are missiles that follow a ballistic trajectory, meaning they are guided only during the initial phase of flight. They are capable of delivering nuclear warheads and have significant range and accuracy."
-    },
-    {
-      "term": "Joint Military Operations",
-      "simple_explanation": "Joint military operations refer to military operations conducted by multiple countries or entities. These operations can involve a range of activities, including combat, logistics, and intelligence sharing."
-    },
-    {
-      "term": "Regional Stability",
-      "simple_explanation": "Regional stability refers to the level of peace and security in a given region. It is influenced by a range of factors, including the presence of military forces, the level of economic development, and the presence of conflict."
-    },
-    {
-      "term": "Global Energy Markets",
-      "simple_explanation": "Global energy markets refer to the international trade in energy resources, including oil, natural gas, and coal. These markets are influenced by a range of factors, including supply and demand, geopolitical events, and economic trends."
-    },
-    {
-      "term": "Power Vacuum",
-      "simple_explanation": "A power vacuum refers to a situation in which there is a lack of leadership or authority in a given region or country. This can create opportunities for other actors to fill the vacuum and exert influence."
+      "term": "Escalation",
+      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict. In the context of the US-Israel-Iran war, escalation could involve increased military activity, rhetoric, or economic sanctions."
     },
     {
       "term": "De-escalation",
-      "simple_explanation": "De-escalation refers to the process of reducing tensions or conflict in a given situation. It can involve a range of activities, including diplomatic efforts, military withdrawals, and economic incentives."
+      "simple_explanation": "De-escalation refers to the process of reducing the intensity or severity of a conflict. In the context of the US-Israel-Iran war, de-escalation could involve a ceasefire, reduced military activity, or diplomatic efforts to resolve the conflict."
     },
     {
-      "term": "Diplomatic Efforts",
-      "simple_explanation": "Diplomatic efforts refer to the use of diplomacy to resolve conflicts or achieve goals. This can involve a range of activities, including negotiations, mediation, and dialogue."
+      "term": "Regional stability",
+      "simple_explanation": "Regional stability refers to the maintenance of peace and security in a particular region. In the context of the US-Israel-Iran war, regional stability is critical to preventing the spread of conflict and maintaining global energy markets."
     },
     {
-      "term": "International Community",
-      "simple_explanation": "The international community refers to the global community of nations and organizations. It is often used to describe the collective efforts of countries and organizations to address global challenges and promote peace and security."
+      "term": "Diplomatic efforts",
+      "simple_explanation": "Diplomatic efforts refer to the use of negotiation, mediation, and other forms of dialogue to resolve conflicts. In the context of the US-Israel-Iran war, diplomatic efforts could involve talks between the US, Israel, and Iran to resolve the conflict."
+    },
+    {
+      "term": "Economic sanctions",
+      "simple_explanation": "Economic sanctions refer to the use of economic measures, such as trade restrictions or asset freezes, to pressure a country to change its behavior. In the context of the US-Israel-Iran war, economic sanctions could be used to pressure Iran to comply with international demands."
+    },
+    {
+      "term": "Military presence",
+      "simple_explanation": "Military presence refers to the deployment of military troops or equipment to a particular region. In the context of the US-Israel-Iran war, military presence could involve the deployment of US or Israeli troops to the region to maintain stability or deter aggression."
+    },
+    {
+      "term": "Global energy markets",
+      "simple_explanation": "Global energy markets refer to the international trade in energy resources, such as oil and natural gas. In the context of the US-Israel-Iran war, global energy markets are critical to the global economy, and disruptions to these markets could have significant implications for economic stability."
+    },
+    {
+      "term": "Oil prices",
+      "simple_explanation": "Oil prices refer to the cost of oil on the global market. In the context of the US-Israel-Iran war, oil prices are critical to the global economy, and fluctuations in these prices could have significant implications for economic stability."
+    },
+    {
+      "term": "Fossil fuel",
+      "simple_explanation": "A fossil fuel is a natural resource, such as coal, oil, or natural gas, that is used to generate energy. Fossil fuels are non-renewable and contribute to climate change."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 07:40 UTC",
-      "l": "MEDIUM",
-      "tone": "The ongoing conflict"
-    },
     {
       "t": "2026-03-17 08:29 UTC",
       "l": "MEDIUM",
@@ -451,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 20:19 UTC",
       "l": "MEDIUM",
       "tone": "The joint US-Israeli"
-    }
-  ],
-  "execSummary": "The US-Israeli joint military operations have dismantled key Iranian capabilities, with Israeli Prime Minister Benjamin Netanyahu declaring that Iran can no longer enrich uranium or build missiles. The conflict has significant implications for global energy markets and regional stability. India, a major importer of oil, is closely watching the developments. The situation remains volatile, with potential for further escalation.",
-  "totalReports": 64,
-  "indiaImpact": [
-    {
-      "headline": "India's Energy Security at Risk",
-      "detail": "The disruption to Iranian oil exports has significant implications for India's energy security. As a major importer of oil, India is vulnerable to fluctuations in global energy markets. The Indian government has called for restraint and de-escalation of the conflict to minimize the impact on its energy security.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "The disruption to Iranian oil exports has significant implications for India's energy security. As a major importer of oil, India is vulnerable to fluctuations in global energy markets. The Indian government has called for restraint and de-escalation of the conflict to minimize the impact on its energy security. The government has also taken steps to diversify its energy sources and reduce its dependence on Iranian oil. However, the situation remains volatile, and the potential for further disruption to energy markets is high.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "source": "LiveMint"
     },
     {
-      "headline": "Indian Nationals in the Region",
-      "detail": "There are significant numbers of Indian nationals living and working in the region. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas affected by the conflict. The government has also established a crisis management cell to provide assistance to Indian nationals in the region.",
+      "t": "2026-03-19 21:01 UTC",
+      "l": "MEDIUM",
+      "tone": "The conflict between"
+    }
+  ],
+  "execSummary": "Israel's Prime Minister Benjamin Netanyahu announced that Israel will stop attacks on an Iranian gas field. The US has been closely monitoring the situation, while Iran has been increasing its military presence in the region. The conflict has significant implications for global energy markets and regional stability. India, a major importer of oil from the region, is closely watching the developments.",
+  "totalReports": 65,
+  "indiaImpact": [
+    {
+      "headline": "India's Energy Interests",
+      "detail": "India is a major importer of oil from the region and is closely watching the developments in the conflict. The disruption to global energy markets has significant implications for India's energy security and economy. The Indian government has urged all parties to exercise restraint and avoid further escalation.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "full_detail": "India's energy security is critical to its economic stability. The country relies heavily on oil imports to meet its energy needs, and disruptions to global energy markets could have significant implications for its economy. The Indian government has been working to diversify its energy sources, including investing in renewable energy and increasing domestic oil production. However, the country remains vulnerable to fluctuations in global energy markets.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "source": "NDTV"
+    },
+    {
+      "headline": "Indian Diaspora in the Region",
+      "detail": "There are significant numbers of Indian nationals living and working in the region, particularly in the Gulf states. The conflict has raised concerns about the safety and security of these individuals, and the Indian government has urged all parties to exercise restraint and avoid further escalation.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "There are significant numbers of Indian nationals living and working in the region. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas affected by the conflict. The government has also established a crisis management cell to provide assistance to Indian nationals in the region. The cell is working closely with the Indian embassy and consulate in the region to provide assistance and support to Indian nationals.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "source": "LiveMint"
+      "full_detail": "The Indian diaspora in the region is significant, with many Indians living and working in the Gulf states. The conflict has raised concerns about the safety and security of these individuals, and the Indian government has urged all parties to exercise restraint and avoid further escalation. The Indian government has also been working to evacuate Indian nationals from the region, particularly from areas that are most affected by the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "source": "NDTV"
     },
     {
       "headline": "India's Diplomatic Efforts",
-      "detail": "The Indian government has called for restraint and de-escalation of the conflict. The government has also offered to provide diplomatic support to efforts to resolve the conflict peacefully. The Indian ambassador to the United Nations has met with other ambassadors to discuss the situation and to explore options for a peaceful resolution.",
+      "detail": "India has been working to maintain good relations with all parties involved in the conflict, including the US, Israel, and Iran. The Indian government has urged all parties to exercise restraint and avoid further escalation, and has offered to facilitate diplomatic efforts to resolve the conflict.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has called for restraint and de-escalation of the conflict. The government has also offered to provide diplomatic support to efforts to resolve the conflict peacefully. The Indian ambassador to the United Nations has met with other ambassadors to discuss the situation and to explore options for a peaceful resolution. The government has also been in touch with other countries in the region to discuss the situation and to explore options for a peaceful resolution.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "source": "LiveMint"
+      "full_detail": "India has been working to maintain good relations with all parties involved in the conflict, including the US, Israel, and Iran. The Indian government has urged all parties to exercise restraint and avoid further escalation, and has offered to facilitate diplomatic efforts to resolve the conflict. India's diplomatic efforts are critical to maintaining regional stability and preventing the spread of the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "source": "NDTV"
     },
     {
-      "headline": "Impact on Indian Economy",
-      "detail": "The conflict has significant implications for the Indian economy. The disruption to global energy markets has led to a surge in oil prices, which has affected India's trade deficit and inflation. The government has taken steps to mitigate the impact, including increasing fuel prices and reducing subsidies.",
+      "headline": "India's Economic Interests",
+      "detail": "The conflict has significant implications for India's economy, particularly in terms of energy security and trade. The disruption to global energy markets has raised concerns about the impact on India's economy, and the Indian government has been working to mitigate these effects.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The conflict has significant implications for the Indian economy. The disruption to global energy markets has led to a surge in oil prices, which has affected India's trade deficit and inflation. The government has taken steps to mitigate the impact, including increasing fuel prices and reducing subsidies. However, the situation remains volatile, and the potential for further disruption to energy markets is high. The government is closely monitoring the situation and is taking steps to reduce its dependence on imported oil.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-NETANYAHU-10_1773949419042_1773949432557.JPG&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/netanyahu-israeli-pm-declares-iran-cant-enrich-uranium-or-build-missiles-anymore-11773949230421.html",
-      "source": "LiveMint"
+      "full_detail": "The conflict has significant implications for India's economy, particularly in terms of energy security and trade. The disruption to global energy markets has raised concerns about the impact on India's economy, and the Indian government has been working to mitigate these effects. The government has been working to diversify its energy sources, including investing in renewable energy and increasing domestic oil production. However, the country remains vulnerable to fluctuations in global energy markets.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "source": "NDTV"
     }
   ],
   "indiaSummary": ""
