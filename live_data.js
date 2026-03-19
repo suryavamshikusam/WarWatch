@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 21:01 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-19 22:53 UTC",
+  "escalationLevel": "CRITICAL",
   "alerts": [
-    "Israel: Netanyahu Announces Ceasefire · 1 min ago",
-    "US: US Urges Calm · 1 min ago",
-    "Iran: Iran Increases Military Presence · 1 min ago",
-    "Other: Global Energy Markets Disrupted · 1 min ago",
-    "India: India Watches Closely · 1 min ago"
+    "US: Pentagon Requests $200bn for Iran War · 1 min ago",
+    "Israel: Netanyahu Calls for Ground Offensive · 1 min ago",
+    "US: 16 US Military Aircraft Destroyed · 1 min ago",
+    "Israel: Protests in Tel Aviv Call for End to War · 1 min ago",
+    "US: Trump Praises Japan's Support for Iran War · 1 min ago"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 21,
-    "lastUpdated": "2026-03-19 21:01 UTC",
-    "sourcesUsed": 1
+    "tension": "CRITICAL",
+    "updatesToday": 22,
+    "lastUpdated": "2026-03-19 22:53 UTC",
+    "sourcesUsed": 10
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 50,
-      "lvl": "Medium",
-      "color": "var(--amber)"
+      "pct": 90,
+      "lvl": "Critical",
+      "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 42,
-      "lvl": "Medium",
+      "pct": 82,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
@@ -35,15 +35,15 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 30,
-      "lvl": "Moderate",
+      "pct": 70,
+      "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 38,
-      "lvl": "Moderate",
-      "color": "var(--amber)"
+      "pct": 78,
+      "lvl": "Elevated",
+      "color": "var(--red)"
     }
   ],
   "newsCards": [
@@ -51,18 +51,35 @@ window.WARWATCH_LIVE = {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
+      "actor": "US",
+      "time": "1 min ago",
+      "headline": "Pentagon Requests $200bn for Iran War",
+      "summary": "The Pentagon has requested $200bn from Congress to cover US costs for the war on Iran. This request has been made to ensure that the US is properly funded for the ongoing conflict. The request was first revealed by The Washington Post, citing unnamed officials, and has not been disputed by the US government.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/it-takes-money-kill-bad-guys-pentagon-requests-200bn-congress-iran-war",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-19T174745Z_1627668325_RC2S7KAIDDZE_RTRMADP_3_IRAN-CRISIS-USA-PROTEST-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
       "actor": "Israel",
       "time": "1 min ago",
-      "headline": "Netanyahu Announces Ceasefire",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu announced that Israel will stop attacks on an Iranian gas field. The decision comes after increased international pressure to de-escalate the conflict. The gas field is a significant source of revenue for Iran, and the attacks had disrupted global energy markets. The ceasefire is a positive development, but the situation remains volatile.",
+      "headline": "Netanyahu Calls for Ground Offensive",
+      "summary": "Israel's Prime Minister Netanyahu has stated that a ground offensive is required to bring about the collapse of the Iranian regime. This statement has been made in the context of the ongoing conflict between Israel and Iran. Netanyahu has also highlighted Israel's military successes and the crippling of Iran's nuclear and missile programs.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.haaretz.com/israel-news/israel-security/2026-03-19/ty-article/.premium/netanyahu-says-a-revolution-in-iran-requires-a-ground-offensive/0000019d-07ba-d088-a5fd-b7bb26a20000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-0785-d46f-affd-979f88390000%2Fdc%2Fb2%2Fae2e6d0d4de297a3c87a8e5ec72d%2F309043.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
@@ -70,157 +87,135 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "1 min ago",
-      "headline": "US Urges Calm",
-      "summary": "The US has urged all parties to exercise restraint and avoid further escalation. The US has been in close contact with its allies in the region, including Israel and Saudi Arabia, to coordinate a response to the conflict. The US has significant military presence in the region and is committed to maintaining stability.",
+      "headline": "16 US Military Aircraft Destroyed",
+      "summary": "The conflict has resulted in the destruction of 16 US military aircraft. This has been reported by NDTV, citing unnamed officials. The destruction of these aircraft has significant implications for the US military's ability to conduct operations in the region.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-16-us-military-aircraft-destroyed-since-start-of-iran-war-11240705#publisher=newsstand",
       "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fo9j2sdd4_kc135-aircraft_625x300_13_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "1 min ago",
+      "headline": "Protests in Tel Aviv Call for End to War",
+      "summary": "Protests have been held in Tel Aviv calling for an end to the war with Iran. The protests have been organized by Israeli citizens who are opposed to the ongoing conflict. The protesters have accused the government of prolonging the conflict with no clear timeline or goals.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/19/israelis-protest-in-tel-aviv-calling-for-end-to-iran-war?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2FWIDE-THUMB-Israel-1773954667.png&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "1 min ago",
+      "headline": "Trump Praises Japan's Support for Iran War",
+      "summary": "The US has praised Japan's support for the Iran war. This has been reported by Foreign Policy, citing unnamed officials. Japan has been a key ally of the US in the region and has provided significant support for the ongoing conflict.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://foreignpolicy.com/2026/03/19/trump-takaichi-japan-iran-war-nato-strait-hormuz-troops/",
+      "sourceLabel": "Foreign Policy",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fforeignpolicy.com%2Fwp-content%2Fuploads%2F2026%2F03%2FTrumpJapan-GettyImages-2267395843.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iran Increases Military Presence",
-      "summary": "Iran has increased its military presence in the region, deploying additional troops and equipment to its borders. The move is seen as a response to the Israeli attacks on its gas field. Iran has warned that it will retaliate if the attacks continue, and the situation remains volatile.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "1 min ago",
-      "headline": "Global Energy Markets Disrupted",
-      "summary": "The conflict has disrupted global energy markets, with oil prices increasing significantly. The disruption has significant implications for the global economy, particularly for countries that rely heavily on oil imports. India, a major importer of oil, is closely watching the developments.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-green",
-      "actor": "India",
-      "time": "1 min ago",
-      "headline": "India Watches Closely",
-      "summary": "India is closely watching the developments in the region, given its significant energy interests. India imports a significant portion of its oil from the region and is concerned about the impact of the conflict on global energy markets. The Indian government has urged all parties to exercise restraint and avoid further escalation.",
-      "whyTxt": "",
-      "orgs": [
-        "India"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Saudi Arabia",
       "time": "1 min ago",
-      "headline": "Saudi Arabia Supports Israel",
-      "summary": "Saudi Arabia has expressed support for Israel's actions, citing the need to protect regional stability. The move is seen as a significant development, given the historical tensions between Saudi Arabia and Israel. The situation remains volatile, with significant implications for regional stability.",
+      "headline": "Saudi Arabia Has Right to Take Military Action",
+      "summary": "Saudi Arabia's foreign minister has stated that the country has the right to take military action against Iran. This statement has been made in the context of the ongoing conflict between Iran and its regional rivals. The situation remains volatile, with oil prices hitting record highs amid an unprecedented disruption to global energy flows.",
       "whyTxt": "",
       "orgs": [
         "Saudi Arabia"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-has-right-take-military-action-against-iran-foreign",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Hamas",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
       "time": "1 min ago",
-      "headline": "Hamas Supports Iran",
-      "summary": "Hamas has expressed support for Iran, citing the need to resist Israeli aggression. The move is seen as a significant development, given the historical ties between Hamas and Iran. The situation remains volatile, with significant implications for regional stability.",
+      "headline": "Israel Widened Energy War with Iran",
+      "summary": "Israel has widened an energy war with Iran, which the US will find hard to stop. This has been reported by Haaretz, citing unnamed officials. The conflict has resulted in the destruction of critical energy assets, leading to a significant disruption in global energy flows.",
       "whyTxt": "",
       "orgs": [
-        "Hamas"
+        "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/israel-widened-an-energy-war-with-iran-that-trump-will-find-hard-to-stop/0000019d-07fe-df92-a9df-effe30ae0000",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-0813-da5c-a7bd-2fb785a90000%2Fa8%2Fcb%2F6ecb2b6349469e33b60fec5c0f1c%2F275726-3.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
-    "overall_tone": "VOLATILE",
-    "us_stance": "The US has urged all parties to exercise restraint and avoid further escalation, while maintaining its commitment to regional stability.",
-    "israel_stance": "Israel has announced a ceasefire, but the situation remains volatile, with significant implications for regional stability.",
-    "iran_stance": "Iran has increased its military presence in the region and has warned that it will retaliate if the attacks continue."
+    "overall_tone": "ESCALATING",
+    "us_stance": "The US has praised Japan's support for the Iran war and has requested $200bn from Congress to cover US costs for the war.",
+    "israel_stance": "Israel has widened an energy war with Iran and has stated that a ground offensive is required to bring about the collapse of the Iranian regime.",
+    "iran_stance": "Iran has retaliated with strikes on Qatari energy assets and has stated that it will continue to defend its interests in the region."
   },
   "terms": [
     {
-      "term": "Gas field",
-      "simple_explanation": "A gas field is an area of land or sea that contains significant reserves of natural gas. Natural gas is a fossil fuel that is used to generate electricity, heat homes, and power vehicles."
+      "term": "Strait of Hormuz",
+      "simple_explanation": "The Strait of Hormuz is a critical waterway in the Middle East that connects the Persian Gulf to the Gulf of Oman. It is a key shipping route for oil and other goods, and its closure could have significant implications for global trade."
     },
     {
-      "term": "Escalation",
-      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict. In the context of the US-Israel-Iran war, escalation could involve increased military activity, rhetoric, or economic sanctions."
+      "term": "NATO",
+      "simple_explanation": "The North Atlantic Treaty Organization (NATO) is a military alliance between 30 North American and European countries. It provides a collective defense against potential security threats."
     },
     {
-      "term": "De-escalation",
-      "simple_explanation": "De-escalation refers to the process of reducing the intensity or severity of a conflict. In the context of the US-Israel-Iran war, de-escalation could involve a ceasefire, reduced military activity, or diplomatic efforts to resolve the conflict."
+      "term": "Ground offensive",
+      "simple_explanation": "A ground offensive is a military operation that involves the use of ground troops to attack an enemy's position. It is often used in conjunction with air and naval power to achieve a strategic objective."
     },
     {
-      "term": "Regional stability",
-      "simple_explanation": "Regional stability refers to the maintenance of peace and security in a particular region. In the context of the US-Israel-Iran war, regional stability is critical to preventing the spread of conflict and maintaining global energy markets."
+      "term": "Energy war",
+      "simple_explanation": "An energy war refers to a conflict that involves the use of energy resources as a weapon. This can include attacks on energy infrastructure, such as oil refineries and pipelines, as well as the use of energy embargoes to restrict an enemy's access to energy resources."
     },
     {
-      "term": "Diplomatic efforts",
-      "simple_explanation": "Diplomatic efforts refer to the use of negotiation, mediation, and other forms of dialogue to resolve conflicts. In the context of the US-Israel-Iran war, diplomatic efforts could involve talks between the US, Israel, and Iran to resolve the conflict."
+      "term": "Tit-for-tat strikes",
+      "simple_explanation": "Tit-for-tat strikes refer to a series of retaliatory attacks between two or more parties. Each side attacks the other in response to a perceived provocation, leading to an escalation of violence."
     },
     {
-      "term": "Economic sanctions",
-      "simple_explanation": "Economic sanctions refer to the use of economic measures, such as trade restrictions or asset freezes, to pressure a country to change its behavior. In the context of the US-Israel-Iran war, economic sanctions could be used to pressure Iran to comply with international demands."
+      "term": "Escalation dominance",
+      "simple_explanation": "Escalation dominance refers to a situation in which one side has the ability to escalate a conflict to a higher level of violence, while the other side is unable or unwilling to respond in kind. This can give the dominant side a strategic advantage in the conflict."
     },
     {
-      "term": "Military presence",
-      "simple_explanation": "Military presence refers to the deployment of military troops or equipment to a particular region. In the context of the US-Israel-Iran war, military presence could involve the deployment of US or Israeli troops to the region to maintain stability or deter aggression."
+      "term": "Revolution",
+      "simple_explanation": "A revolution is a fundamental change in a society or political system. It can involve the overthrow of a government or the establishment of a new social order."
     },
     {
-      "term": "Global energy markets",
-      "simple_explanation": "Global energy markets refer to the international trade in energy resources, such as oil and natural gas. In the context of the US-Israel-Iran war, global energy markets are critical to the global economy, and disruptions to these markets could have significant implications for economic stability."
+      "term": "Qatari energy assets",
+      "simple_explanation": "Qatari energy assets refer to the oil and gas resources of Qatar, a small country in the Middle East. These resources are critical to the global energy market, and attacks on them could have significant implications for energy prices and availability."
     },
     {
-      "term": "Oil prices",
-      "simple_explanation": "Oil prices refer to the cost of oil on the global market. In the context of the US-Israel-Iran war, oil prices are critical to the global economy, and fluctuations in these prices could have significant implications for economic stability."
+      "term": "US military spending",
+      "simple_explanation": "US military spending refers to the amount of money that the US government allocates to its military each year. This spending can include funds for personnel, equipment, and operations, as well as research and development of new technologies."
     },
     {
-      "term": "Fossil fuel",
-      "simple_explanation": "A fossil fuel is a natural resource, such as coal, oil, or natural gas, that is used to generate energy. Fossil fuels are non-renewable and contribute to climate change."
+      "term": "Global energy flows",
+      "simple_explanation": "Global energy flows refer to the movement of energy resources, such as oil and gas, around the world. These flows are critical to the global economy, and disruptions to them can have significant implications for energy prices and availability."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 08:29 UTC",
-      "l": "MEDIUM",
-      "tone": "The involvement of m"
-    },
     {
       "t": "2026-03-17 09:30 UTC",
       "l": "HIGH",
@@ -455,50 +450,45 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 21:01 UTC",
       "l": "MEDIUM",
       "tone": "The conflict between"
-    }
-  ],
-  "execSummary": "Israel's Prime Minister Benjamin Netanyahu announced that Israel will stop attacks on an Iranian gas field. The US has been closely monitoring the situation, while Iran has been increasing its military presence in the region. The conflict has significant implications for global energy markets and regional stability. India, a major importer of oil from the region, is closely watching the developments.",
-  "totalReports": 65,
-  "indiaImpact": [
-    {
-      "headline": "India's Energy Interests",
-      "detail": "India is a major importer of oil from the region and is closely watching the developments in the conflict. The disruption to global energy markets has significant implications for India's energy security and economy. The Indian government has urged all parties to exercise restraint and avoid further escalation.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India's energy security is critical to its economic stability. The country relies heavily on oil imports to meet its energy needs, and disruptions to global energy markets could have significant implications for its economy. The Indian government has been working to diversify its energy sources, including investing in renewable energy and increasing domestic oil production. However, the country remains vulnerable to fluctuations in global energy markets.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "source": "NDTV"
     },
     {
-      "headline": "Indian Diaspora in the Region",
-      "detail": "There are significant numbers of Indian nationals living and working in the region, particularly in the Gulf states. The conflict has raised concerns about the safety and security of these individuals, and the Indian government has urged all parties to exercise restraint and avoid further escalation.",
+      "t": "2026-03-19 22:53 UTC",
+      "l": "CRITICAL",
+      "tone": "The conflict has esc"
+    }
+  ],
+  "execSummary": "The US-Israel-Iran war has escalated with the Pentagon requesting $200bn from Congress to cover US costs. Israel's Prime Minister Netanyahu has stated that a ground offensive is required to bring about the collapse of the Iranian regime. The conflict has resulted in the destruction of 16 US military aircraft and has led to protests in Tel Aviv calling for an end to the war. The situation remains volatile, with oil prices hitting record highs amid an unprecedented disruption to global energy flows. The US has praised Japan's support for the Iran war, while NATO's European members have refused to provide assistance in the Strait of Hormuz.",
+  "totalReports": 66,
+  "indiaImpact": [
+    {
+      "headline": "India's Energy Security at Risk",
+      "detail": "The conflict in the Middle East has significant implications for India's energy security. India is heavily reliant on imports of oil and gas, and disruptions to global energy flows could have a major impact on the country's economy. The Indian government will need to carefully navigate this situation to ensure that the country's energy needs are met.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "full_detail": "The conflict in the Middle East has significant implications for India's energy security. India is heavily reliant on imports of oil and gas, and disruptions to global energy flows could have a major impact on the country's economy. The Indian government will need to carefully navigate this situation to ensure that the country's energy needs are met. This could involve diversifying the country's energy sources, increasing domestic production, and improving energy efficiency. The government will also need to work with international partners to ensure that the global energy market remains stable and secure.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fo9j2sdd4_kc135-aircraft_625x300_13_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/clumsy-tit-for-tat-strikes-energy-assets-gifts-iran-another-tactical-lever",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "Indian Nationals in the Middle East",
+      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict in the region could have a major impact on these individuals, and the Indian government will need to take steps to ensure their safety and security.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian diaspora in the region is significant, with many Indians living and working in the Gulf states. The conflict has raised concerns about the safety and security of these individuals, and the Indian government has urged all parties to exercise restraint and avoid further escalation. The Indian government has also been working to evacuate Indian nationals from the region, particularly from areas that are most affected by the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict in the region could have a major impact on these individuals, and the Indian government will need to take steps to ensure their safety and security. This could involve providing emergency assistance, evacuating citizens from affected areas, and working with local authorities to ensure that Indian nationals are protected.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2FWIDE-THUMB-Israel-1773954667.png&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/it-takes-money-kill-bad-guys-pentagon-requests-200bn-congress-iran-war",
+      "source": "Middle East Eye"
     },
     {
       "headline": "India's Diplomatic Efforts",
-      "detail": "India has been working to maintain good relations with all parties involved in the conflict, including the US, Israel, and Iran. The Indian government has urged all parties to exercise restraint and avoid further escalation, and has offered to facilitate diplomatic efforts to resolve the conflict.",
+      "detail": "The Indian government has been actively engaged in diplomatic efforts to resolve the conflict in the Middle East. This has included talks with regional leaders, as well as efforts to promote a peaceful resolution to the conflict. The Indian government will need to continue to play a constructive role in promoting peace and stability in the region.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India has been working to maintain good relations with all parties involved in the conflict, including the US, Israel, and Iran. The Indian government has urged all parties to exercise restraint and avoid further escalation, and has offered to facilitate diplomatic efforts to resolve the conflict. India's diplomatic efforts are critical to maintaining regional stability and preventing the spread of the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "source": "NDTV"
-    },
-    {
-      "headline": "India's Economic Interests",
-      "detail": "The conflict has significant implications for India's economy, particularly in terms of energy security and trade. The disruption to global energy markets has raised concerns about the impact on India's economy, and the Indian government has been working to mitigate these effects.",
-      "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "The conflict has significant implications for India's economy, particularly in terms of energy security and trade. The disruption to global energy markets has raised concerns about the impact on India's economy, and the Indian government has been working to mitigate these effects. The government has been working to diversify its energy sources, including investing in renewable energy and increasing domestic oil production. However, the country remains vulnerable to fluctuations in global energy markets.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fkj9eb6rg_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-israel-will-stop-attacks-on-iranian-gas-field-11240574#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The Indian government has been actively engaged in diplomatic efforts to resolve the conflict in the Middle East. This has included talks with regional leaders, as well as efforts to promote a peaceful resolution to the conflict. The Indian government will need to continue to play a constructive role in promoting peace and stability in the region. This could involve working with international partners, such as the US and the EU, to promote a negotiated settlement to the conflict. The Indian government will also need to engage with regional leaders, including those in Iran and Israel, to promote a peaceful resolution to the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fforeignpolicy.com%2Fwp-content%2Fuploads%2F2026%2F03%2FTrumpJapan-GettyImages-2267395843.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/israel-pm-netanyahu-s-iran-war-briefing-15-major-points-11773953398108.html",
+      "source": "LiveMint"
     }
   ],
   "indiaSummary": ""
