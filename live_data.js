@@ -1,25 +1,25 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-18 23:26 UTC",
+  "generatedAt": "2026-03-19 01:28 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Other: Qatar Expels Iranian Embassy Staff \u00b7 Qatar has expelled Iranian embassy staff over a gas facility attack, increasing \u2026"
+    "US: US Considers Military Reinforcements \u00b7 The US is considering deploying additional military assets to the region in resp\u2026"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-18 23:26 UTC",
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-19 01:28 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 60,
+      "pct": 54,
       "lvl": "MEDIUM",
       "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 52,
+      "pct": 46,
       "lvl": "MEDIUM",
       "color": "var(--amber)"
     },
@@ -31,13 +31,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 55,
+      "pct": 49,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 50,
+      "pct": 44,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -46,14 +46,14 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "just now",
-      "headline": "Qatar Expels Iranian Embassy Staff",
-      "summary": "Qatar has expelled Iranian embassy staff over a gas facility attack, increasing tensions in the region. This move is seen as a significant escalation in the conflict between Iran and its neighbors.",
-      "whyTxt": "Qatar's expulsion of Iranian embassy staff has increased tensions between Iran and its neighbors.",
+      "headline": "US Considers Military Reinforcements",
+      "summary": "The US is considering deploying additional military assets to the region in response to the escalating conflict with Iran. This move is seen as a precautionary measure to protect US interests and allies in the region.",
+      "whyTxt": "The US is weighing military reinforcements, indicating a potential increase in conflict intensity.",
       "orgs": [
-        "Other"
+        "US"
       ]
     },
     {
@@ -63,29 +63,24 @@ window.WARWATCH_LIVE = {
       "actor": "Monitor",
       "time": "just now",
       "headline": "What to watch in the next 6 hours",
-      "summary": "Monitor Iran's response to the expulsion of its embassy staff, watch for any statements from the US or Israel, and track the impact on the global energy market.",
-      "whyTxt": "Qatar has expelled Iranian embassy staff over a gas facility attack, escalating tensions in the region. The US-Israel-Iran conflict continues to unfold with no direct involvement from India reported. The situation remains volatile, with multiple nations involved in the conflict.",
+      "summary": "Monitor US military movements, Iran's response to potential reinforcements, and the impact on global oil prices in the next 6 hours.",
+      "whyTxt": "The US is considering military reinforcements as the Iran war enters a possible new phase, with no clear indication of de-escalation. The situation remains tense, with all parties involved maintaining a strong stance. Global economies, including India's, may be impacted by the ongoing conflict.",
       "orgs": []
     }
   ],
   "sentiment": {
-    "overall_tone": "VOLATILE",
-    "us_stance": "The US has not made any official statements on the recent development, but it is likely to continue supporting its allies in the region.",
-    "israel_stance": "Israel has not commented on the expulsion of Iranian embassy staff, but it is expected to continue its aggressive stance against Iran.",
-    "iran_stance": "Iran has not responded to the expulsion of its embassy staff, but it is likely to retaliate against Qatar in the coming days."
+    "overall_tone": "TENSE",
+    "us_stance": "The US is taking a strong stance, considering military reinforcements to protect its interests and allies.",
+    "israel_stance": "No new information is available on Israel's stance, but they are likely to continue supporting the US in the conflict.",
+    "iran_stance": "Iran remains defiant, with no indication of backing down from the conflict."
   },
   "terms": [
     {
-      "term": "Gas Facility Attack",
-      "simple_explanation": "An attack on a facility that processes and distributes natural gas."
+      "term": "Military Reinforcements",
+      "simple_explanation": "Additional military assets, such as troops or equipment, deployed to a region to support existing forces."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 17:43 UTC",
-      "l": "LOW",
-      "tone": "STABLE"
-    },
     {
       "t": "2026-03-17 18:38 UTC",
       "l": "MEDIUM",
@@ -180,8 +175,13 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-18 23:26 UTC",
       "l": "MEDIUM",
       "tone": "VOLATILE"
+    },
+    {
+      "t": "2026-03-19 01:28 UTC",
+      "l": "MEDIUM",
+      "tone": "TENSE"
     }
   ],
-  "execSummary": "Qatar has expelled Iranian embassy staff over a gas facility attack, escalating tensions in the region. The US-Israel-Iran conflict continues to unfold with no direct involvement from India reported. The situation remains volatile, with multiple nations involved in the conflict.",
-  "totalReports": 44
+  "execSummary": "The US is considering military reinforcements as the Iran war enters a possible new phase, with no clear indication of de-escalation. The situation remains tense, with all parties involved maintaining a strong stance. Global economies, including India's, may be impacted by the ongoing conflict.",
+  "totalReports": 45
 };
