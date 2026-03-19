@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WarWatch — War & India</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; line-height: 1.75; background: #e8e8e4; color: #111111; }
+.page-sections { display: flex; flex-direction: column; gap: 20px; padding: 20px 24px 40px; max-width: 100%; margin: 0 auto; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+
+/* ─── HEADER ─── */
+header { background: #e8e8e4; border-bottom: 2px solid #444444; padding: 22px 40px; position: sticky; top: 0; z-index: 200; }
+.header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; max-width: 1400px; margin-left: auto; margin-right: auto; }
+.header-date { font-size: 13px; font-weight: 600; color: #555555; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
+.masthead { font-size: 50px; font-weight: 900; letter-spacing: -0.02em; display: flex; align-items: center; line-height: 1; }
+.masthead-war { background: #1a1a1a; color: #fff; padding: 3px 10px; }
+.masthead-watch { color: #c41e3a; padding: 3px 5px; }
+.ai-label { color: #c41e3a; font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; border: 1.5px solid #c41e3a; padding: 3px 8px; font-family: 'IBM Plex Mono', monospace; }
+nav { display: flex; align-items: center; justify-content: center; max-width: 1400px; margin: 0 auto; border-top: 1px solid #555555; padding-top: 14px; }
+.nav-item { color: #333333; text-decoration: none; cursor: pointer; padding: 0 26px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; border-right: 1px solid #555555; transition: color 0.2s; white-space: nowrap; }
+.nav-item:first-child { padding-left: 0; }
+.nav-item:last-child { border-right: none; padding-right: 0; }
+.nav-item:hover { color: #c41e3a; }
+.nav-item.live { color: #c41e3a; }
+.nav-item.active { color: #c41e3a; }
+.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; margin-right: 4px; animation: pulse 1.5s infinite; }
+
+/* ─── HERO ─── */
+.hero { background: #ffffff; padding: 28px 32px; border: 1px solid #d8d8d4; border-bottom: 3px solid #c41e3a; border-radius: 6px; }
+.hero-inner { margin: 0; display: flex; align-items: flex-end; justify-content: space-between; gap: 14px; flex-wrap: wrap; }
+.hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #c41e3a; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 5px; }
+.hero-title { font-family: 'Lora', serif; font-size: 32px; font-weight: 700; color: #111111; line-height: 1.2; }
+.hero-sub { font-size: 13px; color: #555555; margin-top: 4px; font-family: 'IBM Plex Mono', monospace; }
+.hero-stats { display: flex; gap: 8px; flex-wrap: wrap; }
+.hstat { background: #ffffff; border: 1px solid #d0d0cc; border-radius: 7px; padding: 12px 18px; text-align: center; }
+.hstat-n { font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 700; }
+.hstat-l { font-size: 11px; color: #555555; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.06em; text-transform: uppercase; margin-top: 2px; }
+
+/* ─── MAIN WRAP ─── */
+.main-wrap { padding: 0 24px 28px; max-width: 100%; margin: 0 auto; }
+
+/* ─── SECTION BANNERS ─── */
+.sec-banner { display: flex; align-items: center; gap: 14px; margin: 28px 0 18px; }
+.sec-badge { font-size: 12px; font-weight: 700; padding: 5px 12px; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.08em; text-transform: uppercase; color: #fff; flex-shrink: 0; display: flex; align-items: center; gap: 5px; }
+.sec-desc { font-size: 13px; color: #555555; }
+.sec-line { flex: 1; height: 1px; background: #e0e0e0; }
+
+/* ─── TODAY GRID ─── */
+.today-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 22px; margin-bottom: 0; max-width: 1260px; margin-left: auto; margin-right: auto; width: 100%; }
+.tc { background: #ffffff; border: 1.5px solid #d8d8d4; border-radius: 8px; overflow: hidden; cursor: pointer; transition: border-color 0.15s, transform 0.15s, box-shadow 0.15s; opacity: 0; animation: fadeUp 0.4s ease forwards; }
+.tc:hover { border-color: #c41e3a; transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); background: #ffffff; }
+.tc-strip { height: 120px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.tc-strip img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.tc-strip-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); position: relative; z-index: 1; }
+.tc-body { padding: 16px 18px 18px; }
+.tc-meta { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; flex-wrap: wrap; }
+.tc-date { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #777777; background: #f5f5f2; padding: 2px 5px; border-radius: 2px; }
+.bc { background: #c41e3a; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 5px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; text-transform: uppercase; }
+.bh { background: #d4892a; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 5px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; }
+.bg { background: #3daa72; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 5px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; }
+.tc-cat { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #888888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+.tc-hl { font-family: 'Lora', serif; font-size: 16px; font-weight: 700; color: #111111; line-height: 1.35; margin-bottom: 4px; }
+.tc-det { font-size: 13px; color: #555555; line-height: 1.65; margin-bottom: 5px; }
+.tc-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #c41e3a; text-decoration: none; }
+.tc-link:hover { text-decoration: underline; }
+
+/* ─── HISTORY DIVIDER ─── */
+.hist-divider { display: flex; align-items: center; gap: 18px; margin: 40px 0 0; padding: 20px 0; border-top: 2px solid #d8d8d4; }
+.hist-div-lbl { font-family: 'Lora', serif; font-size: 20px; font-weight: 700; color: #111111; white-space: nowrap; }
+.hist-div-sub { font-size: 13px; color: #555555; font-family: 'IBM Plex Mono', monospace; }
+.hist-div-line { flex: 1; height: 1px; background: #e0e0e0; }
+
+/* ─── DAY LABELS ─── */
+.day-label { display: flex; align-items: center; gap: 12px; margin: 28px 0 16px; }
+.day-badge { background: #1a1a1a; color: #fff; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; padding: 4px 10px; border-radius: 3px; letter-spacing: 0.08em; flex-shrink: 0; }
+.day-line { flex: 1; height: 1px; background: #e8e8e8; }
+.day-tone { font-family: 'IBM Plex Mono', monospace; font-size: 11px; padding: 3px 8px; border-radius: 2px; flex-shrink: 0; }
+
+/* ─── CHALLENGE/RESPONSE ROW ─── */
+.tl-row { display: grid; grid-template-columns: 340px 50px 340px; align-items: stretch; max-width: 780px; margin: 0 auto; width: 100%; justify-content: center; }
+
+/* cards */
+.card { border-radius: 8px; overflow: hidden; border: 1.5px solid #d8d8d4; background: #ffffff; opacity: 0; animation: fadeUp 0.45s ease forwards; }
+.card-challenge { border-left: 3px solid #c41e3a; }
+.card-init { border-left: 3px solid #3daa72; background: #f0faf3; }
+.card-strip { height: 96px; position: relative; overflow: hidden; display: flex; align-items: center; justify-content: center; }
+.card-strip img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; }
+.card-strip-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 8px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.65); position: relative; z-index: 1; }
+.card-body { padding: 16px 18px 18px; }
+.card-meta { display: flex; align-items: center; gap: 4px; margin-bottom: 4px; flex-wrap: wrap; }
+.card-date { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #777777; background: #f5f5f2; padding: 2px 5px; border-radius: 2px; }
+.badge-resp { background: #3daa72; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 5px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.04em; text-transform: uppercase; }
+.card-cat { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #888888; text-transform: uppercase; letter-spacing: 0.06em; margin-bottom: 3px; }
+.card-hl { font-family: 'Lora', serif; font-size: 16px; font-weight: 700; line-height: 1.35; margin-bottom: 4px; }
+.card-challenge .card-hl { color: #111111; }
+.card-init .card-hl { color: #1a5c30; }
+.card-det { font-size: 13px; line-height: 1.65; margin-bottom: 6px; }
+.card-challenge .card-det { color: #555555; }
+.card-init .card-det { color: #4a7055; }
+.card-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; text-decoration: none; display: inline-flex; align-items: center; padding: 3px 8px; border-radius: 3px; }
+.card-challenge .card-link { color: #c41e3a; background: #fff0f0; border: 1px solid #f5c8c8; }
+.card-init .card-link { color: #1a6e3a; background: #edf7f1; border: 1px solid #c8e8d4; }
+.card-link:hover { opacity: 0.75; }
+
+/* arrow connector */
+.arrow-col { display: flex; align-items: center; justify-content: center; padding-top: 34px; }
+.arrow-inner { display: flex; align-items: center; }
+.a-line { height: 2px; width: 18px; background: #c41e3a; }
+.a-head { width: 0; height: 0; border-top: 5px solid transparent; border-bottom: 5px solid transparent; border-left: 8px solid #c41e3a; }
+
+/* vertical connector */
+.v-connector { display: grid; grid-template-columns: 340px 50px 340px; height: 20px; max-width: 780px; margin: 0 auto; width: 100%; justify-content: center; }
+.vc-left { display: flex; justify-content: center; }
+.vc-left-line { width: 1.5px; background: #e0e0e0; height: 100%; }
+.vc-mid { display: flex; align-items: center; justify-content: center; font-size: 10px; color: #e0e0dd; }
+.vc-right { display: flex; justify-content: center; }
+.vc-right-line { width: 1.5px; background: #b8dfc4; height: 100%; }
+
+/* ─── FOOTER ─── */
+footer { border-top: 2px solid #d8d8d4; padding: 24px 40px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; background: #e8e8e4; }
+.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; }
+.footer-logo span { color: #c41e3a; }
+.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #777777; text-align: right; line-height: 1.7; }
+.footer-meta a { color: #777777; text-decoration: none; }
+
+@media (max-width: 900px) { .today-grid { grid-template-columns: 1fr 1fr; } }
+@media (max-width: 600px) { .today-grid { grid-template-columns: 1fr; } .tl-row { grid-template-columns: 1fr; } .arrow-col { display: none; } header { padding: 10px 16px; } .main-wrap { padding: 0 16px 28px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="header-date" id="header-date">Wednesday, March 18, 2026</div>
+    <h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1>
+    <div class="ai-label">AI Summarizer</div>
+  </div>
+  <nav>
+    <a class="nav-item live" href="index.html#live"><span class="live-dot"></span>Live</a>
+    <a class="nav-item active" href="india.html">India</a>
+    <a class="nav-item" href="history.html">History</a>
+    <a class="nav-item" href="warwatch.html">War Context</a>
+  </nav>
+</header>
+
+<!-- HERO -->
+<div class="hero">
+  <div class="hero-inner">
+    <div>
+      <div class="hero-eyebrow">War &amp; India — Day by day</div>
+      <div class="hero-title">India Since The War Began</div>
+      <div class="hero-sub">Today's latest · Challenges faced · Government responses · Mar 10 onwards</div>
+    </div>
+    <div class="hero-stats">
+      <div class="hstat"><div class="hstat-n" style="color:#e05555" id="stat-days">8</div><div class="hstat-l">Days</div></div>
+      <div class="hstat"><div class="hstat-n" style="color:#d4892a" id="stat-diaspora">5M+</div><div class="hstat-l">At Risk</div></div>
+      <div class="hstat"><div class="hstat-n" style="color:#e05555" id="stat-crude">$97</div><div class="hstat-l">Brent Crude</div></div>
+      <div class="hstat"><div class="hstat-n" style="color:#3daa72" id="stat-init">9</div><div class="hstat-l">Initiatives</div></div>
+    </div>
+  </div>
+</div>
+
+<div style="background:transparent;padding:4px 0 8px;">
+<div class="main-wrap">
+
+  <!-- TODAY'S NEWS -->
+  <div class="sec-banner">
+    <div class="sec-badge" style="background:#1a1a1a;"><span class="live-dot"></span>Today · <span id="today-date">Mar 18</span></div>
+    <div class="sec-desc">Latest India impact — updated every 6 hrs</div>
+    <div class="sec-line"></div>
+  </div>
+
+  <div style="background:#ffffff;border:1.5px solid #d8d8d4;border-radius:8px;padding:22px;margin-top:12px;">
+  <div class="today-grid" id="today-grid">
+    <div class="tc" style="animation-delay:.05s">
+      <div class="tc-strip" style="background:linear-gradient(135deg,#6a1515,#3a0808);">
+        <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=600&h=200&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="tc-strip-lbl">Chabahar Strike</span>
+      </div>
+      <div class="tc-body">
+        <div class="tc-meta"><span class="tc-date">Mar 18</span><span class="bc">High</span></div>
+        <div class="tc-cat">Investment</div>
+        <div class="tc-hl">US strikes Chabahar — India's $85M port investment in a war zone</div>
+        <div class="tc-det">India's strategic corridor to Afghanistan and Central Asia is now inside an active conflict zone. The port India spent years building is at risk.</div>
+        <a class="tc-link" href="https://www.ndtv.com/india-news/centre-trashes-reports-linking-release-of-tankers-to-hormuz-access-report-11224650" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="tc" style="animation-delay:.1s">
+      <div class="tc-strip" style="background:linear-gradient(135deg,#083a18,#0f5a28);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="tc-strip-lbl">Energy Relief</span>
+      </div>
+      <div class="tc-body">
+        <div class="tc-meta"><span class="tc-date">Mar 17–18</span><span class="bg">Relief</span></div>
+        <div class="tc-cat">Energy</div>
+        <div class="tc-hl">LPG tanker Nanda Devi arrives at Gujarat with 47,000MT</div>
+        <div class="tc-det">India secured emergency LPG cargo as Gulf supply chains buckle. US and UAE crude deals fast-tracked to replace Iranian supply.</div>
+        <a class="tc-link" href="https://www.ndtv.com/india-news/in-big-energy-relief-for-india-lpg-tanker-nanda-devi-arrives-at-gujarat-port-11226303" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="tc" style="animation-delay:.15s">
+      <div class="tc-strip" style="background:linear-gradient(135deg,#1a1a5a,#0a0a3a);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="tc-strip-lbl">Markets</span>
+      </div>
+      <div class="tc-body">
+        <div class="tc-meta"><span class="tc-date">Mar 18</span><span class="bc">High</span></div>
+        <div class="tc-cat">Economy</div>
+        <div class="tc-hl">Sensex falls as Brent hits $97 — Bitcoin surges 34% since war began</div>
+        <div class="tc-det">Indian markets reel as oil hits $97. Bitcoin has outperformed gold and the dollar as investors flee traditional markets globally since Mar 10.</div>
+        <a class="tc-link" href="https://www.ndtv.com/india-news/not-gold-not-us-dollar-this-asset-has-surged-the-most-during-iran-war-bitcoin-cryptocurrency-11225509" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="tc" style="animation-delay:.2s">
+      <div class="tc-strip" style="background:linear-gradient(135deg,#3a2a0a,#5a3a0a);">
+        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a1e3?w=600&h=200&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="tc-strip-lbl">Diplomacy</span>
+      </div>
+      <div class="tc-body">
+        <div class="tc-meta"><span class="tc-date">Mar 18</span><span class="bh">Medium</span></div>
+        <div class="tc-cat">Diplomacy</div>
+        <div class="tc-hl">India abstains at UN again — walks tightrope between Iran, Israel and US</div>
+        <div class="tc-det">PM Modi still silent publicly. Jaishankar managing all three relationships below PM level — deliberately protecting India's options with all parties.</div>
+        <a class="tc-link" href="https://www.ndtv.com/world-news/iran-israel-war-strait-of-hormuz-middle-east-conflict-cabinet-okayed-iran-op-2-days-after-pm-modi-left-israel-envoy-clears-air-11221922" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="tc" style="animation-delay:.25s">
+      <div class="tc-strip" style="background:linear-gradient(135deg,#0a3a20,#155a30);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="tc-strip-lbl">Diaspora Safe</span>
+      </div>
+      <div class="tc-body">
+        <div class="tc-meta"><span class="tc-date">Mar 18</span><span class="bg">Safe</span></div>
+        <div class="tc-cat">Diaspora</div>
+        <div class="tc-hl">No Indian casualties confirmed — MEA Dubai control room operational 24 hrs</div>
+        <div class="tc-det">3.5M Indians in UAE remain safe. 289 sailors already repatriated. MEA 24-hr control room handling welfare calls. Air India reroutes continuing.</div>
+        <a class="tc-link" href="https://www.ndtv.com/india-news/iran-israel-war-289-indian-sailors-repatriated-from-gulf-amid-iran-war-government-11223159" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="tc" style="animation-delay:.3s">
+      <div class="tc-strip" style="background:linear-gradient(135deg,#1a0a3a,#2a0a5a);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="tc-strip-lbl">LPG App #1</span>
+      </div>
+      <div class="tc-body">
+        <div class="tc-meta"><span class="tc-date">Mar 17</span><span class="bh">Notable</span></div>
+        <div class="tc-cat">Society</div>
+        <div class="tc-hl">LPG booking app beats ChatGPT to top India's App Store charts</div>
+        <div class="tc-det">Panic over LPG supply sent India's gas booking app to #1 on both App Store and Play Store — a striking signal of how the war is hitting ordinary Indian households.</div>
+        <a class="tc-link" href="https://www.ndtv.com/india-news/lpg-price-lpg-booking-lpg-booking-app-beats-chatgpt-to-top-indias-app-store-play-store-charts-11222690" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /today card -->
+
+  <div style="background:#ffffff;border:1px solid #d8d8d4;border-radius:8px;padding:22px 22px 22px;">
+  <!-- HISTORY DIVIDER -->
+  <div class="hist-divider">
+    <div class="hist-div-lbl">Since March 10, 2026</div>
+    <div class="hist-div-sub">Challenges India faced · Government responses · day by day</div>
+    <div class="hist-div-line"></div>
+  </div>
+
+  <!-- MAR 10 -->
+  <div class="day-label">
+    <div class="day-badge">Mar 10 — Day 1 · War Begins</div>
+    <div class="day-line"></div>
+    <div class="day-tone" style="background:rgba(196,30,58,0.15);color:#e05555;border:1px solid rgba(196,30,58,0.3);">Oil shock</div>
+  </div>
+  <div class="tl-row">
+    <div class="card card-challenge" style="animation-delay:.05s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#7a1a1a,#3a0a0a);">
+        <img src="https://images.unsplash.com/photo-1474546499760-77a0b18c5e69?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Energy Crisis</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 10</span><span class="bc">High</span></div>
+        <div class="card-cat">Energy</div>
+        <div class="card-hl">Brent crude spikes — India's $200B oil import bill threatened overnight</div>
+        <div class="card-det">US strikes on Iran sent Brent surging. India imports 85% of its oil — every $10/barrel rise costs India ~$15B/year and pushes fuel prices up ₹5–8/litre at the pump.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/stock-market-live-updates-sensex-today-nifty-gift-nifty-signals-positive-open-even-as-oil-rallies-asia-markets-tank-11220583" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="arrow-inner"><div class="a-line"></div><div class="a-head"></div></div></div>
+    <div class="card card-init" style="animation-delay:.1s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#0d4a20,#1a6e3a);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Strategic Reserves</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 10</span><span class="badge-resp">Response</span></div>
+        <div class="card-cat">Energy Security</div>
+        <div class="card-hl">Ministry of Petroleum orders 30-day strategic reserve buildup immediately</div>
+        <div class="card-det">India directed refiners to build emergency reserves and fast-track crude deals with US, UAE and Iraqi suppliers as alternative sources to replace Iranian supply.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/iran-israel-war-over-4-300-flights-cancelled-due-to-middle-east-crisis-so-far-centre-11221907" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="v-connector"><div class="vc-left"><div class="vc-left-line"></div></div><div class="vc-mid">↓</div><div class="vc-right"><div class="vc-right-line"></div></div></div>
+
+  <!-- MAR 11 -->
+  <div class="day-label">
+    <div class="day-badge">Mar 11 — Day 2</div>
+    <div class="day-line"></div>
+    <div class="day-tone" style="background:rgba(212,137,42,0.15);color:#d4892a;border:1px solid rgba(212,137,42,0.3);">Diaspora alert</div>
+  </div>
+  <div class="tl-row">
+    <div class="card card-challenge" style="animation-delay:.15s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#7a3a1a,#4a1a0a);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Gulf Diaspora Alert</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 11</span><span class="bc">High</span></div>
+        <div class="card-cat">Diaspora</div>
+        <div class="card-hl">3.5M Indians in UAE on alert as conflict spreads to Gulf</div>
+        <div class="card-det">With Iran striking UAE-proximate targets, India's largest overseas community faced immediate uncertainty. Gulf remittances are a massive share of India's $125B annual inflow — Kerala, AP and TN hit hardest.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/iran-israel-war-289-indian-sailors-repatriated-from-gulf-amid-iran-war-government-11223159" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="arrow-inner"><div class="a-line"></div><div class="a-head"></div></div></div>
+    <div class="card card-init" style="animation-delay:.2s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#0a3a20,#155a30);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Travel Advisory + Reroutes</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 11</span><span class="badge-resp">Response</span></div>
+        <div class="card-cat">Aviation · Advisory</div>
+        <div class="card-hl">MEA issues travel advisory · Air India gets pilot duty time relaxation</div>
+        <div class="card-det">MEA urged Indians to avoid Iran, Israel and Lebanon. Air India and IndiGo began rerouting ~4,200 affected passengers. DGCA granted temporary pilot duty relaxation to handle surge.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/iran-war-air-india-gets-temporary-pilot-duty-relaxation-amid-mideast-war-disruptions-11221122" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="v-connector"><div class="vc-left"><div class="vc-left-line"></div></div><div class="vc-mid">↓</div><div class="vc-right"><div class="vc-right-line"></div></div></div>
+
+  <!-- MAR 12 -->
+  <div class="day-label">
+    <div class="day-badge">Mar 12 — Day 3</div>
+    <div class="day-line"></div>
+    <div class="day-tone" style="background:rgba(196,30,58,0.15);color:#e05555;border:1px solid rgba(196,30,58,0.3);">Hormuz blockade</div>
+  </div>
+  <div class="tl-row">
+    <div class="card card-challenge" style="animation-delay:.25s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#1a1a5a,#0a0a3a);">
+        <img src="https://images.unsplash.com/photo-1505118380757-91f5f5632de0?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Strait of Hormuz</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 12</span><span class="bc">High</span></div>
+        <div class="card-cat">Energy · Trade</div>
+        <div class="card-hl">Hormuz blockaded — 60% of India's crude imports cut off for 4 hours</div>
+        <div class="card-det">Over 60% of India's crude oil imports pass through Hormuz. The 4-hour blockade triggered emergency calls with Gulf energy partners and panicked Indian refiners. Brent hit $94.</div>
+        <a class="card-link" href="https://www.ndtv.com/world-news/iran-war-donald-trump-seeks-to-reopen-strait-of-hormuz-amid-iran-war-11224979" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="arrow-inner"><div class="a-line"></div><div class="a-head"></div></div></div>
+    <div class="card card-init" style="animation-delay:.3s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#0d4a30,#1a6e45);">
+        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a1e3?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Iran Back-Channel</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 12</span><span class="badge-resp">Response</span></div>
+        <div class="card-cat">Diplomacy · Trade</div>
+        <div class="card-hl">India opens back-channel with Iran on tankers · Hormuz passage secured</div>
+        <div class="card-det">India used its unique relationship with Tehran to negotiate passage guarantees for Indian-flagged vessels and began quiet talks on releasing seized tankers in exchange for diplomatic goodwill.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/iran-asks-india-to-release-seized-ships-in-talks-over-hormuz-passage-report-11224246" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="v-connector"><div class="vc-left"><div class="vc-left-line"></div></div><div class="vc-mid">↓</div><div class="vc-right"><div class="vc-right-line"></div></div></div>
+
+  <!-- MAR 13 -->
+  <div class="day-label">
+    <div class="day-badge">Mar 13 — Day 4</div>
+    <div class="day-line"></div>
+    <div class="day-tone" style="background:rgba(196,30,58,0.15);color:#e05555;border:1px solid rgba(196,30,58,0.3);">Dubai struck</div>
+  </div>
+  <div class="tl-row">
+    <div class="card card-challenge" style="animation-delay:.35s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#5a1a1a,#3a0808);">
+        <img src="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Dubai Airport Strike</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 13</span><span class="bc">High</span></div>
+        <div class="card-cat">Diaspora · Aviation</div>
+        <div class="card-hl">Dubai airport struck — Indians stranded, 4,300+ flights cancelled across Gulf</div>
+        <div class="card-det">Iranian drone strike near Dubai airport forced 60 flight diversions. Over 4,300 flights cancelled across Middle East. MEA helpline in Dubai flooded with welfare calls from stranded Indians.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/iran-israel-war-over-4-300-flights-cancelled-due-to-middle-east-crisis-so-far-centre-11221907" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="arrow-inner"><div class="a-line"></div><div class="a-head"></div></div></div>
+    <div class="card card-init" style="animation-delay:.4s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#0a4a25,#1a7a40);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">MEA Control Room + Repatriation</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 13</span><span class="badge-resp">Response</span></div>
+        <div class="card-cat">Diaspora Protection</div>
+        <div class="card-hl">MEA opens 24-hr Dubai control room · 289 Indian sailors repatriated</div>
+        <div class="card-det">Indian Consulate in Dubai activated emergency response centre. 289 Indian sailors successfully brought home from Gulf vessels. Government confirmed no Indian casualties in Dubai drone strike.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/iran-israel-war-289-indian-sailors-repatriated-from-gulf-amid-iran-war-government-11223159" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="v-connector"><div class="vc-left"><div class="vc-left-line"></div></div><div class="vc-mid">↓</div><div class="vc-right"><div class="vc-right-line"></div></div></div>
+
+  <!-- MAR 14-15 -->
+  <div class="day-label">
+    <div class="day-badge">Mar 14–15 — Days 5–6</div>
+    <div class="day-line"></div>
+    <div class="day-tone" style="background:rgba(212,137,42,0.15);color:#d4892a;border:1px solid rgba(212,137,42,0.3);">Diplomatic squeeze</div>
+  </div>
+  <div class="tl-row">
+    <div class="card card-challenge" style="animation-delay:.45s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#3a2a0a,#5a3a0a);">
+        <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a1e3?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">UN Diplomatic Pressure</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 14–15</span><span class="bh">Medium</span></div>
+        <div class="card-cat">Diplomacy</div>
+        <div class="card-hl">India forced to choose at UN — Iran, Israel and US all expect India's support</div>
+        <div class="card-det">India has $2.4B defence contracts with Israel, Chabahar ties with Iran, and is a core Quad partner with the US. Picking any side permanently damages a critical relationship.</div>
+        <a class="card-link" href="https://www.ndtv.com/world-news/iran-israel-war-strait-of-hormuz-middle-east-conflict-cabinet-okayed-iran-op-2-days-after-pm-modi-left-israel-envoy-clears-air-11221922" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="arrow-inner"><div class="a-line"></div><div class="a-head"></div></div></div>
+    <div class="card card-init" style="animation-delay:.5s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#0a3a1a,#145a28);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">UN Abstention + Back-Channels</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 14–15</span><span class="badge-resp">Response</span></div>
+        <div class="card-cat">Diplomacy</div>
+        <div class="card-hl">India abstains at UN · Jaishankar calls Iranian and US foreign ministers</div>
+        <div class="card-det">Strategic abstention at UN Security Council maintained India's non-alignment. All communications deliberately handled at Foreign Minister level — below PM — to protect India's options with all three parties.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/india-flags-selective-targeting-after-us-body-urges-sanctions-on-r-aw-rss-11224091" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+  <div class="v-connector"><div class="vc-left"><div class="vc-left-line"></div></div><div class="vc-mid">↓</div><div class="vc-right"><div class="vc-right-line"></div></div></div>
+
+  <!-- MAR 17-18 -->
+  <div class="day-label">
+    <div class="day-badge">Mar 17–18 — Days 7–8 · Today</div>
+    <div class="day-line"></div>
+    <div class="day-tone" style="background:rgba(196,30,58,0.15);color:#e05555;border:1px solid rgba(196,30,58,0.3);">Chabahar struck</div>
+  </div>
+  <div class="tl-row">
+    <div class="card card-challenge" style="border-color:#f5c0c0;animation-delay:.55s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#6a1515,#3a0808);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Chabahar Port Strike</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 18</span><span class="bc">High</span></div>
+        <div class="card-cat">Investment · Trade</div>
+        <div class="card-hl">US strikes Chabahar — India's $85M port investment now in an active war zone</div>
+        <div class="card-det">India had invested $85M in Chabahar as its only non-Pakistani route to Afghanistan and Central Asia. The US strike put this entire strategic corridor at risk and quietly strained India-US ties.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/centre-trashes-reports-linking-release-of-tankers-to-hormuz-access-report-11224650" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+    <div class="arrow-col"><div class="arrow-inner"><div class="a-line"></div><div class="a-head"></div></div></div>
+    <div class="card card-init" style="border-color:#a8dab5;animation-delay:.6s">
+      <div class="card-strip" style="background:linear-gradient(135deg,#083a18,#0f5a28);">
+        <img src="https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+        <span class="card-strip-lbl">Nanda Devi + Emergency Deals</span>
+      </div>
+      <div class="card-body">
+        <div class="card-meta"><span class="card-date">Mar 17–18</span><span class="badge-resp">Response</span></div>
+        <div class="card-cat">Energy Relief</div>
+        <div class="card-hl">LPG tanker Nanda Devi arrives at Gujarat · US and UAE crude deals secured</div>
+        <div class="card-det">India secured 47,000MT emergency LPG cargo as Gulf supply chains buckled. Nanda Devi arrived at Vadinar port. Government simultaneously fast-tracked US and UAE crude deals to replace Iranian supply.</div>
+        <a class="card-link" href="https://www.ndtv.com/india-news/in-big-energy-relief-for-india-lpg-tanker-nanda-devi-arrives-at-gujarat-port-11226303" target="_blank">Read → NDTV ↗</a>
+      </div>
+    </div>
+  </div>
+
+  </div><!-- /history card -->
+</div><!-- /main-wrap -->
+</div>
+
+<footer>
+  <div class="footer-logo">War<span>Watch</span></div>
+  <div class="footer-meta">
+    Sources: NDTV &middot; BBC &middot; Reuters &middot; Al Jazeera &middot; Indian Express &middot; LiveMint<br>
+    AI summaries by Groq / Llama 3.3 &middot; <a href="index.html">← Back to Live</a>
+  </div>
+</footer>
+
+<script src="live_data.js" onerror="void 0"></script>
+<script>
+// Live date
+var d = new Date();
+var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.getElementById('header-date').textContent = DAYS[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+document.getElementById('today-date').textContent = MONTHS[d.getMonth()].slice(0,3) + ' ' + d.getDate();
+
+// Pull live stats
+var D = window.WARWATCH_LIVE;
+if (D && D.indiaStats) {
+  var s = D.indiaStats;
+  if (s.daysActive)     document.getElementById('stat-days').textContent = s.daysActive;
+  if (s.diasporaAtRisk) document.getElementById('stat-diaspora').textContent = s.diasporaAtRisk;
+  if (s.brentCrude)     document.getElementById('stat-crude').textContent = s.brentCrude;
+  if (s.initiativeCount !== undefined) document.getElementById('stat-init').textContent = s.initiativeCount || 9;
+}
+
+// Update today grid from live India impact
+if (D && D.indiaImpact && D.indiaImpact.length) {
+  var grid = document.getElementById('today-grid');
+  if (grid) {
+    var SEV = { HIGH: '<span class="bc">High</span>', MEDIUM: '<span class="bh">Medium</span>', LOW: '<span class="bg">Low</span>' };
+    grid.innerHTML = D.indiaImpact.slice(0, 6).map(function(item, idx) {
+      var img = item.imageUrl || ('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop' + (item.category || 'diplomacy').toLowerCase());
+      var badge = SEV[item.significance] || SEV.MEDIUM;
+      var delay = (idx * 0.06).toFixed(2);
+      var srcLink = item.sourceUrl ? '<a class="tc-link" href="' + item.sourceUrl + '" target="_blank">Read → ' + (item.source || 'Source') + ' ↗</a>' : '';
+      return '<div class="tc" style="animation-delay:' + delay + 's">'
+        + '<div class="tc-strip" style="background:#1a1a1a;"><img src="' + img + '" onerror="this.style.display=\'none\'" alt=""/><span class="tc-strip-lbl">' + (item.category || '') + '</span></div>'
+        + '<div class="tc-body"><div class="tc-meta"><span class="tc-date">' + (D.generatedAt ? D.generatedAt.slice(5,10) : 'Today') + '</span>' + badge + '</div>'
+        + '<div class="tc-cat">' + (item.category || '') + '</div>'
+        + '<div class="tc-hl">' + item.headline + '</div>'
+        + '<div class="tc-det">' + (item.detail || '').slice(0, 130) + '</div>'
+        + srcLink + '</div></div>';
+    }).join('');
+  }
+}
+
+// Animate cards
+window.addEventListener('load', function() {
+  document.querySelectorAll('.tc, .card').forEach(function(el) {
+    var delay = parseFloat(el.style.animationDelay) || 0;
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(12px)';
+    setTimeout(function() {
+      el.style.transition = 'opacity .4s ease, transform .4s ease';
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }, 80 + delay * 1000);
+  });
+});
+</script>
+</body>
+</html>

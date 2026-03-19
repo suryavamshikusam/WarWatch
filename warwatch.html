@@ -1,0 +1,627 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>WarWatch — How It's Connected</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { font-family: 'IBM Plex Sans', sans-serif; font-size: 15px; line-height: 1.75; background: #e8e8e4; color: #222222; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+@keyframes fadeUp { from{opacity:0;transform:translateY(12px)} to{opacity:1;transform:translateY(0)} }
+
+/* ─── HEADER ─── */
+header { background: #e8e8e4; border-bottom: 2px solid #444444; padding: 22px 40px; position: sticky; top: 0; z-index: 200; }
+.header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; max-width: 1400px; margin-left: auto; margin-right: auto; }
+.header-date { font-size: 13px; font-weight: 600; color: #333333; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
+.masthead { font-size: 50px; font-weight: 900; letter-spacing: -0.02em; display: flex; align-items: center; line-height: 1; }
+.masthead-war { background: #1a1a1a; color: #fff; padding: 3px 10px; }
+.masthead-watch { color: #c41e3a; padding: 3px 5px; }
+.ai-label { color: #c41e3a; font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; border: 1.5px solid #c41e3a; padding: 3px 8px; font-family: 'IBM Plex Mono', monospace; }
+nav { display: flex; align-items: center; justify-content: center; max-width: 1400px; margin: 0 auto; border-top: 1px solid #555555; padding-top: 14px; }
+.nav-item { color: #333333; text-decoration: none; cursor: pointer; padding: 0 26px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; border-right: 1px solid #555555; transition: color 0.2s; white-space: nowrap; }
+.nav-item:first-child { padding-left: 0; }
+.nav-item:last-child { border-right: none; padding-right: 0; }
+.nav-item:hover, .nav-item.active { color: #c41e3a; }
+nav { display: flex; align-items: center; justify-content: center; max-width: 1400px; margin: 0 auto; border-top: 1px solid #555555; padding-top: 14px; }
+.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; margin-right: 4px; animation: pulse 1.5s infinite; }
+
+/* ─── TAB BAR ─── */
+.tab-bar { background: #e8e8e4; border-bottom: 1px solid #d0d0cc; padding: 0 26px; border-radius: 6px 6px 0 0; display: flex; max-width: 100%; }
+.tab-bar-inner { max-width: 1400px; margin: 0 auto; display: flex; gap: 0; width: 100%; }
+.tab-btn { padding: 16px 30px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #333333; cursor: pointer; border-bottom: 2px solid transparent; transition: all 0.2s; white-space: nowrap; background: none; border-top: none; border-left: none; border-right: none; }
+.tab-btn:hover { color: #777777; }
+.tab-btn.active { color: #c41e3a; border-bottom-color: #c41e3a; }
+
+/* ─── TAB PANELS ─── */
+.tab-panel { display: none; }
+.tab-panel.active { display: block; }
+
+/* ─── TIMELINE TAB ─── */
+.tl-section { padding: 28px 28px 44px; background: transparent; }
+.tl-inner { max-width: 900px; margin: 0 auto; }
+.tl-hero { margin-bottom: 36px; }
+.tl-hero-eyebrow { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #c41e3a; letter-spacing: 0.14em; text-transform: uppercase; margin-bottom: 6px; }
+.tl-hero-title { font-family: 'Lora', serif; font-size: 36px; font-weight: 700; color: #111111; line-height: 1.2; letter-spacing: -0.02em; }
+.tl-hero-sub { font-size: 14px; color: #555555; margin-top: 6px; font-style: italic; }
+
+/* vertical timeline */
+.timeline-track { position: relative; padding-left: 68px; display: flex; flex-direction: column; gap: 16px; }
+.timeline-track::before { content: none; }
+.tl-entry { position: relative; margin-bottom: 0; opacity: 0; transform: translateY(28px) scale(0.97); transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1); }
+.tl-entry.visible { opacity: 1; transform: translateY(0) scale(1); }
+.tl-year { position: absolute; left: -62px; top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 700; color: #111111; width: 46px; text-align: right; letter-spacing: -0.02em;
+  transition: font-size 0.22s cubic-bezier(0.34,1.56,0.64,1), color 0.18s ease, left 0.22s cubic-bezier(0.34,1.56,0.64,1), top 0.22s cubic-bezier(0.34,1.56,0.64,1); }
+.entry-card:hover .tl-year { font-size: 26px; color: #c41e3a; left: -78px; top: 8px; }
+.tl-dot-big { display: none; }
+.d-crit { display: none; }
+.d-high { display: none; }
+.d-med  { display: none; }
+
+/* Card with hover popup */
+.entry-card { background: transparent; border: none; border-radius: 0; padding: 4px 0; position: relative; }
+.tl-card { background: #ffffff; border: 1.5px solid #d8d8d4; border-radius: 8px; overflow: hidden;
+  transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.22s ease, background 0.18s ease; cursor: default; }
+.entry-card:hover .tl-card { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: #c41e3a; background: #ffffff; }
+.entry-card { transition: none; cursor: default; }
+.entry-card:hover { box-shadow: none; }
+.tl-card-inner { display: flex; gap: 0; }
+.tl-img { width: 140px; flex-shrink: 0; position: relative; min-height: 100px; overflow: hidden; background: #2a2a3a; }
+.tl-img img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.tl-img-ph { width: 100%; height: 100%; min-height: 100px; display: flex; align-items: center; justify-content: center; padding: 8px; }
+.tl-img-ph-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: rgba(255,255,255,0.5); text-align: center; line-height: 1.4; letter-spacing: 0.06em; text-transform: uppercase; }
+.tl-body { padding: 18px 22px; flex: 1; }
+.tl-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 8px; flex-wrap: wrap; }
+.tl-tag { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #333333; background: #d8d8d4; padding: 3px 8px; border-radius: 4px; border: 1px solid #c0c0bc; }
+.tl-title { font-family: 'Lora', serif; font-size: 17px; font-weight: 700; color: #111111; line-height: 1.35; margin-bottom: 6px; }
+.tl-desc { font-size: 13.5px; color: #555555; line-height: 1.7; }
+
+/* animated down arrow between entries */
+/* ── Animated down arrows ─────────────────────── */
+65%  { opacity:1; transform:translateY(5px);  }
+  100% { opacity:0; transform:translateY(12px); }
+}
+
+/* ── Arrows ──────────────────────────────────────── */
+.tl-arrow  { height: 44px; display: flex; align-items: center; justify-content: flex-start; padding-left: 4px; }
+.why-arrow { height: 44px; display: flex; align-items: center; justify-content: flex-start; padding-left: 58px; }
+.tl-arrow-anim, .why-arrow-anim {
+  display: flex; flex-direction: column; align-items: center; gap: 0;
+  animation: arrowDrop 1.4s ease-in-out infinite;
+}
+.tl-arrow-chevron, .why-arrow-chevron {
+  width: 2px; height: 16px; background: #c41e3a; border-radius: 2px 2px 0 0;
+}
+.tl-arrow-chevron2, .why-arrow-chevron2 {
+  width: 0; height: 0;
+  border-left: 6px solid transparent;
+  border-right: 6px solid transparent;
+  border-top: 8px solid #c41e3a;
+  margin-top: 0;
+}
+.tl-arrow-chevron3 { display: none; }
+@keyframes arrowDrop {
+  0%   { opacity: 0; transform: translateY(-10px); }
+  20%  { opacity: 1; transform: translateY(0px);   }
+  70%  { opacity: 1; transform: translateY(6px);   }
+  100% { opacity: 0; transform: translateY(13px);  }
+}
+
+/* "now" marker */
+.tl-now { display: flex; align-items: center; gap: 10px; margin-top: 12px; }
+.tl-now-dot { display: none; }
+.tl-now-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; color: #c41e3a; letter-spacing: 0.1em; text-transform: uppercase; }
+@keyframes nowPop { 0%,100%{transform:scale(1)} 50%{transform:scale(1.18)} }
+@keyframes nowGlow { 0%,100%{text-shadow:0 0 0px rgba(196,30,58,0)} 50%{text-shadow:0 0 10px rgba(196,30,58,0.45)} }
+.tl-now-animate { display: inline-block; animation: nowPop 1.6s ease-in-out infinite, nowGlow 1.6s ease-in-out infinite; transform-origin: left center; }
+
+/* ─── WHY CONNECTED TAB ─── */
+.why-section { padding: 28px 28px 44px; }
+.why-inner { max-width: 900px; margin: 0 auto; }
+.why-hero { margin-bottom: 28px; }
+.why-grid { display: flex; flex-direction: column; gap: 16px; }
+.why-item { display: flex; gap: 0; opacity: 0; transform: translateY(28px) scale(0.97); transition: opacity 0.55s cubic-bezier(0.22,1,0.36,1), transform 0.55s cubic-bezier(0.22,1,0.36,1); }
+.why-item.visible { opacity: 1; transform: translateY(0) scale(1); }
+.why-num { width: 54px; flex-shrink: 0; display: flex; flex-direction: column; align-items: center; padding-top: 18px; }
+.why-num-n { font-family: 'IBM Plex Mono', monospace; font-size: 22px; font-weight: 700; color: #bbb; line-height: 1; }
+.why-num-line { display: none; }
+.why-item:last-child .why-num-line { display: none; }
+.why-entry-card { background: transparent; border: none; border-radius: 0; padding: 4px 0; position: relative; }
+.why-card { flex: 1; background: #ffffff; border: 1.5px solid #d8d8d4; border-radius: 8px; padding: 22px 24px; margin-bottom: 0;
+  transition: transform 0.22s cubic-bezier(0.34,1.56,0.64,1), box-shadow 0.22s ease, background 0.18s ease; cursor: default; }
+.why-entry-card:hover .why-card { transform: translateY(-2px); box-shadow: 0 4px 16px rgba(0,0,0,0.08); border-color: #c41e3a; background: #ffffff; }
+.why-entry-card { transition: none; cursor: default; }
+.why-entry-card:hover { box-shadow: none; }
+.why-card-title { font-family: 'Lora', serif; font-size: 19px; font-weight: 700; color: #111111; margin-bottom: 8px; line-height: 1.3; }
+.why-card-body { font-size: 14.5px; color: #555555; line-height: 1.75; }
+.why-card-body strong { color: #333333; font-weight: 600; }
+.cause-effect { display: flex; align-items: center; gap: 8px; margin-top: 12px; flex-wrap: wrap; }
+.cause { background: #f5f5f2; border: 1px solid #d8d8d4; border-radius: 4px; padding: 7px 14px; font-size: 12.5px; color: #444444; }
+.ce-arrow { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #aaaaaa; }
+.effect { background: rgba(196,30,58,0.07); border: 1px solid rgba(196,30,58,0.2); border-radius: 4px; padding: 7px 14px; font-size: 12.5px; color: #c41e3a; }
+
+/* animated down arrow between why items */
+/* ─── ORGANISATIONS SECTION ─── */
+
+/* side colors */
+
+/* ─── FOOTER ─── */
+footer { padding: 22px 28px; border: 1px solid #d0d0cc; background: #e8e8e4; border-radius: 6px; display: flex; justify-content: space-between; align-items: center; flex-wrap: wrap; gap: 12px; margin-top: 20px; }
+.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #111111; }
+.footer-logo span { color: #c41e3a; }
+.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #333333; text-align: right; line-height: 1.7; }
+.footer-meta a { color: #333333; text-decoration: none; }
+
+@media (max-width: 700px) { .tl-card-inner { flex-direction: column; } .tl-img { width: 100%; height: 80px; } .tl-section, .why-section { padding: 20px 16px 32px; } header { padding: 10px 16px; } .tab-bar { padding: 0 16px; } }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="header-top">
+    <div class="header-date" id="header-date">Wednesday, March 18, 2026</div>
+    <h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1>
+    <div class="ai-label">AI Summarizer</div>
+  </div>
+  <nav>
+    <a class="nav-item" href="index.html#live"><span class="live-dot"></span>Live</a>
+    <a class="nav-item" href="india.html">India</a>
+    <a class="nav-item" href="history.html">History</a>
+    <a class="nav-item active" href="warwatch.html">War Context</a>
+  </nav>
+</header>
+
+<div class="page-sections">
+<div style="background:#ffffff;border:1px solid #d8d8d4;border-radius:6px;overflow:hidden;">
+<!-- TAB BAR -->
+<div class="tab-bar" id="why">
+  <div class="tab-bar-inner">
+    <button class="tab-btn active" onclick="switchTab('timeline', this)">Historical Timeline</button>
+    <button class="tab-btn" onclick="switchTab('why', this)">Why It's Connected</button>
+  </div>
+</div>
+
+<!-- ══════════════════════════════════ TAB 1: TIMELINE ══════════════════════════════════ -->
+<div class="tab-panel active" id="panel-timeline">
+<div class="tl-section">
+<div class="tl-inner">
+  <div class="tl-hero">
+    <div class="tl-hero-eyebrow">Historical Context — 1948 → 2026</div>
+    <h2 class="tl-hero-title">The Road to This War</h2>
+    <div class="tl-hero-sub">Eight decades of decisions, wars, and missed opportunities that made this conflict inevitable</div>
+  </div>
+
+  <div style="background:#ffffff;border:1px solid #e0e0dd;border-radius:6px;padding:32px 28px 28px;margin-top:8px;">
+  <div class="timeline-track">
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.04s">
+      <span class="tl-year">1948</span>
+      <div class="tl-dot-big d-high">✦</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#1a1a3a,#2a0a0a);">
+            <img src="https://images.unsplash.com/photo-1548116022-c8c56de428d5?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">State of Israel Founded</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">May 14, 1948</span><span class="tl-tag" style="color:#1a5fc4;background:#dce8f8;border-color:#b0c8ee">Origin</span></div>
+            <div class="tl-title">Israel declares independence — Arab-Israeli conflict begins</div>
+            <div class="tl-desc">The State of Israel is declared. The US is first to recognise it within minutes. Six Arab armies attack. The first Arab-Israeli war begins a conflict that will define Middle Eastern politics for the next 80 years.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.08s">
+      <span class="tl-year">1979</span>
+      <div class="tl-dot-big d-crit">!</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#3a0a0a,#1a0505);">
+            <img src="https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Iran Revolution 1979</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">Feb 1979</span><span class="tl-tag" style="color:#e05555;background:rgba(224,85,85,0.1)">Turning Point</span></div>
+            <div class="tl-title">Iran's Islamic Revolution — Khomeini turns Iran against the US and Israel</div>
+            <div class="tl-desc">The Shah falls. Ayatollah Khomeini takes power. Iran goes overnight from America's closest ally in the Middle East to its most bitter enemy. 52 US diplomats are held hostage for 444 days. Iran begins funding anti-Israel armed groups across the region.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.12s">
+      <span class="tl-year">1980</span>
+      <div class="tl-dot-big d-high">▲</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#1a0a0a,#3a1a0a);">
+            <img src="https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Iraq-Iran War</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">1980–1988</span><span class="tl-tag" style="color:#d4892a;background:rgba(212,137,42,0.1)">War</span></div>
+            <div class="tl-title">Iran–Iraq War — US backs Saddam, Iran fights alone and learns to survive</div>
+            <div class="tl-desc">Saddam Hussein invades Iran. The US secretly supports Iraq with intelligence and weapons. One million people die over eight years. Iran emerges battered but defiant — and permanently convinced that only nuclear deterrence can guarantee its survival against a hostile America.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.16s">
+      <span class="tl-year">2003</span>
+      <div class="tl-dot-big d-high">▲</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#0a1a3a,#0a0a2a);">
+            <img src="https://images.unsplash.com/photo-1579548122080-c35fd6820734?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Iraq Invasion 2003</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">Mar 2003</span><span class="tl-tag" style="color:#1a5fc4;background:#dce8f8;border-color:#b0c8ee">US Policy</span></div>
+            <div class="tl-title">US invades Iraq — destroys Iran's biggest enemy, accidentally empowers Tehran</div>
+            <div class="tl-desc">Bush invades Iraq looking for WMDs that don't exist. Saddam — Iran's nightmare enemy — is removed. Iran fills the vacuum in Iraq, Syria, and Lebanon. The "Axis of Resistance" expands. Iran's influence across the region doubles.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.2s">
+      <span class="tl-year">2007</span>
+      <div class="tl-dot-big d-high">▲</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#1a1a0a,#2a2a05);">
+            <img src="https://images.unsplash.com/photo-1518709414768-a88981a4515d?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Iran Nuclear</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">2007–2015</span><span class="tl-tag" style="color:#d4892a;background:rgba(212,137,42,0.1)">Nuclear</span></div>
+            <div class="tl-title">Iran accelerates uranium enrichment — UN sanctions begin, Stuxnet sabotage</div>
+            <div class="tl-desc">Iran begins enriching uranium at Natanz. Israel and the US deploy the Stuxnet computer virus to destroy centrifuges. Western sanctions cripple Iran's economy. Iran continues anyway — determined that nuclear capability is an existential necessity after watching what happened to Saddam and Gaddafi.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.24s">
+      <span class="tl-year">2015</span>
+      <div class="tl-dot-big d-med">◆</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#0a3a0a,#0a2a0a);">
+            <img src="https://images.unsplash.com/photo-1529107386315-e1a2ed48a1e3?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">JCPOA Deal 2015</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">Jul 2015</span><span class="tl-tag" style="color:#3daa72;background:rgba(61,170,114,0.1)">Deal</span></div>
+            <div class="tl-title">JCPOA nuclear deal — Iran limits enrichment, sanctions partially lifted</div>
+            <div class="tl-desc">Obama brokers a deal: Iran limits enrichment to 3.67%, accepts inspectors, gets sanctions relief. A rare diplomatic success — until Trump tears it up in 2018. Iran restarts enrichment, reaching 60% purity (weapons-grade is 90%) by 2021.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.28s">
+      <span class="tl-year">2020</span>
+      <div class="tl-dot-big d-crit">!</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#3a0a0a,#1a0505);">
+            <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Soleimani Killed 2020</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">Jan 3, 2020</span><span class="tl-tag" style="color:#e05555;background:rgba(224,85,85,0.1)">Assassination</span></div>
+            <div class="tl-title">US kills General Soleimani — Iran vows revenge, conflict enters personal phase</div>
+            <div class="tl-desc">Trump orders the assassination of IRGC Quds Force commander Qasem Soleimani at Baghdad airport. Soleimani was the architect of Iran's entire regional strategy. Iran fires ballistic missiles at US bases in Iraq. No Americans die — but Iran's vow of revenge has never been forgotten or withdrawn.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.32s">
+      <span class="tl-year">2023</span>
+      <div class="tl-dot-big d-crit">!</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#3a1a0a,#280d05);">
+            <img src="https://images.unsplash.com/photo-1548116022-c8c56de428d5?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Oct 7, 2023</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">Oct 7, 2023</span><span class="tl-tag" style="color:#e05555;background:rgba(224,85,85,0.1)">Attack</span></div>
+            <div class="tl-title">Hamas attacks Israel — Gaza war begins, Iran's proxy strategy enters crisis</div>
+            <div class="tl-desc">Hamas kills 1,200 Israelis and takes 250 hostages. Israel launches a devastating counteroffensive in Gaza. Hezbollah opens a northern front. Iran-backed militias attack US bases. For the first time, Israel and Iran exchange direct missile strikes in April 2024 — the original red line is crossed.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.36s">
+      <span class="tl-year">2025</span>
+      <div class="tl-dot-big d-crit">!</div>
+      <div class="tl-card">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#1a0a2a,#2a0a3a);">
+            <img src="https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Sanctions & Ultimatum 2025</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag">2025</span><span class="tl-tag" style="color:#e05555;background:rgba(224,85,85,0.1)">Escalation</span></div>
+            <div class="tl-title">Trump demands Iran fully dismantles nuclear program — Iran refuses</div>
+            <div class="tl-desc">Trump returns to the White House, immediately reimposing "maximum pressure" sanctions on Iran. He gives Iran a 60-day ultimatum to completely dismantle its nuclear program. Iran calls it humiliating and impossible. Diplomacy collapses. Both sides begin positioning military assets.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+    <div class="tl-arrow"><div class="tl-arrow-anim"><div class="tl-arrow-chevron"></div><div class="tl-arrow-chevron2"></div><div class="tl-arrow-chevron3"></div></div></div>
+
+    
+    <div class="entry-card">
+    <div class="tl-entry" style="animation-delay:.4s; position:relative;">
+      <span class="tl-year" style="color:#c41e3a">2026</span>
+      <div class="tl-dot-big d-crit" style="animation:pulse 1.2s infinite;left:-34px;top:0px;">●</div>
+      <div class="tl-now-lbl" style="margin-bottom:8px;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;color:#c41e3a;letter-spacing:.1em;text-transform:uppercase;"><span class="tl-now-animate">● NOW — Active War</span></div>
+      <div class="tl-card" style="border-color:#c41e3a33;">
+        <div class="tl-card-inner">
+          <div class="tl-img" style="background:linear-gradient(135deg,#6a1515,#3a0808);">
+            <img src="https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=220&h=160&q=80&fit=crop" onerror="this.style.display='none'" alt=""/>
+            <div class="tl-img-ph"><div class="tl-img-ph-lbl">Operation Midnight Hammer</div></div>
+          </div>
+          <div class="tl-body">
+            <div class="tl-meta"><span class="tl-tag" style="color:#c41e3a;background:rgba(196,30,58,0.15);">Mar 10, 2026</span><span class="tl-tag" style="color:#c41e3a;background:rgba(196,30,58,0.1)">Now</span></div>
+            <div class="tl-title" style="color:#e05555;">Operation Midnight Hammer — the war begins. This is where we are.</div>
+            <div class="tl-desc">US B-1B bombers strike Fordow, Natanz and Isfahan nuclear sites. Iran declares war. Hormuz is blockaded. Dubai is struck. Kharg Island is targeted. The conflict this whole page explains is now live — and this website is tracking it in real time.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /entry-card -->
+
+  </div>
+  </div><!-- /single timeline card -->
+</div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════ TAB 2: WHY CONNECTED ══════════════════════════════════ -->
+<div class="tab-panel" id="panel-why">
+<div class="why-section">
+<div class="why-inner">
+  <div class="why-hero">
+    <div class="tl-hero-eyebrow">The Causes — Plain English</div>
+    <h2 class="tl-hero-title" style="font-size:24px;">Why Is The US Involved? Why Does It Matter?</h2>
+    <p class="tl-hero-sub">Six connected reasons — each one leads directly to the next</p>
+  </div>
+
+  <div style="background:#ffffff;border:1px solid #e0e0dd;border-radius:6px;padding:32px 28px 28px;margin-top:8px;">
+  <div class="why-grid">
+
+    
+    <div class="why-entry-card">
+    <div class="why-item" style="animation-delay:.05s">
+      <div class="why-num"><div class="why-num-n">1</div><div class="why-num-line"></div></div>
+      <div class="why-card">
+        <div class="why-card-title">Iran's nuclear program is months away from a bomb</div>
+        <div class="why-card-body">Iran has enriched uranium to <strong>60% purity</strong>. Weapons grade is 90%. US and Israeli intelligence both concluded Iran could reach 90% in <strong>under 3 months</strong>. Once Iran has a nuclear weapon, the entire calculus of the Middle East changes permanently — Israel can no longer consider military action, and Iran's "Axis of Resistance" becomes untouchable.</div>
+        <div class="cause-effect">
+          <div class="cause">Iran at 60% enrichment</div>
+          <div class="ce-arrow">→</div>
+          <div class="effect">3 months to bomb capability</div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /why-entry-card -->
+    <div class="why-arrow"><div class="why-arrow-anim"><div class="why-arrow-chevron"></div><div class="why-arrow-chevron2"></div></div></div>
+    
+    <div class="why-entry-card">
+    <div class="why-item" style="animation-delay:.1s">
+      <div class="why-num"><div class="why-num-n">2</div><div class="why-num-line"></div></div>
+      <div class="why-card">
+        <div class="why-card-title">Israel cannot survive a nuclear Iran — it asked the US to act</div>
+        <div class="why-card-body">Israel is a tiny country — <strong>8,000 square miles, smaller than New Jersey</strong>. Iran's leadership has repeatedly called for Israel's destruction. A single nuclear weapon detonated over Tel Aviv would end the State of Israel. Netanyahu formally requested US air support, warning that Israel could not destroy Iran's underground facilities alone without American bunker-busting bombs.</div>
+        <div class="cause-effect">
+          <div class="cause">Israel can't destroy underground sites alone</div>
+          <div class="ce-arrow">→</div>
+          <div class="effect">Netanyahu requests US military action</div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /why-entry-card -->
+    <div class="why-arrow"><div class="why-arrow-anim"><div class="why-arrow-chevron"></div><div class="why-arrow-chevron2"></div></div></div>
+    
+    <div class="why-entry-card">
+    <div class="why-item" style="animation-delay:.15s">
+      <div class="why-num"><div class="why-num-n">3</div><div class="why-num-line"></div></div>
+      <div class="why-card">
+        <div class="why-card-title">The US has 40,000 troops in the Middle East it must protect</div>
+        <div class="why-card-body">The US has <strong>40,000+ military personnel</strong> stationed in Qatar, Bahrain, Saudi Arabia, UAE, Iraq, Kuwait, Jordan, and Syria. Since 2023, Iran-backed militias have attacked US bases <strong>over 170 times</strong>. After October 7, Iran activated Hezbollah, the Houthis and Iraqi militias simultaneously. The US decided it had to destroy the source of these attacks rather than play defence indefinitely.</div>
+        <div class="cause-effect">
+          <div class="cause">170+ attacks on US bases since 2023</div>
+          <div class="ce-arrow">→</div>
+          <div class="effect">US decides to strike the source: Iran</div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /why-entry-card -->
+    <div class="why-arrow"><div class="why-arrow-anim"><div class="why-arrow-chevron"></div><div class="why-arrow-chevron2"></div></div></div>
+    
+    <div class="why-entry-card">
+    <div class="why-item" style="animation-delay:.2s">
+      <div class="why-num"><div class="why-num-n">4</div><div class="why-num-line"></div></div>
+      <div class="why-card">
+        <div class="why-card-title">Oil — the world runs on the Gulf, and Iran controls the tap</div>
+        <div class="why-card-body"><strong>21% of the world's oil</strong> passes through the Strait of Hormuz every day. The US wants to ensure no single hostile power can switch off the global economy. Iran demonstrated in March 2012 and repeatedly since that it is willing to blockade the strait. India imports <strong>60% of its oil through Hormuz</strong>. Japan, South Korea, and China are even more dependent. Allowing Iran nuclear weapons plus Hormuz control is unacceptable to every major economy.</div>
+        <div class="cause-effect">
+          <div class="cause">Iran can blockade 21% of world oil</div>
+          <div class="ce-arrow">→</div>
+          <div class="effect">Global economic emergency for India, Asia, Europe</div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /why-entry-card -->
+    <div class="why-arrow"><div class="why-arrow-anim"><div class="why-arrow-chevron"></div><div class="why-arrow-chevron2"></div></div></div>
+    
+    <div class="why-entry-card">
+    <div class="why-item" style="animation-delay:.25s">
+      <div class="why-num"><div class="why-num-n">5</div><div class="why-num-line"></div></div>
+      <div class="why-card">
+        <div class="why-card-title">Iran's "Axis of Resistance" — a network of armed groups across 5 countries</div>
+        <div class="why-card-body">Iran funds and arms <strong>Hamas</strong> (Gaza), <strong>Hezbollah</strong> (Lebanon), <strong>PIJ — Palestinian Islamic Jihad</strong> (West Bank), <strong>Houthis</strong> (Yemen) and <strong>PMF — Popular Mobilisation Forces</strong> (Iraq). These groups collectively have more missiles than most European armies. Iran uses them as a buffer — so that any attack on Israel or the US triggers retaliation from multiple directions simultaneously, without Iran firing a single official Iranian shot.</div>
+        <div class="cause-effect">
+          <div class="cause">Iran arms proxies across 5 countries</div>
+          <div class="ce-arrow">→</div>
+          <div class="effect">Any strike on Iran triggers 5-country response</div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /why-entry-card -->
+    <div class="why-arrow"><div class="why-arrow-anim"><div class="why-arrow-chevron"></div><div class="why-arrow-chevron2"></div></div></div>
+    
+    <div class="why-entry-card">
+    <div class="why-item" style="animation-delay:.3s">
+      <div class="why-num"><div class="why-num-n">6</div><div class="why-num-line"></div></div>
+      <div class="why-card">
+        <div class="why-card-title">Why India can't pick a side — and why it matters</div>
+        <div class="why-card-body">India has <strong>$2.4 billion in active defence contracts with Israel</strong>, depends on <strong>Iran's Chabahar port</strong> for its Central Asia trade route, is a core <strong>Quad partner with the US</strong>, and has <strong>5 million citizens in Gulf states</strong> that are now in a conflict zone. Taking any side loses at least one critical relationship permanently. India's only option is careful non-alignment — which is exactly what it is doing, at great diplomatic cost.</div>
+        <div class="cause-effect">
+          <div class="cause">India needs Israel + Iran + US simultaneously</div>
+          <div class="ce-arrow">→</div>
+          <div class="effect">Non-alignment = only viable Indian strategy</div>
+        </div>
+      </div>
+    </div>
+    </div><!-- /why-entry-card -->
+
+  </div>
+</div>
+</div>
+</div>
+
+<!-- ══════════════════════════════════ ORGANISATIONS SECTION ══════════════════════════════════ -->
+
+
+</div><!-- /tab card -->
+</div><!-- /page-sections -->
+<div style="padding: 0 24px 32px; max-width: 1460px; margin: 0 auto;">
+<footer>
+  <div class="footer-logo">War<span>Watch</span></div>
+  <div class="footer-meta">
+    Sources: NDTV &middot; BBC &middot; Reuters &middot; Al Jazeera &middot; Iran International &middot; Times of Israel<br>
+    AI summaries by Groq / Llama 3.3 &middot; <a href="index.html">← Back to Live</a>
+  </div>
+</footer>
+</div>
+
+<script>
+// Live date
+var d = new Date();
+var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
+document.getElementById('header-date').textContent = DAYS[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
+
+// Handle tab switching + hash routing
+// Scroll-reveal for timeline and why entries
+// IntersectionObserver: pop each card in as it enters viewport, staggered
+var cardObserver = new IntersectionObserver(function(entries) {
+  entries.forEach(function(entry) {
+    if (entry.isIntersecting) {
+      var el = entry.target;
+      var siblings = Array.from(el.parentElement.children);
+      var idx = siblings.indexOf(el);
+      setTimeout(function() { el.classList.add('visible'); }, idx * 90);
+      cardObserver.unobserve(el);
+    }
+  });
+}, { threshold: 0.12 });
+
+function observeCards() {
+  document.querySelectorAll('.tl-entry, .why-item').forEach(function(el) {
+    el.classList.remove('visible');
+    cardObserver.observe(el);
+  });
+}
+
+window.addEventListener('load', function() { setTimeout(observeCards, 80); });
+document.querySelectorAll('.tab-btn').forEach(function(btn) {
+  btn.addEventListener('click', function() { setTimeout(observeCards, 60); });
+});
+
+function switchTab(name, btn) {
+  document.querySelectorAll('.tab-panel').forEach(function(p) { p.classList.remove('active'); });
+  document.querySelectorAll('.tab-btn').forEach(function(b) { b.classList.remove('active'); });
+  var panels = { timeline: 'panel-timeline', why: 'panel-why' };
+  var panel = document.getElementById(panels[name]);
+  if (panel) panel.classList.add('active');
+  if (btn) btn.classList.add('active');
+  // Animate newly visible items
+  setTimeout(animateVisible, 50);
+}
+
+// Hash-based routing on page load
+window.addEventListener('load', function() {
+  var hash = window.location.hash;
+  if (hash === '#orgs') {
+    
+  } else if (hash === '#why') {
+    var whyBtn = document.querySelectorAll('.tab-btn')[1];
+    switchTab('why', whyBtn);
+  }
+  animateVisible();
+});
+
+// Animate visible items
+function animateVisible() {
+  document.querySelectorAll('.tl-entry, .why-item, .org-card').forEach(function(el) {
+    var delay = parseFloat(el.style.animationDelay) || 0;
+    el.style.opacity = '0';
+    el.style.transform = 'translateY(12px)';
+    setTimeout(function() {
+      el.style.transition = 'opacity .4s ease, transform .4s ease';
+      el.style.opacity = '1';
+      el.style.transform = 'translateY(0)';
+    }, 60 + delay * 1000);
+  });
+}
+</script>
+</body>
+</html>

@@ -18,8 +18,9 @@ from datetime import datetime, timezone
 from pathlib import Path
 
 from scraper import fetch_all_articles, fetch_article_content
-from summarizer import generate_report
+from summarizer import generate_report, format_report_html
 from dashboard import build_dashboard
+from emailer import send_report_email
 
 REPORTS_DIR         = Path("reports")
 SEEN_FILE           = Path("seen_urls.json")
@@ -47,26 +48,37 @@ def save_seen(seen: set):
 # ── Core pipeline ─────────────────────────────────────────────────────────────
 
 def run_pipeline(articles: list):
-    """Summarise articles, save report, update dashboard."""
-    print(f"\n[1/3] Fetching article content...")
+    """Summarise articles, save report, update dashboard, send email."""
+    print(f"\n[1/4] Fetching article content...")
     for i, art in enumerate(articles[:8]):
         print(f"      [{i+1}/{min(8,len(articles))}] {art['title'][:65]}...")
         art["content"] = fetch_article_content(art["url"])
 
-    print(f"\n[2/3] Generating AI summary...")
+    print(f"\n[2/4] Generating AI summary...")
     report = generate_report(articles)
     print(f"      Escalation  : {report.get('escalation_level','?')}")
     print(f"      Developments: {len(report.get('key_developments',[]))}")
     print(f"      India angles: {len(report.get('india_impact',[]))}")
 
-    print(f"\n[3/3] Saving report + updating dashboard...")
+    print(f"\n[3/4] Saving report + updating dashboard...")
     REPORTS_DIR.mkdir(exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
     path = REPORTS_DIR / f"report_{ts}.json"
     path.write_text(json.dumps(report, indent=2))
     print(f"      Saved: {path}")
     build_dashboard()
-    print(f"      Dashboard updated!\n")
+    print(f"      Dashboard updated!")
+
+    print(f"\n[4/4] Sending email report...")
+    try:
+        html_body = format_report_html(report)
+        level = report.get("escalation_level", "MEDIUM")
+        subject = f"[{level}] WarWatch Report — {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}"
+        send_report_email(html_body, subject=subject)
+    except Exception as e:
+        print(f"      [WARN] Email failed: {e}")
+
+    print()
 
 
 # ── Run modes ─────────────────────────────────────────────────────────────────

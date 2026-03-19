@@ -1,237 +1,294 @@
 """
-dashboard.py — Generates live_data.js from saved JSON reports.
-warwatch.html loads live_data.js to populate all live sections.
+dashboard.py — Builds live_data.js from the latest report JSON files.
 
-Run automatically by bot.py after every report, or manually:
-  python dashboard.py
+Called by bot.py after each pipeline run:
+    from dashboard import build_dashboard
+    build_dashboard()
+
+Also regenerates dashboard_log.html (the report history page).
+
+live_data.js schema consumed by index.html, india.html, history.html, warwatch.html:
+  generatedAt       str
+  escalationLevel   str  (LOW / MEDIUM / HIGH / CRITICAL)
+  alerts            list[str]
+  heroStats         { tension, updatesToday, lastUpdated, sourcesUsed }
+  tensionMeters     list[{ label, pct, lvl, color }]
+  newsCards         list[{ badgeClass, badgeLabel, actorClass, actor, time,
+                           headline, summary, whyTxt, orgs, fullAnalysis,
+                           sourceUrl, imageUrl, sourceLabel }]   ← sourceUrl + imageUrl REQUIRED
+  sentiment         { overall_tone, us_stance, israel_stance, iran_stance }
+  terms             list[{ term, simple_explanation }]
+  history           list[{ t, l, tone }]
+  execSummary       str
+  totalReports      int
+  indiaImpact       list[{ headline, detail, category, significance,
+                           full_detail, imageUrl, sourceUrl }]   ← imageUrl + sourceUrl REQUIRED
+  indiaSummary      str
 """
 
 import json
-import os
+import re
 from datetime import datetime, timezone
 from pathlib import Path
 
-REPORTS_DIR = Path("reports")
+REPORTS_DIR   = Path("reports")
+LIVE_DATA_JS  = Path("live_data.js")
+DASHBOARD_LOG = Path("dashboard_log.html")
+
+# ── Escalation → tension-meter config ────────────────────────────────────────
+LEVEL_META = {
+    "CRITICAL": {"color": "var(--red)",   "badge": "b-crit", "pct_boost": 0},
+    "HIGH":     {"color": "var(--red)",   "badge": "b-high", "pct_boost": 0},
+    "MEDIUM":   {"color": "var(--amber)", "badge": "b-med",  "pct_boost": 0},
+    "LOW":      {"color": "var(--green)", "badge": "b-low",  "pct_boost": 0},
+}
+
+ACTOR_CLASS = {
+    "US":      "p-blue",
+    "Israel":  "p-blue",
+    "IDF":     "p-blue",
+    "Iran":    "p-red",
+    "IRGC":    "p-red",
+    "Hamas":   "p-red",
+    "Hezbollah": "p-red",
+    "Monitor": "p-gray",
+    "India":   "p-green",
+}
+
+# Curated Unsplash photo IDs by topic (direct CDN — not source.unsplash.com redirect API)
+# Format: https://images.unsplash.com/photo-{id}?w=800&q=80&fit=crop
+UNSPLASH_PHOTO_IDS = {
+    "oil":       "1474546499760-77a0b18c5e69",   # oil refinery
+    "drone":     "1585776245991-cf89dd7fc73a",   # military aircraft
+    "missile":   "1614728263952-84ea256f9d1d",   # military
+    "nuclear":   "1518709414768-a88981a4515d",   # nuclear power
+    "diplomacy": "1529107386315-e1a2ed48a1e3",   # diplomacy/meeting
+    "india":     "1582510003544-4d00b7f74220",   # India parliament
+    "ceasefire": "1541872703-74c5e44368f9",      # peace/negotiation
+    "strike":    "1540575467063-178a50c2df87",   # military aircraft
+    "hormuz":    "1505118380757-91f5f5632de0",   # ocean strait
+    "ship":      "1566753323558-f4e0952af115",   # ship at sea
+    "dubai":     "1512453979798-5ea266f8880c",   # Dubai skyline
+    "iran":      "1604072366595-e75dc92d6bdc",   # Middle East
+    "israel":    "1548116022-c8c56de428d5",      # Middle East city
+    "default":   "1579548122080-c35fd6820734",   # conflict/military generic
+}
 
 
-def _level_to_pct(level: str) -> int:
-    return {"LOW": 30, "MEDIUM": 52, "HIGH": 75, "CRITICAL": 92}.get(level, 50)
+def _unsplash(text: str, w: int = 800, h: int = 450) -> str:
+    """Return a working Unsplash CDN image URL matched to the topic."""
+    text_lower = text.lower()
+    for key, photo_id in UNSPLASH_PHOTO_IDS.items():
+        if key in text_lower:
+            return f"https://images.unsplash.com/photo-{photo_id}?w={w}&h={h}&q=80&fit=crop"
+    return f"https://images.unsplash.com/photo-{UNSPLASH_PHOTO_IDS['default']}?w={w}&h={h}&q=80&fit=crop"
 
 
-def _level_color(level: str) -> str:
-    return {
-        "LOW":      "var(--green)",
-        "MEDIUM":   "var(--amber)",
-        "HIGH":     "#c87830",
-        "CRITICAL": "var(--red)",
-    }.get(level, "var(--text3)")
-
-
-def _actor_pill_class(actor: str) -> str:
-    return {
-        "US":        "p-blue",
-        "Israel":    "p-blue",
-        "Iran":      "p-red",
-        "Hamas":     "p-red",
-        "Hezbollah": "p-red",
-        "Other":     "p-gray",
-    }.get(actor, "p-gray")
-
-
-def _significance_badge(sig: str) -> str:
-    return {
-        "HIGH":   "b-crit",
-        "MEDIUM": "b-high",
-        "LOW":    "b-gray",
-    }.get(sig, "b-gray")
-
-
-def _time_ago(ts: str) -> str:
-    """Convert '2026-03-14 05:35 UTC' to '2 hrs ago' style."""
-    try:
-        dt = datetime.strptime(ts, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
-        diff = int((datetime.now(timezone.utc) - dt).total_seconds())
-        if diff < 60:
-            return "just now"
-        if diff < 3600:
-            return f"{diff // 60} min ago"
-        if diff < 86400:
-            h = diff // 3600
-            return f"{h} hr{'s' if h > 1 else ''} ago"
-        d = diff // 86400
-        return f"{d} day{'s' if d > 1 else ''} ago"
-    except Exception:
-        return ts
-
-
-def build_dashboard():
-    REPORTS_DIR.mkdir(exist_ok=True)
-
-    # Load up to 48 most recent reports (12 days @ 6hr cadence)
+def _load_reports() -> list:
+    """Load all report JSON files, sorted newest-first."""
+    if not REPORTS_DIR.exists():
+        return []
     reports = []
-    for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True)[:48]:
+    for p in sorted(REPORTS_DIR.glob("report_*.json"), reverse=True):
         try:
-            with open(f) as fp:
-                reports.append(json.load(fp))
-        except Exception:
-            pass
+            reports.append(json.loads(p.read_text()))
+        except Exception as e:
+            print(f"  [WARN] Could not load {p}: {e}")
+    return reports
 
-    latest = reports[0] if reports else {}
-    level  = latest.get("escalation_level", "CRITICAL")
 
-    # ── Alert typewriter strings (from latest report) ──────────────────────
+def _actor_class(actor: str) -> str:
+    for key, cls in ACTOR_CLASS.items():
+        if key.lower() in actor.lower():
+            return cls
+    return "p-gray"
+
+
+def _badge(significance: str) -> tuple:
+    sig = (significance or "").upper()
+    if sig == "HIGH":
+        return "b-crit", "High"
+    if sig == "MEDIUM":
+        return "b-high", "Medium"
+    return "b-gray", "Low"
+
+
+def _time_ago(generated_at: str) -> str:
+    """Convert a UTC timestamp string to a rough '2 hrs ago' label."""
+    try:
+        then = datetime.strptime(generated_at, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+        diff = (datetime.now(timezone.utc) - then).total_seconds()
+        if diff < 3600:
+            return f"{int(diff // 60)} min ago"
+        if diff < 86400:
+            return f"{int(diff // 3600)} hrs ago"
+        return f"{int(diff // 86400)} days ago"
+    except Exception:
+        return "recently"
+
+
+def _build_tension_meters(report: dict) -> list:
+    """Build tension meter data from the latest report."""
+    level = report.get("escalation_level", "MEDIUM")
+    sentiment = report.get("sentiment", {})
+
+    # Base percentages mapped from escalation level
+    base = {"CRITICAL": 90, "HIGH": 72, "MEDIUM": 50, "LOW": 25}.get(level, 50)
+
+    def tone_bump(tone: str) -> int:
+        t = (tone or "").lower()
+        if "hostile" in t or "aggressive" in t: return 8
+        if "defensive" in t: return -5
+        return 0
+
+    return [
+        {"label": "US vs Iran",        "pct": min(99, base + tone_bump(sentiment.get("us_stance", ""))),   "lvl": level.capitalize(), "color": "var(--red)"    if level in ("CRITICAL","HIGH") else "var(--amber)"},
+        {"label": "Israel vs Iran",    "pct": min(99, base - 8 + tone_bump(sentiment.get("israel_stance",""))), "lvl": level.capitalize(), "color": "var(--red)"},
+        {"label": "Gaza ceasefire",    "pct": 38, "lvl": "Holding",  "color": "var(--green)"},
+        {"label": "Nuclear progress",  "pct": min(99, base - 20),    "lvl": "High" if base > 60 else "Moderate", "color": "var(--amber)"},
+        {"label": "Regional war risk", "pct": min(99, base - 12),    "lvl": "Elevated" if base > 55 else "Moderate", "color": "var(--red)" if base > 65 else "var(--amber)"},
+    ]
+
+
+def _build_news_cards(report: dict) -> list:
+    """
+    Map key_developments from the report into newsCards for live_data.js.
+    Ensures sourceUrl and imageUrl are always populated.
+    """
+    cards = []
+    generated_at = report.get("generated_at", "")
+
+    for dev in report.get("key_developments", []):
+        badge_class, badge_label = _badge(dev.get("significance", "MEDIUM"))
+        actor = dev.get("actor", "Monitor")
+
+        # imageUrl: use what summarizer stored, or generate a fallback
+        image_url = dev.get("imageUrl", "")
+        if not image_url or "source.unsplash.com" in image_url:
+            image_url = _unsplash(dev.get("headline", "") + " " + actor)
+
+        # sourceUrl: use what summarizer stored, fall back to "#"
+        source_url   = dev.get("sourceUrl", "") or "#"
+        source_label = dev.get("source", "Source")
+
+        cards.append({
+            "badgeClass":   badge_class,
+            "badgeLabel":   badge_label,
+            "actorClass":   _actor_class(actor),
+            "actor":        actor,
+            "time":         _time_ago(generated_at),
+            "headline":     dev.get("headline", ""),
+            "summary":      dev.get("detail", ""),
+            "whyTxt":       dev.get("why_it_matters", ""),
+            "orgs":         [actor],
+            "fullAnalysis": dev.get("fullAnalysis", ""),
+            "sourceUrl":    source_url,
+            "sourceLabel":  source_label,
+            "imageUrl":     image_url,
+        })
+
+    return cards
+
+
+def _build_india_impact(report: dict) -> list:
+    """
+    Map india_impact items, ensuring imageUrl and sourceUrl are always set.
+    """
+    items = []
+    for item in report.get("india_impact", []):
+        image_url = item.get("imageUrl", "")
+        if not image_url or "source.unsplash.com" in image_url:
+            image_url = _unsplash(
+                item.get("headline", "india") + " " + item.get("category", "india"),
+                w=600, h=200
+            )
+        source_url   = item.get("sourceUrl", "") or "#"
+        source_label = item.get("source", "Source")
+
+        items.append({
+            "headline":    item.get("headline", ""),
+            "detail":      item.get("detail", ""),
+            "category":    item.get("category", ""),
+            "significance":item.get("significance", "MEDIUM"),
+            "full_detail": item.get("full_detail", ""),
+            "imageUrl":    image_url,
+            "sourceUrl":   source_url,
+            "source":      source_label,
+        })
+    return items
+
+
+def _build_alerts(report: dict) -> list:
+    """Generate alert ticker strings from key developments."""
     alerts = []
-    for dev in latest.get("key_developments", [])[:5]:
+    for dev in report.get("key_developments", [])[:5]:
+        actor   = dev.get("actor", "Monitor")
         headline = dev.get("headline", "")
-        detail   = dev.get("detail", "")
-        actor    = dev.get("actor", "")
-        if headline:
-            alerts.append(f"{actor}: {headline} · {detail[:80]}{'…' if len(detail) > 80 else ''}")
+        time_str = _time_ago(report.get("generated_at", ""))
+        alerts.append(f"{actor}: {headline} · {time_str}")
+    return alerts or ["Monitor: No new alerts at this time"]
 
-    # Fallback if no developments
-    if not alerts:
-        alerts = [latest.get("executive_summary", "No updates yet.")]
 
-    # ── Hero stats ──────────────────────────────────────────────────────────
-    updates_today = sum(
-        1 for r in reports
-        if r.get("generated_at", "").startswith(
-            datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        )
-    )
-    hero_stats = {
-        "tension":      level,
-        "updatesToday": updates_today or len(reports),
-        "lastUpdated":  latest.get("generated_at", ""),
-        "sourcesUsed":  latest.get("sources_used", 0),
+def _build_history(reports: list) -> list:
+    """Build escalation history entries from all report files."""
+    history = []
+    for r in reversed(reports[:48]):  # oldest first, cap at 48
+        history.append({
+            "t":    r.get("generated_at", ""),
+            "l":    r.get("escalation_level", "MEDIUM"),
+            "tone": r.get("escalation_reason", r.get("sentiment", {}).get("overall_tone", "TENSE"))[:20],
+        })
+    return history
+
+
+def _count_today_updates(reports: list) -> int:
+    today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    return sum(1 for r in reports if r.get("generated_at", "").startswith(today))
+
+
+# ── HTML log builder ──────────────────────────────────────────────────────────
+
+def _build_log_html(reports: list) -> str:
+    """Regenerate dashboard_log.html from all report JSONs."""
+    level_colors = {
+        "LOW":      {"bg": "#1D9E7522", "fg": "#1D9E75", "border": "#1D9E75"},
+        "MEDIUM":   {"bg": "#BA751722", "fg": "#BA7517", "border": "#BA7517"},
+        "HIGH":     {"bg": "#D85A3022", "fg": "#D85A30", "border": "#D85A30"},
+        "CRITICAL": {"bg": "#A32D2D22", "fg": "#A32D2D", "border": "#A32D2D"},
     }
 
-    # ── Tension meters (derived from latest report) ─────────────────────────
-    # We compute the US-Iran and Israel-Iran bars from the escalation level
-    # and enrich with sentiment tone.
-    tone = latest.get("sentiment", {}).get("overall_tone", "")
-    tone_boost = {"VOLATILE": 8, "ESCALATING": 5, "TENSE": 2, "STABLE": -10, "DE-ESCALATING": -15}.get(tone, 0)
-    base = _level_to_pct(level)
+    cards_html = ""
+    for r in reports:
+        level  = r.get("escalation_level", "MEDIUM")
+        lc     = level_colors.get(level, level_colors["MEDIUM"])
+        ts     = r.get("generated_at", "—")
+        tone   = r.get("escalation_reason", r.get("sentiment", {}).get("overall_tone", ""))[:30]
+        summary = r.get("executive_summary", "")[:300]
 
-    tension_meters = [
-        {"label": "US vs Iran",        "pct": min(98, base + tone_boost),      "lvl": level,    "color": _level_color(level)},
-        {"label": "Israel vs Iran",    "pct": min(98, base + tone_boost - 8),  "lvl": level,    "color": _level_color(level)},
-        {"label": "Gaza ceasefire",    "pct": max(10, 100 - base + 5),         "lvl": "Holding","color": "var(--green)"},
-        {"label": "Nuclear progress",  "pct": min(98, base - 5 + tone_boost),  "lvl": "High",   "color": "var(--amber)"},
-        {"label": "Regional war risk", "pct": min(95, base - 10 + tone_boost), "lvl": "Elevated","color": "var(--red)"},
-    ]
+        devs_html = ""
+        for dev in r.get("key_developments", [])[:4]:
+            actor   = dev.get("actor", "")
+            headline = dev.get("headline", "")
+            src_url  = dev.get("sourceUrl", "")
+            src_lbl  = dev.get("source", "")
+            link_html = f' <a href="{src_url}" style="color:#5b9cf6;font-size:11px" target="_blank">↗</a>' if src_url and src_url != "#" else ""
+            devs_html += f'<li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">{actor}</strong> — {headline}{link_html}</li>'
 
-    # ── News cards from latest report ────────────────────────────────────────
-    news_cards = []
-    for dev in latest.get("key_developments", []):
-        actor    = dev.get("actor", "Other")
-        sig      = dev.get("significance", "MEDIUM")
-        headline = dev.get("headline", "")
-        detail   = dev.get("detail", "")
-        time_str = _time_ago(latest.get("generated_at", ""))
-
-        news_cards.append({
-            "badgeClass":  _significance_badge(sig),
-            "badgeLabel":  sig.capitalize(),
-            "actorClass":  _actor_pill_class(actor),
-            "actor":       actor,
-            "time":        time_str,
-            "headline":    headline,
-            "summary":     detail,
-            "whyTxt":      latest.get("escalation_reason", ""),
-            "orgs":        [actor],
-        })
-
-    # Also add a "what to watch" card
-    watch = latest.get("what_to_watch_next", "")
-    if watch:
-        news_cards.append({
-            "badgeClass":  "b-gray",
-            "badgeLabel":  "Analysis",
-            "actorClass":  "p-gray",
-            "actor":       "Monitor",
-            "time":        _time_ago(latest.get("generated_at", "")),
-            "headline":    "What to watch in the next 6 hours",
-            "summary":     watch,
-            "whyTxt":      latest.get("executive_summary", ""),
-            "orgs":        [],
-        })
-
-    # ── Historical escalation data for a chart (last 20 reports) ────────────
-    history = [
-        {
-            "t": r.get("generated_at", ""),
-            "l": r.get("escalation_level", "MEDIUM"),
-            "tone": r.get("sentiment", {}).get("overall_tone", ""),
-        }
-        for r in reversed(reports[:20])
-    ]
-
-    # ── Sentiment block ──────────────────────────────────────────────────────
-    sentiment = latest.get("sentiment", {})
-
-    # ── Terms glossary ──────────────────────────────────────────────────────
-    terms = latest.get("terminology_explained", [])
-
-    # ── Assemble live_data.js ────────────────────────────────────────────────
-    payload = {
-        "generatedAt":    latest.get("generated_at", ""),
-        "escalationLevel": level,
-        "alerts":         alerts,
-        "heroStats":      hero_stats,
-        "tensionMeters":  tension_meters,
-        "newsCards":      news_cards,
-        "sentiment":      sentiment,
-        "terms":          terms,
-        "history":        history,
-        "execSummary":    latest.get("executive_summary", ""),
-        "totalReports":   len(reports),
-    }
-
-    js = f"window.WARWATCH_LIVE = {json.dumps(payload, indent=2)};\n"
-
-    with open("live_data.js", "w") as f:
-        f.write(js)
-    print("[OK] live_data.js written")
-
-    # Also keep the legacy dashboard.html for local viewing
-    _build_legacy_html(reports)
-
-
-def _build_legacy_html(reports):
-    """Keep a basic legacy dashboard.html as a fallback."""
-    level_colors = {"LOW":"#1D9E75","MEDIUM":"#BA7517","HIGH":"#D85A30","CRITICAL":"#A32D2D"}
-    cards = ""
-    for r in reports[:10]:
-        lvl   = r.get("escalation_level", "MEDIUM")
-        color = level_colors.get(lvl, "#888")
-        devs  = "".join(
-            f'<li style="font-size:13px;margin:3px 0;color:#ccc">'
-            f'<strong style="color:#fff">{d.get("actor","")}</strong> — {d.get("headline","")}</li>'
-            for d in r.get("key_developments", [])[:3]
-        )
-        cards += f"""
+        cards_html += f"""
         <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
-          border-radius:12px;padding:20px;margin-bottom:14px">
+          border-radius:6px;padding:20px;margin-bottom:14px">
           <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
             <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
-              background:{color}22;color:{color};border:1px solid {color};
-              font-family:monospace;letter-spacing:.06em">{lvl}</span>
-            <span style="font-size:12px;color:#666">{r.get('generated_at','')}</span>
-            <span style="margin-left:auto;font-size:12px;color:#555">
-              {r.get('sentiment',{}).get('overall_tone','')}</span>
+              background:{lc['bg']};color:{lc['fg']};border:1px solid {lc['border']};
+              font-family:monospace;letter-spacing:.06em">{level}</span>
+            <span style="font-size:12px;color:#666">{ts}</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">{tone.upper()}</span>
           </div>
-          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
-            {r.get('executive_summary','')}</p>
-          <ul style="margin:0;padding-left:16px">{devs}</ul>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">{summary}</p>
+          <ul style="margin:0;padding-left:16px">{devs_html}</ul>
         </div>"""
 
-    timeline_data = json.dumps([
-        {"t": r.get("generated_at",""), "l": r.get("escalation_level","MEDIUM")}
-        for r in reversed(reports[:20])
-    ])
-
-    html = f"""<!DOCTYPE html>
+    return f"""<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -244,76 +301,111 @@ def _build_legacy_html(reports):
   .main{{max-width:860px;margin:0 auto;padding:28px 20px;
     display:grid;grid-template-columns:1fr 260px;gap:20px}}
   .card{{background:#212121;border:1px solid rgba(255,255,255,0.08);
-    border-radius:12px;padding:20px;margin-bottom:16px}}
+    border-radius:6px;padding:20px;margin-bottom:16px}}
   h2{{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;
     text-transform:uppercase;color:#5c5c5c;margin-bottom:14px}}
   canvas{{width:100%!important}}
   a{{color:#5b9cf6;text-decoration:none}}
+  .info-box{{background:#212121;border:1px solid rgba(255,255,255,0.08);
+    border-radius:6px;padding:20px;font-size:13px;color:#888;line-height:1.8}}
+  .info-box strong{{color:#9a9a9a}}
 </style>
 </head><body>
 <div class="bar">
   <span style="font-family:monospace;font-size:14px;font-weight:500;
     letter-spacing:.06em;text-transform:uppercase">War<span style="color:#e05555">Watch</span> Bot</span>
-  <span style="font-size:12px;color:#555">NDTV · Groq · Every 6hrs</span>
+  <span style="font-size:12px;color:#555">17 RSS Sources · Groq/Llama · Every 15 min</span>
   <span style="margin-left:auto;font-size:12px;color:#555">
-    Last run: {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}</span>
+    Last run: {reports[0].get('generated_at', '—') if reports else '—'}</span>
 </div>
 <div class="main">
   <div>
     <h2>Report log — {len(reports)} reports</h2>
-    {cards or '<p style="color:#555;font-size:14px">No reports yet.</p>'}
+    {cards_html or '<p style="color:#555;font-size:14px">No reports yet.</p>'}
   </div>
-  <div style="position:sticky;top:20px;align-self:start">
-    <div class="card">
-      <h2>Escalation history</h2>
-      <canvas id="ch" height="180"></canvas>
-    </div>
+  <div>
     <div class="card">
       <h2>About</h2>
-      <p style="font-size:12px;color:#666;line-height:1.7">
-        Bot scrapes NDTV every 6 hrs · Summarises with Groq/Llama ·
-        Emails report · Updates <a href="warwatch.html">warwatch.html</a> live.<br><br>
-        <strong style="color:#9a9a9a">live_data.js</strong> is regenerated every run.
-      </p>
+      <div class="info-box">
+        <strong>bot.py</strong> runs every 15 minutes via GitHub Actions.<br><br>
+        <strong>scraper.py</strong> pulls from 17 RSS sources across 4 tiers.<br><br>
+        <strong>summarizer.py</strong> uses Groq/Llama to generate deep-analysis reports.<br><br>
+        <strong>dashboard.py</strong> converts reports to <strong style="color:#9a9a9a">live_data.js</strong> for all HTML pages.<br><br>
+        <strong>emailer.py</strong> sends reports via Gmail SMTP on each update.
+      </div>
     </div>
   </div>
 </div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script>
-const d={timeline_data};
-const lm={{"LOW":1,"MEDIUM":2,"HIGH":3,"CRITICAL":4}};
-const cm={{"LOW":"#3daa72","MEDIUM":"#d4892a","HIGH":"#c87830","CRITICAL":"#e05555"}};
-new Chart(document.getElementById('ch').getContext('2d'),{{
-  type:'line',
-  data:{{
-    labels:d.map(x=>x.t.slice(5,16)),
-    datasets:[{{
-      data:d.map(x=>lm[x.l]||2),
-      borderColor:'#e05555',backgroundColor:'rgba(224,85,85,0.08)',
-      tension:0.4,fill:true,
-      pointBackgroundColor:d.map(x=>cm[x.l]||'#d4892a'),
-      pointRadius:4
-    }}]
-  }},
-  options:{{
-    plugins:{{legend:{{display:false}}}},
-    scales:{{
-      y:{{min:0,max:5,ticks:{{color:'#5c5c5c',
-        callback:v=>['','Low','Med','High','Crit',''][v]||''}},
-        grid:{{color:'rgba(255,255,255,0.05)'}}}},
-      x:{{ticks:{{color:'#5c5c5c',maxRotation:45}},
-        grid:{{color:'rgba(255,255,255,0.05)'}}}}
-    }}
-  }}
-}});
-</script>
 </body></html>"""
 
-    with open("dashboard.html", "w") as f:
-        f.write(html)
-    print("[OK] dashboard.html updated")
+
+# ── Main entry point ──────────────────────────────────────────────────────────
+
+def build_dashboard():
+    """
+    Reads all reports from reports/ directory, builds live_data.js and
+    regenerates dashboard_log.html.
+    Called by bot.py after each pipeline run.
+    """
+    reports = _load_reports()
+
+    if not reports:
+        print("  [dashboard] No reports found — skipping live_data.js update.")
+        return
+
+    latest  = reports[0]
+    level   = latest.get("escalation_level", "MEDIUM")
+    ts      = latest.get("generated_at", datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"))
+
+    news_cards   = _build_news_cards(latest)
+    india_impact = _build_india_impact(latest)
+    tension_meters = _build_tension_meters(latest)
+    alerts       = _build_alerts(latest)
+    history      = _build_history(reports)
+
+    india_summary = (
+        latest.get("india_summary") or
+        latest.get("indiaSummary") or
+        ""
+    )
+    exec_summary = (
+        latest.get("execSummaryRich") or
+        latest.get("execSummary") or
+        latest.get("executive_summary") or
+        ""
+    )
+
+    live_data = {
+        "generatedAt":    ts,
+        "escalationLevel": level,
+        "alerts":         alerts,
+        "heroStats": {
+            "tension":      level,
+            "updatesToday": _count_today_updates(reports),
+            "lastUpdated":  ts,
+            "sourcesUsed":  latest.get("sources_used", len(reports)),
+        },
+        "tensionMeters":  tension_meters,
+        "newsCards":      news_cards,
+        "sentiment":      latest.get("sentiment", {}),
+        "terms":          latest.get("terminology_explained", []),
+        "history":        history,
+        "execSummary":    exec_summary,
+        "totalReports":   len(reports),
+        "indiaImpact":    india_impact,
+        "indiaSummary":   india_summary,
+    }
+
+    js_content = "window.WARWATCH_LIVE = " + json.dumps(live_data, indent=2, ensure_ascii=False) + ";"
+    LIVE_DATA_JS.write_text(js_content, encoding="utf-8")
+    print(f"  [dashboard] live_data.js written — {len(news_cards)} newsCards, {len(india_impact)} India items")
+
+    # Regenerate the log HTML
+    log_html = _build_log_html(reports)
+    DASHBOARD_LOG.write_text(log_html, encoding="utf-8")
+    print(f"  [dashboard] dashboard_log.html updated — {len(reports)} reports logged")
 
 
 if __name__ == "__main__":
     build_dashboard()
-    print("Done! Open warwatch.html in your browser.")
+    print("Done.")
