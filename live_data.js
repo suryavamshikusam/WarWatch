@@ -1,18 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 16:51 UTC",
+  "generatedAt": "2026-03-19 17:49 UTC",
   "escalationLevel": "CRITICAL",
   "alerts": [
-    "Iran: Iran Attacks Gulf Energy Facilities · 0 min ago",
-    "Qatar: Qatar Calls for Immediate End to War · 0 min ago",
-    "Iran: Iran's Internet Shutdown Reaches 20th Day · 0 min ago",
-    "Turkey: Turkey Unlikely to Face Gas Crisis · 0 min ago",
-    "Iran: Pregnant Woman Among Four Palestinians Killed · 0 min ago"
+    "Iran: Iran Attacks Qatar Gas Hub · 0 min ago",
+    "Hezbollah: Hezbollah Rebuilds and Strikes · 0 min ago",
+    "US: US and Japan Discuss Crisis · 0 min ago",
+    "Iran: Natural Gas Prices Soar · 0 min ago",
+    "Hezbollah: Hezbollah's Military Capabilities · 0 min ago"
   ],
   "heroStats": {
     "tension": "CRITICAL",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-19 16:51 UTC",
-    "sourcesUsed": 6
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-19 17:49 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -53,67 +53,50 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Attacks Gulf Energy Facilities",
-      "summary": "Iran has attacked several Gulf energy facilities, causing a surge in energy prices and a decline in stocks. The attack has resulted in a significant disruption to global energy supplies, with Brent crude jumping 7% and European gas prices rising by over 30%. The attack is seen as a retaliation for the Israeli strike on one of Iran's key gas fields.",
+      "headline": "Iran Attacks Qatar Gas Hub",
+      "summary": "Iranian missile strikes caused significant damage to Ras Laffan, a major gas hub in Qatar, disrupting global energy supplies. The attack has led to a surge in natural gas prices in Europe and Asia. This development is significant as it highlights the expanding scope of the conflict and its impact on global energy markets.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-usa-war-live-updates-march-19-2026/article70760463.ece",
-      "sourceLabel": "The Hindu",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Qatar",
-      "time": "0 min ago",
-      "headline": "Qatar Calls for Immediate End to War",
-      "summary": "Qatar has called for an immediate end to the US-Israeli war on Iran, becoming the first major Gulf energy producer to explicitly call for a halt to the conflict without conditions. The call for an immediate end to the war is seen as a significant development, as it indicates a growing concern among Gulf states about the impact of the conflict on regional stability.",
-      "whyTxt": "",
-      "orgs": [
-        "Qatar"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/qatar-calls-immediate-end-us-israeli-war-after-attack-gas-facility",
+      "sourceUrl": "https://www.middleeasteye.net/news/ras-laffan-how-attack-qatar-gas-hub-will-have-huge-global-impact",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FQatar-Thani-PM-AFP.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-red",
-      "actor": "Iran",
+      "actor": "Hezbollah",
       "time": "0 min ago",
-      "headline": "Iran's Internet Shutdown Reaches 20th Day",
-      "summary": "The internet shutdown in Iran has reached its 20th day, making it the longest in the country's history. The shutdown has resulted in a significant disruption to communication and information flows, with many Iranians relying on virtual private networks (VPNs) to access the internet.",
+      "headline": "Hezbollah Rebuilds and Strikes",
+      "summary": "Hezbollah has rebuilt and is striking deep into Israeli territory, despite being declared dead by its enemies. The group's performance on the battlefield shows that it treated the ceasefire with Israel as a window to rebuild and prepare for future conflict. This development is significant as it highlights Hezbollah's continued relevance and capabilities in the region.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "Hezbollah"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-internet-shutdown-now-longest-history-monitor",
+      "sourceUrl": "https://www.middleeasteye.net/news/exclusive-how-hezbollah-rebuilt-while-enemies-declared-dead",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FIRAN_PHONE_MOJTBA_AFP.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fhezbollah%2520fighter%2520nasrallah%2520funeral%2520reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
-      "actorClass": "p-gray",
-      "actor": "Turkey",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "Turkey Unlikely to Face Gas Crisis",
-      "summary": "Turkey is unlikely to face a gas crisis if Iran cuts supplies, according to analysts. The South Pars gas field, which Iran shares with Qatar, is the largest gas field in the world and contains an estimated 1,800 trillion cubic feet of usable gas.",
+      "headline": "US and Japan Discuss Crisis",
+      "summary": "US President Donald Trump met with Japanese Prime Minister Sanae Takaichi to discuss the US-Iran war and the Hormuz Strait crisis. The meeting highlights the growing international concern over the conflict and its potential impact on global energy markets. This development is significant as it shows the US seeking support from its allies in the region.",
       "whyTxt": "",
       "orgs": [
-        "Turkey"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/why-turkey-unlikely-face-gas-crisis-if-iran-cuts-supplies",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FTurkey-Istanbul-floating-gas-vehicle-5-29-2025-Yasin-Akgul-AFP.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/trump-meets-japan-pm-sanae-takaichi-at-white-house-amid-iran-war-hormuz-strait-crisis-whats-on-agenda-11773939395214.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FUS-Trump-Japan-10_1773937866428_1773937877895_1773939525394.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -121,102 +104,101 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Pregnant Woman Among Four Palestinians Killed",
-      "summary": "A pregnant woman is among four Palestinians killed in an Iranian missile attack on the occupied West Bank town of Beit Awa. The attack has resulted in a significant escalation of the conflict, with many Palestinians calling for an end to the violence.",
+      "headline": "Natural Gas Prices Soar",
+      "summary": "Natural gas prices in Europe and Asia have surged in response to the Iranian attack on Ras Laffan. The price increase highlights the significant impact of the conflict on global energy markets. This development is significant as it shows the far-reaching consequences of the conflict on the global economy.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/pregnant-woman-among-four-palestinians-killed-following-iranian-missile-attack",
+      "sourceUrl": "https://www.middleeasteye.net/news/ras-laffan-how-attack-qatar-gas-hub-will-have-huge-global-impact",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fhebron%2520strike%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Israeli Media Reports Damage to Haifa Oil Refinery",
-      "summary": "Israeli media has reported damage to an oil refinery in Haifa following an Iranian missile attack. The attack has resulted in a significant disruption to Israel's energy supplies, with many calling for a response to the attack.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-media-reports-damages-haifa-oil-refinery-iran-attack",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-red",
-      "actor": "Iran",
+      "actor": "Hezbollah",
       "time": "0 min ago",
-      "headline": "Iran's Retaliation Against Israeli Strike",
-      "summary": "Iran has retaliated against an Israeli strike on one of its key gas fields, with many calling for a de-escalation of the conflict. The retaliation has resulted in a significant escalation of the conflict, with many countries calling for a peaceful resolution.",
+      "headline": "Hezbollah's Military Capabilities",
+      "summary": "Hezbollah's ability to strike deep into Israeli territory highlights its continued military capabilities. The group's performance on the battlefield shows that it has rebuilt and is ready for future conflict. This development is significant as it highlights the ongoing threat posed by Hezbollah in the region.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "Hezbollah"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-internet-shutdown-now-longest-history-monitor",
-      "sourceLabel": "The Hindu",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/ras-laffan-how-attack-qatar-gas-hub-will-have-huge-global-impact",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US-Iran War Escalation",
+      "summary": "The US-Iran war has escalated with Iranian attacks on US allies and interests. The conflict has led to a significant increase in tensions in the region and has raised concerns about global energy security. This development is significant as it highlights the expanding scope of the conflict and its potential consequences.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/world/trump-meets-japan-pm-sanae-takaichi-at-white-house-amid-iran-war-hormuz-strait-crisis-whats-on-agenda-11773939395214.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FUS-Trump-Japan-10_1773937866428_1773937877895_1773939525394.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has maintained a strong stance against Iran, with many calling for a de-escalation of the conflict.",
-    "israel_stance": "Israel has called for a strong response to the Iranian attacks, with many calling for a de-escalation of the conflict.",
-    "iran_stance": "Iran has maintained a strong stance against Israel and the US, with many calling for a de-escalation of the conflict."
+    "us_stance": "The US is seeking support from its allies in the region to counter the Iranian threat.",
+    "israel_stance": "Israel is on high alert and is preparing for potential further attacks from Hezbollah.",
+    "iran_stance": "Iran is continuing to attack US allies and interests in the region, escalating the conflict."
   },
   "terms": [
     {
-      "term": "Brent crude",
-      "simple_explanation": "Brent crude is a type of oil that is used as a benchmark for oil prices. It is a type of light crude oil that is extracted from the North Sea and is used to price oil around the world."
+      "term": "LNG",
+      "simple_explanation": "Liquefied Natural Gas, a type of natural gas that is transported in liquid form."
     },
     {
-      "term": "South Pars gas field",
-      "simple_explanation": "The South Pars gas field is the largest gas field in the world, located in the Persian Gulf. It is shared by Iran and Qatar and contains an estimated 1,800 trillion cubic feet of usable gas."
+      "term": "Ras Laffan",
+      "simple_explanation": "A major gas hub in Qatar, responsible for a significant portion of the world's liquefied natural gas production."
     },
     {
-      "term": "Internet shutdown",
-      "simple_explanation": "An internet shutdown is a situation where the internet is intentionally blocked or restricted by a government or other authority. This can be done for a variety of reasons, including to suppress dissent or to prevent the spread of information."
+      "term": "Hezbollah",
+      "simple_explanation": "A Lebanese armed movement that is supported by Iran and has been involved in the conflict with Israel."
     },
     {
-      "term": "VPN",
-      "simple_explanation": "A VPN, or virtual private network, is a technology that allows users to access the internet securely and privately. It works by creating a secure connection between the user's device and a server, allowing the user to access the internet without being tracked or monitored."
+      "term": "Hormuz Strait",
+      "simple_explanation": "A strategic waterway in the Middle East that is a critical route for global oil and gas supplies."
     },
     {
-      "term": "Gas crisis",
-      "simple_explanation": "A gas crisis is a situation where there is a shortage of gas, often resulting in higher prices and reduced availability. This can be caused by a variety of factors, including conflicts, natural disasters, or infrastructure problems."
+      "term": "US-Iran war",
+      "simple_explanation": "A conflict between the US and Iran that has been escalating in recent months, with multiple attacks and counter-attacks."
     },
     {
-      "term": "Escalation",
-      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict or situation. This can involve the use of more aggressive language, the deployment of more troops, or the use of more destructive weapons."
+      "term": "QatarEnergy",
+      "simple_explanation": "A state-owned energy company in Qatar that is responsible for the country's energy production and exports."
     },
     {
-      "term": "De-escalation",
-      "simple_explanation": "De-escalation refers to the process of reducing the intensity or severity of a conflict or situation. This can involve the use of diplomatic language, the withdrawal of troops, or the use of less destructive weapons."
+      "term": "Natural gas prices",
+      "simple_explanation": "The price of natural gas, which has surged in response to the Iranian attack on Ras Laffan."
     },
     {
-      "term": "Retaliation",
-      "simple_explanation": "Retaliation refers to the act of responding to an attack or provocation with a similar or greater level of force. This can involve the use of military force, economic sanctions, or other forms of punishment."
+      "term": "Global energy markets",
+      "simple_explanation": "The international market for energy supplies, which has been impacted by the conflict in the Middle East."
     },
     {
-      "term": "Diplomacy",
-      "simple_explanation": "Diplomacy refers to the practice of conducting negotiations and other interactions between nations or other groups in order to resolve conflicts or achieve common goals. This can involve the use of diplomatic language, the exchange of ambassadors, or the negotiation of treaties and agreements."
+      "term": "Ceasefire",
+      "simple_explanation": "A temporary agreement to stop fighting, which has been broken by the recent attacks in the region."
+    },
+    {
+      "term": "LNG production",
+      "simple_explanation": "The process of producing liquefied natural gas, which is a critical component of global energy supplies."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 01:24 UTC",
-      "l": "MEDIUM",
-      "tone": "The US designation o"
-    },
     {
       "t": "2026-03-17 03:55 UTC",
       "l": "MEDIUM",
@@ -451,39 +433,54 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 16:51 UTC",
       "l": "CRITICAL",
       "tone": "The escalation of th"
+    },
+    {
+      "t": "2026-03-19 17:49 UTC",
+      "l": "CRITICAL",
+      "tone": "The Iranian attack o"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has escalated with Iran attacking several Gulf energy facilities, causing a surge in energy prices and a decline in stocks. The conflict has resulted in the death of four Palestinians, including a pregnant woman, and damage to an oil refinery in Haifa. Qatar has called for an immediate end to the war, while Turkey is unlikely to face a gas crisis if Iran cuts supplies. The internet shutdown in Iran has reached its 20th day, making it the longest in the country's history.",
-  "totalReports": 60,
+  "execSummary": "The US-Israel-Iran war has escalated with Iranian attacks on Qatar's Ras Laffan gas hub, causing significant damage and soaring natural gas prices in Europe and Asia. Hezbollah has rebuilt and is striking deep into Israeli territory, while the US and Japan are discussing the crisis. India's energy security is at risk due to the conflict. The situation is critical, with multiple actors involved and no clear resolution in sight.",
+  "totalReports": 61,
   "indiaImpact": [
     {
       "headline": "India's Energy Security at Risk",
-      "detail": "The conflict between the US, Israel, and Iran has significant implications for India's energy security. As a major importer of oil, India is vulnerable to disruptions in global energy supplies, which could lead to higher prices and reduced availability.",
+      "detail": "The conflict in the Middle East has put India's energy security at risk, as the country relies heavily on imports of oil and gas from the region. The surge in natural gas prices has also increased the cost of energy for Indian consumers.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "India's energy security is at risk due to the conflict between the US, Israel, and Iran. As a major importer of oil, India is vulnerable to disruptions in global energy supplies, which could lead to higher prices and reduced availability. This could have significant implications for India's economy, as higher energy prices could lead to increased costs for businesses and consumers. Additionally, reduced availability of energy could lead to power outages and other disruptions, which could have significant impacts on India's economy and society.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-usa-war-live-updates-march-19-2026/article70760463.ece",
-      "source": "The Hindu"
-    },
-    {
-      "headline": "Indian Nationals in the Region at Risk",
-      "detail": "The conflict between the US, Israel, and Iran has significant implications for Indian nationals living and working in the region. As the conflict escalates, there is a growing risk of violence and instability, which could put Indian nationals at risk.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The conflict between the US, Israel, and Iran has significant implications for Indian nationals living and working in the region. As the conflict escalates, there is a growing risk of violence and instability, which could put Indian nationals at risk. This could lead to a range of challenges, including difficulty accessing basic services, reduced mobility, and increased risk of violence. The Indian government may need to take steps to protect its citizens, including evacuating them from the region or providing additional support and assistance.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fhebron%2520strike%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/qatar-calls-immediate-end-us-israeli-war-after-attack-gas-facility",
+      "full_detail": "India is one of the largest importers of oil and gas in the world, and the conflict in the Middle East has put its energy security at risk. The country is exploring alternative sources of energy, including renewable energy and domestic production, to reduce its dependence on imports. However, the surge in natural gas prices has increased the cost of energy for Indian consumers, which could have a significant impact on the country's economy.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/ras-laffan-how-attack-qatar-gas-hub-will-have-huge-global-impact",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts to De-escalate the Conflict",
-      "detail": "India has been actively engaged in diplomatic efforts to de-escalate the conflict between the US, Israel, and Iran. As a non-permanent member of the UN Security Council, India has a significant role to play in promoting peace and stability in the region.",
+      "headline": "Indian Nationals in the Region",
+      "detail": "There are thousands of Indian nationals living and working in the Middle East, who could be affected by the conflict. The Indian government has issued advisories for its citizens in the region, warning them to be cautious and to follow local instructions.",
+      "category": "Diaspora",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government has issued advisories for its citizens in the region, warning them to be cautious and to follow local instructions. The government has also established a helpline for Indian nationals in the region, to provide assistance and support in case of an emergency. However, the conflict has raised concerns about the safety and security of Indian nationals in the region, and the government is working to evacuate its citizens from the affected areas.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fhezbollah%2520fighter%2520nasrallah%2520funeral%2520reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/exclusive-how-hezbollah-rebuilt-while-enemies-declared-dead",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "India's Diplomatic Efforts",
+      "detail": "India has been engaging in diplomatic efforts to reduce tensions in the region and to promote a peaceful resolution to the conflict. The country has been in touch with its partners in the region, including the US, Iran, and Israel, to encourage dialogue and cooperation.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India has been actively engaged in diplomatic efforts to de-escalate the conflict between the US, Israel, and Iran. As a non-permanent member of the UN Security Council, India has a significant role to play in promoting peace and stability in the region. This could involve a range of activities, including facilitating dialogue between the parties, promoting confidence-building measures, and supporting regional initiatives to reduce tensions. India's diplomatic efforts could have significant implications for the conflict, as they could help to reduce tensions and promote a peaceful resolution.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fpo2utp%2Farticle70762841.ece%2Falternates%2FLANDSCAPE_1200%2FPTI03_17_2026_000456B.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-internet-shutdown-now-longest-history-monitor",
+      "full_detail": "India has been engaging in diplomatic efforts to reduce tensions in the region and to promote a peaceful resolution to the conflict. The country has been in touch with its partners in the region, including the US, Iran, and Israel, to encourage dialogue and cooperation. India has also been working with other countries in the region, including Qatar and the UAE, to promote a peaceful resolution to the conflict and to reduce the risk of further escalation.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F19%2F1600x900%2Flogo%2FUS-Trump-Japan-10_1773937866428_1773937877895_1773939525394.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/trump-meets-japan-pm-sanae-takaichi-at-white-house-amid-iran-war-hormuz-strait-crisis-whats-on-agenda-11773939395214.html",
+      "source": "LiveMint"
+    },
+    {
+      "headline": "Impact on Indian Economy",
+      "detail": "The conflict in the Middle East has had a significant impact on the Indian economy, with the surge in natural gas prices increasing the cost of energy for Indian consumers. The conflict has also disrupted global supply chains, which could have a significant impact on Indian trade and commerce.",
+      "category": "Economy",
+      "significance": "HIGH",
+      "full_detail": "The conflict in the Middle East has had a significant impact on the Indian economy, with the surge in natural gas prices increasing the cost of energy for Indian consumers. The conflict has also disrupted global supply chains, which could have a significant impact on Indian trade and commerce. The Indian government is working to mitigate the impact of the conflict on the economy, by promoting domestic production and reducing dependence on imports. However, the conflict has raised concerns about the stability and security of the Indian economy, and the government is working to address these concerns.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/ras-laffan-how-attack-qatar-gas-hub-will-have-huge-global-impact",
       "source": "Middle East Eye"
     }
   ],
