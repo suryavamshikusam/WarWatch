@@ -288,24 +288,61 @@ Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 termi
 
     report = json.loads(raw)
 
-    # ── Enrich developments: full analysis + image fallback ─────────────────
+    # ── Enrich developments: full analysis + image + unique sourceUrl ────────
     print("      Generating 7-paragraph full analysis for each development...")
+    used_urls = set()  # track used URLs so each card gets a different one
+
     for dev in report.get("key_developments", []):
         dev["fullAnalysis"] = _generate_full_analysis(client, dev, report)
-        # Ensure imageUrl has a fallback
-        if not dev.get("imageUrl"):
-            # Try to find matching article's image
-            headline = dev.get("headline", "").lower()
-            for art in articles:
-                if any(word in art["title"].lower() for word in headline.split()[:4] if len(word) > 3):
-                    if art.get("imageUrl"):
-                        dev["imageUrl"] = art["imageUrl"]
-                        break
-            if not dev.get("imageUrl"):
-                dev["imageUrl"] = _unsplash_fallback(dev.get("headline", ""))
 
-    # ── India impact: image fallback ─────────────────────────────────────────
+        headline = dev.get("headline", "").lower()
+        headline_words = [w for w in headline.split() if len(w) > 3]
+
+        # Score each article by how well it matches this development
+        best_art = None
+        best_score = -1
+        for art in articles:
+            art_title = art["title"].lower()
+            score = sum(1 for w in headline_words if w in art_title)
+            # Prefer unused URLs
+            if art["url"] not in used_urls:
+                score += 0.5
+            if score > best_score:
+                best_score = score
+                best_art = art
+
+        if best_art:
+            dev["sourceUrl"] = best_art["url"]
+            dev["sourceLabel"] = best_art.get("source", dev.get("source", "Source"))
+            used_urls.add(best_art["url"])
+            if not dev.get("imageUrl") and best_art.get("imageUrl"):
+                dev["imageUrl"] = best_art["imageUrl"]
+
+        # Final image fallback
+        if not dev.get("imageUrl"):
+            dev["imageUrl"] = _unsplash_fallback(dev.get("headline", ""))
+
+    # ── India impact: unique sourceUrl + image fallback ─────────────────────
+    india_used_urls = set()
     for item in report.get("india_impact", []):
+        headline = item.get("headline", "").lower()
+        headline_words = [w for w in headline.split() if len(w) > 3]
+        best_art = None
+        best_score = -1
+        for art in articles:
+            art_title = art["title"].lower()
+            score = sum(1 for w in headline_words if w in art_title)
+            if art["url"] not in india_used_urls:
+                score += 0.5
+            if score > best_score:
+                best_score = score
+                best_art = art
+        if best_art:
+            item["sourceUrl"] = best_art["url"]
+            item["source"] = best_art.get("source", item.get("source", "Source"))
+            india_used_urls.add(best_art["url"])
+            if not item.get("imageUrl") and best_art.get("imageUrl"):
+                item["imageUrl"] = best_art["imageUrl"]
         if not item.get("imageUrl"):
             item["imageUrl"] = _unsplash_fallback(item.get("headline", "india"))
 
