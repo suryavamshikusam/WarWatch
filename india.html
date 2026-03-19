@@ -503,6 +503,25 @@ footer { border-top: 2px solid #d8d8d4; padding: 24px 40px; display: flex; justi
 
 <script src="live_data.js" onerror="void 0"></script>
 <script>
+  var TOPIC_IMGS = {
+    'oil': '1474546499760-77a0b18c5e69', 'drone': '1585776245991-cf89dd7fc73a',
+    'missile': '1614728263952-84ea256f9d1d', 'nuclear': '1518709414768-a88981a4515d',
+    'diplomacy': '1529107386315-e1a2ed48a1e3', 'india': '1582510003544-4d00b7f74220',
+    'ceasefire': '1541872703-74c5e44368f9', 'strike': '1540575467063-178a50c2df87',
+    'hormuz': '1505118380757-91f5f5632de0', 'ship': '1566753323558-f4e0952af115',
+    'dubai': '1512453979798-5ea266f8880c', 'iran': '1604072366595-e75dc92d6bdc',
+    'israel': '1579548122080-c35fd6820734', 'gaza': '1579548122080-c35fd6820734',
+    'energy': '1474546499760-77a0b18c5e69', 'gulf': '1505118380757-91f5f5632de0',
+    'war': '1540575467063-178a50c2df87', 'attack': '1614728263952-84ea256f9d1d',
+    'military': '1614728263952-84ea256f9d1d', 'price': '1474546499760-77a0b18c5e69',
+    'diaspora': '1582510003544-4d00b7f74220', 'economy': '1474546499760-77a0b18c5e69'
+  };
+  function getTopicImg(headline, size) {
+    var h = (headline || '').toLowerCase();
+    for (var k in TOPIC_IMGS) { if (h.indexOf(k) !== -1) return 'https://images.unsplash.com/photo-' + TOPIC_IMGS[k] + '?' + (size||'w=600&h=200') + '&q=80&fit=crop'; }
+    return 'https://images.unsplash.com/photo-1579548122080-c35fd6820734?' + (size||'w=600&h=200') + '&q=80&fit=crop';
+  }
+
 // Live date
 var d = new Date();
 var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
@@ -526,12 +545,12 @@ if (D && D.indiaImpact && D.indiaImpact.length) {
   if (grid) {
     var SEV = { HIGH: '<span class="bc">High</span>', MEDIUM: '<span class="bh">Medium</span>', LOW: '<span class="bg">Low</span>' };
     grid.innerHTML = D.indiaImpact.slice(0, 6).map(function(item, idx) {
-      var img = item.imageUrl || ('https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop' + (item.category || 'diplomacy').toLowerCase());
+      var img = item.imageUrl || getTopicImg(item.headline || item.category, 'w=600&h=200');
       var badge = SEV[item.significance] || SEV.MEDIUM;
       var delay = (idx * 0.06).toFixed(2);
       var srcLink = item.sourceUrl ? '<a class="tc-link" href="' + item.sourceUrl + '" target="_blank">Read → ' + (item.source || 'Source') + ' ↗</a>' : '';
       return '<div class="tc" style="animation-delay:' + delay + 's">'
-        + '<div class="tc-strip" style="background:#1a1a1a;"><img src="' + img + '" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1582510003544-4d00b7f74220?w=600&h=200&q=80&fit=crop\'" alt=""/><span class="tc-strip-lbl">' + (item.category || '') + '</span></div>'
+        + '<div class="tc-strip" style="background:#1a1a1a;"><img src="' + img + '" onerror="this.onerror=null;this.src=getTopicImg(this.closest(\'[data-headline]\')||\'\')" alt=""/><span class="tc-strip-lbl">' + (item.category || '') + '</span></div>'
         + '<div class="tc-body"><div class="tc-meta"><span class="tc-date">' + (D.generatedAt ? D.generatedAt.slice(5,10) : 'Today') + '</span>' + badge + '</div>'
         + '<div class="tc-cat">' + (item.category || '') + '</div>'
         + '<div class="tc-hl">' + item.headline + '</div>'

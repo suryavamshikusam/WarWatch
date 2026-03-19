@@ -675,7 +675,26 @@ function openLink(url) {
     cards.forEach(function(c, i) {
       var el = document.createElement('div');
       el.className = 'rot-card ' + (i === 0 ? 'rot-active' : 'rot-next');
-      var imgSrc = c.imageUrl || 'https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=800&h=450&q=80&fit=crop';
+
+      var TOPIC_IMGS = {
+        'oil': '1474546499760-77a0b18c5e69', 'drone': '1585776245991-cf89dd7fc73a',
+        'missile': '1614728263952-84ea256f9d1d', 'nuclear': '1518709414768-a88981a4515d',
+        'diplomacy': '1529107386315-e1a2ed48a1e3', 'india': '1582510003544-4d00b7f74220',
+        'ceasefire': '1541872703-74c5e44368f9', 'strike': '1540575467063-178a50c2df87',
+        'hormuz': '1505118380757-91f5f5632de0', 'ship': '1566753323558-f4e0952af115',
+        'dubai': '1512453979798-5ea266f8880c', 'iran': '1604072366595-e75dc92d6bdc',
+        'israel': '1579548122080-c35fd6820734', 'gaza': '1579548122080-c35fd6820734',
+        'explosion': '1540575467063-178a50c2df87', 'price': '1474546499760-77a0b18c5e69',
+        'military': '1614728263952-84ea256f9d1d', 'alliance': '1529107386315-e1a2ed48a1e3',
+        'war': '1540575467063-178a50c2df87', 'attack': '1614728263952-84ea256f9d1d',
+        'energy': '1474546499760-77a0b18c5e69', 'gulf': '1505118380757-91f5f5632de0'
+      };
+      function getTopicImg(headline, size) {
+        var h = (headline || '').toLowerCase();
+        for (var k in TOPIC_IMGS) { if (h.indexOf(k) !== -1) return 'https://images.unsplash.com/photo-' + TOPIC_IMGS[k] + '?' + (size||'w=800&h=450') + '&q=80&fit=crop'; }
+        return 'https://images.unsplash.com/photo-1579548122080-c35fd6820734?' + (size||'w=800&h=450') + '&q=80&fit=crop';
+      }
+      var imgSrc = c.imageUrl || getTopicImg(c.headline);
       var articleUrl = c.sourceUrl || '#';
       var channelName = c.sourceLabel || 'Source';
       var timeLbl = c.time ? (channelName.toUpperCase() + ' &middot; ' + c.time) : channelName.toUpperCase();
@@ -684,7 +703,7 @@ function openLink(url) {
         '<div class="rot-headline">' + (c.headline || '') + '</div>' +
         '<div class="rot-summary">' + (c.summary || '') + '</div>' +
         '<div class="rot-read-row" style="flex-shrink:0;margin-top:0;border-top:none;padding-top:2px;">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>' +
-        '<img class="rot-image" src="' + imgSrc + '" loading="lazy" onerror="this.onerror=null;this.src=\'https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=800&h=450&q=80&fit=crop\'"/>';
+        '<img class="rot-image" src="' + imgSrc + '" loading="lazy" onerror="this.onerror=null;this.src=getTopicImg(\'' + (c.headline||'') + '\')"/>';
       stage.appendChild(el);
       els.push(el);
 
