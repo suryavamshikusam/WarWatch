@@ -1,29 +1,29 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-19 18:45 UTC",
+  "generatedAt": "2026-03-19 19:41 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "US: US-Israeli Strategy Failing · 1 min ago",
-    "US: Trump Warns Netanyahu · 1 min ago",
-    "Iran: Iranian Missile Attack on Haifa · 1 min ago",
-    "Iran: Ras Laffan Gas Hub Attack · 1 min ago",
-    "US: US-Israeli Tensions Rise · 1 min ago"
+    "Israel: Netanyahu: Iran's Uranium Capacity Destroyed · 0 min ago",
+    "US: US Vows to Finish War with Iran · 0 min ago",
+    "Iran: Iran Warns of Total Destruction of Gulf Facilities · 0 min ago",
+    "Israel: Netanyahu: War with Iran Could End Faster · 0 min ago",
+    "US: US Service Members Killed in Iraq · 0 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 18,
-    "lastUpdated": "2026-03-19 18:45 UTC",
+    "updatesToday": 19,
+    "lastUpdated": "2026-03-19 19:41 UTC",
     "sourcesUsed": 4
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 80,
+      "pct": 72,
       "lvl": "High",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 72,
+      "pct": 64,
       "lvl": "High",
       "color": "var(--red)"
     },
@@ -51,176 +51,171 @@ window.WARWATCH_LIVE = {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "US",
-      "time": "1 min ago",
-      "headline": "US-Israeli Strategy Failing",
-      "summary": "The US-Israeli strategy against Iran is failing due to its reliance on brute technological force, while ignoring historical and sociopolitical realities of the region. Thousands of targets across Iranian territory have been struck, but the strategy has not achieved its desired outcome. The US maintains air dominance, while Israel continues to expand its campaign with unceasing strikes.",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Netanyahu: Iran's Uranium Capacity Destroyed",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu stated that Iran no longer has the capacity to enrich uranium or make ballistic missiles after 20 days of US-Israeli air attacks. This development is significant as it indicates a major setback for Iran's nuclear program. The statement was made during a news conference on Thursday, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation.",
       "whyTxt": "",
       "orgs": [
-        "US"
+        "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/us-israeli-strategy-against-iran-failing-here-why",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2F000_A3U48WN%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-iran-has-no-capacity-enrich-uranium-make-ballistic-missiles",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-3-14.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "US",
-      "time": "1 min ago",
-      "headline": "Trump Warns Netanyahu",
-      "summary": "US President Donald Trump said he spoke with Israeli Prime Minister Benjamin Netanyahu following Israel's strikes on Iran's South Pars natural gas field and told him 'not to do that'. This indicates a possible rift between the US and Israel on their strategy against Iran. The US may be trying to de-escalate the conflict, while Israel is taking a more aggressive stance.",
+      "time": "0 min ago",
+      "headline": "US Vows to Finish War with Iran",
+      "summary": "US Defence Secretary Pete Hegseth has vowed to 'finish' the war with Iran, stating that the conflict is not a 'forever war' or a 'quagmire'. The statement was made during a Pentagon press briefing on March 19, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation. The conflict has resulted in the deaths of six US service members in Iraq.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/trump-repeats-claim-he-told-netanyahu-not-to-strike-irans-south-pars-gas-field/0000019d-0718-da5c-a3bd-0f1a6b5a0000",
-      "sourceLabel": "Haaretz",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-072c-da5c-a7bd-2fbc652b0000%2F66%2Fb7%2F82a0754542d4a467f2e8ab82821a%2F307855-2.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iranian Missile Attack on Haifa",
-      "summary": "Israel says an oil refinery in the northern city of Haifa has been struck in an Iranian missile attack, but no significant damage was reported. The attack is part of Iran's retaliation against Israel for its strikes on Iranian energy infrastructure. The attack has raised concerns about the safety of Israel's energy infrastructure.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/19/israel-says-oil-refinery-hit-in-iranian-missile-attack-no-major-damage?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fafp_69bc32dfb8d8-1773941471.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-war-with-iran-could-end-faster-than-people-think-benjamin-netanyahu-11240489#publisher=newsstand",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F00offhk4_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Ras Laffan Gas Hub Attack",
-      "summary": "Ras Laffan, the Qatari hub responsible for a fifth of the world's liquefied natural gas (LNG), is under Iranian attack. The attack has caused significant damage and soaring natural gas prices in Europe and Asia. The attack has raised concerns about the stability of the global energy market.",
+      "time": "0 min ago",
+      "headline": "Iran Warns of Total Destruction of Gulf Facilities",
+      "summary": "Iran's Revolutionary Guards have warned that any repeat strike on Iranian energy infrastructure will trigger the total destruction of Gulf oil and gas facilities. The warning was made on Thursday, March 19, and it has sparked concerns about the potential consequences of the conflict. The US and Israel have been involved in air attacks on Iranian targets, and the conflict has resulted in the deaths of six US service members in Iraq.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/ras-laffan-how-qatar-gas-hub-attack-hitting-asia-and-beyond",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-3-14.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Netanyahu: War with Iran Could End Faster",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu has stated that the war with Iran could end 'faster than people think'. The statement was made during a news conference on Thursday, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation. The conflict has resulted in the deaths of six US service members in Iraq.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-war-with-iran-could-end-faster-than-people-think-benjamin-netanyahu-11240489#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F00offhk4_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
       "actor": "US",
-      "time": "1 min ago",
-      "headline": "US-Israeli Tensions Rise",
-      "summary": "The US and Israel are experiencing tensions over their strategy against Iran. The US is trying to de-escalate the conflict, while Israel is taking a more aggressive stance. This rift could lead to a change in the dynamics of the conflict.",
+      "time": "0 min ago",
+      "headline": "US Service Members Killed in Iraq",
+      "summary": "Six US service members have been killed in Iraq, according to US Defence Secretary Pete Hegseth. The deaths were a result of the conflict with Iran, and they have sparked concerns about the potential consequences of the war. The US has vowed to 'finish' the war with Iran, while Iran has warned of retaliation.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/us-israeli-strategy-against-iran-failing-here-why",
-      "sourceLabel": "Haaretz",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2F000_A3U48WN%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iranian Retaliation Continues",
-      "summary": "Iran continues to retaliate against Israel and the US for their strikes on Iranian energy infrastructure. The retaliation has raised concerns about the safety of the region's energy infrastructure.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/19/israel-says-oil-refinery-hit-in-iranian-missile-attack-no-major-damage?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fafp_69bc32dfb8d8-1773941471.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-iran-no-longer-has-uranium-enrichment-capacity-11240511#publisher=newsstand",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F5iu8bhhc_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Global Energy Market Impact",
-      "summary": "The attack on Ras Laffan gas hub has caused significant damage and soaring natural gas prices in Europe and Asia. The attack has raised concerns about the stability of the global energy market.",
+      "actorClass": "p-blue",
+      "actor": "US and Israel",
+      "time": "0 min ago",
+      "headline": "Iran's Energy Infrastructure Under Attack",
+      "summary": "Iran's energy infrastructure has been under attack by the US and Israel, with multiple strikes reported in recent days. The attacks have resulted in significant damage to Iran's energy sector, and they have sparked concerns about the potential consequences of the conflict. Iran has warned of retaliation, and the conflict has resulted in the deaths of six US service members in Iraq.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "US and Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/us-israeli-strategy-against-iran-failing-here-why",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2F000_A3U48WN%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel's Netanyahu Claims Iran's Nuclear Program Destroyed",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu has claimed that Iran's nuclear program has been destroyed, with the country no longer having the capacity to enrich uranium or make ballistic missiles. The statement was made during a news conference on Thursday, and it has sparked concerns about the potential consequences of the conflict. The US has supported Israel's actions, while Iran has warned of retaliation.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F5iu8bhhc_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is trying to de-escalate the conflict, but its strategy is being challenged by Israel's aggressive stance.",
-    "israel_stance": "Israel is taking a more aggressive stance against Iran, which is causing tensions with the US.",
-    "iran_stance": "Iran is continuing to retaliate against Israel and the US for their strikes on Iranian energy infrastructure."
+    "us_stance": "The US has vowed to 'finish' the war with Iran, indicating a strong commitment to the conflict.",
+    "israel_stance": "Israel has claimed that Iran's nuclear program has been destroyed, and the country is committed to continuing its actions against Iran.",
+    "iran_stance": "Iran has warned of retaliation against the US and Israel, and the country has threatened to destroy Gulf oil and gas facilities in the event of another strike."
   },
   "terms": [
     {
-      "term": "LNG",
-      "simple_explanation": "Liquefied Natural Gas, a type of natural gas that is liquefied for transportation and storage."
+      "term": "Ballistic missiles",
+      "simple_explanation": "Ballistic missiles are projectiles that are propelled by a rocket engine and guided by a system of fins or wings. They are capable of carrying nuclear warheads and are considered a significant threat to national security."
     },
     {
-      "term": "South Pars gas field",
-      "simple_explanation": "A large natural gas field located in the Persian Gulf, shared by Iran and Qatar."
+      "term": "Uranium enrichment",
+      "simple_explanation": "Uranium enrichment is the process of increasing the concentration of the isotope uranium-235 in a sample of uranium. This process is necessary for the production of nuclear fuel and can also be used to create nuclear weapons."
     },
     {
-      "term": "Ras Laffan",
-      "simple_explanation": "A Qatari hub responsible for a significant portion of the world's liquefied natural gas production."
+      "term": "Revolutionary Guards",
+      "simple_explanation": "The Revolutionary Guards are a branch of the Iranian military that is responsible for defending the country's Islamic system and protecting its national interests. They are considered a powerful and influential force in Iranian politics."
     },
     {
-      "term": "Haifa oil refinery",
-      "simple_explanation": "An oil refinery located in the northern city of Haifa, Israel, which was hit by an Iranian missile attack."
+      "term": "Gulf oil and gas facilities",
+      "simple_explanation": "The Gulf oil and gas facilities refer to the network of pipelines, refineries, and other infrastructure that are used to extract, process, and transport oil and natural gas in the Persian Gulf region. These facilities are critical to the global energy supply and are considered a strategic target in the conflict."
     },
     {
-      "term": "US-Israeli axis",
-      "simple_explanation": "A term used to describe the close relationship and cooperation between the US and Israel, particularly in regards to their strategy against Iran."
+      "term": "US-Israeli air attacks",
+      "simple_explanation": "The US-Israeli air attacks refer to the joint military operations that have been conducted by the US and Israel against Iranian targets. These attacks have included airstrikes and missile strikes, and have resulted in significant damage to Iran's military and energy infrastructure."
     },
     {
-      "term": "American-Zionist axis",
-      "simple_explanation": "A term used to describe the close relationship and cooperation between the US and Israel, particularly in regards to their strategy against Iran."
+      "term": "Pentagon press briefing",
+      "simple_explanation": "A Pentagon press briefing is a public statement made by a representative of the US Department of Defense, typically to provide information about military operations or to address questions from the media."
     },
     {
-      "term": "Iranian energy infrastructure",
-      "simple_explanation": "Iran's energy production and transportation systems, including oil and gas fields, refineries, and pipelines."
+      "term": "News conference",
+      "simple_explanation": "A news conference is a public meeting where a person or organization provides information to the media and answers questions. In the context of the conflict, news conferences have been used by leaders such as Benjamin Netanyahu to provide updates and make statements about the situation."
     },
     {
-      "term": "QatarEnergy",
-      "simple_explanation": "A state-owned Qatari company responsible for the development and production of Qatar's energy resources."
+      "term": "Nuclear program",
+      "simple_explanation": "A nuclear program refers to a country's efforts to develop and maintain nuclear capabilities, including the production of nuclear fuel, the development of nuclear reactors, and the creation of nuclear weapons."
     },
     {
-      "term": "LNG prices",
-      "simple_explanation": "The prices at which liquefied natural gas is sold, which can be affected by global demand and supply, as well as geopolitical events."
+      "term": "Energy infrastructure",
+      "simple_explanation": "Energy infrastructure refers to the network of facilities and systems that are used to extract, process, and transport energy resources such as oil, natural gas, and electricity. In the context of the conflict, energy infrastructure has been a key target for military attacks."
     },
     {
-      "term": "Global energy market",
-      "simple_explanation": "The global system of energy production, transportation, and trade, which is affected by various factors including geopolitics, demand, and supply."
+      "term": "Diaspora",
+      "simple_explanation": "The diaspora refers to a group of people who have been dispersed from their original homeland and are now living in other countries. In the context of the conflict, the diaspora may refer to Indian nationals living abroad who may be affected by the conflict."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 05:19 UTC",
-      "l": "MEDIUM",
-      "tone": "The close call of Ir"
-    },
     {
       "t": "2026-03-17 06:37 UTC",
       "l": "MEDIUM",
@@ -455,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-19 18:45 UTC",
       "l": "HIGH",
       "tone": "The continuous excha"
+    },
+    {
+      "t": "2026-03-19 19:41 UTC",
+      "l": "HIGH",
+      "tone": "The conflict has esc"
     }
   ],
-  "execSummary": "The US-Israeli strategy against Iran is failing due to its reliance on brute technological force, while Iran continues to retaliate across the region. Israel's oil refinery in Haifa was hit in an Iranian missile attack, but no significant damage was reported. The attack on Qatar's Ras Laffan gas hub has caused significant damage and soaring natural gas prices in Europe and Asia. The conflict is escalating, with the US, Israel, and Iran taking aggressive stances.",
-  "totalReports": 62,
+  "execSummary": "The US-Israel-Iran war has seen significant developments, with Israel's Prime Minister Benjamin Netanyahu stating that Iran no longer has the capacity to enrich uranium or make ballistic missiles. The US has vowed to 'finish' the war, while Iran has warned of total destruction of Gulf oil and gas facilities in the event of another strike. The conflict has resulted in the deaths of six US service members in Iraq. The situation remains volatile, with multiple actors involved and various interests at stake.",
+  "totalReports": 63,
   "indiaImpact": [
     {
-      "headline": "India's Energy Imports at Risk",
-      "detail": "India's energy imports, particularly liquefied natural gas, may be affected by the attack on Ras Laffan gas hub and the escalating conflict in the Middle East. India is a significant importer of LNG, and any disruption to the global energy market could have a significant impact on its energy security.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India's energy imports are heavily reliant on the Middle East, and any disruption to the global energy market could have a significant impact on its energy security. The attack on Ras Laffan gas hub has raised concerns about the stability of the global energy market, and India may need to diversify its energy imports to mitigate the risks. The Indian government has been working to reduce its dependence on imported energy, but the country still relies heavily on foreign energy sources.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2F000_A3U48WN%25281%2529.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/us-israeli-strategy-against-iran-failing-here-why",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Nationals in the Region",
-      "detail": "Indian nationals living and working in the Middle East, particularly in Qatar and the UAE, may be affected by the escalating conflict. The Indian government has issued travel advisories for the region, and Indian nationals are advised to exercise caution and follow local instructions.",
+      "headline": "Indian Nationals in Iran Face Uncertainty",
+      "detail": "Indian nationals living in Iran are facing uncertainty and concern due to the ongoing conflict. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas that are considered high-risk. The situation is being closely monitored by the Indian government, and efforts are being made to ensure the safety and well-being of Indian nationals in the region.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has a significant number of citizens living and working in the Middle East, and the escalating conflict has raised concerns about their safety. The Indian government has issued travel advisories for the region, and Indian nationals are advised to exercise caution and follow local instructions. The Indian embassy in Qatar has also issued a statement advising Indian nationals to stay indoors and avoid traveling to areas affected by the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-072c-da5c-a7bd-2fbc652b0000%2F66%2Fb7%2F82a0754542d4a467f2e8ab82821a%2F307855-2.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.haaretz.com/us-news/2026-03-19/ty-article/.premium/trump-repeats-claim-he-told-netanyahu-not-to-strike-irans-south-pars-gas-field/0000019d-0718-da5c-a3bd-0f1a6b5a0000",
-      "source": "Haaretz"
+      "full_detail": "The Indian government has established a helpline for Indian nationals in Iran and has advised its citizens to register with the Indian embassy in Tehran. The government is also working to evacuate Indian nationals who wish to leave the country. The situation is being closely monitored, and the Indian government is in touch with the US, Israel, and Iran to ensure the safety and well-being of Indian nationals in the region.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-3-14.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-missiles-drones-attack-larijani-killing-10587785/",
+      "source": "Indian Express"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India has been engaging in diplomatic efforts to reduce tensions in the Middle East, particularly between the US, Israel, and Iran. The Indian government has been in touch with all parties involved, and has urged them to exercise restraint and find a peaceful resolution to the conflict.",
+      "headline": "India's Energy Security at Risk",
+      "detail": "The conflict in the Middle East has raised concerns about India's energy security. India is heavily dependent on imports of oil and natural gas, and any disruption to the global energy supply could have significant consequences for the Indian economy. The Indian government is closely monitoring the situation and is working to diversify its energy sources and reduce its dependence on imports.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "full_detail": "The Indian government has been working to increase its use of renewable energy sources and to reduce its dependence on fossil fuels. The government has also been exploring new sources of energy, including nuclear power and shale gas. However, the conflict in the Middle East has highlighted the need for India to diversify its energy sources and to reduce its dependence on imports.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-iran-has-no-capacity-enrich-uranium-make-ballistic-missiles",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "India's Diplomatic Efforts to Ease Tensions",
+      "detail": "The Indian government has been making diplomatic efforts to ease tensions in the Middle East and to promote a peaceful resolution to the conflict. The government has been in touch with the US, Israel, and Iran, and has urged all parties to exercise restraint and to avoid any actions that could escalate the situation.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been engaging in diplomatic efforts to reduce tensions in the Middle East, particularly between the US, Israel, and Iran. The Indian government has been in touch with all parties involved, and has urged them to exercise restraint and find a peaceful resolution to the conflict. India has also been working with other countries in the region to find a peaceful solution to the conflict, and has offered to mediate talks between the parties involved.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2Fafp_69bc32dfb8d8-1773941471.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/19/israel-says-oil-refinery-hit-in-iranian-missile-attack-no-major-damage?traffic_source=rss",
-      "source": "Al Jazeera"
+      "full_detail": "The Indian government has a long history of diplomatic engagement in the Middle East and has played a key role in promoting peace and stability in the region. The government is committed to continuing its diplomatic efforts and to working with all parties to find a peaceful resolution to the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F5iu8bhhc_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-iran-no-longer-has-uranium-enrichment-capacity-11240511#publisher=newsstand",
+      "source": "NDTV"
     },
     {
-      "headline": "India's Economic Interests",
-      "detail": "India's economic interests, particularly its trade relationships with the Middle East, may be affected by the escalating conflict. The conflict has raised concerns about the stability of the global energy market, and India may need to diversify its energy imports to mitigate the risks.",
+      "headline": "India's Economy at Risk Due to Conflict",
+      "detail": "The conflict in the Middle East has raised concerns about the impact on the Indian economy. The Indian economy is heavily dependent on exports, and any disruption to global trade could have significant consequences. The Indian government is closely monitoring the situation and is working to mitigate any potential risks.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "India's economic interests, particularly its trade relationships with the Middle East, may be affected by the escalating conflict. The conflict has raised concerns about the stability of the global energy market, and India may need to diversify its energy imports to mitigate the risks. The Indian government has been working to reduce its dependence on imported energy, but the country still relies heavily on foreign energy sources. The conflict has also raised concerns about the impact on India's trade relationships with the Middle East, and the Indian government may need to take steps to mitigate the risks.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fras-laffan-qatar-reuters.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/ras-laffan-how-qatar-gas-hub-attack-hitting-asia-and-beyond",
-      "source": "Middle East Eye"
+      "full_detail": "The Indian government has been working to diversify its exports and to reduce its dependence on any one market. The government has also been exploring new opportunities for trade and investment, including with countries in the Middle East. However, the conflict has highlighted the need for India to be prepared for any potential risks and to have contingency plans in place.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F00offhk4_benjamin-netanyahu_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-war-with-iran-could-end-faster-than-people-think-benjamin-netanyahu-11240489#publisher=newsstand",
+      "source": "NDTV"
     }
   ],
   "indiaSummary": ""
