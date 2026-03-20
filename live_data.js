@@ -1,18 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 17:52 UTC",
+  "generatedAt": "2026-03-20 18:37 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Iran Supreme Leader Defiant · 0 min ago",
-    "Israel: Esmail Ahmadi Killed · 0 min ago",
+    "US: US Deploys USS Tripoli · 0 min ago",
+    "Other: Strait of Hormuz Closure · 0 min ago",
     "US: US-Israel Alliance · 0 min ago",
-    "Iran: Iran Retaliation · 0 min ago",
-    "Other: Global Energy Markets · 0 min ago"
+    "Iran: Iranian Aggression · 0 min ago",
+    "Other: Global Oil Prices · 0 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-20 17:52 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-20 18:37 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,104 +50,53 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Supreme Leader Defiant",
-      "summary": "Ayatollah Mojtaba Khamenei has delivered a defiant message on Persian New Year, despite the killing of several top Iranian officials. This message is seen as a sign of Iran's resolve to continue fighting. The message has been met with skepticism by the international community. The situation remains volatile.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "0 min ago",
-      "headline": "Esmail Ahmadi Killed",
-      "summary": "Esmail Ahmadi, head of the intelligence division of the Basij Force, was killed in an air strike by Israel. Ahmadi was a key figure in planning and executing attacks carried out by the Basij Forces. The killing is seen as a significant blow to Iran's military capabilities. The strike has been condemned by Iran.",
-      "whyTxt": "",
-      "orgs": [
-        "Israel"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/who-was-esmail-ahmadi-head-of-intelligence-division-of-basij-force-killed-in-tehran-strike-by-israel-amid-conflict-11774020155631.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FScreenshot_2026-03-20_211457_1774023777361_1774023782364.png&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US-Israel Alliance",
-      "summary": "The US and Israel have reaffirmed their alliance in the face of the escalating conflict with Iran. The US has pledged to support Israel's right to self-defense. The alliance has been met with criticism from Iran and its allies. The situation remains tense.",
+      "headline": "US Deploys USS Tripoli",
+      "summary": "The USS Tripoli, an amphibious assault ship carrying more than 2,000 Marines, is set to enter the war zone in the northern Arabian Sea. The ship is expected to help reopen the Strait of Hormuz for international oil shipping. This development has significant implications for global oil prices and shipping. The USS Tripoli is scheduled to arrive in the region around March 22-23.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "sourceLabel": "Other",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Retaliation",
-      "summary": "Iran has vowed to retaliate against Israel for the killing of its top officials. The retaliation is expected to be significant and could involve attacks on Israeli targets. The situation remains volatile. The international community is calling for restraint.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "sourceLabel": "Other",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
-      "headline": "Global Energy Markets",
-      "summary": "The conflict has significant implications for global energy markets. The killing of top Iranian officials has led to a surge in oil prices. The situation remains uncertain. The international community is calling for calm.",
+      "headline": "Strait of Hormuz Closure",
+      "summary": "The Strait of Hormuz is a critical waterway for international oil shipping, with approximately 20% of the world's oil passing through it. The closure of the strait has significant implications for global oil prices and shipping. The US and its allies are working to reopen the strait and maintain freedom of navigation.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "sourceLabel": "Other",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-green",
-      "actor": "India",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "Indian Diaspora",
-      "summary": "The conflict has put Indian nationals living in the region at risk. The Indian government has issued travel advisories for its citizens. The situation remains tense. The Indian government is working to evacuate its citizens.",
+      "headline": "US-Israel Alliance",
+      "summary": "The US and Israel have a long-standing alliance, with the US providing significant military and economic support to Israel. The current conflict has strengthened this alliance, with the US and Israel working together to counter Iranian aggression.",
       "whyTxt": "",
       "orgs": [
-        "India"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "sourceLabel": "Other",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -155,72 +104,118 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran's Military Capabilities",
-      "summary": "The killing of top Iranian officials has significantly weakened Iran's military capabilities. The country's ability to retaliate has been reduced. The situation remains uncertain. The international community is calling for calm.",
+      "headline": "Iranian Aggression",
+      "summary": "Iran has been accused of aggression in the region, including attacks on oil tankers and pipelines. The US and its allies have responded with military force, including airstrikes against Iranian targets.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/who-was-esmail-ahmadi-head-of-intelligence-division-of-basij-force-killed-in-tehran-strike-by-israel-amid-conflict-11774020155631.html",
-      "sourceLabel": "Other",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FScreenshot_2026-03-20_211457_1774023777361_1774023782364.png&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Global Oil Prices",
+      "summary": "The conflict in the Middle East has significant implications for global oil prices. The closure of the Strait of Hormuz has led to increased prices, with the potential for further increases if the situation escalates.",
+      "whyTxt": "",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "Marine Expeditionary Unit",
+      "summary": "The 31st Marine Expeditionary Unit is a highly trained and equipped unit, capable of conducting a range of military operations. The unit is set to deploy to the Middle East aboard the USS Tripoli.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "Amphibious Assault Ship",
+      "summary": "The USS Tripoli is an amphibious assault ship, capable of carrying helicopters, tanks, and troops. The ship is highly versatile and can conduct a range of military operations.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has reaffirmed its alliance with Israel and has pledged to support Israel's right to self-defense.",
-    "israel_stance": "Israel has vowed to continue its strikes against Iranian targets, citing self-defense.",
-    "iran_stance": "Iran has vowed to retaliate against Israel for the killing of its top officials."
+    "us_stance": "The US is committed to maintaining freedom of navigation in the Strait of Hormuz and countering Iranian aggression.",
+    "israel_stance": "Israel is working closely with the US to counter Iranian aggression and maintain regional security.",
+    "iran_stance": "Iran is accused of aggression in the region, including attacks on oil tankers and pipelines, and has responded to US and Israeli military actions with further aggression."
   },
   "terms": [
     {
-      "term": "Basij Force",
-      "simple_explanation": "The Basij Force is a paramilitary organization in Iran that is responsible for internal security and law enforcement. It is also involved in external military operations."
+      "term": "Amphibious Assault Ship",
+      "simple_explanation": "A type of warship that can carry helicopters, tanks, and troops, and is capable of conducting a range of military operations."
     },
     {
-      "term": "Ayatollah",
-      "simple_explanation": "An Ayatollah is a high-ranking cleric in Shia Islam. In Iran, the Ayatollah is the supreme leader of the country."
+      "term": "Marine Expeditionary Unit",
+      "simple_explanation": "A highly trained and equipped unit, capable of conducting a range of military operations, including amphibious assaults and ground combat."
     },
     {
-      "term": "Persian New Year",
-      "simple_explanation": "The Persian New Year, also known as Nowruz, is a significant holiday in Iran and other countries in the region. It marks the beginning of spring and is celebrated on March 20-21."
+      "term": "Strait of Hormuz",
+      "simple_explanation": "A critical waterway for international oil shipping, located between Iran and Oman, and connecting the Persian Gulf to the Gulf of Oman."
     },
     {
-      "term": "IDF",
-      "simple_explanation": "The IDF, or Israel Defense Forces, is the military of Israel. It is responsible for defending the country against external threats."
+      "term": "Freedom of Navigation",
+      "simple_explanation": "The right of ships to pass through international waters, including the Strait of Hormuz, without interference or obstruction."
     },
     {
-      "term": "US-Israel alliance",
-      "simple_explanation": "The US-Israel alliance refers to the close military and strategic relationship between the United States and Israel. The two countries have a long history of cooperation on defense and security issues."
+      "term": "US-Israel Alliance",
+      "simple_explanation": "A long-standing alliance between the US and Israel, with the US providing significant military and economic support to Israel."
     },
     {
-      "term": "Self-defense",
-      "simple_explanation": "Self-defense refers to the right of a country to defend itself against external threats. In the context of the US-Israel-Iran conflict, self-defense is a key concept that is often cited by Israel to justify its military actions."
+      "term": "Iranian Aggression",
+      "simple_explanation": "Iran's actions in the region, including attacks on oil tankers and pipelines, and support for militant groups, which are seen as aggressive and destabilizing."
     },
     {
-      "term": "Retaliation",
-      "simple_explanation": "Retaliation refers to the act of responding to an attack or provocation with force or aggression. In the context of the US-Israel-Iran conflict, retaliation is a key concept that is often cited by Iran to justify its military actions."
+      "term": "Global Oil Prices",
+      "simple_explanation": "The prices of oil on the global market, which can be affected by a range of factors, including supply and demand, geopolitical events, and natural disasters."
     },
     {
-      "term": "Global energy markets",
-      "simple_explanation": "Global energy markets refer to the international trade in energy resources such as oil and natural gas. The US-Israel-Iran conflict has significant implications for global energy markets, as it affects the supply and demand of energy resources."
+      "term": "31st Marine Expeditionary Unit",
+      "simple_explanation": "A specific unit of the US Marine Corps, which is highly trained and equipped, and is capable of conducting a range of military operations."
     },
     {
-      "term": "Diaspora",
-      "simple_explanation": "Diaspora refers to a community of people who live outside of their country of origin. In the context of the US-Israel-Iran conflict, the Indian diaspora is a significant community that is affected by the conflict."
+      "term": "USS Tripoli",
+      "simple_explanation": "A US Navy amphibious assault ship, which is capable of carrying helicopters, tanks, and troops, and is highly versatile and can conduct a range of military operations."
     },
     {
-      "term": "Travel advisory",
-      "simple_explanation": "A travel advisory is a warning issued by a government to its citizens about the risks of traveling to a particular country or region. In the context of the US-Israel-Iran conflict, travel advisories are often issued by governments to warn their citizens about the risks of traveling to the region."
+      "term": "Northern Arabian Sea",
+      "simple_explanation": "A region of the Arabian Sea, located north of the Gulf of Oman, and is an important location for international shipping and naval operations."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 10:10 UTC",
-      "l": "MEDIUM",
-      "tone": "The ongoing conflict"
-    },
     {
       "t": "2026-03-18 11:08 UTC",
       "l": "HIGH",
@@ -455,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 17:52 UTC",
       "l": "HIGH",
       "tone": "The killing of top I"
-    }
-  ],
-  "execSummary": "The US-Israel-Iran conflict has escalated with Israel's strike on Tehran, killing several top Iranian officials. Iran's Supreme Leader Ayatollah Mojtaba Khamenei has delivered a defiant message on Persian New Year. The conflict has significant implications for global security and energy markets. India's diaspora and energy interests are also at risk.",
-  "totalReports": 82,
-  "indiaImpact": [
-    {
-      "headline": "Indian Diaspora at Risk",
-      "detail": "The conflict has put Indian nationals living in the region at risk. The Indian government has issued travel advisories for its citizens. The situation remains tense. The Indian government is working to evacuate its citizens.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The Indian diaspora is a significant community in the region, with many Indians living and working in countries such as Iran, Israel, and the United Arab Emirates. The conflict has put these individuals at risk, and the Indian government has issued travel advisories to warn them about the dangers of traveling to the region. The Indian government is working to evacuate its citizens from the region, but the situation remains tense.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "source": "NDTV"
     },
     {
-      "headline": "Indian Energy Interests",
-      "detail": "The conflict has significant implications for Indian energy interests. India is a major importer of oil from the region, and the conflict has led to a surge in oil prices. The situation remains uncertain. The Indian government is working to diversify its energy sources.",
+      "t": "2026-03-20 18:37 UTC",
+      "l": "HIGH",
+      "tone": "The deployment of th"
+    }
+  ],
+  "execSummary": "The US-Israel-Iran conflict is escalating with the deployment of the USS Tripoli to the Middle East. The ship is expected to help reopen the Strait of Hormuz for international oil shipping. This development has significant implications for global oil prices and shipping. The situation remains volatile, with multiple actors involved and various interests at stake.",
+  "totalReports": 83,
+  "indiaImpact": [
+    {
+      "headline": "Indian Oil Imports",
+      "detail": "India is a significant importer of oil, and the conflict in the Middle East has the potential to disrupt oil supplies and increase prices. The Indian government is closely monitoring the situation and is working to diversify its oil imports.",
       "category": "Energy",
-      "significance": "MEDIUM",
-      "full_detail": "India is a major importer of oil from the region, and the conflict has led to a surge in oil prices. This has significant implications for the Indian economy, as higher oil prices can lead to inflation and reduce economic growth. The Indian government is working to diversify its energy sources, including investing in renewable energy and increasing domestic oil production.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FScreenshot_2026-03-20_211457_1774023777361_1774023782364.png&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/who-was-esmail-ahmadi-head-of-intelligence-division-of-basij-force-killed-in-tehran-strike-by-israel-amid-conflict-11774020155631.html",
+      "significance": "HIGH",
+      "full_detail": "India is the third-largest consumer of oil in the world, and the conflict in the Middle East has the potential to disrupt oil supplies and increase prices. The Indian government is closely monitoring the situation and is working to diversify its oil imports. The government has also taken steps to increase domestic oil production and reduce dependence on imports.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
       "source": "LiveMint"
     },
     {
-      "headline": "Indian Diplomatic Efforts",
-      "detail": "The Indian government has issued a statement calling for calm and restraint in the region. The statement has been met with skepticism by the international community. The situation remains tense. The Indian government is working to play a mediating role in the conflict.",
-      "category": "Diplomacy",
-      "significance": "LOW",
-      "full_detail": "The Indian government has issued a statement calling for calm and restraint in the region. The statement has been met with skepticism by the international community, as India is seen as having limited influence in the region. However, the Indian government is working to play a mediating role in the conflict, and has offered to host talks between the parties involved.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "source": "NDTV"
+      "headline": "Indian Diaspora",
+      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, and the conflict has the potential to affect their safety and well-being. The Indian government is working to evacuate Indian nationals from the region and provide support to those affected.",
+      "category": "Diaspora",
+      "significance": "MEDIUM",
+      "full_detail": "There are significant numbers of Indian nationals living and working in the Middle East, and the conflict has the potential to affect their safety and well-being. The Indian government is working to evacuate Indian nationals from the region and provide support to those affected. The government has also established a hotline for Indian nationals in the region to seek assistance and advice.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "source": "LiveMint"
     },
     {
-      "headline": "Indian Economy at Risk",
-      "detail": "The conflict has significant implications for the Indian economy. The surge in oil prices has led to inflation and reduced economic growth. The situation remains uncertain. The Indian government is working to mitigate the impact of the conflict on the economy.",
+      "headline": "Indian Economy",
+      "detail": "The conflict in the Middle East has the potential to affect the Indian economy, particularly in terms of oil prices and trade. The Indian government is closely monitoring the situation and is working to mitigate the impact of the conflict on the economy.",
       "category": "Economy",
+      "significance": "HIGH",
+      "full_detail": "The conflict in the Middle East has the potential to affect the Indian economy, particularly in terms of oil prices and trade. The Indian government is closely monitoring the situation and is working to mitigate the impact of the conflict on the economy. The government has also taken steps to increase domestic oil production and reduce dependence on imports, and is working to diversify its trade relationships to reduce dependence on the Middle East.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "source": "LiveMint"
+    },
+    {
+      "headline": "Indian Diplomacy",
+      "detail": "The Indian government is working to play a diplomatic role in the conflict, and has called for a peaceful resolution to the situation. The government has also offered to provide humanitarian assistance to those affected by the conflict.",
+      "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The conflict has significant implications for the Indian economy, as higher oil prices can lead to inflation and reduce economic growth. The Indian government is working to mitigate the impact of the conflict on the economy, including by increasing domestic oil production and investing in renewable energy. However, the situation remains uncertain, and the Indian economy is likely to be affected by the conflict in the short term.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The Indian government is working to play a diplomatic role in the conflict, and has called for a peaceful resolution to the situation. The government has also offered to provide humanitarian assistance to those affected by the conflict. The Indian government has a long history of diplomatic engagement in the region, and is well-placed to play a constructive role in resolving the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
+      "source": "LiveMint"
     }
   ],
   "indiaSummary": ""
