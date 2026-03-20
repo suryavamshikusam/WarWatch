@@ -1,17 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 11:54 UTC",
+  "generatedAt": "2026-03-20 12:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Iran Launches Missile Strikes · 0 min ago",
-    "Other: Gulf Nations Intercept Missiles · 0 min ago",
-    "Israel: Israel Defends Against Missile Strikes · 0 min ago",
-    "US: US Involvement Uncertain · 0 min ago",
-    "Other: Regional Tensions Escalate · 0 min ago"
+    "Iran: Iran War Dampens Eid Celebrations · 1 min ago",
+    "US: US-Israel Alliance On Full Display · 1 min ago",
+    "Other: Global Oil Prices Soar · 1 min ago",
+    "India: India Watches Closely · 1 min ago",
+    "Iran: Iranian Retaliation Feared · 1 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-20 11:54 UTC",
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-20 12:40 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -52,175 +52,166 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Launches Missile Strikes",
-      "summary": "Iran has launched a new barrage of missiles targeting southern Israel, with defense systems intercepting the missiles. The attack is a significant escalation of the conflict. The Israeli army has reported that its defense systems are working to intercept the missiles.",
+      "time": "1 min ago",
+      "headline": "Iran War Dampens Eid Celebrations",
+      "summary": "The ongoing US-Israel-Iran war has led to a somber mood during Eid ul Fitr celebrations in Saudi Arabia, UAE, and other Middle Eastern countries. The conflict has resulted in increased tensions and a heightened sense of insecurity. This has affected not only the local population but also expatriates and tourists visiting these countries. The situation remains volatile, with the potential for further escalation.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Gulf Nations Intercept Missiles",
-      "summary": "The UAE, Saudi Arabia, Kuwait, and Bahrain have reported interceptions of Iranian missiles and drones. The interceptions indicate a coordinated effort to defend against Iranian aggression. The defense ministries of the respective countries have confirmed the interceptions.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "0 min ago",
-      "headline": "Israel Defends Against Missile Strikes",
-      "summary": "The Israeli army has reported that its defense systems are working to intercept the Iranian missiles. The defense systems have been successful in intercepting the missiles, preventing damage and casualties. The Israeli army is on high alert, prepared to respond to further attacks.",
-      "whyTxt": "",
-      "orgs": [
-        "Israel"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
       "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Involvement Uncertain",
-      "summary": "The US has not yet commented on the recent developments in the conflict. The US has been a key player in the region, providing military support to Israel and other allies. The US position on the conflict is crucial, as it can significantly impact the outcome.",
+      "time": "1 min ago",
+      "headline": "US-Israel Alliance On Full Display",
+      "summary": "The US and Israel have reaffirmed their alliance in the face of the ongoing conflict with Iran. The two countries have been cooperating closely on military and diplomatic fronts, with the US providing significant support to Israel. This alliance has been a key factor in the escalation of the conflict, with Iran viewing it as a threat to its national security. The situation remains tense, with the potential for further violence.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Regional Tensions Escalate",
-      "summary": "The conflict has significant implications for regional and global stability. The multiple missile launches and interceptions have increased tensions, making the situation volatile. The international community is watching the developments closely, concerned about the potential consequences.",
+      "time": "1 min ago",
+      "headline": "Global Oil Prices Soar",
+      "summary": "The ongoing conflict in the Middle East has led to a significant increase in global oil prices. The prices have soared due to concerns over the disruption of oil supplies from the region. This has affected not only the oil-importing countries but also the global economy, with the potential for inflation and economic instability. India, being a major oil importer, is closely watching the developments.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-green",
+      "actor": "India",
+      "time": "1 min ago",
+      "headline": "India Watches Closely",
+      "summary": "India is closely watching the developments in the Middle East, given its significant stakes in the region. The country is a major oil importer and has significant trade and diplomatic relations with the countries involved in the conflict. The Indian government has been in touch with the governments of the countries involved, urging restraint and a peaceful resolution to the conflict.",
+      "whyTxt": "",
+      "orgs": [
+        "India"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iranian Aggression Continues",
-      "summary": "Iran has continued to launch missile strikes against Israel and other countries in the region. The attacks are a significant escalation of the conflict, with Iran demonstrating its military capabilities. The international community is concerned about Iran's aggressive behavior.",
+      "time": "1 min ago",
+      "headline": "Iranian Retaliation Feared",
+      "summary": "There are fears of Iranian retaliation against the US and Israel, given the ongoing conflict. Iran has been known to use proxy forces and asymmetric warfare tactics to attack its enemies. The situation remains volatile, with the potential for further violence and instability.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-red",
+      "actor": "Hezbollah",
+      "time": "1 min ago",
+      "headline": "Hezbollah Involvement",
+      "summary": "Hezbollah, the Lebanese militant group, has been involved in the ongoing conflict. The group has been known to receive support from Iran and has been involved in various conflicts in the region. The situation remains tense, with the potential for further violence and instability.",
+      "whyTxt": "",
+      "orgs": [
+        "Hezbollah"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Global Implications",
-      "summary": "The conflict has significant implications for global stability and security. The multiple missile launches and interceptions have increased tensions, making the situation volatile. The international community is watching the developments closely, concerned about the potential consequences.",
+      "time": "1 min ago",
+      "headline": "Global Community Urges Restraint",
+      "summary": "The global community has been urging restraint and a peaceful resolution to the conflict. The United Nations and other international organizations have been involved in diplomatic efforts to resolve the conflict. The situation remains volatile, with the potential for further violence and instability.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has not yet commented on the recent developments in the conflict, but its position is crucial as it can significantly impact the outcome.",
-    "israel_stance": "Israel is defending against Iranian missile strikes, with its defense systems intercepting the missiles and preventing damage and casualties.",
-    "iran_stance": "Iran has continued to launch missile strikes against Israel and other countries in the region, demonstrating its military capabilities and aggressive behavior."
+    "us_stance": "The US has reaffirmed its alliance with Israel and has been providing significant support to the country in the face of the ongoing conflict with Iran.",
+    "israel_stance": "Israel has been cooperating closely with the US and has been involved in various military and diplomatic efforts to counter the Iranian threat.",
+    "iran_stance": "Iran has been viewing the US-Israel alliance as a threat to its national security and has been involved in various conflicts in the region."
   },
   "terms": [
     {
-      "term": "Hamas",
-      "simple_explanation": "Hamas is a Palestinian Islamist organization that has been involved in the conflict with Israel. It is considered a terrorist organization by several countries, including the US and Israel."
+      "term": "Eid ul Fitr",
+      "simple_explanation": "Eid ul Fitr is a significant Islamic holiday that marks the end of the holy month of Ramadan. It is a time of celebration and festivities for Muslims around the world."
+    },
+    {
+      "term": "Proxy forces",
+      "simple_explanation": "Proxy forces refer to groups or individuals who are supported and funded by a state or organization to carry out attacks or operations on their behalf. This can include militant groups, rebels, or other non-state actors."
+    },
+    {
+      "term": "Asymmetric warfare",
+      "simple_explanation": "Asymmetric warfare refers to a type of conflict where one side uses unconventional tactics and strategies to counter a more powerful opponent. This can include guerrilla warfare, terrorism, and other forms of irregular warfare."
     },
     {
       "term": "Hezbollah",
-      "simple_explanation": "Hezbollah is a Shia Islamist organization based in Lebanon, which has been involved in the conflict with Israel. It is considered a terrorist organization by several countries, including the US and Israel."
+      "simple_explanation": "Hezbollah is a Lebanese militant group that is known for its anti-Israel and anti-Western stance. The group has been involved in various conflicts in the region and has received support from Iran."
     },
     {
-      "term": "Gulf Nations",
-      "simple_explanation": "The Gulf Nations refer to the countries bordering the Persian Gulf, including the UAE, Saudi Arabia, Kuwait, and Bahrain. These countries have been involved in the conflict, intercepting Iranian missiles and drones."
+      "term": "US-Israel alliance",
+      "simple_explanation": "The US-Israel alliance refers to the close diplomatic and military relationship between the United States and Israel. The two countries have a long history of cooperation and have been involved in various joint military and diplomatic efforts."
     },
     {
-      "term": "Defense Systems",
-      "simple_explanation": "Defense systems refer to the military equipment and technology used to defend against missile strikes and other attacks. Israel's defense systems have been successful in intercepting Iranian missiles."
+      "term": "Iranian retaliation",
+      "simple_explanation": "Iranian retaliation refers to the potential for Iran to launch attacks or other forms of retaliation against the US, Israel, or other countries involved in the conflict. This could include missile strikes, cyber attacks, or other forms of asymmetric warfare."
     },
     {
-      "term": "Missile Strikes",
-      "simple_explanation": "Missile strikes refer to the launch of missiles against a target, in this case, Israel and other countries in the region. Iran has launched multiple missile strikes, which have been intercepted by defense systems."
+      "term": "Global oil prices",
+      "simple_explanation": "Global oil prices refer to the price of oil on the global market. The price of oil can be affected by a variety of factors, including supply and demand, geopolitical events, and other market trends."
     },
     {
-      "term": "Interceptions",
-      "simple_explanation": "Interceptions refer to the act of intercepting or blocking a missile or other projectile. The Gulf Nations and Israel have reported intercepting Iranian missiles and drones."
+      "term": "Oil-importing countries",
+      "simple_explanation": "Oil-importing countries refer to countries that rely on imports to meet their oil needs. These countries can be affected by changes in global oil prices and may be vulnerable to disruptions in oil supplies."
     },
     {
-      "term": "Escalation",
-      "simple_explanation": "Escalation refers to the increase in intensity or severity of a conflict. The recent developments in the conflict, including the multiple missile launches and interceptions, indicate a significant escalation."
-    },
-    {
-      "term": "Volatility",
-      "simple_explanation": "Volatility refers to the state of being unpredictable or unstable. The situation in the region is volatile, with the potential for further escalation and conflict."
-    },
-    {
-      "term": "Regional Stability",
-      "simple_explanation": "Regional stability refers to the state of peace and security in a region. The conflict has significant implications for regional stability, with the potential to destabilize the entire region."
-    },
-    {
-      "term": "Global Implications",
-      "simple_explanation": "Global implications refer to the potential consequences of a conflict or event on a global scale. The conflict has significant implications for global stability and security, with the potential to affect multiple countries and regions."
+      "term": "Diplomatic efforts",
+      "simple_explanation": "Diplomatic efforts refer to the attempts by countries or international organizations to resolve conflicts or address issues through negotiation and dialogue. This can include diplomatic meetings, talks, and other forms of communication."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 23:34 UTC",
-      "l": "MEDIUM",
-      "tone": "Iran's statement on "
-    },
     {
       "t": "2026-03-18 03:19 UTC",
       "l": "HIGH",
@@ -455,40 +446,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 11:54 UTC",
       "l": "HIGH",
       "tone": "The multiple missile"
+    },
+    {
+      "t": "2026-03-20 12:40 UTC",
+      "l": "HIGH",
+      "tone": "The conflict has esc"
     }
   ],
-  "execSummary": "Iran has launched a new barrage of missiles targeting southern Israel, with defense systems intercepting the missiles. The UAE, Saudi Arabia, Kuwait, and Bahrain have also reported interceptions of Iranian missiles and drones. The situation is escalating, with multiple countries involved. The conflict has significant implications for regional and global stability.",
-  "totalReports": 76,
+  "execSummary": "The US-Israel-Iran war has led to increased tensions in the Middle East, with Eid ul Fitr celebrations being dampened. The conflict has significant implications for global oil prices and energy security. India, being a major oil importer, is closely watching the developments. The situation remains volatile, with multiple actors involved.",
+  "totalReports": 77,
   "indiaImpact": [
     {
-      "headline": "Indian Nationals in the Region",
-      "detail": "There are several Indian nationals living and working in the region, who may be affected by the conflict. The Indian government has advised its citizens to exercise caution and follow local instructions. The conflict has significant implications for the safety and security of Indian nationals in the region.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The Indian government has been monitoring the situation closely, with the Ministry of External Affairs issuing advisories for Indian citizens in the region. The conflict has significant implications for the safety and security of Indian nationals, with the potential for further escalation and violence. The Indian government has been in touch with the governments of the countries in the region, seeking to ensure the safety and security of its citizens.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Energy Interests",
-      "detail": "India has significant energy interests in the region, with several Indian companies investing in oil and gas projects. The conflict has significant implications for Indian energy interests, with the potential to disrupt oil and gas supplies. The Indian government has been monitoring the situation closely, with the Ministry of Petroleum and Natural Gas seeking to ensure the stability of energy supplies.",
+      "headline": "India's Oil Imports At Risk",
+      "detail": "India's oil imports are at risk due to the ongoing conflict in the Middle East. The country is a major oil importer and relies heavily on imports to meet its oil needs. The conflict has led to a significant increase in global oil prices, which could affect India's economy.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "The conflict has significant implications for Indian energy interests, with the potential to disrupt oil and gas supplies. The Indian government has been in touch with the governments of the countries in the region, seeking to ensure the stability of energy supplies. The conflict has also significant implications for the global energy market, with the potential to affect oil and gas prices.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "source": "Middle East Eye"
+      "full_detail": "India's oil imports are a critical component of its economy, and any disruption to supplies could have significant consequences. The country has been diversifying its oil imports in recent years, but it still relies heavily on imports from the Middle East. The conflict has led to a significant increase in global oil prices, which could affect India's economy and lead to higher fuel prices for consumers.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "source": "NDTV"
     },
     {
-      "headline": "Indian Diplomatic Efforts",
-      "detail": "India has been making diplomatic efforts to resolve the conflict, with the Indian government in touch with the governments of the countries in the region. The Indian government has been seeking to promote peace and stability in the region, with the potential to play a key role in resolving the conflict. The conflict has significant implications for Indian diplomatic efforts, with the potential to affect India's relations with the countries in the region.",
+      "headline": "Indian Diaspora In The Middle East",
+      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The ongoing conflict has raised concerns about the safety and security of these individuals.",
+      "category": "Diaspora",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government has been in touch with the governments of the countries involved, urging them to take steps to ensure the safety and security of Indian nationals. The government has also been providing assistance to Indian nationals who wish to leave the region.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "source": "NDTV"
+    },
+    {
+      "headline": "India's Diplomatic Efforts",
+      "detail": "India has been involved in diplomatic efforts to resolve the conflict in the Middle East. The country has been in touch with the governments of the countries involved, urging restraint and a peaceful resolution to the conflict.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been making diplomatic efforts to resolve the conflict, with the Indian government in touch with the governments of the countries in the region. The Indian government has been seeking to promote peace and stability in the region, with the potential to play a key role in resolving the conflict. The conflict has significant implications for Indian diplomatic efforts, with the potential to affect India's relations with the countries in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
-      "source": "Middle East Eye"
+      "full_detail": "India's diplomatic efforts have been focused on finding a peaceful resolution to the conflict. The country has been working closely with other countries in the region, as well as international organizations such as the United Nations, to find a solution to the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "source": "NDTV"
+    },
+    {
+      "headline": "Impact On India's Economy",
+      "detail": "The ongoing conflict in the Middle East has the potential to affect India's economy, particularly in terms of oil prices and trade. The country is a major oil importer and relies heavily on imports to meet its oil needs.",
+      "category": "Economy",
+      "significance": "HIGH",
+      "full_detail": "The conflict has led to a significant increase in global oil prices, which could affect India's economy and lead to higher fuel prices for consumers. The country has been diversifying its oil imports in recent years, but it still relies heavily on imports from the Middle East. The conflict has also raised concerns about the potential for disruptions to trade, which could affect India's economy.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
+      "source": "NDTV"
     }
   ],
   "indiaSummary": ""
