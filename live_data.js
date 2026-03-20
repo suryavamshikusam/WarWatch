@@ -1,17 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 21:52 UTC",
+  "generatedAt": "2026-03-20 22:20 UTC",
   "escalationLevel": "MEDIUM",
   "alerts": [
-    "Saudi Arabia: Saudi Arabia Supports US-Israeli War · 0 min ago",
-    "Iran: Iran Increases Attacks on US Bases · 0 min ago",
-    "US: US Seeks Expanded Access in Saudi Arabia · 0 min ago",
-    "UAE: UAE Considers Supporting US-Israeli Alliance · 0 min ago",
-    "Israel: Israel Increases Military Presence · 0 min ago"
+    "US: Trump Says US Close to Meeting Objectives · 0 min ago",
+    "US: US Calls on Countries to Secure Strait of Hormuz · 0 min ago",
+    "Iran: Iran Threatens to Disrupt Oil Supplies · 0 min ago",
+    "Israel: Israel Supports US Efforts · 0 min ago",
+    "Other: Global Oil Prices Rise · 0 min ago"
   ],
   "heroStats": {
     "tension": "MEDIUM",
-    "updatesToday": 20,
-    "lastUpdated": "2026-03-20 21:52 UTC",
+    "updatesToday": 21,
+    "lastUpdated": "2026-03-20 22:20 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -50,19 +50,36 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Saudi Arabia",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "Saudi Arabia Supports US-Israeli War",
-      "summary": "Saudi Arabia has agreed to open King Fahd Air Base in Taif to the Americans, allowing for expanded access and overflight permissions. This development is significant, as it indicates Saudi Arabia's willingness to support the US-Israeli alliance. The base is strategically located, farther from Iranian Shahed drones, and will likely play a crucial role in the conflict. The move is seen as a response to Iran's increased aggression in the region.",
+      "headline": "Trump Says US Close to Meeting Objectives",
+      "summary": "President Trump stated that the US is getting close to meeting its objectives in the Iran war. He called on countries that use the Strait of Hormuz to guard and police it as necessary. The US has offered to help these countries in their efforts, but only if necessary. This development is significant as it indicates a potential escalation of the conflict.",
       "whyTxt": "",
       "orgs": [
-        "Saudi Arabia"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US Calls on Countries to Secure Strait of Hormuz",
+      "summary": "The US has called on countries that use the Strait of Hormuz to guard and police it as necessary. This is a critical shipping lane, and any disruption could have significant implications for global oil prices. The US has offered to help these countries in their efforts, but only if necessary. This development is significant as it indicates a potential escalation of the conflict.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -70,157 +87,135 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Increases Attacks on US Bases",
-      "summary": "Iran has increased its attacks on US bases in the Gulf, prompting the US to seek expanded access and overflight permissions from Saudi Arabia. The attacks have raised concerns about the safety of US personnel and the stability of the region. The US has responded by increasing its military presence in the area, which has further escalated the conflict.",
+      "headline": "Iran Threatens to Disrupt Oil Supplies",
+      "summary": "Iran has threatened to disrupt oil supplies in the region if the US continues to escalate the conflict. This is a significant development, as Iran is a major oil producer and any disruption could have significant implications for global oil prices. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Seeks Expanded Access in Saudi Arabia",
-      "summary": "The US has sought expanded access and overflight permissions from Saudi Arabia, which has agreed to open King Fahd Air Base in Taif to the Americans. This development is significant, as it indicates the US's willingness to work with Saudi Arabia to counter Iranian aggression. The move is seen as a strategic response to Iran's increased attacks on US bases in the Gulf.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "UAE",
-      "time": "0 min ago",
-      "headline": "UAE Considers Supporting US-Israeli Alliance",
-      "summary": "The UAE is considering supporting the US-Israeli alliance, which could further escalate the conflict. The UAE's involvement would be significant, as it would indicate a shift in the regional balance of power. The move is seen as a response to Iran's increased aggression in the region, and could have significant implications for the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "UAE"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "Israel",
       "time": "0 min ago",
-      "headline": "Israel Increases Military Presence",
-      "summary": "Israel has increased its military presence in the region, which has further escalated the conflict. The move is seen as a response to Iran's increased attacks on US bases in the Gulf, and could have significant implications for the conflict. Israel's involvement is significant, as it could lead to further escalation and potentially draw in other countries.",
+      "headline": "Israel Supports US Efforts",
+      "summary": "Israel has expressed support for US efforts to secure the Strait of Hormuz. This is a significant development, as Israel is a key player in the region and any escalation of the conflict could have significant implications for regional stability. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Global Oil Prices Rise",
+      "summary": "Global oil prices have risen in response to the escalating conflict between the US and Iran. This is a significant development, as any disruption to oil supplies could have significant implications for the global economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
+      "whyTxt": "",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Department of War Holds Call with Saudi Arabia",
-      "summary": "The US Department of War held a call with Saudi Arabian Defence Minister Khalid bin Salman, which discussed the conflict and potential cooperation between the two countries. The call is significant, as it indicates the US's willingness to work with Saudi Arabia to counter Iranian aggression. The move is seen as a strategic response to Iran's increased attacks on US bases in the Gulf.",
+      "headline": "US-Iran Conflict Escalates",
+      "summary": "The conflict between the US and Iran has escalated, with both sides engaging in a war of words. This is a significant development, as any further escalation could have significant implications for regional stability and global oil prices. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-green",
+      "actor": "India",
       "time": "0 min ago",
-      "headline": "Iran's Attacks on US Bases Intensify",
-      "summary": "Iran's attacks on US bases in the Gulf have intensified, prompting the US to seek expanded access and overflight permissions from Saudi Arabia. The attacks have raised concerns about the safety of US personnel and the stability of the region. The US has responded by increasing its military presence in the area, which has further escalated the conflict.",
+      "headline": "India Watches Closely",
+      "summary": "India is watching the situation closely, as it is a major oil importer and any disruption to oil supplies could have significant implications for the Indian economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane. India has expressed concerns about the potential impact of the conflict on regional stability.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "India"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is seeking to counter Iranian aggression and protect its interests in the region, and is willing to work with Saudi Arabia and other countries to achieve this goal.",
-    "israel_stance": "Israel is increasing its military presence in the region and is prepared to take action to protect its interests and counter Iranian aggression.",
-    "iran_stance": "Iran is continuing to attack US bases in the Gulf and is seeking to expand its influence in the region, despite the risks of further escalation."
+    "us_stance": "The US is taking a firm stance against Iran, calling on countries to take action to secure the Strait of Hormuz.",
+    "israel_stance": "Israel is supporting US efforts to secure the Strait of Hormuz.",
+    "iran_stance": "Iran is threatening to disrupt oil supplies in response to US actions."
   },
   "terms": [
     {
-      "term": "Shahed drones",
-      "simple_explanation": "Shahed drones are a type of unmanned aerial vehicle (UAV) used by Iran for military purposes. They are capable of carrying out attacks on enemy targets and are often used for reconnaissance and surveillance."
+      "term": "Strait of Hormuz",
+      "simple_explanation": "The Strait of Hormuz is a critical shipping lane located between Iran and Oman. It is a vital waterway for international oil trade, with a significant portion of the world's oil passing through it."
     },
     {
-      "term": "King Fahd Air Base",
-      "simple_explanation": "King Fahd Air Base is a military airbase located in Taif, Saudi Arabia. It is one of the largest airbases in the country and is used by the Saudi Arabian Air Force for military operations."
+      "term": "US-Iran conflict",
+      "simple_explanation": "The US-Iran conflict refers to the ongoing tensions and hostilities between the United States and Iran. The conflict has been escalating in recent months, with both sides engaging in a war of words and taking actions to secure their interests in the region."
     },
     {
-      "term": "US Department of War",
-      "simple_explanation": "The US Department of War is a department of the US government responsible for the country's military operations and defense. It is also known as the US Department of Defense."
+      "term": "Oil prices",
+      "simple_explanation": "Oil prices refer to the cost of oil on the global market. Oil prices are influenced by a variety of factors, including supply and demand, geopolitical events, and global economic trends."
     },
     {
-      "term": "Overflight permissions",
-      "simple_explanation": "Overflight permissions refer to the authorization given by a country to allow foreign aircraft to fly over its territory. This is often required for military operations and can be a sensitive issue in international relations."
+      "term": "Global economy",
+      "simple_explanation": "The global economy refers to the worldwide system of economic activity, including the production, distribution, and exchange of goods and services. The global economy is influenced by a variety of factors, including trade, investment, and geopolitical events."
     },
     {
-      "term": "Expanded access",
-      "simple_explanation": "Expanded access refers to the increased ability of a country to use a particular facility or resource, such as a military base or airspace. This can be important for military operations and can be a key factor in international relations."
+      "term": "Regional stability",
+      "simple_explanation": "Regional stability refers to the level of peace and security in a particular region. Regional stability is influenced by a variety of factors, including political, economic, and social trends."
     },
     {
-      "term": "US-Israeli alliance",
-      "simple_explanation": "The US-Israeli alliance refers to the close relationship between the United States and Israel, which is based on shared strategic interests and a commitment to mutual defense. The alliance is seen as a key factor in the Middle East and has significant implications for the region."
+      "term": "War of words",
+      "simple_explanation": "A war of words refers to a situation in which two or more parties engage in a verbal conflict, using language and rhetoric to attack or defend their positions."
     },
     {
-      "term": "UAE",
-      "simple_explanation": "The UAE, or United Arab Emirates, is a country located in the Middle East. It is a federation of seven emirates and is known for its oil wealth and strategic location."
+      "term": "Shipping lane",
+      "simple_explanation": "A shipping lane is a designated route for ships to travel through. Shipping lanes are often located in areas with high volumes of maritime traffic, such as the Strait of Hormuz."
     },
     {
-      "term": "Saudi Arabian Air Force",
-      "simple_explanation": "The Saudi Arabian Air Force is the air force of Saudi Arabia, responsible for the country's air defense and military aviation. It is one of the largest and most advanced air forces in the Middle East."
+      "term": "Geopolitical events",
+      "simple_explanation": "Geopolitical events refer to significant events or developments that have an impact on the global political landscape. Geopolitical events can include conflicts, elections, and changes in government policy."
     },
     {
-      "term": "Gulf region",
-      "simple_explanation": "The Gulf region refers to the area surrounding the Persian Gulf, which includes countries such as Saudi Arabia, Iran, and the UAE. The region is known for its oil wealth and strategic location, and is often a focus of international attention and conflict."
+      "term": "International trade",
+      "simple_explanation": "International trade refers to the exchange of goods and services between countries. International trade is influenced by a variety of factors, including tariffs, trade agreements, and global economic trends."
     },
     {
-      "term": "Middle East",
-      "simple_explanation": "The Middle East is a region that includes countries such as Saudi Arabia, Iran, Israel, and the UAE. It is known for its strategic location, oil wealth, and complex international relations, and is often a focus of global attention and conflict."
+      "term": "Global oil trade",
+      "simple_explanation": "The global oil trade refers to the international market for oil, including the production, transportation, and sale of oil. The global oil trade is influenced by a variety of factors, including supply and demand, geopolitical events, and global economic trends."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 16:52 UTC",
-      "l": "MEDIUM",
-      "tone": "The significant drop"
-    },
     {
       "t": "2026-03-18 17:55 UTC",
       "l": "HIGH",
@@ -455,49 +450,54 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 21:52 UTC",
       "l": "MEDIUM",
       "tone": "The involvement of m"
+    },
+    {
+      "t": "2026-03-20 22:20 UTC",
+      "l": "MEDIUM",
+      "tone": "The US and Iran are "
     }
   ],
-  "execSummary": "The US-Israel-Iran war is escalating, with Saudi Arabia and the UAE considering support for the US-Israeli alliance. Iran's attacks on US bases in the Gulf have increased, prompting the US to seek expanded access and overflight permissions. The situation remains volatile, with multiple countries involved and various interests at stake. The conflict's impact on global energy markets and Indian nationals abroad is a growing concern.",
-  "totalReports": 87,
+  "execSummary": "The US-Iran conflict is escalating, with President Trump stating that the US is close to meeting its objectives. The conflict has significant implications for global oil prices and shipping lanes. India, a major oil importer, is closely watching the situation. The US has called on other countries to guard and police the Strait of Hormuz, a critical shipping lane.",
+  "totalReports": 88,
   "indiaImpact": [
     {
-      "headline": "Indian Nationals Abroad at Risk",
-      "detail": "The conflict in the Middle East has raised concerns about the safety of Indian nationals living and working in the region. Many Indians are employed in the oil and gas industry, and are at risk of being caught in the crossfire. The Indian government has issued warnings and advisories to its citizens, and is working to evacuate those in danger.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The conflict in the Middle East has significant implications for Indian nationals living and working in the region. Many Indians are employed in the oil and gas industry, and are at risk of being caught in the crossfire. The Indian government has issued warnings and advisories to its citizens, and is working to evacuate those in danger. The situation is being closely monitored by the Indian government, which is in touch with its citizens in the region and is working to ensure their safety.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Oil Imports at Risk",
-      "detail": "The conflict in the Middle East has raised concerns about the stability of oil supplies, which could have significant implications for India's energy security. India is heavily reliant on oil imports, and any disruption to supplies could have a major impact on the country's economy.",
+      "headline": "India Watches Closely as US-Iran Conflict Escalates",
+      "detail": "India is watching the situation closely, as it is a major oil importer and any disruption to oil supplies could have significant implications for the Indian economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane. India has expressed concerns about the potential impact of the conflict on regional stability.",
       "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has significant implications for India's energy security, as the country is heavily reliant on oil imports. Any disruption to supplies could have a major impact on the country's economy, and could lead to increased prices and shortages. The Indian government is closely monitoring the situation and is working to diversify its energy sources and reduce its reliance on oil imports.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India is working to play a diplomatic role in the conflict, and is in touch with all parties involved. The Indian government is seeking to promote a peaceful resolution to the conflict, and is working to reduce tensions and promote dialogue.",
-      "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India is working to play a diplomatic role in the conflict, and is in touch with all parties involved. The Indian government is seeking to promote a peaceful resolution to the conflict, and is working to reduce tensions and promote dialogue. India's diplomatic efforts are seen as important, as the country has good relations with all parties involved and is well-placed to promote a peaceful resolution.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "full_detail": "India is a major oil importer, and any disruption to oil supplies could have significant implications for the Indian economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane. India has expressed concerns about the potential impact of the conflict on regional stability. The Indian government has been in touch with other countries in the region, including the US, to discuss the situation and potential responses. India is also exploring alternative sources of oil, including domestic production and imports from other countries.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "source": "Middle East Eye"
     },
     {
-      "headline": "Indian Economy at Risk",
-      "detail": "The conflict in the Middle East has raised concerns about the stability of the global economy, which could have significant implications for India. The country is heavily reliant on exports, and any disruption to global trade could have a major impact on its economy.",
+      "headline": "Indian Nationals in Iran Advised to Exercise Caution",
+      "detail": "The Indian government has advised Indian nationals in Iran to exercise caution and avoid traveling to areas near the conflict zone. This is a precautionary measure, as the situation in the region is uncertain and could potentially escalate further.",
+      "category": "Diaspora",
+      "significance": "LOW",
+      "full_detail": "The Indian government has advised Indian nationals in Iran to exercise caution and avoid traveling to areas near the conflict zone. This is a precautionary measure, as the situation in the region is uncertain and could potentially escalate further. The Indian government is also in touch with Indian nationals in the region, providing them with updates and advice on how to stay safe.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "India Seeks to Diversify Oil Imports",
+      "detail": "India is seeking to diversify its oil imports, exploring alternative sources of oil including domestic production and imports from other countries. This is a response to the potential disruption to oil supplies from the Middle East, and an effort to reduce India's dependence on any one region.",
+      "category": "Energy",
+      "significance": "MEDIUM",
+      "full_detail": "India is seeking to diversify its oil imports, exploring alternative sources of oil including domestic production and imports from other countries. This is a response to the potential disruption to oil supplies from the Middle East, and an effort to reduce India's dependence on any one region. The Indian government is in talks with other countries, including the US, to discuss potential oil imports and cooperation on energy security.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "Indian Economy Could Be Impacted by Conflict",
+      "detail": "The Indian economy could be impacted by the conflict in the Middle East, particularly if oil prices rise significantly. This could have a range of effects, including higher inflation, reduced economic growth, and increased costs for Indian businesses and consumers.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has significant implications for India's economy, as the country is heavily reliant on exports. Any disruption to global trade could have a major impact on the country's economy, and could lead to increased prices and shortages. The Indian government is closely monitoring the situation and is working to diversify its exports and reduce its reliance on any one market.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "full_detail": "The Indian economy could be impacted by the conflict in the Middle East, particularly if oil prices rise significantly. This could have a range of effects, including higher inflation, reduced economic growth, and increased costs for Indian businesses and consumers. The Indian government is monitoring the situation closely, and is exploring options to mitigate the potential impact on the economy.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
       "source": "Middle East Eye"
     }
   ],
