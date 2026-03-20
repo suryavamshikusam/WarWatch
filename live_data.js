@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 08:33 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-20 09:23 UTC",
+  "escalationLevel": "CRITICAL",
   "alerts": [
-    "Iran: Iran Develops Vetting System · 0 min ago",
-    "US: US Maintains Strong Stance · 0 min ago",
-    "Israel: Israel Prepares for Conflict · 0 min ago",
-    "Other: Global Oil Prices Rise · 0 min ago",
-    "India: India Seeks Access to Hormuz · 0 min ago"
+    "Iran: IRGC Spokesman Killed · 0 min ago",
+    "US: US-Israeli Missile Attack · 0 min ago",
+    "Iran: Iran Warns of Retaliation · 0 min ago",
+    "Other: Global Energy Markets Affected · 0 min ago",
+    "Other: Regional Stability at Risk · 0 min ago"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-20 08:33 UTC",
-    "sourcesUsed": 2
+    "tension": "CRITICAL",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-20 09:23 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 50,
-      "lvl": "Medium",
-      "color": "var(--amber)"
+      "pct": 90,
+      "lvl": "Critical",
+      "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 42,
-      "lvl": "Medium",
+      "pct": 82,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
@@ -35,15 +35,15 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 30,
-      "lvl": "Moderate",
+      "pct": 70,
+      "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 38,
-      "lvl": "Moderate",
-      "color": "var(--amber)"
+      "pct": 78,
+      "lvl": "Elevated",
+      "color": "var(--red)"
     }
   ],
   "newsCards": [
@@ -53,50 +53,50 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Develops Vetting System",
-      "summary": "Iran is developing a vetting system for selective Hormuz transit access, allowing passage for ships from certain countries. This move could impact global oil prices and India's energy security. The system is expected to be implemented soon, with countries like India, Pakistan, and China already in talks with Tehran. The development of this system has increased tensions in the region, potentially disrupting global oil supplies.",
+      "headline": "IRGC Spokesman Killed",
+      "summary": "The IRGC has reported the death of its spokesman in a US-Israeli missile attack. This development is significant as it marks a direct attack on a high-ranking Iranian military official. The attack is likely to escalate tensions between the US, Israel, and Iran. The IRGC has vowed to retaliate against the attack.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/report-iran-developing-vetting-system-selective-hormuz-transit-access",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FINDIA%2520-%2520WAR%2520-%2520IRAN%2520-%2520US%2520-%2520ISRAEL%2520-%2520SHIP.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Maintains Strong Stance",
-      "summary": "The US has maintained its strong stance against Iran, with President Donald Trump using social media to wage a narrative war. The US has imposed sanctions on Iran and is working with its allies to counter Iranian influence in the region. The US stance has contributed to the escalation of the conflict, with Iran responding with its own measures.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "Israel",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "Israel Prepares for Conflict",
-      "summary": "Israel is preparing for a potential conflict with Iran, with its military on high alert. Israel has been working closely with the US to counter Iranian influence in the region and has launched several airstrikes against Iranian targets in Syria. The conflict between Israel and Iran could escalate further, potentially drawing in other countries in the region.",
+      "headline": "US-Israeli Missile Attack",
+      "summary": "The US and Israel have launched a joint missile attack on Iranian targets. The attack is seen as a significant escalation of the conflict, with potential implications for regional stability. The attack has been condemned by Iran, which has vowed to retaliate. The US and Israel have stated that the attack was in response to Iranian aggression.",
       "whyTxt": "",
       "orgs": [
-        "Israel"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iran Warns of Retaliation",
+      "summary": "Iran has warned of intensified strikes if its energy sites are targeted. The warning is seen as a significant escalation of the conflict, with potential implications for global energy markets. Iran has stated that it will retaliate against any attack on its energy sites, which could lead to a significant disruption in global oil supplies.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
@@ -104,123 +104,118 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
-      "headline": "Global Oil Prices Rise",
-      "summary": "Global oil prices have risen due to the escalating conflict in the Middle East. The rise in oil prices could impact the global economy, with countries like India and China potentially facing higher energy costs. The conflict's outcome will significantly affect the global economy and regional stability.",
+      "headline": "Global Energy Markets Affected",
+      "summary": "The conflict is affecting global energy markets, with oil prices rising significantly. The disruption in global oil supplies could have significant implications for the global economy. The US and other countries are working to mitigate the impact of the conflict on global energy markets.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Regional Stability at Risk",
+      "summary": "The conflict is putting regional stability at risk, with multiple countries involved. The conflict could lead to a significant destabilization of the region, with potential implications for global security. The US and other countries are working to mitigate the impact of the conflict on regional stability.",
+      "whyTxt": "",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US-Israeli Cooperation",
+      "summary": "The US and Israel are cooperating closely in their response to the conflict. The cooperation is seen as a significant development, with potential implications for the region. The US and Israel have stated that they will work together to address the conflict and mitigate its impact on regional stability.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-green",
-      "actor": "India",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "0 min ago",
-      "headline": "India Seeks Access to Hormuz",
-      "summary": "India is seeking access to the Strait of Hormuz, with its ships potentially facing higher costs due to Iran's vetting system. India has been in talks with Tehran to secure access to the strategic waterway, which is critical for its energy security. The outcome of these talks will significantly impact India's energy imports and economy.",
+      "headline": "Iranian Retaliation Expected",
+      "summary": "Iran is expected to retaliate against the US and Israel for their involvement in the conflict. The retaliation could lead to a significant escalation of the conflict, with potential implications for regional stability. Iran has stated that it will retaliate against any attack on its energy sites, which could lead to a significant disruption in global oil supplies.",
       "whyTxt": "",
       "orgs": [
-        "India"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/report-iran-developing-vetting-system-selective-hormuz-transit-access",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FINDIA%2520-%2520WAR%2520-%2520IRAN%2520-%2520US%2520-%2520ISRAEL%2520-%2520SHIP.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "China",
-      "time": "0 min ago",
-      "headline": "China Supports Iran",
-      "summary": "China has expressed its support for Iran, with its ships potentially facing fewer restrictions due to Iran's vetting system. China has been working closely with Iran to counter US influence in the region and has invested heavily in Iranian infrastructure. The conflict's outcome will significantly impact China's economic interests in the region.",
-      "whyTxt": "",
-      "orgs": [
-        "China"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Pakistan",
-      "time": "0 min ago",
-      "headline": "Pakistan Faces Higher Costs",
-      "summary": "Pakistan is facing higher costs due to Iran's vetting system, with its ships potentially facing restrictions. Pakistan has been working closely with Iran to secure access to the strategic waterway, which is critical for its energy security. The outcome of these talks will significantly impact Pakistan's energy imports and economy.",
-      "whyTxt": "",
-      "orgs": [
-        "Pakistan"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has maintained its strong stance against Iran, with President Donald Trump using social media to wage a narrative war.",
-    "israel_stance": "Israel is preparing for a potential conflict with Iran, with its military on high alert.",
-    "iran_stance": "Iran is developing a vetting system for selective Hormuz transit access, allowing passage for ships from certain countries."
+    "us_stance": "The US has stated that it will work with Israel to address the conflict and mitigate its impact on regional stability.",
+    "israel_stance": "Israel has stated that it will work with the US to address the conflict and mitigate its impact on regional stability.",
+    "iran_stance": "Iran has warned of intensified strikes if its energy sites are targeted and has vowed to retaliate against any attack."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "The Strait of Hormuz is a strategic waterway located between Iran and Oman, connecting the Persian Gulf to the Gulf of Oman. It is a critical shipping route for oil and other goods, with many countries relying on it for their energy security."
+      "term": "IRGC",
+      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of the Iranian military. It is responsible for defending the country and its interests."
     },
     {
-      "term": "Vetting system",
-      "simple_explanation": "A vetting system is a process used to evaluate and verify the identity and credentials of individuals or entities, in this case, ships seeking to pass through the Strait of Hormuz."
+      "term": "US-Israeli Cooperation",
+      "simple_explanation": "The US and Israel are working together to address the conflict and mitigate its impact on regional stability. This cooperation is seen as a significant development, with potential implications for the region."
     },
     {
-      "term": "Sanctions",
-      "simple_explanation": "Sanctions are economic penalties imposed by one country on another, often in response to perceived wrongdoing or to exert pressure. The US has imposed sanctions on Iran, restricting its ability to engage in international trade."
+      "term": "Energy Sites",
+      "simple_explanation": "Energy sites refer to facilities that produce, process, or distribute energy. These sites are critical to a country's energy security and economy."
     },
     {
-      "term": "Narrative war",
-      "simple_explanation": "A narrative war refers to the use of social media and other forms of communication to shape public opinion and influence the narrative surrounding a conflict or issue. President Donald Trump has been using social media to wage a narrative war against Iran."
+      "term": "Global Energy Markets",
+      "simple_explanation": "Global energy markets refer to the global system of production, processing, and distribution of energy. The conflict is affecting global energy markets, with oil prices rising significantly."
     },
     {
-      "term": "Airstrikes",
-      "simple_explanation": "Airstrikes refer to military attacks launched from the air, often using aircraft or drones. Israel has launched several airstrikes against Iranian targets in Syria."
+      "term": "Regional Stability",
+      "simple_explanation": "Regional stability refers to the stability and security of a region. The conflict is putting regional stability at risk, with multiple countries involved."
     },
     {
-      "term": "Energy security",
-      "simple_explanation": "Energy security refers to a country's ability to ensure a stable and reliable supply of energy, often through diversification of energy sources and strategic partnerships. India and China are seeking to secure their energy security through access to the Strait of Hormuz."
+      "term": "Retaliation",
+      "simple_explanation": "Retaliation refers to the act of responding to an attack or aggression. Iran has vowed to retaliate against any attack on its energy sites, which could lead to a significant disruption in global oil supplies."
     },
     {
-      "term": "Global oil prices",
-      "simple_explanation": "Global oil prices refer to the price of oil on the international market, which can be influenced by a variety of factors, including supply and demand, geopolitical events, and economic trends. The escalating conflict in the Middle East has led to a rise in global oil prices."
+      "term": "Missile Attack",
+      "simple_explanation": "A missile attack is a type of military attack that uses missiles to target enemy positions or facilities. The US and Israel have launched a joint missile attack on Iranian targets."
     },
     {
-      "term": "Economic sanctions",
-      "simple_explanation": "Economic sanctions refer to penalties imposed by one country on another, often in response to perceived wrongdoing or to exert pressure. The US has imposed economic sanctions on Iran, restricting its ability to engage in international trade."
+      "term": "Escalation",
+      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict. The conflict is escalating, with multiple countries involved and potential implications for regional stability."
     },
     {
-      "term": "Diplomatic efforts",
-      "simple_explanation": "Diplomatic efforts refer to the use of diplomacy and negotiation to resolve conflicts or address issues between countries. India and other countries are engaged in diplomatic efforts to secure access to the Strait of Hormuz and resolve the conflict in the Middle East."
+      "term": "Diplomacy",
+      "simple_explanation": "Diplomacy refers to the process of negotiating and resolving conflicts through dialogue and diplomacy. The US and other countries are working to mitigate the impact of the conflict through diplomacy."
     },
     {
-      "term": "Regional stability",
-      "simple_explanation": "Regional stability refers to the stability and security of a particular region, often influenced by geopolitical events and economic trends. The conflict in the Middle East has the potential to destabilize the region and impact global stability."
+      "term": "Global Economy",
+      "simple_explanation": "The global economy refers to the global system of production, distribution, and exchange of goods and services. The conflict is affecting the global economy, with potential implications for trade and commerce."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 18:38 UTC",
-      "l": "MEDIUM",
-      "tone": "The surge in global "
-    },
     {
       "t": "2026-03-17 21:53 UTC",
       "l": "MEDIUM",
@@ -455,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 08:33 UTC",
       "l": "MEDIUM",
       "tone": "Iran's development o"
+    },
+    {
+      "t": "2026-03-20 09:23 UTC",
+      "l": "CRITICAL",
+      "tone": "The conflict is esca"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict is escalating with Iran developing a vetting system for selective Hormuz transit access, allowing passage for ships from certain countries. This move could impact global oil prices and India's energy security. The situation remains volatile, with the US and Israel maintaining a strong stance against Iran. The conflict's outcome will significantly affect the global economy and regional stability.",
-  "totalReports": 73,
+  "execSummary": "The US, Israel, and Iran are engaged in an escalating conflict, with Iran warning of intensified strikes if its energy sites are targeted. The IRGC has reported the death of its spokesman in a US-Israeli missile attack. The situation is critical, with multiple countries involved and potential global implications. The conflict is affecting global energy markets and has significant implications for regional stability.",
+  "totalReports": 74,
   "indiaImpact": [
     {
-      "headline": "India Seeks Access to Hormuz",
-      "detail": "India is seeking access to the Strait of Hormuz, with its ships potentially facing higher costs due to Iran's vetting system. India has been in talks with Tehran to secure access to the strategic waterway, which is critical for its energy security. The outcome of these talks will significantly impact India's energy imports and economy.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India's energy security is critical to its economic growth and development. The country relies heavily on imported oil, with the majority of its imports coming from the Middle East. The Strait of Hormuz is a critical shipping route for oil, and India's access to it is essential for its energy security. The outcome of India's talks with Tehran will significantly impact its energy imports and economy, with potential implications for its economic growth and development.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FINDIA%2520-%2520WAR%2520-%2520IRAN%2520-%2520US%2520-%2520ISRAEL%2520-%2520SHIP.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/report-iran-developing-vetting-system-selective-hormuz-transit-access",
-      "source": "Middle East Eye"
-    },
-    {
       "headline": "Indian Nationals in Iran",
-      "detail": "There are several Indian nationals living and working in Iran, who may be impacted by the escalating conflict. The Indian government has advised its citizens to exercise caution and avoid traveling to Iran unless necessary. The conflict's outcome will significantly impact the safety and security of Indian nationals in the region.",
+      "detail": "There are concerns about the safety of Indian nationals in Iran, with the conflict escalating. The Indian government has advised its citizens to exercise caution and avoid traveling to Iran. The conflict could have significant implications for Indian nationals living and working in Iran.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has advised its citizens to exercise caution and avoid traveling to Iran unless necessary. The conflict's outcome will significantly impact the safety and security of Indian nationals in the region, with potential implications for their well-being and livelihoods. The Indian government is working to ensure the safety and security of its citizens, with diplomatic efforts underway to resolve the conflict and secure their release if necessary.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The Indian government has advised its citizens to exercise caution and avoid traveling to Iran. The conflict could have significant implications for Indian nationals living and working in Iran. The Indian government is working to evacuate its citizens from Iran and provide assistance to those affected by the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "source": "Al Jazeera"
     },
     {
-      "headline": "India's Economic Interests",
-      "detail": "India has significant economic interests in the Middle East, with trade and investment ties with several countries in the region. The conflict's outcome will significantly impact India's economic interests, with potential implications for its trade and investment relationships with countries in the region.",
-      "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "India's economic interests in the Middle East are significant, with trade and investment ties with several countries in the region. The conflict's outcome will significantly impact India's economic interests, with potential implications for its trade and investment relationships with countries in the region. The Indian government is working to diversify its energy sources and reduce its dependence on the Middle East, but the conflict's outcome will still have significant implications for its economic growth and development.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "source": "NDTV"
+      "headline": "Indian Energy Imports",
+      "detail": "The conflict is affecting Indian energy imports, with oil prices rising significantly. The disruption in global oil supplies could have significant implications for the Indian economy. The Indian government is working to mitigate the impact of the conflict on its energy imports.",
+      "category": "Energy",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government is working to mitigate the impact of the conflict on its energy imports. The conflict could have significant implications for the Indian economy, with potential implications for trade and commerce. The Indian government is exploring alternative sources of energy to reduce its dependence on Iranian oil.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "source": "Al Jazeera"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India is engaged in diplomatic efforts to resolve the conflict in the Middle East, with talks underway with several countries in the region. The Indian government is working to secure access to the Strait of Hormuz and resolve the conflict through diplomatic means.",
+      "headline": "Indian Diplomatic Efforts",
+      "detail": "The Indian government is working to mitigate the impact of the conflict through diplomatic efforts. The Indian government has called for a peaceful resolution to the conflict and has offered to mediate between the parties involved. The conflict could have significant implications for regional stability, and the Indian government is working to promote peace and stability in the region.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government is working to secure access to the Strait of Hormuz and resolve the conflict through diplomatic means. The conflict's outcome will significantly impact India's energy security and economic interests, with potential implications for its economic growth and development. The Indian government is engaged in diplomatic efforts with several countries in the region, including Iran, to resolve the conflict and secure its interests.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Ftodr18lo_trump_625x300_18_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/donald-trumps-truths-how-social-media-posts-are-waging-iran-narrative-war-11242121#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The Indian government has called for a peaceful resolution to the conflict and has offered to mediate between the parties involved. The conflict could have significant implications for regional stability, and the Indian government is working to promote peace and stability in the region. The Indian government is working closely with other countries to mitigate the impact of the conflict and promote a peaceful resolution.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "headline": "Indian Economy Affected",
+      "detail": "The conflict is affecting the Indian economy, with potential implications for trade and commerce. The disruption in global oil supplies could have significant implications for the Indian economy. The Indian government is working to mitigate the impact of the conflict on its economy.",
+      "category": "Economy",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government is working to mitigate the impact of the conflict on its economy. The conflict could have significant implications for the Indian economy, with potential implications for trade and commerce. The Indian government is exploring alternative sources of energy to reduce its dependence on Iranian oil and is working to promote economic stability in the region.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T141228Z_241919753_RC2U0KAFLUOU_RTRMADP_3_IRAN-CRISIS-ISRAEL-USA-1773963963.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/20/iran-war-live-tehran-warns-of-intensified-strikes-if-energy-sites-targeted?traffic_source=rss",
+      "source": "Al Jazeera"
     }
   ],
   "indiaSummary": ""
