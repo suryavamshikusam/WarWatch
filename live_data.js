@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 19:53 UTC",
-  "escalationLevel": "CRITICAL",
+  "generatedAt": "2026-03-20 20:24 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Iran Targets Israel, Kuwait, Saudi Arabia · 0 min ago",
-    "US: US Gets UK Approval to Use Bases · 0 min ago",
-    "Iran: Iran Warns World Tourism Sites · 0 min ago",
-    "US: US President Trump's Stance · 0 min ago",
-    "Iran: Iran's Missile Program · 0 min ago"
+    "US: US Gains Saudi Airbase Access · 0 min ago",
+    "US: White House Threatens Iran's Kharg Island · 0 min ago",
+    "Other: Saudi Arabia and UAE Consider Support · 0 min ago",
+    "US: US Expands Military Presence in Gulf · 0 min ago",
+    "Iran: Iranian Attacks on US Bases Escalate · 0 min ago"
   ],
   "heroStats": {
-    "tension": "CRITICAL",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-20 19:53 UTC",
-    "sourcesUsed": 4
+    "tension": "HIGH",
+    "updatesToday": 18,
+    "lastUpdated": "2026-03-20 20:24 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 90,
-      "lvl": "Critical",
+      "pct": 72,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 82,
-      "lvl": "Critical",
+      "pct": 64,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
@@ -35,13 +35,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 70,
+      "pct": 52,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 78,
+      "pct": 60,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -50,19 +50,19 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "Iran Targets Israel, Kuwait, Saudi Arabia",
-      "summary": "Iran's Islamic Revolutionary Guard Corps has struck targets in Israel, Kuwait, and Saudi Arabia, including Tel Aviv, Acre, Haifa Bay, Kuwait's Ali al-Salem Air Base, and Saudi Arabia's Prince Sultan Air Base. The attacks have resulted in significant damage and casualties. This development is significant as it marks an escalation of the conflict and demonstrates Iran's ability to launch attacks on multiple fronts.",
+      "headline": "US Gains Saudi Airbase Access",
+      "summary": "The US has gained access to King Fahd Air Base in Taif, Saudi Arabia, which will allow for expanded military operations in the region. This development is significant as it provides the US with a strategic location for potential strikes against Iran. The base is also farther from Iranian Shahed drones, making it a safer location for US operations. This move is seen as a sign of increased cooperation between the US and Saudi Arabia.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-targeted-locations-israel-kuwait-saudi-arabia",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -70,84 +70,16 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Gets UK Approval to Use Bases",
-      "summary": "The US has received approval from the UK to use its bases to strike Iran sites. This development is significant as it marks a significant escalation of the conflict and demonstrates the US's ability to launch attacks from multiple locations. The use of UK bases will provide the US with a strategic advantage in its campaign against Iran.",
+      "headline": "White House Threatens Iran's Kharg Island",
+      "summary": "The White House has stated that Iran's Kharg Island could be taken out at any time, in response to Iranian attacks on US bases in the Gulf. This threat is significant as Kharg Island is a major oil export terminal, and any disruption to its operations could have significant impacts on global energy markets. The US is seeking to demonstrate its military capabilities and deter further Iranian aggression.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/us-gets-uk-approval-to-use-its-bases-to-strike-iran-sites-targeting-ships-11245184#publisher=newsstand",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-us-could-take-out-irans-kharg-island-any-time-white-house-11245203#publisher=newsstand",
       "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fi.ndtvimg.com%2Fi%2F2017-09%2Fus-army-reuters_650x400_81504721306.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Warns World Tourism Sites",
-      "summary": "Iran has warned that world tourism sites are not safe for Israeli and US officials. This development is significant as it marks a significant escalation of the conflict and demonstrates Iran's ability to launch attacks on soft targets. The warning has resulted in increased security measures at tourism sites around the world.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-world-tourism-sites-not-safe-for-israeli-us-officials/article70766005.ece",
-      "sourceLabel": "The Hindu",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fkfob7n%2Farticle70766230.ece%2Falternates%2FLANDSCAPE_1200%2F2026-03-20T112759Z_2050564620_RC2A8KASQUTS_RTRMADP_3_IRAN-CRISIS-ISRAEL.JPG&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US President Trump's Stance",
-      "summary": "US President Donald Trump has been criticized for his handling of the conflict, with some accusing him of being overly aggressive. Trump has defended his stance, stating that he is committed to protecting US interests and allies. The president's stance has resulted in increased tensions with Iran and its allies.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran's Missile Program",
-      "summary": "Iran has continued to develop its missile program, despite the conflict. The program has resulted in the development of advanced missiles capable of striking targets in Israel and other countries. The missile program has been a major point of contention between Iran and the US and its allies.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-world-tourism-sites-not-safe-for-israeli-us-officials/article70766005.ece",
-      "sourceLabel": "The Hindu",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fkfob7n%2Farticle70766230.ece%2Falternates%2FLANDSCAPE_1200%2F2026-03-20T112759Z_2050564620_RC2A8KASQUTS_RTRMADP_3_IRAN-CRISIS-ISRAEL.JPG&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US-Israel Alliance",
-      "summary": "The US and Israel have strengthened their alliance in response to the conflict. The alliance has resulted in increased cooperation between the two countries, including joint military operations. The alliance has been a major factor in the escalation of the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F4738llms_kharg-island-_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
@@ -155,68 +87,135 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
-      "headline": "Global Response",
-      "summary": "The global community has responded to the conflict with a mix of condemnation and support. Some countries have condemned Iran's attacks, while others have expressed support for the US and Israel. The global response has been influenced by a range of factors, including geopolitical alliances and economic interests.",
+      "headline": "Saudi Arabia and UAE Consider Support",
+      "summary": "Saudi Arabia and the UAE are considering supporting a US-Israeli war against Iran, in response to Iranian aggression in the region. This development is significant as it could lead to a broader regional conflict, with significant implications for global energy markets and regional stability. The US is seeking to build a coalition of regional allies to support its military operations against Iran.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US Expands Military Presence in Gulf",
+      "summary": "The US is expanding its military presence in the Gulf, in response to Iranian attacks on US bases in the region. This development is significant as it demonstrates the US commitment to regional security and its determination to deter further Iranian aggression. The US is seeking to demonstrate its military capabilities and protect its regional allies.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iranian Attacks on US Bases Escalate",
+      "summary": "Iranian attacks on US bases in the Gulf have escalated in recent weeks, prompting a US response. This development is significant as it demonstrates the increasing tensions between the US and Iran, and the potential for further escalation. The US is seeking to deter further Iranian aggression and protect its regional allies.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel Supports US Military Operations",
+      "summary": "Israel has expressed support for US military operations against Iran, in response to Iranian aggression in the region. This development is significant as it demonstrates the close cooperation between the US and Israel, and the potential for a broader regional conflict. The US and Israel are seeking to demonstrate their military capabilities and deter further Iranian aggression.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Regional Allies Consider Support",
+      "summary": "Regional allies, including Saudi Arabia and the UAE, are considering supporting a US-Israeli war against Iran. This development is significant as it could lead to a broader regional conflict, with significant implications for global energy markets and regional stability. The US is seeking to build a coalition of regional allies to support its military operations against Iran.",
+      "whyTxt": "",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has taken a strong stance against Iran, with President Trump committing to protecting US interests and allies.",
-    "israel_stance": "Israel has been a key player in the conflict, with its military launching attacks against Iranian targets.",
-    "iran_stance": "Iran has taken a defiant stance, with its leaders warning that world tourism sites are not safe for Israeli and US officials."
+    "us_stance": "The US is taking a strong stance against Iran, with a focus on demonstrating its military capabilities and deterring further Iranian aggression.",
+    "israel_stance": "Israel is supporting US military operations against Iran, and is seeking to demonstrate its own military capabilities in response to Iranian aggression.",
+    "iran_stance": "Iran is continuing to attack US bases in the Gulf, and is seeking to demonstrate its own military capabilities in response to US and Israeli aggression."
   },
   "terms": [
     {
-      "term": "IRGC",
-      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of the Iranian military responsible for defending the country's Islamic system and promoting its interests abroad. It has been involved in various military operations, including the current conflict with the US and Israel."
+      "term": "Shahed drones",
+      "simple_explanation": "Shahed drones are Iranian unmanned aerial vehicles (UAVs) used for military operations. They are capable of carrying out attacks on enemy targets and are often used by Iran to attack US bases in the Gulf."
     },
     {
-      "term": "B-2 bomber",
-      "simple_explanation": "The B-2 bomber is a type of stealth bomber used by the US military. It is capable of carrying a range of weapons, including nuclear bombs, and is known for its advanced stealth technology."
+      "term": "Kharg Island",
+      "simple_explanation": "Kharg Island is a major oil export terminal in Iran, and is a critical component of the country's energy infrastructure. Any disruption to its operations could have significant impacts on global energy markets."
     },
     {
-      "term": "Nowruz",
-      "simple_explanation": "Nowruz is the Persian New Year, celebrated on March 20-21. It is a significant holiday in Iran and other countries with Persian cultures, marking the beginning of spring and the new year."
+      "term": "King Fahd Air Base",
+      "simple_explanation": "King Fahd Air Base is a Saudi airbase located in Taif, Saudi Arabia. It is a strategic location for US military operations in the region, and provides a safe location for US aircraft to operate from."
     },
     {
-      "term": "Ali al-Salem Air Base",
-      "simple_explanation": "The Ali al-Salem Air Base is a military airbase located in Kuwait. It has been used by the US and other countries for military operations in the region."
+      "term": "US Department of War",
+      "simple_explanation": "The US Department of War is a former name for the US Department of Defense, which is responsible for the country's military operations and defense policy."
     },
     {
-      "term": "Prince Sultan Air Base",
-      "simple_explanation": "The Prince Sultan Air Base is a military airbase located in Saudi Arabia. It has been used by the US and other countries for military operations in the region."
+      "term": "Elbridge Colby",
+      "simple_explanation": "Elbridge Colby is a senior official in the US Department of Defense, and is responsible for developing and implementing US defense policy."
     },
     {
-      "term": "Islamic Revolutionary Guard Corps",
-      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of the Iranian military responsible for defending the country's Islamic system and promoting its interests abroad."
+      "term": "Khalid bin Salman",
+      "simple_explanation": "Khalid bin Salman is the Saudi Arabian Defence Minister, and is the brother and top adviser to Crown Prince Mohammed bin Salman."
     },
     {
-      "term": "US-Israel alliance",
-      "simple_explanation": "The US-Israel alliance refers to the close relationship between the US and Israel, based on shared strategic interests and values. The alliance has been a key factor in the escalation of the conflict."
+      "term": "Crown Prince Mohammed bin Salman",
+      "simple_explanation": "Crown Prince Mohammed bin Salman is the de facto ruler of Saudi Arabia, and is responsible for the country's defense and foreign policy."
     },
     {
-      "term": "Stealth technology",
-      "simple_explanation": "Stealth technology refers to the use of materials and designs to reduce the visibility of an object or vehicle to radar and other detection systems. It is used in military aircraft, such as the B-2 bomber, to evade enemy defenses."
+      "term": "Gulf",
+      "simple_explanation": "The Gulf refers to the Persian Gulf, which is a body of water located in the Middle East. It is a critical region for global energy markets, and is home to many major oil-producing countries."
     },
     {
-      "term": "Geopolitical alliances",
-      "simple_explanation": "Geopolitical alliances refer to the relationships between countries based on shared strategic interests and values. These alliances can influence the actions of countries in international conflicts, such as the current US-Israel-Iran war."
+      "term": "Regional allies",
+      "simple_explanation": "Regional allies refer to countries in the Middle East that are allied with the US and Israel, and are considering supporting a US-Israeli war against Iran."
+    },
+    {
+      "term": "Coalition",
+      "simple_explanation": "A coalition refers to a group of countries that are working together to achieve a common goal, such as supporting a US-Israeli war against Iran."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 13:12 UTC",
-      "l": "MEDIUM",
-      "tone": "The continued disrup"
-    },
     {
       "t": "2026-03-18 14:41 UTC",
       "l": "MEDIUM",
@@ -451,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 19:53 UTC",
       "l": "CRITICAL",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-20 20:24 UTC",
+      "l": "HIGH",
+      "tone": "The US and Israel ar"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has escalated with Iran targeting locations in Israel, Kuwait, and Saudi Arabia. The US has received approval from the UK to use its bases to strike Iran sites. The conflict has resulted in the deaths of several top Iranian leaders and damage to its energy industries. The situation remains volatile with Iran warning that world tourism sites are not safe for Israeli and US officials.",
-  "totalReports": 84,
+  "execSummary": "The US and Israel are preparing for a potential war with Iran, with Saudi Arabia and the UAE considering support. The US has gained access to a Saudi airbase, and the White House has stated that Iran's Kharg Island could be taken out at any time. This escalation has significant implications for the region and global energy markets. India, as a major oil importer, is closely watching the situation, with potential impacts on its economy and energy security.",
+  "totalReports": 85,
   "indiaImpact": [
     {
-      "headline": "Indian Nationals in Iran",
-      "detail": "There are concerns about the safety of Indian nationals living in Iran, with the Indian government advising its citizens to exercise caution. The conflict has resulted in increased tensions in the region, and Indian nationals may be at risk of being caught in the crossfire.",
+      "headline": "India's Energy Security at Risk",
+      "detail": "India's energy security is at risk due to the escalating conflict in the Middle East, with potential disruptions to oil supplies and price increases. India is a major oil importer, and any disruption to global energy markets could have significant impacts on its economy. The Indian government is closely watching the situation and is seeking to diversify its energy sources to reduce its dependence on Middle Eastern oil.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "full_detail": "India's energy security is a critical component of its economy, and any disruption to global energy markets could have significant impacts. The Indian government is seeking to diversify its energy sources, including investing in renewable energy and increasing its imports of oil from non-Middle Eastern countries. However, the country's dependence on Middle Eastern oil remains a significant vulnerability, and the government is closely watching the situation in the region.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "Indian Nationals in the Gulf at Risk",
+      "detail": "Indian nationals living and working in the Gulf are at risk due to the escalating conflict, with potential attacks on US bases and other targets. The Indian government is advising its citizens to exercise caution and to avoid traveling to the region unless necessary. The government is also working to evacuate its citizens from the region, and is providing support to those affected by the conflict.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has advised its citizens to exercise caution when traveling to Iran, due to the ongoing conflict. Indian nationals living in Iran have been advised to stay indoors and avoid traveling to areas that may be targeted by the US or Israel. The Indian government has also established a hotline for its citizens to contact in case of an emergency.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fi.ndtvimg.com%2Fi%2F2017-09%2Fus-army-reuters_650x400_81504721306.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/us-gets-uk-approval-to-use-its-bases-to-strike-iran-sites-targeting-ships-11245184#publisher=newsstand",
+      "full_detail": "The Indian government is taking steps to protect its citizens in the Gulf, including advising them to exercise caution and to avoid traveling to the region unless necessary. The government is also working to evacuate its citizens from the region, and is providing support to those affected by the conflict. However, the situation remains volatile, and the government is closely watching the situation to ensure the safety of its citizens.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2F4738llms_kharg-island-_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-us-could-take-out-irans-kharg-island-any-time-white-house-11245203#publisher=newsstand",
       "source": "NDTV"
     },
     {
-      "headline": "Indian Oil Imports",
-      "detail": "The conflict has resulted in increased tensions in the region, which may impact Indian oil imports. India relies heavily on oil imports from the Middle East, and any disruption to these imports could have significant economic implications.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "The conflict has resulted in increased tensions in the region, which may impact Indian oil imports. India relies heavily on oil imports from the Middle East, and any disruption to these imports could have significant economic implications. The Indian government has been working to diversify its oil imports, but the country remains vulnerable to disruptions in the global oil market.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Diplomacy",
-      "detail": "India has been working to maintain good relations with both the US and Iran, while also promoting peace and stability in the region. The Indian government has called for a peaceful resolution to the conflict, and has offered to mediate talks between the US and Iran.",
+      "headline": "India's Diplomatic Efforts",
+      "detail": "India is engaging in diplomatic efforts to reduce tensions in the region, including talking to US, Israeli, and Iranian officials. The Indian government is seeking to promote a peaceful resolution to the conflict, and is working to reduce the risk of further escalation. The government is also seeking to protect its own interests in the region, including its energy security and the safety of its citizens.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been working to maintain good relations with both the US and Iran, while also promoting peace and stability in the region. The Indian government has called for a peaceful resolution to the conflict, and has offered to mediate talks between the US and Iran. India's diplomatic efforts have been influenced by its strategic interests in the region, including its desire to maintain good relations with both the US and Iran.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-targeted-locations-israel-kuwait-saudi-arabia",
+      "full_detail": "The Indian government is engaging in diplomatic efforts to reduce tensions in the region, including talking to US, Israeli, and Iranian officials. The government is seeking to promote a peaceful resolution to the conflict, and is working to reduce the risk of further escalation. The government is also seeking to protect its own interests in the region, including its energy security and the safety of its citizens. However, the situation remains complex, and the government is facing significant challenges in its diplomatic efforts.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
       "source": "Middle East Eye"
     },
     {
-      "headline": "Indian Economy",
-      "detail": "The conflict has resulted in increased economic uncertainty, which may impact the Indian economy. The Indian economy is heavily reliant on oil imports, and any disruption to these imports could have significant economic implications.",
+      "headline": "India's Economic Interests",
+      "detail": "India's economic interests are at risk due to the escalating conflict, including potential disruptions to trade and investment. The Indian government is seeking to protect its economic interests, including its trade relationships with countries in the region. The government is also seeking to reduce its dependence on Middle Eastern oil, and is investing in renewable energy and other alternative energy sources.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The conflict has resulted in increased economic uncertainty, which may impact the Indian economy. The Indian economy is heavily reliant on oil imports, and any disruption to these imports could have significant economic implications. The Indian government has been working to diversify its oil imports, but the country remains vulnerable to disruptions in the global oil market.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fkfob7n%2Farticle70766230.ece%2Falternates%2FLANDSCAPE_1200%2F2026-03-20T112759Z_2050564620_RC2A8KASQUTS_RTRMADP_3_IRAN-CRISIS-ISRAEL.JPG&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-world-tourism-sites-not-safe-for-israeli-us-officials/article70766005.ece",
-      "source": "The Hindu"
+      "full_detail": "India's economic interests are a critical component of its economy, and any disruption to global trade and investment could have significant impacts. The Indian government is seeking to protect its economic interests, including its trade relationships with countries in the region. The government is also seeking to reduce its dependence on Middle Eastern oil, and is investing in renewable energy and other alternative energy sources. However, the situation remains volatile, and the government is facing significant challenges in protecting its economic interests.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-and-uae-inch-closer-to-us-israeli-war-on-iran",
+      "source": "Middle East Eye"
     }
   ],
   "indiaSummary": ""
