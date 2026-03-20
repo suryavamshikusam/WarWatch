@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 22:20 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-20 23:50 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "US: Trump Says US Close to Meeting Objectives · 0 min ago",
-    "US: US Calls on Countries to Secure Strait of Hormuz · 0 min ago",
-    "Iran: Iran Threatens to Disrupt Oil Supplies · 0 min ago",
-    "Israel: Israel Supports US Efforts · 0 min ago",
-    "Other: Global Oil Prices Rise · 0 min ago"
+    "Iran: Iran Threatens Global Attacks · 0 min ago",
+    "US: US Deploys Warships and Marines · 0 min ago",
+    "Israel: Israel Intercepts Iranian Missiles · 0 min ago",
+    "Other: Global Oil Prices Rise · 0 min ago",
+    "Other: Dow Jones Index Falls · 0 min ago"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 21,
-    "lastUpdated": "2026-03-20 22:20 UTC",
+    "tension": "HIGH",
+    "updatesToday": 22,
+    "lastUpdated": "2026-03-20 23:50 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 50,
-      "lvl": "Medium",
-      "color": "var(--amber)"
+      "pct": 72,
+      "lvl": "High",
+      "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 42,
-      "lvl": "Medium",
+      "pct": 64,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
@@ -35,68 +35,51 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 30,
-      "lvl": "Moderate",
+      "pct": 52,
+      "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 38,
-      "lvl": "Moderate",
-      "color": "var(--amber)"
+      "pct": 60,
+      "lvl": "Elevated",
+      "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "Trump Says US Close to Meeting Objectives",
-      "summary": "President Trump stated that the US is getting close to meeting its objectives in the Iran war. He called on countries that use the Strait of Hormuz to guard and police it as necessary. The US has offered to help these countries in their efforts, but only if necessary. This development is significant as it indicates a potential escalation of the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Calls on Countries to Secure Strait of Hormuz",
-      "summary": "The US has called on countries that use the Strait of Hormuz to guard and police it as necessary. This is a critical shipping lane, and any disruption could have significant implications for global oil prices. The US has offered to help these countries in their efforts, but only if necessary. This development is significant as it indicates a potential escalation of the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Threatens to Disrupt Oil Supplies",
-      "summary": "Iran has threatened to disrupt oil supplies in the region if the US continues to escalate the conflict. This is a significant development, as Iran is a major oil producer and any disruption could have significant implications for global oil prices. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
+      "headline": "Iran Threatens Global Attacks",
+      "summary": "Iran has warned that it may widen its retaliatory strikes to target recreational and tourist locations around the world. This threat has raised concerns about the potential for attacks on civilian targets and has led to increased security measures in many countries. The US and its allies have condemned Iran's threat and have vowed to take all necessary measures to protect their citizens.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
+      "fullAnalysis": "Imagine you're on summer vacation with your family, and you're all excited to visit a beautiful beach or a famous theme park. But then, you hear on the news that a country called Iran is threatening to attack places like these all around the world. It's like someone is saying they might come to your favorite vacation spot and cause harm to you and your loved ones. This is what's happening right now, and it's making a lot of people very worried. The threat is real, and it's not just about Iran - it involves other countries like the US and Israel, which are trying to figure out how to keep everyone safe. The situation is complex, but it's essential to understand what's going on and how it might affect you and your family. As the news unfolds, it's crucial to stay informed and aware of the potential risks and consequences.\n\nThe country making these threats is Iran, which is a nation in the Middle East with a lot of oil and a powerful military. The specific group within Iran that's making these threats is the IRGC - Iran's elite Revolutionary Guard Corps, which is like a special forces unit that's very loyal to the country's leaders. Iran's motive is to respond to what they see as aggression from the US and Israel, which have been involved in a series of confrontations with Iran in recent months. Iran is hoping to deter these countries from taking further action against them, and they're trying to show that they can reach out and hurt their enemies even if they're far away. The US and Israel, on the other hand, are saying that Iran's threats are unacceptable and that they'll do whatever it takes to protect their citizens. This is a very tense situation, and it's not clear how it will all play out. The US has been working closely with its allies to develop a strategy to counter Iran's threats, while Israel has been strengthening its air defenses to prepare for potential attacks.\n\nThe backstory to this conflict is complex and involves a lot of history and tension between Iran, the US, and Israel. Over the past few months, there have been several incidents where Iran has clashed with the US and Israel, including a drone attack on Saudi oil fields and the shooting down of a US drone. These incidents have escalated the conflict, and now Iran is threatening to take its fight to the global stage. The US has been trying to put pressure on Iran through economic sanctions, which are like trade restrictions that make it hard for Iran to buy and sell things with other countries. Iran is feeling the pain of these sanctions, and they're lashing out in response. The situation has been building for weeks, with both sides taking provocative actions and making aggressive statements. The conflict has also been fueled by the US withdrawal from a nuclear deal with Iran, which has led to a significant increase in tensions between the two countries. As the conflict continues to escalate, it's essential to understand the historical context and the underlying issues that are driving the tensions.\n\nFor ordinary people, this conflict is already having a big impact. The threat of attacks on tourist locations is making a lot of people nervous about traveling, and some countries are even warning their citizens to avoid certain destinations. This could have a big impact on the tourism industry, which is a significant source of income for many countries. The conflict is also affecting global crude oil prices, which means that the cost of gasoline and other fuels could go up. This could have a ripple effect on the economy, making it more expensive for people to buy things and potentially even leading to job losses. For example, if oil prices go up, it could become more expensive for airlines to fly, which could lead to higher ticket prices and fewer flights. This could also affect the price of food and other goods that are transported by air or sea. The conflict is also affecting the stock market, with the Dow Jones index experiencing significant fluctuations in recent days.\n\nThe US and Israel are responding to Iran's threats by taking a strong stance and vowing to protect their citizens. The US has deployed additional warships and Marines to the region, which is a show of force that's meant to deter Iran from taking further action. Israel's air defenses have also intercepted a new wave of missiles launched by Iran, which is a sign that the conflict is escalating. The US and Israel are also working together to develop a strategy to counter Iran's threats, which could involve a range of options from diplomacy to military action. The US is also working with its allies to develop a unified response to the crisis, which could involve economic sanctions or other forms of pressure. The situation is highly volatile, and it's not clear what will happen next. The US and Israel are trying to balance their need to protect their citizens with the risk of escalating the conflict further. They're also working to build a coalition of countries that can support their efforts to counter Iran's threats.\n\nThe conflict is also having a significant impact on India, which has significant economic and strategic interests in the region. India is a major importer of oil from the Middle East, and any disruption to the supply of oil could have a big impact on the Indian economy. India also has a significant number of workers in the Gulf region, who could be affected by the conflict. Additionally, India has invested heavily in the Chabahar port in Iran, which is a strategic location that could be affected by the conflict. India's diplomacy is also being put to the test, as the country tries to navigate its relationships with both the US and Iran. India is trying to balance its need to maintain good relations with the US with its need to protect its economic and strategic interests in the region. The conflict is also affecting India's economy, with the rupee experiencing significant fluctuations in recent days. India's government is working to develop a strategy to mitigate the impact of the conflict on the economy and to protect the country's interests in the region.\n\nAs the situation continues to unfold, it's difficult to predict what will happen next. However, there are a few possible scenarios that could play out in the next 24-48 hours. One possibility is that Iran will carry out a limited attack on a tourist location, which could lead to a significant escalation of the conflict. Another possibility is that the US and Israel will launch a preemptive strike against Iran, which could also lead to a significant escalation. A third possibility is that the conflict will simmer down, and the parties will engage in diplomatic efforts to resolve their differences. Whatever happens, it's clear that the stakes are very high, and the consequences of a full-blown conflict could be catastrophic. The world is watching with bated breath as the situation unfolds, and it's essential to stay informed and aware of the potential risks and consequences. The conflict has the potential to affect not just the countries directly involved but also the global economy and stability. As the situation continues to evolve, it's crucial to understand the underlying issues and the potential consequences of the conflict. The world is at a critical juncture, and the next few days will be crucial in determining the course of the conflict.",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US Deploys Warships and Marines",
+      "summary": "The US has deployed additional warships and Marines to the Middle East in response to the escalating conflict. This deployment is aimed at deterring further Iranian aggression and protecting US interests in the region. The US has also announced that it will allow the sale of oil originating from Iran, which is expected to help stabilize global oil prices.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
@@ -104,123 +87,135 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "Israel",
       "time": "0 min ago",
-      "headline": "Israel Supports US Efforts",
-      "summary": "Israel has expressed support for US efforts to secure the Strait of Hormuz. This is a significant development, as Israel is a key player in the region and any escalation of the conflict could have significant implications for regional stability. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
+      "headline": "Israel Intercepts Iranian Missiles",
+      "summary": "Israel's air defenses have intercepted a new wave of missiles launched by Iran. This is the latest in a series of exchanges between Israel and Iran, with both sides trading blows in recent days. The situation remains volatile, with the potential for further escalation high.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
       "headline": "Global Oil Prices Rise",
-      "summary": "Global oil prices have risen in response to the escalating conflict between the US and Iran. This is a significant development, as any disruption to oil supplies could have significant implications for the global economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
+      "summary": "The conflict in the Middle East has led to a rise in global crude oil prices. This has had a knock-on effect on the global economy, with many countries feeling the impact of higher oil prices. The US has announced that it will allow the sale of oil originating from Iran, which is expected to help stabilize global oil prices.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Dow Jones Index Falls",
+      "summary": "The Dow Jones index has fallen in response to the escalating conflict in the Middle East. This has had a knock-on effect on the global economy, with many countries feeling the impact of the conflict. The situation remains volatile, with the potential for further escalation high.",
+      "whyTxt": "",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iran Warns of Further Attacks",
+      "summary": "Iran has warned that it will launch further attacks on US and Israeli targets if the conflict continues to escalate. This has raised concerns about the potential for further violence and has led to increased security measures in many countries. The US and its allies have condemned Iran's threat and have vowed to take all necessary measures to protect their citizens.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US-Iran Conflict Escalates",
-      "summary": "The conflict between the US and Iran has escalated, with both sides engaging in a war of words. This is a significant development, as any further escalation could have significant implications for regional stability and global oil prices. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane.",
+      "headline": "US Allows Sale of Iranian Oil",
+      "summary": "The US has announced that it will allow the sale of oil originating from Iran. This is expected to help stabilize global oil prices and reduce the impact of the conflict on the global economy. The move has been welcomed by many countries, which have been affected by the rise in oil prices.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-green",
-      "actor": "India",
-      "time": "0 min ago",
-      "headline": "India Watches Closely",
-      "summary": "India is watching the situation closely, as it is a major oil importer and any disruption to oil supplies could have significant implications for the Indian economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane. India has expressed concerns about the potential impact of the conflict on regional stability.",
-      "whyTxt": "",
-      "orgs": [
-        "India"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is taking a firm stance against Iran, calling on countries to take action to secure the Strait of Hormuz.",
-    "israel_stance": "Israel is supporting US efforts to secure the Strait of Hormuz.",
-    "iran_stance": "Iran is threatening to disrupt oil supplies in response to US actions."
+    "us_stance": "The US has taken a firm stance against Iranian aggression and has deployed additional warships and Marines to the region.",
+    "israel_stance": "Israel has been targeted by Iranian missiles and has responded with force, with the situation remaining volatile.",
+    "iran_stance": "Iran has threatened to launch further attacks on US and Israeli targets if the conflict continues to escalate."
   },
   "terms": [
     {
+      "term": "IDF",
+      "simple_explanation": "The Israel Defense Forces (IDF) is the military of the State of Israel. It is responsible for the defense of Israel and its citizens."
+    },
+    {
       "term": "Strait of Hormuz",
-      "simple_explanation": "The Strait of Hormuz is a critical shipping lane located between Iran and Oman. It is a vital waterway for international oil trade, with a significant portion of the world's oil passing through it."
+      "simple_explanation": "The Strait of Hormuz is a narrow waterway that connects the Persian Gulf to the Gulf of Oman. It is a critical shipping route for oil and other goods."
     },
     {
-      "term": "US-Iran conflict",
-      "simple_explanation": "The US-Iran conflict refers to the ongoing tensions and hostilities between the United States and Iran. The conflict has been escalating in recent months, with both sides engaging in a war of words and taking actions to secure their interests in the region."
+      "term": "Dow Jones index",
+      "simple_explanation": "The Dow Jones index is a stock market index that measures the performance of the US stock market. It is often used as a benchmark for the overall health of the US economy."
     },
     {
-      "term": "Oil prices",
-      "simple_explanation": "Oil prices refer to the cost of oil on the global market. Oil prices are influenced by a variety of factors, including supply and demand, geopolitical events, and global economic trends."
+      "term": "Crude oil prices",
+      "simple_explanation": "Crude oil prices refer to the cost of unrefined oil, which is used to make a variety of products, including gasoline and diesel fuel."
+    },
+    {
+      "term": "US Marines",
+      "simple_explanation": "The US Marines are a branch of the US military that specializes in ground combat and amphibious operations."
+    },
+    {
+      "term": "Warships",
+      "simple_explanation": "Warships are naval vessels that are designed for combat and are used by navies around the world to protect their countries' interests."
+    },
+    {
+      "term": "Missile defense systems",
+      "simple_explanation": "Missile defense systems are designed to detect and intercept incoming missiles, protecting people and infrastructure from attack."
     },
     {
       "term": "Global economy",
-      "simple_explanation": "The global economy refers to the worldwide system of economic activity, including the production, distribution, and exchange of goods and services. The global economy is influenced by a variety of factors, including trade, investment, and geopolitical events."
+      "simple_explanation": "The global economy refers to the worldwide system of trade and commerce that connects countries and industries around the world."
     },
     {
-      "term": "Regional stability",
-      "simple_explanation": "Regional stability refers to the level of peace and security in a particular region. Regional stability is influenced by a variety of factors, including political, economic, and social trends."
+      "term": "Escalation",
+      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict or situation."
     },
     {
-      "term": "War of words",
-      "simple_explanation": "A war of words refers to a situation in which two or more parties engage in a verbal conflict, using language and rhetoric to attack or defend their positions."
-    },
-    {
-      "term": "Shipping lane",
-      "simple_explanation": "A shipping lane is a designated route for ships to travel through. Shipping lanes are often located in areas with high volumes of maritime traffic, such as the Strait of Hormuz."
-    },
-    {
-      "term": "Geopolitical events",
-      "simple_explanation": "Geopolitical events refer to significant events or developments that have an impact on the global political landscape. Geopolitical events can include conflicts, elections, and changes in government policy."
-    },
-    {
-      "term": "International trade",
-      "simple_explanation": "International trade refers to the exchange of goods and services between countries. International trade is influenced by a variety of factors, including tariffs, trade agreements, and global economic trends."
-    },
-    {
-      "term": "Global oil trade",
-      "simple_explanation": "The global oil trade refers to the international market for oil, including the production, transportation, and sale of oil. The global oil trade is influenced by a variety of factors, including supply and demand, geopolitical events, and global economic trends."
+      "term": "Deterrence",
+      "simple_explanation": "Deterrence refers to the use of military power or other forms of coercion to prevent an adversary from taking a particular action."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 17:55 UTC",
-      "l": "HIGH",
-      "tone": "The recent cluster b"
-    },
     {
       "t": "2026-03-18 18:50 UTC",
       "l": "MEDIUM",
@@ -455,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 22:20 UTC",
       "l": "MEDIUM",
       "tone": "The US and Iran are "
+    },
+    {
+      "t": "2026-03-20 23:50 UTC",
+      "l": "HIGH",
+      "tone": "Iran's threat to tar"
     }
   ],
-  "execSummary": "The US-Iran conflict is escalating, with President Trump stating that the US is close to meeting its objectives. The conflict has significant implications for global oil prices and shipping lanes. India, a major oil importer, is closely watching the situation. The US has called on other countries to guard and police the Strait of Hormuz, a critical shipping lane.",
-  "totalReports": 88,
+  "execSummary": "The US-Israel-Iran conflict has escalated with Iran threatening to target recreational and tourist locations worldwide. The US has deployed additional warships and Marines to the area, while Israel's air defenses have intercepted a new wave of missiles launched by Iran. The conflict is affecting global crude oil prices and the Dow Jones index. The situation remains volatile, with all parties involved showing no signs of backing down.",
+  "totalReports": 89,
   "indiaImpact": [
     {
-      "headline": "India Watches Closely as US-Iran Conflict Escalates",
-      "detail": "India is watching the situation closely, as it is a major oil importer and any disruption to oil supplies could have significant implications for the Indian economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane. India has expressed concerns about the potential impact of the conflict on regional stability.",
-      "category": "Energy",
-      "significance": "MEDIUM",
-      "full_detail": "India is a major oil importer, and any disruption to oil supplies could have significant implications for the Indian economy. The US has called on countries to take action to secure the Strait of Hormuz, a critical shipping lane. India has expressed concerns about the potential impact of the conflict on regional stability. The Indian government has been in touch with other countries in the region, including the US, to discuss the situation and potential responses. India is also exploring alternative sources of oil, including domestic production and imports from other countries.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Nationals in Iran Advised to Exercise Caution",
-      "detail": "The Indian government has advised Indian nationals in Iran to exercise caution and avoid traveling to areas near the conflict zone. This is a precautionary measure, as the situation in the region is uncertain and could potentially escalate further.",
+      "headline": "Indian Nationals in the Middle East",
+      "detail": "There are many Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The conflict in the region has raised concerns about their safety and well-being. The Indian government has issued travel advisories and is working to evacuate its citizens from the affected areas.",
       "category": "Diaspora",
-      "significance": "LOW",
-      "full_detail": "The Indian government has advised Indian nationals in Iran to exercise caution and avoid traveling to areas near the conflict zone. This is a precautionary measure, as the situation in the region is uncertain and could potentially escalate further. The Indian government is also in touch with Indian nationals in the region, providing them with updates and advice on how to stay safe.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "source": "Middle East Eye"
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government has set up a special task force to monitor the situation and provide assistance to its citizens in the region. The task force is working closely with the Indian embassies and consulates in the affected countries to provide support and guidance to Indian nationals. The government has also issued a travel advisory, warning Indian citizens against traveling to the affected areas unless absolutely necessary.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "source": "LiveMint"
     },
     {
-      "headline": "India Seeks to Diversify Oil Imports",
-      "detail": "India is seeking to diversify its oil imports, exploring alternative sources of oil including domestic production and imports from other countries. This is a response to the potential disruption to oil supplies from the Middle East, and an effort to reduce India's dependence on any one region.",
+      "headline": "Impact on Indian Economy",
+      "detail": "The conflict in the Middle East has had a significant impact on the Indian economy, particularly in terms of oil prices. India is a major importer of oil, and the rise in global oil prices has led to an increase in the cost of fuel and other petroleum products. This has had a knock-on effect on the Indian economy, with many industries feeling the impact of higher oil prices.",
+      "category": "Economy",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government has taken steps to mitigate the impact of the conflict on the economy, including increasing the supply of oil and other petroleum products. The government has also announced plans to reduce its dependence on imported oil and to increase the use of alternative energy sources. However, the situation remains volatile, and the impact of the conflict on the Indian economy is likely to be felt for some time to come.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "source": "LiveMint"
+    },
+    {
+      "headline": "Indian Diplomatic Efforts",
+      "detail": "The Indian government has been actively engaged in diplomatic efforts to resolve the conflict in the Middle East. India has good relations with both the US and Iran, and has been working to facilitate dialogue and negotiation between the two countries. The Indian government has also been working with other countries in the region to promote peace and stability.",
+      "category": "Diplomacy",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian government has been working closely with the US and other countries to promote a peaceful resolution to the conflict. India has also been engaging with Iran and other countries in the region to promote dialogue and negotiation. The Indian government has emphasized the need for a peaceful and diplomatic solution to the conflict, and has offered to facilitate talks and negotiations between the parties involved.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "source": "LiveMint"
+    },
+    {
+      "headline": "Impact on Indian Energy Sector",
+      "detail": "The conflict in the Middle East has had a significant impact on the Indian energy sector, particularly in terms of oil prices. India is a major importer of oil, and the rise in global oil prices has led to an increase in the cost of fuel and other petroleum products. This has had a knock-on effect on the Indian energy sector, with many companies feeling the impact of higher oil prices.",
       "category": "Energy",
       "significance": "MEDIUM",
-      "full_detail": "India is seeking to diversify its oil imports, exploring alternative sources of oil including domestic production and imports from other countries. This is a response to the potential disruption to oil supplies from the Middle East, and an effort to reduce India's dependence on any one region. The Indian government is in talks with other countries, including the US, to discuss potential oil imports and cooperation on energy security.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Economy Could Be Impacted by Conflict",
-      "detail": "The Indian economy could be impacted by the conflict in the Middle East, particularly if oil prices rise significantly. This could have a range of effects, including higher inflation, reduced economic growth, and increased costs for Indian businesses and consumers.",
-      "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "The Indian economy could be impacted by the conflict in the Middle East, particularly if oil prices rise significantly. This could have a range of effects, including higher inflation, reduced economic growth, and increased costs for Indian businesses and consumers. The Indian government is monitoring the situation closely, and is exploring options to mitigate the potential impact on the economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-us-getting-close-meeting-objectives-iran-war",
-      "source": "Middle East Eye"
+      "full_detail": "The Indian government has taken steps to mitigate the impact of the conflict on the energy sector, including increasing the supply of oil and other petroleum products. The government has also announced plans to reduce its dependence on imported oil and to increase the use of alternative energy sources. However, the situation remains volatile, and the impact of the conflict on the Indian energy sector is likely to be felt for some time to come.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUSA-TRUMP--45_1774048684838_1774048735420.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/us-israel-iran-war-news-live-updates-march-21-strait-of-hormuz-crude-oil-price-dow-jones-dubai-gold-price-tehran-kuwait-11774047121158.html",
+      "source": "LiveMint"
     }
   ],
   "indiaSummary": ""
