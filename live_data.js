@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 18:37 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-20 19:53 UTC",
+  "escalationLevel": "CRITICAL",
   "alerts": [
-    "US: US Deploys USS Tripoli · 0 min ago",
-    "Other: Strait of Hormuz Closure · 0 min ago",
-    "US: US-Israel Alliance · 0 min ago",
-    "Iran: Iranian Aggression · 0 min ago",
-    "Other: Global Oil Prices · 0 min ago"
+    "Iran: Iran Targets Israel, Kuwait, Saudi Arabia · 0 min ago",
+    "US: US Gets UK Approval to Use Bases · 0 min ago",
+    "Iran: Iran Warns World Tourism Sites · 0 min ago",
+    "US: US President Trump's Stance · 0 min ago",
+    "Iran: Iran's Missile Program · 0 min ago"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-20 18:37 UTC",
-    "sourcesUsed": 1
+    "tension": "CRITICAL",
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-20 19:53 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 72,
-      "lvl": "High",
+      "pct": 90,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 64,
-      "lvl": "High",
+      "pct": 82,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
@@ -35,13 +35,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
+      "pct": 70,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 60,
+      "pct": 78,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -50,53 +50,36 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "0 min ago",
-      "headline": "US Deploys USS Tripoli",
-      "summary": "The USS Tripoli, an amphibious assault ship carrying more than 2,000 Marines, is set to enter the war zone in the northern Arabian Sea. The ship is expected to help reopen the Strait of Hormuz for international oil shipping. This development has significant implications for global oil prices and shipping. The USS Tripoli is scheduled to arrive in the region around March 22-23.",
+      "headline": "Iran Targets Israel, Kuwait, Saudi Arabia",
+      "summary": "Iran's Islamic Revolutionary Guard Corps has struck targets in Israel, Kuwait, and Saudi Arabia, including Tel Aviv, Acre, Haifa Bay, Kuwait's Ali al-Salem Air Base, and Saudi Arabia's Prince Sultan Air Base. The attacks have resulted in significant damage and casualties. This development is significant as it marks an escalation of the conflict and demonstrates Iran's ability to launch attacks on multiple fronts.",
       "whyTxt": "",
       "orgs": [
-        "US"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-targeted-locations-israel-kuwait-saudi-arabia",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Strait of Hormuz Closure",
-      "summary": "The Strait of Hormuz is a critical waterway for international oil shipping, with approximately 20% of the world's oil passing through it. The closure of the strait has significant implications for global oil prices and shipping. The US and its allies are working to reopen the strait and maintain freedom of navigation.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US-Israel Alliance",
-      "summary": "The US and Israel have a long-standing alliance, with the US providing significant military and economic support to Israel. The current conflict has strengthened this alliance, with the US and Israel working together to counter Iranian aggression.",
+      "headline": "US Gets UK Approval to Use Bases",
+      "summary": "The US has received approval from the UK to use its bases to strike Iran sites. This development is significant as it marks a significant escalation of the conflict and demonstrates the US's ability to launch attacks from multiple locations. The use of UK bases will provide the US with a strategic advantage in its campaign against Iran.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/us-gets-uk-approval-to-use-its-bases-to-strike-iran-sites-targeting-ships-11245184#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fi.ndtvimg.com%2Fi%2F2017-09%2Fus-army-reuters_650x400_81504721306.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -104,123 +87,131 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iranian Aggression",
-      "summary": "Iran has been accused of aggression in the region, including attacks on oil tankers and pipelines. The US and its allies have responded with military force, including airstrikes against Iranian targets.",
+      "headline": "Iran Warns World Tourism Sites",
+      "summary": "Iran has warned that world tourism sites are not safe for Israeli and US officials. This development is significant as it marks a significant escalation of the conflict and demonstrates Iran's ability to launch attacks on soft targets. The warning has resulted in increased security measures at tourism sites around the world.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-world-tourism-sites-not-safe-for-israeli-us-officials/article70766005.ece",
+      "sourceLabel": "The Hindu",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fkfob7n%2Farticle70766230.ece%2Falternates%2FLANDSCAPE_1200%2F2026-03-20T112759Z_2050564620_RC2A8KASQUTS_RTRMADP_3_IRAN-CRISIS-ISRAEL.JPG&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US President Trump's Stance",
+      "summary": "US President Donald Trump has been criticized for his handling of the conflict, with some accusing him of being overly aggressive. Trump has defended his stance, stating that he is committed to protecting US interests and allies. The president's stance has resulted in increased tensions with Iran and its allies.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iran's Missile Program",
+      "summary": "Iran has continued to develop its missile program, despite the conflict. The program has resulted in the development of advanced missiles capable of striking targets in Israel and other countries. The missile program has been a major point of contention between Iran and the US and its allies.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-world-tourism-sites-not-safe-for-israeli-us-officials/article70766005.ece",
+      "sourceLabel": "The Hindu",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fkfob7n%2Farticle70766230.ece%2Falternates%2FLANDSCAPE_1200%2F2026-03-20T112759Z_2050564620_RC2A8KASQUTS_RTRMADP_3_IRAN-CRISIS-ISRAEL.JPG&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US-Israel Alliance",
+      "summary": "The US and Israel have strengthened their alliance in response to the conflict. The alliance has resulted in increased cooperation between the two countries, including joint military operations. The alliance has been a major factor in the escalation of the conflict.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
-      "headline": "Global Oil Prices",
-      "summary": "The conflict in the Middle East has significant implications for global oil prices. The closure of the Strait of Hormuz has led to increased prices, with the potential for further increases if the situation escalates.",
+      "headline": "Global Response",
+      "summary": "The global community has responded to the conflict with a mix of condemnation and support. Some countries have condemned Iran's attacks, while others have expressed support for the US and Israel. The global response has been influenced by a range of factors, including geopolitical alliances and economic interests.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "Marine Expeditionary Unit",
-      "summary": "The 31st Marine Expeditionary Unit is a highly trained and equipped unit, capable of conducting a range of military operations. The unit is set to deploy to the Middle East aboard the USS Tripoli.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "Amphibious Assault Ship",
-      "summary": "The USS Tripoli is an amphibious assault ship, capable of carrying helicopters, tanks, and troops. The ship is highly versatile and can conduct a range of military operations.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is committed to maintaining freedom of navigation in the Strait of Hormuz and countering Iranian aggression.",
-    "israel_stance": "Israel is working closely with the US to counter Iranian aggression and maintain regional security.",
-    "iran_stance": "Iran is accused of aggression in the region, including attacks on oil tankers and pipelines, and has responded to US and Israeli military actions with further aggression."
+    "us_stance": "The US has taken a strong stance against Iran, with President Trump committing to protecting US interests and allies.",
+    "israel_stance": "Israel has been a key player in the conflict, with its military launching attacks against Iranian targets.",
+    "iran_stance": "Iran has taken a defiant stance, with its leaders warning that world tourism sites are not safe for Israeli and US officials."
   },
   "terms": [
     {
-      "term": "Amphibious Assault Ship",
-      "simple_explanation": "A type of warship that can carry helicopters, tanks, and troops, and is capable of conducting a range of military operations."
+      "term": "IRGC",
+      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of the Iranian military responsible for defending the country's Islamic system and promoting its interests abroad. It has been involved in various military operations, including the current conflict with the US and Israel."
     },
     {
-      "term": "Marine Expeditionary Unit",
-      "simple_explanation": "A highly trained and equipped unit, capable of conducting a range of military operations, including amphibious assaults and ground combat."
+      "term": "B-2 bomber",
+      "simple_explanation": "The B-2 bomber is a type of stealth bomber used by the US military. It is capable of carrying a range of weapons, including nuclear bombs, and is known for its advanced stealth technology."
     },
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A critical waterway for international oil shipping, located between Iran and Oman, and connecting the Persian Gulf to the Gulf of Oman."
+      "term": "Nowruz",
+      "simple_explanation": "Nowruz is the Persian New Year, celebrated on March 20-21. It is a significant holiday in Iran and other countries with Persian cultures, marking the beginning of spring and the new year."
     },
     {
-      "term": "Freedom of Navigation",
-      "simple_explanation": "The right of ships to pass through international waters, including the Strait of Hormuz, without interference or obstruction."
+      "term": "Ali al-Salem Air Base",
+      "simple_explanation": "The Ali al-Salem Air Base is a military airbase located in Kuwait. It has been used by the US and other countries for military operations in the region."
     },
     {
-      "term": "US-Israel Alliance",
-      "simple_explanation": "A long-standing alliance between the US and Israel, with the US providing significant military and economic support to Israel."
+      "term": "Prince Sultan Air Base",
+      "simple_explanation": "The Prince Sultan Air Base is a military airbase located in Saudi Arabia. It has been used by the US and other countries for military operations in the region."
     },
     {
-      "term": "Iranian Aggression",
-      "simple_explanation": "Iran's actions in the region, including attacks on oil tankers and pipelines, and support for militant groups, which are seen as aggressive and destabilizing."
+      "term": "Islamic Revolutionary Guard Corps",
+      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of the Iranian military responsible for defending the country's Islamic system and promoting its interests abroad."
     },
     {
-      "term": "Global Oil Prices",
-      "simple_explanation": "The prices of oil on the global market, which can be affected by a range of factors, including supply and demand, geopolitical events, and natural disasters."
+      "term": "US-Israel alliance",
+      "simple_explanation": "The US-Israel alliance refers to the close relationship between the US and Israel, based on shared strategic interests and values. The alliance has been a key factor in the escalation of the conflict."
     },
     {
-      "term": "31st Marine Expeditionary Unit",
-      "simple_explanation": "A specific unit of the US Marine Corps, which is highly trained and equipped, and is capable of conducting a range of military operations."
+      "term": "Stealth technology",
+      "simple_explanation": "Stealth technology refers to the use of materials and designs to reduce the visibility of an object or vehicle to radar and other detection systems. It is used in military aircraft, such as the B-2 bomber, to evade enemy defenses."
     },
     {
-      "term": "USS Tripoli",
-      "simple_explanation": "A US Navy amphibious assault ship, which is capable of carrying helicopters, tanks, and troops, and is highly versatile and can conduct a range of military operations."
-    },
-    {
-      "term": "Northern Arabian Sea",
-      "simple_explanation": "A region of the Arabian Sea, located north of the Gulf of Oman, and is an important location for international shipping and naval operations."
+      "term": "Geopolitical alliances",
+      "simple_explanation": "Geopolitical alliances refer to the relationships between countries based on shared strategic interests and values. These alliances can influence the actions of countries in international conflicts, such as the current US-Israel-Iran war."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 11:08 UTC",
-      "l": "HIGH",
-      "tone": "The killing of Iran'"
-    },
     {
       "t": "2026-03-18 13:12 UTC",
       "l": "MEDIUM",
@@ -455,50 +446,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 18:37 UTC",
       "l": "HIGH",
       "tone": "The deployment of th"
+    },
+    {
+      "t": "2026-03-20 19:53 UTC",
+      "l": "CRITICAL",
+      "tone": "The conflict has esc"
     }
   ],
-  "execSummary": "The US-Israel-Iran conflict is escalating with the deployment of the USS Tripoli to the Middle East. The ship is expected to help reopen the Strait of Hormuz for international oil shipping. This development has significant implications for global oil prices and shipping. The situation remains volatile, with multiple actors involved and various interests at stake.",
-  "totalReports": 83,
+  "execSummary": "The US-Israel-Iran war has escalated with Iran targeting locations in Israel, Kuwait, and Saudi Arabia. The US has received approval from the UK to use its bases to strike Iran sites. The conflict has resulted in the deaths of several top Iranian leaders and damage to its energy industries. The situation remains volatile with Iran warning that world tourism sites are not safe for Israeli and US officials.",
+  "totalReports": 84,
   "indiaImpact": [
     {
-      "headline": "Indian Oil Imports",
-      "detail": "India is a significant importer of oil, and the conflict in the Middle East has the potential to disrupt oil supplies and increase prices. The Indian government is closely monitoring the situation and is working to diversify its oil imports.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India is the third-largest consumer of oil in the world, and the conflict in the Middle East has the potential to disrupt oil supplies and increase prices. The Indian government is closely monitoring the situation and is working to diversify its oil imports. The government has also taken steps to increase domestic oil production and reduce dependence on imports.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "source": "LiveMint"
-    },
-    {
-      "headline": "Indian Diaspora",
-      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, and the conflict has the potential to affect their safety and well-being. The Indian government is working to evacuate Indian nationals from the region and provide support to those affected.",
+      "headline": "Indian Nationals in Iran",
+      "detail": "There are concerns about the safety of Indian nationals living in Iran, with the Indian government advising its citizens to exercise caution. The conflict has resulted in increased tensions in the region, and Indian nationals may be at risk of being caught in the crossfire.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "There are significant numbers of Indian nationals living and working in the Middle East, and the conflict has the potential to affect their safety and well-being. The Indian government is working to evacuate Indian nationals from the region and provide support to those affected. The government has also established a hotline for Indian nationals in the region to seek assistance and advice.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "source": "LiveMint"
+      "full_detail": "The Indian government has advised its citizens to exercise caution when traveling to Iran, due to the ongoing conflict. Indian nationals living in Iran have been advised to stay indoors and avoid traveling to areas that may be targeted by the US or Israel. The Indian government has also established a hotline for its citizens to contact in case of an emergency.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fi.ndtvimg.com%2Fi%2F2017-09%2Fus-army-reuters_650x400_81504721306.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/us-gets-uk-approval-to-use-its-bases-to-strike-iran-sites-targeting-ships-11245184#publisher=newsstand",
+      "source": "NDTV"
     },
     {
-      "headline": "Indian Economy",
-      "detail": "The conflict in the Middle East has the potential to affect the Indian economy, particularly in terms of oil prices and trade. The Indian government is closely monitoring the situation and is working to mitigate the impact of the conflict on the economy.",
-      "category": "Economy",
+      "headline": "Indian Oil Imports",
+      "detail": "The conflict has resulted in increased tensions in the region, which may impact Indian oil imports. India relies heavily on oil imports from the Middle East, and any disruption to these imports could have significant economic implications.",
+      "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has the potential to affect the Indian economy, particularly in terms of oil prices and trade. The Indian government is closely monitoring the situation and is working to mitigate the impact of the conflict on the economy. The government has also taken steps to increase domestic oil production and reduce dependence on imports, and is working to diversify its trade relationships to reduce dependence on the Middle East.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "source": "LiveMint"
+      "full_detail": "The conflict has resulted in increased tensions in the region, which may impact Indian oil imports. India relies heavily on oil imports from the Middle East, and any disruption to these imports could have significant economic implications. The Indian government has been working to diversify its oil imports, but the country remains vulnerable to disruptions in the global oil market.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fus-hegseth-florida-february-2026-miguel-rodriguez-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/american-crusade-domination-only-language-trumps-team",
+      "source": "Middle East Eye"
     },
     {
       "headline": "Indian Diplomacy",
-      "detail": "The Indian government is working to play a diplomatic role in the conflict, and has called for a peaceful resolution to the situation. The government has also offered to provide humanitarian assistance to those affected by the conflict.",
+      "detail": "India has been working to maintain good relations with both the US and Iran, while also promoting peace and stability in the region. The Indian government has called for a peaceful resolution to the conflict, and has offered to mediate talks between the US and Iran.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government is working to play a diplomatic role in the conflict, and has called for a peaceful resolution to the situation. The government has also offered to provide humanitarian assistance to those affected by the conflict. The Indian government has a long history of diplomatic engagement in the region, and is well-placed to play a constructive role in resolving the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FUS_Navy_1774014010667_1774014014270.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/us-news/can-strait-of-hormuz-reopen-as-us-navys-tripoli-with-2000-marines-heads-to-middle-east-amid-conflict-report-says-11774009006785.html",
-      "source": "LiveMint"
+      "full_detail": "The Indian government has been working to maintain good relations with both the US and Iran, while also promoting peace and stability in the region. The Indian government has called for a peaceful resolution to the conflict, and has offered to mediate talks between the US and Iran. India's diplomatic efforts have been influenced by its strategic interests in the region, including its desire to maintain good relations with both the US and Iran.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-it-targeted-locations-israel-kuwait-saudi-arabia",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "Indian Economy",
+      "detail": "The conflict has resulted in increased economic uncertainty, which may impact the Indian economy. The Indian economy is heavily reliant on oil imports, and any disruption to these imports could have significant economic implications.",
+      "category": "Economy",
+      "significance": "HIGH",
+      "full_detail": "The conflict has resulted in increased economic uncertainty, which may impact the Indian economy. The Indian economy is heavily reliant on oil imports, and any disruption to these imports could have significant economic implications. The Indian government has been working to diversify its oil imports, but the country remains vulnerable to disruptions in the global oil market.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fth-i.thgim.com%2Fpublic%2Fincoming%2Fkfob7n%2Farticle70766230.ece%2Falternates%2FLANDSCAPE_1200%2F2026-03-20T112759Z_2050564620_RC2A8KASQUTS_RTRMADP_3_IRAN-CRISIS-ISRAEL.JPG&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-world-tourism-sites-not-safe-for-israeli-us-officials/article70766005.ece",
+      "source": "The Hindu"
     }
   ],
   "indiaSummary": ""
