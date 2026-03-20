@@ -1,18 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 05:08 UTC",
+  "generatedAt": "2026-03-20 06:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Iranian Drones Launched Toward Israel · 0 min ago",
-    "Saudi Arabia: Saudi Officials Warn of Oil Price Hike · 0 min ago",
-    "Europe, Japan, Canada: Global Powers Pledge to Reopen Hormuz · 0 min ago",
-    "US, Israel: US-Israel Alliance Remains Strong · 0 min ago",
-    "Iran: Iranian Military Mobilization · 0 min ago"
+    "Israel: Israel Strikes Tehran · 0 min ago",
+    "Israel: Netanyahu Defends Strategy · 0 min ago",
+    "Iran: Iran Warns of Response · 0 min ago",
+    "US: US Involvement Increases · 0 min ago",
+    "Other: Global Gas Markets Disrupted · 0 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-03-20 05:08 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 4,
+    "lastUpdated": "2026-03-20 06:06 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,160 +50,172 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel Strikes Tehran",
+      "summary": "Israel has struck Tehran, with the Israeli military targeting key Iranian military and government installations. The strike is seen as a significant escalation of the conflict. The attack has sparked widespread condemnation and has raised fears of a wider regional conflict. The strike is also seen as a deliberate effort to destabilize the Iranian regime from within.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Netanyahu Defends Strategy",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu has defended Israel's strategy of targeting senior Iranian leadership, saying it is a deliberate effort to destabilize the regime from within. Netanyahu also dismissed rumors about his death as 'fake news'. The Israeli Prime Minister's comments come as the conflict with Iran continues to escalate. Netanyahu's strategy has sparked widespread debate and has raised questions about the effectiveness of the approach.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/world/benjamin-netanyahu-will-you-end-iran-war-if-donald-trump-asks-you-to-israeli-pm-responds-11773983312797.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIsraeli-Prime-Minister-Benjamin-Netanyahu-addresse_1773983456550_1773983464631.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iranian Drones Launched Toward Israel",
-      "summary": "Iranian state media reported that images and photos shared online show Iranian Shahed drones and missiles marked with slogans referencing Gaza and Palestinian figures, before being launched toward Israel as part of Operation True Promise 4. The images shared by Press TV included phrases such as For Gaza’s Journalists, for Al-Ahli Hospital, Abu Obaida’s voice will not be silenced and Sinwar’s path continues. This development has significant implications for the conflict, as it demonstrates Iran's willingness to support Palestinian causes and challenge Israeli military presence.",
+      "headline": "Iran Warns of Response",
+      "summary": "Iran has warned that it will respond with 'zero restraint' if its energy infrastructure is targeted again. The warning comes as the conflict with Israel continues to escalate. Iran has already struck key regional energy sites in retaliation for Israel's attack on the South Pars gasfield. The escalation has already begun to disrupt global gas markets.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
-      "fullAnalysis": "Imagine you're playing a game with your friends, and someone from another team starts throwing balls at you, trying to distract you and disrupt your game. That's kind of what's happening with the Iranian drones being launched toward Israel. Iran, a country in the Middle East, has sent drones, which are like remote-controlled airplanes, toward Israel, another country in the same region. These drones are marked with messages supporting Palestine, a region that has been at the center of a long-standing conflict. The drones are part of something called Operation True Promise 4, which is a military operation by Iran to show its support for the Palestinian cause. This is a significant development because it shows that Iran is willing to take action to support Palestine, and it could lead to further escalation in the conflict.\n\nThe actor involved in this development is Iran, a country with a complex history and a strong military. The IRGC, which stands for Iran's elite Revolutionary Guard Corps, is a powerful military force in Iran that plays a significant role in the country's defense and foreign policy. Iran's motive for launching these drones is to show its support for the Palestinian cause and to challenge Israel's military presence in the region. By doing so, Iran hopes to demonstrate its commitment to the Palestinian people and to put pressure on Israel to change its policies. Iran is responding to the ongoing conflict between Israel and Palestine, which has been marked by violence and instability. The Iranian government has been vocal about its support for Palestine, and this move is seen as a way to back up its words with action.\n\nThe backstory to this development is complex and involves a long history of tensions between Iran, Israel, and Palestine. Over the past few months, the conflict has escalated, with multiple countries getting involved and various stakeholders affected. The US, for example, has been a strong supporter of Israel, while Iran has been a key backer of Palestinian groups. The situation has been further complicated by the involvement of other countries, such as Saudi Arabia, which has its own interests in the region. The launch of Iranian drones toward Israel is just the latest development in a conflict that has been simmering for years. The conflict has its roots in the Israeli-Palestinian dispute, which has been marked by violence, occupation, and displacement. Iran's involvement has added a new layer of complexity to the conflict, making it even more challenging to resolve.\n\nThe launch of Iranian drones toward Israel has significant implications for ordinary people, particularly those living in the region. The conflict has already led to a rise in oil prices, which could affect people's daily lives, from the cost of fuel to the price of goods. The situation is also causing concern for people who travel to the region, as well as those who have family members or friends living there. The conflict could also have an impact on jobs, particularly in industries that rely on trade with the region. For example, Indian workers in the Gulf, who send remittances back home, could be affected if the conflict disrupts the economy. The situation is also causing anxiety for people who are concerned about the safety of their loved ones, particularly those who are living in areas that are close to the conflict zone. As the conflict escalates, it's likely that we'll see more disruption to daily life, from power outages to food shortages.\n\nThe opposing party, Israel, has responded to the launch of Iranian drones by condemning the move and vowing to defend itself. Israel has a strong military and is likely to take action to protect its territory and citizens. The Israeli government has also been in touch with its allies, including the US, to discuss the situation and potential responses. Israel has options, including retaliating against Iran or increasing its military presence in the region. However, the situation is delicate, and any escalation could lead to further violence and instability. Israel is also aware that the conflict has the potential to draw in other countries, which could lead to a wider war. As a result, Israel is likely to proceed with caution, while also taking steps to protect its interests and citizens.\n\nThe conflict has significant implications for India, which has its own interests in the region. India has investments in the Chabahar port in Iran, which is an important trade route. India also has a large number of workers in the Gulf, who send remittances back home. The conflict could disrupt the economy and affect Indian workers, as well as Indian businesses that trade with the region. India has been trying to navigate the situation carefully, maintaining good relations with both Iran and Israel. However, the launch of Iranian drones toward Israel has added a new layer of complexity to the situation, and India will need to be careful to avoid getting drawn into the conflict. India's diplomacy will be put to the test as it tries to balance its relationships with different countries in the region. The Indian government will also need to consider the potential impact on the Indian economy, particularly if the conflict leads to a rise in oil prices.\n\nThe situation is highly volatile, and it's difficult to predict what will happen next. However, there are a few possible scenarios that could play out in the next 24-48 hours. One possibility is that Israel will retaliate against Iran, which could lead to further escalation. Another possibility is that the US will get involved, either by providing military support to Israel or by trying to broker a peace deal. A third possibility is that the conflict will spread to other countries in the region, drawing in more actors and making the situation even more complex. As the situation unfolds, readers should watch for any statements from the US, Israel, or Iran, as well as any reports of violence or military action. The stakes are high, and the situation has the potential to affect not just the region but the entire world. The conflict could lead to a wider war, which would have devastating consequences for civilians, economies, and global stability. As a result, it's essential to follow the situation closely and to hope for a peaceful resolution to the conflict.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-journalists-iranian-drones-display-messages-referencing-palestine",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fpress%2520tv.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Saudi Arabia",
-      "time": "0 min ago",
-      "headline": "Saudi Officials Warn of Oil Price Hike",
-      "summary": "Saudi officials believe oil prices could rise as high as $180 per barrel if disruptions in the Strait of Hormuz persist through the end of April. Prices have been volatile since the war began, with Brent crude briefly nearing $119 per barrel before retreating. Saudi Arabia has continued exports via its Red Sea port of Yanbu, though analysts warn such facilities could become targets. This development has significant implications for the global economy, as a potential oil price hike could lead to increased costs for consumers and businesses.",
-      "whyTxt": "",
-      "orgs": [
-        "Saudi Arabia"
-      ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-officials-warn-oil-could-hit-180-amid-disruptions",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FSPAIN%2520-%2520OIL%2520-%2520PETROL%2520-%2520WAR%2520-%2520ECONOMY.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Europe, Japan, Canada",
-      "time": "0 min ago",
-      "headline": "Global Powers Pledge to Reopen Hormuz",
-      "summary": "Leading European nations, Japan and Canada said they were ready to support efforts to ensure safe passage through the Strait of Hormuz and to stabilise energy markets. According to a joint statement issued on Thursday, the countries condemned what they described as Iran’s actions disrupting commercial shipping and escalating tensions in the Gulf. In the statement, Britain, France, Germany, Italy, the Netherlands, Japan and Canada said, We condemn in the strongest terms recent attacks by Iran on unarmed commercial vessels in the Gulf, attacks on civilian infrastructure. This development has significant implications for the conflict, as it demonstrates the willingness of global powers to intervene and stabilize the region.",
-      "whyTxt": "",
-      "orgs": [
-        "Europe, Japan, Canada"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/europe-japan-canada-pledge-efforts-reopen-hormuz",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fhurmuz%2520taiwan.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "US, Israel",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "US-Israel Alliance Remains Strong",
-      "summary": "The US and Israel have reaffirmed their alliance in the face of the ongoing conflict with Iran. The US has provided significant military aid to Israel, and the two countries have coordinated their efforts to counter Iranian aggression. This development has significant implications for the conflict, as it demonstrates the commitment of the US and Israel to their alliance and their determination to challenge Iranian influence in the region.",
+      "headline": "US Involvement Increases",
+      "summary": "The US is moving to increase its involvement in the conflict, with the US military deploying additional troops to the region. The move is seen as a significant escalation of the conflict and has sparked widespread concern. The US involvement has raised questions about the potential for a wider regional conflict.",
       "whyTxt": "",
       "orgs": [
-        "US, Israel"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-journalists-iranian-drones-display-messages-referencing-palestine",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fpress%2520tv.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iranian Military Mobilization",
-      "summary": "Iran has mobilized its military in response to the ongoing conflict with Israel and the US. The Iranian military has been placed on high alert, and the country has begun to deploy its troops and equipment to the border with Iraq. This development has significant implications for the conflict, as it demonstrates Iran's willingness to escalate the situation and challenge the military presence of its adversaries.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-journalists-iranian-drones-display-messages-referencing-palestine",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fpress%2520tv.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
-      "actor": "Global Economy",
+      "actor": "Other",
       "time": "0 min ago",
-      "headline": "Global Economic Implications",
-      "summary": "The ongoing conflict has significant implications for the global economy, as it has led to disruptions in oil supplies and increased tensions in the region. The potential for a wider conflict has also led to increased volatility in financial markets, and the global economy is likely to be affected by the ongoing instability in the region. This development has significant implications for the conflict, as it demonstrates the potential for the conflict to have far-reaching consequences for the global economy.",
+      "headline": "Global Gas Markets Disrupted",
+      "summary": "The escalation of the conflict has already begun to disrupt global gas markets, with prices rising sharply. The disruption has sparked widespread concern and has raised questions about the potential for a wider regional conflict. The disruption has also raised concerns about the impact on the global economy.",
       "whyTxt": "",
       "orgs": [
-        "Global Economy"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-journalists-iranian-drones-display-messages-referencing-palestine",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fpress%2520tv.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel Prepares for Ground Invasion",
+      "summary": "Israel is preparing for a potential ground invasion of Iran, with the Israeli military mobilizing troops and equipment. The move is seen as a significant escalation of the conflict and has sparked widespread concern. The potential ground invasion has raised questions about the potential for a wider regional conflict.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iran Strikes Regional Energy Sites",
+      "summary": "Iran has struck key regional energy sites in retaliation for Israel's attack on the South Pars gasfield. The strike has sparked widespread concern and has raised questions about the potential for a wider regional conflict. The strike has also raised concerns about the impact on the global economy.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
-    "overall_tone": "VOLATILE",
-    "us_stance": "The US has reaffirmed its alliance with Israel and has provided significant military aid to the country, demonstrating its commitment to challenging Iranian aggression.",
-    "israel_stance": "Israel has reaffirmed its alliance with the US and has coordinated its efforts to counter Iranian aggression, demonstrating its determination to challenge Iranian influence in the region.",
-    "iran_stance": "Iran has mobilized its military and has launched drones toward Israel, demonstrating its willingness to escalate the situation and challenge the military presence of its adversaries."
+    "overall_tone": "ESCALATING",
+    "us_stance": "The US is increasing its involvement in the conflict, with the US military deploying additional troops to the region.",
+    "israel_stance": "Israel is preparing for a potential ground invasion of Iran, with the Israeli military mobilizing troops and equipment.",
+    "iran_stance": "Iran has warned that it will respond with 'zero restraint' if its energy infrastructure is targeted again."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "The Strait of Hormuz is a narrow waterway that connects the Persian Gulf to the Gulf of Oman, and it is a critical shipping route for oil exports from the Middle East. The strait is approximately 90 miles wide and is bordered by Iran and Oman."
+      "term": "South Pars gasfield",
+      "simple_explanation": "The South Pars gasfield is a large natural gas field located in the Persian Gulf, off the coast of Iran. It is one of the largest gas fields in the world and is a significant source of energy for the region."
     },
     {
-      "term": "Shahed drones",
-      "simple_explanation": "Shahed drones are a type of unmanned aerial vehicle (UAV) developed by Iran. They are capable of carrying missiles and have been used by Iran in various military operations, including the ongoing conflict with Israel."
+      "term": "Ground invasion",
+      "simple_explanation": "A ground invasion is a military operation in which troops are deployed on the ground to capture or occupy territory. In the context of the US-Israel-Iran conflict, a ground invasion would involve the deployment of troops to Iran to capture or occupy key installations or territory."
     },
     {
-      "term": "Operation True Promise 4",
-      "simple_explanation": "Operation True Promise 4 is a military operation launched by Iran in response to the ongoing conflict with Israel and the US. The operation involves the deployment of Iranian troops and equipment to the border with Iraq, as well as the launch of drones toward Israel."
+      "term": "Energy infrastructure",
+      "simple_explanation": "Energy infrastructure refers to the systems and facilities used to produce, transport, and distribute energy. This can include power plants, pipelines, and refineries."
     },
     {
-      "term": "Brent crude",
-      "simple_explanation": "Brent crude is a type of oil that is used as a benchmark for oil prices. It is a light crude oil that is extracted from the North Sea and is used to produce gasoline, diesel fuel, and other petroleum products."
+      "term": "Global gas markets",
+      "simple_explanation": "Global gas markets refer to the international trade in natural gas. The market is influenced by a variety of factors, including supply and demand, prices, and geopolitical events."
     },
     {
-      "term": "Red Sea port of Yanbu",
-      "simple_explanation": "The Red Sea port of Yanbu is a major oil export terminal located in Saudi Arabia. It is used by Saudi Arabia to export oil to countries in Asia and Europe, and it is an important facility for the global oil market."
+      "term": "Regional conflict",
+      "simple_explanation": "A regional conflict is a conflict that involves multiple countries or actors in a specific region. In the context of the US-Israel-Iran conflict, a regional conflict could involve other countries in the Middle East, such as Saudi Arabia or Iraq."
     },
     {
-      "term": "Gaza Strip",
-      "simple_explanation": "The Gaza Strip is a coastal region located on the eastern Mediterranean coast. It is a self-governing territory that is home to approximately 2 million Palestinians, and it has been the site of numerous conflicts between Israel and Palestinian militant groups."
+      "term": "US military deployment",
+      "simple_explanation": "US military deployment refers to the deployment of US military troops or equipment to a specific region or country. In the context of the US-Israel-Iran conflict, US military deployment could involve the deployment of troops to the Middle East to support Israel or to deter Iran."
     },
     {
-      "term": "Palestinian figures",
-      "simple_explanation": "Palestinian figures refer to prominent individuals who have played a significant role in the Palestinian nationalist movement. They include leaders such as Yasser Arafat, Mahmoud Abbas, and Ismail Haniyeh, as well as activists and militants who have been involved in the conflict with Israel."
+      "term": "Iranian regime",
+      "simple_explanation": "The Iranian regime refers to the government of Iran, which is an Islamic republic. The regime is led by the Supreme Leader, who has significant influence over the government and the military."
     },
     {
-      "term": "Al-Ahli Hospital",
-      "simple_explanation": "Al-Ahli Hospital is a medical facility located in the Gaza Strip. It has been the target of Israeli airstrikes in the past, and it has been a symbol of the humanitarian crisis in the Gaza Strip."
+      "term": "Israeli military strategy",
+      "simple_explanation": "The Israeli military strategy refers to the approach taken by the Israeli military to achieve its objectives. In the context of the US-Israel-Iran conflict, the Israeli military strategy could involve targeting Iranian military installations or personnel."
     },
     {
-      "term": "Abu Obaida",
-      "simple_explanation": "Abu Obaida is a Palestinian militant who was killed in an Israeli airstrike in the Gaza Strip. He was a member of the Islamic Jihad militant group, and his death has been widely condemned by Palestinian leaders and activists."
+      "term": "Zero restraint",
+      "simple_explanation": "Zero restraint refers to a situation in which there are no limits or constraints on a particular action or response. In the context of the US-Israel-Iran conflict, Iran's warning of a response with 'zero restraint' suggests that the country is prepared to take drastic action in response to any further attacks on its energy infrastructure."
     },
     {
-      "term": "Sinwar",
-      "simple_explanation": "Sinwar is a reference to Yahya Sinwar, a Palestinian militant who is the leader of the Islamic Jihad militant group in the Gaza Strip. He has been involved in numerous conflicts with Israel and has been a prominent figure in the Palestinian nationalist movement."
+      "term": "Nowruz",
+      "simple_explanation": "Nowruz is a traditional Persian New Year celebration that is observed in many countries, including Iran. The celebration typically takes place in March and is a significant cultural event in the region."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 15:37 UTC",
-      "l": "MEDIUM",
-      "tone": "The killing of a key"
-    },
     {
       "t": "2026-03-17 16:44 UTC",
       "l": "MEDIUM",
@@ -438,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 05:08 UTC",
       "l": "HIGH",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-20 06:06 UTC",
+      "l": "HIGH",
+      "tone": "The conflict has esc"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has led to significant disruptions in the Strait of Hormuz, with oil prices rising and global powers pledging to ensure safe passage. Iranian drones have been launched toward Israel with messages referencing Palestine, and Saudi officials have warned of potential oil price hikes. The conflict has also led to concerns about Indian nationals abroad and the impact on the Indian economy. The situation remains volatile, with multiple countries involved and various stakeholders affected.",
-  "totalReports": 70,
+  "execSummary": "The US-Israel-Iran war has escalated with Israel striking Tehran and Iran warning of a response with 'zero restraint'. The conflict is disrupting global gas markets and has sparked growing global concern over energy supplies. The US is moving to increase its involvement in the conflict. India's energy imports and diaspora community are at risk due to the escalating conflict.",
+  "totalReports": 71,
   "indiaImpact": [
     {
-      "headline": "Indian Nationals Abroad",
-      "detail": "The conflict has significant implications for Indian nationals living and working in the Middle East. Many Indians are employed in the oil and gas industry, and the conflict has led to increased tensions and instability in the region. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas affected by the conflict. The conflict has also led to concerns about the potential for Indian nationals to be caught in the crossfire, and the Indian government has been working to evacuate its citizens from the region.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "The conflict has significant implications for Indian nationals living and working in the Middle East. Many Indians are employed in the oil and gas industry, and the conflict has led to increased tensions and instability in the region. The Indian government has advised its citizens to exercise caution and to avoid traveling to areas affected by the conflict. The conflict has also led to concerns about the potential for Indian nationals to be caught in the crossfire, and the Indian government has been working to evacuate its citizens from the region. The Indian government has also been working to provide support to its citizens who have been affected by the conflict, including providing financial assistance and counseling services.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fpress%2520tv.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-journalists-iranian-drones-display-messages-referencing-palestine",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Oil Imports",
-      "detail": "The conflict has significant implications for India's oil imports. India is one of the largest importers of oil in the world, and the conflict has led to increased tensions and instability in the region. The Indian government has been working to diversify its oil imports and to reduce its dependence on oil from the Middle East. The conflict has also led to concerns about the potential for oil price hikes, and the Indian government has been working to mitigate the impact of these hikes on the Indian economy.",
+      "headline": "India's Energy Imports at Risk",
+      "detail": "India's energy imports are at risk due to the escalating conflict in the Middle East. The country relies heavily on imports to meet its energy needs, and any disruption to supply could have significant consequences for the Indian economy. The Indian government is closely monitoring the situation and is working to diversify its energy sources.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "The conflict has significant implications for India's oil imports. India is one of the largest importers of oil in the world, and the conflict has led to increased tensions and instability in the region. The Indian government has been working to diversify its oil imports and to reduce its dependence on oil from the Middle East. The conflict has also led to concerns about the potential for oil price hikes, and the Indian government has been working to mitigate the impact of these hikes on the Indian economy. The Indian government has also been working to promote the use of alternative energy sources, such as solar and wind power, in order to reduce the country's dependence on oil.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2FSPAIN%2520-%2520OIL%2520-%2520PETROL%2520-%2520WAR%2520-%2520ECONOMY.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-officials-warn-oil-could-hit-180-amid-disruptions",
-      "source": "Middle East Eye"
+      "full_detail": "India's energy imports are a critical component of the country's economy, and any disruption to supply could have significant consequences. The Indian government is working to diversify its energy sources, including increasing its use of renewable energy and reducing its reliance on imported fossil fuels. However, the country still relies heavily on imports to meet its energy needs, and the escalating conflict in the Middle East poses a significant risk to the Indian economy.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "source": "Indian Express"
     },
     {
-      "headline": "Indian Diplomatic Efforts",
-      "detail": "The Indian government has been working to promote diplomatic efforts to resolve the conflict. The Indian government has been in contact with leaders from the US, Israel, and Iran, and has been working to promote a peaceful resolution to the conflict. The Indian government has also been working to provide humanitarian assistance to those affected by the conflict, including providing food and medical aid to refugees and displaced persons.",
+      "headline": "Indian Diaspora Community at Risk",
+      "detail": "The Indian diaspora community in the Middle East is at risk due to the escalating conflict. Many Indians live and work in the region, and any disruption to the security situation could put them at risk. The Indian government is working to evacuate its citizens from the region and is providing support to those affected by the conflict.",
+      "category": "Diaspora",
+      "significance": "MEDIUM",
+      "full_detail": "The Indian diaspora community in the Middle East is a significant population, with many Indians living and working in the region. The escalating conflict poses a risk to the security and well-being of this community, and the Indian government is working to provide support and assistance to those affected. The government is also working to evacuate its citizens from the region and is providing guidance on how to stay safe during the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIsraeli-Prime-Minister-Benjamin-Netanyahu-addresse_1773983456550_1773983464631.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/benjamin-netanyahu-will-you-end-iran-war-if-donald-trump-asks-you-to-israeli-pm-responds-11773983312797.html",
+      "source": "LiveMint"
+    },
+    {
+      "headline": "India's Diplomatic Efforts",
+      "detail": "India is making diplomatic efforts to reduce tensions in the Middle East and to promote a peaceful resolution to the conflict. The Indian government is working with other countries in the region to promote dialogue and to find a peaceful solution to the conflict.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been working to promote diplomatic efforts to resolve the conflict. The Indian government has been in contact with leaders from the US, Israel, and Iran, and has been working to promote a peaceful resolution to the conflict. The Indian government has also been working to provide humanitarian assistance to those affected by the conflict, including providing food and medical aid to refugees and displaced persons. The Indian government has also been working to promote dialogue and negotiation between the parties involved in the conflict, and has been working to build support for a peaceful resolution to the conflict among the international community.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fhurmuz%2520taiwan.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/europe-japan-canada-pledge-efforts-reopen-hormuz",
-      "source": "Middle East Eye"
+      "full_detail": "India's diplomatic efforts are focused on promoting a peaceful resolution to the conflict and on reducing tensions in the region. The Indian government is working with other countries in the region to promote dialogue and to find a peaceful solution to the conflict. The government is also working to provide humanitarian assistance to those affected by the conflict and is providing support to refugees and displaced persons.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "source": "Indian Express"
     },
     {
-      "headline": "Indian Economic Impact",
-      "detail": "The conflict has significant implications for the Indian economy. The conflict has led to increased tensions and instability in the region, and has had a negative impact on trade and investment. The Indian government has been working to mitigate the impact of the conflict on the Indian economy, including by providing support to businesses and industries affected by the conflict.",
+      "headline": "India's Economic Interests",
+      "detail": "India's economic interests are at risk due to the escalating conflict in the Middle East. The country relies heavily on imports from the region, and any disruption to supply could have significant consequences for the Indian economy. The Indian government is working to diversify its trade relationships and to reduce its reliance on imports from the region.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The conflict has significant implications for the Indian economy. The conflict has led to increased tensions and instability in the region, and has had a negative impact on trade and investment. The Indian government has been working to mitigate the impact of the conflict on the Indian economy, including by providing support to businesses and industries affected by the conflict. The Indian government has also been working to promote economic diversification and to reduce the country's dependence on oil imports, in order to reduce the impact of the conflict on the Indian economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fpress%2520tv.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gazas-journalists-iranian-drones-display-messages-referencing-palestine",
-      "source": "Middle East Eye"
+      "full_detail": "India's economic interests are a critical component of the country's economy, and any disruption to supply could have significant consequences. The Indian government is working to diversify its trade relationships and to reduce its reliance on imports from the region. The government is also working to promote domestic industry and to increase its use of renewable energy, in order to reduce its reliance on imported fossil fuels.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
+      "source": "Indian Express"
     }
   ],
   "indiaSummary": ""
