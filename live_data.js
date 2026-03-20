@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 16:04 UTC",
-  "escalationLevel": "MEDIUM",
+  "generatedAt": "2026-03-20 17:01 UTC",
+  "escalationLevel": "CRITICAL",
   "alerts": [
-    "India: India Bans Film on Gaza · 0 min ago",
-    "US: US Supports Israel · 0 min ago",
-    "Iran: Iran Threatens Retaliation · 0 min ago",
-    "India: India's Energy Concerns · 0 min ago",
-    "Global Market: Global Oil Prices Surge · 0 min ago"
+    "Iran: IRGC Commander Praises Allies · 0 min ago",
+    "US: Trump Mulls Kharg Island Takeover · 0 min ago",
+    "Switzerland: Switzerland Halts Arms Exports to US · 0 min ago",
+    "Iran: Iran Warns of Zero Restraint · 0 min ago",
+    "US: US-Israel Rift Widens · 0 min ago"
   ],
   "heroStats": {
-    "tension": "MEDIUM",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-20 16:04 UTC",
-    "sourcesUsed": 17
+    "tension": "CRITICAL",
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-20 17:01 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 50,
-      "lvl": "Medium",
-      "color": "var(--amber)"
+      "pct": 90,
+      "lvl": "Critical",
+      "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 42,
-      "lvl": "Medium",
+      "pct": 82,
+      "lvl": "Critical",
       "color": "var(--red)"
     },
     {
@@ -35,34 +35,34 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 30,
-      "lvl": "Moderate",
+      "pct": 70,
+      "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 38,
-      "lvl": "Moderate",
-      "color": "var(--amber)"
+      "pct": 78,
+      "lvl": "Elevated",
+      "color": "var(--red)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-green",
-      "actor": "India",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "0 min ago",
-      "headline": "India Bans Film on Gaza",
-      "summary": "India's Central Board of Film Certification has blocked the release of the Oscar-nominated film 'The Voice of Hind Rajab' due to its potential threat to India's relationship with Israel. The film tells the story of a five-year-old Palestinian girl killed by Israeli soldiers in Gaza. The ban has sparked controversy and debate in India, with many criticizing the government's decision. The film's director, Kaouther Ben Hania, has expressed disappointment and frustration over the ban.",
+      "headline": "IRGC Commander Praises Allies",
+      "summary": "Iran's Islamic Revolutionary Guard Corps (IRGC) Quds Force commander Esmail Qaani has applauded the 'resistance front' of Tehran's regional allies for uniting against US and Israeli aggression. This is Qaani's first statement since Israel's killing of Iranian Supreme Leader Ayatollah Ali Khamenei on 28 February. The statement highlights the growing unity among Iran's regional allies in the face of US and Israeli aggression. The IRGC has been a key player in the conflict, providing military support to Iran's allies in the region.",
       "whyTxt": "",
       "orgs": [
-        "India"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -70,16 +70,33 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Supports Israel",
-      "summary": "The US has reaffirmed its support for Israel, with the US Secretary of State stating that the US will continue to stand by Israel in the face of threats from Iran. The US has also announced plans to increase military aid to Israel, which has sparked criticism from Iran and other countries in the region. The move is seen as an attempt to bolster Israel's defenses and deter potential attacks from Iran.",
+      "headline": "Trump Mulls Kharg Island Takeover",
+      "summary": "The Trump administration is considering occupying or blockading Iran's Kharg Island, a strategic location for Iran's oil exports. The move is seen as a significant escalation of the conflict, with potential implications for global energy security. The US has been seeking to disrupt Iran's oil exports, which are a crucial source of revenue for the country. The takeover of Kharg Island would give the US significant control over Iran's oil exports.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "sourceLabel": "CNN",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "Switzerland",
+      "time": "0 min ago",
+      "headline": "Switzerland Halts Arms Exports to US",
+      "summary": "Switzerland has suspended new approvals for arms exports to the United States amid the ongoing US-Israeli war on Iran, citing its long-standing policy of neutrality. The move is seen as a significant development, as Switzerland is a key supplier of arms to the US. The suspension of arms exports is likely to have implications for the US military's ability to sustain its operations in the region.",
+      "whyTxt": "",
+      "orgs": [
+        "Switzerland"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/switzerland-halts-arms-exports-us-over-iran-war-citing-neutrality",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fswiss-pres-and-eu-commission-pres-2026-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -87,33 +104,50 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Threatens Retaliation",
-      "summary": "Iran has threatened to retaliate against Israel and the US for their actions in the region. The Iranian government has stated that it will not hesitate to take action if its interests are threatened, and has warned of the consequences of any attack on its soil. The threat has sparked concern among regional and global powers, with many calling for calm and restraint.",
+      "headline": "Iran Warns of Zero Restraint",
+      "summary": "Iran has warned of 'zero restraint' as attacks spread across Gulf oil sites, including Kuwait. The warning is seen as a significant escalation of the conflict, with potential implications for global energy security. Iran has been seeking to disrupt the oil exports of its enemies, and the warning suggests that it may be willing to take more drastic action to achieve its goals.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-green",
-      "actor": "India",
+      "actorClass": "p-blue",
+      "actor": "US",
       "time": "0 min ago",
-      "headline": "India's Energy Concerns",
-      "summary": "India is concerned about the impact of the conflict on its energy sector, with the country being a major importer of oil from the region. The Indian government has stated that it is monitoring the situation closely and is working to diversify its energy sources to reduce its dependence on the region. The conflict has already led to a surge in global oil prices, which could have a significant impact on India's economy.",
+      "headline": "US-Israel Rift Widens",
+      "summary": "Differences have surfaced between the US and Israel over the South Pars strike, with the US reportedly seeking to limit the scope of the conflict. The rift is seen as a significant development, as the US and Israel have been key allies in the conflict. The differences between the two countries may have implications for the future of the conflict, and may potentially lead to a shift in the US's strategy.",
       "whyTxt": "",
       "orgs": [
-        "India"
+        "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "sourceLabel": "The Hindu",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-gray",
+      "actor": "NATO",
+      "time": "0 min ago",
+      "headline": "NATO Stays Out of War",
+      "summary": "NATO has stayed out of the war, despite the US's calls for support. The decision is seen as a significant development, as NATO's involvement could have significantly escalated the conflict. The US has been seeking to build a coalition to support its actions in the region, but NATO's decision to stay out of the war may limit its ability to do so.",
+      "whyTxt": "",
+      "orgs": [
+        "NATO"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -121,106 +155,67 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Global Market",
       "time": "0 min ago",
-      "headline": "Global Oil Prices Surge",
-      "summary": "The conflict has led to a surge in global oil prices, with the price of Brent crude oil rising by over 10% in the past week. The increase in oil prices could have a significant impact on the global economy, with many countries relying heavily on oil imports. The surge in oil prices has also led to concerns about inflation and economic growth.",
+      "headline": "Global Energy Crisis Looms",
+      "summary": "The conflict is having a significant impact on the global energy market, with oil prices rising sharply. The crisis is seen as a significant development, as it could have far-reaching implications for the global economy. The conflict has disrupted oil exports from the region, leading to a shortage of oil on the global market.",
       "whyTxt": "",
       "orgs": [
         "Global Market"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "sourceLabel": "Bloomberg",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US and Iran",
-      "time": "0 min ago",
-      "headline": "US-Iran Diplomacy",
-      "summary": "The US and Iran have engaged in diplomatic efforts to resolve the conflict, with the US Secretary of State meeting with the Iranian Foreign Minister to discuss a potential ceasefire. The talks have been seen as a positive development, with many hoping that a diplomatic solution can be found to the conflict. However, the talks have also been met with skepticism, with some questioning the willingness of both sides to compromise.",
-      "whyTxt": "",
-      "orgs": [
-        "US and Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "sourceLabel": "The New York Times",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "0 min ago",
-      "headline": "Israel's Military Build-up",
-      "summary": "Israel has announced plans to increase its military presence in the region, with the country's military chief stating that it is prepared to take action against any threats from Iran. The move has sparked concern among regional and global powers, with many warning of the dangers of escalation. The build-up has also led to concerns about the potential for a wider conflict in the region.",
-      "whyTxt": "",
-      "orgs": [
-        "Israel"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "sourceLabel": "Haaretz",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
+      "sourceLabel": "Indian Express",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has reaffirmed its support for Israel and has announced plans to increase military aid to the country.",
-    "israel_stance": "Israel has announced plans to increase its military presence in the region and has stated that it is prepared to take action against any threats from Iran.",
-    "iran_stance": "Iran has threatened to retaliate against Israel and the US for their actions in the region and has warned of the consequences of any attack on its soil."
+    "us_stance": "The US is seeking to escalate the conflict, with the Trump administration considering occupying or blockading Iran's Kharg Island.",
+    "israel_stance": "Israel is seeking to limit the scope of the conflict, with differences surfacing between the US and Israel over the South Pars strike.",
+    "iran_stance": "Iran is warning of 'zero restraint' as attacks spread across Gulf oil sites, including Kuwait."
   },
   "terms": [
     {
-      "term": "CBFC",
-      "simple_explanation": "The Central Board of Film Certification is a government agency responsible for regulating and certifying films in India. It ensures that films comply with Indian laws and regulations, and assigns ratings to films based on their content."
+      "term": "IRGC",
+      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of Iran's military that is responsible for the country's defense and security. It is a key player in the conflict, providing military support to Iran's allies in the region."
     },
     {
-      "term": "Brent crude oil",
-      "simple_explanation": "Brent crude oil is a type of oil that is used as a benchmark for oil prices. It is a type of light crude oil that is extracted from the North Sea and is used to produce a variety of petroleum products."
+      "term": "Quds Force",
+      "simple_explanation": "The Quds Force is a special forces unit of the IRGC that is responsible for carrying out clandestine operations and providing military support to Iran's allies in the region."
     },
     {
-      "term": "Diplomatic efforts",
-      "simple_explanation": "Diplomatic efforts refer to the attempts made by countries to resolve conflicts and disputes through negotiations and dialogue. These efforts can involve meetings between government officials, diplomats, and other representatives of the countries involved."
+      "term": "Kharg Island",
+      "simple_explanation": "Kharg Island is a strategic location for Iran's oil exports, and is seen as a key target for the US in the conflict."
     },
     {
-      "term": "Escalation",
-      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict or situation. In the context of the US-Israel-Iran conflict, escalation could involve an increase in military action, diplomatic tensions, or economic sanctions."
+      "term": "South Pars",
+      "simple_explanation": "The South Pars gas field is a large natural gas field located in the Persian Gulf, and is seen as a key target for the US and Israel in the conflict."
     },
     {
-      "term": "Global oil prices",
-      "simple_explanation": "Global oil prices refer to the price of oil on the global market. The price of oil is determined by a variety of factors, including supply and demand, geopolitical events, and economic conditions."
+      "term": "NATO",
+      "simple_explanation": "The North Atlantic Treaty Organization is a military alliance of North American and European countries that is seen as a key player in global security. It has stayed out of the conflict, despite the US's calls for support."
     },
     {
-      "term": "Inflation",
-      "simple_explanation": "Inflation refers to the rate at which the general level of prices for goods and services is rising. Inflation can be caused by a variety of factors, including an increase in the money supply, economic growth, and supply chain disruptions."
+      "term": "Neutrality",
+      "simple_explanation": "Neutrality refers to a country's policy of not taking sides in a conflict. Switzerland has cited its long-standing policy of neutrality as the reason for suspending new approvals for arms exports to the US."
     },
     {
-      "term": "Military aid",
-      "simple_explanation": "Military aid refers to the provision of military equipment, training, and other forms of support to a country or organization. The US has announced plans to increase military aid to Israel, which could include the provision of weapons, ammunition, and other military equipment."
+      "term": "Arms exports",
+      "simple_explanation": "Arms exports refer to the sale or transfer of weapons from one country to another. Switzerland has suspended new approvals for arms exports to the US amid the ongoing conflict."
     },
     {
-      "term": "Oscar-nominated film",
-      "simple_explanation": "An Oscar-nominated film is a film that has been nominated for an Academy Award. The film 'The Voice of Hind Rajab' has been nominated for an Oscar, which has brought attention to the film and its subject matter."
+      "term": "Energy security",
+      "simple_explanation": "Energy security refers to a country's ability to ensure a stable and reliable supply of energy. The conflict is having a significant impact on global energy security, with oil prices rising sharply."
     },
     {
-      "term": "Palestinian girl",
-      "simple_explanation": "A Palestinian girl refers to a girl who is a Palestinian, which is a person who is from Palestine or has Palestinian ancestry. The film 'The Voice of Hind Rajab' tells the story of a five-year-old Palestinian girl who was killed by Israeli soldiers in Gaza."
+      "term": "Global economy",
+      "simple_explanation": "The global economy refers to the worldwide system of economic activity. The conflict is having a significant impact on the global economy, with the potential for far-reaching implications."
     },
     {
-      "term": "US Secretary of State",
-      "simple_explanation": "The US Secretary of State is the head of the US Department of State, which is responsible for implementing US foreign policy. The Secretary of State is a key advisor to the President on foreign policy matters and plays a leading role in representing the US abroad."
+      "term": "Diaspora",
+      "simple_explanation": "Diaspora refers to a community of people who have been dispersed from their original homeland. The conflict is having a significant impact on the Indian diaspora in the region, with many Indians living and working in countries affected by the conflict."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 07:18 UTC",
-      "l": "MEDIUM",
-      "tone": "The conflict is spre"
-    },
     {
       "t": "2026-03-18 09:06 UTC",
       "l": "HIGH",
@@ -455,49 +450,54 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 16:04 UTC",
       "l": "MEDIUM",
       "tone": "The ban on the film "
+    },
+    {
+      "t": "2026-03-20 17:01 UTC",
+      "l": "CRITICAL",
+      "tone": "The conflict has esc"
     }
   ],
-  "execSummary": "The US-Israel-Iran war is escalating, with India's relationship with Israel being impacted by the ban on the film 'The Voice of Hind Rajab'. The film's release was blocked due to its potential threat to India's relationship with Israel. The situation is being closely monitored by Indian authorities, with potential implications for Indian nationals abroad and the country's energy sector. The conflict is also affecting global oil prices, with India being a major importer of oil.",
-  "totalReports": 80,
+  "execSummary": "The US-Israel-Iran war has entered a critical phase with escalating attacks on energy infrastructure, triggering a global crisis. The Trump administration is considering occupying or blockading Iran's Kharg Island, while differences with Israeli Prime Minister Benjamin Netanyahu have surfaced. Iran has warned of 'zero restraint' as attacks spread across Gulf oil sites. The conflict is having a significant impact on the global economy, including India's energy security and diaspora.",
+  "totalReports": 81,
   "indiaImpact": [
     {
-      "headline": "India's Energy Concerns",
-      "detail": "India is concerned about the impact of the conflict on its energy sector, with the country being a major importer of oil from the region. The Indian government has stated that it is monitoring the situation closely and is working to diversify its energy sources to reduce its dependence on the region. The conflict has already led to a surge in global oil prices, which could have a significant impact on India's economy.",
+      "headline": "India's Energy Security at Risk",
+      "detail": "The conflict is having a significant impact on India's energy security, with oil prices rising sharply. India is a major importer of oil, and the disruption to global oil supplies is likely to have significant implications for the country's economy. The Indian government has been seeking to diversify its energy sources, but the conflict has highlighted the country's vulnerability to disruptions in the global energy market.",
       "category": "Energy",
-      "significance": "MEDIUM",
-      "full_detail": "India's energy sector is heavily dependent on imports, with the country importing over 80% of its oil from the Middle East. The conflict in the region has led to a surge in global oil prices, which could have a significant impact on India's economy. The Indian government has stated that it is monitoring the situation closely and is working to diversify its energy sources to reduce its dependence on the region. The government has also announced plans to increase its investment in renewable energy, which could help to reduce the country's reliance on fossil fuels.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
+      "significance": "HIGH",
+      "full_detail": "The conflict is having a significant impact on India's energy security, with oil prices rising sharply. India is a major importer of oil, and the disruption to global oil supplies is likely to have significant implications for the country's economy. The Indian government has been seeking to diversify its energy sources, but the conflict has highlighted the country's vulnerability to disruptions in the global energy market. The government has been working to reduce its dependence on imported oil, but the conflict has shown that more needs to be done to ensure the country's energy security.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
       "source": "Middle East Eye"
     },
     {
-      "headline": "Indian Nationals in the Region",
-      "detail": "There are over 7 million Indian nationals living and working in the Middle East, with many of them in countries that are directly affected by the conflict. The Indian government has stated that it is working to ensure the safety and security of its citizens in the region, and has established a hotline for Indians to contact in case of an emergency. The government has also announced plans to evacuate Indians from the region if necessary.",
+      "headline": "Indian Diaspora Affected",
+      "detail": "The conflict is having a significant impact on the Indian diaspora in the region, with many Indians living and working in countries affected by the conflict. The Indian government has been working to evacuate its citizens from the affected areas, but the conflict has highlighted the vulnerability of the Indian diaspora to global conflicts.",
       "category": "Diaspora",
-      "significance": "HIGH",
-      "full_detail": "The Indian government has stated that it is working to ensure the safety and security of its citizens in the region, and has established a hotline for Indians to contact in case of an emergency. The government has also announced plans to evacuate Indians from the region if necessary. The Indian embassy in the region has also been working to provide assistance to Indians in the region, including providing emergency loans and other forms of support.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
-      "source": "Middle East Eye"
+      "significance": "MEDIUM",
+      "full_detail": "The conflict is having a significant impact on the Indian diaspora in the region, with many Indians living and working in countries affected by the conflict. The Indian government has been working to evacuate its citizens from the affected areas, but the conflict has highlighted the vulnerability of the Indian diaspora to global conflicts. The government has been working to provide support to its citizens in the affected areas, but more needs to be done to ensure their safety and well-being.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
+      "source": "Indian Express"
     },
     {
       "headline": "India's Diplomatic Efforts",
-      "detail": "India has been engaging in diplomatic efforts to resolve the conflict, with the Indian government stating that it is working to promote peace and stability in the region. The Indian government has also announced plans to host a meeting of regional leaders to discuss the conflict and potential solutions. The meeting is expected to take place in the next few weeks, and will include representatives from countries in the region, as well as from the US and other global powers.",
+      "detail": "India has been making diplomatic efforts to resolve the conflict, with the Indian government seeking to engage with all parties involved. The government has been working to promote a peaceful resolution to the conflict, and has been in touch with other countries in the region to coordinate its efforts.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has stated that it is working to promote peace and stability in the region, and has announced plans to host a meeting of regional leaders to discuss the conflict and potential solutions. The meeting is expected to take place in the next few weeks, and will include representatives from countries in the region, as well as from the US and other global powers. The meeting will provide a platform for countries to discuss the conflict and potential solutions, and will help to promote greater understanding and cooperation in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
+      "full_detail": "India has been making diplomatic efforts to resolve the conflict, with the Indian government seeking to engage with all parties involved. The government has been working to promote a peaceful resolution to the conflict, and has been in touch with other countries in the region to coordinate its efforts. The government has been seeking to play a constructive role in resolving the conflict, and has been working to build support for a peaceful resolution among other countries in the region.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fswiss-pres-and-eu-commission-pres-2026-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/switzerland-halts-arms-exports-us-over-iran-war-citing-neutrality",
       "source": "Middle East Eye"
     },
     {
       "headline": "India's Economic Interests",
-      "detail": "India has significant economic interests in the region, with the country being a major importer of oil and other goods from the Middle East. The conflict has already led to a surge in global oil prices, which could have a significant impact on India's economy. The Indian government has stated that it is working to diversify its energy sources and reduce its dependence on the region, but the conflict could still have a significant impact on the country's economy.",
+      "detail": "The conflict is having a significant impact on India's economic interests, with the disruption to global trade and commerce likely to have significant implications for the country's economy. India is a major trading nation, and the conflict has highlighted the country's vulnerability to disruptions in global trade.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "The conflict in the Middle East has already led to a surge in global oil prices, which could have a significant impact on India's economy. The Indian government has stated that it is working to diversify its energy sources and reduce its dependence on the region, but the conflict could still have a significant impact on the country's economy. The government has announced plans to increase its investment in renewable energy, which could help to reduce the country's reliance on fossil fuels and mitigate the impact of the conflict on the economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F000_73AZ4K6.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/india-bans-voice-of-hind-rajab-citing-threats-israel-relationship",
+      "full_detail": "The conflict is having a significant impact on India's economic interests, with the disruption to global trade and commerce likely to have significant implications for the country's economy. India is a major trading nation, and the conflict has highlighted the country's vulnerability to disruptions in global trade. The government has been working to diversify its trade relationships, but the conflict has shown that more needs to be done to ensure the country's economic security.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
       "source": "Middle East Eye"
     }
   ],
