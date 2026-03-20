@@ -1,17 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 06:06 UTC",
+  "generatedAt": "2026-03-20 07:55 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Israel: Israel Strikes Tehran · 0 min ago",
-    "Israel: Netanyahu Defends Strategy · 0 min ago",
-    "Iran: Iran Warns of Response · 0 min ago",
-    "US: US Involvement Increases · 0 min ago",
-    "Other: Global Gas Markets Disrupted · 0 min ago"
+    "Iran: Iran Warns of Zero Restraint · 0 min ago",
+    "Israel: Israel's Strike on South Pars · 0 min ago",
+    "US: US President Trump's Controversy · 0 min ago",
+    "Israel: Overwhelming Support for War in Israel · 0 min ago",
+    "Other: Global Oil Prices Surge · 0 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-20 06:06 UTC",
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-20 07:55 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,177 +50,172 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iran Warns of Zero Restraint",
+      "summary": "Iran has warned that it will show 'zero restraint' if its energy facilities are attacked again, following Israel's strike on the South Pars gasfield. This warning indicates a high level of tension and instability in the region. The warning was made after Tehran attacked energy sites across the Gulf, further escalating the conflict. The international community is watching the situation closely, with concerns over supply disruptions and global oil prices.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "Imagine you're playing a game with your friends, and someone suddenly knocks over the board, scattering all the pieces everywhere. That's kind of what's happening in the Middle East right now, where a conflict between countries is escalating and causing a lot of tension. Iran, a country in the region, has warned that it will show \"zero restraint\" if its energy facilities are attacked again, which means it will fight back with all its might. This warning came after Israel, another country in the region, launched a strike on Iran's South Pars gasfield, which is like a big factory that produces natural gas. The situation is very volatile, and it's making a lot of people nervous, including world leaders who are watching to see what happens next. The international community is concerned about the potential consequences of this conflict, including supply disruptions and rising global oil prices.\n\nThe specific actors involved in this conflict are Iran and Israel, two countries with a long history of tension. Iran is a country in the Middle East with a lot of oil and natural gas, and it's been under pressure from other countries, including the United States, to limit its nuclear program. Israel, on the other hand, is a country that's also in the Middle East, and it's been concerned about Iran's growing power and influence in the region. Israel's motive for launching the strike on Iran's gasfield was likely to weaken Iran's ability to produce energy and to send a message that it won't tolerate Iran's aggressive behavior. Iran, in response, has been attacking energy sites across the Gulf, which is a region that includes several countries that produce a lot of oil and natural gas. The IRGC, which stands for Iran's elite Revolutionary Guard Corps, is a powerful military force in Iran that's been involved in the conflict. The IRGC is like a special forces unit that's responsible for protecting Iran's interests and carrying out military operations.\n\nThe backstory to this conflict is complex and involves a lot of history and tension between Iran and other countries, including the United States and Israel. Over the past few months, there have been several incidents that have contributed to the escalation of the conflict, including the US withdrawing from a nuclear deal with Iran and imposing sanctions on the country. This has caused a lot of economic hardship for Iran, and it's made the country more aggressive in its behavior. There have also been several attacks on oil tankers and other energy facilities in the region, which have been blamed on Iran. All of these incidents have contributed to a sense of tension and instability in the region, and they've made it more likely that the conflict will escalate further. The US-Israel-Iran war has now entered its 21st day, and it's showing no signs of slowing down. The conflict has also sparked controversy in the US, with President Trump invoking the 1941 bombing of Pearl Harbour, which is a significant event in American history.\n\nThe conflict is having a big impact on ordinary people, particularly when it comes to prices and safety. With the surge in global oil and gas prices, people are paying more for fuel, which is affecting their daily lives. For example, commuters are having to pay more for gas to get to work, and families are having to budget more for heating and cooling their homes. The conflict is also affecting travel, as flights and other transportation are being disrupted. Additionally, the conflict is having an impact on jobs, particularly in industries that are related to energy production. Many people are worried about their safety, particularly in countries that are close to the conflict zone. The situation is very uncertain, and it's making a lot of people anxious about what might happen next. The conflict is also affecting the global economy, with many countries feeling the impact of rising oil prices and supply disruptions.\n\nThe opposing party, in this case Israel, has been responding to Iran's warnings with a mix of aggression and diplomacy. Israel has said that it will continue to defend itself against any threats from Iran, and it's been working with other countries, including the US, to build a coalition against Iran. At the same time, Israel has also been trying to de-escalate the conflict, with some leaders calling for a return to diplomacy and negotiation. However, the situation is very complex, and it's not clear what the best course of action is. Israel has a number of options, including continuing to launch strikes against Iran's energy facilities, or trying to negotiate a ceasefire. However, any move that Israel makes is likely to be met with a response from Iran, which could escalate the conflict further. The US has also been involved in the conflict, with President Trump tweeting about the situation and expressing support for Israel.\n\nThe conflict is having a significant impact on India, which is a major importer of oil and natural gas. With the surge in global oil prices, India is paying more for the energy it needs, which is affecting its economy. India also has a significant number of workers in the Gulf, who are being affected by the conflict. Many Indian workers are having to leave the region, which is disrupting their lives and causing uncertainty. India has also invested heavily in the Chabahar port in Iran, which is a major energy hub. The conflict is putting this investment at risk, and it's making it harder for India to achieve its economic goals. India's diplomacy is also being tested, as it tries to navigate the complex web of relationships between countries in the region. India has been calling for a peaceful resolution to the conflict, and it's been working with other countries to try to find a way out of the crisis.\n\nThe situation is very fluid, and it's hard to predict what will happen next. However, there are a few possible scenarios that could play out in the next 24-48 hours. One possibility is that the conflict will escalate further, with more attacks on energy facilities and a wider war breaking out. Another possibility is that there will be a ceasefire, with both sides agreeing to stop fighting and negotiate a peace. A third possibility is that the international community will get involved, with countries like the US, China, and Russia working together to try to find a solution. Whatever happens, the stakes are very high, and the consequences of the conflict could be severe. The world is watching with bated breath, hoping that a way can be found to resolve the conflict peacefully and prevent a wider war. The conflict has the potential to affect not just the countries involved, but the entire world, and it's up to leaders to find a way to resolve it before it's too late.",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "Israel",
       "time": "0 min ago",
-      "headline": "Israel Strikes Tehran",
-      "summary": "Israel has struck Tehran, with the Israeli military targeting key Iranian military and government installations. The strike is seen as a significant escalation of the conflict. The attack has sparked widespread condemnation and has raised fears of a wider regional conflict. The strike is also seen as a deliberate effort to destabilize the Iranian regime from within.",
+      "headline": "Israel's Strike on South Pars",
+      "summary": "Israel struck the South Pars gasfield, prompting a warning from Iran of 'zero restraint' if its energy facilities are attacked again. The strike was part of a series of attacks by Israel on Iranian energy facilities, which have been met with retaliation from Tehran. The conflict has sparked concerns over supply disruptions and global oil prices. The international community is watching the situation closely, with many calling for de-escalation.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+      "fullAnalysis": "Imagine you're playing a game with your friends, and someone suddenly knocks over the board, scattering all the pieces everywhere. That's kind of what happened when Israel struck the South Pars gasfield, which is like a huge energy factory that helps power homes and businesses. This gasfield is located in Iran, a country in the Middle East, and it's a really important part of their economy. The strike was like a big move in a game of chess, and now everyone is waiting to see what the next move will be. The situation is very tense, and many people are worried about what might happen next. The gasfield is a critical part of Iran's energy infrastructure, and the attack has raised concerns about the potential for supply disruptions and price increases.\n\nThe actor involved in this strike is Israel, a country in the Middle East that has a long history of conflict with its neighbors. Israel is a close ally of the United States, and it has a strong military that is capable of carrying out complex operations like this strike. The motive behind the strike is likely to disrupt Iran's energy production and put pressure on the government. Iran, on the other hand, is a country with a lot of oil and gas reserves, and it has been under pressure from the international community to limit its nuclear program. The IRGC — Iran's elite Revolutionary Guard Corps, which is like a special forces unit that reports directly to the country's leader — has been warning that if Iran's energy facilities are attacked again, there will be no holding back, or \"zero restraint\". This means that Iran is prepared to take drastic action if it feels threatened, and this has raised concerns about the potential for further escalation.\n\nThe conflict between Israel and Iran has been building for a long time, with both countries exchanging threats and accusations. In recent weeks, the tension has been escalating, with Israel carrying out a series of attacks on Iranian energy facilities. Iran has responded with retaliation, and the situation has been getting more and more volatile. The US has also been involved, with President Trump invoking the 1941 bombing of Pearl Harbour, which is a reference to a surprise attack by Japan on a US naval base during World War II. This has added to the sense of urgency and danger, and many people are worried about where this conflict is headed. The history between Israel and Iran is complex, with both countries having competing interests in the region. The conflict has been fueled by a combination of factors, including political, economic, and ideological differences.\n\nThe impact of this conflict on ordinary people is already being felt, with global oil and gas prices surging due to supply disruptions. This means that people may have to pay more for fuel, heating, and other essentials, which can be a real strain on family budgets. The conflict is also affecting travel, with some flights and shipping routes being disrupted. In addition, the uncertainty and instability in the region are making it harder for businesses to operate, which can lead to job losses and economic hardship. For example, Indian workers in the Gulf, who send remittances back to their families in India, may be affected by the conflict, as their jobs and livelihoods may be at risk. The conflict is also affecting the daily lives of people in the region, with many facing power outages, food shortages, and other challenges. The situation is very fluid, and it's hard to predict what will happen next, but one thing is certain: the conflict is having a real and immediate impact on people's lives.\n\nThe opposing party, Iran, has responded to the strike with a warning of \"zero restraint\" if its energy facilities are attacked again. This means that Iran is prepared to take drastic action, including possibly targeting Israeli or US interests in the region. Iran has a range of options, including launching missile strikes or supporting proxy forces in the region. The IRGC, which is a powerful and well-trained force, is likely to play a key role in any Iranian response. The situation is very tense, and there is a real risk of further escalation. Iran's response has been firm, but it's not clear what specific actions they will take. The international community is watching the situation closely, with many calling for de-escalation and a return to diplomacy. The US, in particular, has a key role to play in trying to calm the situation and prevent further conflict.\n\nThe conflict is also having a significant impact on India, which is a major importer of oil and gas from the region. The surge in global oil prices is likely to affect India's economy, making it more expensive to import the energy the country needs to power its growth. Indian workers in the Gulf, who send remittances back to their families in India, may also be affected by the conflict, as their jobs and livelihoods may be at risk. India has also invested heavily in the Chabahar port in Iran, which is a strategic location for trade and commerce. The conflict is making it harder for India to navigate its relationships with both the US and Iran, which are competing for influence in the region. India's diplomats are working hard to try to find a way to de-escalate the conflict and prevent further instability. The Indian government is also taking steps to mitigate the impact of the conflict on its economy, including diversifying its energy sources and promoting domestic production.\n\nAs the conflict continues to unfold, it's hard to predict what will happen next. However, there are a few possible scenarios that could play out in the next 24-48 hours. One possibility is that Iran will launch a retaliatory strike against Israeli or US interests in the region, which could lead to further escalation. Another possibility is that the international community will intervene to try to calm the situation and prevent further conflict. The US, in particular, has a key role to play in trying to broker a peace deal and prevent further instability. The stakes are very high, with the potential for the conflict to spread to other parts of the region and draw in other countries. The situation is very fluid, and it's hard to predict what will happen next, but one thing is certain: the conflict has the potential to have a major impact on global stability and security. The world is watching with bated breath as the situation continues to unfold, and the next few days will be critical in determining the course of the conflict.\n\nThe conflict between Israel and Iran is a complex and multifaceted issue, with deep historical and cultural roots. The situation is very tense, and the potential for further escalation is high. The international community is watching the situation closely, and many are calling for de-escalation and a return to diplomacy. The stakes are very high, with the potential for the conflict to spread to other parts of the region and draw in other countries. The situation is very fluid, and it's hard to predict what will happen next, but one thing is certain: the conflict has the potential to have a major impact on global stability and security. The world is waiting with bated breath to see what will happen next, and the next few days will be critical in determining the course of the conflict. The conflict is a reminder of the importance of diplomacy and dialogue in preventing conflict and promoting peace. The international community must work together to find a peaceful resolution to the conflict and prevent further instability in the region.",
+      "sourceUrl": "https://www.haaretz.com/israel-news/podcasts/2026-03-20/ty-article-podcast/will-the-iran-war-bring-netanyahu-a-triumph-at-the-polls/0000019d-06b1-df92-a9df-eff15cfd0000",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-06c5-d46f-affd-96df2c9f0001%2F28%2Fc4%2Fc9ccc00e4d219b74827cae9fad5b%2F339120.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-blue",
-      "actor": "Israel",
-      "time": "0 min ago",
-      "headline": "Netanyahu Defends Strategy",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu has defended Israel's strategy of targeting senior Iranian leadership, saying it is a deliberate effort to destabilize the regime from within. Netanyahu also dismissed rumors about his death as 'fake news'. The Israeli Prime Minister's comments come as the conflict with Iran continues to escalate. Netanyahu's strategy has sparked widespread debate and has raised questions about the effectiveness of the approach.",
-      "whyTxt": "",
-      "orgs": [
-        "Israel"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/world/benjamin-netanyahu-will-you-end-iran-war-if-donald-trump-asks-you-to-israeli-pm-responds-11773983312797.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIsraeli-Prime-Minister-Benjamin-Netanyahu-addresse_1773983456550_1773983464631.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Warns of Response",
-      "summary": "Iran has warned that it will respond with 'zero restraint' if its energy infrastructure is targeted again. The warning comes as the conflict with Israel continues to escalate. Iran has already struck key regional energy sites in retaliation for Israel's attack on the South Pars gasfield. The escalation has already begun to disrupt global gas markets.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Involvement Increases",
-      "summary": "The US is moving to increase its involvement in the conflict, with the US military deploying additional troops to the region. The move is seen as a significant escalation of the conflict and has sparked widespread concern. The US involvement has raised questions about the potential for a wider regional conflict.",
+      "headline": "US President Trump's Controversy",
+      "summary": "US President Donald Trump sparked controversy during a meeting with Japan's Prime Minister Sanae Takaichi by invoking the 1941 bombing of Pearl Harbour while defending the element of surprise in the Iran attack. The comment was seen as insensitive and sparked outrage among many. The controversy has highlighted the complexities of the conflict and the need for careful diplomacy. The international community is watching the situation closely, with many calling for de-escalation.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Global Gas Markets Disrupted",
-      "summary": "The escalation of the conflict has already begun to disrupt global gas markets, with prices rising sharply. The disruption has sparked widespread concern and has raised questions about the potential for a wider regional conflict. The disruption has also raised concerns about the impact on the global economy.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "Israel",
       "time": "0 min ago",
-      "headline": "Israel Prepares for Ground Invasion",
-      "summary": "Israel is preparing for a potential ground invasion of Iran, with the Israeli military mobilizing troops and equipment. The move is seen as a significant escalation of the conflict and has sparked widespread concern. The potential ground invasion has raised questions about the potential for a wider regional conflict.",
+      "headline": "Overwhelming Support for War in Israel",
+      "summary": "The war has received overwhelming support among Israeli Jews, with over 92% backing the war effort. The support is seen as a significant boost to Prime Minister Benjamin Netanyahu's coalition, although it is unclear if it will translate to a triumph at the polls. The war has sparked a sense of national unity in Israel, with many seeing it as a necessary response to Iranian aggression. However, the conflict has also sparked concerns over the humanitarian impact and the need for a peaceful resolution.",
       "whyTxt": "",
       "orgs": [
         "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Haaretz",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-06c5-d46f-affd-96df2c9f0001%2F28%2Fc4%2Fc9ccc00e4d219b74827cae9fad5b%2F339120.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "0 min ago",
+      "headline": "Global Oil Prices Surge",
+      "summary": "Global oil and gas prices have surged due to supply disruptions caused by the conflict. The surge has sparked concerns over the economic impact of the war, with many countries relying on oil imports from the region. The international community is watching the situation closely, with many calling for de-escalation and a peaceful resolution. The conflict has highlighted the need for diversification of energy sources and the development of alternative energy technologies.",
+      "whyTxt": "",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Strikes Regional Energy Sites",
-      "summary": "Iran has struck key regional energy sites in retaliation for Israel's attack on the South Pars gasfield. The strike has sparked widespread concern and has raised questions about the potential for a wider regional conflict. The strike has also raised concerns about the impact on the global economy.",
+      "headline": "Iran's Retaliation Against Energy Sites",
+      "summary": "Iran has retaliated against energy sites across the Gulf, following Israel's strike on the South Pars gasfield. The retaliation has sparked concerns over supply disruptions and global oil prices. The conflict has highlighted the need for careful diplomacy and a peaceful resolution. The international community is watching the situation closely, with many calling for de-escalation.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US-Israel Cooperation",
+      "summary": "The US and Israel have been cooperating closely in the conflict, with the US providing military support to Israel. The cooperation has sparked concerns over the role of the US in the conflict and the potential for further escalation. The international community is watching the situation closely, with many calling for de-escalation and a peaceful resolution.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is increasing its involvement in the conflict, with the US military deploying additional troops to the region.",
-    "israel_stance": "Israel is preparing for a potential ground invasion of Iran, with the Israeli military mobilizing troops and equipment.",
-    "iran_stance": "Iran has warned that it will respond with 'zero restraint' if its energy infrastructure is targeted again."
+    "us_stance": "The US has been providing military support to Israel and has defended its actions in the conflict, while also calling for de-escalation and a peaceful resolution.",
+    "israel_stance": "Israel has been striking Iranian energy facilities and has received overwhelming support for the war effort from its citizens, with over 92% backing the war.",
+    "iran_stance": "Iran has warned of 'zero restraint' if its energy facilities are attacked again and has retaliated against energy sites across the Gulf, sparking concerns over supply disruptions and global oil prices."
   },
   "terms": [
     {
       "term": "South Pars gasfield",
-      "simple_explanation": "The South Pars gasfield is a large natural gas field located in the Persian Gulf, off the coast of Iran. It is one of the largest gas fields in the world and is a significant source of energy for the region."
+      "simple_explanation": "The South Pars gasfield is a large natural gas field located in the Persian Gulf, off the coast of Iran. It is one of the largest gas fields in the world and is a significant source of energy for Iran."
     },
     {
-      "term": "Ground invasion",
-      "simple_explanation": "A ground invasion is a military operation in which troops are deployed on the ground to capture or occupy territory. In the context of the US-Israel-Iran conflict, a ground invasion would involve the deployment of troops to Iran to capture or occupy key installations or territory."
+      "term": "Pearl Harbour",
+      "simple_explanation": "Pearl Harbour is a US naval base in Hawaii that was attacked by Japan in 1941, drawing the US into World War II. The attack is often cited as an example of a surprise military strike."
     },
     {
-      "term": "Energy infrastructure",
-      "simple_explanation": "Energy infrastructure refers to the systems and facilities used to produce, transport, and distribute energy. This can include power plants, pipelines, and refineries."
+      "term": "Element of surprise",
+      "simple_explanation": "The element of surprise refers to the tactic of launching a military attack without warning, in order to catch the enemy off guard and gain an advantage. This tactic was used by Israel in its strike on the South Pars gasfield."
     },
     {
-      "term": "Global gas markets",
-      "simple_explanation": "Global gas markets refer to the international trade in natural gas. The market is influenced by a variety of factors, including supply and demand, prices, and geopolitical events."
+      "term": "Supply disruptions",
+      "simple_explanation": "Supply disruptions refer to the interruption of the flow of goods or services, in this case, oil and gas. The conflict has caused supply disruptions, leading to a surge in global oil and gas prices."
     },
     {
-      "term": "Regional conflict",
-      "simple_explanation": "A regional conflict is a conflict that involves multiple countries or actors in a specific region. In the context of the US-Israel-Iran conflict, a regional conflict could involve other countries in the Middle East, such as Saudi Arabia or Iraq."
+      "term": "Global oil prices",
+      "simple_explanation": "Global oil prices refer to the price of oil on the international market. The conflict has caused a surge in global oil prices, due to supply disruptions and concerns over the stability of the region."
     },
     {
-      "term": "US military deployment",
-      "simple_explanation": "US military deployment refers to the deployment of US military troops or equipment to a specific region or country. In the context of the US-Israel-Iran conflict, US military deployment could involve the deployment of troops to the Middle East to support Israel or to deter Iran."
+      "term": "Diplomacy",
+      "simple_explanation": "Diplomacy refers to the practice of conducting negotiations and discussions between nations, in order to resolve conflicts and achieve peaceful solutions. The conflict has highlighted the need for careful diplomacy and a peaceful resolution."
     },
     {
-      "term": "Iranian regime",
-      "simple_explanation": "The Iranian regime refers to the government of Iran, which is an Islamic republic. The regime is led by the Supreme Leader, who has significant influence over the government and the military."
+      "term": "De-escalation",
+      "simple_explanation": "De-escalation refers to the process of reducing the intensity of a conflict, in order to prevent further escalation and achieve a peaceful resolution. The international community is calling for de-escalation in the conflict."
     },
     {
-      "term": "Israeli military strategy",
-      "simple_explanation": "The Israeli military strategy refers to the approach taken by the Israeli military to achieve its objectives. In the context of the US-Israel-Iran conflict, the Israeli military strategy could involve targeting Iranian military installations or personnel."
+      "term": "Humanitarian impact",
+      "simple_explanation": "The humanitarian impact refers to the effects of a conflict on civilians and non-combatants. The conflict has sparked concerns over the humanitarian impact, with many calling for a peaceful resolution and an end to the violence."
     },
     {
-      "term": "Zero restraint",
-      "simple_explanation": "Zero restraint refers to a situation in which there are no limits or constraints on a particular action or response. In the context of the US-Israel-Iran conflict, Iran's warning of a response with 'zero restraint' suggests that the country is prepared to take drastic action in response to any further attacks on its energy infrastructure."
+      "term": "National unity",
+      "simple_explanation": "National unity refers to the sense of shared identity and purpose among a nation's citizens. The war has sparked a sense of national unity in Israel, with many seeing it as a necessary response to Iranian aggression."
     },
     {
-      "term": "Nowruz",
-      "simple_explanation": "Nowruz is a traditional Persian New Year celebration that is observed in many countries, including Iran. The celebration typically takes place in March and is a significant cultural event in the region."
+      "term": "Alternative energy",
+      "simple_explanation": "Alternative energy refers to energy sources that are not based on fossil fuels, such as solar, wind, and hydro power. The conflict has highlighted the need for diversification of energy sources and the development of alternative energy technologies."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 16:44 UTC",
-      "l": "MEDIUM",
-      "tone": "The exit of a top US"
-    },
     {
       "t": "2026-03-17 17:43 UTC",
       "l": "LOW",
@@ -455,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 06:06 UTC",
       "l": "HIGH",
       "tone": "The conflict has esc"
-    }
-  ],
-  "execSummary": "The US-Israel-Iran war has escalated with Israel striking Tehran and Iran warning of a response with 'zero restraint'. The conflict is disrupting global gas markets and has sparked growing global concern over energy supplies. The US is moving to increase its involvement in the conflict. India's energy imports and diaspora community are at risk due to the escalating conflict.",
-  "totalReports": 71,
-  "indiaImpact": [
-    {
-      "headline": "India's Energy Imports at Risk",
-      "detail": "India's energy imports are at risk due to the escalating conflict in the Middle East. The country relies heavily on imports to meet its energy needs, and any disruption to supply could have significant consequences for the Indian economy. The Indian government is closely monitoring the situation and is working to diversify its energy sources.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India's energy imports are a critical component of the country's economy, and any disruption to supply could have significant consequences. The Indian government is working to diversify its energy sources, including increasing its use of renewable energy and reducing its reliance on imported fossil fuels. However, the country still relies heavily on imports to meet its energy needs, and the escalating conflict in the Middle East poses a significant risk to the Indian economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "source": "Indian Express"
     },
     {
-      "headline": "Indian Diaspora Community at Risk",
-      "detail": "The Indian diaspora community in the Middle East is at risk due to the escalating conflict. Many Indians live and work in the region, and any disruption to the security situation could put them at risk. The Indian government is working to evacuate its citizens from the region and is providing support to those affected by the conflict.",
+      "t": "2026-03-20 07:55 UTC",
+      "l": "HIGH",
+      "tone": "The conflict has esc"
+    }
+  ],
+  "execSummary": "The US-Israel-Iran war has entered its 21st day, with Iran warning of 'zero restraint' if its energy facilities are attacked again. Global oil and gas prices have surged due to supply disruptions. The conflict has also sparked controversy in the US, with President Trump invoking the 1941 bombing of Pearl Harbour. The war has received overwhelming support among Israeli Jews, with over 92% backing the war effort.",
+  "totalReports": 72,
+  "indiaImpact": [
+    {
+      "headline": "India's Energy Security at Risk",
+      "detail": "India's energy security is at risk due to the conflict, as the country relies heavily on oil imports from the region. The surge in global oil prices has sparked concerns over the economic impact of the war on India. The Indian government will need to carefully navigate the situation to ensure the country's energy security.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "full_detail": "India is one of the largest importers of oil in the world and relies heavily on the Middle East for its energy needs. The conflict has sparked concerns over the stability of the region and the potential for supply disruptions. The Indian government will need to diversify its energy sources and develop alternative energy technologies to reduce its reliance on imported oil. The conflict has also highlighted the need for India to play a more active role in regional diplomacy to ensure the country's energy security.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "source": "Al Jazeera"
+    },
+    {
+      "headline": "Indian Nationals in the Region",
+      "detail": "There are many Indian nationals living and working in the region, and the conflict has sparked concerns over their safety. The Indian government will need to take steps to ensure the safety and security of its citizens in the region. The conflict has highlighted the need for India to have a comprehensive evacuation plan in place for its citizens in the region.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian diaspora community in the Middle East is a significant population, with many Indians living and working in the region. The escalating conflict poses a risk to the security and well-being of this community, and the Indian government is working to provide support and assistance to those affected. The government is also working to evacuate its citizens from the region and is providing guidance on how to stay safe during the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIsraeli-Prime-Minister-Benjamin-Netanyahu-addresse_1773983456550_1773983464631.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/world/benjamin-netanyahu-will-you-end-iran-war-if-donald-trump-asks-you-to-israeli-pm-responds-11773983312797.html",
-      "source": "LiveMint"
+      "full_detail": "There are many Indian nationals living and working in the Middle East, and the conflict has sparked concerns over their safety. The Indian government will need to take steps to ensure the safety and security of its citizens in the region, including providing emergency assistance and evacuation services. The conflict has highlighted the need for India to have a comprehensive evacuation plan in place for its citizens in the region, as well as to provide support to those affected by the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimg.haarets.co.il%2Fbs%2F0000019d-06c5-d46f-affd-96df2c9f0001%2F28%2Fc4%2Fc9ccc00e4d219b74827cae9fad5b%2F339120.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.haaretz.com/israel-news/podcasts/2026-03-20/ty-article-podcast/will-the-iran-war-bring-netanyahu-a-triumph-at-the-polls/0000019d-06b1-df92-a9df-eff15cfd0000",
+      "source": "Haaretz"
     },
     {
       "headline": "India's Diplomatic Efforts",
-      "detail": "India is making diplomatic efforts to reduce tensions in the Middle East and to promote a peaceful resolution to the conflict. The Indian government is working with other countries in the region to promote dialogue and to find a peaceful solution to the conflict.",
+      "detail": "India has been making diplomatic efforts to resolve the conflict, including calling for de-escalation and a peaceful resolution. The Indian government has also been in touch with other nations in the region, including the US, Israel, and Iran, to urge restraint and diplomacy. The conflict has highlighted the need for India to play a more active role in regional diplomacy to ensure the country's energy security and the safety of its citizens in the region.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India's diplomatic efforts are focused on promoting a peaceful resolution to the conflict and on reducing tensions in the region. The Indian government is working with other countries in the region to promote dialogue and to find a peaceful solution to the conflict. The government is also working to provide humanitarian assistance to those affected by the conflict and is providing support to refugees and displaced persons.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "source": "Indian Express"
+      "full_detail": "India has been making diplomatic efforts to resolve the conflict, including calling for de-escalation and a peaceful resolution. The Indian government has also been in touch with other nations in the region, including the US, Israel, and Iran, to urge restraint and diplomacy. The conflict has highlighted the need for India to play a more active role in regional diplomacy to ensure the country's energy security and the safety of its citizens in the region. India's diplomatic efforts will be crucial in the coming days and weeks, as the conflict continues to unfold.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "source": "Al Jazeera"
     },
     {
       "headline": "India's Economic Interests",
-      "detail": "India's economic interests are at risk due to the escalating conflict in the Middle East. The country relies heavily on imports from the region, and any disruption to supply could have significant consequences for the Indian economy. The Indian government is working to diversify its trade relationships and to reduce its reliance on imports from the region.",
+      "detail": "India has significant economic interests in the region, including trade and investment ties with many countries. The conflict has sparked concerns over the potential impact on India's economy, including the potential for supply disruptions and trade disruptions. The Indian government will need to carefully navigate the situation to ensure the country's economic interests are protected.",
       "category": "Economy",
       "significance": "HIGH",
-      "full_detail": "India's economic interests are a critical component of the country's economy, and any disruption to supply could have significant consequences. The Indian government is working to diversify its trade relationships and to reduce its reliance on imports from the region. The government is also working to promote domestic industry and to increase its use of renewable energy, in order to reduce its reliance on imported fossil fuels.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2FUS-4-9.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-vs-iran-war-news-live-updates-tehran-strikes-netanyahu-ground-invasion-nowruz-10591491/",
-      "source": "Indian Express"
+      "full_detail": "India has significant economic interests in the region, including trade and investment ties with many countries. The conflict has sparked concerns over the potential impact on India's economy, including the potential for supply disruptions and trade disruptions. The Indian government will need to carefully navigate the situation to ensure the country's economic interests are protected, including diversifying its trade and investment ties and developing alternative energy sources. The conflict has highlighted the need for India to reduce its reliance on imported oil and to develop a more diversified economy.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2F2026-03-19T195314Z_1779901682_RC2U7KAJA3B0_RTRMADP_3_IRAN-CRISIS-ISRAEL-NETANYAHU-1773980857.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-war-what-is-happening-on-day-21-of-us-israel-attacks?traffic_source=rss",
+      "source": "Al Jazeera"
     }
   ],
   "indiaSummary": ""
