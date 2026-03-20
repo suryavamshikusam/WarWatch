@@ -1,18 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 01:23 UTC",
+  "generatedAt": "2026-03-20 03:42 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "US: US Launches Air Campaign · 0 min ago",
-    "Iran: Iran Warns of False Flag Attack · 0 min ago",
-    "US: US-Israel Disagreement · 0 min ago",
-    "Other: Oil Prices Soar · 0 min ago",
-    "Iran: Iran Launches Missiles · 0 min ago"
+    "Israel: Netanyahu Claims Iran's Military Degraded · 1 min ago",
+    "US/Israel: Air Strikes Hit Tehran Again · 1 min ago",
+    "Iran: Iran Launches Ballistic Missiles at Israel · 1 min ago",
+    "US/Israel: US and Israel Coordinate Military Efforts · 1 min ago",
+    "Iran: Iran's Military Capabilities Degraded · 1 min ago"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-20 01:23 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-20 03:42 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -51,176 +51,171 @@ window.WARWATCH_LIVE = {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US Launches Air Campaign",
-      "summary": "The US has launched an air campaign to reopen the Strait of Hormuz, a vital global shipping route disrupted by Iran. The campaign marks a significant escalation in operations aimed at targeting Iranian naval assets, drones, and missile systems. The US aims to ensure the safe passage of oil tankers and other ships through the waterway.",
+      "actor": "Israel",
+      "time": "1 min ago",
+      "headline": "Netanyahu Claims Iran's Military Degraded",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu has claimed that Israel and the US have significantly degraded Iran's military capabilities through their military campaign. Netanyahu stated that Iran can no longer enrich uranium or manufacture ballistic missiles, but did not provide evidence to substantiate the claims. The campaign aims to eliminate Iran's nuclear and ballistic missile threats before they are buried deep underground and become immune. This development is significant as it indicates a major escalation in the conflict.",
       "whyTxt": "",
       "orgs": [
-        "US"
+        "Israel"
       ],
-      "fullAnalysis": "Imagine you're on a road trip with your family, and you're driving on a highway that's very important for many people to use. But suddenly, someone blocks the road, and you can't get through. That's kind of what's happening in a place called the Strait of Hormuz, which is like a very important highway for ships that carry oil and other things. The US has launched an air campaign, which means they're using airplanes to try to reopen the Strait of Hormuz, so that ships can safely pass through again. This is a big deal because many countries rely on the oil that comes from this region, and if the ships can't get through, it can cause problems for people all around the world. The US is trying to make sure that the ships can get through safely, so that people can get the things they need.\n\nThe US is the main actor involved in this situation, and they're taking action because they want to ensure the safe passage of oil tankers and other ships through the Strait of Hormuz. The US is responding to actions taken by Iran, which has been disrupting the shipping route. Iran is a country in the Middle East that has been having tensions with the US and other countries for a long time. The US is trying to achieve its goal by targeting Iranian naval assets, drones, and missile systems, which are like the tools that Iran uses to block the shipping route. The US hopes that by doing this, they can prevent Iran from causing any more problems in the region. The US is also working with other countries, like Israel, to try to find a solution to the problem. However, the US and Israel have different ideas about how to handle the situation, which can make things more complicated.\n\nThe current situation is the result of a long history of tensions between the US, Israel, and Iran. Over the past few months, there have been many incidents and events that have led to this moment. For example, there have been attacks on oil tankers and other ships in the region, which have been blamed on Iran. The US has also been trying to put pressure on Iran by imposing sanctions, which are like economic penalties that can hurt a country's economy. Iran has been responding to these sanctions by taking actions like disrupting the shipping route. The situation has been escalating for a while now, and it's getting more and more serious. The US and Iran have been having a kind of standoff, with each side trying to outmaneuver the other. The IRGC — Iran's elite Revolutionary Guard Corps — has been playing a big role in the situation, as they're the ones who are responsible for many of the actions that Iran has been taking.\n\nThe current situation is having a big impact on ordinary people, especially when it comes to the price of oil. Because the shipping route is blocked, it's becoming more expensive to get oil to the places that need it, which means that the price of gasoline and other things is going up. This can be a problem for people who are already struggling to make ends meet, as they may have to pay more for the things they need. The situation is also affecting people who work on ships or in the oil industry, as their jobs may be at risk if the shipping route stays blocked. Additionally, the situation is causing concerns about safety, as there is a risk of violence or accidents in the region. For example, if a ship is attacked or sinks, it can cause environmental damage and put people's lives at risk. The situation is also affecting travel, as some airlines are changing their flight routes to avoid the region. This can cause delays and disruptions for people who are trying to travel.\n\nIran has responded to the US air campaign by warning of a potential 'false flag' attack on Saudi Aramco facilities. This means that Iran is suggesting that the US or another country might try to make it look like Iran is responsible for an attack, when in fact it's not. Iran is trying to make it clear that they're not going to back down, and that they'll keep taking actions to defend themselves. Iran has also been trying to rally support from other countries, like China and Russia, to help them in their standoff with the US. The situation is very tense, and it's not clear what's going to happen next. Iran has a few options, like trying to negotiate with the US or taking more drastic actions to disrupt the shipping route. However, it's not clear what the best course of action is, and the situation is very unpredictable. The US is also trying to work with other countries to find a solution, but it's not easy to find a way to resolve the situation that works for everyone.\n\nThe situation in the Strait of Hormuz is having a significant impact on India, which is a major importer of oil from the region. The increase in oil prices is going to affect India's economy, as it will make it more expensive for the country to buy the oil it needs. This can have a ripple effect on the entire economy, as higher oil prices can lead to higher prices for other things. India also has many workers who are employed in the Gulf region, and the situation is causing concerns about their safety. Additionally, India has investments in the region, like the Chabahar port in Iran, which could be affected by the situation. India is trying to navigate the situation carefully, as it doesn't want to take sides or get caught in the middle of the conflict. However, India also needs to protect its own interests and ensure that it can get the oil it needs. The Indian government is working to find ways to mitigate the impact of the situation, but it's a challenging task.\n\nThe situation in the Strait of Hormuz is very unpredictable, and it's not clear what's going to happen next. Over the next 24-48 hours, we can expect to see more developments, like statements from the US and Iran, or actions taken by other countries in the region. The US might continue its air campaign, or it might try to negotiate with Iran to find a way to resolve the situation. Iran might take more drastic actions to disrupt the shipping route, or it might try to find a way to negotiate with the US. The stakes are very high, as the situation has the potential to escalate into a much larger conflict. If that happens, it could have serious consequences for the entire region, and even for the global economy. The situation is a reminder of the importance of diplomacy and finding ways to resolve conflicts peacefully, rather than resorting to violence or aggression. The world is watching the situation closely, and hoping that a way can be found to resolve it without anyone getting hurt.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/report-us-launches-air-campaign-reopen-strait-hormuz",
+      "fullAnalysis": "Imagine you're playing a game of chess with a friend, and you make a move that puts their king in a tough spot. That's kind of what's happening right now between Israel and Iran. Israeli Prime Minister Benjamin Netanyahu has announced that Israel and the US have worked together to significantly weaken Iran's military capabilities. This means that Iran's ability to make nuclear weapons or launch ballistic missiles has been reduced. It's a big deal because it could change the balance of power in the region. Netanyahu's announcement is like a bold move on the chessboard, and now everyone is waiting to see how Iran will respond. The situation is tense, and it's hard to predict what will happen next.\n\nThe actors involved in this conflict are Israel, led by Prime Minister Benjamin Netanyahu, and Iran, which is being targeted by the Israeli and US military campaign. The US is also a key player, as it is working closely with Israel to eliminate Iran's nuclear and ballistic missile threats. The IRGC — Iran's elite Revolutionary Guard Corps — has been launching ballistic missiles at Israel, which has led to a significant escalation of the conflict. The motive behind Israel's actions is to prevent Iran from developing nuclear weapons and to reduce its ability to launch attacks on Israeli territory. The US is supporting Israel in this effort, and together they hope to achieve a significant reduction in Iran's military capabilities. This is a complex and sensitive issue, and both sides are taking a firm stance. The situation is volatile, and it's likely that we'll see more developments in the coming days.\n\nThe conflict between Israel and Iran has been building for weeks, with tensions escalating due to a series of air strikes and ballistic missile launches. The situation has been simmering for months, with both sides engaging in a war of words and occasional military exchanges. The US has been supporting Israel in its efforts to counter Iran's military capabilities, and this has led to a significant escalation of the conflict. The IRGC has been playing a key role in Iran's military campaign, and its ballistic missile launches have been a major concern for Israel. The conflict has a long and complex history, with both sides having competing interests and ideologies. The current situation is the result of a series of events and decisions made by both sides over the past few months. The situation is delicate, and it's hard to predict what will happen next. The conflict has the potential to draw in other countries and to have a significant impact on the region.\n\nThe conflict between Israel and Iran is having a significant impact on ordinary people in the region. Civilians are facing a range of challenges, from increased prices for food and fuel to reduced safety and security. The conflict is also affecting people's daily lives, with many having to change their routines and plans due to the uncertainty and instability. Travel is becoming more difficult, and many people are having to cancel or postpone trips due to the risk of violence or disruption. The conflict is also having an impact on the economy, with many businesses and industries being affected by the instability and uncertainty. For example, the price of oil has been increasing, which is having a knock-on effect on the cost of living for many people. The situation is difficult, and many people are struggling to cope with the challenges and uncertainties of the conflict. The humanitarian situation is a major concern, and it's essential that all parties work to reduce the impact on civilians.\n\nThe opposing party, Iran, has responded to Israel's claims by launching ballistic missiles at Israeli territory. The IRGC has been at the forefront of Iran's military campaign, and its actions have been a major concern for Israel. Iran has also been working to develop its nuclear capabilities, which has led to a significant escalation of the conflict. The US and Israel have been working together to counter Iran's military capabilities, and this has led to a significant reduction in Iran's ability to launch attacks. Iran has a range of options available to it, from continuing to launch ballistic missiles to working to develop its nuclear capabilities. However, the situation is complex, and it's difficult to predict what Iran will do next. The conflict has the potential to escalate further, and it's essential that all parties work to reduce tensions and find a peaceful resolution. The situation is delicate, and it's hard to predict what will happen next.\n\nThe conflict between Israel and Iran is having a significant impact on India, which has important economic and strategic interests in the region. India has been working to develop its relations with Iran, and the conflict has the potential to disrupt these efforts. The price of oil is a major concern for India, which is heavily reliant on imports to meet its energy needs. The conflict has led to an increase in the price of oil, which is having a knock-on effect on the Indian economy. India has also invested heavily in the Chabahar port in Iran, which is an important strategic location for Indian trade and commerce. The conflict has the potential to disrupt Indian trade and commerce, and it's essential that India works to reduce its exposure to the conflict. Indian diplomacy is playing a crucial role in the region, and it's essential that India works to promote peace and stability. The situation is complex, and it's hard to predict what will happen next.\n\nThe conflict between Israel and Iran is likely to continue to escalate in the coming days, with both sides taking further military action. The US is likely to continue to support Israel in its efforts to counter Iran's military capabilities, and this could lead to a significant escalation of the conflict. Iran is likely to respond to Israel's claims by launching further ballistic missiles, which could lead to a significant increase in tensions. The situation is delicate, and it's hard to predict what will happen next. The stakes are high, and the conflict has the potential to draw in other countries and to have a significant impact on the region. The next 24-48 hours will be critical, and it's essential that all parties work to reduce tensions and find a peaceful resolution. The humanitarian situation is a major concern, and it's essential that all parties work to reduce the impact on civilians. The conflict has the potential to have a significant impact on the global economy, and it's essential that all parties work to promote peace and stability.\n\nThe situation is highly volatile, and it's essential that all parties work to reduce tensions and find a peaceful resolution. The conflict has the potential to have a significant impact on the region and the world, and it's essential that all parties work to promote peace and stability. The stakes are high, and the next 24-48 hours will be critical. The US, Israel, and Iran are all major players in the conflict, and it's essential that they work together to find a peaceful resolution. The situation is complex, and it's hard to predict what will happen next. However, one thing is certain - the conflict has the potential to have a significant impact on the world, and it's essential that all parties work to promote peace and stability. The humanitarian situation is a major concern, and it's essential that all parties work to reduce the impact on civilians. The conflict is a reminder of the importance of diplomacy and the need for all parties to work together to find peaceful solutions to complex problems.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US/Israel",
+      "time": "1 min ago",
+      "headline": "Air Strikes Hit Tehran Again",
+      "summary": "Air strikes have hit Tehran again, with multiple explosions reported across the city, including in the east and central areas. The strikes followed a day in which Iran's Revolutionary Guards said they had launched two waves of ballistic missiles at Israel. The air strikes are a significant development in the conflict, indicating an escalation in the violence. The situation remains volatile, with the potential for further escalation.",
+      "whyTxt": "",
+      "orgs": [
+        "US/Israel"
+      ],
+      "fullAnalysis": "Imagine you're in a big city, and suddenly you hear loud explosions and see smoke rising from different parts of town. That's what's happening in Tehran, the capital city of Iran, right now. Air strikes have hit the city, with multiple explosions reported in the east and central areas. It's like a big storm, but instead of rain, there are bombs and missiles flying through the air. The people of Tehran are scared and trying to stay safe, just like you would in a natural disaster. The air strikes are a result of a conflict between Iran and other countries, including the US and Israel, and it's getting worse by the day.\n\nThe actors involved in this conflict are the US, Israel, and Iran. The US and Israel are working together to launch a military campaign against Iran, with the goal of degrading Tehran's military capabilities. Israel's Prime Minister, Benjamin Netanyahu, has said that they want to eliminate Iran's nuclear and ballistic missile threats. The IRGC — Iran's elite Revolutionary Guard Corps — has been launching ballistic missiles at Israel, which is why the US and Israel are responding with air strikes. The motive behind these actions is to protect their own countries and interests, but it's a complex situation with many factors at play. The US and Israel believe that Iran's military capabilities pose a threat to their national security, while Iran sees the US and Israel as a threat to their own sovereignty. The situation is volatile, with both sides exchanging blows and trying to gain the upper hand.\n\nThe backstory to this conflict is long and complicated, with tensions between the US, Israel, and Iran going back months. The US had withdrawn from a nuclear deal with Iran, which led to Iran restarting its nuclear program. Israel has been concerned about Iran's nuclear capabilities for a long time, and the US has been supporting Israel's efforts to counter the Iranian threat. In recent weeks, the situation has escalated, with Iran's Revolutionary Guards launching ballistic missiles at Israel, and the US and Israel responding with air strikes. The conflict has been building up for a while, with both sides taking provocative actions and trying to assert their dominance. The history of the region is complex, with many different countries and factions involved, but the current conflict is centered around the US, Israel, and Iran. The US and Israel see Iran as a threat to regional stability, while Iran sees the US and Israel as trying to undermine its sovereignty.\n\nThe air strikes in Tehran are having a big impact on ordinary people, both in Iran and in other countries. For civilians in Tehran, the situation is dire, with many people trying to stay safe and avoid the explosions. The air strikes are also affecting the economy, with prices rising and trade disrupted. People are struggling to get the basic necessities, like food and medicine, and many are trying to leave the city. The conflict is also affecting people in other countries, like India, where many workers are employed in the Gulf region and are worried about their safety. The air strikes are also causing oil prices to rise, which could have a ripple effect on the global economy. For example, in India, the rising oil prices could lead to higher fuel costs, which would affect the prices of goods and services. The conflict is also affecting travel, with many flights to and from the region being cancelled or delayed.\n\nThe Iranian government has responded to the air strikes by launching more ballistic missiles at Israel, which is escalating the conflict even further. The IRGC has said that they will continue to defend their country against any threats, and that they will not back down. The Iranian government has also been trying to rally support from other countries in the region, like Iraq and Syria, which could potentially lead to a wider conflict. The US and Israel are trying to isolate Iran and prevent it from getting support from other countries, but it's a difficult situation to navigate. The Iranian government has options, like trying to negotiate a ceasefire or seeking support from other countries, but it's unclear what they will do next. The situation is highly volatile, with both sides exchanging blows and trying to gain the upper hand.\n\nThe conflict in the Middle East is having a significant impact on India, which has close ties to the region. Many Indian workers are employed in the Gulf region, and they are worried about their safety. The Indian government has been trying to evacuate its citizens from the region, but it's a difficult process. The conflict is also affecting India's economy, with oil prices rising and trade disrupted. India has invested heavily in the Chabahar port in Iran, which is an important trade route, and the conflict is putting that investment at risk. The Indian government is trying to navigate the situation carefully, as it has good relations with both the US and Iran. India is also concerned about the potential for the conflict to spread to other parts of the region, which could have a bigger impact on its economy and security.\n\nThe situation in the Middle East is highly unpredictable, and it's difficult to say what will happen next. The US and Israel could continue to launch air strikes against Iran, which could lead to further escalation. Iran could try to launch more ballistic missiles at Israel, which could lead to a wider conflict. The international community could try to intervene and negotiate a ceasefire, which could help to de-escalate the situation. The stakes are high, with the potential for a wider conflict that could draw in other countries and have a big impact on the global economy. The conflict could also have a humanitarian impact, with many civilians caught in the crossfire. The next 24-48 hours will be crucial, as the situation could escalate or de-escalate quickly. The world is watching with bated breath, hoping that a peaceful resolution can be found, but it's unclear what the future holds. The conflict has the potential to affect not just the Middle East, but the entire world, and it's essential that all parties involved work towards a peaceful solution.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/air-strikes-hit-tehran-again-defences-activated-overnight",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Warns of False Flag Attack",
-      "summary": "Iran has warned that Israel is planning a 'false flag' operation targeting Saudi Aramco facilities in an effort to blame Tehran. The warning was issued by a spokesperson for the Khatam al-Anbiya Central Headquarters. The spokesperson said the 'Israeli terrorist regime plans to attack Aramco in a false flag operation to blame Iran'.",
+      "time": "1 min ago",
+      "headline": "Iran Launches Ballistic Missiles at Israel",
+      "summary": "Iran's Revolutionary Guards have launched two waves of ballistic missiles at Israel, in response to the ongoing air strikes. The launches are a significant development in the conflict, indicating an escalation in the violence. The situation remains volatile, with the potential for further escalation. The US and Israel have condemned the launches, and have vowed to take action to protect their interests.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
-      "fullAnalysis": "Imagine you're playing a game with your friends, and someone accuses you of cheating, but you know you didn't. That's kind of what's happening right now between Iran and Israel. Iran is warning that Israel might try to trick everyone into thinking Iran did something bad, like attacking a big oil facility in Saudi Arabia, when really Israel would be the one doing it. This is called a \"false flag\" operation, and it's like a big lie to make someone look bad. Iran is saying that Israel might do this to make it seem like Iran is the bad guy, and that could lead to even more trouble in the region. The warning was issued by a spokesperson for the Khatam al-Anbiya Central Headquarters, which is like a big military command center in Iran.\n\nThe actor involved in this warning is Iran, and specifically, the spokesperson for the Khatam al-Anbiya Central Headquarters. Iran is a country in the Middle East, and it's been having a lot of tensions with other countries, especially the US and Israel. The US has been trying to put pressure on Iran by launching an air campaign to reopen the Strait of Hormuz, which is a very important waterway that many ships use to transport oil. Iran has been responding by warning of potential attacks, like this \"false flag\" operation. The US and Israel have been working together to some extent, but they don't always agree on what to do, and that's making things even more complicated. The US has been using military terms like \"air campaign\" and \"naval assets\", which basically means they're using airplanes and ships to attack Iranian targets. The IRGC, or Iran's elite Revolutionary Guard Corps, is also involved in this conflict, and they're like a special forces unit that's very powerful and well-trained.\n\nThe backstory to all of this is that there have been tensions between Iran and the US for a long time, but things started to get really bad a few months ago. The US pulled out of a big agreement with Iran that was meant to limit Iran's nuclear program, and that made Iran very angry. Since then, there have been all sorts of incidents, like Iran shooting down a US drone and the US responding with airstrikes. The US has also been trying to put pressure on Iran by imposing sanctions, which are like economic penalties that make it hard for Iran to trade with other countries. All of this has been building up to the current situation, where the US is launching an air campaign to reopen the Strait of Hormuz, and Iran is warning of potential attacks. The Strait of Hormuz is a vital global shipping route, and if it's closed, it could have a big impact on the global economy. The US and its allies, like Israel, are trying to keep the strait open, but Iran is trying to use it as a bargaining chip to get what it wants.\n\nThis conflict is having a big impact on ordinary people, especially when it comes to oil prices. With the Strait of Hormuz closed, it's getting harder for oil to get to market, and that's driving up prices. This means that people are paying more for gas, and that's affecting everything from transportation to food prices. For example, if you're a truck driver, you might be paying more for gas, which means you have to charge more for your services, which means that the cost of goods goes up. It's also affecting people's safety, especially in the region, where there are worries about potential attacks or even war. Many people are also worried about their jobs, especially if they work in industries that are connected to oil or trade. The conflict is also affecting travel, as some airlines are canceling flights or changing their routes to avoid the region. For instance, if you're planning a trip to the Middle East, you might need to check with your airline to see if your flight is still on schedule.\n\nThe opposing party, in this case, Israel, hasn't directly responded to Iran's warning, but they have been saying that they're concerned about Iran's activities in the region. Israel has been working closely with the US to try to counter Iran's influence, and they've been taking steps to protect themselves, like building up their military defenses. Israel has also been trying to get other countries to join them in putting pressure on Iran, and they've had some success, especially with the US. However, not all countries are on the same page, and some are trying to stay out of the conflict or even mediate between the different sides. For example, some European countries are trying to salvage the nuclear agreement that the US pulled out of, and they're working with Iran to try to find a way forward. The US has also been using military terms like \"drones\" and \"missile systems\", which basically means they're using unmanned aircraft and missile defense systems to attack Iranian targets.\n\nThe conflict is also having a big impact on India, which is a major importer of oil from the Middle East. With oil prices soaring, India is feeling the pinch, and that's affecting their economy. Many Indian workers also live and work in the Gulf, and they're worried about their safety, especially if there's a war. India has also invested a lot in a port in Iran called Chabahar, which is meant to be a major trade hub, but the conflict is putting all of that at risk. India is trying to navigate the situation carefully, and they're working with other countries to try to find a way to resolve the conflict peacefully. India's diplomats are also working behind the scenes to try to reduce tensions and find a way forward. For instance, India's foreign minister has been in touch with his counterparts in the US, Israel, and Iran to try to find a way to calm things down.\n\nAs for what happens next, it's hard to predict, but there are a few possible scenarios. One possibility is that the US and Israel will continue to put pressure on Iran, and that could lead to even more escalation. Another possibility is that Iran will try to retaliate, maybe by attacking US or Israeli targets, which could lead to a wider war. A third possibility is that some other country, like Europe or China, will try to step in and mediate the conflict, which could lead to a peaceful resolution. Whatever happens, the stakes are very high, and the whole world is watching. The conflict could have a big impact on the global economy, and it could even lead to a wider war in the Middle East. The US and its allies are trying to prevent that from happening, but it's a very delicate situation, and anything could happen in the next 24-48 hours. The world is holding its breath, waiting to see what will happen next, and hoping that somehow, someway, a peaceful resolution can be found.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-israel-plans-false-flag-attack-saudi-arabias-aramco",
+      "fullAnalysis": "Imagine you're playing a game of chess with a friend, and you make a move that your friend doesn't like. They might respond by making a bold move to show you they're not afraid. That's kind of what's happening right now between Iran and Israel. Iran's Revolutionary Guards, which is like an elite team of soldiers, launched two waves of ballistic missiles at Israel. This is a big deal because it's a way for Iran to show that they're not going to back down. The situation is very tense, and it's like a big game of chess where each side is trying to outmaneuver the other. The US and Israel are also involved, and they're not happy about Iran's move, so they're likely to respond in some way.\n\nThe specific actors involved in this conflict are Iran's Revolutionary Guards, which is a branch of Iran's military, and Israel, which is a country in the Middle East. The IRGC, or Iran's elite Revolutionary Guard Corps, is like a special forces team that is responsible for protecting Iran's interests. They launched the ballistic missiles at Israel in response to the ongoing air strikes that Israel has been carrying out against Iran. Israel, on the other hand, is a country that is concerned about Iran's military capabilities, and they've been trying to weaken Iran's ability to launch attacks. The US is also involved, and they're working with Israel to try to eliminate Iran's nuclear and ballistic missile threats. The motive behind Iran's actions is to show that they're not afraid of Israel and the US, and that they're willing to fight back. Israel, on the other hand, is trying to protect its own interests and prevent Iran from becoming too powerful.\n\nThe backstory to this conflict is complex, but it basically comes down to a long-standing rivalry between Iran and Israel. Over the past few weeks and months, there have been a series of air strikes and missile launches between the two countries, and the situation has been escalating. The US has also been involved, and they've been working with Israel to try to weaken Iran's military capabilities. One of the key events that led to this moment was when the US and Israel launched a military campaign against Iran, with the goal of degrading Tehran's military capabilities. This campaign has included air strikes against Iranian targets, and it's been met with resistance from Iran's Revolutionary Guards. The situation has been building for a long time, and it's like a pot that's been simmering on the stove, waiting to boil over. The tensions between Iran and Israel have been high for years, and it's not surprising that things have finally come to a head.\n\nThe impact of this conflict on ordinary people is significant. For civilians in Israel and Iran, the situation is very scary, and they're worried about their safety. The air strikes and missile launches have already caused damage and disruption, and it's likely that things will get worse before they get better. People are also worried about the economic impact of the conflict, as it's likely to drive up prices and disrupt trade. For example, the price of oil is already rising, which could have a big impact on people's daily lives. Travel is also becoming more difficult, as airlines are canceling flights and governments are warning people to stay away from the region. Jobs are also at risk, as the conflict is disrupting businesses and industries. The situation is very uncertain, and it's hard for people to plan for the future. The conflict is also having a big impact on people's mental health, as they're worried about their safety and the safety of their loved ones.\n\nThe opposing party, which is Israel and the US, has condemned Iran's actions and vowed to take action to protect their interests. They have a number of options available to them, including launching more air strikes against Iranian targets or imposing economic sanctions. The US and Israel are also working together to try to eliminate Iran's nuclear and ballistic missile threats, which they see as a major threat to their own security. It's not clear what the next move will be, but it's likely that the situation will continue to escalate. The US and Israel are trying to show that they're not afraid of Iran, and that they're willing to take action to protect their interests. At the same time, they're also trying to avoid a full-scale war, which would be devastating for everyone involved. The situation is very delicate, and it's hard to predict what will happen next.\n\nThe conflict between Iran and Israel also has significant implications for India, which has its own interests in the region. One of the main concerns for India is the impact of the conflict on oil prices, as India is a major importer of oil from the Middle East. If the conflict escalates, it's likely that oil prices will rise, which could have a big impact on India's economy. India also has a significant number of workers in the Gulf region, and the conflict could put them at risk. Additionally, India has invested heavily in the Chabahar port in Iran, which is an important trade route. The conflict could disrupt trade and investment in the region, which would be bad news for India's economy. India is also trying to navigate the diplomatic situation, as it has good relations with both Iran and Israel. The Indian government is likely to be watching the situation very closely, and trying to find a way to protect its own interests.\n\nThe situation is very complex, and it's hard to predict what will happen next. However, there are a few possible scenarios that could play out in the next 24-48 hours. One possibility is that the US and Israel will launch more air strikes against Iranian targets, which could lead to further escalation. Another possibility is that Iran will launch more ballistic missiles at Israel, which could lead to a full-scale war. A third possibility is that the international community will intervene, and try to broker a peace deal between the two sides. Whatever happens, it's clear that the stakes are very high, and that the situation has the potential to spiral out of control. The conflict is not just about Iran and Israel, but also about the wider region, and the global economy. The world is watching with bated breath, as the situation continues to unfold. The stakes are not just about the military outcome, but also about the potential humanitarian crisis, the economic impact, and the geopolitical implications. The world is holding its breath, hoping that a peaceful solution can be found, and that the conflict will not escalate further.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "US/Israel",
+      "time": "1 min ago",
+      "headline": "US and Israel Coordinate Military Efforts",
+      "summary": "The US and Israel are coordinating their military efforts to eliminate Iran's nuclear and ballistic missile threats. The two countries are working together to share intelligence and conduct joint military operations. The coordination is a significant development in the conflict, indicating a strong alliance between the two countries. The situation remains volatile, with the potential for further escalation.",
+      "whyTxt": "",
+      "orgs": [
+        "US/Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "1 min ago",
+      "headline": "Iran's Military Capabilities Degraded",
+      "summary": "Iran's military capabilities have been significantly degraded due to the ongoing air strikes and ballistic missile launches. The country's ability to enrich uranium and manufacture ballistic missiles has been severely impacted. The degradation of Iran's military capabilities is a significant development in the conflict, indicating a major escalation in the violence. The situation remains volatile, with the potential for further escalation.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "1 min ago",
+      "headline": "Israel's Airstrikes Target Iranian Military",
+      "summary": "Israel's airstrikes have targeted Iranian military facilities, including those involved in the production of ballistic missiles. The airstrikes are a significant development in the conflict, indicating an escalation in the violence. The situation remains volatile, with the potential for further escalation. The US has condemned the airstrikes, and has vowed to take action to protect its interests.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "US",
-      "time": "0 min ago",
-      "headline": "US-Israel Disagreement",
-      "summary": "A clear divergence has emerged between US President Donald Trump and Israeli Prime Minister Benjamin Netanyahu over Israel's strike on a key Iranian gas field. The disagreement marks their most significant divergence since the 20-day conflict with Iran began. Trump cautioned against further escalation, saying 'I told him, don't do that…'.",
+      "time": "1 min ago",
+      "headline": "US Provides Military Support to Israel",
+      "summary": "The US has provided military support to Israel, including the deployment of troops and equipment. The support is a significant development in the conflict, indicating a strong alliance between the two countries. The situation remains volatile, with the potential for further escalation. The US has vowed to take action to protect its interests and those of its allies.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/us-israel-iran-war-news-live-updates-donald-trump-strait-of-hormuz-march-20-dubai-abu-dhabi-saudi-arabia-crude-oil-price-11773963754153.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-USA-2_1773967024050_1773967034640.JPG&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Oil Prices Soar",
-      "summary": "Oil prices have soared above $100 a barrel due to disruptions caused by the Iran war. Oil officials in Saudi Arabia have projected that prices could rise further to $180 a barrel if the disruptions persist until late April. The price increase has significant implications for global energy markets and the economy.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/us-israel-iran-war-news-live-updates-donald-trump-strait-of-hormuz-march-20-dubai-abu-dhabi-saudi-arabia-crude-oil-price-11773963754153.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-USA-2_1773967024050_1773967034640.JPG&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iran Launches Missiles",
-      "summary": "Iran has launched multiple rounds of missiles in response to the US and Israeli attacks. The missile launches have targeted various locations, including military bases and oil facilities. The attacks have resulted in significant damage and casualties.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/us-israel-iran-war-news-live-updates-donald-trump-strait-of-hormuz-march-20-dubai-abu-dhabi-saudi-arabia-crude-oil-price-11773963754153.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-USA-2_1773967024050_1773967034640.JPG&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Strait of Hormuz Disrupted",
-      "summary": "The Strait of Hormuz, a vital global shipping route, has been disrupted due to the Iran war. The disruption has resulted in significant delays and increased costs for oil tankers and other ships. The US has launched an air campaign to reopen the strait.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/report-us-launches-air-campaign-reopen-strait-hormuz",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "0 min ago",
-      "headline": "Global Energy Markets Affected",
-      "summary": "The US-Israel-Iran war has significant implications for global energy markets. The conflict has resulted in increased oil prices, disruptions to supply chains, and concerns about energy security. The war has also led to a decrease in oil production and an increase in demand for alternative energy sources.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.livemint.com/news/us-news/us-israel-iran-war-news-live-updates-donald-trump-strait-of-hormuz-march-20-dubai-abu-dhabi-saudi-arabia-crude-oil-price-11773963754153.html",
-      "sourceLabel": "LiveMint",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-USA-2_1773967024050_1773967034640.JPG&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has launched an air campaign to reopen the Strait of Hormuz and has cautioned against further escalation by Israel.",
-    "israel_stance": "Israel has continued to launch attacks on Iranian targets, despite warnings from the US to exercise caution.",
-    "iran_stance": "Iran has warned of a potential 'false flag' attack on Saudi Aramco facilities and has launched missiles in response to US and Israeli attacks."
+    "us_stance": "The US has taken a strong stance against Iran, providing military support to Israel and condemning Iran's ballistic missile launches.",
+    "israel_stance": "Israel has taken a strong stance against Iran, launching airstrikes against Iranian military facilities and vowing to eliminate Iran's nuclear and ballistic missile threats.",
+    "iran_stance": "Iran has taken a strong stance against the US and Israel, launching ballistic missiles at Israel and vowing to defend its interests."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A vital global shipping route located between Iran and Oman, through which a significant portion of the world's oil passes."
+      "term": "Ballistic Missile",
+      "simple_explanation": "A ballistic missile is a type of missile that follows a ballistic trajectory, meaning it is launched into the air and then follows a curved path to its target. Ballistic missiles can be equipped with nuclear warheads and are considered a significant threat to national security."
     },
     {
-      "term": "False flag operation",
-      "simple_explanation": "A covert operation designed to deceive people into believing that a particular event or action was caused by a particular entity or group, when in fact it was caused by another entity or group."
+      "term": "Nuclear Threat",
+      "simple_explanation": "A nuclear threat refers to the possibility of a nuclear attack, which could have devastating consequences for a country or region. Nuclear threats are considered a significant concern for national security and international stability."
     },
     {
-      "term": "Aramco",
-      "simple_explanation": "The Saudi Arabian Oil Company, which is the state-owned oil company of Saudi Arabia."
+      "term": "Air Strike",
+      "simple_explanation": "An air strike is a military operation in which aircraft are used to attack a target, such as a military facility or a terrorist camp. Air strikes can be used to degrade an enemy's military capabilities or to disrupt their operations."
     },
     {
-      "term": "Khatam al-Anbiya Central Headquarters",
-      "simple_explanation": "A military headquarters in Iran that is responsible for coordinating the country's military operations."
+      "term": "Revolutionary Guards",
+      "simple_explanation": "The Revolutionary Guards are a branch of the Iranian military that is responsible for defending the country's Islamic revolution. The Revolutionary Guards are known for their military prowess and their role in defending Iran's interests."
     },
     {
-      "term": "US-Israel-Iran war",
-      "simple_explanation": "A conflict between the US, Israel, and Iran that began in 2026 and has resulted in significant military action and economic disruption."
+      "term": "Enriched Uranium",
+      "simple_explanation": "Enriched uranium is a type of uranium that has been processed to increase its concentration of the isotope U-235. Enriched uranium can be used to fuel nuclear reactors or to build nuclear weapons."
     },
     {
-      "term": "Oil prices",
-      "simple_explanation": "The cost of a barrel of oil, which is a major factor in the global economy and can have significant impacts on energy markets and the environment."
+      "term": "Joint Military Operation",
+      "simple_explanation": "A joint military operation is a military operation that is conducted by two or more countries together. Joint military operations can be used to achieve a common goal, such as defeating a shared enemy or protecting a shared interest."
     },
     {
-      "term": "Global energy markets",
-      "simple_explanation": "The international system of production, distribution, and trade of energy resources, including oil, natural gas, and other fuels."
+      "term": "Intelligence Sharing",
+      "simple_explanation": "Intelligence sharing refers to the practice of sharing information and intelligence between countries or organizations. Intelligence sharing can be used to enhance national security and to support military operations."
     },
     {
-      "term": "Energy security",
-      "simple_explanation": "The ability of a country or region to ensure a reliable and sustainable supply of energy to meet its needs, while minimizing the risks of disruption or price volatility."
+      "term": "Military Alliance",
+      "simple_explanation": "A military alliance is a formal agreement between two or more countries to cooperate on military matters. Military alliances can be used to enhance national security and to protect shared interests."
     },
     {
-      "term": "Alternative energy sources",
-      "simple_explanation": "Energy sources that are not based on fossil fuels, such as solar, wind, and hydroelectric power, which can help reduce dependence on oil and other fossil fuels."
+      "term": "National Security",
+      "simple_explanation": "National security refers to the protection of a country's interests and citizens from external threats. National security can be achieved through a combination of military, diplomatic, and economic means."
     },
     {
-      "term": "Supply chain",
-      "simple_explanation": "The network of organizations, people, and activities involved in the production and delivery of a product or service, from raw materials to end customers."
+      "term": "International Stability",
+      "simple_explanation": "International stability refers to the maintenance of peace and security among nations. International stability can be achieved through a combination of diplomacy, economic cooperation, and military deterrence."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 11:56 UTC",
-      "l": "MEDIUM",
-      "tone": "The conflict is esca"
-    },
     {
       "t": "2026-03-17 14:21 UTC",
       "l": "MEDIUM",
@@ -455,39 +450,54 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 01:23 UTC",
       "l": "HIGH",
       "tone": "The US launch of an "
-    }
-  ],
-  "execSummary": "The US-Israel-Iran war has escalated with the US launching an air campaign to reopen the Strait of Hormuz, a vital global shipping route disrupted by Iran. Oil prices have soared above $100 a barrel, and Iran has warned of a potential 'false flag' attack on Saudi Aramco facilities. The conflict has significant implications for global energy markets and regional stability. The US and Israel have diverged on their approach to the conflict, with President Trump cautioning against further escalation.",
-  "totalReports": 68,
-  "indiaImpact": [
-    {
-      "headline": "India's Energy Security at Risk",
-      "detail": "The US-Israel-Iran war has significant implications for India's energy security, as the country relies heavily on imported oil to meet its energy needs. The conflict has resulted in increased oil prices, which could have a major impact on India's economy.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India is the third-largest consumer of oil in the world and relies heavily on imported oil to meet its energy needs. The US-Israel-Iran war has resulted in increased oil prices, which could have a major impact on India's economy. The country's energy security is at risk, and the government may need to take measures to mitigate the impact of the conflict on the energy sector.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FIRAN-CRISIS-ISRAEL-USA-2_1773967024050_1773967034640.JPG&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.livemint.com/news/us-news/us-israel-iran-war-news-live-updates-donald-trump-strait-of-hormuz-march-20-dubai-abu-dhabi-saudi-arabia-crude-oil-price-11773963754153.html",
-      "source": "LiveMint"
     },
     {
-      "headline": "Indian Nationals in the Region",
-      "detail": "There are thousands of Indian nationals living and working in the Middle East, particularly in countries such as the UAE, Saudi Arabia, and Iran. The conflict has raised concerns about the safety and security of these individuals.",
-      "category": "Diaspora",
-      "significance": "MEDIUM",
-      "full_detail": "There are thousands of Indian nationals living and working in the Middle East, particularly in countries such as the UAE, Saudi Arabia, and Iran. The conflict has raised concerns about the safety and security of these individuals, and the Indian government may need to take measures to ensure their well-being.",
+      "t": "2026-03-20 03:42 UTC",
+      "l": "HIGH",
+      "tone": "The conflict is esca"
+    }
+  ],
+  "execSummary": "The US and Israel have launched a military campaign against Iran, with Israeli Prime Minister Benjamin Netanyahu claiming significant degradation of Tehran's military capabilities. Air strikes have hit Tehran again, with multiple explosions reported across the city. The conflict is escalating, with Iran's Revolutionary Guards launching ballistic missiles at Israel. The situation remains volatile, with the potential for further escalation. The US and Israel are working together to eliminate Iran's nuclear and ballistic missile threats.",
+  "totalReports": 69,
+  "indiaImpact": [
+    {
+      "headline": "India's Energy Imports at Risk",
+      "detail": "India's energy imports from the Middle East are at risk due to the ongoing conflict. The conflict has disrupted oil supplies and has led to an increase in prices. India is a significant importer of oil from the Middle East and any disruption to supplies could have a major impact on the country's economy.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "full_detail": "India is a significant importer of oil from the Middle East, with over 80% of its oil imports coming from the region. The ongoing conflict has disrupted oil supplies and has led to an increase in prices. This could have a major impact on India's economy, particularly if the conflict escalates further. India has been working to diversify its energy imports, but the country remains heavily reliant on the Middle East for its energy needs.",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/report-us-launches-air-campaign-reopen-strait-hormuz",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India has been engaged in diplomatic efforts to reduce tensions in the region and to promote a peaceful resolution to the conflict. The country has maintained good relations with both the US and Iran and has been working to promote dialogue and cooperation between the two countries.",
+      "headline": "Indian Nationals in the Region at Risk",
+      "detail": "Indian nationals living and working in the Middle East are at risk due to the ongoing conflict. The conflict has led to an increase in violence and instability in the region, and Indian nationals could be caught in the crossfire. The Indian government has issued travel warnings for the region and has advised its citizens to exercise caution.",
+      "category": "Diaspora",
+      "significance": "MEDIUM",
+      "full_detail": "There are over 7 million Indian nationals living and working in the Middle East, with many working in countries such as the UAE, Saudi Arabia, and Qatar. The ongoing conflict has led to an increase in violence and instability in the region, and Indian nationals could be caught in the crossfire. The Indian government has issued travel warnings for the region and has advised its citizens to exercise caution. The government has also established a helpline for Indian nationals in the region and has promised to provide assistance to those affected by the conflict.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/air-strikes-hit-tehran-again-defences-activated-overnight",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "India's Diplomatic Efforts to Resolve the Conflict",
+      "detail": "India has been making diplomatic efforts to resolve the conflict in the Middle East. The country has been in touch with all parties involved and has urged them to exercise restraint. India has also offered to provide humanitarian assistance to those affected by the conflict.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India has been engaged in diplomatic efforts to reduce tensions in the region and to promote a peaceful resolution to the conflict. The country has maintained good relations with both the US and Iran and has been working to promote dialogue and cooperation between the two countries. India's diplomatic efforts have been focused on promoting a peaceful and stable region, and the country has been working closely with other countries in the region to achieve this goal.",
+      "full_detail": "India has been making diplomatic efforts to resolve the conflict in the Middle East, with the country's foreign minister holding talks with his counterparts in the US, Israel, and Iran. India has urged all parties involved to exercise restraint and has offered to provide humanitarian assistance to those affected by the conflict. The country has also been working to evacuate its citizens from the region and has established a helpline for those affected by the conflict.",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-israel-plans-false-flag-attack-saudi-arabias-aramco",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "India's Economy at Risk Due to the Conflict",
+      "detail": "India's economy is at risk due to the ongoing conflict in the Middle East. The conflict has disrupted trade and has led to an increase in prices. India is a significant importer of oil from the Middle East and any disruption to supplies could have a major impact on the country's economy.",
+      "category": "Economy",
+      "significance": "HIGH",
+      "full_detail": "India's economy is heavily reliant on imports, particularly oil, and any disruption to supplies could have a major impact on the country's economy. The ongoing conflict has disrupted trade and has led to an increase in prices, which could have a significant impact on India's economy. The country has been working to diversify its imports, but the economy remains heavily reliant on the Middle East for its energy needs.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2FA%2520man%2520walks%2520near%2520a%2520burning%2520vehicle%2520that%2520was%2520targeted%2520by%2520Israeli%2520bombardment%2520in%2520Lebanon%2527s%2520southern%2520coastal%2520city%2520of%2520Sidon%2520on%2520March%252018%252C%25202026..jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-and-us-protecting-entire-world",
       "source": "Middle East Eye"
     }
   ],
