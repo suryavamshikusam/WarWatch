@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 12:40 UTC",
-  "escalationLevel": "HIGH",
+  "generatedAt": "2026-03-20 13:46 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "Iran: Iran War Dampens Eid Celebrations · 1 min ago",
-    "US: US-Israel Alliance On Full Display · 1 min ago",
-    "Other: Global Oil Prices Soar · 1 min ago",
-    "India: India Watches Closely · 1 min ago",
-    "Iran: Iranian Retaliation Feared · 1 min ago"
+    "Israel: Israel Accused of Segregation · 0 min ago",
+    "Israel: Eid Celebrations Marred by Conflict · 0 min ago",
+    "US: US Condemns Israeli Actions · 0 min ago",
+    "Iran: Iran Increases Military Presence · 0 min ago",
+    "Hamas: Hamas Launches Rocket Attacks · 0 min ago"
   ],
   "heroStats": {
-    "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-20 12:40 UTC",
-    "sourcesUsed": 1
+    "tension": "MEDIUM",
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-20 13:46 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 72,
-      "lvl": "High",
-      "color": "var(--red)"
+      "pct": 50,
+      "lvl": "Medium",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 64,
-      "lvl": "High",
+      "pct": 42,
+      "lvl": "Medium",
       "color": "var(--red)"
     },
     {
@@ -35,188 +35,187 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 52,
-      "lvl": "High",
+      "pct": 30,
+      "lvl": "Moderate",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 60,
-      "lvl": "Elevated",
-      "color": "var(--red)"
+      "pct": 38,
+      "lvl": "Moderate",
+      "color": "var(--amber)"
     }
   ],
   "newsCards": [
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iran War Dampens Eid Celebrations",
-      "summary": "The ongoing US-Israel-Iran war has led to a somber mood during Eid ul Fitr celebrations in Saudi Arabia, UAE, and other Middle Eastern countries. The conflict has resulted in increased tensions and a heightened sense of insecurity. This has affected not only the local population but also expatriates and tourists visiting these countries. The situation remains volatile, with the potential for further escalation.",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel Accused of Segregation",
+      "summary": "Fifa has accused the Israel Football Association of bringing 'football into disrepute' and practising a 'de facto system of segregation' by excluding Palestinians from football infrastructure in Israeli settlements. The Israeli club Beitar Jerusalem has a notorious fanbase that maintains a de facto ban on Palestinian and Arab players. This has sparked international condemnation and raised concerns about Israel's treatment of Palestinians. The situation has significant implications for regional stability and Israel's international reputation.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Eid Celebrations Marred by Conflict",
+      "summary": "The Middle East has celebrated Eid al-Fitr under the shadow of the Iran war. For the first time since Israel seized East Jerusalem in 1967, Palestinians have been banned from performing Eid al-Fitr prayers at Al-Aqsa Mosque. This has sparked widespread condemnation and raised concerns about Israel's treatment of Palestinians. The situation has significant implications for regional stability and Israel's international reputation.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/pictures-middle-east-celebrates-eid-under-shadow-iran-war",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fmuslim-worshippers-pray-riyadh-reuters-2026-03-20.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
       "actorClass": "p-blue",
       "actor": "US",
-      "time": "1 min ago",
-      "headline": "US-Israel Alliance On Full Display",
-      "summary": "The US and Israel have reaffirmed their alliance in the face of the ongoing conflict with Iran. The two countries have been cooperating closely on military and diplomatic fronts, with the US providing significant support to Israel. This alliance has been a key factor in the escalation of the conflict, with Iran viewing it as a threat to its national security. The situation remains tense, with the potential for further violence.",
+      "time": "0 min ago",
+      "headline": "US Condemns Israeli Actions",
+      "summary": "The US has condemned Israel's actions in Palestine, calling for an end to the violence and a return to peace talks. The US has significant interests in the region, including energy security and regional stability. The situation has significant implications for US-Israel relations and regional stability.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "1 min ago",
-      "headline": "Global Oil Prices Soar",
-      "summary": "The ongoing conflict in the Middle East has led to a significant increase in global oil prices. The prices have soared due to concerns over the disruption of oil supplies from the region. This has affected not only the oil-importing countries but also the global economy, with the potential for inflation and economic instability. India, being a major oil importer, is closely watching the developments.",
-      "whyTxt": "",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-green",
-      "actor": "India",
-      "time": "1 min ago",
-      "headline": "India Watches Closely",
-      "summary": "India is closely watching the developments in the Middle East, given its significant stakes in the region. The country is a major oil importer and has significant trade and diplomatic relations with the countries involved in the conflict. The Indian government has been in touch with the governments of the countries involved, urging restraint and a peaceful resolution to the conflict.",
-      "whyTxt": "",
-      "orgs": [
-        "India"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
-      "time": "1 min ago",
-      "headline": "Iranian Retaliation Feared",
-      "summary": "There are fears of Iranian retaliation against the US and Israel, given the ongoing conflict. Iran has been known to use proxy forces and asymmetric warfare tactics to attack its enemies. The situation remains volatile, with the potential for further violence and instability.",
+      "time": "0 min ago",
+      "headline": "Iran Increases Military Presence",
+      "summary": "Iran has increased its military presence in the region, sparking concerns about regional stability and the potential for conflict. Iran's military presence has significant implications for global energy markets and regional stability. The situation has significant implications for US-Iran relations and regional stability.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/pictures-middle-east-celebrates-eid-under-shadow-iran-war",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fmuslim-worshippers-pray-riyadh-reuters-2026-03-20.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-red",
+      "actor": "Hamas",
+      "time": "0 min ago",
+      "headline": "Hamas Launches Rocket Attacks",
+      "summary": "Hamas has launched rocket attacks on Israel, sparking a significant escalation in the conflict. The situation has significant implications for regional stability and Israel's international reputation. The conflict has significant implications for global energy markets and regional stability.",
+      "whyTxt": "",
+      "orgs": [
+        "Hamas"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-red",
       "actor": "Hezbollah",
-      "time": "1 min ago",
-      "headline": "Hezbollah Involvement",
-      "summary": "Hezbollah, the Lebanese militant group, has been involved in the ongoing conflict. The group has been known to receive support from Iran and has been involved in various conflicts in the region. The situation remains tense, with the potential for further violence and instability.",
+      "time": "0 min ago",
+      "headline": "Hezbollah Increases Military Presence",
+      "summary": "Hezbollah has increased its military presence in the region, sparking concerns about regional stability and the potential for conflict. Hezbollah's military presence has significant implications for global energy markets and regional stability. The situation has significant implications for US-Hezbollah relations and regional stability.",
       "whyTxt": "",
       "orgs": [
         "Hezbollah"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "1 min ago",
-      "headline": "Global Community Urges Restraint",
-      "summary": "The global community has been urging restraint and a peaceful resolution to the conflict. The United Nations and other international organizations have been involved in diplomatic efforts to resolve the conflict. The situation remains volatile, with the potential for further violence and instability.",
+      "time": "0 min ago",
+      "headline": "Regional Stability at Risk",
+      "summary": "The conflict in the Middle East has significant implications for regional stability and global energy markets. The situation has sparked widespread condemnation and raised concerns about the potential for conflict. The conflict has significant implications for US-Israel relations, US-Iran relations, and regional stability.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "sourceLabel": "NDTV",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has reaffirmed its alliance with Israel and has been providing significant support to the country in the face of the ongoing conflict with Iran.",
-    "israel_stance": "Israel has been cooperating closely with the US and has been involved in various military and diplomatic efforts to counter the Iranian threat.",
-    "iran_stance": "Iran has been viewing the US-Israel alliance as a threat to its national security and has been involved in various conflicts in the region."
+    "us_stance": "The US has condemned Israel's actions in Palestine and called for an end to the violence and a return to peace talks.",
+    "israel_stance": "Israel has defended its actions in Palestine, citing security concerns and the need to protect its citizens.",
+    "iran_stance": "Iran has increased its military presence in the region, sparking concerns about regional stability and the potential for conflict."
   },
   "terms": [
     {
-      "term": "Eid ul Fitr",
-      "simple_explanation": "Eid ul Fitr is a significant Islamic holiday that marks the end of the holy month of Ramadan. It is a time of celebration and festivities for Muslims around the world."
+      "term": "Fifa",
+      "simple_explanation": "Fifa is the international governing body of football, responsible for setting rules and regulations for the sport worldwide. It has significant influence over the global football community and has the power to impose sanctions on countries that violate its rules."
     },
     {
-      "term": "Proxy forces",
-      "simple_explanation": "Proxy forces refer to groups or individuals who are supported and funded by a state or organization to carry out attacks or operations on their behalf. This can include militant groups, rebels, or other non-state actors."
+      "term": "Eid al-Fitr",
+      "simple_explanation": "Eid al-Fitr is a significant Islamic holiday that marks the end of the holy month of Ramadan. It is a time of celebration and reflection for Muslims around the world, and is often marked with prayers, feasting, and gift-giving."
     },
     {
-      "term": "Asymmetric warfare",
-      "simple_explanation": "Asymmetric warfare refers to a type of conflict where one side uses unconventional tactics and strategies to counter a more powerful opponent. This can include guerrilla warfare, terrorism, and other forms of irregular warfare."
+      "term": "Al-Aqsa Mosque",
+      "simple_explanation": "Al-Aqsa Mosque is a significant Islamic holy site located in Jerusalem, Israel. It is considered one of the holiest sites in Islam and is a major pilgrimage destination for Muslims around the world."
     },
     {
       "term": "Hezbollah",
-      "simple_explanation": "Hezbollah is a Lebanese militant group that is known for its anti-Israel and anti-Western stance. The group has been involved in various conflicts in the region and has received support from Iran."
+      "simple_explanation": "Hezbollah is a Shia Islamist political and military organization based in Lebanon. It has significant influence in the region and has been involved in various conflicts, including the Syrian Civil War."
     },
     {
-      "term": "US-Israel alliance",
-      "simple_explanation": "The US-Israel alliance refers to the close diplomatic and military relationship between the United States and Israel. The two countries have a long history of cooperation and have been involved in various joint military and diplomatic efforts."
+      "term": "Hamas",
+      "simple_explanation": "Hamas is a Palestinian Islamist organization that has been involved in various conflicts with Israel. It has significant influence in the Gaza Strip and has been responsible for numerous rocket attacks on Israel."
     },
     {
-      "term": "Iranian retaliation",
-      "simple_explanation": "Iranian retaliation refers to the potential for Iran to launch attacks or other forms of retaliation against the US, Israel, or other countries involved in the conflict. This could include missile strikes, cyber attacks, or other forms of asymmetric warfare."
+      "term": "US-Israel relations",
+      "simple_explanation": "US-Israel relations refer to the diplomatic and strategic relationship between the United States and Israel. The two countries have a long history of cooperation and have significant shared interests in the region, including energy security and regional stability."
     },
     {
-      "term": "Global oil prices",
-      "simple_explanation": "Global oil prices refer to the price of oil on the global market. The price of oil can be affected by a variety of factors, including supply and demand, geopolitical events, and other market trends."
+      "term": "US-Iran relations",
+      "simple_explanation": "US-Iran relations refer to the diplomatic and strategic relationship between the United States and Iran. The two countries have a complex and often tense relationship, with significant disagreements over issues such as nuclear proliferation and regional stability."
     },
     {
-      "term": "Oil-importing countries",
-      "simple_explanation": "Oil-importing countries refer to countries that rely on imports to meet their oil needs. These countries can be affected by changes in global oil prices and may be vulnerable to disruptions in oil supplies."
+      "term": "Regional stability",
+      "simple_explanation": "Regional stability refers to the level of peace and security in a given region. It is often influenced by factors such as conflict, terrorism, and economic development, and is a significant concern for countries and organizations involved in the region."
     },
     {
-      "term": "Diplomatic efforts",
-      "simple_explanation": "Diplomatic efforts refer to the attempts by countries or international organizations to resolve conflicts or address issues through negotiation and dialogue. This can include diplomatic meetings, talks, and other forms of communication."
+      "term": "Global energy markets",
+      "simple_explanation": "Global energy markets refer to the international trade and distribution of energy resources, including oil, gas, and other fuels. The Middle East is a significant player in global energy markets, and conflicts in the region can have significant implications for energy prices and availability."
+    },
+    {
+      "term": "Diaspora",
+      "simple_explanation": "Diaspora refers to a community of people who have been dispersed from their original homeland, often due to conflict, persecution, or economic factors. The Indian diaspora, for example, refers to the community of people of Indian origin living outside of India."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 03:19 UTC",
-      "l": "HIGH",
-      "tone": "The US has used 5,00"
-    },
     {
       "t": "2026-03-18 05:12 UTC",
       "l": "MEDIUM",
@@ -451,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 12:40 UTC",
       "l": "HIGH",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-20 13:46 UTC",
+      "l": "MEDIUM",
+      "tone": "The conflict is esca"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has led to increased tensions in the Middle East, with Eid ul Fitr celebrations being dampened. The conflict has significant implications for global oil prices and energy security. India, being a major oil importer, is closely watching the developments. The situation remains volatile, with multiple actors involved.",
-  "totalReports": 77,
+  "execSummary": "The US-Israel-Iran war continues to escalate with rising tensions in the Middle East. Israel's actions in Palestine have sparked international condemnation, while Iran's military presence in the region remains a concern. The conflict has significant implications for global energy markets and regional stability. India's interests are also at stake, particularly in terms of energy security and diaspora safety.",
+  "totalReports": 78,
   "indiaImpact": [
     {
-      "headline": "India's Oil Imports At Risk",
-      "detail": "India's oil imports are at risk due to the ongoing conflict in the Middle East. The country is a major oil importer and relies heavily on imports to meet its oil needs. The conflict has led to a significant increase in global oil prices, which could affect India's economy.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "India's oil imports are a critical component of its economy, and any disruption to supplies could have significant consequences. The country has been diversifying its oil imports in recent years, but it still relies heavily on imports from the Middle East. The conflict has led to a significant increase in global oil prices, which could affect India's economy and lead to higher fuel prices for consumers.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "source": "NDTV"
-    },
-    {
-      "headline": "Indian Diaspora In The Middle East",
-      "detail": "There are significant numbers of Indian nationals living and working in the Middle East, particularly in countries such as the UAE and Saudi Arabia. The ongoing conflict has raised concerns about the safety and security of these individuals.",
+      "headline": "Indian Nationals in Middle East Affected by Conflict",
+      "detail": "The conflict in the Middle East has significant implications for Indian nationals living and working in the region. Many Indians have been affected by the violence and have been forced to evacuate their homes and workplaces. The Indian government has issued travel advisories and has been working to evacuate its citizens from the affected areas.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been in touch with the governments of the countries involved, urging them to take steps to ensure the safety and security of Indian nationals. The government has also been providing assistance to Indian nationals who wish to leave the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The conflict in the Middle East has significant implications for Indian nationals living and working in the region. Many Indians have been affected by the violence and have been forced to evacuate their homes and workplaces. The Indian government has issued travel advisories and has been working to evacuate its citizens from the affected areas. The situation has significant implications for India's diaspora community and has raised concerns about the safety and security of Indian nationals abroad.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fmuslim-worshippers-pray-riyadh-reuters-2026-03-20.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/pictures-middle-east-celebrates-eid-under-shadow-iran-war",
+      "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India has been involved in diplomatic efforts to resolve the conflict in the Middle East. The country has been in touch with the governments of the countries involved, urging restraint and a peaceful resolution to the conflict.",
+      "headline": "Indian Energy Interests at Risk",
+      "detail": "The conflict in the Middle East has significant implications for India's energy interests in the region. India is a significant importer of oil and gas from the Middle East, and the conflict has raised concerns about the stability of energy supplies. The Indian government has been working to diversify its energy sources and reduce its dependence on Middle Eastern oil and gas.",
+      "category": "Energy",
+      "significance": "MEDIUM",
+      "full_detail": "The conflict in the Middle East has significant implications for India's energy interests in the region. India is a significant importer of oil and gas from the Middle East, and the conflict has raised concerns about the stability of energy supplies. The Indian government has been working to diversify its energy sources and reduce its dependence on Middle Eastern oil and gas. The situation has significant implications for India's energy security and has raised concerns about the potential for price increases and supply disruptions.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "source": "Middle East Eye"
+    },
+    {
+      "headline": "Indian Diplomacy in the Region",
+      "detail": "The conflict in the Middle East has significant implications for India's diplomatic efforts in the region. India has been working to build relationships with countries in the Middle East and has been involved in various diplomatic initiatives to promote peace and stability in the region. The Indian government has been working to balance its relationships with Israel and Iran, and has been seeking to promote a peaceful resolution to the conflict.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "India's diplomatic efforts have been focused on finding a peaceful resolution to the conflict. The country has been working closely with other countries in the region, as well as international organizations such as the United Nations, to find a solution to the conflict.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "source": "NDTV"
+      "full_detail": "The conflict in the Middle East has significant implications for India's diplomatic efforts in the region. India has been working to build relationships with countries in the Middle East and has been involved in various diplomatic initiatives to promote peace and stability in the region. The Indian government has been working to balance its relationships with Israel and Iran, and has been seeking to promote a peaceful resolution to the conflict. The situation has significant implications for India's diplomatic relationships in the region and has raised concerns about the potential for conflict and instability.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "source": "Middle East Eye"
     },
     {
-      "headline": "Impact On India's Economy",
-      "detail": "The ongoing conflict in the Middle East has the potential to affect India's economy, particularly in terms of oil prices and trade. The country is a major oil importer and relies heavily on imports to meet its oil needs.",
+      "headline": "Indian Economy Affected by Conflict",
+      "detail": "The conflict in the Middle East has significant implications for India's economy, particularly in terms of energy prices and trade. The conflict has raised concerns about the stability of energy supplies and has led to price increases for oil and gas. The Indian government has been working to mitigate the impact of the conflict on the economy and has been seeking to promote economic growth and stability.",
       "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "The conflict has led to a significant increase in global oil prices, which could affect India's economy and lead to higher fuel prices for consumers. The country has been diversifying its oil imports in recent years, but it still relies heavily on imports from the Middle East. The conflict has also raised concerns about the potential for disruptions to trade, which could affect India's economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fq52ft19k_eid_625x300_20_March_26.jpeg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.ndtv.com/world-news/eid-al-fitr-2026-live-updates-moon-sighting-date-time-moonrise-date-and-timings-in-saudi-arabia-uae-india-eid-timings-in-india-iran-war-middle-east-11242400#publisher=newsstand",
-      "source": "NDTV"
+      "significance": "MEDIUM",
+      "full_detail": "The conflict in the Middle East has significant implications for India's economy, particularly in terms of energy prices and trade. The conflict has raised concerns about the stability of energy supplies and has led to price increases for oil and gas. The Indian government has been working to mitigate the impact of the conflict on the economy and has been seeking to promote economic growth and stability. The situation has significant implications for India's economic growth and has raised concerns about the potential for inflation and economic instability.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fisrael%2520football%2520beitar%2520afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-has-brought-football-disrepute-says-fifa",
+      "source": "Middle East Eye"
     }
   ],
   "indiaSummary": ""
