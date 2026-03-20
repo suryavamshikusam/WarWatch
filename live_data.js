@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 21:25 UTC",
-  "escalationLevel": "CRITICAL",
+  "generatedAt": "2026-03-20 21:52 UTC",
+  "escalationLevel": "MEDIUM",
   "alerts": [
-    "US: US Prepares Ground Troops for Iran · 0 min ago",
-    "Iran: Iran Vows to Exercise Right to Self-Defense · 0 min ago",
-    "UK: UK Allows US to Use Bases for Strikes on Iran · 0 min ago",
-    "US and Israel: US-Israel War on Iran Escalates · 0 min ago",
-    "Iran: Iranian Missile Sites Target Shipping in Strait of Hormuz · 0 min ago"
+    "Saudi Arabia: Saudi Arabia Supports US-Israeli War · 0 min ago",
+    "Iran: Iran Increases Attacks on US Bases · 0 min ago",
+    "US: US Seeks Expanded Access in Saudi Arabia · 0 min ago",
+    "UAE: UAE Considers Supporting US-Israeli Alliance · 0 min ago",
+    "Israel: Israel Increases Military Presence · 0 min ago"
   ],
   "heroStats": {
-    "tension": "CRITICAL",
-    "updatesToday": 19,
-    "lastUpdated": "2026-03-20 21:25 UTC",
-    "sourcesUsed": 2
+    "tension": "MEDIUM",
+    "updatesToday": 20,
+    "lastUpdated": "2026-03-20 21:52 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 98,
-      "lvl": "Critical",
-      "color": "var(--red)"
+      "pct": 50,
+      "lvl": "Medium",
+      "color": "var(--amber)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 90,
-      "lvl": "Critical",
+      "pct": 42,
+      "lvl": "Medium",
       "color": "var(--red)"
     },
     {
@@ -35,34 +35,34 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 70,
-      "lvl": "High",
+      "pct": 30,
+      "lvl": "Moderate",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 78,
-      "lvl": "Elevated",
-      "color": "var(--red)"
+      "pct": 38,
+      "lvl": "Moderate",
+      "color": "var(--amber)"
     }
   ],
   "newsCards": [
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
+      "actorClass": "p-gray",
+      "actor": "Saudi Arabia",
       "time": "0 min ago",
-      "headline": "US Prepares Ground Troops for Iran",
-      "summary": "The US Department of War has produced detailed plans involving the use of ground troops in the war on Iran. The plans include options for the president in scenarios where Iranians are captured and detained, as well as how to handle paramilitary forces. This development increases the risk of a wider conflict and raises concerns about the potential for civilian casualties. The US has not yet made a decision to deploy soldiers, but the planning is underway.",
+      "headline": "Saudi Arabia Supports US-Israeli War",
+      "summary": "Saudi Arabia has agreed to open King Fahd Air Base in Taif to the Americans, allowing for expanded access and overflight permissions. This development is significant, as it indicates Saudi Arabia's willingness to support the US-Israeli alliance. The base is strategically located, farther from Iranian Shahed drones, and will likely play a crucial role in the conflict. The move is seen as a response to Iran's increased aggression in the region.",
       "whyTxt": "",
       "orgs": [
-        "US"
+        "Saudi Arabia"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -70,157 +70,152 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Vows to Exercise Right to Self-Defense",
-      "summary": "Iranian Foreign Minister Abbas Araghchi says the country will exercise its legitimate right to self-defense in response to UK Prime Minister Keir Starmer’s decision to allow the US to use UK bases to carry out strikes on Iranian missile sites. Araghchi said the vast majority of the British people do not want to get involved in the US-Israel war on Iran. This development increases the risk of a wider conflict and raises concerns about the potential for civilian casualties.",
+      "headline": "Iran Increases Attacks on US Bases",
+      "summary": "Iran has increased its attacks on US bases in the Gulf, prompting the US to seek expanded access and overflight permissions from Saudi Arabia. The attacks have raised concerns about the safety of US personnel and the stability of the region. The US has responded by increasing its military presence in the area, which has further escalated the conflict.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-will-exercise-our-legitimate-right-self-defence",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "US",
+      "time": "0 min ago",
+      "headline": "US Seeks Expanded Access in Saudi Arabia",
+      "summary": "The US has sought expanded access and overflight permissions from Saudi Arabia, which has agreed to open King Fahd Air Base in Taif to the Americans. This development is significant, as it indicates the US's willingness to work with Saudi Arabia to counter Iranian aggression. The move is seen as a strategic response to Iran's increased attacks on US bases in the Gulf.",
+      "whyTxt": "",
+      "orgs": [
+        "US"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
-      "actor": "UK",
+      "actor": "UAE",
       "time": "0 min ago",
-      "headline": "UK Allows US to Use Bases for Strikes on Iran",
-      "summary": "UK Prime Minister Keir Starmer has allowed the US to use UK bases to carry out strikes on Iranian missile sites targeting shipping in the Strait of Hormuz. This development increases the risk of a wider conflict and raises concerns about the potential for civilian casualties. The UK's decision has been criticized by Iranian officials, who say it puts British lives in danger.",
+      "headline": "UAE Considers Supporting US-Israeli Alliance",
+      "summary": "The UAE is considering supporting the US-Israeli alliance, which could further escalate the conflict. The UAE's involvement would be significant, as it would indicate a shift in the regional balance of power. The move is seen as a response to Iran's increased aggression in the region, and could have significant implications for the conflict.",
       "whyTxt": "",
       "orgs": [
-        "UK"
+        "UAE"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
-      "actor": "US and Israel",
+      "actor": "Israel",
       "time": "0 min ago",
-      "headline": "US-Israel War on Iran Escalates",
-      "summary": "The conflict between the US, Israel, and Iran is escalating, with multiple countries involved and the potential for further escalation. The US and Israel are taking aggressive stances, increasing the risk of a wider conflict. Iran has vowed to exercise its right to self-defense, raising concerns about the potential for civilian casualties.",
+      "headline": "Israel Increases Military Presence",
+      "summary": "Israel has increased its military presence in the region, which has further escalated the conflict. The move is seen as a response to Iran's increased attacks on US bases in the Gulf, and could have significant implications for the conflict. Israel's involvement is significant, as it could lead to further escalation and potentially draw in other countries.",
       "whyTxt": "",
       "orgs": [
-        "US and Israel"
+        "Israel"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "0 min ago",
-      "headline": "Iranian Missile Sites Target Shipping in Strait of Hormuz",
-      "summary": "Iranian missile sites are targeting shipping in the Strait of Hormuz, a critical waterway for international trade. The US and its allies are taking steps to protect shipping in the region, increasing the risk of a wider conflict. The situation is critical, with multiple countries involved and the potential for further escalation.",
-      "whyTxt": "",
-      "orgs": [
-        "Iran"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "US Department of War Plans for Ground Troops",
-      "summary": "The US Department of War has produced detailed plans involving the use of ground troops in the war on Iran. The plans include options for the president in scenarios where Iranians are captured and detained, as well as how to handle paramilitary forces. This development increases the risk of a wider conflict and raises concerns about the potential for civilian casualties.",
+      "headline": "US Department of War Holds Call with Saudi Arabia",
+      "summary": "The US Department of War held a call with Saudi Arabian Defence Minister Khalid bin Salman, which discussed the conflict and potential cooperation between the two countries. The call is significant, as it indicates the US's willingness to work with Saudi Arabia to counter Iranian aggression. The move is seen as a strategic response to Iran's increased attacks on US bases in the Gulf.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iranian Foreign Minister Criticizes UK Decision",
-      "summary": "Iranian Foreign Minister Abbas Araghchi has criticized the UK's decision to allow the US to use UK bases to carry out strikes on Iranian missile sites. Araghchi said the vast majority of the British people do not want to get involved in the US-Israel war on Iran. This development increases the risk of a wider conflict and raises concerns about the potential for civilian casualties.",
+      "headline": "Iran's Attacks on US Bases Intensify",
+      "summary": "Iran's attacks on US bases in the Gulf have intensified, prompting the US to seek expanded access and overflight permissions from Saudi Arabia. The attacks have raised concerns about the safety of US personnel and the stability of the region. The US has responded by increasing its military presence in the area, which has further escalated the conflict.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is taking an aggressive stance, preparing for potential ground troops in Iran and carrying out strikes on Iranian missile sites.",
-    "israel_stance": "Israel is also taking an aggressive stance, supporting the US in its actions against Iran.",
-    "iran_stance": "Iran is vowing to exercise its right to self-defense, increasing the risk of a wider conflict."
+    "us_stance": "The US is seeking to counter Iranian aggression and protect its interests in the region, and is willing to work with Saudi Arabia and other countries to achieve this goal.",
+    "israel_stance": "Israel is increasing its military presence in the region and is prepared to take action to protect its interests and counter Iranian aggression.",
+    "iran_stance": "Iran is continuing to attack US bases in the Gulf and is seeking to expand its influence in the region, despite the risks of further escalation."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "A critical waterway for international trade, located between Iran and the UAE."
+      "term": "Shahed drones",
+      "simple_explanation": "Shahed drones are a type of unmanned aerial vehicle (UAV) used by Iran for military purposes. They are capable of carrying out attacks on enemy targets and are often used for reconnaissance and surveillance."
     },
     {
-      "term": "Paramilitary forces",
-      "simple_explanation": "Forces that are not part of a country's official military, but may still be involved in conflict."
-    },
-    {
-      "term": "Ground troops",
-      "simple_explanation": "Soldiers who are deployed on the ground, as opposed to those in the air or at sea."
-    },
-    {
-      "term": "Missile sites",
-      "simple_explanation": "Locations where missiles are launched from, often used for military purposes."
-    },
-    {
-      "term": "UK bases",
-      "simple_explanation": "Military bases located in the UK, which may be used by other countries for military operations."
-    },
-    {
-      "term": "US-Israel war on Iran",
-      "simple_explanation": "The conflict between the US, Israel, and Iran, which is escalating and increasing the risk of a wider conflict."
-    },
-    {
-      "term": "Self-defense",
-      "simple_explanation": "The right of a country to defend itself against attack or aggression."
+      "term": "King Fahd Air Base",
+      "simple_explanation": "King Fahd Air Base is a military airbase located in Taif, Saudi Arabia. It is one of the largest airbases in the country and is used by the Saudi Arabian Air Force for military operations."
     },
     {
       "term": "US Department of War",
-      "simple_explanation": "The US government department responsible for military operations and planning."
+      "simple_explanation": "The US Department of War is a department of the US government responsible for the country's military operations and defense. It is also known as the US Department of Defense."
     },
     {
-      "term": "Iranian Foreign Minister",
-      "simple_explanation": "The official responsible for Iran's foreign policy and diplomatic relations."
+      "term": "Overflight permissions",
+      "simple_explanation": "Overflight permissions refer to the authorization given by a country to allow foreign aircraft to fly over its territory. This is often required for military operations and can be a sensitive issue in international relations."
     },
     {
-      "term": "UK Prime Minister",
-      "simple_explanation": "The head of the UK government, responsible for making key decisions on policy and strategy."
+      "term": "Expanded access",
+      "simple_explanation": "Expanded access refers to the increased ability of a country to use a particular facility or resource, such as a military base or airspace. This can be important for military operations and can be a key factor in international relations."
+    },
+    {
+      "term": "US-Israeli alliance",
+      "simple_explanation": "The US-Israeli alliance refers to the close relationship between the United States and Israel, which is based on shared strategic interests and a commitment to mutual defense. The alliance is seen as a key factor in the Middle East and has significant implications for the region."
+    },
+    {
+      "term": "UAE",
+      "simple_explanation": "The UAE, or United Arab Emirates, is a country located in the Middle East. It is a federation of seven emirates and is known for its oil wealth and strategic location."
+    },
+    {
+      "term": "Saudi Arabian Air Force",
+      "simple_explanation": "The Saudi Arabian Air Force is the air force of Saudi Arabia, responsible for the country's air defense and military aviation. It is one of the largest and most advanced air forces in the Middle East."
+    },
+    {
+      "term": "Gulf region",
+      "simple_explanation": "The Gulf region refers to the area surrounding the Persian Gulf, which includes countries such as Saudi Arabia, Iran, and the UAE. The region is known for its oil wealth and strategic location, and is often a focus of international attention and conflict."
+    },
+    {
+      "term": "Middle East",
+      "simple_explanation": "The Middle East is a region that includes countries such as Saudi Arabia, Iran, Israel, and the UAE. It is known for its strategic location, oil wealth, and complex international relations, and is often a focus of global attention and conflict."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 15:52 UTC",
-      "l": "LOW",
-      "tone": "No relevant informat"
-    },
     {
       "t": "2026-03-18 16:52 UTC",
       "l": "MEDIUM",
@@ -455,49 +450,54 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 21:25 UTC",
       "l": "CRITICAL",
       "tone": "The US is preparing "
+    },
+    {
+      "t": "2026-03-20 21:52 UTC",
+      "l": "MEDIUM",
+      "tone": "The involvement of m"
     }
   ],
-  "execSummary": "The US is preparing for potential ground troops in Iran, while Iran has vowed to exercise its right to self-defense. The conflict is escalating, with the UK allowing the US to use its bases for strikes on Iranian missile sites. The situation is critical, with multiple countries involved and the potential for further escalation. The US, Israel, and Iran are taking aggressive stances, increasing the risk of a wider conflict.",
-  "totalReports": 86,
+  "execSummary": "The US-Israel-Iran war is escalating, with Saudi Arabia and the UAE considering support for the US-Israeli alliance. Iran's attacks on US bases in the Gulf have increased, prompting the US to seek expanded access and overflight permissions. The situation remains volatile, with multiple countries involved and various interests at stake. The conflict's impact on global energy markets and Indian nationals abroad is a growing concern.",
+  "totalReports": 87,
   "indiaImpact": [
     {
-      "headline": "Indian Nationals in Iran at Risk",
-      "detail": "Indian nationals living and working in Iran may be at risk due to the escalating conflict. The Indian government should take steps to protect its citizens and provide assistance to those affected. The conflict may also impact India's trade and economic relationships with Iran.",
+      "headline": "Indian Nationals Abroad at Risk",
+      "detail": "The conflict in the Middle East has raised concerns about the safety of Indian nationals living and working in the region. Many Indians are employed in the oil and gas industry, and are at risk of being caught in the crossfire. The Indian government has issued warnings and advisories to its citizens, and is working to evacuate those in danger.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has a responsibility to protect its citizens abroad, particularly in conflict zones. The conflict in Iran may impact India's trade and economic relationships with the country, as well as the safety and security of Indian nationals living and working there. The Indian government should take steps to provide assistance to those affected and to protect its citizens from harm.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "full_detail": "The conflict in the Middle East has significant implications for Indian nationals living and working in the region. Many Indians are employed in the oil and gas industry, and are at risk of being caught in the crossfire. The Indian government has issued warnings and advisories to its citizens, and is working to evacuate those in danger. The situation is being closely monitored by the Indian government, which is in touch with its citizens in the region and is working to ensure their safety.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Energy Imports from Iran at Risk",
-      "detail": "India's energy imports from Iran may be at risk due to the escalating conflict. The US and its allies may impose sanctions on Iran, which could impact India's ability to import oil and gas from the country. The conflict may also increase the risk of disruption to global energy supplies.",
+      "headline": "Indian Oil Imports at Risk",
+      "detail": "The conflict in the Middle East has raised concerns about the stability of oil supplies, which could have significant implications for India's energy security. India is heavily reliant on oil imports, and any disruption to supplies could have a major impact on the country's economy.",
       "category": "Energy",
-      "significance": "MEDIUM",
-      "full_detail": "India is a significant importer of oil and gas from Iran, and the conflict may impact its ability to secure these energy supplies. The US and its allies may impose sanctions on Iran, which could make it difficult for India to import energy from the country. The conflict may also increase the risk of disruption to global energy supplies, which could have a significant impact on India's economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-will-exercise-our-legitimate-right-self-defence",
+      "significance": "HIGH",
+      "full_detail": "The conflict in the Middle East has significant implications for India's energy security, as the country is heavily reliant on oil imports. Any disruption to supplies could have a major impact on the country's economy, and could lead to increased prices and shortages. The Indian government is closely monitoring the situation and is working to diversify its energy sources and reduce its reliance on oil imports.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts to Resolve Conflict",
-      "detail": "India may play a role in diplomatic efforts to resolve the conflict between the US, Israel, and Iran. The Indian government has good relationships with all three countries and may be able to facilitate dialogue and negotiation. The conflict may also impact India's relationships with other countries in the region.",
+      "headline": "India's Diplomatic Efforts",
+      "detail": "India is working to play a diplomatic role in the conflict, and is in touch with all parties involved. The Indian government is seeking to promote a peaceful resolution to the conflict, and is working to reduce tensions and promote dialogue.",
       "category": "Diplomacy",
-      "significance": "LOW",
-      "full_detail": "India has a long history of diplomatic engagement with countries in the Middle East and may be able to play a role in resolving the conflict. The Indian government has good relationships with the US, Israel, and Iran, and may be able to facilitate dialogue and negotiation. However, the conflict is complex and multifaceted, and it may be difficult for India to have a significant impact on the outcome.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "significance": "MEDIUM",
+      "full_detail": "India is working to play a diplomatic role in the conflict, and is in touch with all parties involved. The Indian government is seeking to promote a peaceful resolution to the conflict, and is working to reduce tensions and promote dialogue. India's diplomatic efforts are seen as important, as the country has good relations with all parties involved and is well-placed to promote a peaceful resolution.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "source": "Middle East Eye"
     },
     {
-      "headline": "India's Economy at Risk Due to Conflict",
-      "detail": "The conflict between the US, Israel, and Iran may have a significant impact on India's economy. The conflict may disrupt global trade and energy supplies, which could impact India's economic growth and development. The Indian government should take steps to mitigate the risks and protect its economy.",
+      "headline": "Indian Economy at Risk",
+      "detail": "The conflict in the Middle East has raised concerns about the stability of the global economy, which could have significant implications for India. The country is heavily reliant on exports, and any disruption to global trade could have a major impact on its economy.",
       "category": "Economy",
-      "significance": "MEDIUM",
-      "full_detail": "The conflict may disrupt global trade and energy supplies, which could impact India's economic growth and development. The Indian government should take steps to mitigate the risks and protect its economy, such as diversifying its energy imports and promoting domestic production. The conflict may also create opportunities for India to increase its trade and investment with other countries in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2F2026-03-10T204657Z_1893588701_RC2NZJASKNPZ_RTRMADP_3_IRAN-CRISIS-2.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-military-readies-plan-ground-troops-iran-report",
+      "significance": "HIGH",
+      "full_detail": "The conflict in the Middle East has significant implications for India's economy, as the country is heavily reliant on exports. Any disruption to global trade could have a major impact on the country's economy, and could lead to increased prices and shortages. The Indian government is closely monitoring the situation and is working to diversify its exports and reduce its reliance on any one market.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2FMBS-investment-US-Nov-2025-AFP_4.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/punish-iran-saudi-arabia-and-uae-inch-closer-supporting-us-israeli-war",
       "source": "Middle East Eye"
     }
   ],
