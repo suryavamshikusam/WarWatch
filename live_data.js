@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 17:01 UTC",
-  "escalationLevel": "CRITICAL",
+  "generatedAt": "2026-03-20 17:52 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: IRGC Commander Praises Allies · 0 min ago",
-    "US: Trump Mulls Kharg Island Takeover · 0 min ago",
-    "Switzerland: Switzerland Halts Arms Exports to US · 0 min ago",
-    "Iran: Iran Warns of Zero Restraint · 0 min ago",
-    "US: US-Israel Rift Widens · 0 min ago"
+    "Iran: Iran Supreme Leader Defiant · 0 min ago",
+    "Israel: Esmail Ahmadi Killed · 0 min ago",
+    "US: US-Israel Alliance · 0 min ago",
+    "Iran: Iran Retaliation · 0 min ago",
+    "Other: Global Energy Markets · 0 min ago"
   ],
   "heroStats": {
-    "tension": "CRITICAL",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-20 17:01 UTC",
-    "sourcesUsed": 3
+    "tension": "HIGH",
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-20 17:52 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 90,
-      "lvl": "Critical",
+      "pct": 72,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 82,
-      "lvl": "Critical",
+      "pct": 64,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
@@ -35,13 +35,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 70,
+      "pct": 52,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 78,
+      "pct": 60,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -53,16 +53,33 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "IRGC Commander Praises Allies",
-      "summary": "Iran's Islamic Revolutionary Guard Corps (IRGC) Quds Force commander Esmail Qaani has applauded the 'resistance front' of Tehran's regional allies for uniting against US and Israeli aggression. This is Qaani's first statement since Israel's killing of Iranian Supreme Leader Ayatollah Ali Khamenei on 28 February. The statement highlights the growing unity among Iran's regional allies in the face of US and Israeli aggression. The IRGC has been a key player in the conflict, providing military support to Iran's allies in the region.",
+      "headline": "Iran Supreme Leader Defiant",
+      "summary": "Ayatollah Mojtaba Khamenei has delivered a defiant message on Persian New Year, despite the killing of several top Iranian officials. This message is seen as a sign of Iran's resolve to continue fighting. The message has been met with skepticism by the international community. The situation remains volatile.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "sourceLabel": "NDTV",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Esmail Ahmadi Killed",
+      "summary": "Esmail Ahmadi, head of the intelligence division of the Basij Force, was killed in an air strike by Israel. Ahmadi was a key figure in planning and executing attacks carried out by the Basij Forces. The killing is seen as a significant blow to Iran's military capabilities. The strike has been condemned by Iran.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.livemint.com/news/world/who-was-esmail-ahmadi-head-of-intelligence-division-of-basij-force-killed-in-tehran-strike-by-israel-amid-conflict-11774020155631.html",
+      "sourceLabel": "LiveMint",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FScreenshot_2026-03-20_211457_1774023777361_1774023782364.png&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -70,33 +87,16 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "Trump Mulls Kharg Island Takeover",
-      "summary": "The Trump administration is considering occupying or blockading Iran's Kharg Island, a strategic location for Iran's oil exports. The move is seen as a significant escalation of the conflict, with potential implications for global energy security. The US has been seeking to disrupt Iran's oil exports, which are a crucial source of revenue for the country. The takeover of Kharg Island would give the US significant control over Iran's oil exports.",
+      "headline": "US-Israel Alliance",
+      "summary": "The US and Israel have reaffirmed their alliance in the face of the escalating conflict with Iran. The US has pledged to support Israel's right to self-defense. The alliance has been met with criticism from Iran and its allies. The situation remains tense.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "Switzerland",
-      "time": "0 min ago",
-      "headline": "Switzerland Halts Arms Exports to US",
-      "summary": "Switzerland has suspended new approvals for arms exports to the United States amid the ongoing US-Israeli war on Iran, citing its long-standing policy of neutrality. The move is seen as a significant development, as Switzerland is a key supplier of arms to the US. The suspension of arms exports is likely to have implications for the US military's ability to sustain its operations in the region.",
-      "whyTxt": "",
-      "orgs": [
-        "Switzerland"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/news/switzerland-halts-arms-exports-us-over-iran-war-citing-neutrality",
-      "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fswiss-pres-and-eu-commission-pres-2026-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -104,123 +104,118 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Warns of Zero Restraint",
-      "summary": "Iran has warned of 'zero restraint' as attacks spread across Gulf oil sites, including Kuwait. The warning is seen as a significant escalation of the conflict, with potential implications for global energy security. Iran has been seeking to disrupt the oil exports of its enemies, and the warning suggests that it may be willing to take more drastic action to achieve its goals.",
+      "headline": "Iran Retaliation",
+      "summary": "Iran has vowed to retaliate against Israel for the killing of its top officials. The retaliation is expected to be significant and could involve attacks on Israeli targets. The situation remains volatile. The international community is calling for restraint.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "US-Israel Rift Widens",
-      "summary": "Differences have surfaced between the US and Israel over the South Pars strike, with the US reportedly seeking to limit the scope of the conflict. The rift is seen as a significant development, as the US and Israel have been key allies in the conflict. The differences between the two countries may have implications for the future of the conflict, and may potentially lead to a shift in the US's strategy.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
       "actorClass": "p-gray",
-      "actor": "NATO",
+      "actor": "Other",
       "time": "0 min ago",
-      "headline": "NATO Stays Out of War",
-      "summary": "NATO has stayed out of the war, despite the US's calls for support. The decision is seen as a significant development, as NATO's involvement could have significantly escalated the conflict. The US has been seeking to build a coalition to support its actions in the region, but NATO's decision to stay out of the war may limit its ability to do so.",
+      "headline": "Global Energy Markets",
+      "summary": "The conflict has significant implications for global energy markets. The killing of top Iranian officials has led to a surge in oil prices. The situation remains uncertain. The international community is calling for calm.",
       "whyTxt": "",
       "orgs": [
-        "NATO"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-green",
+      "actor": "India",
+      "time": "0 min ago",
+      "headline": "Indian Diaspora",
+      "summary": "The conflict has put Indian nationals living in the region at risk. The Indian government has issued travel advisories for its citizens. The situation remains tense. The Indian government is working to evacuate its citizens.",
+      "whyTxt": "",
+      "orgs": [
+        "India"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Global Market",
+      "actorClass": "p-red",
+      "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Global Energy Crisis Looms",
-      "summary": "The conflict is having a significant impact on the global energy market, with oil prices rising sharply. The crisis is seen as a significant development, as it could have far-reaching implications for the global economy. The conflict has disrupted oil exports from the region, leading to a shortage of oil on the global market.",
+      "headline": "Iran's Military Capabilities",
+      "summary": "The killing of top Iranian officials has significantly weakened Iran's military capabilities. The country's ability to retaliate has been reduced. The situation remains uncertain. The international community is calling for calm.",
       "whyTxt": "",
       "orgs": [
-        "Global Market"
+        "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
-      "sourceLabel": "Indian Express",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.livemint.com/news/world/who-was-esmail-ahmadi-head-of-intelligence-division-of-basij-force-killed-in-tehran-strike-by-israel-amid-conflict-11774020155631.html",
+      "sourceLabel": "Other",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FScreenshot_2026-03-20_211457_1774023777361_1774023782364.png&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US is seeking to escalate the conflict, with the Trump administration considering occupying or blockading Iran's Kharg Island.",
-    "israel_stance": "Israel is seeking to limit the scope of the conflict, with differences surfacing between the US and Israel over the South Pars strike.",
-    "iran_stance": "Iran is warning of 'zero restraint' as attacks spread across Gulf oil sites, including Kuwait."
+    "us_stance": "The US has reaffirmed its alliance with Israel and has pledged to support Israel's right to self-defense.",
+    "israel_stance": "Israel has vowed to continue its strikes against Iranian targets, citing self-defense.",
+    "iran_stance": "Iran has vowed to retaliate against Israel for the killing of its top officials."
   },
   "terms": [
     {
-      "term": "IRGC",
-      "simple_explanation": "The Islamic Revolutionary Guard Corps is a branch of Iran's military that is responsible for the country's defense and security. It is a key player in the conflict, providing military support to Iran's allies in the region."
+      "term": "Basij Force",
+      "simple_explanation": "The Basij Force is a paramilitary organization in Iran that is responsible for internal security and law enforcement. It is also involved in external military operations."
     },
     {
-      "term": "Quds Force",
-      "simple_explanation": "The Quds Force is a special forces unit of the IRGC that is responsible for carrying out clandestine operations and providing military support to Iran's allies in the region."
+      "term": "Ayatollah",
+      "simple_explanation": "An Ayatollah is a high-ranking cleric in Shia Islam. In Iran, the Ayatollah is the supreme leader of the country."
     },
     {
-      "term": "Kharg Island",
-      "simple_explanation": "Kharg Island is a strategic location for Iran's oil exports, and is seen as a key target for the US in the conflict."
+      "term": "Persian New Year",
+      "simple_explanation": "The Persian New Year, also known as Nowruz, is a significant holiday in Iran and other countries in the region. It marks the beginning of spring and is celebrated on March 20-21."
     },
     {
-      "term": "South Pars",
-      "simple_explanation": "The South Pars gas field is a large natural gas field located in the Persian Gulf, and is seen as a key target for the US and Israel in the conflict."
+      "term": "IDF",
+      "simple_explanation": "The IDF, or Israel Defense Forces, is the military of Israel. It is responsible for defending the country against external threats."
     },
     {
-      "term": "NATO",
-      "simple_explanation": "The North Atlantic Treaty Organization is a military alliance of North American and European countries that is seen as a key player in global security. It has stayed out of the conflict, despite the US's calls for support."
+      "term": "US-Israel alliance",
+      "simple_explanation": "The US-Israel alliance refers to the close military and strategic relationship between the United States and Israel. The two countries have a long history of cooperation on defense and security issues."
     },
     {
-      "term": "Neutrality",
-      "simple_explanation": "Neutrality refers to a country's policy of not taking sides in a conflict. Switzerland has cited its long-standing policy of neutrality as the reason for suspending new approvals for arms exports to the US."
+      "term": "Self-defense",
+      "simple_explanation": "Self-defense refers to the right of a country to defend itself against external threats. In the context of the US-Israel-Iran conflict, self-defense is a key concept that is often cited by Israel to justify its military actions."
     },
     {
-      "term": "Arms exports",
-      "simple_explanation": "Arms exports refer to the sale or transfer of weapons from one country to another. Switzerland has suspended new approvals for arms exports to the US amid the ongoing conflict."
+      "term": "Retaliation",
+      "simple_explanation": "Retaliation refers to the act of responding to an attack or provocation with force or aggression. In the context of the US-Israel-Iran conflict, retaliation is a key concept that is often cited by Iran to justify its military actions."
     },
     {
-      "term": "Energy security",
-      "simple_explanation": "Energy security refers to a country's ability to ensure a stable and reliable supply of energy. The conflict is having a significant impact on global energy security, with oil prices rising sharply."
-    },
-    {
-      "term": "Global economy",
-      "simple_explanation": "The global economy refers to the worldwide system of economic activity. The conflict is having a significant impact on the global economy, with the potential for far-reaching implications."
+      "term": "Global energy markets",
+      "simple_explanation": "Global energy markets refer to the international trade in energy resources such as oil and natural gas. The US-Israel-Iran conflict has significant implications for global energy markets, as it affects the supply and demand of energy resources."
     },
     {
       "term": "Diaspora",
-      "simple_explanation": "Diaspora refers to a community of people who have been dispersed from their original homeland. The conflict is having a significant impact on the Indian diaspora in the region, with many Indians living and working in countries affected by the conflict."
+      "simple_explanation": "Diaspora refers to a community of people who live outside of their country of origin. In the context of the US-Israel-Iran conflict, the Indian diaspora is a significant community that is affected by the conflict."
+    },
+    {
+      "term": "Travel advisory",
+      "simple_explanation": "A travel advisory is a warning issued by a government to its citizens about the risks of traveling to a particular country or region. In the context of the US-Israel-Iran conflict, travel advisories are often issued by governments to warn their citizens about the risks of traveling to the region."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-18 09:06 UTC",
-      "l": "HIGH",
-      "tone": "The use of 'bunker b"
-    },
     {
       "t": "2026-03-18 10:10 UTC",
       "l": "MEDIUM",
@@ -455,50 +450,55 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 17:01 UTC",
       "l": "CRITICAL",
       "tone": "The conflict has esc"
+    },
+    {
+      "t": "2026-03-20 17:52 UTC",
+      "l": "HIGH",
+      "tone": "The killing of top I"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has entered a critical phase with escalating attacks on energy infrastructure, triggering a global crisis. The Trump administration is considering occupying or blockading Iran's Kharg Island, while differences with Israeli Prime Minister Benjamin Netanyahu have surfaced. Iran has warned of 'zero restraint' as attacks spread across Gulf oil sites. The conflict is having a significant impact on the global economy, including India's energy security and diaspora.",
-  "totalReports": 81,
+  "execSummary": "The US-Israel-Iran conflict has escalated with Israel's strike on Tehran, killing several top Iranian officials. Iran's Supreme Leader Ayatollah Mojtaba Khamenei has delivered a defiant message on Persian New Year. The conflict has significant implications for global security and energy markets. India's diaspora and energy interests are also at risk.",
+  "totalReports": 82,
   "indiaImpact": [
     {
-      "headline": "India's Energy Security at Risk",
-      "detail": "The conflict is having a significant impact on India's energy security, with oil prices rising sharply. India is a major importer of oil, and the disruption to global oil supplies is likely to have significant implications for the country's economy. The Indian government has been seeking to diversify its energy sources, but the conflict has highlighted the country's vulnerability to disruptions in the global energy market.",
-      "category": "Energy",
-      "significance": "HIGH",
-      "full_detail": "The conflict is having a significant impact on India's energy security, with oil prices rising sharply. India is a major importer of oil, and the disruption to global oil supplies is likely to have significant implications for the country's economy. The Indian government has been seeking to diversify its energy sources, but the conflict has highlighted the country's vulnerability to disruptions in the global energy market. The government has been working to reduce its dependence on imported oil, but the conflict has shown that more needs to be done to ensure the country's energy security.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
-      "source": "Middle East Eye"
-    },
-    {
-      "headline": "Indian Diaspora Affected",
-      "detail": "The conflict is having a significant impact on the Indian diaspora in the region, with many Indians living and working in countries affected by the conflict. The Indian government has been working to evacuate its citizens from the affected areas, but the conflict has highlighted the vulnerability of the Indian diaspora to global conflicts.",
+      "headline": "Indian Diaspora at Risk",
+      "detail": "The conflict has put Indian nationals living in the region at risk. The Indian government has issued travel advisories for its citizens. The situation remains tense. The Indian government is working to evacuate its citizens.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The conflict is having a significant impact on the Indian diaspora in the region, with many Indians living and working in countries affected by the conflict. The Indian government has been working to evacuate its citizens from the affected areas, but the conflict has highlighted the vulnerability of the Indian diaspora to global conflicts. The government has been working to provide support to its citizens in the affected areas, but more needs to be done to ensure their safety and well-being.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fimages.indianexpress.com%2F2026%2F03%2Firan-way-day-21.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/day-21-iran-war-trump-mulls-kharg-island-takeover-slams-nato-rift-with-israel-widens-10592967/",
-      "source": "Indian Express"
+      "full_detail": "The Indian diaspora is a significant community in the region, with many Indians living and working in countries such as Iran, Israel, and the United Arab Emirates. The conflict has put these individuals at risk, and the Indian government has issued travel advisories to warn them about the dangers of traveling to the region. The Indian government is working to evacuate its citizens from the region, but the situation remains tense.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "source": "NDTV"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India has been making diplomatic efforts to resolve the conflict, with the Indian government seeking to engage with all parties involved. The government has been working to promote a peaceful resolution to the conflict, and has been in touch with other countries in the region to coordinate its efforts.",
-      "category": "Diplomacy",
+      "headline": "Indian Energy Interests",
+      "detail": "The conflict has significant implications for Indian energy interests. India is a major importer of oil from the region, and the conflict has led to a surge in oil prices. The situation remains uncertain. The Indian government is working to diversify its energy sources.",
+      "category": "Energy",
       "significance": "MEDIUM",
-      "full_detail": "India has been making diplomatic efforts to resolve the conflict, with the Indian government seeking to engage with all parties involved. The government has been working to promote a peaceful resolution to the conflict, and has been in touch with other countries in the region to coordinate its efforts. The government has been seeking to play a constructive role in resolving the conflict, and has been working to build support for a peaceful resolution among other countries in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2Fstyles%2Fmax_2600x2600%2Fpublic%2Fimages-story%2Fswiss-pres-and-eu-commission-pres-2026-afp.jpg.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/news/switzerland-halts-arms-exports-us-over-iran-war-citing-neutrality",
-      "source": "Middle East Eye"
+      "full_detail": "India is a major importer of oil from the region, and the conflict has led to a surge in oil prices. This has significant implications for the Indian economy, as higher oil prices can lead to inflation and reduce economic growth. The Indian government is working to diversify its energy sources, including investing in renewable energy and increasing domestic oil production.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.livemint.com%2Flm-img%2Fimg%2F2026%2F03%2F20%2F1600x900%2Flogo%2FScreenshot_2026-03-20_211457_1774023777361_1774023782364.png&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.livemint.com/news/world/who-was-esmail-ahmadi-head-of-intelligence-division-of-basij-force-killed-in-tehran-strike-by-israel-amid-conflict-11774020155631.html",
+      "source": "LiveMint"
     },
     {
-      "headline": "India's Economic Interests",
-      "detail": "The conflict is having a significant impact on India's economic interests, with the disruption to global trade and commerce likely to have significant implications for the country's economy. India is a major trading nation, and the conflict has highlighted the country's vulnerability to disruptions in global trade.",
+      "headline": "Indian Diplomatic Efforts",
+      "detail": "The Indian government has issued a statement calling for calm and restraint in the region. The statement has been met with skepticism by the international community. The situation remains tense. The Indian government is working to play a mediating role in the conflict.",
+      "category": "Diplomacy",
+      "significance": "LOW",
+      "full_detail": "The Indian government has issued a statement calling for calm and restraint in the region. The statement has been met with skepticism by the international community, as India is seen as having limited influence in the region. However, the Indian government is working to play a mediating role in the conflict, and has offered to host talks between the parties involved.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "source": "NDTV"
+    },
+    {
+      "headline": "Indian Economy at Risk",
+      "detail": "The conflict has significant implications for the Indian economy. The surge in oil prices has led to inflation and reduced economic growth. The situation remains uncertain. The Indian government is working to mitigate the impact of the conflict on the economy.",
       "category": "Economy",
-      "significance": "HIGH",
-      "full_detail": "The conflict is having a significant impact on India's economic interests, with the disruption to global trade and commerce likely to have significant implications for the country's economy. India is a major trading nation, and the conflict has highlighted the country's vulnerability to disruptions in global trade. The government has been working to diversify its trade relationships, but the conflict has shown that more needs to be done to ensure the country's economic security.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fjerusalem%2520old%2520city%2520missile%2520reuters_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-praises-tehrans-resistance-front-regional-allies-fighting",
-      "source": "Middle East Eye"
+      "significance": "MEDIUM",
+      "full_detail": "The conflict has significant implications for the Indian economy, as higher oil prices can lead to inflation and reduce economic growth. The Indian government is working to mitigate the impact of the conflict on the economy, including by increasing domestic oil production and investing in renewable energy. However, the situation remains uncertain, and the Indian economy is likely to be affected by the conflict in the short term.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fc.ndtvimg.com%2F2026-03%2Fks2gcdbs_trump-mojtaba_625x300_09_March_26.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.ndtv.com/world-news/enemy-defeated-iran-supreme-leaders-defiant-message-on-persian-new-year-11244974#publisher=newsstand",
+      "source": "NDTV"
     }
   ],
   "indiaSummary": ""
