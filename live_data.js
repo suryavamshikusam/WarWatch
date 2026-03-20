@@ -1,30 +1,30 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-20 11:29 UTC",
-  "escalationLevel": "CRITICAL",
+  "generatedAt": "2026-03-20 11:54 UTC",
+  "escalationLevel": "HIGH",
   "alerts": [
-    "US: Iran War Kills Over 1,400 · 0 min ago",
-    "Iran: Iran Develops Vetting System · 0 min ago",
-    "US: Trump Considers Kharg Island Takeover · 0 min ago",
-    "Iran: Iran Warns UK Over US Base Access · 0 min ago",
-    "US: IRGC Spokesman Killed in Airstrike · 0 min ago"
+    "Iran: Iran Launches Missile Strikes · 0 min ago",
+    "Other: Gulf Nations Intercept Missiles · 0 min ago",
+    "Israel: Israel Defends Against Missile Strikes · 0 min ago",
+    "US: US Involvement Uncertain · 0 min ago",
+    "Other: Regional Tensions Escalate · 0 min ago"
   ],
   "heroStats": {
-    "tension": "CRITICAL",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-20 11:29 UTC",
-    "sourcesUsed": 5
+    "tension": "HIGH",
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-20 11:54 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
       "label": "US vs Iran",
-      "pct": 90,
-      "lvl": "Critical",
+      "pct": 72,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
       "label": "Israel vs Iran",
-      "pct": 82,
-      "lvl": "Critical",
+      "pct": 64,
+      "lvl": "High",
       "color": "var(--red)"
     },
     {
@@ -35,13 +35,13 @@ window.WARWATCH_LIVE = {
     },
     {
       "label": "Nuclear progress",
-      "pct": 70,
+      "pct": 52,
       "lvl": "High",
       "color": "var(--amber)"
     },
     {
       "label": "Regional war risk",
-      "pct": 78,
+      "pct": 60,
       "lvl": "Elevated",
       "color": "var(--red)"
     }
@@ -50,68 +50,34 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "Iran War Kills Over 1,400",
-      "summary": "The US-Israeli strikes on Iran have killed over 1,400 people, with many more injured. The attacks have targeted Iranian military installations and have been condemned by the international community. The situation remains tense, with Iran vowing to retaliate against the US and Israel.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-considers-kharg-island-takeover-force-iran-reopen-hormuz",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F02%2F2024-09-04T181527Z_1837713132_RC2TT9A6IP5E_RTRMADP_3_ISRAEL-PALESTINIANS-NETANYAHU-1772087208.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
       "actorClass": "p-red",
       "actor": "Iran",
       "time": "0 min ago",
-      "headline": "Iran Develops Vetting System",
-      "summary": "Iran is developing a vetting and registration system for ships transiting the Strait of Hormuz. The system is intended to ensure that only approved ships are allowed to pass through the strategic waterway. Several countries, including India and China, are in talks with Tehran to transit through its territorial waters.",
+      "headline": "Iran Launches Missile Strikes",
+      "summary": "Iran has launched a new barrage of missiles targeting southern Israel, with defense systems intercepting the missiles. The attack is a significant escalation of the conflict. The Israeli army has reported that its defense systems are working to intercept the missiles.",
       "whyTxt": "",
       "orgs": [
         "Iran"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-developing-a-vetting-system-for-strait-of-hormuz-transit-report?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2FAP26078506843469-1773996509_84fb2a-1773998770.jpg&w=800&h=450&fit=cover&output=jpg"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "0 min ago",
-      "headline": "Trump Considers Kharg Island Takeover",
-      "summary": "The Trump administration is considering plans to occupy or blockade Iran's Kharg Island to pressure the country to reopen the Strait of Hormuz. The move is seen as a high-risk strategy that could escalate the conflict further.",
-      "whyTxt": "",
-      "orgs": [
-        "US"
-      ],
-      "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-considers-kharg-island-takeover-force-iran-reopen-hormuz",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F000_A3MJ99E-2_0.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-high",
       "badgeLabel": "Medium",
-      "actorClass": "p-red",
-      "actor": "Iran",
+      "actorClass": "p-gray",
+      "actor": "Other",
       "time": "0 min ago",
-      "headline": "Iran Warns UK Over US Base Access",
-      "summary": "Iran has warned the UK that providing the US with access to British military bases would be seen as participation in aggression. The warning comes as the US and UK are discussing possible cooperation in the conflict.",
+      "headline": "Gulf Nations Intercept Missiles",
+      "summary": "The UAE, Saudi Arabia, Kuwait, and Bahrain have reported interceptions of Iranian missiles and drones. The interceptions indicate a coordinated effort to defend against Iranian aggression. The defense ministries of the respective countries have confirmed the interceptions.",
       "whyTxt": "",
       "orgs": [
-        "Iran"
+        "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-uk-providing-us-access-british-bases-aggression",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
     },
@@ -119,16 +85,33 @@ window.WARWATCH_LIVE = {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-blue",
+      "actor": "Israel",
+      "time": "0 min ago",
+      "headline": "Israel Defends Against Missile Strikes",
+      "summary": "The Israeli army has reported that its defense systems are working to intercept the Iranian missiles. The defense systems have been successful in intercepting the missiles, preventing damage and casualties. The Israeli army is on high alert, prepared to respond to further attacks.",
+      "whyTxt": "",
+      "orgs": [
+        "Israel"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-high",
+      "badgeLabel": "Medium",
+      "actorClass": "p-blue",
       "actor": "US",
       "time": "0 min ago",
-      "headline": "IRGC Spokesman Killed in Airstrike",
-      "summary": "The spokesman for Iran's Islamic Revolutionary Guard Corps (IRGC) has been killed in a US-Israeli airstrike. The killing is seen as a significant blow to the IRGC and could escalate the conflict further.",
+      "headline": "US Involvement Uncertain",
+      "summary": "The US has not yet commented on the recent developments in the conflict. The US has been a key player in the region, providing military support to Israel and other allies. The US position on the conflict is crucial, as it can significantly impact the outcome.",
       "whyTxt": "",
       "orgs": [
         "US"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-official-killed-us-israeli-airstrike",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
       "sourceLabel": "Middle East Eye",
       "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
     },
@@ -138,16 +121,33 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
-      "headline": "Oil Prices Surge Amid Conflict",
-      "summary": "Oil prices have surged amid the conflict, with global energy supplies at risk. The price increase has significant implications for the global economy and could lead to shortages and rationing.",
+      "headline": "Regional Tensions Escalate",
+      "summary": "The conflict has significant implications for regional and global stability. The multiple missile launches and interceptions have increased tensions, making the situation volatile. The international community is watching the developments closely, concerned about the potential consequences.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/five-problems-the-iran-war-could-solve-for-israels-netanyahu?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F02%2F2024-09-04T181527Z_1837713132_RC2TT9A6IP5E_RTRMADP_3_ISRAEL-PALESTINIANS-NETANYAHU-1772087208.jpg&w=800&h=450&fit=cover&output=jpg"
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-red",
+      "actor": "Iran",
+      "time": "0 min ago",
+      "headline": "Iranian Aggression Continues",
+      "summary": "Iran has continued to launch missile strikes against Israel and other countries in the region. The attacks are a significant escalation of the conflict, with Iran demonstrating its military capabilities. The international community is concerned about Iran's aggressive behavior.",
+      "whyTxt": "",
+      "orgs": [
+        "Iran"
+      ],
+      "fullAnalysis": "",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
+      "sourceLabel": "Middle East Eye",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
     },
     {
       "badgeClass": "b-crit",
@@ -155,72 +155,67 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "0 min ago",
-      "headline": "Global Energy Supplies at Risk",
-      "summary": "The conflict has put global energy supplies at risk, with the Strait of Hormuz a critical chokepoint. The situation has significant implications for the global economy and could lead to shortages and rationing.",
+      "headline": "Global Implications",
+      "summary": "The conflict has significant implications for global stability and security. The multiple missile launches and interceptions have increased tensions, making the situation volatile. The international community is watching the developments closely, concerned about the potential consequences.",
       "whyTxt": "",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/five-problems-the-iran-war-could-solve-for-israels-netanyahu?traffic_source=rss",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
       "sourceLabel": "Middle East Eye",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F02%2F2024-09-04T181527Z_1837713132_RC2TT9A6IP5E_RTRMADP_3_ISRAEL-PALESTINIANS-NETANYAHU-1772087208.jpg&w=800&h=450&fit=cover&output=jpg"
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has taken a hardline stance against Iran, with the Trump administration considering plans to occupy or blockade Kharg Island.",
-    "israel_stance": "Israel has been actively involved in the conflict, with Israeli strikes on Iranian military installations and Lebanese targets.",
-    "iran_stance": "Iran has vowed to retaliate against the US and Israel, with the country developing a vetting and registration system for ships transiting the Strait of Hormuz."
+    "us_stance": "The US has not yet commented on the recent developments in the conflict, but its position is crucial as it can significantly impact the outcome.",
+    "israel_stance": "Israel is defending against Iranian missile strikes, with its defense systems intercepting the missiles and preventing damage and casualties.",
+    "iran_stance": "Iran has continued to launch missile strikes against Israel and other countries in the region, demonstrating its military capabilities and aggressive behavior."
   },
   "terms": [
     {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "The Strait of Hormuz is a critical waterway that connects the Persian Gulf to the Gulf of Oman, and is a major shipping route for oil and other goods. It is approximately 90 miles wide and is bordered by Iran and Oman."
+      "term": "Hamas",
+      "simple_explanation": "Hamas is a Palestinian Islamist organization that has been involved in the conflict with Israel. It is considered a terrorist organization by several countries, including the US and Israel."
     },
     {
-      "term": "IRGC",
-      "simple_explanation": "The Islamic Revolutionary Guard Corps (IRGC) is a branch of the Iranian Armed Forces that was formed following the 1979 Iranian revolution. It is responsible for defending the country and its interests, and is known for its military and paramilitary activities."
+      "term": "Hezbollah",
+      "simple_explanation": "Hezbollah is a Shia Islamist organization based in Lebanon, which has been involved in the conflict with Israel. It is considered a terrorist organization by several countries, including the US and Israel."
     },
     {
-      "term": "Kharg Island",
-      "simple_explanation": "Kharg Island is a small island located in the Persian Gulf, off the coast of Iran. It is a strategic location that is home to several oil terminals and is an important hub for Iran's oil exports."
+      "term": "Gulf Nations",
+      "simple_explanation": "The Gulf Nations refer to the countries bordering the Persian Gulf, including the UAE, Saudi Arabia, Kuwait, and Bahrain. These countries have been involved in the conflict, intercepting Iranian missiles and drones."
     },
     {
-      "term": "Vetting system",
-      "simple_explanation": "A vetting system is a process used to screen and approve ships before they are allowed to transit through a particular waterway or region. In the context of the Strait of Hormuz, Iran's vetting system is intended to ensure that only approved ships are allowed to pass through the strategic waterway."
+      "term": "Defense Systems",
+      "simple_explanation": "Defense systems refer to the military equipment and technology used to defend against missile strikes and other attacks. Israel's defense systems have been successful in intercepting Iranian missiles."
     },
     {
-      "term": "Blockade",
-      "simple_explanation": "A blockade is a naval or military operation that is designed to prevent ships or other vessels from entering or leaving a particular area. In the context of the conflict, a blockade of the Strait of Hormuz could have significant implications for global energy supplies."
+      "term": "Missile Strikes",
+      "simple_explanation": "Missile strikes refer to the launch of missiles against a target, in this case, Israel and other countries in the region. Iran has launched multiple missile strikes, which have been intercepted by defense systems."
     },
     {
-      "term": "US-Israeli strikes",
-      "simple_explanation": "The US-Israeli strikes refer to the military operations that have been carried out by the US and Israel against Iranian military installations and other targets. These strikes have been condemned by the international community and have escalated the conflict."
-    },
-    {
-      "term": "Global energy supplies",
-      "simple_explanation": "Global energy supplies refer to the availability of oil, gas, and other energy resources that are used to power homes, businesses, and industries around the world. The conflict has put these supplies at risk, with significant implications for the global economy."
-    },
-    {
-      "term": "Oil prices",
-      "simple_explanation": "Oil prices refer to the cost of oil on the global market. The conflict has caused oil prices to surge, with significant implications for the global economy and energy supplies."
-    },
-    {
-      "term": "Rationing",
-      "simple_explanation": "Rationing refers to the practice of limiting the amount of a particular resource, such as oil or gas, that is available to consumers. In the context of the conflict, rationing could become necessary if global energy supplies are disrupted or limited."
+      "term": "Interceptions",
+      "simple_explanation": "Interceptions refer to the act of intercepting or blocking a missile or other projectile. The Gulf Nations and Israel have reported intercepting Iranian missiles and drones."
     },
     {
       "term": "Escalation",
-      "simple_explanation": "Escalation refers to the process of increasing the intensity or severity of a conflict. In the context of the US-Israel-Iran war, escalation could involve the use of more military force, the targeting of more civilians, or the involvement of more countries in the conflict."
+      "simple_explanation": "Escalation refers to the increase in intensity or severity of a conflict. The recent developments in the conflict, including the multiple missile launches and interceptions, indicate a significant escalation."
+    },
+    {
+      "term": "Volatility",
+      "simple_explanation": "Volatility refers to the state of being unpredictable or unstable. The situation in the region is volatile, with the potential for further escalation and conflict."
+    },
+    {
+      "term": "Regional Stability",
+      "simple_explanation": "Regional stability refers to the state of peace and security in a region. The conflict has significant implications for regional stability, with the potential to destabilize the entire region."
+    },
+    {
+      "term": "Global Implications",
+      "simple_explanation": "Global implications refer to the potential consequences of a conflict or event on a global scale. The conflict has significant implications for global stability and security, with the potential to affect multiple countries and regions."
     }
   ],
   "history": [
-    {
-      "t": "2026-03-17 22:25 UTC",
-      "l": "MEDIUM",
-      "tone": "Israel's vow to neut"
-    },
     {
       "t": "2026-03-17 23:34 UTC",
       "l": "MEDIUM",
@@ -455,39 +450,44 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-20 11:29 UTC",
       "l": "CRITICAL",
       "tone": "The conflict has res"
+    },
+    {
+      "t": "2026-03-20 11:54 UTC",
+      "l": "HIGH",
+      "tone": "The multiple missile"
     }
   ],
-  "execSummary": "The US-Israel-Iran war has escalated with over 1,400 people killed in Iran and 1,000 in Israeli strikes on Lebanon. Oil prices have surged, and global energy supplies are at risk. The conflict has drawn in other countries, with India and China seeking to navigate the Strait of Hormuz. The situation remains volatile, with all parties refusing to back down.",
-  "totalReports": 75,
+  "execSummary": "Iran has launched a new barrage of missiles targeting southern Israel, with defense systems intercepting the missiles. The UAE, Saudi Arabia, Kuwait, and Bahrain have also reported interceptions of Iranian missiles and drones. The situation is escalating, with multiple countries involved. The conflict has significant implications for regional and global stability.",
+  "totalReports": 76,
   "indiaImpact": [
     {
-      "headline": "India Seeks to Navigate Strait of Hormuz",
-      "detail": "India is seeking to navigate the Strait of Hormuz, with several Indian ships and crew members currently in the region. The Indian government has advised its citizens to exercise caution when traveling to the region.",
+      "headline": "Indian Nationals in the Region",
+      "detail": "There are several Indian nationals living and working in the region, who may be affected by the conflict. The Indian government has advised its citizens to exercise caution and follow local instructions. The conflict has significant implications for the safety and security of Indian nationals in the region.",
       "category": "Diaspora",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has advised its citizens to exercise caution when traveling to the region, and has warned of the risks of piracy and terrorism. The Indian Navy has also been deployed to the region to provide protection to Indian ships and crew members. The situation is being closely monitored by the Indian government, and any further escalation of the conflict could have significant implications for Indian citizens and interests in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F03%2FAP26078506843469-1773996509_84fb2a-1773998770.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/iran-developing-a-vetting-system-for-strait-of-hormuz-transit-report?traffic_source=rss",
-      "source": "Al Jazeera"
+      "full_detail": "The Indian government has been monitoring the situation closely, with the Ministry of External Affairs issuing advisories for Indian citizens in the region. The conflict has significant implications for the safety and security of Indian nationals, with the potential for further escalation and violence. The Indian government has been in touch with the governments of the countries in the region, seeking to ensure the safety and security of its citizens.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
+      "source": "Middle East Eye"
     },
     {
-      "headline": "India's Energy Imports at Risk",
-      "detail": "India's energy imports are at risk due to the conflict, with the country relying heavily on oil and gas imports from the Middle East. The surge in oil prices could have significant implications for the Indian economy.",
+      "headline": "Indian Energy Interests",
+      "detail": "India has significant energy interests in the region, with several Indian companies investing in oil and gas projects. The conflict has significant implications for Indian energy interests, with the potential to disrupt oil and gas supplies. The Indian government has been monitoring the situation closely, with the Ministry of Petroleum and Natural Gas seeking to ensure the stability of energy supplies.",
       "category": "Energy",
       "significance": "HIGH",
-      "full_detail": "The Indian economy is heavily reliant on oil and gas imports, and the surge in oil prices could have significant implications for the country's energy security and economic growth. The Indian government has been seeking to diversify its energy imports, but the conflict has highlighted the risks and challenges associated with relying on imports from the Middle East. The situation is being closely monitored by the Indian government, and any further escalation of the conflict could have significant implications for the Indian economy.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.aljazeera.com%2Fwp-content%2Fuploads%2F2026%2F02%2F2024-09-04T181527Z_1837713132_RC2TT9A6IP5E_RTRMADP_3_ISRAEL-PALESTINIANS-NETANYAHU-1772087208.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/20/five-problems-the-iran-war-could-solve-for-israels-netanyahu?traffic_source=rss",
-      "source": "Al Jazeera"
+      "full_detail": "The conflict has significant implications for Indian energy interests, with the potential to disrupt oil and gas supplies. The Indian government has been in touch with the governments of the countries in the region, seeking to ensure the stability of energy supplies. The conflict has also significant implications for the global energy market, with the potential to affect oil and gas prices.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
+      "source": "Middle East Eye"
     },
     {
-      "headline": "India's Diplomatic Efforts",
-      "detail": "India has been engaging in diplomatic efforts to resolve the conflict, with the Indian government seeking to promote dialogue and diplomacy between the parties involved. The Indian government has also been working to protect the interests of Indian citizens and businesses in the region.",
+      "headline": "Indian Diplomatic Efforts",
+      "detail": "India has been making diplomatic efforts to resolve the conflict, with the Indian government in touch with the governments of the countries in the region. The Indian government has been seeking to promote peace and stability in the region, with the potential to play a key role in resolving the conflict. The conflict has significant implications for Indian diplomatic efforts, with the potential to affect India's relations with the countries in the region.",
       "category": "Diplomacy",
       "significance": "MEDIUM",
-      "full_detail": "The Indian government has been working to promote dialogue and diplomacy between the parties involved, and has been seeking to protect the interests of Indian citizens and businesses in the region. The Indian government has also been working to provide humanitarian assistance to those affected by the conflict, and has been seeking to promote a peaceful resolution to the conflict. The situation is being closely monitored by the Indian government, and any further escalation of the conflict could have significant implications for Indian interests in the region.",
-      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F000_A3MJ99E-2_0.jpg&w=800&h=450&fit=cover&output=jpg",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-considers-kharg-island-takeover-force-iran-reopen-hormuz",
+      "full_detail": "The Indian government has been making diplomatic efforts to resolve the conflict, with the Indian government in touch with the governments of the countries in the region. The Indian government has been seeking to promote peace and stability in the region, with the potential to play a key role in resolving the conflict. The conflict has significant implications for Indian diplomatic efforts, with the potential to affect India's relations with the countries in the region.",
+      "imageUrl": "https://images.weserv.nl/?url=https%3A%2F%2Fwww.middleeasteye.net%2Fsites%2Fdefault%2Ffiles%2F2026-03%2Fisrael%2520aqsa%2520eid%2520worshippers%2520afp.jpg&w=800&h=450&fit=cover&output=jpg",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-strikes-intercepted-israel-and-gulf-nations",
       "source": "Middle East Eye"
     }
   ],
