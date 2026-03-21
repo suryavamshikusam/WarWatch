@@ -41,7 +41,7 @@ def _call(model, prompt: str, max_tokens: int = 2000, temperature: float = 0.4) 
         except Exception as e:
             err = str(e).lower()
             if "429" in err or "quota" in err or "rate" in err:
-                wait = (attempt + 1) * 20
+                wait = (attempt + 1) * 30
                 print(f"[WARN] Rate limit hit, waiting {wait}s...")
                 time.sleep(wait)
             else:
@@ -270,16 +270,16 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
             raw = raw[4:]
     raw = raw.strip()
 
+    if not raw:
+        raise ValueError("Gemini returned empty response — likely rate limited. Will retry next run.")
     report = json.loads(raw)
 
-    # ── Enrich developments: full analysis + unique sourceUrl ─────────────────
-    print("      Generating 7-paragraph full analysis for each development...")
+    # ── Match sourceUrl to each development (no AI call needed) ──────────────
+    print("      Matching source URLs to developments...")
     used_urls = set()
 
-    for idx, dev in enumerate(report.get("key_developments", [])):
-        if idx > 0:
-            time.sleep(2)
-        dev["fullAnalysis"] = _generate_full_analysis(model, dev, report)
+    for dev in report.get("key_developments", []):
+        dev["fullAnalysis"] = ""  # disabled — saves API quota
 
         headline       = dev.get("headline", "").lower()
         headline_words = [w for w in headline.split() if len(w) > 3]
