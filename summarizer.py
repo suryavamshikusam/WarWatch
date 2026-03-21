@@ -11,6 +11,7 @@ Produces deeply researched, long-form content:
 
 import os
 import json
+import time
 import certifi
 from groq import Groq
 from datetime import datetime
@@ -58,13 +59,23 @@ Rules:
 - Total output should be at least 600 words"""
 
     try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=2000,
-            temperature=0.45
-        )
-        return response.choices[0].message.content.strip()
+        for attempt in range(3):
+            try:
+                response = client.chat.completions.create(
+                    model="llama-3.3-70b-versatile",
+                    messages=[{"role": "user", "content": prompt}],
+                    max_tokens=2000,
+                    temperature=0.45
+                )
+                return response.choices[0].message.content.strip()
+            except Exception as e:
+                if "rate_limit" in str(e).lower() or "429" in str(e):
+                    wait = (attempt + 1) * 20
+                    print(f"[WARN] Rate limit hit, waiting {wait}s...")
+                    time.sleep(wait)
+                else:
+                    raise
+        return ""
     except Exception as e:
         print(f"[WARN] Full analysis failed: {e}")
         return ""
@@ -269,7 +280,9 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
     print("      Generating 7-paragraph full analysis for each development...")
     used_urls = set()
 
-    for dev in report.get("key_developments", []):
+    for idx, dev in enumerate(report.get("key_developments", [])):
+        if idx > 0:
+            time.sleep(3)  # avoid Groq rate limits between calls
         dev["fullAnalysis"] = _generate_full_analysis(client, dev, report)
 
         headline = dev.get("headline", "").lower()
