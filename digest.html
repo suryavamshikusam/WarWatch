@@ -300,8 +300,27 @@ function showAnalysis(card,sec){
     return;
   }
 
-  /* Call Anthropic API for 5-para analysis */
   var context=(card.fullAnalysis||card.full_detail||card.detail||card.summary||'');
+
+  /* Use pre-generated fullAnalysis from bot if available — no API call needed */
+  if(context && context.length > 100){
+    var parasLocal=context.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,5);
+    while(parasLocal.length<2){parasLocal.push(context);}
+    var htmlLocal=parasLocal.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
+    _analysisCache[cacheKey]=htmlLocal;
+    var elLocal=document.getElementById('an-body-content');
+    if(elLocal){elLocal.style.animation='fadeIn .4s ease';elLocal.innerHTML=htmlLocal;}
+    return;
+  }
+
+  /* Only call Groq if key is available and no prebuilt text */
+  if(!window.GROQ_API_KEY){
+    var elFb=document.getElementById('an-body-content');
+    if(elFb)elFb.innerHTML='<p style="color:#555;font-size:12px">Analysis will appear after next bot run.</p>';
+    return;
+  }
+
+  /* Call Groq API for 5-para analysis */
   var prompt='You are a senior geopolitical analyst covering the US-Israel-Iran war of 2026.\n\nHeadline: '+card.headline+'\nContext: '+context+'\n\nWrite exactly 5 paragraphs of analysis (no headings, no bullet points, plain prose only):\nPara 1: What exactly happened and the immediate military/political facts.\nPara 2: Why this matters — the strategic significance.\nPara 3: Regional consequences — for Iran, Israel, Gulf states.\nPara 4: India angle — energy, diaspora, diplomacy, economy impact.\nPara 5: What happens next — most likely 24-48 hour scenario.\n\nEach paragraph: 50-70 words. Be specific, direct, analytical. No filler phrases.';
 
   fetch('https://api.groq.com/openai/v1/chat/completions',{
