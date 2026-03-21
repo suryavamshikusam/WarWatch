@@ -542,6 +542,7 @@ async function fetchAISummary() {
         messages: [{ role: 'user', content: prompt }]
       })
     });
+    if (!res.ok) throw new Error('API ' + res.status);
     var data = await res.json();
     var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
     var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
@@ -551,9 +552,15 @@ async function fetchAISummary() {
     if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
   } catch(e) {
     var D2 = window.WARWATCH_LIVE;
-    var fallback = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active including Chabahar, Dubai and Kharg Island pressure. India faces significant energy and diaspora exposure.';
-    inner.innerHTML = fallback.split('\n\n').filter(Boolean).slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
-    if (noteEl) noteEl.textContent = 'Live refresh unavailable';
+    var fallbackRaw = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active including Chabahar, Dubai and Kharg Island pressure. India faces significant energy and diaspora exposure.';
+    var parts = fallbackRaw.split('\n\n').filter(Boolean);
+    if (parts.length < 2) {
+      var sentences = fallbackRaw.match(/[^.!?]+[.!?]+/g) || [fallbackRaw];
+      var chunk = Math.ceil(sentences.length / 3);
+      parts = [sentences.slice(0,chunk).join(' '), sentences.slice(chunk,chunk*2).join(' '), sentences.slice(chunk*2).join(' ')].filter(function(p){ return p.trim().length > 10; });
+    }
+    inner.innerHTML = parts.slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
+    if (noteEl) noteEl.textContent = 'Live AI unavailable — showing last report';
   }
 }
 

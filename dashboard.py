@@ -64,6 +64,22 @@ def _time_ago(ts: str) -> str:
         return ts
 
 
+def _build_india_impact(report: dict) -> list:
+    """Map india_impact items with all required fields for the frontend."""
+    items = []
+    for item in report.get("india_impact", []):
+        items.append({
+            "headline":    item.get("headline", ""),
+            "detail":      item.get("detail", ""),
+            "category":    item.get("category", ""),
+            "significance":item.get("significance", "MEDIUM"),
+            "full_detail": item.get("full_detail", ""),
+            "sourceUrl":   item.get("sourceUrl", "#"),
+            "source":      item.get("source", "Source"),
+        })
+    return items
+
+
 def build_dashboard():
     REPORTS_DIR.mkdir(exist_ok=True)
 
@@ -131,15 +147,19 @@ def build_dashboard():
         time_str = _time_ago(latest.get("generated_at", ""))
 
         news_cards.append({
-            "badgeClass":  _significance_badge(sig),
-            "badgeLabel":  sig.capitalize(),
-            "actorClass":  _actor_pill_class(actor),
-            "actor":       actor,
-            "time":        time_str,
-            "headline":    headline,
-            "summary":     detail,
-            "whyTxt":      latest.get("escalation_reason", ""),
-            "orgs":        [actor],
+            "badgeClass":   _significance_badge(sig),
+            "badgeLabel":   sig.capitalize(),
+            "actorClass":   _actor_pill_class(actor),
+            "actor":        actor,
+            "time":         time_str,
+            "headline":     headline,
+            "summary":      detail,
+            "whyTxt":       latest.get("escalation_reason", ""),
+            "orgs":         [actor],
+            # ── These two carry the pre-built AI analysis to the frontend ──
+            "fullAnalysis": dev.get("fullAnalysis", ""),
+            "sourceUrl":    dev.get("sourceUrl", "#"),
+            "sourceLabel":  dev.get("sourceLabel", dev.get("source", "Source")),
         })
 
     # Also add a "what to watch" card
@@ -175,20 +195,28 @@ def build_dashboard():
 
     # ── Assemble live_data.js ────────────────────────────────────────────────
     payload = {
-        "generatedAt":    latest.get("generated_at", ""),
+        "generatedAt":     latest.get("generated_at", ""),
         "escalationLevel": level,
-        "alerts":         alerts,
-        "heroStats":      hero_stats,
-        "tensionMeters":  tension_meters,
-        "newsCards":      news_cards,
-        "sentiment":      sentiment,
-        "terms":          terms,
-        "history":        history,
-        "execSummary":    latest.get("executive_summary", ""),
-        "totalReports":   len(reports),
+        "alerts":          alerts,
+        "heroStats":       hero_stats,
+        "tensionMeters":   tension_meters,
+        "newsCards":       news_cards,
+        "sentiment":       sentiment,
+        "terms":           terms,
+        "history":         history,
+        "execSummary":     latest.get("executive_summary", ""),
+        "totalReports":    len(reports),
+        # ── Fields required by india.html and warwatch.html ──────────────
+        "execSummaryRich": latest.get("execSummaryRich", latest.get("executive_summary", "")),
+        "indiaSummary":    latest.get("india_summary", latest.get("indiaSummary", "")),
+        "indiaImpact":     _build_india_impact(latest),
     }
 
     js = f"window.WARWATCH_LIVE = {json.dumps(payload, indent=2)};\n"
+    # Expose Groq API key for frontend live AI analysis
+    groq_key = os.environ.get("GROQ_API_KEY", "")
+    print(f"[DEBUG] GROQ key length: {len(groq_key)}")
+    js += f"window.GROQ_API_KEY = '{groq_key}';\n"
 
     with open("live_data.js", "w") as f:
         f.write(js)
