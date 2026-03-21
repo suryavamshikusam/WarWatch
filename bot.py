@@ -123,7 +123,11 @@ def run_actions():
     save_seen(seen)
 
     if len(new_articles) < MIN_NEW_ARTICLES:
-        print("No new articles — nothing to summarise. Exiting cleanly.")
+        print("No new articles — nothing to summarise. Fetching prices only.")
+        try:
+            build_prices_js()
+        except Exception as e:
+            print(f"  [WARN] Prices fetch failed: {e}")
         return
 
     print(f">>> {len(new_articles)} new article(s):")

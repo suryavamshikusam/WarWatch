@@ -111,7 +111,7 @@ def fetch_prices() -> dict:
     try:
         data = yf.download(
             tickers,
-            period="2d",
+            period="5d",
             interval="1d",
             group_by="ticker",
             auto_adjust=True,
