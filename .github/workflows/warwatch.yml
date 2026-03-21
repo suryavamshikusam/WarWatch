@@ -2,11 +2,11 @@ name: WarWatch Bot
 
 on:
   schedule:
-    - cron: '*/15 * * * *'   # every 15 minutes
-  workflow_dispatch:           # manual trigger from GitHub Actions UI
+    - cron: '*/15 * * * *'
+  workflow_dispatch:
 
 permissions:
-  contents: write              # needed to commit live_data.js back to repo
+  contents: write
 
 jobs:
   run-bot:
@@ -36,6 +36,6 @@ jobs:
         run: |
           git config user.name  "WarWatch Bot"
           git config user.email "bot@warwatch.local"
-          git add live_data.js seen_urls.json reports/ dashboard_log.html || true
+          git add live_data.js prices_data.js prices_history.json seen_urls.json reports/ dashboard_log.html || true
           git diff --cached --quiet || git commit -m "bot: update $(date -u +'%Y-%m-%d %H:%M UTC')"
           git push
