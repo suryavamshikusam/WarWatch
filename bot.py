@@ -3,12 +3,21 @@ bot.py — War Monitor Bot
 
 Modes:
   python bot.py              # Run once (ignores seen cache — good for testing)
-  python bot.py --watch      # Continuous loop, polls every 5 min (local use)
+  python bot.py --watch      # Continuous loop, polls every 15 min (local use)
   python bot.py --actions    # GitHub Actions mode: check for new articles, exit
 
 GitHub Actions runs --actions every 15 minutes automatically.
 seen_urls.json and reports/ are committed back to the repo after each run,
 so state persists across runs even though each Action starts fresh.
+
+Pages served:
+  index.html      — Live feed with 16:9 hero image (war.png), unified timeline,
+                    live AI rotator analysis, left panel refreshes every 15 min
+  india.html      — India impact page
+  records.html    — War record / archive (renamed from history.html)
+  warwatch.html   — War context — 10 key moments + Why It's Connected
+  digest.html     — Daily digest grouped by topic
+  dashboard.html  — Bot log / admin panel
 """
 
 import json
@@ -25,7 +34,7 @@ from emailer import send_report_email
 REPORTS_DIR         = Path("reports")
 SEEN_FILE           = Path("seen_urls.json")
 CHECK_INTERVAL_MINS = 15
-MIN_NEW_ARTICLES    = 1   # trigger on even 1 new article in Actions mode
+MIN_NEW_ARTICLES    = 1
 MAX_SEEN_URLS       = 500
 
 
@@ -89,7 +98,7 @@ def run_actions():
     - Loads seen cache from repo
     - Fetches all RSS feeds
     - If new articles found: run pipeline, save seen cache
-    - If nothing new: exit cleanly (workflow will still commit nothing)
+    - If nothing new: exit cleanly
     GitHub commits seen_urls.json + reports/ + live_data.js back to repo.
     """
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
@@ -103,7 +112,6 @@ def run_actions():
 
     print(f"Found {len(all_articles)} articles total, {len(new_articles)} new.\n")
 
-    # Always update seen cache so old articles don't pile up
     seen.update(a["url"] for a in all_articles)
     save_seen(seen)
 
@@ -134,7 +142,7 @@ def run_once():
     seen = load_seen()
     seen.update(a["url"] for a in articles)
     save_seen(seen)
-    print("Done! Open warwatch.html in your browser.")
+    print("Done! Open index.html in your browser.")
 
 
 def run_watch():

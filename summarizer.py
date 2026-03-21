@@ -1,12 +1,12 @@
 """
-summarizer.py — Generates conflict analysis reports using Groq/Llama.
+summarizer.py — Generates conflict analysis reports using AI Summariser.
 
 Produces deeply researched, long-form content:
   - Executive summary: 3 rich paragraphs
-  - Per-development full analysis: 7-8 paragraphs each
+  - Per-development full analysis: 7 paragraphs each
   - India summary: 5-6 paragraphs
-  - Each key development gets sourceUrl + imageUrl
-  - India impact items get sourceUrl + imageUrl
+  - Each key development gets sourceUrl (NO external imageUrls — images removed)
+  - India impact items get sourceUrl
 """
 
 import os
@@ -18,42 +18,15 @@ from datetime import datetime
 os.environ["SSL_CERT_FILE"] = certifi.where()
 os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
-# Unsplash fallback — direct CDN photo IDs (source.unsplash.com redirect API is dead)
-UNSPLASH_PHOTO_IDS = {
-    "oil":       "1474546499760-77a0b18c5e69",   # oil refinery
-    "drone":     "1585776245991-cf89dd7fc73a",   # military aircraft
-    "missile":   "1614728263952-84ea256f9d1d",   # military
-    "nuclear":   "1518709414768-a88981a4515d",   # nuclear power
-    "diplomacy": "1529107386315-e1a2ed48a1e3",   # diplomacy/meeting
-    "india":     "1582510003544-4d00b7f74220",   # India
-    "ceasefire": "1541872703-74c5e44368f9",      # peace/negotiation
-    "strike":    "1540575467063-178a50c2df87",   # military aircraft
-    "hormuz":    "1505118380757-91f5f5632de0",   # ocean strait
-    "ship":      "1566753323558-f4e0952af115",   # ship at sea
-    "dubai":     "1512453979798-5ea266f8880c",   # Dubai
-    "iran":      "1604072366595-e75dc92d6bdc",   # Middle East
-    "israel":    "1548116022-c8c56de428d5",      # Middle East city
-    "default":   "1579548122080-c35fd6820734",   # conflict/military
-}
-
-
-def _unsplash_fallback(text: str, w: int = 800, h: int = 450) -> str:
-    """Return a working Unsplash CDN URL. Uses direct photo IDs — not the deprecated source API."""
-    text_lower = text.lower()
-    for key, photo_id in UNSPLASH_PHOTO_IDS.items():
-        if key in text_lower:
-            return f"https://images.unsplash.com/photo-{photo_id}?w={w}&h={h}&q=80&fit=crop"
-    return f"https://images.unsplash.com/photo-{UNSPLASH_PHOTO_IDS['default']}?w={w}&h={h}&q=80&fit=crop"
-
 
 def _generate_full_analysis(client, dev: dict, report: dict) -> str:
     """
-    Generate a 7-8 paragraph deep-dive plain-English analysis for one development.
+    Generate a 7-paragraph deep-dive plain-English analysis for one development.
     Aimed at a general audience — clear, warm, no jargon without explanation.
     """
     prompt = f"""You are a senior conflict journalist writing for everyone — from a curious teenager to a retired grandparent who wants to understand the news.
 
-Write a deep, warm, clear analysis of this war development in exactly 7 to 8 paragraphs. No bullet points. No lists. No headers. Only flowing prose paragraphs, each 4–6 sentences long.
+Write a deep, warm, clear analysis of this war development in exactly 7 paragraphs. No bullet points. No lists. No headers. Only flowing prose paragraphs, each 4–6 sentences long.
 
 Headline: {dev.get('headline', '')}
 Detail: {dev.get('detail', '')}
@@ -154,7 +127,7 @@ Rules:
 def _generate_executive_summary_rich(client, report: dict) -> str:
     """
     Generate a 3-paragraph rich executive summary.
-    Suitable for the main dashboard panel.
+    Suitable for the main dashboard left panel — refreshed every 15 min by the browser.
     """
     devs_text = "\n".join([
         f"- {d.get('actor', '')}: {d.get('headline', '')} — {d.get('detail', '')}"
@@ -195,16 +168,16 @@ Separate each paragraph with a blank line. Total output must be under 200 words.
 def generate_report(articles: list) -> dict:
     """
     Main entry point.
-    1. Calls Groq to analyze articles and extract structured JSON
+    1. Calls AI to analyze articles and extract structured JSON
     2. Generates 7-paragraph full analysis per development
     3. Generates 5-paragraph India summary
     4. Generates rich 3-paragraph executive summary
-    5. Attaches sourceUrl and imageUrl to every development and India item
+    5. Attaches sourceUrl to every development and India item (NO image URLs)
     """
     if not articles:
         return {"error": "No articles found", "timestamp": datetime.utcnow().isoformat()}
 
-    # Build article text for the primary prompt — use full content if available
+    # Build article text for the primary prompt
     article_text = ""
     for i, art in enumerate(articles[:20], 1):
         source = art.get("source", "Unknown")
@@ -213,13 +186,12 @@ def generate_report(articles: list) -> dict:
         article_text += f"    HEADLINE: {art['title']}\n"
         if content:
             article_text += f"    CONTENT: {content[:600]}\n"
-        if art.get("imageUrl"):
-            article_text += f"    IMAGE: {art['imageUrl']}\n"
 
     prompt = f"""You are a senior conflict analyst monitoring the US-Israel-Iran war.
 Analyze these articles from 17 news sources and return ONLY a JSON object. No markdown. No extra text. No backticks.
 
 Pay close attention to INDIA angles — Indian nationals abroad, Indian oil/energy, Indian diplomacy, Indian economy.
+Also include INDIRECT war news: Pakistan statements, Russia/China positions, Houthi actions, oil markets, global diplomacy.
 
 ARTICLES:
 {article_text}
@@ -234,11 +206,11 @@ Return this EXACT JSON structure:
     {{
       "headline": "punchy 8-12 word headline",
       "detail": "3-4 sentence clear explanation — what happened, who, where, why it matters",
-      "actor": "US or Israel or Iran or Hamas or Hezbollah or Other",
+      "actor": "US or Israel or Iran or Hamas or Hezbollah or Pakistan or Russia or China or Houthis or Markets or Other",
+      "type": "war or wider_war or markets or diplomacy or military or india",
       "significance": "LOW or MEDIUM or HIGH",
       "source": "source name",
-      "sourceUrl": "the article URL from the input",
-      "imageUrl": "the image URL from the input, or empty string"
+      "sourceUrl": "the article URL from the input"
     }}
   ],
   "sentiment": {{
@@ -258,7 +230,6 @@ Return this EXACT JSON structure:
       "category": "Economy or Diaspora or Diplomacy or Security or Energy or Trade",
       "source": "source name",
       "sourceUrl": "article URL",
-      "imageUrl": "image URL or empty string",
       "significance": "LOW or MEDIUM or HIGH",
       "full_detail": "5-6 sentence deeper explanation for expanded view"
     }}
@@ -267,7 +238,14 @@ Return this EXACT JSON structure:
   "generated_at": "{datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
 }}
 
-Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
+Include 8-10 key_developments. Assign type precisely:
+  war = direct US/Israel/Iran strikes or attacks
+  wider_war = Pakistan/Russia/China/Houthi/proxy actions
+  markets = oil prices/economy/sanctions/shipping
+  diplomacy = ceasefire talks/UN/back-channels/statements
+  military = naval movements/weapons/troop deployments/hardware
+  india = anything directly affecting India (diaspora/energy/Chabahar/diplomacy)
+Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
 
     client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
 
@@ -279,7 +257,6 @@ Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 termi
     )
 
     raw = response.choices[0].message.content.strip()
-    # Strip markdown fences if present
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
@@ -288,9 +265,9 @@ Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 termi
 
     report = json.loads(raw)
 
-    # ── Enrich developments: full analysis + image + unique sourceUrl ────────
+    # ── Enrich developments: full analysis + unique sourceUrl ─────────────────
     print("      Generating 7-paragraph full analysis for each development...")
-    used_urls = set()  # track used URLs so each card gets a different one
+    used_urls = set()
 
     for dev in report.get("key_developments", []):
         dev["fullAnalysis"] = _generate_full_analysis(client, dev, report)
@@ -304,7 +281,6 @@ Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 termi
         for art in articles:
             art_title = art["title"].lower()
             score = sum(1 for w in headline_words if w in art_title)
-            # Prefer unused URLs
             if art["url"] not in used_urls:
                 score += 0.5
             if score > best_score:
@@ -312,17 +288,11 @@ Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 termi
                 best_art = art
 
         if best_art:
-            dev["sourceUrl"] = best_art["url"]
+            dev["sourceUrl"]   = best_art["url"]
             dev["sourceLabel"] = best_art.get("source", dev.get("source", "Source"))
             used_urls.add(best_art["url"])
-            if not dev.get("imageUrl") and best_art.get("imageUrl"):
-                dev["imageUrl"] = best_art["imageUrl"]
 
-        # Final image fallback
-        if not dev.get("imageUrl"):
-            dev["imageUrl"] = _unsplash_fallback(dev.get("headline", ""))
-
-    # ── India impact: unique sourceUrl + image fallback ─────────────────────
+    # ── India impact: unique sourceUrl ────────────────────────────────────────
     india_used_urls = set()
     for item in report.get("india_impact", []):
         headline = item.get("headline", "").lower()
@@ -339,18 +309,14 @@ Include 5-7 key_developments. Include 2-4 india_impact items. Include 8-10 termi
                 best_art = art
         if best_art:
             item["sourceUrl"] = best_art["url"]
-            item["source"] = best_art.get("source", item.get("source", "Source"))
+            item["source"]    = best_art.get("source", item.get("source", "Source"))
             india_used_urls.add(best_art["url"])
-            if not item.get("imageUrl") and best_art.get("imageUrl"):
-                item["imageUrl"] = best_art["imageUrl"]
-        if not item.get("imageUrl"):
-            item["imageUrl"] = _unsplash_fallback(item.get("headline", "india"))
 
-    # ── Rich executive summary (3 paragraphs) ────────────────────────────────
+    # ── Rich executive summary (3 paragraphs) ─────────────────────────────────
     print("      Generating rich executive summary...")
     report["execSummaryRich"] = _generate_executive_summary_rich(client, report)
 
-    # ── India summary (5-6 paragraphs) ───────────────────────────────────────
+    # ── India summary (5-6 paragraphs) ────────────────────────────────────────
     if report.get("india_impact"):
         print("      Generating India summary (5-6 paragraphs)...")
         report["india_summary"] = _generate_india_summary(client, report)
@@ -445,7 +411,7 @@ def format_report_html(report: dict) -> str:
   <div style="background:#1a1a1a;color:#fff;padding:24px 28px">
     <div style="display:inline-block;padding:4px 12px;border-radius:4px;background:{color}22;color:{color};font-size:12px;font-weight:700;border:1px solid {color};margin-bottom:10px">{level} ESCALATION</div>
     <h1 style="margin:0;font-size:20px;font-weight:400">{report.get('report_title', 'War Monitor')}</h1>
-    <p style="margin:8px 0 0;color:#aaa;font-size:13px">WarWatch · 17 sources · Groq/Llama</p>
+    <p style="margin:8px 0 0;color:#aaa;font-size:13px">WarWatch · 17 sources · AI Summariser</p>
   </div>
   <div style="padding:20px 28px;border-bottom:1px solid #eee">
     <h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">Executive Summary</h3>

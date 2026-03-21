@@ -3,209 +3,254 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>WarWatch — War Monitor</title>
+<title>WarWatch — Live</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-/* ─── RESET & BASE ─── */
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; }
-body { background: #2c2c2c; color: #111111; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; line-height: 1.75; }
-.page-sections { display: flex; flex-direction: column; gap: 14px; padding: 14px 24px 40px; max-width: 1660px; margin: 0 auto; }
+body { background: #141414; color: #e0e0dc; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; line-height: 1.75; }
 
-/* ─── HEADER ─── */
-header { background: #e8e8e4; padding: 14px 40px; border-bottom: 2px solid #444444; position: sticky; top: 0; z-index: 200; }
-.header-top { display: flex; align-items: center; justify-content: space-between; margin-bottom: 12px; max-width: 1600px; margin-left: auto; margin-right: auto; }
-.header-date { font-size: 13px; font-weight: 600; color: #555555; letter-spacing: 0.06em; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
-.masthead { font-size: 42px; font-weight: 900; letter-spacing: -0.02em; display: flex; align-items: center; line-height: 1; }
-.masthead-war { background: #1a1a1a; color: #fff; padding: 3px 10px; }
-.masthead-watch { color: #c41e3a; padding: 3px 5px; }
-.ai-label { color: #c41e3a; font-weight: 700; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; border: 1.5px solid #c41e3a; padding: 4px 10px; font-family: 'IBM Plex Mono', monospace; }
-
-/* ─── NAV ─── */
-.nav-section { display: flex; align-items: center; justify-content: center; max-width: 1600px; margin: 0 auto; border-top: 1px solid #555555; padding-top: 14px; }
-.nav-item { color: #333333; text-decoration: none; cursor: pointer; transition: color 0.2s; padding: 0 26px; font-size: 13px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 600; border-right: 1px solid #555555; }
-.nav-item:first-child { padding-left: 0; }
+/* ── HEADER ── */
+header { background: #1a1a1a; padding: 23px 32px; position: sticky; top: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2a2a2a; }
+.masthead { font-size: 22px; font-weight: 900; letter-spacing: -0.02em; display: flex; align-items: center; line-height: 1; }
+.masthead-war { background: #c41e3a; color: #fff; padding: 3px 10px; }
+.masthead-watch { color: #fff; padding: 3px 5px; }
+.header-date { font-size: 11px; color: #888; letter-spacing: 0.06em; font-family: 'IBM Plex Mono', monospace; }
+.ai-label { color: #c41e3a; font-weight: 700; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; border: 1px solid #c41e3a; padding: 3px 8px; font-family: 'IBM Plex Mono', monospace; }
+nav { display: flex; align-items: center; gap: 0; }
+.nav-item { color: #aaa; text-decoration: none; padding: 0 16px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; border-right: 1px solid #444; transition: color 0.2s; white-space: nowrap; }
 .nav-item:last-child { border-right: none; padding-right: 0; }
-.nav-item:hover { color: #c41e3a; }
+.nav-item:hover { color: #fff; }
 .nav-item.live { color: #c41e3a; }
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; margin-right: 5px; animation: pulse 1.5s infinite; }
+.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; margin-right: 4px; animation: pulse 1.5s infinite; }
 
-/* ─── ALERT BAR ─── */
-.alert-bar { background: #e8e8e4; padding: 14px 22px; display: flex; align-items: center; gap: 14px; border-radius: 6px; border: 1px solid #d0d0cc; }
-.alert-badge { padding: 7px 16px; border-radius: 3px; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: #a32d2d; flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; }
-.alert-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #e05555; margin-right: 6px; animation: pulse 1.5s infinite; }
+/* ── ALERT BAR ── */
+.alert-bar { background: #2c2c2c; padding: 7px 24px; display: flex; align-items: center; gap: 12px; }
+.alert-badge { padding: 3px 10px; border-radius: 2px; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: #a32d2d; flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; }
+.alert-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #e05555; animation: pulse 1.5s infinite; flex-shrink: 0; }
 .alerts-scroll { flex: 1; overflow: hidden; }
-.alerts-text { font-size: 14px; color: #333333; white-space: nowrap; display: inline-flex; align-items: center; gap: 8px; }
-.typewriter-cursor { display: inline-block; width: 2px; height: 14px; background: #e05555; margin-left: 2px; animation: blink 0.8s step-end infinite; vertical-align: middle; }
+.alerts-text { font-size: 13px; color: #ddd; white-space: nowrap; }
+.typewriter-cursor { display: inline-block; width: 2px; height: 13px; background: #e05555; margin-left: 2px; animation: blink 0.8s step-end infinite; vertical-align: middle; }
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
-/* ─── TENSION METERS ─── */
-.tension-section { background: #e8e8e4; padding: 12px 24px; border-radius: 6px; border: 1px solid #d0d0cc; }
-.tension-inner { display: flex; align-items: center; gap: 28px; }
-.tension-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #888888; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
+/* ── HERO IMAGE 16:9 ── */
+.hero-img-wrap { position: relative; width: 100%; background: #1a1a1a; overflow: hidden; }
+.hero-img-wrap::before { content: ''; display: block; padding-top: 30%; }
+.hero-img-inner { position: absolute; inset: 0; }
+.hero-img-inner img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, transparent 40%, rgba(0,0,0,0.6) 100%); }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 14px 24px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.hero-caption-txt { font-size: 11px; color: rgba(255,255,255,0.45); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.06em; }
+.hero-live-pill { display: flex; align-items: center; gap: 5px; background: rgba(164,30,48,0.88); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 2px; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
+
+/* ── PAGE BODY ── */
+.page-sections { display: flex; flex-direction: column; gap: 14px; padding: 14px 24px 40px; max-width: 1660px; margin: 0 auto; }
+
+/* ── TENSION METERS ── */
+.tension-section { background: #1e1e1e; padding: 10px 20px; border-radius: 6px; border: 1px solid #2e2e2e; }
+.tension-inner { display: flex; align-items: center; gap: 24px; }
+.tension-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #666; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
 .tension-live-dot { width: 5px; height: 5px; border-radius: 50%; background: #e05555; animation: pulse 1.6s infinite; }
-.tension-separator { width: 1px; height: 28px; background: #d0d0cc; flex-shrink: 0; }
-.tension-meters-grid { display: flex; gap: 12px; flex: 1; overflow: hidden; }
-.tension-meter { flex: 1; background: #e8e8e4; border: 1px solid #d0d0cc; border-radius: 5px; padding: 14px 16px; min-width: 0; }
+.tension-separator { width: 1px; height: 24px; background: #2e2e2e; flex-shrink: 0; }
+.tension-meters-grid { display: flex; gap: 10px; flex: 1; overflow: hidden; }
+.tension-meter { flex: 1; background: #1e1e1e; border: 1px solid #2e2e2e; border-radius: 5px; padding: 10px 14px; min-width: 0; }
 .meter-row { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; }
-.meter-label { font-size: 14px; color: #111111; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
-.meter-level { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
-.meter-bar-bg { height: 7px; background: #d0d0cc; border-radius: 3px; margin-top: 10px; overflow: hidden; }
+.meter-label { font-size: 13px; color: #ccc; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meter-level { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
+.meter-bar-bg { height: 6px; background: #2e2e2e; border-radius: 3px; margin-top: 8px; overflow: hidden; }
 .meter-bar-fill { height: 100%; border-radius: 3px; width: 0; transition: width 1.4s cubic-bezier(0.4,0,0.2,1); }
 
-/* ─── THREE-COLUMN NEWSPAPER GRID ─── */
-.newspaper-grid { display: grid; grid-template-columns: 380px 1fr 260px; border: 1px solid #d8d8d4; background: #ffffff; height: clamp(600px, calc(100vh - 200px), 840px); border-radius: 8px; overflow: hidden; }
+/* ── THREE-COLUMN GRID ── */
+.newspaper-grid { display: grid; grid-template-columns: 360px 1fr 260px; border: 1px solid #2a2a2a; background: #1a1a1a; height: clamp(560px, calc(100vh - 220px), 820px); border-radius: 8px; overflow: hidden; }
 
-/* ─── LEFT: AI SUMMARY ─── */
-.col-left { border-right: 1px solid #d0d0cc; display: flex; flex-direction: column; background: #e8e8e4; }
-.ai-summary-box { padding: 24px 22px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px solid #d0d0cc; }
-.ai-summary-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #777777; font-weight: 500; margin-bottom: 12px; display: flex; align-items: center; gap: 8px; }
+/* ── LEFT: AI SUMMARY ── */
+.col-left { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; background: #1e1e1e; min-height: 0; overflow: hidden; }
+.ai-summary-box { padding: 20px 20px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px solid #2a2a2a; min-height: 0; overflow: hidden; }
+.ai-summary-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; font-weight: 500; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
 .ai-speaking-dot { display: inline-flex; gap: 3px; align-items: center; }
-.ai-speaking-dot span { display: inline-block; width: 4px; height: 4px; border-radius: 50%; background: #c41e3a; animation: aiDotBounce 1.2s ease-in-out infinite; }
+.ai-speaking-dot span { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: #c41e3a; animation: aiDotBounce 1.2s ease-in-out infinite; }
 .ai-speaking-dot span:nth-child(2) { animation-delay: 0.2s; }
 .ai-speaking-dot span:nth-child(3) { animation-delay: 0.4s; }
 @keyframes aiDotBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-4px);opacity:1} }
-.ai-summary-text { font-size: 15px; color: #333333; line-height: 1.75; font-weight: 300; flex: 1; }
-.ai-cursor { display: inline-block; width: 2px; height: 15px; background: #c41e3a; margin-left: 2px; vertical-align: middle; animation: blink 0.8s step-end infinite; }
-.escalation-block { display: flex; align-items: center; justify-content: space-between; padding-top: 14px; border-top: 1px solid #d0d0cc; margin-top: 18px; }
-.escalation-label { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #666666; }
-.escalation-badge { padding: 7px 16px; border-radius: 3px; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
+.ai-summary-text { font-size: 13px; color: #bbb; line-height: 1.75; font-weight: 300; flex: 1; overflow-y: auto; min-height: 0; height: 0; }
+.ai-summary-text::-webkit-scrollbar { width: 3px; }
+.ai-summary-text::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+.ai-refresh-note { font-size: 10px; color: #444; font-family: 'IBM Plex Mono', monospace; margin-top: 8px; }
+.ai-cursor { display: inline-block; width: 2px; height: 14px; background: #c41e3a; margin-left: 2px; vertical-align: middle; animation: blink 0.8s step-end infinite; }
+.escalation-block { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid #2a2a2a; margin-top: 16px; }
+.escalation-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; }
+.escalation-badge { padding: 5px 14px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
 
-/* ─── CENTER: MAIN NEWS ─── */
-.col-center { border-right: 1px solid #555555; display: flex; flex-direction: column; overflow: hidden; }
-.rot-topbar { display: flex; align-items: center; gap: 8px; padding: 12px 20px; border-bottom: 1px solid #d0d0cc; flex-shrink: 0; }
-.live-badge { display: inline-flex; align-items: center; gap: 6px; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+/* ── CENTER: ROTATOR ── */
+.col-center { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; overflow: hidden; }
+.rot-topbar { display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-bottom: 1px solid #2a2a2a; flex-shrink: 0; background: #1a1a1a; }
+.live-badge { display: inline-flex; align-items: center; gap: 6px; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
 .live-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; }
-.rot-counter { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #888; margin-left: auto; }
-.rot-progress { height: 2px; background: #e0e0dc; flex-shrink: 0; }
+.rot-counter { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #555; margin-left: auto; }
+.rot-progress { height: 0; background: transparent; flex-shrink: 0; display: none; }
 .rot-progress-fill { height: 100%; background: #c41e3a; width: 0%; }
-.rot-progress-fill.running { transition: width 8s linear; }
+.rot-progress-fill.running { transition: width 0.3s ease; }
 .rot-stage { position: relative; flex: 1; overflow: hidden; }
-.rot-card { position: absolute; inset: 0; padding: 14px 20px 10px; display: flex; flex-direction: column; gap: 8px; transition: transform 0.52s cubic-bezier(0.4,0,0.2,1), opacity 0.52s ease; overflow: hidden; }
-.rot-card.rot-prev  { transform: translateX(-100%); opacity: 0; }
+.rot-card { position: absolute; inset: 0; padding: 14px 18px 10px; display: flex; flex-direction: column; gap: 6px; transition: transform 0.52s cubic-bezier(0.4,0,0.2,1), opacity 0.52s ease; overflow-y: auto; }
+.rot-card::-webkit-scrollbar { width: 3px; }
+.rot-card::-webkit-scrollbar-thumb { background: #333; }
+.rot-card.rot-prev { transform: translateX(-100%); opacity: 0; }
 .rot-card.rot-active { transform: translateX(0); opacity: 1; }
-.rot-card.rot-next  { transform: translateX(100%); opacity: 0; }
-.rot-source { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; color: #888; text-transform: uppercase; flex-shrink: 0; }
-.rot-headline { font-family: 'Lora', serif; font-size: 21px; font-weight: 700; color: #111111; line-height: 1.28; letter-spacing: -0.01em; flex-shrink: 0; }
-.rot-summary { font-size: 13.5px; color: #555555; line-height: 1.6; font-weight: 300; flex-shrink: 0; }
-.rot-image { width: 100%; flex: 1; min-height: 0; object-fit: cover; border-radius: 6px; background: #e0e0dc; display: block; }
-.rot-read-row { display: flex; align-items: center; gap: 5px; font-size: 12px; color: #888; padding-top: 2px; flex-shrink: 0; }
-.rot-channel-link { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 700; color: #c41e3a; text-decoration: none; border-bottom: 1px dashed #c41e3a; letter-spacing: 0.04em; }
+.rot-card.rot-next { transform: translateX(100%); opacity: 0; }
+.rot-source { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #555; text-transform: uppercase; flex-shrink: 0; }
+.rot-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
+.rot-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
+.rot-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
+.rot-headline { font-family: 'Lora', serif; font-size: 19px; font-weight: 700; color: #eee; line-height: 1.28; letter-spacing: -0.01em; flex-shrink: 0; }
+.rot-summary { font-size: 13px; color: #888; line-height: 1.65; font-weight: 300; flex-shrink: 0; }
+.ai-analysis-box { background: rgba(127,119,221,0.08); border: 0.5px solid rgba(127,119,221,0.25); border-radius: 6px; padding: 12px 14px; flex-shrink: 0; }
+.ai-analysis-lbl { font-size: 10px; color: #7f77dd; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 7px; display: flex; align-items: center; gap: 6px; font-family: 'IBM Plex Mono', monospace; }
+.ai-analysis-txt { font-size: 12px; color: #a89fe0; line-height: 1.75; }
+.ai-analysis-txt p { margin-bottom: 8px; }
+.ai-analysis-txt p:last-child { margin-bottom: 0; }
+.loading-dots { display: inline-flex; gap: 4px; align-items: center; }
+.loading-dots span { width: 5px; height: 5px; border-radius: 50%; background: #7f77dd; animation: aiDotBounce 1.1s infinite; }
+.loading-dots span:nth-child(2) { animation-delay: 0.18s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.36s; }
+.rot-read-row { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #555; padding-top: 4px; flex-shrink: 0; }
+.rot-channel-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; color: #c41e3a; text-decoration: none; border-bottom: 1px dashed #c41e3a; letter-spacing: 0.04em; }
 .rot-channel-link:hover { opacity: 0.7; }
-.rot-navrow { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 10px 16px; border-top: 1px solid #d0d0cc; flex-shrink: 0; }
-.rot-btn { background: none; border: 1px solid #ccc; border-radius: 6px; padding: 4px 14px; font-size: 14px; color: #555; cursor: pointer; transition: background 0.15s; }
-.rot-btn:hover { background: #e8e8e4; }
-.rot-dots { display: flex; gap: 6px; }
-.rot-dots span { width: 6px; height: 6px; border-radius: 50%; background: #ccc; cursor: pointer; transition: background 0.2s; }
+.rot-navrow { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 8px 14px; border-top: 1px solid #2a2a2a; flex-shrink: 0; }
+.rot-btn { background: none; border: 0.5px solid #333; border-radius: 6px; padding: 3px 12px; font-size: 13px; color: #888; cursor: pointer; transition: background 0.15s; }
+.rot-btn:hover { background: #2a2a2a; }
+.rot-dots { display: flex; gap: 5px; }
+.rot-dots span { width: 6px; height: 6px; border-radius: 50%; background: #333; cursor: pointer; transition: background 0.2s; }
 .rot-dots span.on { background: #c41e3a; }
-.main-news-wrap { padding: 24px 28px; display: flex; flex-direction: column; height: 100%; }
-.main-headline { font-family: 'Lora', serif; font-size: 26px; font-weight: 700; color: #111111; line-height: 1.28; margin-bottom: 6px; letter-spacing: -0.02em; }
-.main-summary { font-size: 15px; color: #555555; line-height: 1.7; margin-bottom: 16px; font-weight: 300; }
-.main-image-wrap { flex: 1; background: #ffffff; border-radius: 6px; overflow: hidden; position: relative; min-height: 240px; }
-.main-image { width: 100%; height: 100%; object-fit: cover; display: block; opacity: 0.92; }
-.img-credit { position: absolute; bottom: 0; right: 0; background: rgba(0,0,0,0.65); color: rgba(255,255,255,0.55); font-family: 'IBM Plex Mono', monospace; font-size: 9px; padding: 3px 8px; letter-spacing: 0.04em; }
-.main-byline { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.1em; text-transform: uppercase; color: #777777; padding: 8px 0 0; border-top: 1px solid #d8d8d4; margin-top: 8px; }
-.read-btn { display: inline-block; margin-top: 14px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #c41e3a; text-decoration: none; border: 1px solid #c41e3a; padding: 8px 18px; border-radius: 3px; transition: all 0.2s; }
-.read-btn:hover { background: #c41e3a; color: #fff; }
 
-/* ─── RIGHT: TIMELINE ─── */
-.col-right { display: flex; flex-direction: column; overflow: hidden; background: #e8e8e4; }
-.latest-title { font-family: 'Lora', serif; font-size: 16px; font-weight: 700; color: #c41e3a; padding: 16px 18px; border-bottom: 1px solid #d0d0cc; letter-spacing: -0.01em; flex-shrink: 0; display: flex; align-items: center; gap: 8px; }
-.latest-title-dot { width: 8px; height: 8px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; }
-.timeline { flex: 1; overflow-y: auto; position: relative; padding-left: 0; min-height: 0; }
-.timeline::-webkit-scrollbar { width: 3px; }
-.timeline::-webkit-scrollbar-thumb { background: #2c2c2c; }
-.timeline::before { content: none; }
-.timeline-item { padding: 16px 18px; position: relative; cursor: pointer; border-bottom: 1px solid #d0d0cc; transition: background 0.15s; text-align: left; }
-.timeline-item:hover { background: #deded9; }
+/* ── RIGHT: TIMELINE ── */
+.col-right { display: flex; flex-direction: column; background: #1e1e1e; overflow: hidden; min-height: 0; }
+.latest-title { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #c41e3a; padding: 12px 16px; border-bottom: 1px solid #2a2a2a; letter-spacing: -0.01em; flex-shrink: 0; display: flex; align-items: center; gap: 7px; }
+.latest-title-dot { width: 7px; height: 7px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; }
+.timeline { flex: 1; overflow-y: scroll; min-height: 0; height: 0; }
+.timeline::-webkit-scrollbar { width: 4px; }
+.timeline::-webkit-scrollbar-track { background: #1a1a1a; }
+.timeline::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 2px; }
+.timeline-item { padding: 10px 14px; position: relative; cursor: pointer; border-bottom: 1px solid #2a2a2a; transition: background 0.15s; }
+.timeline-item:hover { background: #252525; }
+.timeline-item.active { background: #222; border-left: 3px solid #c41e3a; padding-left: 11px; }
 .timeline-item:last-child { border-bottom: none; }
-.tl-dot { display: none; }
-.tl-dot.active { display: none; }
-.tl-meta { display: flex; align-items: center; gap: 5px; margin-bottom: 5px; justify-content: flex-start; }
-.tl-time { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #777777; }
-.tl-sep { font-size: 9px; color: #e0e0dd; }
-.tl-source { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555555; text-transform: uppercase; letter-spacing: 0.04em; }
-.tl-headline { font-family: 'Lora', serif; font-size: 15px; font-weight: 600; color: #111111; line-height: 1.4; }
-.timeline-item:first-child .tl-headline { display: flex; align-items: flex-start; justify-content: flex-start; gap: 7px; }
-.timeline-item:first-child .tl-headline::before { content: ''; display: inline-block; width: 7px; height: 7px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; margin-top: 5px; }
-.read-more-btn { padding: 16px 20px; text-align: center; border-top: 1px solid #d0d0cc; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #666666; cursor: pointer; transition: color 0.2s, background 0.2s; background: #e2e2de; flex-shrink: 0; }
-.read-more-btn:hover { color: #c41e3a; background: #deded9; }
+.tl-meta { display: flex; align-items: center; gap: 5px; margin-bottom: 4px; flex-wrap: wrap; }
+.tl-time { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #555; }
+.tl-src { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.04em; }
+.tl-headline { font-family: 'Lora', serif; font-size: 13px; font-weight: 600; color: #ccc; line-height: 1.38; }
+.tl-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+.tl-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+.tl-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+.read-more-btn { padding: 12px 16px; text-align: center; border-top: 1px solid #2a2a2a; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; cursor: pointer; transition: color 0.2s, background 0.2s; background: #1a1a1a; flex-shrink: 0; }
+.read-more-btn:hover { color: #c41e3a; background: #222; }
 
-/* ─── WAR & INDIA ─── */
-.india-ribbon { background: #e2e2de; border-bottom: 1px solid #d0d0cc; padding: 18px 28px; border-radius: 8px 8px 0 0; }
+/* ── INDIA SECTION ── */
+.india-ribbon { background: #1a1a1a; padding: 14px 24px; border-radius: 8px 8px 0 0; }
 .india-ribbon-inner { display: flex; align-items: center; gap: 12px; }
-.india-ribbon h2 { font-family: 'Lora', serif; font-size: 20px; font-weight: 700; color: #c41e3a; letter-spacing: -0.01em; }
-.india-ribbon-tag { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #555555; letter-spacing: 0.1em; text-transform: uppercase; }
-.india-content { background: #e8e8e4; padding: 32px 28px 36px; border-radius: 0 0 8px 8px; border: 1px solid #d0d0cc; border-top: none; }
-.india-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 48px; align-items: flex-start; }
-
-/* India cards */
-.india-timeline { position: relative; padding-left: 22px; }
-.india-timeline::before { content: none; }
-.india-card { padding: 18px 0 20px 22px; position: relative; cursor: pointer; border-bottom: 1px solid #f5f5f2; }
+.india-ribbon h2 { font-family: 'Lora', serif; font-size: 18px; font-weight: 700; color: #c41e3a; letter-spacing: -0.01em; }
+.india-ribbon-tag { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #aaa; letter-spacing: 0.1em; text-transform: uppercase; }
+.india-content { background: #181818; padding: 24px 24px 28px; border-radius: 0 0 8px 8px; border: 1px solid #2a2a2a; border-top: none; }
+.india-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: flex-start; }
+.india-card { padding: 14px 0 16px; cursor: pointer; border-bottom: 1px solid #2a2a2a; }
 .india-card:last-child { border-bottom: none; }
 .india-card:hover .india-card-headline { color: #c41e3a; }
-.india-dot { display: none; }
-.india-dot.hot { display: none; }
 .india-card-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
-.india-sev-high { background: #c41e3a; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 2px; letter-spacing: 0.06em; text-transform: uppercase; }
-.india-sev-med { background: #d4892a; color: #fff; font-size: 11px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
-.india-sev-low { background: #3daa72; color: #fff; font-size: 8px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
-.india-cat { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #555555; text-transform: uppercase; letter-spacing: 0.06em; }
-.india-card-time { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #777777; margin-left: auto; }
-.india-card-headline { font-family: 'Lora', serif; font-size: 16px; font-weight: 600; color: #111111; line-height: 1.4; margin-bottom: 4px; transition: color 0.15s; }
-.india-card-detail { font-size: 14px; color: #555555; line-height: 1.65; font-weight: 300; }
-.india-card-expanded { display: none; margin-top: 12px; padding-top: 12px; border-top: 1px solid #f5f5f2; font-size: 14px; color: #555555; line-height: 1.75; font-weight: 300; }
+.india-sev-high { background: #c41e3a; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 2px; letter-spacing: 0.06em; text-transform: uppercase; }
+.india-sev-med { background: #d4892a; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
+.india-sev-low { background: #3daa72; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
+.india-cat { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 0.06em; }
+.india-card-time { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #aaa; margin-left: auto; }
+.india-card-headline { font-family: 'Lora', serif; font-size: 15px; font-weight: 600; color: #ddd; line-height: 1.4; margin-bottom: 4px; transition: color 0.15s; }
+.india-card-detail { font-size: 13px; color: #999; line-height: 1.65; font-weight: 300; }
+.india-card-expanded { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #2a2a2a; font-size: 13px; color: #999; line-height: 1.75; font-weight: 300; }
 .india-card.open .india-card-expanded { display: block; }
-.india-read-btn { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #c41e3a; background: none; border: none; cursor: pointer; padding: 5px 0 0; letter-spacing: 0.06em; display: block; transition: opacity 0.15s; }
+.india-read-btn { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #c41e3a; background: none; border: none; cursor: pointer; padding: 4px 0 0; letter-spacing: 0.06em; display: block; transition: opacity 0.15s; }
 .india-read-btn:hover { opacity: 0.65; }
-
-/* ─── WEEKLY SUMMARY ─── */
 .india-summary-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
-.india-summary-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 12px; letter-spacing: 0.12em; text-transform: uppercase; color: #777777; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
-.india-summary-rule { flex: 1; height: 1px; background: #2c2c2c; }
-.india-summary-para { font-size: 15px; line-height: 1.75; color: #333333; margin-bottom: 16px; font-weight: 300; }
+.india-summary-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+.india-summary-rule { flex: 1; height: 1px; background: #333; }
+.india-summary-para { font-size: 14px; line-height: 1.75; color: #aaa; margin-bottom: 14px; font-weight: 300; }
 .india-summary-para:last-child { margin-bottom: 0; }
 
-/* ─── FOOTER ─── */
-footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; }
-.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 13px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #111111; }
+/* ── FOOTER ── */
+footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
 .footer-logo span { color: #c41e3a; }
-.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 12px; color: #777777; text-align: right; line-height: 1.7; }
+.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; text-align: right; line-height: 1.7; }
 
-/* ─── RESPONSIVE ─── */
+@keyframes econSlideUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes econSlideDn{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes econTriUp{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(-3px);opacity:.5}}
+@keyframes econTriDn{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(3px);opacity:.5}}
+/* ── ECONOMY STRIP ── */
+.econ-strip { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 0; cursor: pointer; transition: border-color .2s; overflow: hidden; text-decoration: none; display: block; }
+.econ-strip:hover { border-color: #c41e3a; }
+.econ-strip-inner { display: flex; align-items: center; gap: 0; }
+.econ-strip-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #666; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; padding: 10px 16px; border-right: 1px solid #2a2a2a; }
+.econ-strip-label:hover { color: #aaa; }
+.econ-sep { width: 1px; height: 32px; background: #2a2a2a; flex-shrink: 0; }
+.econ-cells { display: flex; flex: 1; overflow: hidden; }
+.econ-cell { flex: 1; padding: 7px 14px; border-right: 1px solid #222; min-width: 0; position: relative; }
+.econ-cell:last-child { border-right: none; }
+.econ-cell-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; width: fit-content; transition: color .15s ease, transform .2s cubic-bezier(0.34,1.56,0.64,1); }
+.econ-cell:hover .econ-cell-ticker { color: #bbb; transform: scale(1.08); transform-origin: left center; }
+.econ-cell-val { font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 700; color: #ccc; line-height: 1; display: inline-block; transition: color .15s ease; }
+.econ-cell-val.slide-up { animation: econSlideUp .4s cubic-bezier(.34,1.56,.64,1) forwards; }
+.econ-cell-val.slide-dn { animation: econSlideDn .4s cubic-bezier(.34,1.56,.64,1) forwards; }
+.econ-cell-chg { font-family: 'IBM Plex Mono', monospace; font-size: 9px; margin-top: 2px; }
+.econ-cell-chg.up { color: #c41e3a; }
+.econ-cell-chg.dn { color: #3daa72; }
+.econ-cell-chg.up::before { content: '▲ '; font-size: 7px; animation: econTriUp 1.4s ease-in-out infinite; display: inline-block; }
+.econ-cell-chg.dn::before { content: '▼ '; font-size: 7px; animation: econTriDn 1.4s ease-in-out infinite; display: inline-block; }
+.econ-strip-cta { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #c41e3a; letter-spacing: .1em; text-transform: uppercase; padding: 10px 14px; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 5px; border-left: 1px solid #2a2a2a; }
+.econ-strip-cta::after { content: '→'; }
+
 @media (max-width: 900px) { .newspaper-grid { grid-template-columns: 1fr; } .col-left, .col-right { display: none; } .india-inner { grid-template-columns: 1fr; } }
-@media (max-width: 600px) { .alert-bar, .tension-section { display: none; } header { padding: 12px 16px; } .masthead { font-size: 28px; } .nav-item { padding: 0 10px; font-size: 10px; } .india-content { padding: 16px; } }
+@media (max-width: 600px) { .tension-section { display: none; } header { padding: 10px 16px; } .masthead { font-size: 18px; } .nav-item { padding: 0 10px; font-size: 10px; } }
+.ai-sum-badge{background:transparent;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
 </style>
 </head>
 <body>
 
 <header>
-  <div class="header-top">
-    <div class="header-date" id="header-date">Wednesday, March 18, 2026</div>
-    <h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1>
-    <div class="ai-label">AI Summarizer</div>
+  <div style="display:flex;flex-direction:column;gap:0"><div style="display:flex;align-items:center;gap:10px"><h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1><span class="ai-sum-badge">AI Summariser</span></div>
+  <div class="header-date" id="header-date" style="font-size:9px;color:#555;letter-spacing:.06em;font-family:\'IBM Plex Mono\',monospace;margin-top:3px"></div>
   </div>
-  <nav class="nav-section">
-    <a class="nav-item live" href="index.html#live"><span class="live-dot"></span>Live</a>
+  <nav>
+    <a class="nav-item live active" href="index.html"><span class="live-dot"></span>Live</a>
     <a class="nav-item" href="india.html">India</a>
-    <a class="nav-item" href="history.html">History</a>
+    <a class="nav-item" href="economy.html">Economy</a>
+    <a class="nav-item" href="digest.html">Daily Digest</a>
+    <a class="nav-item" href="records.html">Records</a>
     <a class="nav-item" href="warwatch.html">War Context</a>
   </nav>
 </header>
 
-<div class="page-sections">
-<!-- ALERT BAR -->
 <div class="alert-bar">
   <div class="alert-badge" id="alert-escalation">CRITICAL</div>
+  <div class="alert-dot"></div>
   <div class="alerts-scroll">
-    <div class="alerts-text" id="alerts-text">
-      <span class="alert-dot"></span><span id="typewriter-output"></span><span class="typewriter-cursor"></span>
+    <div class="alerts-text">
+      <span id="typewriter-output"></span><span class="typewriter-cursor"></span>
     </div>
   </div>
 </div>
+
+<!-- 16:9 HERO IMAGE -->
+<div class="hero-img-wrap">
+  <div class="hero-img-inner">
+    <img src="war.png" alt="War Monitor" onerror="this.parentElement.style.background='#1a1a1a'"/>
+  </div>
+  <div class="hero-overlay"></div>
+  <div class="hero-caption">
+    <div class="hero-caption-txt">WarWatch · AI-powered conflict monitor · 17 sources</div>
+    <div class="hero-live-pill"><span class="live-dot" style="margin-right:0"></span>Live</div>
+  </div>
+</div>
+
+<div class="page-sections">
 
 <!-- TENSION METERS -->
 <div class="tension-section">
@@ -215,19 +260,38 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
     <div class="tension-meters-grid" id="tension-meters-grid">
       <div class="tension-meter"><div class="meter-row"><span class="meter-label">US vs Iran</span><span class="meter-level" style="color:#e05555">Critical</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="92" style="background:#e05555"></div></div></div>
       <div class="tension-meter"><div class="meter-row"><span class="meter-label">Israel vs Iran</span><span class="meter-level" style="color:#e05555">Critical</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="84" style="background:#e05555"></div></div></div>
-      <div class="tension-meter" id="india-war-meter"><div class="meter-row"><span class="meter-label">War vs India</span><span class="meter-level" id="india-war-lvl" style="color:#d4892a">—</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" id="india-war-bar" data-w="0" style="background:#d4892a"></div></div></div>
+      <div class="tension-meter"><div class="meter-row"><span class="meter-label">War vs India</span><span class="meter-level" id="india-war-lvl" style="color:#d4892a">High</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" id="india-war-bar" data-w="72" style="background:#d4892a"></div></div></div>
     </div>
   </div>
 </div>
 
-<!-- THREE-COLUMN NEWSPAPER GRID -->
+<!-- ECONOMY STRIP -->
+<a class="econ-strip" href="economy.html">
+  <div class="econ-strip-inner">
+    <div class="econ-strip-label"><span style="width:5px;height:5px;border-radius:50%;background:#d4892a;display:inline-block;flex-shrink:0"></span>Markets</div>
+    <div class="econ-cells" id="econ-strip-cells">
+      <div class="econ-cell"><div class="econ-cell-ticker">Brent</div><div class="econ-cell-val" id="es-brent">$94.8</div><div class="econ-cell-chg up" id="es-brent-chg">+24.7% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">WTI</div><div class="econ-cell-val" id="es-wti">$91.3</div><div class="econ-cell-chg up" id="es-wti-chg">+22.1% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">Gold USD</div><div class="econ-cell-val" id="es-gold">$3,082</div><div class="econ-cell-chg up" id="es-gold-chg">+14.6% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">USD/INR</div><div class="econ-cell-val" id="es-inr">₹85.42</div><div class="econ-cell-chg dn" id="es-inr-chg">-4.1% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">MCX Crude</div><div class="econ-cell-val" id="es-mcx">₹7,842</div><div class="econ-cell-chg up" id="es-mcx-chg">+23.4% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">Petrol est.</div><div class="econ-cell-val" id="es-petrol">₹97.4</div><div class="econ-cell-chg up" id="es-petrol-chg">+₹4.2 since war</div></div>
+    </div>
+    <div class="econ-strip-cta">Full Economy</div>
+  </div>
+</a>
+
+<!-- THREE-COLUMN GRID -->
 <div class="newspaper-grid" id="live">
 
   <!-- LEFT: AI SUMMARY -->
   <div class="col-left">
     <div class="ai-summary-box">
-      <div class="ai-summary-label">Latest AI Summary &middot; <div class="ai-speaking-dot"><span></span><span></span><span></span></div> &mdash; <span id="summary-time">—</span></div>
-      <div class="ai-summary-text" id="summary-text"><span id="summary-text-inner"></span><span class="ai-cursor" id="summary-cursor"></span></div>
+      <div class="ai-summary-label">AI Summary &middot; <div class="ai-speaking-dot"><span></span><span></span><span></span></div> &mdash; <span id="summary-time">—</span></div>
+      <div class="ai-summary-text" id="summary-text-inner">
+        <div class="loading-dots"><span></span><span></span><span></span></div>
+      </div>
+      <div class="ai-refresh-note" id="ai-refresh-note"></div>
       <div class="escalation-block">
         <div class="escalation-label">Tone</div>
         <div class="escalation-badge" id="tone-badge" style="background:#e05555">Volatile</div>
@@ -239,7 +303,7 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
   <div class="col-center">
     <div class="rot-topbar">
       <div class="live-badge">Live</div>
-      <span class="rot-counter" id="rot-counter">1 / 4</span>
+      <span class="rot-counter" id="rot-counter">1 / 8</span>
     </div>
     <div class="rot-progress"><div class="rot-progress-fill" id="rot-pf"></div></div>
     <div class="rot-stage" id="rot-stage"></div>
@@ -250,32 +314,11 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
     </div>
   </div>
 
-  <!-- RIGHT: TIMELINE -->
+  <!-- RIGHT: UNIFIED TIMELINE -->
   <div class="col-right">
     <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
-    <div class="timeline" id="timeline">
-      <div class="timeline-item">
-        <div class="tl-dot active"></div>
-        <div class="tl-meta"><span class="tl-time">2 hrs ago</span><span class="tl-sep">&ndash;</span><span class="tl-source">NDTV</span></div>
-        <div class="tl-headline">US jets strike military facilities near Iran's Chabahar trade zone</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-meta"><span class="tl-time">4 hrs ago</span><span class="tl-sep">&ndash;</span><span class="tl-source">BBC</span></div>
-        <div class="tl-headline">Iranian drones strike near Dubai International Airport, massive fire reported</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-meta"><span class="tl-time">6 hrs ago</span><span class="tl-sep">&ndash;</span><span class="tl-source">Reuters</span></div>
-        <div class="tl-headline">IDF places Kharg Island on active target list as oil pressure tactic</div>
-      </div>
-      <div class="timeline-item">
-        <div class="tl-dot"></div>
-        <div class="tl-meta"><span class="tl-time">8 hrs ago</span><span class="tl-sep">&ndash;</span><span class="tl-source">Al Jazeera</span></div>
-        <div class="tl-headline">Gaza ceasefire holding despite renewed IDF activity in Rafah corridor</div>
-      </div>
-    </div>
-    <div class="read-more-btn" onclick="window.location.href='history.html'">Read More Stories &rarr;</div>
+    <div class="timeline" id="timeline"></div>
+    <div class="read-more-btn" onclick="window.location.href='records.html'">Read more stories &rarr;</div>
   </div>
 
 </div>
@@ -285,42 +328,39 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
   <div class="india-ribbon">
     <div class="india-ribbon-inner">
       <h2>War &amp; India</h2>
-      <span class="india-ribbon-tag">How the conflict affects India &mdash; live</span>
+      <span class="india-ribbon-tag">How the conflict affects India — live</span>
       <a href="india.html" style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#c41e3a;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;border:1px solid #c41e3a;padding:4px 10px;border-radius:2px;">Full India Page &rarr;</a>
     </div>
   </div>
   <div class="india-content">
     <div class="india-inner">
-      <div style="background:#fff;border-radius:6px;border:1px solid #d0d0cc;padding:20px 22px;">
-        <div style="font-family:'IBM Plex Mono',monospace;font-size:11px;letter-spacing:0.12em;text-transform:uppercase;color:#888;margin-bottom:16px;display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:#c41e3a;animation:pulse 1.5s infinite;flex-shrink:0;"></span>Latest India Impact · Updated every 6 hrs</div>
-        <div class="india-timeline" id="india-impact-cards">
+      <div style="background:#1e1e1e;border-radius:6px;border:1px solid #2a2a2a;padding:18px 20px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:14px;display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#c41e3a;animation:pulse 1.5s infinite;flex-shrink:0;"></span>Latest India Impact</div>
+        <div id="india-impact-cards">
           <div class="india-card open">
-            <div class="india-dot hot"></div>
-            <div class="india-card-meta"><span class="india-sev-high">High</span><span class="india-cat">Energy</span><span class="india-card-time">18 mins ago</span></div>
+            <div class="india-card-meta"><span class="india-sev-high">High</span><span class="india-cat">Energy</span><span class="india-card-time">Loading...</span></div>
             <div class="india-card-headline">India scrambles for oil alternatives as Chabahar and Hormuz threatened</div>
             <div class="india-card-detail">India imports 7% crude from Iran. With Chabahar struck and Hormuz under threat, refiners are building 30-day strategic reserves.</div>
             <div class="india-card-expanded">India's energy vulnerability is in sharp focus. The Chabahar port strike affects India's $85 million investment. Over 60% of India's crude imports pass through Hormuz. Brent crossing $97/barrel would add ~₹8–10/litre at the pump and widen the current account deficit by ~$25 billion annually.</div>
             <button class="india-read-btn" onclick="toggleIndiaCard(this)">Read more ↓</button>
           </div>
           <div class="india-card">
-            <div class="india-dot"></div>
-            <div class="india-card-meta"><span class="india-sev-high">High</span><span class="india-cat">Diaspora</span><span class="india-card-time">32 mins ago</span></div>
+            <div class="india-card-meta"><span class="india-sev-high">High</span><span class="india-cat">Diaspora</span><span class="india-card-time">Loading...</span></div>
             <div class="india-card-headline">3.5M Indians in UAE on alert after Dubai airport drone strike</div>
-            <div class="india-card-detail">MEA opened a 24-hour control room in Dubai. Air India and IndiGo rerouted flights, affecting ~4,200 passengers.</div>
+            <div class="india-card-detail">MEA opened a 24-hour control room. Air India and IndiGo rerouted flights, affecting ~4,200 passengers.</div>
             <div class="india-card-expanded">No Indian casualties reported. The Indian Consulate is processing welfare calls. Remittances from UAE account for a major share of India's $125 billion annual inflow — disruption hits Kerala, Andhra Pradesh, and Tamil Nadu hardest.</div>
             <button class="india-read-btn" onclick="toggleIndiaCard(this)">Read more ↓</button>
           </div>
           <div class="india-card">
-            <div class="india-dot"></div>
-            <div class="india-card-meta"><span class="india-sev-med">Medium</span><span class="india-cat">Diplomacy</span><span class="india-card-time">45 mins ago</span></div>
+            <div class="india-card-meta"><span class="india-sev-med">Medium</span><span class="india-cat">Diplomacy</span><span class="india-card-time">Loading...</span></div>
             <div class="india-card-headline">India walks diplomatic tightrope between Iran, Israel, and US</div>
             <div class="india-card-detail">India abstained from UN votes condemning US strikes, maintaining non-alignment. PM Modi has issued no public statement.</div>
-            <div class="india-card-expanded">India has $2.4 billion in active defence contracts with Israel, relies on Iran for the Chabahar corridor, and is a core Quad member. Picking a side damages at least one relationship irreparably. Foreign Minister Jaishankar is managing all communications below the PM level — a deliberate distancing strategy.</div>
+            <div class="india-card-expanded">India has $2.4 billion in active defence contracts with Israel, relies on Iran for the Chabahar corridor, and is a core Quad member. Foreign Minister Jaishankar is managing all communications below the PM level — a deliberate distancing strategy.</div>
             <button class="india-read-btn" onclick="toggleIndiaCard(this)">Read more ↓</button>
           </div>
-        </div><!-- /india-impact-cards -->
-      </div><!-- /live news card -->
-      <div style="background:#fff;border-radius:6px;border:1px solid #d0d0cc;padding:20px 22px;">
+        </div>
+      </div>
+      <div style="background:#1e1e1e;border-radius:6px;border:1px solid #2a2a2a;padding:18px 20px;">
         <div class="india-summary-header">
           <span class="india-summary-lbl">Weekly AI Summary <div class="ai-speaking-dot"><span></span><span></span><span></span></div></span>
           <div class="india-summary-rule"></div>
@@ -330,7 +370,7 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
           <p class="india-summary-para">For ordinary Indians, the most immediate impact is at the petrol pump. Crude above $97 means fuel price hikes are likely within weeks. Families in Kerala, Andhra Pradesh, and Tamil Nadu are watching with particular anxiety after the Dubai airport strike.</p>
           <p class="india-summary-para">The government is managing quietly, working back channels intensively. Priority: protecting nationals, securing energy alternatives, and avoiding forced diplomatic choices between Washington, Tel Aviv, and Tehran.</p>
         </div>
-      </div><!-- /weekly summary card -->
+      </div>
     </div>
   </div>
 </div>
@@ -341,12 +381,13 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
   <div class="footer-logo">War<span>Watch</span></div>
   <div class="footer-meta" id="footer-meta">
     Sources: NDTV &middot; BBC &middot; Reuters &middot; Al Jazeera &middot; Times of Israel &middot; Iran International<br>
-    AI summaries by Groq / Llama 3.3 &middot; Updated every 6 hours &middot; <a href="dashboard.html" style="color:#aaaaaa;text-decoration:none">Bot Log &rarr;</a>
+    AI Summariser
   </div>
 </footer>
 </div>
 
 <script src="live_data.js" onerror="void 0"></script>
+<script>/* GROQ_API_KEY must be set in live_data.js as: window.GROQ_API_KEY = 'gsk_...'; */</script>
 <script>
 (function () {
   var LEVEL_COLOR = { LOW:'#3daa72', MEDIUM:'#d4892a', HIGH:'#c87830', CRITICAL:'#a32d2d' };
@@ -359,27 +400,17 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
   document.getElementById('header-date').textContent = DAYS[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
 
   var D = window.WARWATCH_LIVE;
-  if (!D) {
-    setTimeout(function() {
-      document.querySelectorAll('.meter-bar-fill[data-w]').forEach(function(b, i) {
-        setTimeout(function() { b.style.width = b.dataset.w + '%'; }, 200 + i * 140);
-      });
-    }, 100);
-    return;
-  }
 
   /* Alert bar */
-  if (D.escalationLevel) {
+  if (D && D.escalationLevel) {
     var badge = document.getElementById('alert-escalation');
     badge.textContent = D.escalationLevel;
     badge.style.background = LEVEL_COLOR[D.escalationLevel] || '#a32d2d';
   }
-  if (D.alerts && D.alerts.length) {
-    window._alertHeadlines = D.alerts;
-  }
+  if (D && D.alerts && D.alerts.length) window._alertHeadlines = D.alerts;
 
   /* Tension meters */
-  if (D.tensionMeters && D.tensionMeters.length) {
+  if (D && D.tensionMeters && D.tensionMeters.length) {
     var grid = document.getElementById('tension-meters-grid');
     grid.innerHTML = D.tensionMeters.map(function(m) {
       var c = m.color || '#888';
@@ -395,31 +426,32 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
     });
   }, 120);
 
-  /* AI Summary */
-  if (D.execSummary) { window._latestSummaryText = D.execSummary; }
-  if (D.generatedAt) document.getElementById('summary-time').textContent = D.generatedAt;
-  if (D.sentiment && D.sentiment.overall_tone) {
+  /* Tone badge */
+  if (D && D.sentiment && D.sentiment.overall_tone) {
     var tone = D.sentiment.overall_tone;
     var tb = document.getElementById('tone-badge');
     tb.textContent = tone.charAt(0) + tone.slice(1).toLowerCase();
     tb.style.background = TONE_COLOR[tone] || '#d4892a';
   }
 
-  /* Center rotator — seeded from newsCards */
-  window._rotatorCards = (D.newsCards && D.newsCards.length)
-    ? D.newsCards.slice(0, 8)
-    : null;
+  /* Summary time */
+  if (D && D.generatedAt) document.getElementById('summary-time').textContent = D.generatedAt;
+
+  /* Rotator cards from live data */
+  window._rotatorCards = (D && D.newsCards && D.newsCards.length) ? D.newsCards.slice(0, 8) : null;
   if (window._initRotator) window._initRotator();
 
-  /* Timeline */
+  /* Timeline from live data */
   var tl = document.getElementById('timeline');
-  if (D.newsCards && D.newsCards.length && tl) {
-    tl.innerHTML = D.newsCards.slice(0, 8).map(function(card, idx) {
+  var NEWS_ITEMS = window._rotatorCards || [];
+  if (NEWS_ITEMS.length && tl) {
+    tl.innerHTML = NEWS_ITEMS.map(function(card, idx) {
       var src = card.sourceLabel || (card.orgs && card.orgs[0] ? card.orgs[0] : 'News');
       var url = card.sourceUrl || '#';
-      return '<div class="timeline-item" onclick="openLink(\'' + url + '\')">'
-        + '<div class="tl-dot ' + (idx === 0 ? 'active' : '') + '"></div>'
-        + '<div class="tl-meta"><span class="tl-time">' + (card.time || '') + '</span><span class="tl-sep">&ndash;</span><span class="tl-source">' + src.toUpperCase() + '</span></div>'
+      var tagCls = 'tl-tag-d';
+      var tagLbl = 'War';
+      return '<div class="timeline-item' + (idx === 0 ? ' active' : '') + '" onclick="pickStory(' + idx + ')">'
+        + '<div class="tl-meta"><span class="' + tagCls + '">' + tagLbl + '</span><span class="tl-time">' + (card.time || '') + '</span><span class="tl-src">' + src.toUpperCase() + '</span></div>'
         + '<div class="tl-headline">' + card.headline + '</div>'
         + '</div>';
     }).join('');
@@ -427,7 +459,7 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
 
   /* India section */
   var SEV_CLS = { HIGH:'india-sev-high', MEDIUM:'india-sev-med', LOW:'india-sev-low' };
-  if (D.indiaImpact && D.indiaImpact.length) {
+  if (D && D.indiaImpact && D.indiaImpact.length) {
     var container = document.getElementById('india-impact-cards');
     if (container) {
       container.innerHTML = D.indiaImpact.map(function(item, idx) {
@@ -439,19 +471,17 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
           }).join('');
         }
         var timeStr = D.generatedAt ? timeAgo(D.generatedAt) : '';
-        var srcLink = item.sourceUrl ? ' <a href="' + item.sourceUrl + '" target="_blank" style="color:#c41e3a;font-family:\'IBM Plex Mono\',monospace;font-size:8px;">Read → ' + (item.source || 'Source') + '</a>' : '';
         return '<div class="india-card' + (idx === 0 ? ' open' : '') + '">'
-          + '<div class="india-dot ' + (idx === 0 ? 'hot' : '') + '"></div>'
           + '<div class="india-card-meta"><span class="' + sevCls + '">' + (item.significance || 'Medium') + '</span><span class="india-cat">' + (item.category || '') + '</span><span class="india-card-time">' + timeStr + '</span></div>'
           + '<div class="india-card-headline">' + (item.headline || '') + '</div>'
-          + '<div class="india-card-detail">' + (item.detail || '') + srcLink + '</div>'
+          + '<div class="india-card-detail">' + (item.detail || '') + '</div>'
           + (expanded ? '<div class="india-card-expanded">' + expanded + '</div><button class="india-read-btn" onclick="toggleIndiaCard(this)">' + (idx === 0 ? 'Read less ↑' : 'Read more ↓') + '</button>' : '')
           + '</div>';
       }).join('');
     }
   }
 
-  if (D.indiaSummary) {
+  if (D && D.indiaSummary) {
     var sb = document.getElementById('india-summary-text');
     if (sb) {
       sb.innerHTML = D.indiaSummary.split('\n').filter(Boolean).map(function(p) {
@@ -462,9 +492,9 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
 
   /* Footer */
   var fm = document.getElementById('footer-meta');
-  if (fm && D.generatedAt) {
-    var srcList = D.sourceBreakdown ? Object.keys(D.sourceBreakdown).slice(0, 6).join(' &middot; ') : 'NDTV &middot; BBC &middot; Reuters &middot; Al Jazeera';
-    fm.innerHTML = 'Sources: ' + srcList + '<br>Last updated: ' + D.generatedAt + (D.totalReports ? ' &middot; ' + D.totalReports + ' reports logged' : '') + ' &middot; <a href="dashboard.html" style="color:#aaaaaa;text-decoration:none">Bot Log &rarr;</a>';
+  if (fm && D && D.generatedAt) {
+    var srcList = D.heroStats && D.heroStats.sourcesUsed ? D.heroStats.sourcesUsed + ' sources' : 'NDTV · BBC · Reuters · Al Jazeera';
+    fm.innerHTML = 'Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel<br>Last updated: ' + D.generatedAt + (D.totalReports ? ' · ' + D.totalReports + ' reports logged' : '') + '';
   }
 
   function timeAgo(ts) {
@@ -481,46 +511,149 @@ footer { padding: 22px 28px; border: 1px solid #d8d8d4; background: #f5f5f2; bor
   }
 })();
 
+/* ── LIVE AI SUMMARY ── */
+var _summaryRefreshTimer = null;
+var _summaryLastFetch = 0;
+var SUMMARY_INTERVAL_MS = 15 * 60 * 1000;
 
-// ── AI-powered India vs War meters ────────────────────────────────────────
+async function fetchAISummary() {
+  var D = window.WARWATCH_LIVE;
+  var headlines = '';
+  if (D && D.newsCards) {
+    headlines = D.newsCards.slice(0, 4).map(function(c){ return c.headline; }).join('\n');
+  } else {
+    headlines = 'US strikes Iranian facilities near Chabahar\nIranian drones hit Dubai airport\nIDF places Kharg Island on active target list\nBrent crude surges past $97';
+  }
+  var escalation = (D && D.escalationLevel) ? D.escalationLevel : 'CRITICAL';
+
+  var prompt = 'You are a senior conflict analyst. The current escalation level is ' + escalation + '.\n\nTop 3-4 most critical stories right now:\n' + headlines + '\n\nWrite exactly 3 short paragraphs (no headings, no bullet points, plain prose). Para 1: what is happening right now — the most critical developments. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen in the next 24 hours. Be specific and direct. Max 55 words per paragraph.';
+
+  var inner = document.getElementById('summary-text-inner');
+  var noteEl = document.getElementById('ai-refresh-note');
+  inner.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
+
+  try {
+    var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
+      body: JSON.stringify({
+        model: 'llama-3.3-70b-versatile',
+        max_tokens: 500,
+        messages: [{ role: 'user', content: prompt }]
+      })
+    });
+    var data = await res.json();
+    var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
+    var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
+    inner.innerHTML = paras.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
+    _summaryLastFetch = Date.now();
+    var now = new Date();
+    if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
+  } catch(e) {
+    var D2 = window.WARWATCH_LIVE;
+    var fallback = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active including Chabahar, Dubai and Kharg Island pressure. India faces significant energy and diaspora exposure.';
+    inner.innerHTML = fallback.split('\n\n').filter(Boolean).slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
+    if (noteEl) noteEl.textContent = 'Live refresh unavailable';
+  }
+}
+
+function scheduleSummaryRefresh() {
+  fetchAISummary();
+  _summaryRefreshTimer = setInterval(fetchAISummary, SUMMARY_INTERVAL_MS);
+}
+
+window.addEventListener('load', function() { setTimeout(scheduleSummaryRefresh, 600); });
+
+/* ── AI INDIA METER ── */
 async function fetchIndiaMeters() {
   var D = window.WARWATCH_LIVE;
   var context = '';
-  if (D && D.indiaSummary) context = D.indiaSummary.slice(0, 600);
+  if (D && D.indiaSummary) context = D.indiaSummary.slice(0, 500);
   if (D && D.indiaImpact) context += ' ' + D.indiaImpact.map(function(i){ return i.headline; }).join('. ');
 
-  var prompt = 'Based on this India-war situation: "' + context + '"\n\nReturn ONLY valid JSON, no markdown:\n{"pct":72,"lvl":"High","color":"#d4892a"}\n\npct = 0-100 overall impact score of the war on India. lvl = one word (Low/Moderate/High/Severe/Critical). color = #3daa72 if low, #d4892a if moderate/high, #e05555 if severe/critical.';
+  var prompt = 'Based on this India-war situation: "' + context + '"\n\nReturn ONLY valid JSON, no markdown:\n{"pct":72,"lvl":"High","color":"#d4892a"}\n\npct = 0-100 overall impact score. lvl = one word (Low/Moderate/High/Severe/Critical). color = #3daa72 if low, #d4892a if moderate/high, #e05555 if severe/critical.';
 
   try {
-    var res = await fetch('https://api.anthropic.com/v1/messages', {
+    var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ model: 'claude-sonnet-4-20250514', max_tokens: 80, messages: [{ role: 'user', content: prompt }] })
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
+      body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 80, messages: [{ role: 'user', content: prompt }] })
     });
     var data = await res.json();
-    var text = (data.content && data.content[0] && data.content[0].text) || '';
+    var text = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
     var obj = JSON.parse(text.replace(/```json|```/g, '').trim());
     var bar = document.getElementById('india-war-bar');
     var lvl = document.getElementById('india-war-lvl');
     if (bar && lvl) {
-      lvl.textContent = obj.lvl;
-      lvl.style.color = obj.color;
+      lvl.textContent = obj.lvl; lvl.style.color = obj.color;
       bar.style.background = obj.color;
       setTimeout(function() { bar.style.width = obj.pct + '%'; }, 300);
     }
   } catch(e) {
-    // fallback
-    var bar = document.getElementById('india-war-bar');
-    var lvl = document.getElementById('india-war-lvl');
-    if (bar && lvl) {
-      lvl.textContent = 'High'; lvl.style.color = '#d4892a';
-      bar.style.background = '#d4892a';
-      setTimeout(function() { bar.style.width = '72%'; }, 300);
-    }
+    var bar2 = document.getElementById('india-war-bar');
+    var lvl2 = document.getElementById('india-war-lvl');
+    if (bar2 && lvl2) { lvl2.textContent = 'High'; lvl2.style.color = '#d4892a'; bar2.style.background = '#d4892a'; setTimeout(function() { bar2.style.width = '72%'; }, 300); }
   }
 }
+window.addEventListener('load', function() { setTimeout(fetchIndiaMeters, 1200); });
 
-window.addEventListener('load', function() { setTimeout(fetchIndiaMeters, 800); });
+/* ── ECONOMY STRIP: populate from prices_data.js if loaded ── */
+(function() {
+  function setCell(id, val, warPct) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    el.textContent = val;
+    el.classList.remove('slide-up', 'slide-dn');
+    void el.offsetWidth;
+    el.classList.add((warPct !== undefined && warPct < 0) ? 'slide-dn' : 'slide-up');
+  }
+  function setChg(id, pct, prefix) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var sign = pct > 0 ? '+' : '';
+    el.textContent = (prefix || '') + sign + pct.toFixed(1) + '% since war';
+    el.className = 'econ-cell-chg ' + (pct > 0 ? 'up' : 'dn');
+  }
+  /* Staggered entrance animation on cells */
+  window.addEventListener('load', function() {
+    var cells = document.querySelectorAll('.econ-cell');
+    cells.forEach(function(c, i) {
+      var val = c.querySelector('.econ-cell-val');
+      var chg = c.querySelector('.econ-cell-chg');
+      if (val) { val.style.opacity = '0'; setTimeout(function() { val.classList.add('slide-up'); val.style.opacity = ''; }, 200 + i * 80); }
+      if (chg) { chg.style.opacity = '0'; setTimeout(function() { chg.style.opacity = '1'; chg.style.transition = 'opacity .3s ease'; }, 350 + i * 80); }
+    });
+    var P = window.WARWATCH_PRICES;
+    if (!P) return;
+    var pr = P.prices || {};
+    var ind = P.india || {};
+    var fb = {
+      'BZ=F':  { formatted:'$94.8',  war_pct:24.7 },
+      'CL=F':  { formatted:'$91.3',  war_pct:22.1 },
+      'GC=F':  { formatted:'$3,082', war_pct:14.6 },
+      'INR=X': { formatted:'₹85.42', war_pct:-4.1 },
+      'CRUDEOIL.MCX': { formatted:'₹7,842', war_pct:23.4 }
+    };
+    var b = pr['BZ=F'] || fb['BZ=F'];
+    if (b) { setCell('es-brent', b.formatted, b.war_pct); setChg('es-brent-chg', b.war_pct); }
+    var w = pr['CL=F'] || fb['CL=F'];
+    if (w) { setCell('es-wti', w.formatted, w.war_pct); setChg('es-wti-chg', w.war_pct); }
+    var g = pr['GC=F'] || fb['GC=F'];
+    if (g) { setCell('es-gold', g.formatted, g.war_pct); setChg('es-gold-chg', g.war_pct); }
+    var i = pr['INR=X'] || fb['INR=X'];
+    if (i) { setCell('es-inr', i.formatted, i.war_pct); setChg('es-inr-chg', i.war_pct); }
+    var mc = (ind && ind['CRUDEOIL.MCX']) || pr['CRUDEOIL.MCX'] || fb['CRUDEOIL.MCX'];
+    if (mc) { setCell('es-mcx', mc.formatted, mc.war_pct); setChg('es-mcx-chg', mc.war_pct); }
+    var pet = ind && ind.petrolPump;
+    if (pet) {
+      setCell('es-petrol', pet.formatted || '₹97.4');
+      var wc = pet.war_change || 0;
+      var petEl = document.getElementById('es-petrol-chg');
+      if (petEl) { petEl.textContent = (wc > 0 ? '+' : '') + '₹' + Math.abs(wc).toFixed(1) + ' since war'; petEl.className = 'econ-cell-chg ' + (wc > 0 ? 'up' : 'dn'); }
+    }
+  });
+})();
+
 
 function toggleIndiaCard(btn) {
   var card = btn.closest('.india-card');
@@ -531,134 +664,43 @@ function toggleIndiaCard(btn) {
   btn.textContent = isOpen ? 'Read more ↓' : 'Read less ↑';
 }
 
-function openLink(url) {
-  if (url && url !== '#') window.open(url, '_blank', 'noopener');
-}
-
-/* ── Typewriter alert bar ── */
+/* ── TYPEWRITER ALERT ── */
 (function() {
-  var DEFAULT_HEADLINES = [
-    "US strikes Iranian facilities near Chabahar",
-    "Iran drones hit Dubai airport",
-    "IDF places Kharg Island on active target list",
-    "Brent crude surges past $97/barrel",
-    "UN Security Council convenes emergency session"
-  ];
-
-  var TYPE_SPEED   = 70;   // ms per character (slower = more dramatic)
-  var ERASE_SPEED  = 35;   // ms per character erased
-  var PAUSE_AFTER  = 3500; // ms to hold full headline before erasing
-  var PAUSE_BEFORE = 600;  // ms gap before typing next headline
-
-  var output   = document.getElementById('typewriter-output');
-  var idx      = 0;
-  var charIdx  = 0;
-  var erasing  = false;
-  var headlines = DEFAULT_HEADLINES;
-
-  function getHeadlines() {
-    return (window._alertHeadlines && window._alertHeadlines.length)
-      ? window._alertHeadlines
-      : DEFAULT_HEADLINES;
-  }
-
+  var DEFAULT = ['US strikes Iranian facilities near Chabahar','Iranian drones hit Dubai airport perimeter','IDF places Kharg Island on active target list','Brent crude surges past $97/barrel','Pakistan warns against airspace use for Iran strikes'];
+  var TYPE_SPEED = 65, ERASE_SPEED = 32, PAUSE_AFTER = 3200, PAUSE_BEFORE = 500;
+  var output = document.getElementById('typewriter-output');
+  var idx = 0, charIdx = 0, erasing = false;
+  function getH() { return (window._alertHeadlines && window._alertHeadlines.length) ? window._alertHeadlines : DEFAULT; }
   function tick() {
-    headlines = getHeadlines();
-    var current = headlines[idx % headlines.length];
-
+    var hs = getH(); var cur = hs[idx % hs.length];
     if (!erasing) {
-      // Typing
-      output.textContent = current.slice(0, charIdx + 1);
-      charIdx++;
-      if (charIdx >= current.length) {
-        erasing = true;
-        setTimeout(tick, PAUSE_AFTER);
-      } else {
-        setTimeout(tick, TYPE_SPEED);
-      }
+      output.textContent = cur.slice(0, charIdx + 1); charIdx++;
+      if (charIdx >= cur.length) { erasing = true; setTimeout(tick, PAUSE_AFTER); } else setTimeout(tick, TYPE_SPEED);
     } else {
-      // Erasing
-      output.textContent = current.slice(0, charIdx - 1);
-      charIdx--;
-      if (charIdx <= 0) {
-        erasing = false;
-        idx = (idx + 1) % headlines.length;
-        setTimeout(tick, PAUSE_BEFORE);
-      } else {
-        setTimeout(tick, ERASE_SPEED);
-      }
+      output.textContent = cur.slice(0, charIdx - 1); charIdx--;
+      if (charIdx <= 0) { erasing = false; idx = (idx + 1) % hs.length; setTimeout(tick, PAUSE_BEFORE); } else setTimeout(tick, ERASE_SPEED);
     }
   }
-
-  // Kick off after a short initial delay
   setTimeout(tick, 800);
 })();
 
-// ── AI Speaking Animation ──────────────────────────────────────────────────
-// Animate Latest AI Summary
-(function() {
-  var DEFAULT_TEXT = "The US-Israel-Iran conflict entered a dangerous new phase overnight as American jets struck Iranian facilities near Chabahar, Iranian drones hit infrastructure near Dubai airport, and Israel formally added Kharg Island to its active target list.\n\nAll three escalations occurred within a 12-hour window — the most intense simultaneous pressure since the conflict began. Iran has vowed retaliation while the US and Israel coordinate next steps.\n\nIndia faces significant exposure through oil prices, the Chabahar investment, and 3.5M diaspora in the Gulf. The next 24 hours will be critical.";
-  var inner = document.getElementById('summary-text-inner');
-  var cursor = document.getElementById('summary-cursor');
-  var fullText = (window._latestSummaryText) || DEFAULT_TEXT;
-  // Split into paragraphs, show max 3
-  var paras = fullText.split(/\n\n+/).filter(function(p){ return p.trim().length > 0; }).slice(0, 6);
-  inner.innerHTML = '';
-  paras.forEach(function(p, idx) {
-    var el = document.createElement('p');
-    el.style.cssText = 'margin:0 0 10px 0;line-height:1.75;';
-    el.textContent = p.trim();
-    inner.appendChild(el);
-  });
-  if (cursor) setTimeout(function() { cursor.style.display = 'none'; }, 500);
-})();
-
-// Animate Weekly AI Summary (paragraph by paragraph, word by word)
-(function() {
-  var container = document.getElementById('india-summary-text');
-  if (!container) return;
-  var paras = container.querySelectorAll('.india-summary-para');
-  if (!paras.length) return;
-
-  function animatePara(para, onDone) {
-    var fullText = para.textContent;
-    var words = fullText.split(' ');
-    para.textContent = '';
-    var cur = document.createElement('span');
-    cur.className = 'ai-cursor';
-    para.appendChild(cur);
-    var i = 0;
-    function addWord() {
-      if (i < words.length) {
-        para.insertBefore(document.createTextNode((i === 0 ? '' : ' ') + words[i]), cur);
-        i++;
-        setTimeout(addWord, 38 + Math.random() * 22);
-      } else {
-        cur.style.display = 'none';
-        if (onDone) setTimeout(onDone, 400);
-      }
-    }
-    addWord();
-  }
-
-  function animateAll(idx) {
-    if (idx >= paras.length) return;
-    animatePara(paras[idx], function() { animateAll(idx + 1); });
-  }
-
-  setTimeout(function() { animateAll(0); }, 1200);
-})();
-
-// ── Live News Rotator ─────────────────────────────────────────────────────
+/* ── LIVE NEWS ROTATOR ── */
 (function() {
   var DEFAULT_CARDS = [
-    { headline: "US jets strike Iranian facilities near Chabahar trade zone", summary: "American carrier-based aircraft struck two IRGC logistics depots near the Chabahar free-trade zone overnight. Iran called the strikes an act of war.", sourceLabel: "NDTV", time: "2 hrs ago", sourceUrl: "https://www.ndtv.com/world-news/us-jets-strike-military-facilities-near-irans-chabahar-trade-zone-report-11221430", imageUrl: "https://images.unsplash.com/photo-1585776245991-cf89dd7fc73a?w=800&h=450&q=80&fit=crop" },
-    { headline: "Iranian drones strike near Dubai International Airport", summary: "Drone strikes caused a large fire near Dubai airport perimeter. UAE authorities confirmed no runway damage but flights were diverted for several hours.", sourceLabel: "BBC", time: "4 hrs ago", sourceUrl: "https://www.bbc.com/news/world-middle-east", imageUrl: "https://images.unsplash.com/photo-1512453979798-5ea266f8880c?w=800&h=450&q=80&fit=crop" },
-    { headline: "IDF places Kharg Island on active target list", summary: "Israel formally added Iran's Kharg Island — responsible for 90% of Iranian oil exports — to its active military target list, raising fears of an oil price shock.", sourceLabel: "Reuters", time: "6 hrs ago", sourceUrl: "https://www.reuters.com", imageUrl: "https://images.unsplash.com/photo-1474546499760-77a0b18c5e69?w=800&h=450&q=80&fit=crop" },
-    { headline: "Gaza ceasefire holding despite renewed IDF activity in Rafah", summary: "The ceasefire remains technically in effect but increased IDF troop movements along the Rafah corridor are raising concern among mediators.", sourceLabel: "Al Jazeera", time: "8 hrs ago", sourceUrl: "https://www.aljazeera.com", imageUrl: "https://images.unsplash.com/photo-1604072366595-e75dc92d6bdc?w=800&h=450&q=80&fit=crop" }
+    { headline:'US jets strike Iranian facilities near Chabahar trade zone', summary:'American carrier-based aircraft struck two IRGC logistics depots near the Chabahar free-trade zone overnight. Iran called the strikes an act of war.', sourceLabel:'NDTV', time:'2 hrs ago', sourceUrl:'https://www.ndtv.com', type:'direct' },
+    { headline:'Iranian drones strike near Dubai International Airport', summary:'Drone strikes caused a large fire near Dubai airport perimeter. UAE authorities confirmed no runway damage but flights were diverted for several hours.', sourceLabel:'BBC', time:'4 hrs ago', sourceUrl:'https://www.bbc.com', type:'direct' },
+    { headline:'IDF places Kharg Island on active target list', summary:'Israel formally added Kharg Island — responsible for 90% of Iranian oil exports — to its active military target list, raising fears of an oil price shock.', sourceLabel:'Reuters', time:'6 hrs ago', sourceUrl:'https://www.reuters.com', type:'direct' },
+    { headline:"Pakistan warns it will not allow territory used for strikes on Iran", summary:"Pakistan's foreign ministry issued a strong statement refusing to permit any country to use Pakistani airspace or territory for military operations against Iran.", sourceLabel:'Dawn', time:'3 hrs ago', sourceUrl:'https://www.dawn.com', type:'indirect' },
+    { headline:"Russia calls US strikes on Iran 'illegal aggression,' demands UN session", summary:"Russia condemned the US airstrikes as illegal aggression and demanded an emergency UN Security Council session, signalling it will veto any pro-US resolution.", sourceLabel:'TASS', time:'5 hrs ago', sourceUrl:'https://tass.com', type:'indirect' },
+    { headline:'Houthi rebels resume Red Sea shipping attacks in solidarity with Iran', summary:"Yemen's Houthi movement announced it is resuming attacks on Red Sea shipping in solidarity with Iran, threatening to disrupt one of the world's busiest maritime trade routes.", sourceLabel:'Al Jazeera', time:'7 hrs ago', sourceUrl:'https://www.aljazeera.com', type:'indirect' },
+    { headline:'Brent crude surges past $97 as Strait of Hormuz closure fears spike', summary:"Oil markets opened sharply higher as Hormuz closure fears spiked. Analysts warn $120/barrel is possible if the strait is disrupted. Asian markets fell sharply.", sourceLabel:'Bloomberg', time:'8 hrs ago', sourceUrl:'https://www.bloomberg.com', type:'markets' },
+    { headline:'China urges maximum restraint, offers to mediate between US and Iran', summary:"Beijing issued an unusually direct call for maximum restraint from all parties and offered to play a mediating role between Washington and Tehran.", sourceLabel:'The Hindu', time:'9 hrs ago', sourceUrl:'https://www.thehindu.com', type:'indirect' }
   ];
 
-  var stage, dotsEl, counterEl, pfEl, rotCards, els = [], cur = 0, animating = false, rotTimer;
+  var TYPE_TAG = { direct:'rot-tag-d', indirect:'rot-tag-i', markets:'rot-tag-e' };
+  var TYPE_LBL = { direct:'War', indirect:'Wider War', markets:'Markets' };
+  var aiCache = {};
+  var stage, dotsEl, counterEl, pfEl, rotCards, els = [], cur = 0, animating = false;
 
   function buildRotator(cards) {
     rotCards = cards;
@@ -667,57 +709,60 @@ function openLink(url) {
     counterEl = document.getElementById('rot-counter');
     pfEl = document.getElementById('rot-pf');
     if (!stage) return;
-
-    stage.innerHTML = '';
-    dotsEl.innerHTML = '';
-    els = [];
+    stage.innerHTML = ''; dotsEl.innerHTML = ''; els = [];
 
     cards.forEach(function(c, i) {
       var el = document.createElement('div');
       el.className = 'rot-card ' + (i === 0 ? 'rot-active' : 'rot-next');
-
-      var TOPIC_IMGS = {
-        'oil': '1474546499760-77a0b18c5e69', 'drone': '1585776245991-cf89dd7fc73a',
-        'missile': '1614728263952-84ea256f9d1d', 'nuclear': '1518709414768-a88981a4515d',
-        'diplomacy': '1529107386315-e1a2ed48a1e3', 'india': '1582510003544-4d00b7f74220',
-        'ceasefire': '1541872703-74c5e44368f9', 'strike': '1540575467063-178a50c2df87',
-        'hormuz': '1505118380757-91f5f5632de0', 'ship': '1566753323558-f4e0952af115',
-        'dubai': '1512453979798-5ea266f8880c', 'iran': '1604072366595-e75dc92d6bdc',
-        'israel': '1579548122080-c35fd6820734', 'gaza': '1579548122080-c35fd6820734',
-        'explosion': '1540575467063-178a50c2df87', 'price': '1474546499760-77a0b18c5e69',
-        'military': '1614728263952-84ea256f9d1d', 'alliance': '1529107386315-e1a2ed48a1e3',
-        'war': '1540575467063-178a50c2df87', 'attack': '1614728263952-84ea256f9d1d',
-        'energy': '1474546499760-77a0b18c5e69', 'gulf': '1505118380757-91f5f5632de0'
-      };
-      function getTopicImg(headline, size) {
-        var h = (headline || '').toLowerCase();
-        for (var k in TOPIC_IMGS) { if (h.indexOf(k) !== -1) return 'https://images.unsplash.com/photo-' + TOPIC_IMGS[k] + '?' + (size||'w=800&h=450') + '&q=80&fit=crop'; }
-        return 'https://images.unsplash.com/photo-1579548122080-c35fd6820734?' + (size||'w=800&h=450') + '&q=80&fit=crop';
-      }
-      var imgSrc = c.imageUrl || getTopicImg(c.headline);
+      var tagCls = TYPE_TAG[c.type || 'direct'] || 'rot-tag-d';
+      var tagLbl = TYPE_LBL[c.type || 'direct'] || 'War';
       var articleUrl = c.sourceUrl || '#';
       var channelName = c.sourceLabel || 'Source';
-      var timeLbl = c.time ? (channelName.toUpperCase() + ' &middot; ' + c.time) : channelName.toUpperCase();
+      var timeLbl = c.time ? (channelName.toUpperCase() + ' · ' + c.time) : channelName.toUpperCase();
       el.innerHTML =
-        '<div class="rot-source">' + timeLbl + '</div>' +
+        '<div class="rot-source">' + timeLbl + ' <span class="' + tagCls + '">' + tagLbl + '</span></div>' +
         '<div class="rot-headline">' + (c.headline || '') + '</div>' +
         '<div class="rot-summary">' + (c.summary || '') + '</div>' +
-        '<div class="rot-read-row" style="flex-shrink:0;margin-top:0;border-top:none;padding-top:2px;">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>' +
-        '<img class="rot-image" src="' + imgSrc + '" loading="lazy" onerror="this.onerror=null;this.src=getTopicImg(\'' + (c.headline||'') + '\')"/>';
+        '<div class="ai-analysis-box" id="ai-box-' + i + '">' +
+          '<div class="ai-analysis-lbl">AI Analysis · Live <div class="ai-speaking-dot"><span></span><span></span><span></span></div></div>' +
+          '<div class="ai-analysis-txt" id="ai-txt-' + i + '"><div class="loading-dots"><span></span><span></span><span></span></div></div>' +
+        '</div>' +
+        '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>';
       stage.appendChild(el);
       els.push(el);
 
       var d = document.createElement('span');
       d.className = i === 0 ? 'on' : '';
-      (function(idx) {
-        d.onclick = function() { if (!animating) goTo(idx, idx > cur ? 1 : -1); };
-      })(i);
+      (function(idx2) { d.onclick = function() { if (!animating) goTo(idx2, idx2 > cur ? 1 : -1); }; })(i);
       dotsEl.appendChild(d);
     });
 
     counterEl.textContent = '1 / ' + cards.length;
-    startProgress();
-    rotTimer = setTimeout(function() { goTo(1, 1); }, 8200);
+
+    loadAI(0);
+  }
+
+  async function loadAI(idx) {
+    var box = document.getElementById('ai-txt-' + idx);
+    if (!box) return;
+    if (aiCache[idx]) { box.innerHTML = aiCache[idx]; return; }
+    var c = rotCards[idx];
+    var prompt = c.headline + ' — ' + c.summary + '\n\nWrite exactly 3 short paragraphs (no headings, no bullets, plain prose): Para 1: what happened and immediate fallout. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen next. Max 50 words each paragraph.';
+    try {
+      var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
+        body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 450, messages: [{ role: 'user', content: prompt }] })
+      });
+      var data = await res.json();
+      var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
+      var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
+      var html = paras.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
+      aiCache[idx] = html;
+      if (box) box.innerHTML = html;
+    } catch(e) {
+      if (box) box.innerHTML = '<p style="color:#a32d2d;font-size:11px">AI analysis unavailable.</p>';
+    }
   }
 
   function goTo(idx, dir) {
@@ -725,8 +770,7 @@ function openLink(url) {
     var next = (idx + rotCards.length) % rotCards.length;
     if (next === cur) return;
     animating = true;
-    var prev = cur;
-    cur = next;
+    var prev = cur; cur = next;
     els[cur].className = 'rot-card ' + (dir > 0 ? 'rot-next' : 'rot-prev');
     void els[cur].offsetWidth;
     els[prev].className = 'rot-card ' + (dir > 0 ? 'rot-prev' : 'rot-next');
@@ -734,18 +778,20 @@ function openLink(url) {
     dotsEl.querySelectorAll('span').forEach(function(d, i) { d.className = i === cur ? 'on' : ''; });
     counterEl.textContent = (cur + 1) + ' / ' + rotCards.length;
     startProgress();
-    clearTimeout(rotTimer);
-    rotTimer = setTimeout(function() { goTo(cur + 1, 1); }, 8200);
-    setTimeout(function() { animating = false; }, 560);
+    setTimeout(function() { animating = false; loadAI(cur); }, 560);
+
+    /* sync timeline highlight */
+    document.querySelectorAll('.timeline-item').forEach(function(el, i){ el.classList.toggle('active', i === cur); });
   }
+
+  function pickStory(idx) { goTo(idx, idx > cur ? 1 : -1); }
+  window.pickStory = pickStory;
 
   function startProgress() {
     if (!pfEl) return;
-    pfEl.classList.remove('running');
-    pfEl.style.width = '0%';
+    pfEl.classList.remove('running'); pfEl.style.width = '0%';
     void pfEl.offsetWidth;
-    pfEl.classList.add('running');
-    pfEl.style.width = '100%';
+    pfEl.classList.add('running'); pfEl.style.width = '100%';
   }
 
   document.addEventListener('DOMContentLoaded', function() {
@@ -753,14 +799,24 @@ function openLink(url) {
     buildRotator(cards);
     document.getElementById('rot-next').onclick = function() { if (!animating) goTo(cur + 1, 1); };
     document.getElementById('rot-prev').onclick = function() { if (!animating) goTo(cur - 1, -1); };
+
+    /* Build timeline from same cards */
+    var tl = document.getElementById('timeline');
+    if (tl && (!window.WARWATCH_LIVE || !window.WARWATCH_LIVE.newsCards)) {
+      tl.innerHTML = cards.map(function(c, i) {
+        var tagCls = 'tl-tag-' + (c.type === 'markets' ? 'e' : c.type === 'indirect' ? 'i' : 'd');
+        var tagLbl = TYPE_LBL[c.type || 'direct'] || 'War';
+        return '<div class="timeline-item' + (i === 0 ? ' active' : '') + '" onclick="pickStory(' + i + ')">'
+          + '<div class="tl-meta"><span class="' + tagCls + '">' + tagLbl + '</span><span class="tl-time">' + (c.time || '') + '</span><span class="tl-src">' + (c.sourceLabel || '').toUpperCase() + '</span></div>'
+          + '<div class="tl-headline">' + c.headline + '</div>'
+          + '</div>';
+      }).join('');
+    }
   });
 
   window._initRotator = function() {
     var cards = window._rotatorCards || DEFAULT_CARDS;
-    if (stage) {
-      clearTimeout(rotTimer);
-      buildRotator(cards);
-    }
+    if (stage) { buildRotator(cards); }
   };
 })();
 </script>
