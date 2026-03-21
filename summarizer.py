@@ -1,5 +1,5 @@
 """
-summarizer.py — Generates conflict analysis reports using AI Summariser.
+summarizer.py — Generates conflict analysis reports using Gemini 2.0 Flash.
 
 Produces deeply researched, long-form content:
   - Executive summary: 3 rich paragraphs
@@ -13,14 +13,43 @@ import os
 import json
 import time
 import certifi
-from groq import Groq
 from datetime import datetime
 
 os.environ["SSL_CERT_FILE"] = certifi.where()
 os.environ["REQUESTS_CA_BUNDLE"] = certifi.where()
 
+import google.generativeai as genai
 
-def _generate_full_analysis(client, dev: dict, report: dict) -> str:
+MODEL = "gemini-2.0-flash"
+
+
+def _get_client():
+    genai.configure(api_key=os.environ.get("GEMINI_API_KEY"))
+    return genai.GenerativeModel(MODEL)
+
+
+def _call(model, prompt: str, max_tokens: int = 2000, temperature: float = 0.4) -> str:
+    """Single Gemini API call with retry on rate limit."""
+    config = genai.types.GenerationConfig(
+        max_output_tokens=max_tokens,
+        temperature=temperature,
+    )
+    for attempt in range(3):
+        try:
+            response = model.generate_content(prompt, generation_config=config)
+            return response.text.strip()
+        except Exception as e:
+            err = str(e).lower()
+            if "429" in err or "quota" in err or "rate" in err:
+                wait = (attempt + 1) * 20
+                print(f"[WARN] Rate limit hit, waiting {wait}s...")
+                time.sleep(wait)
+            else:
+                raise
+    return ""
+
+
+def _generate_full_analysis(model, dev: dict, report: dict) -> str:
     """
     Generate a 7-paragraph deep-dive plain-English analysis for one development.
     Aimed at a general audience — clear, warm, no jargon without explanation.
@@ -59,29 +88,13 @@ Rules:
 - Total output should be at least 600 words"""
 
     try:
-        for attempt in range(3):
-            try:
-                response = client.chat.completions.create(
-                    model="llama-3.3-70b-versatile",
-                    messages=[{"role": "user", "content": prompt}],
-                    max_tokens=2000,
-                    temperature=0.45
-                )
-                return response.choices[0].message.content.strip()
-            except Exception as e:
-                if "rate_limit" in str(e).lower() or "429" in str(e):
-                    wait = (attempt + 1) * 20
-                    print(f"[WARN] Rate limit hit, waiting {wait}s...")
-                    time.sleep(wait)
-                else:
-                    raise
-        return ""
+        return _call(model, prompt, max_tokens=2000, temperature=0.45)
     except Exception as e:
         print(f"[WARN] Full analysis failed: {e}")
         return ""
 
 
-def _generate_india_summary(client, report: dict) -> str:
+def _generate_india_summary(model, report: dict) -> str:
     """
     Generate a 5-6 paragraph India impact summary.
     Written for a general Indian audience — concrete, specific, warm.
@@ -123,19 +136,13 @@ Rules:
 - Minimum 500 words total"""
 
     try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=1600,
-            temperature=0.4
-        )
-        return response.choices[0].message.content.strip()
+        return _call(model, prompt, max_tokens=1600, temperature=0.4)
     except Exception as e:
         print(f"[WARN] India summary failed: {e}")
         return ""
 
 
-def _generate_executive_summary_rich(client, report: dict) -> str:
+def _generate_executive_summary_rich(model, report: dict) -> str:
     """
     Generate a 3-paragraph rich executive summary.
     Suitable for the main dashboard left panel — refreshed every 15 min by the browser.
@@ -164,13 +171,7 @@ Paragraph 3: What the stakes are — for oil markets, for India, for the region.
 Separate each paragraph with a blank line. Total output must be under 200 words. No headers, no bullets."""
 
     try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=900,
-            temperature=0.35
-        )
-        return response.choices[0].message.content.strip()
+        return _call(model, prompt, max_tokens=900, temperature=0.35)
     except Exception as e:
         print(f"[WARN] Rich exec summary failed: {e}")
         return report.get("executive_summary", "")
@@ -179,19 +180,21 @@ Separate each paragraph with a blank line. Total output must be under 200 words.
 def generate_report(articles: list) -> dict:
     """
     Main entry point.
-    1. Calls AI to analyze articles and extract structured JSON
+    1. Calls Gemini to analyze articles and extract structured JSON
     2. Generates 7-paragraph full analysis per development
     3. Generates 5-paragraph India summary
     4. Generates rich 3-paragraph executive summary
-    5. Attaches sourceUrl to every development and India item (NO image URLs)
+    5. Attaches sourceUrl to every development and India item
     """
     if not articles:
         return {"error": "No articles found", "timestamp": datetime.utcnow().isoformat()}
 
+    model = _get_client()
+
     # Build article text for the primary prompt
     article_text = ""
     for i, art in enumerate(articles[:20], 1):
-        source = art.get("source", "Unknown")
+        source  = art.get("source", "Unknown")
         content = art.get("content", "")
         article_text += f"\n[{i}] SOURCE: {source} | URL: {art['url']}\n"
         article_text += f"    HEADLINE: {art['title']}\n"
@@ -258,16 +261,9 @@ Include 8-10 key_developments. Assign type precisely:
   india = anything directly affecting India (diaspora/energy/Chabahar/diplomacy)
 Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
 
-    client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+    raw = _call(model, prompt, max_tokens=4000, temperature=0.3)
 
-    response = client.chat.completions.create(
-        model="llama-3.3-70b-versatile",
-        messages=[{"role": "user", "content": prompt}],
-        max_tokens=4000,
-        temperature=0.3
-    )
-
-    raw = response.choices[0].message.content.strip()
+    # Strip markdown fences if Gemini wraps in ```json
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
@@ -282,15 +278,13 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
 
     for idx, dev in enumerate(report.get("key_developments", [])):
         if idx > 0:
-            time.sleep(3)  # avoid Groq rate limits between calls
-        dev["fullAnalysis"] = _generate_full_analysis(client, dev, report)
+            time.sleep(2)
+        dev["fullAnalysis"] = _generate_full_analysis(model, dev, report)
 
-        headline = dev.get("headline", "").lower()
+        headline       = dev.get("headline", "").lower()
         headline_words = [w for w in headline.split() if len(w) > 3]
 
-        # Score each article by how well it matches this development
-        best_art = None
-        best_score = -1
+        best_art, best_score = None, -1
         for art in articles:
             art_title = art["title"].lower()
             score = sum(1 for w in headline_words if w in art_title)
@@ -308,10 +302,9 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
     # ── India impact: unique sourceUrl ────────────────────────────────────────
     india_used_urls = set()
     for item in report.get("india_impact", []):
-        headline = item.get("headline", "").lower()
+        headline       = item.get("headline", "").lower()
         headline_words = [w for w in headline.split() if len(w) > 3]
-        best_art = None
-        best_score = -1
+        best_art, best_score = None, -1
         for art in articles:
             art_title = art["title"].lower()
             score = sum(1 for w in headline_words if w in art_title)
@@ -327,14 +320,14 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
 
     # ── Rich executive summary (3 paragraphs) ─────────────────────────────────
     print("      Generating rich executive summary...")
-    report["execSummaryRich"] = _generate_executive_summary_rich(client, report)
+    report["execSummaryRich"] = _generate_executive_summary_rich(model, report)
 
     # ── India summary (5-6 paragraphs) ────────────────────────────────────────
     if report.get("india_impact"):
         print("      Generating India summary (5-6 paragraphs)...")
-        _summary = _generate_india_summary(client, report)
+        _summary = _generate_india_summary(model, report)
         report["india_summary"] = _summary
-        report["indiaSummary"] = _summary   # camelCase for frontend
+        report["indiaSummary"]  = _summary
 
     return report
 
@@ -344,7 +337,7 @@ def generate_monthly_summary(reports: list) -> list:
     if not reports:
         return []
 
-    client = Groq(api_key=os.environ.get("GROQ_API_KEY"))
+    model = _get_client()
 
     all_events = ""
     for r in reports[:48]:
@@ -371,13 +364,7 @@ Return ONLY a JSON array of strings, no markdown, no extra text:
 ["🔥 Something happened...", "✈️ Then this happened..."]"""
 
     try:
-        response = client.chat.completions.create(
-            model="llama-3.3-70b-versatile",
-            messages=[{"role": "user", "content": prompt}],
-            max_tokens=800,
-            temperature=0.3
-        )
-        raw = response.choices[0].message.content.strip()
+        raw = _call(model, prompt, max_tokens=800, temperature=0.3)
         if raw.startswith("```"):
             raw = raw.split("```")[1]
             if raw.startswith("json"):
@@ -391,18 +378,18 @@ Return ONLY a JSON array of strings, no markdown, no extra text:
 def format_report_html(report: dict) -> str:
     """Format a report as HTML email (used by emailer.py)."""
     level_colors = {"LOW": "#1D9E75", "MEDIUM": "#BA7517", "HIGH": "#D85A30", "CRITICAL": "#A32D2D"}
-    level = report.get("escalation_level", "MEDIUM")
-    color = level_colors.get(level, "#888")
+    level     = report.get("escalation_level", "MEDIUM")
+    color     = level_colors.get(level, "#888")
     sentiment = report.get("sentiment", {})
 
     developments_html = ""
     for dev in report.get("key_developments", []):
         sig_colors = {"HIGH": "#D85A30", "MEDIUM": "#BA7517", "LOW": "#1D9E75"}
-        sig_c = sig_colors.get(dev.get("significance", "LOW"), "#888")
+        sig_c    = sig_colors.get(dev.get("significance", "LOW"), "#888")
         src_link = ""
         if dev.get("sourceUrl"):
             src_label = dev.get("source", "Source")
-            src_link = f'<a href="{dev["sourceUrl"]}" style="font-size:11px;color:#5b9cf6;text-decoration:none">Read → {src_label} ↗</a>'
+            src_link  = f'<a href="{dev["sourceUrl"]}" style="font-size:11px;color:#5b9cf6;text-decoration:none">Read → {src_label} ↗</a>'
         developments_html += f"""
         <tr><td style="padding:10px 12px;border-bottom:1px solid #eee;">
             <strong style="color:#111">{dev.get('headline', '')}</strong>

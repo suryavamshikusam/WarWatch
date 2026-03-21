@@ -2,40 +2,16 @@
 prices_fetcher.py — Fetches live commodity and Indian market prices via yfinance.
 Writes prices_data.js consumed by economy.html.
 
-Called by bot.py after each pipeline run (add to run_pipeline).
-Can also be run standalone: python prices_fetcher.py
-
-Schema written to prices_data.js:
-  window.WARWATCH_PRICES = {
-    fetchedAt:  "2026-03-21 10:00 UTC",
-    prices: {
-      "BZ=F":          { name, price, formatted, day_pct, war_pct },
-      "CL=F":          { ... },
-      "NG=F":          { ... },
-      "GC=F":          { ... },
-      "ZW=F":          { ... },
-      "INR=X":         { ... },
-      "CRUDEOIL.MCX":  { ... },
-      "GOLD.MCX":      { ... },
-      "SILVER.MCX":    { ... },
-      "IOC.NS":        { ... },
-      "ADANIPORTS.NS": { ... },
-    },
-    india: {
-      petrolPump: { formatted, war_change, formula },
-      goldSilverRatio: 86.2,
-    },
-    history: [
-      { date, brent, wti, ng, gold, wheat, inr,
-        mcx_crude, mcx_gold, mcx_silver, ioc, adani }
-    ]
-  }
+MCX instruments are NOT on Yahoo Finance directly. We derive them:
+  MCX Gold (₹/10g)   = GC=F (USD/oz) × INR rate × 10 / 31.1035
+  MCX Crude (₹/bbl)  = CL=F (USD/bbl) × INR rate
+  MCX Silver (₹/kg)  = SI=F (USD/oz) × INR rate × 32.1507
 """
 
 import json
 import os
 import certifi
-from datetime import datetime, timezone, timedelta
+from datetime import datetime, timezone
 from pathlib import Path
 
 os.environ["SSL_CERT_FILE"] = certifi.where()
@@ -52,58 +28,56 @@ HISTORY_FILE   = Path("prices_history.json")
 
 # War Day 1 baseline — March 10, 2026
 WAR_BASELINE = {
-    "BZ=F":          76.20,
-    "CL=F":          73.10,
-    "NG=F":          2.88,
-    "GC=F":          2690.0,
-    "ZW=F":          535.0,
-    "INR=X":         82.10,
-    "CRUDEOIL.MCX":  6350.0,
-    "GOLD.MCX":      74800.0,
-    "SILVER.MCX":    91500.0,
-    "IOC.NS":        160.5,
-    "ADANIPORTS.NS": 1233.0,
+    "BZ=F":          76.20,   # Brent USD/bbl
+    "CL=F":          73.10,   # WTI USD/bbl
+    "NG=F":           2.88,   # Natural Gas USD/MMBtu
+    "GC=F":        2690.0,    # Gold USD/oz
+    "SI=F":          28.50,   # Silver USD/oz
+    "ZW=F":         535.0,    # Wheat USc/bushel
+    "INR=X":         82.10,   # USD/INR
+    "IOC.NS":       160.5,    # IOC ₹
+    "ADANIPORTS.NS":1233.0,   # Adani Ports ₹
 }
 
-# Display names
+# MCX baselines on War Day 1 (derived: GC=F × INR / 3.1103, CL=F × INR, SI=F × INR × 32.15)
+MCX_WAR_BASELINE = {
+    "mcx_gold":   74800,   # ₹/10g
+    "mcx_crude":   6350,   # ₹/bbl
+    "mcx_silver":  91500,  # ₹/kg
+}
+
 NAMES = {
     "BZ=F":          "Brent Crude",
     "CL=F":          "WTI Crude",
     "NG=F":          "Natural Gas",
     "GC=F":          "Gold USD",
+    "SI=F":          "Silver USD",
     "ZW=F":          "Wheat",
     "INR=X":         "USD / INR",
-    "CRUDEOIL.MCX":  "MCX Crude",
-    "GOLD.MCX":      "MCX Gold",
-    "SILVER.MCX":    "MCX Silver",
     "IOC.NS":        "IOC",
     "ADANIPORTS.NS": "Adani Ports",
 }
 
 
-def _pct(current: float, baseline: float) -> float:
+def _pct(current, baseline):
     if not baseline:
         return 0.0
     return round((current - baseline) / baseline * 100, 2)
 
 
-def _fmt(ticker: str, price: float) -> str:
-    """Format price for display."""
-    if ticker == "INR=X" or "NS" in ticker:
-        return f"₹{price:,.2f}".replace(".00", "")
+def _fmt(ticker, price):
+    if ticker in ("INR=X", "IOC.NS", "ADANIPORTS.NS"):
+        return f"₹{price:,.2f}".rstrip('0').rstrip('.')
     if ticker == "ZW=F":
         return f"{price:.0f}¢"
-    if ticker in ("GOLD.MCX", "SILVER.MCX"):
-        return f"₹{price:,.0f}"
-    if ticker == "CRUDEOIL.MCX":
-        return f"₹{price:,.0f}"
     if ticker == "GC=F":
         return f"${price:,.0f}"
+    if ticker == "SI=F":
+        return f"${price:.3f}"
     return f"${price:.3f}" if price < 10 else f"${price:,.2f}"
 
 
-def fetch_prices() -> dict:
-    """Fetch all tickers via yfinance. Returns dict of ticker -> price data."""
+def fetch_prices():
     tickers = list(WAR_BASELINE.keys())
     prices = {}
 
@@ -124,12 +98,8 @@ def fetch_prices() -> dict:
 
     for ticker in tickers:
         try:
-            if len(tickers) == 1:
-                df = data
-            else:
-                df = data[ticker]
-
-            if df is None or df.empty or len(df) < 1:
+            df = data[ticker] if len(tickers) > 1 else data
+            if df is None or df.empty:
                 print(f"  [WARN] No data for {ticker}")
                 continue
 
@@ -137,62 +107,106 @@ def fetch_prices() -> dict:
             if len(close) < 1:
                 continue
 
-            current = float(close.iloc[-1])
-            prev    = float(close.iloc[-2]) if len(close) >= 2 else current
+            current  = float(close.iloc[-1])
+            prev     = float(close.iloc[-2]) if len(close) >= 2 else current
             baseline = WAR_BASELINE.get(ticker, current)
-
-            day_pct = _pct(current, prev)
-            war_pct = _pct(current, baseline)
 
             prices[ticker] = {
                 "name":      NAMES.get(ticker, ticker),
                 "price":     round(current, 4),
                 "formatted": _fmt(ticker, current),
-                "day_pct":   day_pct,
-                "war_pct":   war_pct,
+                "day_pct":   _pct(current, prev),
+                "war_pct":   _pct(current, baseline),
             }
-            print(f"    {ticker}: {prices[ticker]['formatted']} ({day_pct:+.2f}% today, {war_pct:+.1f}% since war)")
+            print(f"    {ticker}: {prices[ticker]['formatted']} "
+                  f"({prices[ticker]['day_pct']:+.2f}% today, "
+                  f"{prices[ticker]['war_pct']:+.1f}% since war)")
 
         except Exception as e:
-            print(f"  [WARN] Failed to process {ticker}: {e}")
+            print(f"  [WARN] {ticker}: {e}")
 
     return prices
 
 
-def compute_india(prices: dict) -> dict:
-    """Compute Indian-specific derived values."""
-    mcx_crude = prices.get("CRUDEOIL.MCX", {}).get("price", 7842)
-    inr       = prices.get("INR=X", {}).get("price", 85.42)
+def derive_mcx(prices):
+    """
+    Derive MCX prices from USD futures × INR rate.
+    MCX Gold  (₹/10g)  = GC=F × INR × 10 / 31.1035
+    MCX Crude (₹/bbl)  = CL=F × INR
+    MCX Silver(₹/kg)   = SI=F × INR × 32.1507
+    """
+    inr    = prices.get("INR=X", {}).get("price", 85.0)
+    gc     = prices.get("GC=F",  {}).get("price", 0)
+    cl     = prices.get("CL=F",  {}).get("price", 0)
+    si     = prices.get("SI=F",  {}).get("price", 0)
+
+    mcx_gold   = round(gc * inr * 10 / 31.1035)   if gc  else 0
+    mcx_crude  = round(cl * inr)                   if cl  else 0
+    mcx_silver = round(si * inr * 32.1507)         if si  else 0
+
+    # Inject derived MCX entries into prices dict for frontend use
+    if mcx_gold:
+        prices["GOLD.MCX"] = {
+            "name":      "MCX Gold",
+            "price":     mcx_gold,
+            "formatted": f"₹{mcx_gold:,}",
+            "day_pct":   prices.get("GC=F", {}).get("day_pct", 0),
+            "war_pct":   _pct(mcx_gold, MCX_WAR_BASELINE["mcx_gold"]),
+        }
+    if mcx_crude:
+        prices["CRUDEOIL.MCX"] = {
+            "name":      "MCX Crude",
+            "price":     mcx_crude,
+            "formatted": f"₹{mcx_crude:,}",
+            "day_pct":   prices.get("CL=F", {}).get("day_pct", 0),
+            "war_pct":   _pct(mcx_crude, MCX_WAR_BASELINE["mcx_crude"]),
+        }
+    if mcx_silver:
+        prices["SILVER.MCX"] = {
+            "name":      "MCX Silver",
+            "price":     mcx_silver,
+            "formatted": f"₹{mcx_silver:,}",
+            "day_pct":   prices.get("SI=F", {}).get("day_pct", 0),
+            "war_pct":   _pct(mcx_silver, MCX_WAR_BASELINE["mcx_silver"]),
+        }
+
+    print(f"    MCX Gold derived:   ₹{mcx_gold:,}/10g")
+    print(f"    MCX Crude derived:  ₹{mcx_crude:,}/bbl")
+    print(f"    MCX Silver derived: ₹{mcx_silver:,}/kg")
+
+    return prices, mcx_gold, mcx_crude, mcx_silver
+
+
+def compute_india(prices, mcx_crude):
+    inr = prices.get("INR=X", {}).get("price", 85.0)
 
     # Petrol pump estimate (Delhi retail)
-    # Formula: MCX crude ÷ 159L × 1.08 (refining/transport) + ₹52.5 taxes + ₹3.8 margins
-    pump_raw = (mcx_crude / 159) * 1.08 + 52.5 + 3.8
-    pump_baseline = (6350 / 159) * 1.08 + 52.5 + 3.8  # war day 1 baseline
-    war_change = round(pump_raw - pump_baseline, 1)
+    crude = mcx_crude if mcx_crude else prices.get("CL=F", {}).get("price", 0) * inr
+    pump_raw      = (crude / 159) * 1.08 + 52.5 + 3.8
+    pump_baseline = (MCX_WAR_BASELINE["mcx_crude"] / 159) * 1.08 + 52.5 + 3.8
+    war_change    = round(pump_raw - pump_baseline, 1)
 
-    # Gold/Silver ratio
-    gold_mcx   = prices.get("GOLD.MCX", {}).get("price", 88240)
-    silver_mcx = prices.get("SILVER.MCX", {}).get("price", 102400)
-    gs_ratio   = round(gold_mcx / (silver_mcx / 100), 1) if silver_mcx else 86.2
+    mcx_gold   = prices.get("GOLD.MCX",   {}).get("price", 0)
+    mcx_silver = prices.get("SILVER.MCX", {}).get("price", 0)
+    # Silver is ₹/kg, Gold is ₹/10g → normalise to same unit for ratio
+    gs_ratio = round((mcx_gold * 100) / mcx_silver, 1) if mcx_silver else 86.2
 
     return {
         "petrolPump": {
-            "formatted":   f"₹{pump_raw:.1f}",
-            "war_change":  war_change,
-            "formula":     f"MCX crude ÷ 159L × 1.08 + ₹52.5 taxes + ₹3.8 margins · Delhi est.",
+            "formatted":  f"₹{pump_raw:.1f}",
+            "war_change": war_change,
+            "formula":    "MCX crude ÷ 159L × 1.08 + ₹52.5 taxes + ₹3.8 margins · Delhi est.",
         },
         "goldSilverRatio": gs_ratio,
     }
 
 
-def load_history() -> list:
-    """Load price history from file."""
+def load_history():
     if HISTORY_FILE.exists():
         try:
             return json.loads(HISTORY_FILE.read_text())
         except Exception:
             pass
-    # Return built-in baseline history if file missing
     return [
         {"date":"2026-03-10","brent":76.2,"wti":73.1,"ng":2.88,"gold":2690,"wheat":535,"inr":82.1,"mcx_crude":6350,"mcx_gold":74800,"mcx_silver":91500,"ioc":160.5,"adani":1233},
         {"date":"2026-03-11","brent":79.4,"wti":76.2,"ng":2.91,"gold":2714,"wheat":538,"inr":82.4,"mcx_crude":6580,"mcx_gold":75200,"mcx_silver":92100,"ioc":157.2,"adani":1241},
@@ -208,14 +222,12 @@ def load_history() -> list:
     ]
 
 
-def append_today_to_history(history: list, prices: dict) -> list:
-    """Add today's prices to history, avoiding duplicate dates."""
+def append_today_to_history(history, prices, mcx_crude, mcx_gold, mcx_silver):
     today = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    # Remove any existing entry for today
     history = [h for h in history if h.get("date") != today]
 
-    def g(ticker, key="price"):
-        return prices.get(ticker, {}).get(key, 0)
+    def g(ticker):
+        return prices.get(ticker, {}).get("price", 0)
 
     history.append({
         "date":       today,
@@ -225,30 +237,27 @@ def append_today_to_history(history: list, prices: dict) -> list:
         "gold":       round(g("GC=F")),
         "wheat":      round(g("ZW=F")),
         "inr":        round(g("INR=X"), 2),
-        "mcx_crude":  round(g("CRUDEOIL.MCX")),
-        "mcx_gold":   round(g("GOLD.MCX")),
-        "mcx_silver": round(g("SILVER.MCX")),
+        "mcx_crude":  mcx_crude,
+        "mcx_gold":   mcx_gold,
+        "mcx_silver": mcx_silver,
         "ioc":        round(g("IOC.NS"), 1),
         "adani":      round(g("ADANIPORTS.NS")),
     })
 
-    # Keep last 60 days max
     return history[-60:]
 
 
 def build_prices_js():
-    """Main entry point — fetch prices and write prices_data.js."""
-    prices  = fetch_prices()
-
+    prices = fetch_prices()
     if not prices:
         print("  [WARN] No prices fetched — prices_data.js not updated.")
         return
 
-    india   = compute_india(prices)
+    prices, mcx_gold, mcx_crude, mcx_silver = derive_mcx(prices)
+    india   = compute_india(prices, mcx_crude)
     history = load_history()
-    history = append_today_to_history(history, prices)
+    history = append_today_to_history(history, prices, mcx_crude, mcx_gold, mcx_silver)
 
-    # Save history for next run
     HISTORY_FILE.write_text(json.dumps(history, indent=2))
 
     payload = {
@@ -265,4 +274,4 @@ def build_prices_js():
 
 if __name__ == "__main__":
     build_prices_js()
-    print("Done. Open economy.html in your browser.")
+    print("Done.")

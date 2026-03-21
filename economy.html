@@ -312,8 +312,7 @@ var history=(P&&P.history&&P.history.length)?P.history:FALLBACK_HISTORY;
 var prices=(P&&P.prices)?P.prices:{};
 var india=(P&&P.india)?P.india:{};
 
-/* ── Labels from history ── */
-var labels=history.map(function(h){return h.date.slice(5).replace('-','/');});
+/* ── Labels and series derived below after history filtering ── */
 
 /* ── Helper: price cell HTML ── */
 function cell(ticker,name,val,formatted,dayPct,warPct,unit,extraClass){
@@ -434,10 +433,17 @@ var rt=document.getElementById('g-refresh');
 if(rt)rt.textContent=P?'Updated: '+(P.fetchedAt||'—'):'Using fallback data';
 
 /* ── CHARTS ── */
-var brent= history.map(function(h){return h.brent;});
-var wti=   history.map(function(h){return h.wti;});
-var inrH=  history.map(function(h){return h.inr;});
-var goldH= history.map(function(h){return h.mcx_gold;});
+/* Filter history to only rows with valid (non-zero) data for each series */
+var validHistory = history.filter(function(h){ return h.brent && h.wti && h.inr; });
+var goldHistory  = history.filter(function(h){ return h.mcx_gold && h.mcx_gold > 0; });
+
+var labels = validHistory.map(function(h){ return h.date.slice(5).replace('-','/'); });
+var goldLabels = goldHistory.map(function(h){ return h.date.slice(5).replace('-','/'); });
+
+var brent= validHistory.map(function(h){return h.brent;});
+var wti=   validHistory.map(function(h){return h.wti;});
+var inrH=  validHistory.map(function(h){return h.inr;});
+var goldH= goldHistory.map(function(h){return h.mcx_gold;});
 var spread=brent.map(function(b,i){return+(b-wti[i]).toFixed(2);});
 
 var WAR_EVENTS=[
@@ -498,7 +504,7 @@ var chart2=new Chart(document.getElementById('c2'),{
 /* C3 — MCX Gold */
 var chart3=new Chart(document.getElementById('c3'),{
   type:'line',
-  data:{labels:labels,datasets:[{
+  data:{labels:goldLabels,datasets:[{
     label:'MCX Gold',data:goldH,
     borderColor:'#d4892a',borderWidth:2,
     fill:true,backgroundColor:'rgba(212,137,42,0.07)',
