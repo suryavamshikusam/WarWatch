@@ -518,6 +518,24 @@ var SUMMARY_INTERVAL_MS = 15 * 60 * 1000;
 
 async function fetchAISummary() {
   var D = window.WARWATCH_LIVE;
+  var inner = document.getElementById('summary-text-inner');
+  var noteEl = document.getElementById('ai-refresh-note');
+
+  /* ── Use pre-built summary from bot run first ── */
+  var prebuilt = D && (D.execSummaryRich || D.execSummary || D.executive_summary);
+  if (prebuilt && prebuilt.length > 30) {
+    var pp = prebuilt.split(/\n\n+/).filter(Boolean).slice(0, 3);
+    inner.innerHTML = pp.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
+    if (noteEl) noteEl.textContent = 'From last bot run · ' + (D.generatedAt || '');
+    return;
+  }
+
+  /* ── Live Groq call only if key available ── */
+  if (!window.GROQ_API_KEY) {
+    inner.innerHTML = '<p style="color:#555;font-size:12px">Summary will appear after next bot run.</p>';
+    return;
+  }
+
   var headlines = '';
   if (D && D.newsCards) {
     headlines = D.newsCards.slice(0, 4).map(function(c){ return c.headline; }).join('\n');
@@ -525,35 +543,32 @@ async function fetchAISummary() {
     headlines = 'US strikes Iranian facilities near Chabahar\nIranian drones hit Dubai airport\nIDF places Kharg Island on active target list\nBrent crude surges past $97';
   }
   var escalation = (D && D.escalationLevel) ? D.escalationLevel : 'CRITICAL';
-
   var prompt = 'You are a senior conflict analyst. The current escalation level is ' + escalation + '.\n\nTop 3-4 most critical stories right now:\n' + headlines + '\n\nWrite exactly 3 short paragraphs (no headings, no bullet points, plain prose). Para 1: what is happening right now — the most critical developments. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen in the next 24 hours. Be specific and direct. Max 55 words per paragraph.';
 
-  var inner = document.getElementById('summary-text-inner');
-  var noteEl = document.getElementById('ai-refresh-note');
   inner.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
 
   try {
     var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
-      body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
-        max_tokens: 500,
-        messages: [{ role: 'user', content: prompt }]
-      })
+      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + window.GROQ_API_KEY },
+      body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 500, messages: [{ role: 'user', content: prompt }] })
     });
     var data = await res.json();
     var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
     var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
-    inner.innerHTML = paras.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
-    _summaryLastFetch = Date.now();
-    var now = new Date();
-    if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
+    if (paras.length) {
+      inner.innerHTML = paras.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
+      _summaryLastFetch = Date.now();
+      var now = new Date();
+      if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
+    } else {
+      throw new Error('empty response');
+    }
   } catch(e) {
-    var D2 = window.WARWATCH_LIVE;
-    var fallback = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active including Chabahar, Dubai and Kharg Island pressure. India faces significant energy and diaspora exposure.';
-    inner.innerHTML = fallback.split('\n\n').filter(Boolean).slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
-    if (noteEl) noteEl.textContent = 'Live refresh unavailable';
+    /* Final fallback — show execSummary */
+    var fb = (D && (D.execSummaryRich || D.execSummary)) || '';
+    inner.innerHTML = fb ? fb.split('\n\n').filter(Boolean).slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('') : '<p style="color:#555;font-size:12px">Summary loading...</p>';
+    if (noteEl) noteEl.textContent = 'From last bot run';
   }
 }
 
@@ -748,16 +763,14 @@ function toggleIndiaCard(btn) {
     if (aiCache[idx]) { box.innerHTML = aiCache[idx]; return; }
     var c = rotCards[idx];
 
-    /* 1. Use pre-generated fullAnalysis from bot run (best) */
-    if (c.fullAnalysis && c.fullAnalysis.length > 50) {
-      var paras0 = c.fullAnalysis.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
-      var html0 = paras0.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
-      aiCache[idx] = html0;
-      box.innerHTML = html0;
-      return;
+    /* 1. Use fullAnalysis from bot (best — 7 paragraphs) */
+    if (c.fullAnalysis && c.fullAnalysis.length > 100) {
+      var pp = c.fullAnalysis.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
+      var h = pp.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
+      aiCache[idx] = h; box.innerHTML = h; return;
     }
 
-    /* 2. Live Groq call if key is available */
+    /* 2. Live Groq call if key available */
     if (window.GROQ_API_KEY) {
       var prompt = c.headline + ' — ' + c.summary + '\n\nWrite exactly 3 short paragraphs (no headings, no bullets, plain prose): Para 1: what happened and immediate fallout. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen next. Max 50 words each paragraph.';
       try {
@@ -771,19 +784,13 @@ function toggleIndiaCard(btn) {
         var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
         if (paras.length) {
           var html = paras.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
-          aiCache[idx] = html;
-          box.innerHTML = html;
-          return;
+          aiCache[idx] = html; box.innerHTML = html; return;
         }
       } catch(e) {}
     }
 
-    /* 3. Final fallback — show the card summary */
-    var fallback = (c.summary || '').split(/\n\n+/).filter(Boolean);
-    if (!fallback.length) fallback = [c.summary || ''];
-    var fhtml = fallback.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
-    aiCache[idx] = fhtml;
-    box.innerHTML = fhtml || '<p style="color:#555;font-size:11px">Analysis loading on next bot run.</p>';
+    /* 3. Show "analysis loading" — never duplicate the summary */
+    box.innerHTML = '<p style="color:#555;font-size:12px;font-style:italic">Full analysis will appear after next bot run.</p>';
   }
 
   function goTo(idx, dir) {
