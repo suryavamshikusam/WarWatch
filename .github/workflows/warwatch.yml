@@ -33,7 +33,7 @@ jobs:
 
       - name: Run bot
         env:
-          GROQ_API_KEY:    ${{ secrets.GROQ_API_KEY }}
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
           GMAIL_ADDRESS:   ${{ secrets.GMAIL_ADDRESS }}
           GMAIL_APP_PASS:  ${{ secrets.GMAIL_APP_PASS }}
           REPORT_TO_EMAIL: ${{ secrets.REPORT_TO_EMAIL }}
