@@ -1,277 +1,21 @@
-"""
-dashboard.py — Generates live_data.js from saved JSON reports.
-warwatch.html loads live_data.js to populate all live sections.
-
-Run automatically by bot.py after every report, or manually:
-  python dashboard.py
-"""
-
-import json
-import os
-from datetime import datetime, timezone
-from pathlib import Path
-
-REPORTS_DIR = Path("reports")
-
-
-def _level_to_pct(level: str) -> int:
-    return {"LOW": 30, "MEDIUM": 52, "HIGH": 75, "CRITICAL": 92}.get(level, 50)
-
-
-def _level_color(level: str) -> str:
-    return {
-        "LOW":      "var(--green)",
-        "MEDIUM":   "var(--amber)",
-        "HIGH":     "#c87830",
-        "CRITICAL": "var(--red)",
-    }.get(level, "var(--text3)")
-
-
-def _actor_pill_class(actor: str) -> str:
-    return {
-        "US":        "p-blue",
-        "Israel":    "p-blue",
-        "Iran":      "p-red",
-        "Hamas":     "p-red",
-        "Hezbollah": "p-red",
-        "Other":     "p-gray",
-    }.get(actor, "p-gray")
-
-
-def _significance_badge(sig: str) -> str:
-    return {
-        "HIGH":   "b-crit",
-        "MEDIUM": "b-high",
-        "LOW":    "b-gray",
-    }.get(sig, "b-gray")
-
-
-def _time_ago(ts: str) -> str:
-    """Convert '2026-03-14 05:35 UTC' to '2 hrs ago' style."""
-    try:
-        dt = datetime.strptime(ts, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
-        diff = int((datetime.now(timezone.utc) - dt).total_seconds())
-        if diff < 60:
-            return "just now"
-        if diff < 3600:
-            return f"{diff // 60} min ago"
-        if diff < 86400:
-            h = diff // 3600
-            return f"{h} hr{'s' if h > 1 else ''} ago"
-        d = diff // 86400
-        return f"{d} day{'s' if d > 1 else ''} ago"
-    except Exception:
-        return ts
-
-
-def _build_india_impact(report: dict) -> list:
-    """Map india_impact items with all required fields for the frontend."""
-    items = []
-    for item in report.get("india_impact", []):
-        items.append({
-            "headline":    item.get("headline", ""),
-            "detail":      item.get("detail", ""),
-            "category":    item.get("category", ""),
-            "significance":item.get("significance", "MEDIUM"),
-            "full_detail": item.get("full_detail", ""),
-            "sourceUrl":   item.get("sourceUrl", "#"),
-            "source":      item.get("source", "Source"),
-        })
-    return items
-
-
-def build_dashboard():
-    REPORTS_DIR.mkdir(exist_ok=True)
-
-    # Load up to 48 most recent reports (12 days @ 6hr cadence)
-    reports = []
-    for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True)[:48]:
-        try:
-            with open(f) as fp:
-                reports.append(json.load(fp))
-        except Exception:
-            pass
-
-    latest = reports[0] if reports else {}
-    level  = latest.get("escalation_level", "CRITICAL")
-
-    # ── Alert typewriter strings (from latest report) ──────────────────────
-    alerts = []
-    for dev in latest.get("key_developments", [])[:5]:
-        headline = dev.get("headline", "")
-        detail   = dev.get("detail", "")
-        actor    = dev.get("actor", "")
-        if headline:
-            alerts.append(f"{actor}: {headline} · {detail[:80]}{'…' if len(detail) > 80 else ''}")
-
-    # Fallback if no developments
-    if not alerts:
-        alerts = [latest.get("executive_summary", "No updates yet.")]
-
-    # ── Hero stats ──────────────────────────────────────────────────────────
-    updates_today = sum(
-        1 for r in reports
-        if r.get("generated_at", "").startswith(
-            datetime.now(timezone.utc).strftime("%Y-%m-%d")
-        )
-    )
-    hero_stats = {
-        "tension":      level,
-        "updatesToday": updates_today or len(reports),
-        "lastUpdated":  latest.get("generated_at", ""),
-        "sourcesUsed":  latest.get("sources_used", 0),
-    }
-
-    # ── Tension meters (derived from latest report) ─────────────────────────
-    # We compute the US-Iran and Israel-Iran bars from the escalation level
-    # and enrich with sentiment tone.
-    tone = latest.get("sentiment", {}).get("overall_tone", "")
-    tone_boost = {"VOLATILE": 8, "ESCALATING": 5, "TENSE": 2, "STABLE": -10, "DE-ESCALATING": -15}.get(tone, 0)
-    base = _level_to_pct(level)
-
-    tension_meters = [
-        {"label": "US vs Iran",        "pct": min(98, base + tone_boost),      "lvl": level,    "color": _level_color(level)},
-        {"label": "Israel vs Iran",    "pct": min(98, base + tone_boost - 8),  "lvl": level,    "color": _level_color(level)},
-        {"label": "Gaza ceasefire",    "pct": max(10, 100 - base + 5),         "lvl": "Holding","color": "var(--green)"},
-        {"label": "Nuclear progress",  "pct": min(98, base - 5 + tone_boost),  "lvl": "High",   "color": "var(--amber)"},
-        {"label": "Regional war risk", "pct": min(95, base - 10 + tone_boost), "lvl": "Elevated","color": "var(--red)"},
-    ]
-
-    # ── News cards from latest report ────────────────────────────────────────
-    news_cards = []
-    for dev in latest.get("key_developments", []):
-        actor    = dev.get("actor", "Other")
-        sig      = dev.get("significance", "MEDIUM")
-        headline = dev.get("headline", "")
-        detail   = dev.get("detail", "")
-        time_str = _time_ago(latest.get("generated_at", ""))
-
-        news_cards.append({
-            "badgeClass":  _significance_badge(sig),
-            "badgeLabel":  sig.capitalize(),
-            "actorClass":  _actor_pill_class(actor),
-            "actor":       actor,
-            "time":        time_str,
-            "headline":    headline,
-            "summary":     detail,
-            "whyTxt":      latest.get("escalation_reason", ""),
-            "orgs":        [actor],
-        })
-
-    # Also add a "what to watch" card
-    watch = latest.get("what_to_watch_next", "")
-    if watch:
-        news_cards.append({
-            "badgeClass":  "b-gray",
-            "badgeLabel":  "Analysis",
-            "actorClass":  "p-gray",
-            "actor":       "Monitor",
-            "time":        _time_ago(latest.get("generated_at", "")),
-            "headline":    "What to watch in the next 6 hours",
-            "summary":     watch,
-            "whyTxt":      latest.get("executive_summary", ""),
-            "orgs":        [],
-        })
-
-    # ── Historical escalation data for a chart (last 20 reports) ────────────
-    history = [
-        {
-            "t": r.get("generated_at", ""),
-            "l": r.get("escalation_level", "MEDIUM"),
-            "tone": r.get("sentiment", {}).get("overall_tone", ""),
-        }
-        for r in reversed(reports[:20])
-    ]
-
-    # ── Sentiment block ──────────────────────────────────────────────────────
-    sentiment = latest.get("sentiment", {})
-
-    # ── Terms glossary ──────────────────────────────────────────────────────
-    terms = latest.get("terminology_explained", [])
-
-    # ── Assemble live_data.js ────────────────────────────────────────────────
-    payload = {
-        "generatedAt":    latest.get("generated_at", ""),
-        "escalationLevel": level,
-        "alerts":         alerts,
-        "heroStats":      hero_stats,
-        "tensionMeters":  tension_meters,
-        "newsCards":      news_cards,
-        "sentiment":      sentiment,
-        "terms":          terms,
-        "history":        history,
-        "execSummary":    latest.get("executive_summary", ""),
-        "totalReports":   len(reports),
-        "execSummaryRich": latest.get("execSummaryRich", latest.get("executive_summary", "")),
-        "indiaSummary":   latest.get("india_summary", latest.get("indiaSummary", "")),
-        "indiaImpact":    _build_india_impact(latest),
-    }
-
-    js = f"window.WARWATCH_LIVE = {json.dumps(payload, indent=2)};\n"
-    # Expose Groq API key for frontend live AI analysis
-    groq_key = os.environ.get("GROQ_API_KEY", "")
-    if groq_key:
-        js += f"window.GROQ_API_KEY = '{groq_key}';\n"
-
-    with open("live_data.js", "w") as f:
-        f.write(js)
-    print("[OK] live_data.js written")
-
-    # Also keep the legacy dashboard.html for local viewing
-    _build_legacy_html(reports)
-
-
-def _build_legacy_html(reports):
-    """Keep a basic legacy dashboard.html as a fallback."""
-    level_colors = {"LOW":"#1D9E75","MEDIUM":"#BA7517","HIGH":"#D85A30","CRITICAL":"#A32D2D"}
-    cards = ""
-    for r in reports[:10]:
-        lvl   = r.get("escalation_level", "MEDIUM")
-        color = level_colors.get(lvl, "#888")
-        devs  = "".join(
-            f'<li style="font-size:13px;margin:3px 0;color:#ccc">'
-            f'<strong style="color:#fff">{d.get("actor","")}</strong> — {d.get("headline","")}</li>'
-            for d in r.get("key_developments", [])[:3]
-        )
-        cards += f"""
-        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
-          border-radius:12px;padding:20px;margin-bottom:14px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
-              background:{color}22;color:{color};border:1px solid {color};
-              font-family:monospace;letter-spacing:.06em">{lvl}</span>
-            <span style="font-size:12px;color:#666">{r.get('generated_at','')}</span>
-            <span style="margin-left:auto;font-size:12px;color:#555">
-              {r.get('sentiment',{}).get('overall_tone','')}</span>
-          </div>
-          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
-            {r.get('executive_summary','')}</p>
-          <ul style="margin:0;padding-left:16px">{devs}</ul>
-        </div>"""
-
-    timeline_data = json.dumps([
-        {"t": r.get("generated_at",""), "l": r.get("escalation_level","MEDIUM")}
-        for r in reversed(reports[:20])
-    ])
-
-    html = f"""<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en"><head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>WarWatch Bot — Report Log</title>
 <style>
-  *{{box-sizing:border-box;margin:0;padding:0}}
-  body{{font-family:'IBM Plex Sans',sans-serif;background:#1a1a1a;color:#ececec}}
-  .bar{{background:#222;border-bottom:1px solid rgba(255,255,255,0.08);
-    padding:14px 32px;display:flex;align-items:center;gap:12px}}
-  .main{{max-width:860px;margin:0 auto;padding:28px 20px;
-    display:grid;grid-template-columns:1fr 260px;gap:20px}}
-  .card{{background:#212121;border:1px solid rgba(255,255,255,0.08);
-    border-radius:12px;padding:20px;margin-bottom:16px}}
-  h2{{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;
-    text-transform:uppercase;color:#5c5c5c;margin-bottom:14px}}
-  canvas{{width:100%!important}}
-  a{{color:#5b9cf6;text-decoration:none}}
+  *{box-sizing:border-box;margin:0;padding:0}
+  body{font-family:'IBM Plex Sans',sans-serif;background:#1a1a1a;color:#ececec}
+  .bar{background:#222;border-bottom:1px solid rgba(255,255,255,0.08);
+    padding:14px 32px;display:flex;align-items:center;gap:12px}
+  .main{max-width:860px;margin:0 auto;padding:28px 20px;
+    display:grid;grid-template-columns:1fr 260px;gap:20px}
+  .card{background:#212121;border:1px solid rgba(255,255,255,0.08);
+    border-radius:12px;padding:20px;margin-bottom:16px}
+  h2{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;
+    text-transform:uppercase;color:#5c5c5c;margin-bottom:14px}
+  canvas{width:100%!important}
+  a{color:#5b9cf6;text-decoration:none}
 </style>
 </head><body>
 <div class="bar">
@@ -279,12 +23,152 @@ def _build_legacy_html(reports):
     letter-spacing:.06em;text-transform:uppercase">War<span style="color:#e05555">Watch</span> Bot</span>
   <span style="font-size:12px;color:#555">NDTV · Groq · Every 6hrs</span>
   <span style="margin-left:auto;font-size:12px;color:#555">
-    Last run: {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}</span>
+    Last run: Mar 21 07:05 UTC</span>
 </div>
 <div class="main">
   <div>
-    <h2>Report log — {len(reports)} reports</h2>
-    {cards or '<p style="color:#555;font-size:14px">No reports yet.</p>'}
+    <h2>Report log — 48 reports</h2>
+    
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#D85A3022;color:#D85A30;border:1px solid #D85A30;
+              font-family:monospace;letter-spacing:.06em">HIGH</span>
+            <span style="font-size:12px;color:#666">2026-03-21 07:02 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran war continues to escalate, with Iran firing missiles at US bases and Israel striking Iranian targets. The conflict has drawn in other countries, including Saudi Arabia and the UAE, which have agreed to support the US-Israeli war effort. The war has also had a significant impact on global oil markets, with prices rising due to concerns about supply disruptions. India has been affected by the war, with Indian nationals living in the region and Indian energy imports at risk.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Fires Missiles at US Bases</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Readies Plan for Ground Troops in Iran</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Saudi Arabia and UAE</strong> — Saudi Arabia and UAE Support US-Israeli War Effort</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#D85A3022;color:#D85A30;border:1px solid #D85A30;
+              font-family:monospace;letter-spacing:.06em">HIGH</span>
+            <span style="font-size:12px;color:#666">2026-03-21 01:18 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              TENSE</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran war continues to escalate with no ceasefire in sight. Trump has stated that other nations must protect the Hormuz Strait from Iran. Khamenei has issued a defiant message, and the situation remains tense. The conflict has significant implications for global oil prices and regional security.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — Trump Refuses Ceasefire</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Khamenei Issues Defiant Message</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Israel</strong> — Israel Launches Airstrikes</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#D85A3022;color:#D85A30;border:1px solid #D85A30;
+              font-family:monospace;letter-spacing:.06em">HIGH</span>
+            <span style="font-size:12px;color:#666">2026-03-20 23:50 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran conflict has escalated with Iran threatening to target recreational and tourist locations worldwide. The US has deployed additional warships and Marines to the area, while Israel's air defenses have intercepted a new wave of missiles launched by Iran. The conflict is affecting global crude oil prices and the Dow Jones index. The situation remains volatile, with all parties involved showing no signs of backing down.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Threatens Global Attacks</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Deploys Warships and Marines</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Israel</strong> — Israel Intercepts Iranian Missiles</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#BA751722;color:#BA7517;border:1px solid #BA7517;
+              font-family:monospace;letter-spacing:.06em">MEDIUM</span>
+            <span style="font-size:12px;color:#666">2026-03-20 22:20 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Iran conflict is escalating, with President Trump stating that the US is close to meeting its objectives. The conflict has significant implications for global oil prices and shipping lanes. India, a major oil importer, is closely watching the situation. The US has called on other countries to guard and police the Strait of Hormuz, a critical shipping lane.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — Trump Says US Close to Meeting Objectives</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Calls on Countries to Secure Strait of Hormuz</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Threatens to Disrupt Oil Supplies</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#BA751722;color:#BA7517;border:1px solid #BA7517;
+              font-family:monospace;letter-spacing:.06em">MEDIUM</span>
+            <span style="font-size:12px;color:#666">2026-03-20 21:52 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran war is escalating, with Saudi Arabia and the UAE considering support for the US-Israeli alliance. Iran's attacks on US bases in the Gulf have increased, prompting the US to seek expanded access and overflight permissions. The situation remains volatile, with multiple countries involved and various interests at stake. The conflict's impact on global energy markets and Indian nationals abroad is a growing concern.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Saudi Arabia</strong> — Saudi Arabia Supports US-Israeli War</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Increases Attacks on US Bases</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Seeks Expanded Access in Saudi Arabia</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#A32D2D22;color:#A32D2D;border:1px solid #A32D2D;
+              font-family:monospace;letter-spacing:.06em">CRITICAL</span>
+            <span style="font-size:12px;color:#666">2026-03-20 21:25 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US is preparing for potential ground troops in Iran, while Iran has vowed to exercise its right to self-defense. The conflict is escalating, with the UK allowing the US to use its bases for strikes on Iranian missile sites. The situation is critical, with multiple countries involved and the potential for further escalation. The US, Israel, and Iran are taking aggressive stances, increasing the risk of a wider conflict.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Prepares Ground Troops for Iran</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Vows to Exercise Right to Self-Defense</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">UK</strong> — UK Allows US to Use Bases for Strikes on Iran</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#D85A3022;color:#D85A30;border:1px solid #D85A30;
+              font-family:monospace;letter-spacing:.06em">HIGH</span>
+            <span style="font-size:12px;color:#666">2026-03-20 20:24 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US and Israel are preparing for a potential war with Iran, with Saudi Arabia and the UAE considering support. The US has gained access to a Saudi airbase, and the White House has stated that Iran's Kharg Island could be taken out at any time. This escalation has significant implications for the region and global energy markets. India, as a major oil importer, is closely watching the situation, with potential impacts on its economy and energy security.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Gains Saudi Airbase Access</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — White House Threatens Iran's Kharg Island</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Other</strong> — Saudi Arabia and UAE Consider Support</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#A32D2D22;color:#A32D2D;border:1px solid #A32D2D;
+              font-family:monospace;letter-spacing:.06em">CRITICAL</span>
+            <span style="font-size:12px;color:#666">2026-03-20 19:53 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran war has escalated with Iran targeting locations in Israel, Kuwait, and Saudi Arabia. The US has received approval from the UK to use its bases to strike Iran sites. The conflict has resulted in the deaths of several top Iranian leaders and damage to its energy industries. The situation remains volatile with Iran warning that world tourism sites are not safe for Israeli and US officials.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Targets Israel, Kuwait, Saudi Arabia</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Gets UK Approval to Use Bases</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Warns World Tourism Sites</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#D85A3022;color:#D85A30;border:1px solid #D85A30;
+              font-family:monospace;letter-spacing:.06em">HIGH</span>
+            <span style="font-size:12px;color:#666">2026-03-20 18:37 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran conflict is escalating with the deployment of the USS Tripoli to the Middle East. The ship is expected to help reopen the Strait of Hormuz for international oil shipping. This development has significant implications for global oil prices and shipping. The situation remains volatile, with multiple actors involved and various interests at stake.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US Deploys USS Tripoli</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Other</strong> — Strait of Hormuz Closure</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US-Israel Alliance</li></ul>
+        </div>
+        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);
+          border-radius:12px;padding:20px;margin-bottom:14px">
+          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
+            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;
+              background:#D85A3022;color:#D85A30;border:1px solid #D85A30;
+              font-family:monospace;letter-spacing:.06em">HIGH</span>
+            <span style="font-size:12px;color:#666">2026-03-20 17:52 UTC</span>
+            <span style="margin-left:auto;font-size:12px;color:#555">
+              ESCALATING</span>
+          </div>
+          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">
+            The US-Israel-Iran conflict has escalated with Israel's strike on Tehran, killing several top Iranian officials. Iran's Supreme Leader Ayatollah Mojtaba Khamenei has delivered a defiant message on Persian New Year. The conflict has significant implications for global security and energy markets. India's diaspora and energy interests are also at risk.</p>
+          <ul style="margin:0;padding-left:16px"><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Iran</strong> — Iran Supreme Leader Defiant</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">Israel</strong> — Esmail Ahmadi Killed</li><li style="font-size:13px;margin:3px 0;color:#ccc"><strong style="color:#fff">US</strong> — US-Israel Alliance</li></ul>
+        </div>
   </div>
   <div style="position:sticky;top:20px;align-self:start">
     <div class="card">
@@ -303,40 +187,31 @@ def _build_legacy_html(reports):
 </div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
 <script>
-const d={timeline_data};
-const lm={{"LOW":1,"MEDIUM":2,"HIGH":3,"CRITICAL":4}};
-const cm={{"LOW":"#3daa72","MEDIUM":"#d4892a","HIGH":"#c87830","CRITICAL":"#e05555"}};
-new Chart(document.getElementById('ch').getContext('2d'),{{
+const d=[{"t": "2026-03-20 07:55 UTC", "l": "HIGH"}, {"t": "2026-03-20 08:33 UTC", "l": "MEDIUM"}, {"t": "2026-03-20 09:23 UTC", "l": "CRITICAL"}, {"t": "2026-03-20 11:29 UTC", "l": "CRITICAL"}, {"t": "2026-03-20 11:54 UTC", "l": "HIGH"}, {"t": "2026-03-20 12:40 UTC", "l": "HIGH"}, {"t": "2026-03-20 13:46 UTC", "l": "MEDIUM"}, {"t": "2026-03-20 15:27 UTC", "l": "HIGH"}, {"t": "2026-03-20 16:04 UTC", "l": "MEDIUM"}, {"t": "2026-03-20 17:01 UTC", "l": "CRITICAL"}, {"t": "2026-03-20 17:52 UTC", "l": "HIGH"}, {"t": "2026-03-20 18:37 UTC", "l": "HIGH"}, {"t": "2026-03-20 19:53 UTC", "l": "CRITICAL"}, {"t": "2026-03-20 20:24 UTC", "l": "HIGH"}, {"t": "2026-03-20 21:25 UTC", "l": "CRITICAL"}, {"t": "2026-03-20 21:52 UTC", "l": "MEDIUM"}, {"t": "2026-03-20 22:20 UTC", "l": "MEDIUM"}, {"t": "2026-03-20 23:50 UTC", "l": "HIGH"}, {"t": "2026-03-21 01:18 UTC", "l": "HIGH"}, {"t": "2026-03-21 07:02 UTC", "l": "HIGH"}];
+const lm={"LOW":1,"MEDIUM":2,"HIGH":3,"CRITICAL":4};
+const cm={"LOW":"#3daa72","MEDIUM":"#d4892a","HIGH":"#c87830","CRITICAL":"#e05555"};
+new Chart(document.getElementById('ch').getContext('2d'),{
   type:'line',
-  data:{{
+  data:{
     labels:d.map(x=>x.t.slice(5,16)),
-    datasets:[{{
+    datasets:[{
       data:d.map(x=>lm[x.l]||2),
       borderColor:'#e05555',backgroundColor:'rgba(224,85,85,0.08)',
       tension:0.4,fill:true,
       pointBackgroundColor:d.map(x=>cm[x.l]||'#d4892a'),
       pointRadius:4
-    }}]
-  }},
-  options:{{
-    plugins:{{legend:{{display:false}}}},
-    scales:{{
-      y:{{min:0,max:5,ticks:{{color:'#5c5c5c',
-        callback:v=>['','Low','Med','High','Crit',''][v]||''}},
-        grid:{{color:'rgba(255,255,255,0.05)'}}}},
-      x:{{ticks:{{color:'#5c5c5c',maxRotation:45}},
-        grid:{{color:'rgba(255,255,255,0.05)'}}}}
-    }}
-  }}
-}});
+    }]
+  },
+  options:{
+    plugins:{legend:{display:false}},
+    scales:{
+      y:{min:0,max:5,ticks:{color:'#5c5c5c',
+        callback:v=>['','Low','Med','High','Crit',''][v]||''},
+        grid:{color:'rgba(255,255,255,0.05)'}},
+      x:{ticks:{color:'#5c5c5c',maxRotation:45},
+        grid:{color:'rgba(255,255,255,0.05)'}}
+    }
+  }
+});
 </script>
-</body></html>"""
-
-    with open("dashboard.html", "w") as f:
-        f.write(html)
-    print("[OK] dashboard.html updated")
-
-
-if __name__ == "__main__":
-    build_dashboard()
-    print("Done! Open warwatch.html in your browser.")
+</body></html>
