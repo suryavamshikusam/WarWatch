@@ -319,7 +319,9 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
     # ── India summary (5-6 paragraphs) ────────────────────────────────────────
     if report.get("india_impact"):
         print("      Generating India summary (5-6 paragraphs)...")
-        report["india_summary"] = _generate_india_summary(client, report)
+        _summary = _generate_india_summary(client, report)
+        report["india_summary"] = _summary
+        report["indiaSummary"] = _summary   # camelCase for frontend
 
     return report
 
