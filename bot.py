@@ -30,6 +30,7 @@ from scraper import fetch_all_articles, fetch_article_content
 from summarizer import generate_report, format_report_html
 from dashboard import build_dashboard
 from emailer import send_report_email
+from prices_fetcher import build_prices_js
 
 REPORTS_DIR         = Path("reports")
 SEEN_FILE           = Path("seen_urls.json")
@@ -77,6 +78,12 @@ def run_pipeline(articles: list):
     print(f"      Saved: {path}")
     build_dashboard()
     print(f"      Dashboard updated!")
+
+    print(f"\n[3b] Fetching live prices for economy page...")
+    try:
+        build_prices_js()
+    except Exception as e:
+        print(f"      [WARN] Prices fetch failed: {e}")
 
     print(f"\n[4/4] Sending email report...")
     try:
