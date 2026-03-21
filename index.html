@@ -530,6 +530,17 @@ async function fetchAISummary() {
 
   var inner = document.getElementById('summary-text-inner');
   var noteEl = document.getElementById('ai-refresh-note');
+
+  /* ── Use pre-generated summary from live_data.js first ── */
+  var D0 = window.WARWATCH_LIVE;
+  var prebuilt = D0 && (D0.execSummaryRich || D0.execSummary || D0.executive_summary);
+  if (prebuilt && !window.GROQ_API_KEY) {
+    var paras0 = prebuilt.split(/\n\n+/).filter(Boolean).slice(0,3);
+    inner.innerHTML = paras0.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
+    if (noteEl) noteEl.textContent = 'From last bot run · ' + (D0.generatedAt || '');
+    return;
+  }
+
   inner.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
 
   try {
@@ -551,7 +562,7 @@ async function fetchAISummary() {
     if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
   } catch(e) {
     var D2 = window.WARWATCH_LIVE;
-    var fallback = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active including Chabahar, Dubai and Kharg Island pressure. India faces significant energy and diaspora exposure.';
+    var fallback = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation.';
     inner.innerHTML = fallback.split('\n\n').filter(Boolean).slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
     if (noteEl) noteEl.textContent = 'Live refresh unavailable';
   }
@@ -747,6 +758,22 @@ function toggleIndiaCard(btn) {
     if (!box) return;
     if (aiCache[idx]) { box.innerHTML = aiCache[idx]; return; }
     var c = rotCards[idx];
+
+    /* Use pre-generated fullAnalysis from bot if available */
+    if (c.fullAnalysis && c.fullAnalysis.length > 50) {
+      var paras0 = c.fullAnalysis.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
+      var html0 = paras0.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
+      aiCache[idx] = html0;
+      box.innerHTML = html0;
+      return;
+    }
+
+    /* Fall back to live Groq call if key available */
+    if (!window.GROQ_API_KEY) {
+      box.innerHTML = '<p style="color:#555;font-size:11px">AI analysis from last bot run unavailable.</p>';
+      return;
+    }
+
     var prompt = c.headline + ' — ' + c.summary + '\n\nWrite exactly 3 short paragraphs (no headings, no bullets, plain prose): Para 1: what happened and immediate fallout. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen next. Max 50 words each paragraph.';
     try {
       var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {

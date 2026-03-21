@@ -64,6 +64,22 @@ def _time_ago(ts: str) -> str:
         return ts
 
 
+def _build_india_impact(report: dict) -> list:
+    """Map india_impact items with all required fields for the frontend."""
+    items = []
+    for item in report.get("india_impact", []):
+        items.append({
+            "headline":    item.get("headline", ""),
+            "detail":      item.get("detail", ""),
+            "category":    item.get("category", ""),
+            "significance":item.get("significance", "MEDIUM"),
+            "full_detail": item.get("full_detail", ""),
+            "sourceUrl":   item.get("sourceUrl", "#"),
+            "source":      item.get("source", "Source"),
+        })
+    return items
+
+
 def build_dashboard():
     REPORTS_DIR.mkdir(exist_ok=True)
 
@@ -186,9 +202,16 @@ def build_dashboard():
         "history":        history,
         "execSummary":    latest.get("executive_summary", ""),
         "totalReports":   len(reports),
+        "execSummaryRich": latest.get("execSummaryRich", latest.get("executive_summary", "")),
+        "indiaSummary":   latest.get("india_summary", latest.get("indiaSummary", "")),
+        "indiaImpact":    _build_india_impact(latest),
     }
 
     js = f"window.WARWATCH_LIVE = {json.dumps(payload, indent=2)};\n"
+    # Expose Groq API key for frontend live AI analysis
+    groq_key = os.environ.get("GROQ_API_KEY", "")
+    if groq_key:
+        js += f"window.GROQ_API_KEY = '{groq_key}';\n"
 
     with open("live_data.js", "w") as f:
         f.write(js)
