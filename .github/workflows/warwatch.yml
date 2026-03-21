@@ -11,7 +11,6 @@ permissions:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -21,21 +20,29 @@ jobs:
         with:
           python-version: '3.11'
 
+      - name: Cache pip dependencies
+        uses: actions/cache@v4
+        with:
+          path: ~/.cache/pip
+          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
+          restore-keys: |
+            ${{ runner.os }}-pip-
+
       - name: Install dependencies
         run: pip install -r requirements.txt
 
       - name: Run bot
         env:
-          GROQ_API_KEY:      ${{ secrets.GROQ_API_KEY }}
-          GMAIL_ADDRESS:     ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASS:    ${{ secrets.GMAIL_APP_PASS }}
-          REPORT_TO_EMAIL:   ${{ secrets.REPORT_TO_EMAIL }}
+          GROQ_API_KEY:    ${{ secrets.GROQ_API_KEY }}
+          GMAIL_ADDRESS:   ${{ secrets.GMAIL_ADDRESS }}
+          GMAIL_APP_PASS:  ${{ secrets.GMAIL_APP_PASS }}
+          REPORT_TO_EMAIL: ${{ secrets.REPORT_TO_EMAIL }}
         run: python bot.py --actions
 
       - name: Commit updated files back to repo
         run: |
           git config user.name  "WarWatch Bot"
           git config user.email "bot@warwatch.local"
-          git add live_data.js prices_data.js prices_history.json seen_urls.json reports/ dashboard_log.html || true
-          git diff --cached --quiet || git commit -m "bot: update $(date -u +'%Y-%m-%d %H:%M UTC')"
+          git add seen_urls.json reports/ live_data.js prices_data.js prices_history.json dashboard.html || true
+          git diff --cached --quiet || git commit -m "bot: update $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
           git push
