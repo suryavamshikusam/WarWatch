@@ -119,11 +119,11 @@ def run_actions():
 
     print(f"Found {len(all_articles)} articles total, {len(new_articles)} new.\n")
 
+    seen.update(a["url"] for a in all_articles)
+    save_seen(seen)
+
     if len(new_articles) < MIN_NEW_ARTICLES:
         print("No new articles — nothing to summarise. Fetching prices only.")
-        # Still mark all as seen so we don't recheck them
-        seen.update(a["url"] for a in all_articles)
-        save_seen(seen)
         try:
             build_prices_js()
             print("  [OK] prices_data.js refreshed.")
@@ -134,10 +134,6 @@ def run_actions():
     print(f">>> {len(new_articles)} new article(s):")
     for a in new_articles:
         print(f"    [{a['source']}] {a['title'][:72]}")
-
-    # Mark as seen AFTER confirming we have new articles to process
-    seen.update(a["url"] for a in all_articles)
-    save_seen(seen)
 
     run_pipeline(new_articles)
     print("=== Done ===")
