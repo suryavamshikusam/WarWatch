@@ -1,14 +1,27 @@
 """
-scraper.py — Fetches war/conflict articles from 17 news sources via RSS.
-Extracts real article images via og:image, media:content, and Unsplash fallback.
-Returns articles sorted by relevance score with full article content.
+scraper.py — Fetches war/conflict articles from reliable RSS sources.
 
-Sources (4 tiers):
-  Tier 1 — Wire services:    Reuters, AP News, Al Jazeera, BBC, NDTV
-  Tier 2 — Conflict-focused: Times of Israel, Middle East Eye, Haaretz,
-                              Iran International, TRT World, i24 News
-  Tier 3 — India angle:      Indian Express, LiveMint, Hindustan Times, The Hindu
-  Tier 4 — Policy/Military:  Foreign Policy, Defense One
+Reduced to 6 working sources only:
+  - Al Jazeera (working, war-focused)
+  - BBC World (working, reliable)
+  - NDTV Top Stories (working)
+  - Indian Express World (working, India angle)
+  - Middle East Eye (working, conflict-focused)
+  - Defense One (working, military angle)
+
+Removed (broken or too noisy):
+  - Reuters → DNS failure in GitHub Actions
+  - AP News → DNS failure
+  - Times of Israel → 403 Forbidden
+  - TRT World → 404 Not Found
+  - Haaretz → 92 articles, mostly paywalled opinion
+  - Indian Express → 127 articles, too many irrelevant
+  - Hindustan Times → 403 Forbidden
+  - Iran International → XML parse errors
+  - i24 News → XML parse errors
+  - LiveMint → low war relevance
+  - The Hindu → low war relevance
+  - Foreign Policy → low war relevance
 """
 
 import re
@@ -20,9 +33,6 @@ import warnings
 
 warnings.filterwarnings("ignore")
 
-# ---------------------------------------------------------------------------
-# XML namespaces
-# ---------------------------------------------------------------------------
 NAMESPACES = {
     "media":   "http://search.yahoo.com/mrss/",
     "content": "http://purl.org/rss/1.0/modules/content/",
@@ -40,44 +50,22 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-MAX_ARTICLES = 40
+MAX_ARTICLES = 25  # Hard cap — keeps Gemini prompt manageable
 
-# ---------------------------------------------------------------------------
-# RSS sources — (label, url)
-# ---------------------------------------------------------------------------
+# ── Reliable RSS sources only ──────────────────────────────────────────────
 RSS_SOURCES = [
-    # Tier 1: Wire services
-    ("NDTV",              "https://feeds.feedburner.com/ndtvnews-world-news"),
-    ("NDTV",              "https://feeds.feedburner.com/ndtvnews-top-stories"),
-    ("NDTV",              "https://www.ndtv.com/rss/world"),
-    ("BBC",               "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
-    ("BBC",               "https://feeds.bbci.co.uk/news/world/rss.xml"),
-    ("Reuters",           "https://feeds.reuters.com/reuters/worldNews"),
-    ("Reuters",           "https://feeds.reuters.com/reuters/topNews"),
-    ("AP News",           "https://feeds.apnews.com/rss/apf-worldnews"),
-    ("Al Jazeera",        "https://www.aljazeera.com/xml/rss/all.xml"),
-    ("Al Jazeera",        "https://www.aljazeera.com/xml/rss/middle-east.xml"),
-    # Tier 2: Conflict-focused
-    ("Times of Israel",   "https://www.timesofisrael.com/feed"),
-    ("Middle East Eye",   "https://www.middleeasteye.net/rss"),
-    ("Haaretz",           "https://www.haaretz.com/srv/haaretz-latest-headlines"),
-    ("Iran International","https://www.iranintl.com/en/rss"),
-    ("TRT World",         "https://www.trtworld.com/rss"),
-    ("TRT World",         "https://www.trtworld.com/rss/middle-east"),
-    ("i24 News",          "https://www.i24news.tv/en/rss"),
-    # Tier 3: India angle
-    ("Indian Express",    "https://indianexpress.com/section/world/feed/"),
-    ("LiveMint",          "https://www.livemint.com/rss/news"),
-    ("Hindustan Times",   "https://www.hindustantimes.com/feeds/rss/world-news/rssfeed.xml"),
-    ("The Hindu",         "https://www.thehindu.com/news/international/feeder/default.rss"),
-    # Tier 4: Policy/Military
-    ("Foreign Policy",    "https://foreignpolicy.com/feed/"),
-    ("Defense One",       "https://www.defenseone.com/rss/all/"),
+    # Tier 1: Reliable wire/broadcast
+    ("Al Jazeera",   "https://www.aljazeera.com/xml/rss/all.xml"),
+    ("BBC",          "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
+    ("BBC",          "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("NDTV",         "https://feeds.feedburner.com/ndtvnews-top-stories"),
+    # Tier 2: Conflict/India focused
+    ("Indian Express","https://indianexpress.com/section/world/feed/"),
+    ("Middle East Eye","https://www.middleeasteye.net/rss"),
+    ("Defense One",  "https://www.defenseone.com/rss/all/"),
 ]
 
-# ---------------------------------------------------------------------------
-# Keywords and scoring
-# ---------------------------------------------------------------------------
+# ── Keywords ───────────────────────────────────────────────────────────────
 HIGH_WEIGHT_KEYWORDS = [
     "iran war", "us strike", "israel strike", "irgc", "idf strike",
     "nuclear deal", "strait of hormuz", "kharg island", "chabahar",
@@ -88,33 +76,28 @@ HIGH_WEIGHT_KEYWORDS = [
 MEDIUM_WEIGHT_KEYWORDS = [
     "iran", "israel", "hamas", "hezbollah", "gaza", "middle east",
     "nuclear", "idf", "pentagon", "missile", "drone", "netanyahu",
-    "trump iran", "tehran", "tel aviv", "west bank", "rafah",
+    "trump iran", "tehran", "tel aviv", "west bank",
     "ceasefire", "sanctions", "hormuz", "saudi arabia",
     "proxy", "warship", "airstrike", "retaliation", "escalation",
-    "india iran", "india oil", "india gulf", "indian sailors", "indian diaspora",
+    "india iran", "india oil", "india gulf", "indian sailors",
     "brent crude", "oil price", "opec", "energy crisis",
 ]
 
-# Unsplash direct CDN fallback (source.unsplash.com redirect API is dead — use photo IDs)
 UNSPLASH_PHOTO_IDS = {
     "oil":       "1474546499760-77a0b18c5e69",
     "drone":     "1585776245991-cf89dd7fc73a",
-    "missile":   "1614728263952-84ea256f9d1d",
     "nuclear":   "1518709414768-a88981a4515d",
     "diplomacy": "1529107386315-e1a2ed48a1e3",
     "india":     "1582510003544-4d00b7f74220",
-    "ceasefire": "1541872703-74c5e44368f9",
     "strike":    "1540575467063-178a50c2df87",
     "hormuz":    "1505118380757-91f5f5632de0",
     "ship":      "1566753323558-f4e0952af115",
-    "dubai":     "1512453979798-5ea266f8880c",
     "iran":      "1604072366595-e75dc92d6bdc",
     "default":   "1579548122080-c35fd6820734",
 }
 
 
 def _get_relevance_score(title: str, desc: str) -> int:
-    """Score an article by keyword relevance. Higher = more relevant."""
     text = (title + " " + desc).lower()
     score = 0
     for kw in HIGH_WEIGHT_KEYWORDS:
@@ -127,7 +110,6 @@ def _get_relevance_score(title: str, desc: str) -> int:
 
 
 def _get_unsplash_fallback(title: str) -> str:
-    """Pick a topically-matched Unsplash direct CDN URL as fallback image."""
     title_lower = title.lower()
     for key, photo_id in UNSPLASH_PHOTO_IDS.items():
         if key in title_lower:
@@ -146,15 +128,10 @@ def _proxy_image(url):
 
 
 def _extract_image_from_rss(item) -> str:
-    """Try all known RSS image patterns. Returns best URL or empty string."""
-
-    # 1. <media:content url="...">
     for mc in item.findall("media:content", NAMESPACES):
         url = mc.get("url", "")
         if url and any(ext in url.lower() for ext in [".jpg", ".jpeg", ".png", ".webp"]):
             return url
-
-    # 2. <media:group><media:content>
     mg = item.find("media:group", NAMESPACES)
     if mg is not None:
         mc = mg.find("media:content", NAMESPACES)
@@ -162,40 +139,25 @@ def _extract_image_from_rss(item) -> str:
             url = mc.get("url", "")
             if url:
                 return url
-
-    # 3. <media:thumbnail url="...">
     mt = item.find("media:thumbnail", NAMESPACES)
     if mt is not None:
         url = mt.get("url", "")
         if url:
             return url
-
-    # 4. <enclosure>
     enc = item.find("enclosure")
     if enc is not None and "image" in enc.get("type", ""):
         url = enc.get("url", "")
         if url:
             return url
-
-    # 5. <img> inside <description>
     desc = item.findtext("description", "")
     if desc and "<img" in desc:
         m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', desc)
         if m:
             return m.group(1)
-
-    # 6. <content:encoded>
-    encoded = item.findtext("content:encoded", "", NAMESPACES)
-    if encoded and "<img" in encoded:
-        m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', encoded)
-        if m:
-            return m.group(1)
-
     return ""
 
 
 def _fetch_og_image(url: str) -> str:
-    """Fetch article page and extract og:image or twitter:image."""
     try:
         resp = requests.get(url, headers=HEADERS, timeout=12, verify=False)
         if resp.status_code != 200:
@@ -204,8 +166,6 @@ def _fetch_og_image(url: str) -> str:
         patterns = [
             r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']',
             r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']',
-            r'name=["\']twitter:image["\'][^>]*content=["\']([^"\']+)["\']',
-            r'content=["\']([^"\']+)["\'][^>]*name=["\']twitter:image["\']',
         ]
         for pat in patterns:
             m = re.search(pat, html)
@@ -221,28 +181,18 @@ def _fetch_og_image(url: str) -> str:
 
 
 def fetch_article_content(url: str) -> str:
-    """
-    Fetch full article body text (up to 3000 chars).
-    Used by summarizer.py to give the AI more context per article.
-    """
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
         if resp.status_code != 200:
             return ""
-
         soup = BeautifulSoup(resp.text, "lxml")
-
-        # Remove noise elements
         for tag in soup(["script", "style", "nav", "header", "footer",
                           "aside", "figure", "figcaption", "noscript"]):
             tag.decompose()
-
-        # Try article-specific containers
         selectors = [
             "article", ".article-body", ".story-body", ".post-content",
             ".article__body", ".article-text", ".story-content",
-            "#article-body", "#story-body", ".news-body",
-            '[itemprop="articleBody"]', ".entry-content",
+            "#article-body", "#story-body", ".entry-content",
         ]
         for sel in selectors:
             container = soup.select_one(sel)
@@ -254,26 +204,18 @@ def fetch_article_content(url: str) -> str:
                 )
                 if len(text) > 200:
                     return text[:3000]
-
-        # Fallback: all <p> tags
         paragraphs = soup.find_all("p")
         text = " ".join(
             p.get_text(" ", strip=True) for p in paragraphs
             if len(p.get_text(strip=True)) > 40
         )
         return text[:3000]
-
     except Exception as e:
         print(f"  [WARN] Content fetch failed for {url}: {e}")
         return ""
 
 
-def is_relevant(text: str) -> bool:
-    return _get_relevance_score(text, "") > 0
-
-
 def _parse_feed(source_label: str, url: str, seen: set) -> list:
-    """Fetch one RSS feed and return relevant article dicts."""
     results = []
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
@@ -311,56 +253,47 @@ def _parse_feed(source_label: str, url: str, seen: set) -> list:
             })
 
     except ET.ParseError as e:
-        print(f"  [WARN] XML parse error for {source_label} ({url}): {e}")
+        print(f"  [WARN] XML parse error for {source_label}: {e}")
     except requests.RequestException as e:
-        print(f"  [ERROR] {source_label} ({url}): {e}")
+        print(f"  [ERROR] {source_label}: {e}")
     except Exception as e:
-        print(f"  [ERROR] Unexpected for {source_label} ({url}): {e}")
+        print(f"  [ERROR] Unexpected for {source_label}: {e}")
 
     return results
 
 
 def fetch_all_articles() -> list:
-    """
-    Main entry point.
-    1. Fetches all RSS sources and scores by relevance
-    2. Sorts best articles to top
-    3. Fetches og:image for top 15 articles missing images
-    4. Applies Unsplash fallback for any still-missing images
-    5. Returns up to MAX_ARTICLES articles
-    """
     articles = []
     seen = set()
     source_counts: dict = {}
 
-    print("  Fetching RSS feeds from 17 sources...")
+    print(f"  Fetching RSS from {len(RSS_SOURCES)} sources...")
     for source_label, url in RSS_SOURCES:
         batch = _parse_feed(source_label, url, seen)
         if batch:
             source_counts[source_label] = source_counts.get(source_label, 0) + len(batch)
             articles.extend(batch)
 
-    # Sort by relevance score descending
     articles.sort(key=lambda a: a.get("score", 0), reverse=True)
 
-    print(f"  Total relevant articles found: {len(articles)}")
+    print(f"  Relevant articles found: {len(articles)}")
     for src, count in sorted(source_counts.items()):
         print(f"    {src}: {count}")
 
-    # Trim before expensive og: fetches
+    # Hard cap — take only top MAX_ARTICLES by relevance score
     articles = articles[:MAX_ARTICLES]
+    print(f"  Using top {len(articles)} articles (capped at {MAX_ARTICLES})")
 
-    # Fetch og:image for articles still missing images (top 15 only)
-    missing = [a for a in articles if not a["imageUrl"]][:15]
+    # Fetch og:image for top 8 missing images only
+    missing = [a for a in articles if not a["imageUrl"]][:8]
     if missing:
         print(f"  Fetching og:image for {len(missing)} articles...")
         for art in missing:
             img = _fetch_og_image(art["url"])
             if img:
                 art["imageUrl"] = _proxy_image(img)
-                print(f"    ✓ {art['source']}: {art['title'][:50]}")
 
-    # Unsplash fallback for any still missing
+    # Unsplash fallback
     for art in articles:
         if not art["imageUrl"]:
             art["imageUrl"] = _get_unsplash_fallback(art["title"])

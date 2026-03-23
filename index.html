@@ -68,7 +68,7 @@ nav { display: flex; align-items: center; gap: 0; }
 .econ-cell-chg.dn { color: #3daa72; }
 .econ-strip-cta { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #c41e3a; letter-spacing: .1em; text-transform: uppercase; padding: 10px 14px; white-space: nowrap; flex-shrink: 0; border-left: 1px solid #2a2a2a; }
 .econ-strip-cta::after { content: ' →'; }
-.newspaper-grid { display: grid; grid-template-columns: 360px 1fr 260px; border: 1px solid #2a2a2a; background: #1a1a1a; height: clamp(560px, calc(100vh - 220px), 820px); border-radius: 8px; overflow: hidden; }
+.newspaper-grid { display: grid; grid-template-columns: 300px 1fr; border: 1px solid #2a2a2a; background: #1a1a1a; height: clamp(560px, calc(100vh - 220px), 820px); border-radius: 8px; overflow: hidden; }
 .col-left { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; background: #1e1e1e; min-height: 0; overflow: hidden; }
 .ai-summary-box { padding: 20px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px solid #2a2a2a; min-height: 0; overflow: hidden; }
 .ai-summary-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; font-weight: 500; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
@@ -237,18 +237,14 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 </a>
 
 <div class="newspaper-grid" id="live">
-  <div class="col-left">
-    <div class="ai-summary-box">
-      <div class="ai-summary-label">AI Summary · <div class="ai-speaking-dot"><span></span><span></span><span></span></div> · <span id="summary-time">—</span></div>
-      <div class="ai-summary-text" id="summary-text-inner"></div>
-      <div class="ai-refresh-note" id="ai-refresh-note"></div>
-      <div class="escalation-block">
-        <div class="escalation-label">Tone</div>
-        <div class="escalation-badge" id="tone-badge" style="background:#e05555">Volatile</div>
-      </div>
-    </div>
+  <!-- LEFT: Latest News timeline (300px) -->
+  <div class="col-right" style="border-right:1px solid #2a2a2a;">
+    <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
+    <div class="timeline" id="timeline"></div>
+    <div class="read-more-btn" onclick="window.location.href='records.html'">Read more stories &rarr;</div>
   </div>
-  <div class="col-center">
+  <!-- RIGHT: Live rotator (1fr) -->
+  <div class="col-center" style="border-left:none;">
     <div class="rot-topbar">
       <div class="live-badge">Live</div>
       <span class="rot-counter" id="rot-counter">1 / 8</span>
@@ -259,11 +255,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
       <div class="rot-dots" id="rot-dots"></div>
       <button class="rot-btn" id="rot-next">&#8594;</button>
     </div>
-  </div>
-  <div class="col-right">
-    <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
-    <div class="timeline" id="timeline"></div>
-    <div class="read-more-btn" onclick="window.location.href='records.html'">Read more stories &rarr;</div>
   </div>
 </div>
 
