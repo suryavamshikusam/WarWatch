@@ -10,20 +10,17 @@ GitHub Actions runs --actions every 15 minutes automatically.
 seen_urls.json and reports/ are committed back to the repo after each run,
 so state persists across runs even though each Action starts fresh.
 
-Pages served:
-  index.html      — Live feed with 16:9 hero image (war.png), unified timeline,
-                    live AI rotator analysis, left panel refreshes every 15 min
-  india.html      — India impact page
-  records.html    — War record / archive (renamed from history.html)
-  warwatch.html   — War context — 10 key moments + Why It's Connected
-  digest.html     — Daily digest grouped by topic
-  dashboard.html  — Bot log / admin panel
+Data freshness policy:
+  - If new articles found        → always run full pipeline
+  - If no new articles BUT data is older than MAX_DATA_AGE_HOURS → re-run pipeline
+    (uses existing seen articles so Gemini still has context)
+  - If no new articles AND data is fresh → prices-only refresh, skip AI
 """
 
 import json
 import sys
 import time
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
 from scraper import fetch_all_articles, fetch_article_content
@@ -37,6 +34,7 @@ SEEN_FILE           = Path("seen_urls.json")
 CHECK_INTERVAL_MINS = 15
 MIN_NEW_ARTICLES    = 1
 MAX_SEEN_URLS       = 500
+MAX_DATA_AGE_HOURS  = 1   # Regenerate AI content if live_data.js is older than this
 
 
 # ── Seen-URL cache ────────────────────────────────────────────────────────────
@@ -55,6 +53,15 @@ def save_seen(seen: set):
     SEEN_FILE.write_text(json.dumps(urls, indent=2))
 
 
+def _live_data_age_hours() -> float:
+    """Return how many hours ago live_data.js was last written. 999 if missing."""
+    live_js = Path("live_data.js")
+    if not live_js.exists():
+        return 999.0
+    mtime = datetime.fromtimestamp(live_js.stat().st_mtime, tz=timezone.utc)
+    return (datetime.now(timezone.utc) - mtime).total_seconds() / 3600
+
+
 # ── Core pipeline ─────────────────────────────────────────────────────────────
 
 def run_pipeline(articles: list):
@@ -64,22 +71,25 @@ def run_pipeline(articles: list):
         print(f"      [{i+1}/{min(8,len(articles))}] {art['title'][:65]}...")
         art["content"] = fetch_article_content(art["url"])
 
-    print(f"\n[2/4] Generating AI summary...")
+    print(f"\n[2/4] Generating AI content (all 5 steps in CI)...")
     report = generate_report(articles)
     print(f"      Escalation  : {report.get('escalation_level','?')}")
     print(f"      Developments: {len(report.get('key_developments',[]))}")
     print(f"      India angles: {len(report.get('india_impact',[]))}")
+    print(f"      Panel summary: {len(report.get('execSummaryRich',''))} chars")
+    print(f"      India summary: {len(report.get('indiaSummary',''))} chars")
+    print(f"      India meter : {report.get('indiaMeter',{})}")
 
-    print(f"\n[3/4] Saving report + updating dashboard...")
+    print(f"\n[3/4] Saving report + updating live_data.js...")
     REPORTS_DIR.mkdir(exist_ok=True)
     ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
     path = REPORTS_DIR / f"report_{ts}.json"
     path.write_text(json.dumps(report, indent=2))
     print(f"      Saved: {path}")
     build_dashboard()
-    print(f"      Dashboard updated!")
+    print(f"      live_data.js updated — all AI content pre-baked")
 
-    print(f"\n[3b] Fetching live prices for economy page...")
+    print(f"\n[3b] Fetching live prices...")
     try:
         build_prices_js()
     except Exception as e:
@@ -102,11 +112,15 @@ def run_pipeline(articles: list):
 def run_actions():
     """
     GitHub Actions mode.
-    - Loads seen cache from repo
-    - Fetches all RSS feeds
-    - If new articles found: run pipeline, save seen cache
-    - If nothing new: exit cleanly
-    GitHub commits seen_urls.json + reports/ + live_data.js back to repo.
+
+    Logic:
+      1. Load seen URL cache
+      2. Fetch all RSS feeds
+      3. Find new articles
+      4. If new articles exist → run full pipeline
+      5. If NO new articles BUT live_data.js is stale (> MAX_DATA_AGE_HOURS) →
+           re-run pipeline with recent seen articles so data stays fresh
+      6. If NO new articles AND data is fresh → prices-only refresh
     """
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
     print(f"\n=== WarWatch Bot — GitHub Actions [{now}] ===\n")
@@ -117,25 +131,47 @@ def run_actions():
     all_articles = fetch_all_articles()
     new_articles  = [a for a in all_articles if a["url"] not in seen]
 
-    print(f"Found {len(all_articles)} articles total, {len(new_articles)} new.\n")
+    print(f"Found {len(all_articles)} articles total, {len(new_articles)} new.")
 
+    age_hours = _live_data_age_hours()
+    data_is_stale = age_hours > MAX_DATA_AGE_HOURS
+    print(f"live_data.js age: {age_hours:.1f}h (stale if >{MAX_DATA_AGE_HOURS}h) → {'STALE' if data_is_stale else 'fresh'}\n")
+
+    # Always update seen cache
     seen.update(a["url"] for a in all_articles)
     save_seen(seen)
 
-    if len(new_articles) < MIN_NEW_ARTICLES:
-        print("No new articles — nothing to summarise. Fetching prices only.")
+    if len(new_articles) >= MIN_NEW_ARTICLES:
+        # New articles → run full pipeline
+        print(f">>> {len(new_articles)} new article(s) — running full pipeline:")
+        for a in new_articles:
+            print(f"    [{a['source']}] {a['title'][:72]}")
+        run_pipeline(new_articles)
+
+    elif data_is_stale:
+        # No new articles but data is stale → re-run with recent articles to refresh AI content
+        print(f">>> No new articles but data is {age_hours:.1f}h old — refreshing AI content...")
+        recent = all_articles[:20] if all_articles else []
+        if recent:
+            print(f"    Re-running pipeline with {len(recent)} recent articles to refresh AI text")
+            run_pipeline(recent)
+        else:
+            print("    No articles available at all — prices only")
+            try:
+                build_prices_js()
+                print("    [OK] prices_data.js refreshed.")
+            except Exception as e:
+                print(f"    [WARN] Prices fetch failed: {e}")
+
+    else:
+        # No new articles, data is fresh → prices only
+        print(f"No new articles and data is fresh ({age_hours:.1f}h old) — refreshing prices only.")
         try:
             build_prices_js()
             print("  [OK] prices_data.js refreshed.")
         except Exception as e:
             print(f"  [WARN] Prices fetch failed: {e}")
-        return
 
-    print(f">>> {len(new_articles)} new article(s):")
-    for a in new_articles:
-        print(f"    [{a['source']}] {a['title'][:72]}")
-
-    run_pipeline(new_articles)
     print("=== Done ===")
 
 
@@ -160,7 +196,6 @@ def run_once():
 def run_watch():
     """
     Continuous local loop — polls every CHECK_INTERVAL_MINS minutes.
-    Useful when running on your own machine.
     """
     print(f"\n=== WarWatch Bot — WATCHER (every {CHECK_INTERVAL_MINS} min) ===")
     print("Press Ctrl+C to stop\n")
@@ -172,7 +207,9 @@ def run_watch():
     while True:
         try:
             now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-            print(f"[{now}] Checking...", end=" ", flush=True)
+            age_hours = _live_data_age_hours()
+            data_is_stale = age_hours > MAX_DATA_AGE_HOURS
+            print(f"[{now}] Checking... (data age: {age_hours:.1f}h)", end=" ", flush=True)
 
             all_articles = fetch_all_articles()
             new_articles  = [a for a in all_articles if a["url"] not in seen]
@@ -180,15 +217,19 @@ def run_watch():
             seen.update(a["url"] for a in all_articles)
             save_seen(seen)
 
-            if len(new_articles) < 2:
-                print(f"{len(new_articles)} new — skipping.")
-            else:
+            if len(new_articles) >= MIN_NEW_ARTICLES:
                 print(f"\n>>> {len(new_articles)} new articles!")
                 for a in new_articles:
                     print(f"    [{a['source']}] {a['title'][:72]}")
                 run_pipeline(new_articles)
                 updates += 1
                 print(f"Session updates: {updates}\n")
+            elif data_is_stale:
+                print(f"\n>>> Data stale ({age_hours:.1f}h) — refreshing with recent articles")
+                run_pipeline(all_articles[:20])
+                updates += 1
+            else:
+                print(f"0 new — skipping (data fresh).")
 
         except KeyboardInterrupt:
             print(f"\nStopped. {updates} update(s) this session.")
@@ -207,11 +248,10 @@ if __name__ == "__main__":
     elif "--watch" in sys.argv or "--loop" in sys.argv:
         run_watch()
     elif "--prices" in sys.argv:
-        # Standalone: just refresh prices_data.js — no scraping, no AI, no email
         print("\n=== WarWatch Bot — PRICES ONLY ===\n")
         try:
             build_prices_js()
-            print("Done! economy.html now has fresh prices.")
+            print("Done!")
         except Exception as e:
             print(f"[ERROR] {e}")
     else:
