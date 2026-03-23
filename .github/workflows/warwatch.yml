@@ -1,12 +1,9 @@
 name: WarWatch Bot
-
 on:
   schedule:
-    # Every 15 minutes — GitHub Actions minimum is 5 min
     - cron: '*/15 * * * *'
-  workflow_dispatch:  # Manual trigger from Actions tab
+  workflow_dispatch:
 
-# Prevent multiple runs overlapping
 concurrency:
   group: warwatch-bot
   cancel-in-progress: false
@@ -14,11 +11,9 @@ concurrency:
 jobs:
   run-bot:
     runs-on: ubuntu-latest
-    timeout-minutes: 10   # Kill if stuck — prevents hanging runs
-
+    timeout-minutes: 25    # ← was 10, increased to handle Gemini retries
     permissions:
-      contents: write     # Needed to commit live_data.js back to repo
-
+      contents: write
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
@@ -41,13 +36,11 @@ jobs:
           EMAIL_TO:       ${{ secrets.EMAIL_TO }}
           EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python bot.py --actions
-        # bot.py always exits 0 — this step never fails
 
       - name: Commit updated data files
         run: |
           git config user.name  "WarWatch Bot"
           git config user.email "bot@warwatch"
           git add live_data.js prices_data.js seen_urls.json reports/ cache/ || true
-          # Only commit if there are actual changes
           git diff --staged --quiet || git commit -m "bot: update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
           git push || echo "Push failed — will retry next run"
