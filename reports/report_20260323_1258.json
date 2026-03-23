@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 12:51 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump halts US strikes on power plants after 'very good conversations' with Iran. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Trump halts US strikes on power plants after 'very good conversations' with Iran",
+      "detail": "US President Donald Trump has backed down from threats to bomb Iranian power plants following what he described on Monday as\u00a0\"very good and productive conversations\" with Iran . In a post on his Truth Social platform, Trump said he had ordered the Pentagon to halt strikes on Iranian energy infrastru",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-halts-us-strikes-power-plants-iran-conversations",
+      "fullAnalysis": "US President Donald Trump has backed down from threats to bomb Iranian power plants following what he described on Monday as\u00a0\"very good and productive conversations\" with Iran . In a post on his Truth Social platform, Trump said he had ordered the Pentagon to halt strikes on Iranian energy infrastru",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-03-23 12:51 UTC"
+}

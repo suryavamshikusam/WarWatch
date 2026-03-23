@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 11:56 UTC",
+  "generatedAt": "2026-03-23 12:51 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: \u2018Unprecedented\u2019: Israel, US carry out extensive strikes across Iran \u00b7 Israel and the United States have launched a new wave of attacks against Iran as\u2026"
+    "Other: Trump halts US strikes on power plants after 'very good conversations' with Iran \u00b7 US President Donald Trump has backed down from threats to bomb Iranian power pla\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-23 11:56 UTC",
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-23 12:51 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "\u2018Unprecedented\u2019: Israel, US carry out extensive strikes across Iran",
-      "summary": "Israel and the United States have launched a new wave of attacks against Iran as Tehran has renewed its strikes on its Gulf neighbours and pledged to hit power plants in Israel and other countries in the region if its power plants are targeted. The Israeli military said on Monday that it had \u201cbegun ",
+      "time": "7 min ago",
+      "headline": "Trump halts US strikes on power plants after 'very good conversations' with Iran",
+      "summary": "US President Donald Trump has backed down from threats to bomb Iranian power plants following what he described on Monday as\u00a0\"very good and productive conversations\" with Iran . In a post on his Truth Social platform, Trump said he had ordered the Pentagon to halt strikes on Iranian energy infrastru",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel and the United States have launched a new wave of attacks against Iran as Tehran has renewed its strikes on its Gulf neighbours and pledged to hit power plants in Israel and other countries in the region if its power plants are targeted. The Israeli military said on Monday that it had \u201cbegun",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/23/unprecedented-israel-us-carry-out-extensive-strikes-across-iran?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "US President Donald Trump has backed down from threats to bomb Iranian power plants following what he described on Monday as\u00a0\"very good and productive conversations\" with Iran . In a post on his Truth Social platform, Trump said he had ordered the Pentagon to halt strikes on Iranian energy infrastru",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-halts-us-strikes-power-plants-iran-conversations",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 12:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 13:46 UTC",
       "l": "MEDIUM",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 11:56 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 12:51 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Unprecedented\u2019: Israel, US carry out extensive strikes across Iran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump halts US strikes on power plants after 'very good conversations' with Iran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
