@@ -1,18 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-21 07:02 UTC",
+  "generatedAt": "2026-03-23 05:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Iran: Iran Fires Missiles at US Bases \u00b7 Iran has fired missiles at US bases in the region, including the Al Asad airbase\u2026",
-    "US: US Readies Plan for Ground Troops in Iran \u00b7 The US has produced detailed plans for the use of ground troops in Iran, accordi\u2026",
-    "Saudi Arabia and UAE: Saudi Arabia and UAE Support US-Israeli War Effort \u00b7 Saudi Arabia and the UAE have agreed to support the US-Israeli war effort agains\u2026",
-    "Markets: Oil Prices Rise Due to Supply Concerns \u00b7 Oil prices have risen due to concerns about supply disruptions caused by the war\u2026",
-    "India: India Concerned About Energy Imports \u00b7 India has expressed concern about the impact of the war on its energy imports. T\u2026"
+    "Other: \u2018We do it together, in confidence\u2019: Netanyahu backs US strikes on Iran \u00b7 \u2018We do it together, in confidence\u2019: Netanyahu backs US strikes on Iran \u201cWhatever\u2026",
+    "Other: Iran war Day 22: Trump weighs ground troops in Iran as Israel expands strikes to \u00b7 Pentagon officials have drawn up detailed plans for a possible deployment of US \u2026",
+    "Other: Iranian missiles injure 180 in towns near Israeli nuclear site \u00b7 Israel's health ministry says 180 people were injured - some seriously - in Iran\u2026",
+    "Other: US-Israel-Iran War Updates: Indian National Injured As Debris Falls In Abu Dhabi \u00b7 US-Israel-Iran War Updates: Indian National Injured As Debris Falls In Abu Dhabi\u2026",
+    "Other: \u2018Iranian missiles now have capacity to reach deep into Europe\u2019: Netanyahu calls  \u00b7 Israeli Prime Minister Benjamin Netanyahu on Sunday called on world leaders to j\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-21 07:02 UTC",
-    "sourcesUsed": 20
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-23 05:45 UTC",
+    "sourcesUsed": 25
   },
   "tensionMeters": [
     {
@@ -50,199 +50,154 @@ window.WARWATCH_LIVE = {
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
-      "actorClass": "p-red",
-      "actor": "Iran",
-      "time": "3 min ago",
-      "headline": "Iran Fires Missiles at US Bases",
-      "summary": "Iran has fired missiles at US bases in the region, including the Al Asad airbase in Iraq. The attacks have been seen as a significant escalation of the conflict. The US has responded with airstrikes against Iranian targets. The situation remains volatile, with both sides exchanging blows.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "\u2018We do it together, in confidence\u2019: Netanyahu backs US strikes on Iran",
+      "summary": "\u2018We do it together, in confidence\u2019: Netanyahu backs US strikes on Iran \u201cWhatever we do, we do together, and as far as possible, in confidence.\u201d \n\nIsraeli Prime Minister Benjamin Netanyahu has vowed to",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "Iran"
-      ]
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-blue",
-      "actor": "US",
-      "time": "3 min ago",
-      "headline": "US Readies Plan for Ground Troops in Iran",
-      "summary": "The US has produced detailed plans for the use of ground troops in Iran, according to reports. The plans include options for the president in scenarios where Iranians are captured and detained, as well as how to handle paramilitary forces. The US has not yet decided to deploy troops, but the plans are seen as a significant escalation of the conflict.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
-      "orgs": [
-        "US"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "\u2018We do it together, in confidence\u2019: Netanyahu backs US strikes on Iran \u201cWhatever we do, we do together, and as far as possible, in confidence.\u201d \n\nIsraeli Prime Minister Benjamin Netanyahu has vowed to",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/22/we-do-it-together-in-confidence-netanyahu-backs-us-strikes-on-iran?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "Saudi Arabia and UAE",
-      "time": "3 min ago",
-      "headline": "Saudi Arabia and UAE Support US-Israeli War Effort",
-      "summary": "Saudi Arabia and the UAE have agreed to support the US-Israeli war effort against Iran. The two countries have opened their airbases to US and Israeli planes, and have also provided logistical support. The move is seen as a significant escalation of the conflict, and has drawn in other countries in the region.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "Iran war Day 22: Trump weighs ground troops in Iran as Israel expands strikes to",
+      "summary": "Pentagon officials have drawn up detailed plans for a possible deployment of US ground forces into Iran, with senior military commanders submitting specific requests as President Trump weighs his next",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "Saudi Arabia and UAE"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "Pentagon officials have drawn up detailed plans for a possible deployment of US ground forces into Iran, with senior military commanders submitting specific requests as President Trump weighs his next",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-war-day-22-trump-weighs-ground-troops-in-iran-israel-expands-strikes-tehran-us-eases-oil-sanctions-amid-strait-of-hormuz-crisis-10593830/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "Markets",
-      "time": "3 min ago",
-      "headline": "Oil Prices Rise Due to Supply Concerns",
-      "summary": "Oil prices have risen due to concerns about supply disruptions caused by the war. The conflict has affected oil production and shipping in the region, leading to a shortage of oil on the global market. The price rise has had a significant impact on the global economy, with many countries dependent on oil imports.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "Iranian missiles injure 180 in towns near Israeli nuclear site",
+      "summary": "Israel's health ministry says 180 people were injured - some seriously - in Iranian missile strikes on two southern Israeli towns close to a nuclear facility. The ministry says 116 people were injured",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "Markets"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "Israel's health ministry says 180 people were injured - some seriously - in Iranian missile strikes on two southern Israeli towns close to a nuclear facility. The ministry says 116 people were injured",
+      "sourceUrl": "https://www.bbc.com/news/articles/c9qdvnv13qdo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "India",
-      "time": "3 min ago",
-      "headline": "India Concerned About Energy Imports",
-      "summary": "India has expressed concern about the impact of the war on its energy imports. The country is dependent on oil imports from the region, and the conflict has affected shipping and production. The Indian government has been in touch with other countries in the region to ensure the safe passage of oil tankers.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "US-Israel-Iran War Updates: Indian National Injured As Debris Falls In Abu Dhabi",
+      "summary": "US-Israel-Iran War Updates: Indian National Injured As Debris Falls In Abu Dhabi's Al Shawamekh",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "India"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "US-Israel-Iran War Updates: Indian National Injured As Debris Falls In Abu Dhabi's Al Shawamekh",
+      "sourceUrl": "https://www.ndtv.com/world-news/us-israel-iran-war-iran-missile-strike-on-israel-iran-targets-israeli-nuclear-facility-dimona-arad-trump-warns-iran-strait-of-hormuz-diego-garcia-11249333#publisher=newsstand",
+      "sourceLabel": "NDTV"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "Houthis",
-      "time": "3 min ago",
-      "headline": "Houthi Rebels Launch Attacks on Saudi Arabia",
-      "summary": "Houthi rebels in Yemen have launched attacks on Saudi Arabia, in support of Iran. The attacks have been seen as a significant escalation of the conflict, and have drawn in other countries in the region. The situation remains volatile, with both sides exchanging blows.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "\u2018Iranian missiles now have capacity to reach deep into Europe\u2019: Netanyahu calls ",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu on Sunday called on world leaders to join the war in West Asia against Iran after claiming that the Islamic nation now has the \u201ccapacity to reach deep into Eu",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "Houthis"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu on Sunday called on world leaders to join the war in West Asia against Iran after claiming that the Islamic nation now has the \u201ccapacity to reach deep into Eu",
+      "sourceUrl": "https://indianexpress.com/article/world/netanyahu-iran-missile-europe-threat-diego-garcia-arad-attack-10595482/",
+      "sourceLabel": "Indian Express"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "US and Israel",
-      "time": "3 min ago",
-      "headline": "US and Israel Discuss Ceasefire Options",
-      "summary": "The US and Israel have discussed ceasefire options, in an effort to bring an end to the conflict. The two countries have been in touch with other countries in the region, including Iran, to explore options for a ceasefire. The situation remains volatile, with both sides exchanging blows.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "Iran war Day 19: Tehran targets Israel to \u2018avenge\u2019 Ali Larijani\u2019s killing, US dr",
+      "summary": "In a fresh barrage, Iran launched cluster missiles at Israel early on Wednesday (Mar 18), which is its most recent use of a weapon meant to spread wider damage and slip past Israel\u2019s air defences and ",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "US and Israel"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "In a fresh barrage, Iran launched cluster missiles at Israel early on Wednesday (Mar 18), which is its most recent use of a weapon meant to spread wider damage and slip past Israel\u2019s air defences and ",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-war-day-19-fresh-attacks-israel-ali-larijani-strait-of-hormuz-10588377/",
+      "sourceLabel": "Indian Express"
     },
     {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "Russia and China",
-      "time": "3 min ago",
-      "headline": "Russia and China Call for Restraint",
-      "summary": "Russia and China have called for restraint in the conflict, in an effort to prevent further escalation. The two countries have been in touch with other countries in the region, including the US, Israel, and Iran, to explore options for a ceasefire. The situation remains volatile, with both sides exchanging blows.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "US-Israel-Iran War News Highlights : Trump threatens NATO over Strait of Hormuz ",
+      "summary": "Iran's Foreign Minister Abbas Araghchi has condemned Israeli strikes on Tehran's fuel depots as \"ecocide\", stating that the attacks violate international law and pose severe risks to residents' health",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "Russia and China"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "Iran's Foreign Minister Abbas Araghchi has condemned Israeli strikes on Tehran's fuel depots as \"ecocide\", stating that the attacks violate international law and pose severe risks to residents' health",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-missile-drone-attacks-west-asia-crisis-middle-east-war-news-10580960/",
+      "sourceLabel": "Indian Express"
     },
     {
-      "badgeClass": "b-gray",
-      "badgeLabel": "Low",
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
       "actorClass": "p-gray",
-      "actor": "Pakistan",
-      "time": "3 min ago",
-      "headline": "Pakistan Calls for Dialogue",
-      "summary": "Pakistan has called for dialogue to resolve the conflict, in an effort to prevent further escalation. The country has been in touch with other countries in the region, including the US, Israel, and Iran, to explore options for a ceasefire. The situation remains volatile, with both sides exchanging blows.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
+      "actor": "Other",
+      "time": "22 min ago",
+      "headline": "Why the Strait of Hormuz matters so much in the Iran war",
+      "summary": "Iran has effectively blocked the Strait of Hormuz, one of the world's busiest oil shipping channels, since the US and Israel attacked the country on 28 February. About 20% of the world's oil and lique",
+      "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
-        "Pakistan"
-      ]
-    },
-    {
-      "badgeClass": "b-high",
-      "badgeLabel": "Medium",
-      "actorClass": "p-gray",
-      "actor": "India",
-      "time": "3 min ago",
-      "headline": "Indian Nationals Evacuated from War Zone",
-      "summary": "The Indian government has evacuated its nationals from the war zone, in an effort to ensure their safety. The move has been seen as a significant step, given the volatile situation in the region. The Indian government has also been in touch with other countries in the region to ensure the safe passage of oil tankers.",
-      "whyTxt": "The conflict has escalated due to the increasing number of attacks and counter-attacks between the US, Israel, and Iran, as well as the involvement of other countries in the region.",
-      "orgs": [
-        "India"
-      ]
+        "Other"
+      ],
+      "fullAnalysis": "Iran has effectively blocked the Strait of Hormuz, one of the world's busiest oil shipping channels, since the US and Israel attacked the country on 28 February. About 20% of the world's oil and lique",
+      "sourceUrl": "https://www.bbc.com/news/articles/c78n6p09pzno?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "3 min ago",
+      "time": "22 min ago",
       "headline": "What to watch in the next 6 hours",
-      "summary": "The next 6-12 hours will be critical in determining the course of the conflict. Key things to watch include the response of the US and Israel to Iran's latest actions, the reaction of other countries in the region, and the impact of the conflict on global oil markets.",
-      "whyTxt": "The US-Israel-Iran war continues to escalate, with Iran firing missiles at US bases and Israel striking Iranian targets. The conflict has drawn in other countries, including Saudi Arabia and the UAE, which have agreed to support the US-Israeli war effort. The war has also had a significant impact on global oil markets, with prices rising due to concerns about supply disruptions. India has been affected by the war, with Indian nationals living in the region and Indian energy imports at risk.",
-      "orgs": []
+      "summary": "Monitor live feeds for latest developments.",
+      "whyTxt": "Latest updates from 25 sources. AI analysis temporarily unavailable \u2014 data will refresh shortly.",
+      "orgs": [],
+      "fullAnalysis": "",
+      "sourceUrl": "#",
+      "sourceLabel": "WarWatch"
     }
   ],
   "sentiment": {
     "overall_tone": "ESCALATING",
-    "us_stance": "The US has taken a strong stance against Iran, with President Trump calling for Iran to be punished for its actions.",
-    "israel_stance": "Israel has also taken a strong stance against Iran, with Prime Minister Netanyahu calling for a ground offensive against the country.",
-    "iran_stance": "Iran has responded to the US and Israeli actions, with Supreme Leader Khamenei calling for resistance against the two countries."
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
   },
-  "terms": [
-    {
-      "term": "Shahed drones",
-      "simple_explanation": "Shahed drones are a type of unmanned aerial vehicle (UAV) used by Iran for military purposes. They are known for their ability to carry out long-range attacks and have been used in the conflict against the US and Israel."
-    },
-    {
-      "term": "Ballistic missiles",
-      "simple_explanation": "Ballistic missiles are a type of missile that follows a ballistic trajectory, meaning they are guided by gravity and do not have a propulsion system. They are often used for long-range attacks and have been used in the conflict against the US and Israel."
-    },
-    {
-      "term": "Strait of Hormuz",
-      "simple_explanation": "The Strait of Hormuz is a narrow waterway that connects the Persian Gulf to the Gulf of Oman. It is a critical shipping route for oil and has been affected by the conflict, with Iran threatening to block the strait in response to US and Israeli actions."
-    },
-    {
-      "term": "Paramilitary forces",
-      "simple_explanation": "Paramilitary forces are military forces that are not part of a country's regular army. They are often used for unconventional warfare and have been used in the conflict by Iran and its allies."
-    },
-    {
-      "term": "Intermediate-range ballistic missiles",
-      "simple_explanation": "Intermediate-range ballistic missiles are a type of missile that has a range of between 1,000 and 5,000 kilometers. They are often used for long-range attacks and have been used in the conflict against the US and Israel."
-    },
-    {
-      "term": "Polymarket",
-      "simple_explanation": "Polymarket is a online platform that allows users to bet on the outcome of events. It has been used by some individuals to try to influence the reporting of the conflict, with some journalists receiving threatening messages demanding that they alter their reporting."
-    },
-    {
-      "term": "NATO",
-      "simple_explanation": "NATO (North Atlantic Treaty Organization) is a military alliance between several countries in North America and Europe. It has been affected by the conflict, with some member countries expressing concerns about the US and Israeli actions against Iran."
-    },
-    {
-      "term": "UN",
-      "simple_explanation": "The UN (United Nations) is an international organization that aims to promote peace and security around the world. It has been involved in efforts to resolve the conflict, with some countries calling for a UN-led ceasefire."
-    },
-    {
-      "term": "Sanctions",
-      "simple_explanation": "Sanctions are economic penalties imposed on a country by another country or group of countries. They have been used by the US and other countries against Iran in response to its actions, and have had a significant impact on the country's economy."
-    },
-    {
-      "term": "Chabahar port",
-      "simple_explanation": "Chabahar port is a port in southeastern Iran that has been developed by India. It is an important shipping route for India and has been affected by the conflict, with some countries expressing concerns about the safety of shipping in the region."
-    }
-  ],
+  "terms": [],
   "history": [
-    {
-      "t": "2026-03-20 07:55 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 08:33 UTC",
       "l": "MEDIUM",
@@ -337,8 +292,21 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-21 07:02 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 05:45 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "The US-Israel-Iran war continues to escalate, with Iran firing missiles at US bases and Israel striking Iranian targets. The conflict has drawn in other countries, including Saudi Arabia and the UAE, which have agreed to support the US-Israeli war effort. The war has also had a significant impact on global oil markets, with prices rising due to concerns about supply disruptions. India has been affected by the war, with Indian nationals living in the region and Indian energy imports at risk.",
-  "totalReports": 48
+  "execSummary": "Latest updates from 25 sources. AI analysis temporarily unavailable \u2014 data will refresh shortly.",
+  "totalReports": 48,
+  "execSummaryRich": "Latest updates from 25 sources. AI analysis temporarily unavailable \u2014 data will refresh shortly.",
+  "indiaSummary": "",
+  "indiaImpact": [],
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  }
 };
