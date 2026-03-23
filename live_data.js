@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 19:57 UTC",
+  "generatedAt": "2026-03-23 20:33 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'This war is not of their making,' Omani foreign minister says of Iran \u00b7 The man who oversaw the negotiations between the US and Iran into their final ho\u2026",
-    "Other: Vance and Netanyahu speak about Iran negotiations \u00b7 US Vice President JD Vance discussed efforts to open negotiations with Iran duri\u2026"
+    "Other: 'A direct hit' - BBC visits Israeli town after Iranian strike \u00b7 More than 160 people have been injured in Iranian strikes on southern Israel, em\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-23 19:57 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-23 20:33 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "'This war is not of their making,' Omani foreign minister says of Iran",
-      "summary": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
+      "time": "7 min ago",
+      "headline": "'A direct hit' - BBC visits Israeli town after Iranian strike",
+      "summary": "More than 160 people have been injured in Iranian strikes on southern Israel, emergency services have said. Ballistic missiles hit the towns of Arad and Dimona, which are close to a nuclear facility, on Saturday evening. Iranian state TV earlier said the strikes were in response to an attack on Iran",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
-      "sourceUrl": "https://www.middleeasteye.net/news/war-not-their-making-omani-foreign-minister-says-iran",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Vance and Netanyahu speak about Iran negotiations",
-      "summary": "US Vice President JD Vance discussed efforts to open negotiations with Iran during a phone call on Monday with Israeli Prime Minister Benjamin Netanyahu, Axios reported, citing a source familiar with the call. The source said the pair also discussed the components of a possible agreement to end the ",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "US Vice President JD Vance discussed efforts to open negotiations with Iran during a phone call on Monday with Israeli Prime Minister Benjamin Netanyahu, Axios reported, citing a source familiar with the call. The source said the pair also discussed the components of a possible agreement to end the",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-and-netanyahu-speak-about-iran-negotiations",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "More than 160 people have been injured in Iranian strikes on southern Israel, emergency services have said. Ballistic missiles hit the towns of Arad and Dimona, which are close to a nuclear facility, on Saturday evening. Iranian state TV earlier said the strikes were in response to an attack on Iran",
+      "sourceUrl": "https://www.bbc.com/news/videos/c3v6k0l631vo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 19:53 UTC",
-      "l": "CRITICAL",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 20:24 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 19:57 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 20:33 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'This war is not of their making,' Omani foreign minister says of Iran. Vance and Netanyahu speak about Iran negotiations. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'A direct hit' - BBC visits Israeli town after Iranian strike. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
