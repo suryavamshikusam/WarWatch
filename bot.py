@@ -1,335 +1,334 @@
 """
-dashboard.py — Builds live_data.js from saved JSON reports.
+bot.py — Bulletproof WarWatch orchestrator.
 
 Improvements:
-  - Writes to live_data.tmp.js first (atomic — bot.py renames on success)
-  - Guarantees every field the frontend needs is non-empty
-  - Auto-builds indiaSummary from india_impact if empty
-  - Auto-builds execSummaryRich from executive_summary if empty
-  - indiaImpact always has at least 1 item
+  - Atomic writes: writes live_data.tmp.js first, renames on success
+  - Health check: validates live_data.js after write, restores backup if invalid
+  - Article cache: if scraper returns 0, uses cached articles instead of skipping
+  - Always exits 0 — GitHub Actions never fails/pauses due to bot error
+  - Graceful import fallback for optional modules (emailer, prices_fetcher)
+
+Modes:
+  python bot.py              → run once (good for local testing)
+  python bot.py --watch      → continuous loop every 15 min
+  python bot.py --actions    → GitHub Actions mode
+  python bot.py --prices     → prices-only refresh
 """
 
-import json
-from datetime import datetime, timezone
+import json, sys, time, shutil
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
 
-REPORTS_DIR = Path("reports")
+from scraper   import fetch_all_articles, fetch_article_content
+from summarizer import generate_report, format_report_html
+from dashboard import build_dashboard
 
-LEVEL_PCT   = {"LOW":30,"MEDIUM":52,"HIGH":75,"CRITICAL":92}
-LEVEL_COLOR = {"LOW":"var(--green)","MEDIUM":"var(--amber)","HIGH":"#c87830","CRITICAL":"var(--red)"}
-ACTOR_CLASS = {"US":"p-blue","Israel":"p-blue","Iran":"p-red","Hamas":"p-red","Hezbollah":"p-red"}
-SIG_BADGE   = {"HIGH":"b-crit","MEDIUM":"b-high","LOW":"b-gray"}
+# Optional modules — bot works fine without them
+try:
+    from emailer import send_report_email
+    HAS_EMAIL = True
+except ImportError:
+    HAS_EMAIL = False
+    print("[INFO] emailer.py not found — email step skipped")
 
+try:
+    from prices_fetcher import build_prices_js
+    HAS_PRICES = True
+except ImportError:
+    HAS_PRICES = False
+    print("[INFO] prices_fetcher.py not found — prices step skipped")
 
-def _pct(level):  return LEVEL_PCT.get(level, 50)
-def _col(level):  return LEVEL_COLOR.get(level, "var(--text3)")
-def _actor(actor):return ACTOR_CLASS.get(actor, "p-gray")
-def _badge(sig):  return SIG_BADGE.get(sig, "b-gray")
-
-
-def _time_ago(ts: str) -> str:
-    try:
-        dt   = datetime.strptime(ts, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
-        diff = int((datetime.now(timezone.utc) - dt).total_seconds())
-        if diff < 60:    return "just now"
-        if diff < 3600:  return f"{diff//60} min ago"
-        if diff < 86400:
-            h = diff//3600; return f"{h} hr{'s' if h>1 else ''} ago"
-        d = diff//86400; return f"{d} day{'s' if d>1 else ''} ago"
-    except Exception:
-        return ts
-
-
-def _safe_str(value, fallback="") -> str:
-    """Return value if it's a non-empty string, else fallback."""
-    if isinstance(value, str) and value.strip():
-        return value.strip()
-    return fallback
+REPORTS_DIR         = Path("reports")
+SEEN_FILE           = Path("seen_urls.json")
+LIVE_JS             = Path("live_data.js")
+LIVE_JS_TMP         = Path("live_data.tmp.js")
+LIVE_JS_BACKUP      = Path("live_data.bak.js")
+CHECK_INTERVAL_MINS = 15
+MIN_NEW_ARTICLES    = 1
+MAX_SEEN_URLS       = 500
+MAX_DATA_AGE_HOURS  = 1
 
 
-def _build_india_impact(report: dict) -> list:
-    items = report.get("india_impact", [])
-    if not items:
-        # Guaranteed fallback so frontend India section never shows empty
-        return [{
-            "headline":    "India Monitors Conflict for Energy Security Impact",
-            "detail":      ("India's energy imports and Gulf diaspora are closely watching the "
-                            "US-Israel-Iran conflict. Oil price volatility directly affects fuel costs."),
-            "category":    "Energy",
-            "significance":"HIGH",
-            "full_detail": ("India imports over 85% of its crude oil, with a significant share from "
-                            "Gulf nations. Disruption to the Strait of Hormuz would immediately impact "
-                            "supply chains. Over 8 million Indian nationals work in the Gulf, and their "
-                            "remittances are a critical source of foreign exchange for India."),
-            "sourceUrl":   "#",
-            "source":      "WarWatch Monitor",
-        }]
-    return [{
-        "headline":    i.get("headline",""),
-        "detail":      i.get("detail",""),
-        "category":    i.get("category",""),
-        "significance":i.get("significance","MEDIUM"),
-        "full_detail": i.get("full_detail",""),
-        "sourceUrl":   i.get("sourceUrl","#"),
-        "source":      i.get("source","Source"),
-    } for i in items]
+# ── Seen-URL cache ────────────────────────────────────────────────────────────
 
-
-def _build_exec_summary_rich(report: dict) -> str:
-    """Guarantee a non-empty execSummaryRich."""
-    rich = _safe_str(report.get("execSummaryRich",""))
-    if rich:
-        return rich
-
-    # Fallback: build from executive_summary
-    base = _safe_str(report.get("executive_summary",""))
-    if base:
-        return base
-
-    # Last resort: build from key developments
-    devs = report.get("key_developments",[])
-    if devs:
-        headlines = ". ".join(d.get("headline","") for d in devs[:3] if d.get("headline"))
-        level     = report.get("escalation_level","HIGH")
-        tone      = report.get("sentiment",{}).get("overall_tone","ESCALATING")
-        return (f"Escalation level: {level}. Situation tone: {tone}. "
-                f"Latest developments: {headlines}. "
-                f"The US-Israel-Iran conflict continues to evolve with significant implications "
-                f"for regional stability, global oil markets, and India's energy security.")
-    return "War Monitor active. Monitoring US-Israel-Iran conflict developments."
-
-
-def _build_india_summary(report: dict) -> str:
-    """Guarantee a non-empty indiaSummary."""
-    summary = _safe_str(report.get("indiaSummary","") or report.get("india_summary",""))
-    if summary:
-        return summary
-
-    # Build from india_impact items
-    items = report.get("india_impact",[])
-    if items:
-        parts = []
-        for item in items[:3]:
-            h = item.get("headline","")
-            d = item.get("detail","")
-            fd = item.get("full_detail","")
-            text = fd or d or h
-            if text:
-                parts.append(text)
-        if parts:
-            return "\n\n".join(parts)
-
-    return (
-        "India continues to closely monitor the US-Israel-Iran conflict given its significant "
-        "energy import dependence on the Gulf region. Any disruption to oil shipments through "
-        "the Strait of Hormuz would directly impact fuel prices for Indian consumers.\n\n"
-        "The Indian government has contingency plans in place and is in active diplomatic "
-        "contact with all parties to protect Indian interests and the safety of over 8 million "
-        "Indian nationals living and working across Gulf nations.\n\n"
-        "India's diplomatic balancing act — maintaining strong ties with the US and Israel "
-        "while preserving its historically close relationship with Iran and Gulf states — "
-        "is being tested by the escalating conflict."
-    )
-
-
-def build_dashboard():
-    REPORTS_DIR.mkdir(exist_ok=True)
-
-    reports = []
-    for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True)[:48]:
+def load_seen() -> set:
+    if SEEN_FILE.exists():
         try:
-            reports.append(json.loads(f.read_text()))
+            return set(json.loads(SEEN_FILE.read_text()))
         except Exception:
             pass
-
-    latest = reports[0] if reports else {}
-    level  = latest.get("escalation_level","HIGH")
-
-    # ── Alerts ────────────────────────────────────────────────────────────────
-    alerts = []
-    for dev in latest.get("key_developments",[])[:5]:
-        h = dev.get("headline","")
-        d = dev.get("detail","")
-        a = dev.get("actor","")
-        if h:
-            alerts.append(f"{a}: {h} · {d[:80]}{'…' if len(d)>80 else ''}")
-    if not alerts:
-        alerts = [_safe_str(latest.get("executive_summary",""), "War Monitor — monitoring active.")]
-
-    # ── Hero stats ────────────────────────────────────────────────────────────
-    today_str    = datetime.now(timezone.utc).strftime("%Y-%m-%d")
-    updates_today = sum(1 for r in reports if r.get("generated_at","").startswith(today_str))
-    hero_stats   = {
-        "tension":      level,
-        "updatesToday": updates_today or len(reports),
-        "lastUpdated":  latest.get("generated_at",""),
-        "sourcesUsed":  latest.get("sources_used",0),
-    }
-
-    # ── Tension meters ────────────────────────────────────────────────────────
-    tone       = latest.get("sentiment",{}).get("overall_tone","")
-    tone_boost = {"VOLATILE":8,"ESCALATING":5,"TENSE":2,"STABLE":-10,"DE-ESCALATING":-15}.get(tone,0)
-    base       = _pct(level)
-    tension_meters = [
-        {"label":"US vs Iran",       "pct":min(98,base+tone_boost),    "lvl":level,     "color":_col(level)},
-        {"label":"Israel vs Iran",   "pct":min(98,base+tone_boost-8),  "lvl":level,     "color":_col(level)},
-        {"label":"Gaza ceasefire",   "pct":max(10,100-base+5),         "lvl":"Holding", "color":"var(--green)"},
-        {"label":"Nuclear progress", "pct":min(98,base-5+tone_boost),  "lvl":"High",    "color":"var(--amber)"},
-        {"label":"Regional war risk","pct":min(95,base-10+tone_boost), "lvl":"Elevated","color":"var(--red)"},
-    ]
-
-    # ── News cards ────────────────────────────────────────────────────────────
-    time_label = _time_ago(latest.get("generated_at",""))
-    news_cards = []
-    for dev in latest.get("key_developments",[]):
-        analysis = _safe_str(dev.get("fullAnalysis",""), dev.get("detail",""))
-        news_cards.append({
-            "badgeClass":  _badge(dev.get("significance","MEDIUM")),
-            "badgeLabel":  dev.get("significance","Medium").capitalize(),
-            "actorClass":  _actor(dev.get("actor","Other")),
-            "actor":       dev.get("actor","Other"),
-            "time":        time_label,
-            "headline":    dev.get("headline",""),
-            "summary":     dev.get("detail",""),
-            "whyTxt":      latest.get("escalation_reason",""),
-            "orgs":        [dev.get("actor","Other")],
-            "fullAnalysis":analysis,
-            "sourceUrl":   dev.get("sourceUrl","#"),
-            "sourceLabel": dev.get("sourceLabel", dev.get("source","Source")),
-        })
-
-    if latest.get("what_to_watch_next"):
-        news_cards.append({
-            "badgeClass":"b-gray","badgeLabel":"Analysis","actorClass":"p-gray",
-            "actor":"Monitor","time":time_label,
-            "headline":"What to watch in the next 6 hours",
-            "summary":latest.get("what_to_watch_next",""),
-            "whyTxt":latest.get("executive_summary",""),
-            "orgs":[],"fullAnalysis":"","sourceUrl":"#","sourceLabel":"WarWatch",
-        })
-
-    # ── History ───────────────────────────────────────────────────────────────
-    history = [
-        {"t":r.get("generated_at",""), "l":r.get("escalation_level","MEDIUM"),
-         "tone":r.get("sentiment",{}).get("overall_tone","")}
-        for r in reversed(reports[:20])
-    ]
-
-    # ── Build indiaMeter ──────────────────────────────────────────────────────
-    meter = latest.get("indiaMeter")
-    if not meter or not isinstance(meter, dict) or "pct" not in meter:
-        defaults = {"LOW":{"pct":28,"lvl":"Low","color":"#3daa72"},
-                    "MEDIUM":{"pct":50,"lvl":"Moderate","color":"#3daa72"},
-                    "HIGH":{"pct":72,"lvl":"High","color":"#d4892a"},
-                    "CRITICAL":{"pct":90,"lvl":"Severe","color":"#e05555"}}
-        meter = defaults.get(level, {"pct":72,"lvl":"High","color":"#d4892a"})
-
-    # ── Final payload — every field guaranteed non-empty ──────────────────────
-    payload = {
-        "generatedAt":     latest.get("generated_at",""),
-        "escalationLevel": level,
-        "alerts":          alerts,
-        "heroStats":       hero_stats,
-        "tensionMeters":   tension_meters,
-        "newsCards":       news_cards,
-        "sentiment":       latest.get("sentiment", {"overall_tone":"ESCALATING"}),
-        "terms":           latest.get("terminology_explained",[]),
-        "history":         history,
-        "execSummary":     _safe_str(latest.get("executive_summary",""), "Monitoring active."),
-        "totalReports":    len(reports),
-        # ── Guaranteed non-empty AI fields ────────────────────────────────────
-        "execSummaryRich": _build_exec_summary_rich(latest),
-        "indiaSummary":    _build_india_summary(latest),
-        "indiaImpact":     _build_india_impact(latest),
-        "indiaMeter":      meter,
-    }
-
-    # ── Atomic write: tmp first, bot.py renames on validation pass ────────────
-    tmp_path = Path("live_data.tmp.js")
-    js = f"window.WARWATCH_LIVE = {json.dumps(payload, indent=2)};\n"
-    tmp_path.write_text(js, encoding="utf-8")
-    print(f"[OK] live_data.tmp.js written — {len(news_cards)} cards, "
-          f"execSummary={len(payload['execSummaryRich'])}c, "
-          f"indiaSummary={len(payload['indiaSummary'])}c, "
-          f"indiaImpact={len(payload['indiaImpact'])} items")
-
-    _build_legacy_html(reports)
+    return set()
 
 
-def _build_legacy_html(reports):
-    level_colors = {"LOW":"#1D9E75","MEDIUM":"#BA7517","HIGH":"#D85A30","CRITICAL":"#A32D2D"}
-    cards = ""
-    for r in reports[:10]:
-        lvl   = r.get("escalation_level","MEDIUM")
-        color = level_colors.get(lvl,"#888")
-        devs  = "".join(
-            f'<li style="font-size:13px;margin:3px 0;color:#ccc">'
-            f'<strong style="color:#fff">{d.get("actor","")}</strong> — {d.get("headline","")}</li>'
-            for d in r.get("key_developments",[])[:3]
-        )
-        cards += f"""
-        <div style="background:#2a2a2a;border:1px solid rgba(255,255,255,0.1);border-radius:12px;padding:20px;margin-bottom:14px">
-          <div style="display:flex;align-items:center;gap:10px;margin-bottom:10px">
-            <span style="padding:3px 10px;border-radius:4px;font-size:11px;font-weight:700;background:{color}22;color:{color};border:1px solid {color};font-family:monospace;letter-spacing:.06em">{lvl}</span>
-            <span style="font-size:12px;color:#666">{r.get('generated_at','')}</span>
-            <span style="margin-left:auto;font-size:12px;color:#555">{r.get('sentiment',{}).get('overall_tone','')}</span>
-          </div>
-          <p style="font-size:14px;color:#ccc;margin:0 0 10px;line-height:1.7">{r.get('executive_summary','')}</p>
-          <ul style="margin:0;padding-left:16px">{devs}</ul>
-        </div>"""
+def save_seen(seen: set):
+    urls = list(seen)[-MAX_SEEN_URLS:]
+    SEEN_FILE.write_text(json.dumps(urls, indent=2))
 
-    timeline_data = json.dumps([
-        {"t":r.get("generated_at",""), "l":r.get("escalation_level","MEDIUM")}
-        for r in reversed(reports[:20])
-    ])
 
-    html = f"""<!DOCTYPE html>
-<html lang="en"><head>
-<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
-<title>WarWatch Bot — Report Log</title>
-<style>
-*{{box-sizing:border-box;margin:0;padding:0}}
-body{{font-family:'IBM Plex Sans',sans-serif;background:#1a1a1a;color:#ececec}}
-.bar{{background:#222;border-bottom:1px solid rgba(255,255,255,0.08);padding:14px 32px;display:flex;align-items:center;gap:12px}}
-.main{{max-width:860px;margin:0 auto;padding:28px 20px;display:grid;grid-template-columns:1fr 260px;gap:20px}}
-.card{{background:#212121;border:1px solid rgba(255,255,255,0.08);border-radius:12px;padding:20px;margin-bottom:16px}}
-h2{{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#5c5c5c;margin-bottom:14px}}
-canvas{{width:100%!important}} a{{color:#5b9cf6;text-decoration:none}}
-</style>
-</head><body>
-<div class="bar">
-  <span style="font-family:monospace;font-size:14px;font-weight:500;letter-spacing:.06em;text-transform:uppercase">War<span style="color:#e05555">Watch</span> Bot</span>
-  <span style="font-size:12px;color:#555">Gemini 2.0 Flash · Every 15min</span>
-  <span style="margin-left:auto;font-size:12px;color:#555">Last run: {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}</span>
-</div>
-<div class="main">
-  <div>
-    <h2>Report log — {len(reports)} reports</h2>
-    {cards or '<p style="color:#555;font-size:14px">No reports yet.</p>'}
-  </div>
-  <div style="position:sticky;top:20px;align-self:start">
-    <div class="card">
-      <h2>Escalation history</h2>
-      <canvas id="ch" height="180"></canvas>
-    </div>
-  </div>
-</div>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
-<script>
-const d={timeline_data};
-const lm={{"LOW":1,"MEDIUM":2,"HIGH":3,"CRITICAL":4}};
-const cm={{"LOW":"#3daa72","MEDIUM":"#d4892a","HIGH":"#c87830","CRITICAL":"#e05555"}};
-new Chart(document.getElementById('ch').getContext('2d'),{{
-  type:'line',
-  data:{{labels:d.map(x=>x.t.slice(5,16)),datasets:[{{data:d.map(x=>lm[x.l]||2),borderColor:'#e05555',backgroundColor:'rgba(224,85,85,0.08)',tension:0.4,fill:true,pointBackgroundColor:d.map(x=>cm[x.l]||'#d4892a'),pointRadius:4}}]}},
-  options:{{plugins:{{legend:{{display:false}}}},scales:{{y:{{min:0,max:5,ticks:{{color:'#5c5c5c',callback:v=>['','Low','Med','High','Crit',''][v]||''}},grid:{{color:'rgba(255,255,255,0.05)'}}}},x:{{ticks:{{color:'#5c5c5c',maxRotation:45}},grid:{{color:'rgba(255,255,255,0.05)'}}}}}}}}
-}});
-</script>
-</body></html>"""
+def _live_data_age_hours() -> float:
+    """
+    Read age from generatedAt INSIDE live_data.js — NOT file mtime.
+    File mtime resets on every git checkout so it is useless in GitHub Actions.
+    """
+    if not LIVE_JS.exists():
+        return 999.0
+    try:
+        text     = LIVE_JS.read_text()
+        json_str = text.replace("window.WARWATCH_LIVE =", "").strip().rstrip(";").strip()
+        data     = json.loads(json_str)
+        gen_at   = data.get("generatedAt", "")
+        if gen_at:
+            dt = datetime.strptime(gen_at, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
+            return (datetime.now(timezone.utc) - dt).total_seconds() / 3600
+    except Exception as e:
+        print(f"  [WARN] Could not read generatedAt: {e}")
+    return 999.0  # Can't read timestamp — treat as stale, always force a run
 
-    Path("dashboard.html").write_text(html, encoding="utf-8")
-    print("[OK] dashboard.html updated")
 
+# ── Health check ──────────────────────────────────────────────────────────────
+
+REQUIRED_KEYS = [
+    "generatedAt", "escalationLevel", "newsCards",
+    "execSummaryRich", "indiaSummary", "indiaImpact", "indiaMeter",
+]
+
+def _validate_live_data(path: Path) -> bool:
+    """Return True if live_data.js is valid and has all required keys."""
+    try:
+        text = path.read_text()
+        # Strip the window.WARWATCH_LIVE = ... wrapper
+        json_str = text.replace("window.WARWATCH_LIVE =", "").strip().rstrip(";").strip()
+        data = json.loads(json_str)
+        for key in REQUIRED_KEYS:
+            if key not in data:
+                print(f"  [HEALTH] Missing key: {key}")
+                return False
+        if not data.get("newsCards"):
+            print("  [HEALTH] newsCards is empty")
+            return False
+        print(f"  [HEALTH] live_data.js valid — {len(data.get('newsCards',[]))} cards, "
+              f"execSummary={len(data.get('execSummaryRich',''))}c, "
+              f"indiaSummary={len(data.get('indiaSummary',''))}c")
+        return True
+    except Exception as e:
+        print(f"  [HEALTH] Validation failed: {e}")
+        return False
+
+
+def _atomic_replace_live_data():
+    """
+    Move live_data.tmp.js → live_data.js atomically.
+    Validates before replacing; restores backup if new file is bad.
+    """
+    if not LIVE_JS_TMP.exists():
+        print("  [ATOMIC] No tmp file found — skipping replace")
+        return False
+
+    print("  [ATOMIC] Validating new live_data.js...")
+    if not _validate_live_data(LIVE_JS_TMP):
+        print("  [ATOMIC] New file failed validation — keeping old live_data.js")
+        LIVE_JS_TMP.unlink(missing_ok=True)
+        return False
+
+    # Backup current live_data.js
+    if LIVE_JS.exists():
+        shutil.copy2(LIVE_JS, LIVE_JS_BACKUP)
+
+    # Atomic rename
+    LIVE_JS_TMP.rename(LIVE_JS)
+    print("  [ATOMIC] live_data.js updated successfully ✓")
+    return True
+
+
+# ── Prices refresh ────────────────────────────────────────────────────────────
+
+def _refresh_prices():
+    if not HAS_PRICES:
+        return
+    try:
+        build_prices_js()
+        print("  [OK] prices_data.js refreshed.")
+    except Exception as e:
+        print(f"  [WARN] Prices fetch failed: {e}")
+
+
+# ── Core pipeline ─────────────────────────────────────────────────────────────
+
+def run_pipeline(articles: list):
+    """
+    Full pipeline: summarise → save report → build dashboard → email.
+    Uses atomic write so a crash mid-way never corrupts live_data.js.
+    """
+    REPORTS_DIR.mkdir(exist_ok=True)
+
+    print(f"\n[1/4] Fetching article content for top 8 articles...")
+    for i, art in enumerate(articles[:8]):
+        print(f"      [{i+1}/{min(8,len(articles))}] {art['title'][:65]}...")
+        try:
+            art["content"] = fetch_article_content(art["url"])
+        except Exception as e:
+            print(f"      [WARN] Content fetch failed: {e}")
+            art["content"] = ""
+
+    print(f"\n[2/4] Running AI pipeline...")
+    try:
+        report = generate_report(articles)
+    except Exception as e:
+        print(f"  [ERROR] generate_report raised: {e}")
+        # Build minimal report so pipeline never stops
+        from summarizer import _fallback_report, _validate_and_fill
+        report = _fallback_report(articles)
+        _validate_and_fill(report, articles)
+
+    print(f"\n[3/4] Saving report + building live_data.js...")
+    ts   = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
+    path = REPORTS_DIR / f"report_{ts}.json"
+    try:
+        path.write_text(json.dumps(report, indent=2))
+        print(f"      Saved: {path}")
+    except Exception as e:
+        print(f"      [WARN] Report save failed: {e}")
+
+    # Build dashboard writes to live_data.tmp.js via patched dashboard.py
+    try:
+        build_dashboard()
+        _atomic_replace_live_data()
+    except Exception as e:
+        print(f"      [ERROR] Dashboard build failed: {e}")
+
+    print(f"\n[3b] Refreshing prices...")
+    _refresh_prices()
+
+    print(f"\n[4/4] Sending email...")
+    if HAS_EMAIL:
+        try:
+            html_body = format_report_html(report)
+            level     = report.get("escalation_level","HIGH")
+            subject   = f"[{level}] WarWatch — {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}"
+            send_report_email(html_body, subject=subject)
+            print("      Email sent ✓")
+        except Exception as e:
+            print(f"      [WARN] Email failed: {e}")
+    else:
+        print("      Email skipped (emailer.py not present)")
+
+    print()
+
+
+# ── Run modes ─────────────────────────────────────────────────────────────────
+
+def run_actions():
+    """GitHub Actions mode — smart: new articles → full pipeline, stale → refresh, fresh → prices only."""
+    now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    print(f"\n=== WarWatch Bot — GitHub Actions [{now}] ===\n")
+
+    seen          = load_seen()
+    all_articles  = fetch_all_articles()
+    new_articles  = [a for a in all_articles if a["url"] not in seen]
+    age_hours     = _live_data_age_hours()
+    data_is_stale = age_hours > MAX_DATA_AGE_HOURS
+
+    print(f"Seen: {len(seen)} | All: {len(all_articles)} | New: {len(new_articles)}")
+    print(f"live_data.js age: {age_hours:.1f}h → {'STALE' if data_is_stale else 'fresh'}\n")
+
+    seen.update(a["url"] for a in all_articles)
+    save_seen(seen)
+
+    if len(new_articles) >= MIN_NEW_ARTICLES:
+        print(f">>> {len(new_articles)} new articles — full pipeline")
+        for a in new_articles:
+            print(f"    [{a['source']}] {a['title'][:72]}")
+        run_pipeline(new_articles)
+
+    elif data_is_stale:
+        # No new articles BUT data is old — run with all articles regardless of seen cache
+        # This handles the case where seen_urls.json has everything marked seen
+        pipeline_articles = all_articles[:20] if all_articles else []
+        print(f">>> Data is {age_hours:.1f}h old (stale) — forcing full pipeline with {len(pipeline_articles)} articles")
+        if pipeline_articles:
+            run_pipeline(pipeline_articles)
+        else:
+            print("    No articles at all — prices only")
+            _refresh_prices()
+
+    else:
+        print(f"No new articles, data fresh ({age_hours:.1f}h) — prices only")
+        _refresh_prices()
+
+    print("=== Done ===")
+
+
+def run_once():
+    """Force full run — ignores seen cache. Good for local testing."""
+    print(f"\n=== WarWatch Bot — ONE-TIME RUN ===\n")
+    articles = fetch_all_articles()
+    if not articles:
+        print("[ERROR] No articles found even from cache.")
+        return
+    print(f"Found {len(articles)} articles.\n")
+    run_pipeline(articles)
+    seen = load_seen()
+    seen.update(a["url"] for a in articles)
+    save_seen(seen)
+    print("Done! Open index.html in your browser.")
+
+
+def run_watch():
+    """Continuous local loop."""
+    print(f"\n=== WarWatch Bot — WATCHER (every {CHECK_INTERVAL_MINS} min) ===")
+    print("Press Ctrl+C to stop\n")
+
+    seen    = load_seen()
+    updates = 0
+
+    while True:
+        try:
+            now           = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+            age_hours     = _live_data_age_hours()
+            data_is_stale = age_hours > MAX_DATA_AGE_HOURS
+            print(f"[{now}] Checking... (data age: {age_hours:.1f}h)", end=" ", flush=True)
+
+            all_articles = fetch_all_articles()
+            new_articles = [a for a in all_articles if a["url"] not in seen]
+            seen.update(a["url"] for a in all_articles)
+            save_seen(seen)
+
+            if len(new_articles) >= MIN_NEW_ARTICLES:
+                print(f"\n>>> {len(new_articles)} new articles!")
+                run_pipeline(new_articles)
+                updates += 1
+            elif data_is_stale:
+                print(f"\n>>> Data stale ({age_hours:.1f}h) — refreshing")
+                run_pipeline(all_articles[:20])
+                updates += 1
+            else:
+                print("0 new, data fresh — skipping.")
+
+        except KeyboardInterrupt:
+            print(f"\nStopped. {updates} update(s) this session.")
+            break
+        except Exception as e:
+            print(f"\n[ERROR] {e} — continuing in {CHECK_INTERVAL_MINS} min")
+
+        time.sleep(CHECK_INTERVAL_MINS * 60)
+
+
+# ── Entry ─────────────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    build_dashboard()
+    try:
+        if "--actions" in sys.argv:
+            run_actions()
+        elif "--watch" in sys.argv or "--loop" in sys.argv:
+            run_watch()
+        elif "--prices" in sys.argv:
+            print("\n=== WarWatch Bot — PRICES ONLY ===\n")
+            _refresh_prices()
+        else:
+            run_once()
+    except Exception as e:
+        # Always exit 0 so GitHub Actions never pauses the workflow
+        print(f"\n[FATAL] Unhandled exception: {e}")
+        import traceback; traceback.print_exc()
+    finally:
+        sys.exit(0)   # Always 0 — never pause GitHub Actions
