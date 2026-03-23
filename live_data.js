@@ -1,14 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 20:33 UTC",
+  "generatedAt": "2026-03-23 21:57 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'A direct hit' - BBC visits Israeli town after Iranian strike \u00b7 More than 160 people have been injured in Iranian strikes on southern Israel, em\u2026"
+    "Other: Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination  \u00b7 Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu\u2026",
+    "Other: US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call \u00b7 US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warh\u2026",
+    "Other: \u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N \u00b7 Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Be\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-23 20:33 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-23 21:57 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -48,26 +50,58 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "'A direct hit' - BBC visits Israeli town after Iranian strike",
-      "summary": "More than 160 people have been injured in Iranian strikes on southern Israel, emergency services have said. Ballistic missiles hit the towns of Arad and Dimona, which are close to a nuclear facility, on Saturday evening. Iranian state TV earlier said the strikes were in response to an attack on Iran",
+      "time": "11 min ago",
+      "headline": "Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination ",
+      "summary": "Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu which they said was taken while he was ordering the elimination of Iranian officials, as false rumours claiming Netanyahu has died continued to buzz on social media. The picture comes a day after Netanyahu posted a vide",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "More than 160 people have been injured in Iranian strikes on southern Israel, emergency services have said. Ballistic missiles hit the towns of Arad and Dimona, which are close to a nuclear facility, on Saturday evening. Iranian state TV earlier said the strikes were in response to an attack on Iran",
-      "sourceUrl": "https://www.bbc.com/news/videos/c3v6k0l631vo?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC"
+      "fullAnalysis": "Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu which they said was taken while he was ordering the elimination of Iranian officials, as false rumours claiming Netanyahu has died continued to buzz on social media. The picture comes a day after Netanyahu posted a vide",
+      "sourceUrl": "https://indianexpress.com/article/world/israel-pm-benjamin-netanyahu-death-rumours-ai-deepfake-video-iran-threat-explained-10587042/",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call",
+      "summary": "US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warhead missiles at Israel early Wednesday, with the Revolutionary Guard describing the attack as revenge for Israel killing top security official Ali Larijani. Iran\u2019s Supreme National Security Council Wednesday confirmed th",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warhead missiles at Israel early Wednesday, with the Revolutionary Guard describing the attack as revenge for Israel killing top security official Ali Larijani. Iran\u2019s Supreme National Security Council Wednesday confirmed th",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-nato-strait-of-hormuz-10584202/",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "\u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N",
+      "summary": "Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Benjamin Netanyahu amid the ongoing war with Israel and the United States. Calling him a \u201cchild-killing criminal\u201d, the Guards said that they will continue to target Netanyahu with full force if he remains alive. \u201cIf this c",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Benjamin Netanyahu amid the ongoing war with Israel and the United States. Calling him a \u201cchild-killing criminal\u201d, the Guards said that they will continue to target Netanyahu with full force if he remains alive. \u201cIf this c",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-revolutionary-guards-kill-netanyahu-israel-us-war-10582846/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 20:24 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 21:25 UTC",
       "l": "CRITICAL",
@@ -194,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 20:33 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 21:57 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'A direct hit' - BBC visits Israeli town after Iranian strike. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination . US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call. \u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
