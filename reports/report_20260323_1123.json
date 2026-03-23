@@ -1,0 +1,137 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 11:08 UTC",
+  "executive_summary": "Latest updates from 25 sources covering the US-Israel-Iran conflict. Monitoring 8 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: How Iran is a victim of US-Israeli terrorism. Iran war Day 22: Trump weighs ground troops in Iran as Israel expands strikes to. Iranian missiles injure 180 in towns near Israeli nuclear site. \u2018Iranian missiles now have capacity to reach deep into Europe\u2019: Netanyahu calls . Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "How Iran is a victim of US-Israeli terrorism",
+      "detail": "My first visit to Iran took place in September 2015, when I attended a conference in Tehran on the subject of \u201cIranian terror victims\u201d - ranging, in this case, from the thousands of Iranians killed by the pathological regime-change cult known as the Mojahedin-e Khalq , to the Iranian scientists assa",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/how-iran-victim-us-israeli-terrorism",
+      "fullAnalysis": "My first visit to Iran took place in September 2015, when I attended a conference in Tehran on the subject of \u201cIranian terror victims\u201d - ranging, in this case, from the thousands of Iranians killed by the pathological regime-change cult known as the Mojahedin-e Khalq , to the Iranian scientists assa",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war Day 22: Trump weighs ground troops in Iran as Israel expands strikes to",
+      "detail": "Pentagon officials have drawn up detailed plans for a possible deployment of US ground forces into Iran, with senior military commanders submitting specific requests as President Trump weighs his next move in the US-Israel-led conflict, CBS News reported, citing sources. Trump has been considering w",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-war-day-22-trump-weighs-ground-troops-in-iran-israel-expands-strikes-tehran-us-eases-oil-sanctions-amid-strait-of-hormuz-crisis-10593830/",
+      "fullAnalysis": "Pentagon officials have drawn up detailed plans for a possible deployment of US ground forces into Iran, with senior military commanders submitting specific requests as President Trump weighs his next move in the US-Israel-led conflict, CBS News reported, citing sources. Trump has been considering w",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iranian missiles injure 180 in towns near Israeli nuclear site",
+      "detail": "Israel's health ministry says 180 people were injured - some seriously - in Iranian missile strikes on two southern Israeli towns close to a nuclear facility. The ministry says 116 people were injured in Arad and another 64 in Dimona, after ballistic missiles hit the towns on Saturday evening. The I",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/articles/c9qdvnv13qdo?at_medium=RSS&at_campaign=rss",
+      "fullAnalysis": "Israel's health ministry says 180 people were injured - some seriously - in Iranian missile strikes on two southern Israeli towns close to a nuclear facility. The ministry says 116 people were injured in Arad and another 64 in Dimona, after ballistic missiles hit the towns on Saturday evening. The I",
+      "sourceLabel": "BBC"
+    },
+    {
+      "headline": "\u2018Iranian missiles now have capacity to reach deep into Europe\u2019: Netanyahu calls ",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu on Sunday called on world leaders to join the war in West Asia against Iran after claiming that the Islamic nation now has the \u201ccapacity to reach deep into Europe,\u201d adding that Tehran\u2019s missile threats, including long-range missiles put \u201cthe entire world in ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/netanyahu-iran-missile-europe-threat-diego-garcia-arad-attack-10595482/",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu on Sunday called on world leaders to join the war in West Asia against Iran after claiming that the Islamic nation now has the \u201ccapacity to reach deep into Europe,\u201d adding that Tehran\u2019s missile threats, including long-range missiles put \u201cthe entire world in ",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran war Day 19: Tehran targets Israel to \u2018avenge\u2019 Ali Larijani\u2019s killing, US dr",
+      "detail": "In a fresh barrage, Iran launched cluster missiles at Israel early on Wednesday (Mar 18), which is its most recent use of a weapon meant to spread wider damage and slip past Israel\u2019s air defences and described the attack as revenge for the killing of Iran\u2019s top security official, Ali Larijani. Irani",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-war-day-19-fresh-attacks-israel-ali-larijani-strait-of-hormuz-10588377/",
+      "fullAnalysis": "In a fresh barrage, Iran launched cluster missiles at Israel early on Wednesday (Mar 18), which is its most recent use of a weapon meant to spread wider damage and slip past Israel\u2019s air defences and described the attack as revenge for the killing of Iran\u2019s top security official, Ali Larijani. Irani",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "US-Israel-Iran War Updates: Ahead Of Trump\u2019s Deadline, Iran Warns It May Target ",
+      "detail": "US-Israel-Iran War Updates: Ahead Of Trump\u2019s Deadline, Iran Warns It May Target Regional Power Infrastructure",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "NDTV",
+      "sourceUrl": "https://www.ndtv.com/world-news/us-israel-iran-war-iran-missile-strike-on-israel-iran-targets-israeli-nuclear-facility-dimona-arad-trump-warns-iran-strait-of-hormuz-diego-garcia-11249333#publisher=newsstand",
+      "fullAnalysis": "US-Israel-Iran War Updates: Ahead Of Trump\u2019s Deadline, Iran Warns It May Target Regional Power Infrastructure",
+      "sourceLabel": "NDTV"
+    },
+    {
+      "headline": "UK sees no evidence of Iran targeting Britain, says Starmer",
+      "detail": "British Prime Minister Keir Starmer said on Monday there had been no assessment that mainland Britain was being targeted by\u00a0Iran. \"We carry out assessments all the time in order to keep us safe, and there's no assessment that we're being targeted in that way,\" Starmer told reporters. He was asked if",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-sees-no-evidence-iran-targeting-britain-says-starmer",
+      "fullAnalysis": "British Prime Minister Keir Starmer said on Monday there had been no assessment that mainland Britain was being targeted by\u00a0Iran. \"We carry out assessments all the time in order to keep us safe, and there's no assessment that we're being targeted in that way,\" Starmer told reporters. He was asked if",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran says coastal attack will lead to full Gulf closure and mine-laying",
+      "detail": "An attack on\u00a0Iran's southern coast and islands will lead to Gulf routes being cut with the laying of sea mines, the country's Defence Council said on Monday, according to state media. The US is considering plans to occupy or blockade Iran's Kharg Island, the country's main oil export hub, to pressur",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-coastal-attack-will-lead-full-gulf-closure-and-mine-laying",
+      "fullAnalysis": "An attack on\u00a0Iran's southern coast and islands will lead to Gulf routes being cut with the laying of sea mines, the country's Defence Council said on Monday, according to state media. The US is considering plans to occupy or blockade Iran's Kharg Island, the country's main oil export hub, to pressur",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 25,
+  "generated_at": "2026-03-23 11:08 UTC"
+}
