@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 18:05 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israelis say southern towns left unprotected as war with Iran intensifies. Trump says he and 'the ayatollah' can share control of Strait of Hormuz. \u2018Israel acted alone\u2019: What Netanyahu said on Iran gas strike, Trump warning and . Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Israelis say southern towns left unprotected as war with Iran intensifies",
+      "detail": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/israelis-say-southern-towns-left-unprotected-war-iran-intensifies",
+      "fullAnalysis": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump says he and 'the ayatollah' can share control of Strait of Hormuz",
+      "detail": "US President Donald Trump on Monday said he and Iran's ayatollah could \"jointly\" control the Strait of Hormuz, as he unleashed a flurry of de-escalatory statements. Trump said the waterway through which 20 percent of global energy supplies pass will be \"jointly controlled. Maybe [by] me. Maybe me. M",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-says-he-and-ayatollah-can-share-control-strait-hormuz",
+      "fullAnalysis": "US President Donald Trump on Monday said he and Iran's ayatollah could \"jointly\" control the Strait of Hormuz, as he unleashed a flurry of de-escalatory statements. Trump said the waterway through which 20 percent of global energy supplies pass will be \"jointly controlled. Maybe [by] me. Maybe me. M",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "\u2018Israel acted alone\u2019: What Netanyahu said on Iran gas strike, Trump warning and ",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu said Israel \u201cacted alone\u201d in striking Iran\u2019s South Pars gas field and confirmed that Donald Trump had asked him to hold off further attacks on such energy infrastructure. US President Donald Trump said he opposed Israel\u2019s strike on Iran\u2019s South Pars gas fiel",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/netanyahu-israel-acted-alone-iran-south-pars-gas-field-strike-trump-10591307/",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said Israel \u201cacted alone\u201d in striking Iran\u2019s South Pars gas field and confirmed that Donald Trump had asked him to hold off further attacks on such energy infrastructure. US President Donald Trump said he opposed Israel\u2019s strike on Iran\u2019s South Pars gas fiel",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-23 18:05 UTC"
+}

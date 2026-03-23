@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 17:10 UTC",
+  "generatedAt": "2026-03-23 18:05 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Turkey seeks off-ramp to war through US-Iran negotiations \u00b7 Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the \u2026",
-    "Other: Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants? \u00b7 IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Do\u2026",
-    "Other: UK Defence Secretary says Iran fired missiles on Diego Garcia \u00b7 UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles \u2026"
+    "Other: Israelis say southern towns left unprotected as war with Iran intensifies \u00b7 Residents of Israel 's southern\u00a0Negev region say they've been left defenceless a\u2026",
+    "Other: Trump says he and 'the ayatollah' can share control of Strait of Hormuz \u00b7 US President Donald Trump on Monday said he and Iran's ayatollah could \"jointly\"\u2026",
+    "Other: \u2018Israel acted alone\u2019: What Netanyahu said on Iran gas strike, Trump warning and  \u00b7 Israeli Prime Minister Benjamin Netanyahu said Israel \u201cacted alone\u201d in striking \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-23 17:10 UTC",
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-23 18:05 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Turkey seeks off-ramp to war through US-Iran negotiations",
-      "summary": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
+      "time": "10 min ago",
+      "headline": "Israelis say southern towns left unprotected as war with Iran intensifies",
+      "summary": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-seeks-ramp-war-through-us-iran-negotiations",
+      "fullAnalysis": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
+      "sourceUrl": "https://www.middleeasteye.net/news/israelis-say-southern-towns-left-unprotected-war-iran-intensifies",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,39 +66,39 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants?",
-      "summary": "IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Donald Trump has ordered the Department of Defense, which the Trump administration calls the \u201cDepartment of War\u201d, to pause attacks on Iran\u2019s power infrastructure for five days, he said on Monday. The US president\u2019s order c",
+      "time": "10 min ago",
+      "headline": "Trump says he and 'the ayatollah' can share control of Strait of Hormuz",
+      "summary": "US President Donald Trump on Monday said he and Iran's ayatollah could \"jointly\" control the Strait of Hormuz, as he unleashed a flurry of de-escalatory statements. Trump said the waterway through which 20 percent of global energy supplies pass will be \"jointly controlled. Maybe [by] me. Maybe me. M",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Donald Trump has ordered the Department of Defense, which the Trump administration calls the \u201cDepartment of War\u201d, to pause attacks on Iran\u2019s power infrastructure for five days, he said on Monday. The US president\u2019s order c",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/23/energy-water-bonds-what-are-irans-targets-if-trump-hits-power-plants?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "US President Donald Trump on Monday said he and Iran's ayatollah could \"jointly\" control the Strait of Hormuz, as he unleashed a flurry of de-escalatory statements. Trump said the waterway through which 20 percent of global energy supplies pass will be \"jointly controlled. Maybe [by] me. Maybe me. M",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-says-he-and-ayatollah-can-share-control-strait-hormuz",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "UK Defence Secretary says Iran fired missiles on Diego Garcia",
-      "summary": "UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles at the joint UK-US Diego Garcia military base in the Indian Ocean on Friday. Speaking to British parliamentarians, Healey said: \"In the early hours of Friday morning, two Iranian missiles were launched in the direction o",
+      "time": "10 min ago",
+      "headline": "\u2018Israel acted alone\u2019: What Netanyahu said on Iran gas strike, Trump warning and ",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu said Israel \u201cacted alone\u201d in striking Iran\u2019s South Pars gas field and confirmed that Donald Trump had asked him to hold off further attacks on such energy infrastructure. US President Donald Trump said he opposed Israel\u2019s strike on Iran\u2019s South Pars gas fiel",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles at the joint UK-US Diego Garcia military base in the Indian Ocean on Friday. Speaking to British parliamentarians, Healey said: \"In the early hours of Friday morning, two Iranian missiles were launched in the direction o",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-defence-secretary-says-iran-fired-missiles-british-base",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said Israel \u201cacted alone\u201d in striking Iran\u2019s South Pars gas field and confirmed that Donald Trump had asked him to hold off further attacks on such energy infrastructure. US President Donald Trump said he opposed Israel\u2019s strike on Iran\u2019s South Pars gas fiel",
+      "sourceUrl": "https://indianexpress.com/article/world/netanyahu-israel-acted-alone-iran-south-pars-gas-field-strike-trump-10591307/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "10 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
@@ -129,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 17:01 UTC",
-      "l": "CRITICAL",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 17:52 UTC",
       "l": "HIGH",
@@ -228,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 17:10 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 18:05 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Turkey seeks off-ramp to war through US-Iran negotiations. Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants?. UK Defence Secretary says Iran fired missiles on Diego Garcia. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israelis say southern towns left unprotected as war with Iran intensifies. Trump says he and 'the ayatollah' can share control of Strait of Hormuz. \u2018Israel acted alone\u2019: What Netanyahu said on Iran gas strike, Trump warning and . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
