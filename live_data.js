@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 07:09 UTC",
+  "generatedAt": "2026-03-23 08:11 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: \"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf \u00b7 \"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
-    "Other: Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz \u00b7 Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz"
+    "Other: How Iran is a victim of US-Israeli terrorism \u00b7 My first visit to Iran took place in September 2015, when I attended a conferenc\u2026",
+    "Other: Japan 'not thinking about' discussing Hormuz passage with Iran \u00b7 Tokyo is \"not thinking about\" calling on\u00a0Iran\u00a0to let Japanese tankers through th\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-23 07:09 UTC",
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-23 08:11 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "12 min ago",
-      "headline": "\"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
-      "summary": "\"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
+      "headline": "How Iran is a victim of US-Israeli terrorism",
+      "summary": "My first visit to Iran took place in September 2015, when I attended a conference in Tehran on the subject of \u201cIranian terror victims\u201d - ranging, in this case, from the thousands of Iranians killed by",
       "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "\"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
-      "sourceUrl": "https://www.ndtv.com/world-news/ndtv-reports-from-persian-gulf-as-strait-of-hormuz-closure-strands-1-000-ships-11253188#publisher=newsstand",
-      "sourceLabel": "NDTV"
+      "fullAnalysis": "My first visit to Iran took place in September 2015, when I attended a conference in Tehran on the subject of \u201cIranian terror victims\u201d - ranging, in this case, from the thousands of Iranians killed by",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/how-iran-victim-us-israeli-terrorism",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "12 min ago",
-      "headline": "Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz",
-      "summary": "Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz",
+      "headline": "Japan 'not thinking about' discussing Hormuz passage with Iran",
+      "summary": "Tokyo is \"not thinking about\" calling on\u00a0Iran\u00a0to let Japanese tankers through the Strait of Hormuz, the foreign minister has said, after Tehran said it was ready to help. Japan depends on crude oil im",
       "whyTxt": "Conflict ongoing \u2014 manual review required",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-israel-us-war-zombie-tanker-ship-scrapped-in-bangladesh-5-years-ago-just-crossed-strait-of-hormuz-11253070#publisher=newsstand",
-      "sourceLabel": "NDTV"
+      "fullAnalysis": "Tokyo is \"not thinking about\" calling on\u00a0Iran\u00a0to let Japanese tankers through the Strait of Hormuz, the foreign minister has said, after Tehran said it was ready to help. Japan depends on crude oil im",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/japan-not-thinking-about-discussing-hormuz-passage-iran",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -99,11 +99,6 @@ window.WARWATCH_LIVE = {
   },
   "terms": [],
   "history": [
-    {
-      "t": "2026-03-20 09:23 UTC",
-      "l": "CRITICAL",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 11:29 UTC",
       "l": "CRITICAL",
@@ -196,6 +191,11 @@ window.WARWATCH_LIVE = {
     },
     {
       "t": "2026-03-23 07:09 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 08:11 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
     }
