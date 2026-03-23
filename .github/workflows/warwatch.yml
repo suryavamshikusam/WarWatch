@@ -2,31 +2,34 @@ name: WarWatch Bot
 
 on:
   schedule:
+    # Every 15 minutes — GitHub Actions minimum is 5 min
     - cron: '*/15 * * * *'
-  workflow_dispatch:
+  workflow_dispatch:  # Manual trigger from Actions tab
 
-permissions:
-  contents: write
+# Prevent multiple runs overlapping
+concurrency:
+  group: warwatch-bot
+  cancel-in-progress: false
 
 jobs:
   run-bot:
     runs-on: ubuntu-latest
+    timeout-minutes: 10   # Kill if stuck — prevents hanging runs
+
+    permissions:
+      contents: write     # Needed to commit live_data.js back to repo
+
     steps:
       - name: Checkout repo
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 1
 
       - name: Set up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
-
-      - name: Cache pip dependencies
-        uses: actions/cache@v4
-        with:
-          path: ~/.cache/pip
-          key: ${{ runner.os }}-pip-${{ hashFiles('requirements.txt') }}
-          restore-keys: |
-            ${{ runner.os }}-pip-
+          cache: 'pip'
 
       - name: Install dependencies
         run: pip install -r requirements.txt
@@ -34,15 +37,17 @@ jobs:
       - name: Run bot
         env:
           GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
-          GMAIL_ADDRESS:   ${{ secrets.GMAIL_ADDRESS }}
-          GMAIL_APP_PASS:  ${{ secrets.GMAIL_APP_PASS }}
-          REPORT_TO_EMAIL: ${{ secrets.REPORT_TO_EMAIL }}
+          EMAIL_FROM:     ${{ secrets.EMAIL_FROM }}
+          EMAIL_TO:       ${{ secrets.EMAIL_TO }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
         run: python bot.py --actions
+        # bot.py always exits 0 — this step never fails
 
-      - name: Commit updated files back to repo
+      - name: Commit updated data files
         run: |
           git config user.name  "WarWatch Bot"
-          git config user.email "bot@warwatch.local"
-          git add seen_urls.json reports/ live_data.js prices_data.js prices_history.json dashboard.html || true
-          git diff --cached --quiet || git commit -m "bot: update $(date -u +'%Y-%m-%d %H:%M UTC') [skip ci]"
-          git push
+          git config user.email "bot@warwatch"
+          git add live_data.js prices_data.js seen_urls.json reports/ cache/ || true
+          # Only commit if there are actual changes
+          git diff --staged --quiet || git commit -m "bot: update [$(date -u '+%Y-%m-%d %H:%M UTC')]"
+          git push || echo "Push failed — will retry next run"
