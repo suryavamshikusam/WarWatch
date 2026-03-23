@@ -157,7 +157,7 @@ def _fetch_og_image(url: str) -> str:
 
 def fetch_article_content(url: str) -> str:
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
+        resp = requests.get(url, headers=HEADERS, timeout=8, verify=False)
         if resp.status_code != 200: return ""
         soup = BeautifulSoup(resp.text, "lxml")
         for tag in soup(["script","style","nav","header","footer",
@@ -305,7 +305,7 @@ def fetch_all_articles() -> list:
         print(f"  Fetching og:image for {len(missing)} articles in parallel...")
         with ThreadPoolExecutor(max_workers=5) as executor:
             futures = {executor.submit(_fetch_og_image, a["url"]): a for a in missing}
-            for future in as_completed(futures, timeout=15):
+            for future in as_completed(futures, timeout=8):
                 art = futures[future]
                 try:
                     img = future.result(timeout=1)
