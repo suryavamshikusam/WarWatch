@@ -1,0 +1,48 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 07:09 UTC",
+  "executive_summary": "Latest updates from 2 sources. AI analysis temporarily unavailable \u2014 data will refresh shortly.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing \u2014 manual review required",
+  "key_developments": [
+    {
+      "headline": "\"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
+      "detail": "\"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "NDTV",
+      "sourceUrl": "https://www.ndtv.com/world-news/ndtv-reports-from-persian-gulf-as-strait-of-hormuz-closure-strands-1-000-ships-11253188#publisher=newsstand",
+      "fullAnalysis": "\"Strait Of Hormuz To The North\": NDTV Ground Report From Persian Gulf",
+      "sourceLabel": "NDTV"
+    },
+    {
+      "headline": "Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz",
+      "detail": "Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "NDTV",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-israel-us-war-zombie-tanker-ship-scrapped-in-bangladesh-5-years-ago-just-crossed-strait-of-hormuz-11253070#publisher=newsstand",
+      "fullAnalysis": "Ship 'Scrapped' In Bangladesh 5 Years Ago Just Crossed Strait Of Hormuz",
+      "sourceLabel": "NDTV"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [],
+  "what_to_watch_next": "Monitor live feeds for latest developments.",
+  "india_impact": [],
+  "sources_used": 2,
+  "generated_at": "2026-03-23 07:09 UTC",
+  "execSummaryRich": "Latest updates from 2 sources. AI analysis temporarily unavailable \u2014 data will refresh shortly.",
+  "indiaSummary": "",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  }
+}
