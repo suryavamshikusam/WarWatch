@@ -1,15 +1,12 @@
 """
 summarizer.py — Generates ALL AI content in CI using Gemini 2.0 Flash.
 
-Everything pre-generated server-side, baked into live_data.js.
-Frontend reads static data — zero API calls, zero exposed keys, instant loads.
-
-Per CI run generates:
-  - Structured report JSON
-  - Panel summary (3 paragraphs)     → report["execSummaryRich"]
-  - Per-card analysis (3 paragraphs) → dev["fullAnalysis"] for each card
-  - India summary (5 paragraphs)     → report["indiaSummary"]
-  - India tension meter              → report["indiaMeter"] {pct, lvl, color}
+Fixes vs previous version:
+  - Articles capped at 10 with content stripped to 200 chars (avoids rate limits)
+  - Longer sleep between API calls (2s base, more after big calls)
+  - Empty response retried with longer wait instead of crashing
+  - All 5 steps wrapped in try/except — partial failure never kills the run
+  - Reduced card analyses to top 5 cards (not 8) to stay under quota
 """
 
 import os, json, time, certifi
@@ -28,128 +25,137 @@ def _get_client():
     return genai.GenerativeModel(MODEL)
 
 
-def _call(model, prompt: str, max_tokens: int = 2000, temperature: float = 0.4) -> str:
+def _call(model, prompt: str, max_tokens: int = 1500, temperature: float = 0.4) -> str:
+    """
+    Single Gemini call with retry on rate limit or empty response.
+    Waits progressively longer on each retry.
+    Never raises — returns "" on total failure so callers can use fallback.
+    """
     config = genai.types.GenerationConfig(max_output_tokens=max_tokens, temperature=temperature)
+    wait_times = [30, 60, 90]
+
     for attempt in range(3):
         try:
-            return model.generate_content(prompt, generation_config=config).text.strip()
+            resp = model.generate_content(prompt, generation_config=config)
+            text = resp.text.strip() if resp.text else ""
+            if text:
+                return text
+            # Empty response = rate limited silently
+            wait = wait_times[attempt]
+            print(f"        [WARN] Empty response (attempt {attempt+1}/3), waiting {wait}s...")
+            time.sleep(wait)
         except Exception as e:
             err = str(e).lower()
-            if "429" in err or "quota" in err or "rate" in err:
-                wait = (attempt + 1) * 30
-                print(f"[WARN] Rate limit, waiting {wait}s...")
+            if "429" in err or "quota" in err or "rate" in err or "resource" in err:
+                wait = wait_times[attempt]
+                print(f"        [WARN] Rate limit (attempt {attempt+1}/3), waiting {wait}s...")
                 time.sleep(wait)
             else:
-                raise
+                print(f"        [WARN] Gemini error: {e}")
+                return ""
+
+    print("        [WARN] All 3 attempts failed, using fallback.")
     return ""
 
 
-def _card_analysis(model, dev: dict, report: dict) -> str:
-    """3-paragraph analysis for one news card. Stored in dev['fullAnalysis']."""
-    prompt = f"""You are a senior geopolitical analyst covering the US-Israel-Iran war of 2026.
+# ── Step 1 helpers ────────────────────────────────────────────────────────────
 
-Headline: {dev.get('headline', '')}
-Detail: {dev.get('detail', '')}
-Actor: {dev.get('actor', '')}
-Context: {report.get('escalation_reason', '')}
+def _build_article_text(articles: list) -> str:
+    """
+    Build compact article text for the main parse prompt.
+    Cap at 10 articles, 200 chars content each — keeps prompt under ~3000 tokens.
+    """
+    text = ""
+    for i, art in enumerate(articles[:10], 1):
+        text += f"\n[{i}] {art.get('source','?')}: {art['title']}\n"
+        text += f"    URL: {art['url']}\n"
+        if art.get("content"):
+            text += f"    {art['content'][:200]}\n"
+    return text
 
-Write exactly 3 paragraphs. No headings, no bullets, plain prose only.
 
-Para 1 — WHAT HAPPENED: Immediate military/political facts. Who, what, where, when.
-Para 2 — WHY IT MATTERS: Strategic significance, regional impact, India angle (oil/diaspora/diplomacy).
-Para 3 — WHAT'S NEXT: Two most likely scenarios in the next 24-48 hours.
-
-50-70 words each. Specific and direct. Explain acronyms on first use."""
-
-    try:
-        return _call(model, prompt, max_tokens=600, temperature=0.4)
-    except Exception as e:
-        print(f"        [WARN] Card analysis failed: {e}")
-        return dev.get("detail", "")
-
+# ── Step 2: Panel summary ─────────────────────────────────────────────────────
 
 def _panel_summary(model, report: dict) -> str:
-    """3-paragraph panel summary shown to every visitor on the left side."""
     devs = "\n".join([
-        f"- {d.get('actor','')}: {d.get('headline','')} — {d.get('detail','')}"
-        for d in report.get("key_developments", [])[:6]
+        f"- {d.get('actor','')}: {d.get('headline','')} — {d.get('detail','')[:120]}"
+        for d in report.get("key_developments", [])[:5]
     ])
-    prompt = f"""You are the senior editor of a conflict monitoring service.
+    prompt = f"""You are a conflict news editor. Write a 3-paragraph briefing. No headings, no bullets. Blank line between paragraphs.
 
 Escalation: {report.get('escalation_level','')} · Tone: {report.get('sentiment',{}).get('overall_tone','')}
-
-Key developments:
+Developments:
 {devs}
 
-Write exactly 3 paragraphs. No headings, no bullets, plain prose. Blank line between paragraphs.
+Para 1: What is happening RIGHT NOW — most critical facts. Max 4 sentences.
+Para 2: Consequences for the region, oil markets, and India. Max 4 sentences.
+Para 3: Most likely next 24 hours. Max 4 sentences.
 
-Para 1: What is happening RIGHT NOW — most critical developments last 12-24 hrs. Specific. Max 4 sentences.
-Para 2: Broader consequences — region, oil markets, India specifically. Max 4 sentences.
-Para 3: What is most likely next 24 hours. What to watch. Max 4 sentences.
+Under 200 words total."""
 
-Under 220 words total. No jargon without explanation."""
+    result = _call(model, prompt, max_tokens=500, temperature=0.35)
+    return result or report.get("executive_summary", "")
 
-    try:
-        return _call(model, prompt, max_tokens=700, temperature=0.35)
-    except Exception as e:
-        print(f"      [WARN] Panel summary failed: {e}")
-        return report.get("executive_summary", "")
 
+# ── Step 3: Card analysis ─────────────────────────────────────────────────────
+
+def _card_analysis(model, dev: dict, report: dict) -> str:
+    prompt = f"""Geopolitical analyst covering US-Israel-Iran war.
+
+Headline: {dev.get('headline','')}
+Detail: {dev.get('detail','')}
+Actor: {dev.get('actor','')}
+
+Write 3 short paragraphs. No headings, no bullets.
+Para 1: What happened — facts, who, where.
+Para 2: Why it matters — strategic significance and India angle.
+Para 3: What happens next — most likely 24-48hr scenario.
+Max 60 words each."""
+
+    result = _call(model, prompt, max_tokens=400, temperature=0.4)
+    return result or dev.get("detail", "")
+
+
+# ── Step 4: India summary ─────────────────────────────────────────────────────
 
 def _india_summary(model, report: dict) -> str:
-    """5-paragraph India impact summary."""
     items = report.get("india_impact", [])
     if not items:
         return ""
     items_text = "\n".join([
-        f"- [{i.get('category','')}] {i.get('headline','')}: {i.get('detail','')}"
+        f"- [{i.get('category','')}] {i.get('headline','')}: {i.get('detail','')[:120]}"
         for i in items
     ])
-    prompt = f"""You are a senior journalist writing for an Indian audience.
+    prompt = f"""Senior journalist writing for Indian readers.
 
 India developments:
 {items_text}
 
-Overall situation: {report.get('executive_summary','')}
+Write 4 paragraphs. No bullets. Flowing prose.
+Para 1: What's affecting India RIGHT NOW — oil, ports, investments.
+Para 2: Impact on ordinary families — petrol prices, cost of living. Use ₹.
+Para 3: Indians abroad in Gulf — UAE, Saudi, Kuwait. Remittances.
+Para 4: India's diplomatic position — Iran, Israel, US balancing act.
+Min 300 words."""
 
-Write exactly 5 paragraphs. No bullets. Only flowing prose.
+    result = _call(model, prompt, max_tokens=900, temperature=0.4)
+    return result or ""
 
-Para 1: What's happening RIGHT NOW affecting India — oil routes, ports, investments at risk.
-Para 2: The petrol pump and kitchen — how this hits ordinary Indian families. Real ₹ numbers.
-Para 3: Indians abroad — UAE, Saudi Arabia, Kuwait, Qatar, Oman. Impact on them and families back home.
-Para 4: India's diplomatic tightrope — Iran (Chabahar), Israel (defence), US (Quad). India's position.
-Para 5: What India should watch — two or three key developments in coming days.
 
-Warm, direct tone. Use ₹. Explain acronyms. Minimum 400 words."""
-
-    try:
-        return _call(model, prompt, max_tokens=1400, temperature=0.4)
-    except Exception as e:
-        print(f"      [WARN] India summary failed: {e}")
-        return ""
-
+# ── Step 5: India meter ───────────────────────────────────────────────────────
 
 def _india_meter(model, report: dict) -> dict:
-    """India tension meter — {pct, lvl, color} stored in live_data.js."""
     items = report.get("india_impact", [])
-    context = " ".join([i.get("headline", "") for i in items])
-    context += " " + report.get("indiaSummary", "")[:200]
+    context = " ".join([i.get("headline", "") for i in items[:3]])
 
-    prompt = f"""Situation: "{context}"
-Escalation: {report.get('escalation_level','MEDIUM')}
+    prompt = f"""Situation: "{context}" Escalation: {report.get('escalation_level','MEDIUM')}
+Return ONLY JSON, no markdown: {{"pct": 72, "lvl": "High", "color": "#d4892a"}}
+pct=0-100, lvl=Low/Moderate/High/Severe/Critical, color=#3daa72 if Low/Moderate else #d4892a if High else #e05555"""
 
-Return ONLY valid JSON, no markdown:
-{{"pct": 72, "lvl": "High", "color": "#d4892a"}}
-
-pct = 0-100 integer India impact score.
-lvl = one word: Low, Moderate, High, Severe, or Critical
-color = "#3daa72" if Low/Moderate, "#d4892a" if High, "#e05555" if Severe/Critical"""
-
+    raw = _call(model, prompt, max_tokens=50, temperature=0.1)
     try:
-        raw = _call(model, prompt, max_tokens=60, temperature=0.1)
         return json.loads(raw.replace("```json","").replace("```","").strip())
-    except Exception as e:
-        print(f"      [WARN] India meter failed: {e}")
+    except Exception:
         defaults = {
             "LOW":{"pct":30,"lvl":"Low","color":"#3daa72"},
             "MEDIUM":{"pct":52,"lvl":"Moderate","color":"#3daa72"},
@@ -159,41 +165,37 @@ color = "#3daa72" if Low/Moderate, "#d4892a" if High, "#e05555" if Severe/Critic
         return defaults.get(report.get("escalation_level","MEDIUM"), {"pct":52,"lvl":"Moderate","color":"#3daa72"})
 
 
+# ── Main pipeline ─────────────────────────────────────────────────────────────
+
 def generate_report(articles: list) -> dict:
     """
-    Full CI pipeline — generates everything, stores in report dict.
-    dashboard.py then bakes it all into live_data.js.
-    Frontend reads statically — no browser API calls at all.
+    Full CI pipeline — all AI generated here, baked into live_data.js by dashboard.py.
+    Each step is independent — failure in one never kills subsequent steps.
     """
     if not articles:
         return {"error": "No articles", "timestamp": datetime.utcnow().isoformat()}
 
     model = _get_client()
 
-    # ── 1. Parse articles into structured JSON ────────────────────────────────
-    print("      [1/5] Parsing articles...")
-    article_text = ""
-    for i, art in enumerate(articles[:20], 1):
-        article_text += f"\n[{i}] SOURCE: {art.get('source','?')} | URL: {art['url']}\n"
-        article_text += f"    HEADLINE: {art['title']}\n"
-        if art.get("content"):
-            article_text += f"    CONTENT: {art['content'][:600]}\n"
+    # ── Step 1: Parse articles → structured JSON ──────────────────────────────
+    print("      [1/5] Parsing articles (top 10)...")
+    article_text = _build_article_text(articles)
 
-    prompt = f"""Analyze these war news articles. Return ONLY a JSON object. No markdown, no backticks.
+    parse_prompt = f"""Analyze these war news articles. Return ONLY a JSON object. No markdown, no backticks, no extra text.
 
 ARTICLES:
 {article_text}
 
-Return this EXACT structure:
+Return this EXACT JSON:
 {{
-  "report_title": "War Monitor Report — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
-  "executive_summary": "3-4 sentence plain English summary",
+  "report_title": "War Monitor — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+  "executive_summary": "3-4 sentence plain English summary of the most critical developments",
   "escalation_level": "LOW or MEDIUM or HIGH or CRITICAL",
-  "escalation_reason": "one sentence explaining the level",
+  "escalation_reason": "one sentence",
   "key_developments": [
     {{
       "headline": "8-12 word headline",
-      "detail": "3-4 sentence explanation of what happened, who, why it matters",
+      "detail": "2-3 sentence explanation",
       "actor": "US or Israel or Iran or Hamas or Hezbollah or Pakistan or Russia or China or Houthis or Markets or Other",
       "type": "war or wider_war or markets or diplomacy or military or india",
       "significance": "LOW or MEDIUM or HIGH",
@@ -208,38 +210,145 @@ Return this EXACT structure:
     "iran_stance": "one sentence"
   }},
   "terminology_explained": [
-    {{"term": "word", "simple_explanation": "plain English"}}
+    {{"term": "word", "simple_explanation": "one sentence plain English"}}
   ],
   "what_to_watch_next": "2-3 things to watch in next 6-12 hours",
   "india_impact": [
     {{
       "headline": "India-specific headline",
-      "detail": "3 sentence explanation",
+      "detail": "2-3 sentence explanation",
       "category": "Economy or Diaspora or Diplomacy or Security or Energy or Trade",
       "source": "source name",
       "sourceUrl": "article URL",
       "significance": "LOW or MEDIUM or HIGH",
-      "full_detail": "5-6 sentence deeper explanation"
+      "full_detail": "4-5 sentence deeper explanation"
     }}
   ],
   "sources_used": {len(articles)},
   "generated_at": "{datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
 }}
 
-8-10 key_developments, 2-4 india_impact, 8-10 terminology_explained."""
+Include 6-8 key_developments, 2-3 india_impact, 5-6 terminology_explained. Keep all text concise."""
 
-    raw = _call(model, prompt, max_tokens=4000, temperature=0.3)
+    raw = _call(model, parse_prompt, max_tokens=3000, temperature=0.3)
+
+    # Clean markdown fences if present
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
     raw = raw.strip()
+
     if not raw:
-        raise ValueError("Empty Gemini response — rate limited, will retry.")
+        # Complete failure — build minimal report from article titles so bot doesn't crash
+        print("      [WARN] Parse step failed — building minimal report from headlines")
+        report = _minimal_report_from_articles(articles)
+    else:
+        try:
+            report = json.loads(raw)
+        except json.JSONDecodeError as e:
+            print(f"      [WARN] JSON parse error: {e} — building minimal report")
+            report = _minimal_report_from_articles(articles)
 
-    report = json.loads(raw)
+    # Match source URLs to developments
+    _match_source_urls(report, articles)
 
-    # Match source URLs
+    # Wait between big call and next calls
+    time.sleep(3)
+
+    # ── Step 2: Panel summary ─────────────────────────────────────────────────
+    print("      [2/5] Panel summary...")
+    try:
+        report["execSummaryRich"] = _panel_summary(model, report)
+    except Exception as e:
+        print(f"      [WARN] Panel summary failed: {e}")
+        report["execSummaryRich"] = report.get("executive_summary", "")
+    time.sleep(2)
+
+    # ── Step 3: Card analyses (top 5 only to stay under quota) ───────────────
+    cards = report.get("key_developments", [])[:5]
+    print(f"      [3/5] Card analyses ({len(cards)} cards)...")
+    for i, dev in enumerate(cards):
+        print(f"        {i+1}/{len(cards)}: {dev.get('headline','')[:55]}...")
+        try:
+            dev["fullAnalysis"] = _card_analysis(model, dev, report)
+        except Exception as e:
+            print(f"        [WARN] Card {i+1} failed: {e}")
+            dev["fullAnalysis"] = dev.get("detail", "")
+        time.sleep(2)  # 2s between each card call
+
+    # Mark remaining cards with empty analysis
+    for dev in report.get("key_developments", [])[5:]:
+        dev["fullAnalysis"] = dev.get("detail", "")
+
+    time.sleep(2)
+
+    # ── Step 4: India summary ─────────────────────────────────────────────────
+    if report.get("india_impact"):
+        print("      [4/5] India summary...")
+        try:
+            s = _india_summary(model, report)
+            report["india_summary"] = s
+            report["indiaSummary"]  = s
+        except Exception as e:
+            print(f"      [WARN] India summary failed: {e}")
+            report["india_summary"] = ""
+            report["indiaSummary"]  = ""
+        time.sleep(2)
+
+    # ── Step 5: India meter ───────────────────────────────────────────────────
+    print("      [5/5] India tension meter...")
+    try:
+        report["indiaMeter"] = _india_meter(model, report)
+    except Exception as e:
+        print(f"      [WARN] India meter failed: {e}")
+        report["indiaMeter"] = {"pct": 72, "lvl": "High", "color": "#d4892a"}
+
+    print(f"      Done — {len(report.get('key_developments',[]))} cards, "
+          f"panel={len(report.get('execSummaryRich',''))}c, "
+          f"india={len(report.get('indiaSummary',''))}c, "
+          f"meter={report.get('indiaMeter',{})}")
+
+    return report
+
+
+def _minimal_report_from_articles(articles: list) -> dict:
+    """
+    Fallback report built from article headlines when Gemini fails entirely.
+    Ensures the bot never crashes and always produces something.
+    """
+    devs = []
+    for art in articles[:8]:
+        devs.append({
+            "headline": art["title"][:80],
+            "detail": art.get("content", "")[:200] or art["title"],
+            "actor": "Other",
+            "type": "war",
+            "significance": "HIGH",
+            "source": art.get("source", "Source"),
+            "sourceUrl": art["url"],
+            "fullAnalysis": "",
+        })
+    return {
+        "report_title": f"War Monitor — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
+        "executive_summary": f"Latest updates from {len(articles)} sources. AI analysis temporarily unavailable — data will refresh shortly.",
+        "escalation_level": "HIGH",
+        "escalation_reason": "Conflict ongoing — manual review required",
+        "key_developments": devs,
+        "sentiment": {"overall_tone": "ESCALATING", "us_stance": "", "israel_stance": "", "iran_stance": ""},
+        "terminology_explained": [],
+        "what_to_watch_next": "Monitor live feeds for latest developments.",
+        "india_impact": [],
+        "sources_used": len(articles),
+        "generated_at": datetime.utcnow().strftime("%Y-%m-%d %H:%M UTC"),
+        "execSummaryRich": "",
+        "indiaSummary": "",
+        "indiaMeter": {"pct": 72, "lvl": "High", "color": "#d4892a"},
+    }
+
+
+def _match_source_urls(report: dict, articles: list):
+    """Match source URLs from articles to developments and india_impact items."""
     used_urls = set()
     for dev in report.get("key_developments", []):
         words = [w for w in dev.get("headline","").lower().split() if len(w) > 3]
@@ -250,9 +359,10 @@ Return this EXACT structure:
             if score > best_score: best_score, best = score, art
         if best:
             dev["sourceUrl"]   = best["url"]
-            dev["sourceLabel"] = best.get("source", dev.get("source", "Source"))
+            dev["sourceLabel"] = best.get("source", dev.get("source","Source"))
             used_urls.add(best["url"])
-        dev["fullAnalysis"] = ""  # filled in step 3
+        if "fullAnalysis" not in dev:
+            dev["fullAnalysis"] = ""
 
     india_used = set()
     for item in report.get("india_impact", []):
@@ -267,31 +377,8 @@ Return this EXACT structure:
             item["source"]    = best.get("source", item.get("source","Source"))
             india_used.add(best["url"])
 
-    # ── 2. Panel summary ──────────────────────────────────────────────────────
-    print("      [2/5] Panel summary...")
-    report["execSummaryRich"] = _panel_summary(model, report)
 
-    # ── 3. Per-card analyses ──────────────────────────────────────────────────
-    cards = report.get("key_developments", [])[:8]
-    print(f"      [3/5] Card analyses ({len(cards)} cards)...")
-    for i, dev in enumerate(cards):
-        print(f"        {i+1}/{len(cards)}: {dev.get('headline','')[:55]}...")
-        dev["fullAnalysis"] = _card_analysis(model, dev, report)
-        time.sleep(0.5)
-
-    # ── 4. India summary ──────────────────────────────────────────────────────
-    if report.get("india_impact"):
-        print("      [4/5] India summary...")
-        s = _india_summary(model, report)
-        report["india_summary"] = s
-        report["indiaSummary"]  = s
-
-    # ── 5. India meter ────────────────────────────────────────────────────────
-    print("      [5/5] India tension meter...")
-    report["indiaMeter"] = _india_meter(model, report)
-
-    return report
-
+# ── Email formatter ───────────────────────────────────────────────────────────
 
 def format_report_html(report: dict) -> str:
     level_colors = {"LOW":"#1D9E75","MEDIUM":"#BA7517","HIGH":"#D85A30","CRITICAL":"#A32D2D"}
@@ -329,7 +416,7 @@ def format_report_html(report: dict) -> str:
   </div>
   {india_section}
   <div style="padding:20px 28px;border-bottom:1px solid #eee">
-    <p style="font-size:13px;color:#555">Tone: <strong>{sentiment.get('overall_tone','')}</strong> &nbsp;·&nbsp; US: {sentiment.get('us_stance','')} &nbsp;·&nbsp; Iran: {sentiment.get('iran_stance','')}</p>
+    <p style="font-size:13px;color:#555">Tone: <strong>{sentiment.get('overall_tone','')}</strong></p>
   </div>
   <div style="padding:16px 28px;text-align:center;font-size:12px;color:#aaa">WarWatch · {report.get('generated_at','')} · Gemini AI</div>
 </div></body></html>"""
