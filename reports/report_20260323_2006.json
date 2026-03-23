@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 19:57 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'This war is not of their making,' Omani foreign minister says of Iran. Vance and Netanyahu speak about Iran negotiations. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "'This war is not of their making,' Omani foreign minister says of Iran",
+      "detail": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/war-not-their-making-omani-foreign-minister-says-iran",
+      "fullAnalysis": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Vance and Netanyahu speak about Iran negotiations",
+      "detail": "US Vice President JD Vance discussed efforts to open negotiations with Iran during a phone call on Monday with Israeli Prime Minister Benjamin Netanyahu, Axios reported, citing a source familiar with the call. The source said the pair also discussed the components of a possible agreement to end the ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-and-netanyahu-speak-about-iran-negotiations",
+      "fullAnalysis": "US Vice President JD Vance discussed efforts to open negotiations with Iran during a phone call on Monday with Israeli Prime Minister Benjamin Netanyahu, Axios reported, citing a source familiar with the call. The source said the pair also discussed the components of a possible agreement to end the ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-23 19:57 UTC"
+}

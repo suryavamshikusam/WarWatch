@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 19:14 UTC",
+  "generatedAt": "2026-03-23 19:57 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
     "Other: 'This war is not of their making,' Omani foreign minister says of Iran \u00b7 The man who oversaw the negotiations between the US and Iran into their final ho\u2026",
-    "Other: Israelis say southern towns left unprotected as war with Iran intensifies \u00b7 Residents of Israel 's southern\u00a0Negev region say they've been left defenceless a\u2026",
-    "Other: Netanyahu says Trump sees chance of deal with Iran \u00b7 Israeli Prime Minister Benjamin Netanyahu said on Monday that he spoke with US P\u2026"
+    "Other: Vance and Netanyahu speak about Iran negotiations \u00b7 US Vice President JD Vance discussed efforts to open negotiations with Iran duri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-23 19:14 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-23 19:57 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,7 +49,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "'This war is not of their making,' Omani foreign minister says of Iran",
       "summary": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
       "whyTxt": "Conflict ongoing.",
@@ -58,7 +57,7 @@ window.WARWATCH_LIVE = {
         "Other"
       ],
       "fullAnalysis": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
-      "sourceUrl": "https://www.middleeasteye.net/news/war-not-their-making-omani-fm-says-iran",
+      "sourceUrl": "https://www.middleeasteye.net/news/war-not-their-making-omani-foreign-minister-says-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,31 +65,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Israelis say southern towns left unprotected as war with Iran intensifies",
-      "summary": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
+      "time": "9 min ago",
+      "headline": "Vance and Netanyahu speak about Iran negotiations",
+      "summary": "US Vice President JD Vance discussed efforts to open negotiations with Iran during a phone call on Monday with Israeli Prime Minister Benjamin Netanyahu, Axios reported, citing a source familiar with the call. The source said the pair also discussed the components of a possible agreement to end the ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israelis-say-southern-towns-left-unprotected-war-iran-intensifies",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Netanyahu says Trump sees chance of deal with Iran",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu said on Monday that he spoke with US President Donald Trump, who saw a chance of reaching a deal with Iran. Trump says there was a possibility of \"leveraging the mighty achievements obtained by the IDF and the US military, in order to realise the goals of th",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said on Monday that he spoke with US President Donald Trump, who saw a chance of reaching a deal with Iran. Trump says there was a possibility of \"leveraging the mighty achievements obtained by the IDF and the US military, in order to realise the goals of th",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-trump-sees-chance-deal-ira",
+      "fullAnalysis": "US Vice President JD Vance discussed efforts to open negotiations with Iran during a phone call on Monday with Israeli Prime Minister Benjamin Netanyahu, Axios reported, citing a source familiar with the call. The source said the pair also discussed the components of a possible agreement to end the",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/vance-and-netanyahu-speak-about-iran-negotiations",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -98,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 18:37 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 19:53 UTC",
       "l": "CRITICAL",
@@ -228,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 19:14 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 19:57 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'This war is not of their making,' Omani foreign minister says of Iran. Israelis say southern towns left unprotected as war with Iran intensifies. Netanyahu says Trump sees chance of deal with Iran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'This war is not of their making,' Omani foreign minister says of Iran. Vance and Netanyahu speak about Iran negotiations. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
