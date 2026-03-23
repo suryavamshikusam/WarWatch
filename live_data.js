@@ -1,17 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 15:17 UTC",
+  "generatedAt": "2026-03-23 17:10 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial \u00b7 Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\u2026",
-    "Other: US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S \u00b7 While interacting with reporters at Florida's Palm Beach on Monday, US President\u2026",
-    "Other: Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made \u00b7 US President Donald Trump claimed to reporters that the price of oil will \"drop \u2026",
-    "Other: Israel's Mossad promised it could ignite regime change in Iran, says report \u00b7 Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that w\u2026"
+    "Other: Turkey seeks off-ramp to war through US-Iran negotiations \u00b7 Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the \u2026",
+    "Other: Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants? \u00b7 IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Do\u2026",
+    "Other: UK Defence Secretary says Iran fired missiles on Diego Garcia \u00b7 UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-23 15:17 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-23 17:10 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -51,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial",
-      "summary": "Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\" Israel's claim that missiles allegedly targeting the UK - US base on Diego Garcia last week were fired by Iran . His comments raise further questions about the strike against the military base in the Indian Ocean, whic",
+      "time": "11 min ago",
+      "headline": "Turkey seeks off-ramp to war through US-Iran negotiations",
+      "summary": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\" Israel's claim that missiles allegedly targeting the UK - US base on Diego Garcia last week were fired by Iran . His comments raise further questions about the strike against the military base in the Indian Ocean, whic",
-      "sourceUrl": "https://www.middleeasteye.net/news/nato-cannot-confirm-iran-behind-attack-uk-us-base-after-iranian-denial",
+      "fullAnalysis": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-seeks-ramp-war-through-us-iran-negotiations",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,47 +66,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S",
-      "summary": "While interacting with reporters at Florida's Palm Beach on Monday, US President Donald Trump said that Washington and Tehran \"have major points of agreement\". \"We have major point of agreement; I would say almost all points of agreement,\" Trump told reporters on Iran.",
+      "time": "11 min ago",
+      "headline": "Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants?",
+      "summary": "IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Donald Trump has ordered the Department of Defense, which the Trump administration calls the \u201cDepartment of War\u201d, to pause attacks on Iran\u2019s power infrastructure for five days, he said on Monday. The US president\u2019s order c",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "While interacting with reporters at Florida's Palm Beach on Monday, US President Donald Trump said that Washington and Tehran \"have major points of agreement\". \"We have major point of agreement; I would say almost all points of agreement,\" Trump told reporters on Iran.",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-donald-trump-threats-oil-hormuz-10594811/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Donald Trump has ordered the Department of Defense, which the Trump administration calls the \u201cDepartment of War\u201d, to pause attacks on Iran\u2019s power infrastructure for five days, he said on Monday. The US president\u2019s order c",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/23/energy-water-bonds-what-are-irans-targets-if-trump-hits-power-plants?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made",
-      "summary": "US President Donald Trump claimed to reporters that the price of oil will \"drop like a rock\" if the United States makes a deal with Iran to end the war. Since the conflict began, oil prices have increased significantly, after Iran threatened to strike vessels crossing the Strait of Hormuz. Trump cla",
+      "time": "11 min ago",
+      "headline": "UK Defence Secretary says Iran fired missiles on Diego Garcia",
+      "summary": "UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles at the joint UK-US Diego Garcia military base in the Indian Ocean on Friday. Speaking to British parliamentarians, Healey said: \"In the early hours of Friday morning, two Iranian missiles were launched in the direction o",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump claimed to reporters that the price of oil will \"drop like a rock\" if the United States makes a deal with Iran to end the war. Since the conflict began, oil prices have increased significantly, after Iran threatened to strike vessels crossing the Strait of Hormuz. Trump cla",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-suggests-price-oil-will-drop-rock-if-deal-iran-made",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Israel's Mossad promised it could ignite regime change in Iran, says report",
-      "summary": "Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that would lead to the collapse of Iran \u2019s government, the New York Times has reported . David Barnea, Mossad\u2019s chief, met with Israeli Prime Minister Benjamin Netanyahu days before the US and Israel began their war on Iran an",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that would lead to the collapse of Iran \u2019s government, the New York Times has reported . David Barnea, Mossad\u2019s chief, met with Israeli Prime Minister Benjamin Netanyahu days before the US and Israel began their war on Iran an",
-      "sourceUrl": "https://www.middleeasteye.net/news/israels-mossad-promised-it-could-ignite-regime-change-iran-says-report",
+      "fullAnalysis": "UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles at the joint UK-US Diego Garcia military base in the Indian Ocean on Friday. Speaking to British parliamentarians, Healey said: \"In the early hours of Friday morning, two Iranian missiles were launched in the direction o",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-defence-secretary-says-iran-fired-missiles-british-base",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -115,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 16:04 UTC",
-      "l": "MEDIUM",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 17:01 UTC",
       "l": "CRITICAL",
@@ -245,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 15:17 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 17:10 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial. US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S. Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made. Israel's Mossad promised it could ignite regime change in Iran, says report. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Turkey seeks off-ramp to war through US-Iran negotiations. Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants?. UK Defence Secretary says Iran fired missiles on Diego Garcia. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

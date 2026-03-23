@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 17:10 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Turkey seeks off-ramp to war through US-Iran negotiations. Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants?. UK Defence Secretary says Iran fired missiles on Diego Garcia. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Turkey seeks off-ramp to war through US-Iran negotiations",
+      "detail": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/turkey-seeks-ramp-war-through-us-iran-negotiations",
+      "fullAnalysis": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Energy, water, bonds: What are Iran\u2019s targets if Trump hits power plants?",
+      "detail": "IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Donald Trump has ordered the Department of Defense, which the Trump administration calls the \u201cDepartment of War\u201d, to pause attacks on Iran\u2019s power infrastructure for five days, he said on Monday. The US president\u2019s order c",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/23/energy-water-bonds-what-are-irans-targets-if-trump-hits-power-plants?traffic_source=rss",
+      "fullAnalysis": "IEA chief warns of \u2018very severe\u2019 global energy crisis United States President Donald Trump has ordered the Department of Defense, which the Trump administration calls the \u201cDepartment of War\u201d, to pause attacks on Iran\u2019s power infrastructure for five days, he said on Monday. The US president\u2019s order c",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "UK Defence Secretary says Iran fired missiles on Diego Garcia",
+      "detail": "UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles at the joint UK-US Diego Garcia military base in the Indian Ocean on Friday. Speaking to British parliamentarians, Healey said: \"In the early hours of Friday morning, two Iranian missiles were launched in the direction o",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-defence-secretary-says-iran-fired-missiles-british-base",
+      "fullAnalysis": "UK Defence Secretary John Healey claimed on Monday that Iran fired two missiles at the joint UK-US Diego Garcia military base in the Indian Ocean on Friday. Speaking to British parliamentarians, Healey said: \"In the early hours of Friday morning, two Iranian missiles were launched in the direction o",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-23 17:10 UTC"
+}
