@@ -265,8 +265,8 @@ Include 6-8 key_developments, 2-3 india_impact, 5-6 terminology_explained. Keep 
         report["execSummaryRich"] = report.get("executive_summary", "")
     time.sleep(2)
 
-    # ── Step 3: Card analyses (top 5 only to stay under quota) ───────────────
-    cards = report.get("key_developments", [])[:5]
+    # ── Step 3: Card analyses — all cards ────────────────────────────────────
+    cards = report.get("key_developments", [])
     print(f"      [3/5] Card analyses ({len(cards)} cards)...")
     for i, dev in enumerate(cards):
         print(f"        {i+1}/{len(cards)}: {dev.get('headline','')[:55]}...")
@@ -274,12 +274,8 @@ Include 6-8 key_developments, 2-3 india_impact, 5-6 terminology_explained. Keep 
             dev["fullAnalysis"] = _card_analysis(model, dev, report)
         except Exception as e:
             print(f"        [WARN] Card {i+1} failed: {e}")
-            dev["fullAnalysis"] = dev.get("detail", "")
+            dev["fullAnalysis"] = ""
         time.sleep(2)  # 2s between each card call
-
-    # Mark remaining cards with empty analysis
-    for dev in report.get("key_developments", [])[5:]:
-        dev["fullAnalysis"] = dev.get("detail", "")
 
     time.sleep(2)
 
