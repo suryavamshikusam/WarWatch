@@ -457,33 +457,23 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
       var articleUrl = c.sourceUrl || '#';
       var timeLbl = (channelName.toUpperCase()) + (c.time ? ' · '+c.time : '');
 
-      /* fullAnalysis was pre-generated in CI — only show if genuinely different from summary */
-      var hasRealAnalysis = c.fullAnalysis && c.fullAnalysis.trim().length > 80
-        && c.fullAnalysis.trim() !== (c.summary||'').trim();
-      var analysisBlock = '';
-      if (hasRealAnalysis) {
-        var paras = c.fullAnalysis.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,3);
-        if (!paras.length) paras = [c.fullAnalysis.trim()];
-        analysisBlock =
-          '<div class="ai-analysis-box">'+
-            '<div class="ai-analysis-lbl">AI Analysis · Gemini</div>'+
-            '<div class="ai-analysis-txt">'+paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('')+'</div>'+
-          '</div>';
-      } else if (c.whyTxt && c.whyTxt.trim().length > 40) {
-        /* Fallback: show "why it matters" context instead of repeating summary */
-        analysisBlock =
-          '<div class="ai-analysis-box">'+
-            '<div class="ai-analysis-lbl">Why It Matters</div>'+
-            '<div class="ai-analysis-txt"><p>'+c.whyTxt.trim()+'</p></div>'+
-          '</div>';
+      /* fullAnalysis pre-baked by Gemini in CI pipeline */
+      var analysisHtml = '';
+      var fa = (c.fullAnalysis || '').trim();
+      var isReal = fa.length > 100 && fa !== (c.summary||'').trim() && fa !== (c.detail||'').trim();
+      if (isReal) {
+        var paras = fa.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 4);
+        if (!paras.length) paras = [fa];
+        analysisHtml = paras.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
+      } else {
+        analysisHtml = '<p style="color:#3a3a3a;font-style:italic;font-size:11px">Analysis will appear after the next bot run.</p>';
       }
-      /* If neither is available, show nothing — better than repeating the summary */
 
       el.innerHTML =
         '<div class="rot-source">'+timeLbl+' <span class="'+tagCls+'">'+tagLbl+'</span></div>'+
         '<div class="rot-headline">'+(c.headline||'')+'</div>'+
         '<div class="rot-summary">'+(c.summary||'')+'</div>'+
-        analysisBlock+
+        (isReal ? '<div class="ai-analysis-box"><div class="ai-analysis-lbl">AI Analysis · Gemini</div><div class="ai-analysis-txt">'+analysisHtml+'</div></div>' : '')+
         '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="'+articleUrl+'" target="_blank">'+channelName+'</a></div>';
 
       stage.appendChild(el);
