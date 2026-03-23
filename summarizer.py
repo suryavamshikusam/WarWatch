@@ -43,7 +43,7 @@ def _call(model, prompt: str, max_tokens: int = 1200, temperature: float = 0.4) 
         temperature=temperature
     )
 
-    base_waits = [20, 45, 90, 180]  # exponential: 20 → 45 → 90 → 180
+    base_waits = [8, 15, 30, 60]  # exponential: 20 → 45 → 90 → 180
 
     for attempt in range(4):
         try:
@@ -464,7 +464,7 @@ def generate_report(articles: list) -> dict:
     print("      [1/5] Parsing articles...")
     report = _step1_parse(model, articles)
     _match_source_urls(report, articles)
-    time.sleep(3)
+    time.sleep(1)
 
     # ── Step 2: Panel summary ─────────────────────────────────────────────────
     print("      [2/5] Panel summary...")
@@ -473,7 +473,7 @@ def generate_report(articles: list) -> dict:
     except Exception as e:
         print(f"      [WARN] Step 2 exception: {e}")
         report["execSummaryRich"] = _fallback_exec_summary(report, articles)
-    time.sleep(2)
+    time.sleep(1)
 
     # Guarantee execSummaryRich is never empty
     if not report.get("execSummaryRich","").strip():
@@ -489,13 +489,13 @@ def generate_report(articles: list) -> dict:
         except Exception as e:
             print(f"        [{i+1}/5] WARN: {e} — using detail fallback")
             dev["fullAnalysis"] = dev.get("detail","")
-        time.sleep(2)
+        time.sleep(1)
 
     # Remaining cards get detail as analysis
     for dev in cards[5:]:
         dev.setdefault("fullAnalysis", dev.get("detail",""))
 
-    time.sleep(2)
+    time.sleep(1)
 
     # ── Step 4: India summary ─────────────────────────────────────────────────
     print("      [4/5] India summary...")
@@ -508,7 +508,7 @@ def generate_report(articles: list) -> dict:
     # Guarantee indiaSummary is never empty
     report["indiaSummary"] = india_sum if india_sum.strip() else _fallback_india_summary(report)
     report["india_summary"] = report["indiaSummary"]
-    time.sleep(2)
+    time.sleep(1)
 
     # ── Step 5: India meter ───────────────────────────────────────────────────
     print("      [5/5] India tension meter...")
