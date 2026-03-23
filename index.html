@@ -457,23 +457,33 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
       var articleUrl = c.sourceUrl || '#';
       var timeLbl = (channelName.toUpperCase()) + (c.time ? ' · '+c.time : '');
 
-      /* fullAnalysis was pre-generated in CI — render immediately, no API call */
-      var analysisHtml = '';
-      if (c.fullAnalysis && c.fullAnalysis.trim().length > 20) {
+      /* fullAnalysis was pre-generated in CI — only show if genuinely different from summary */
+      var hasRealAnalysis = c.fullAnalysis && c.fullAnalysis.trim().length > 80
+        && c.fullAnalysis.trim() !== (c.summary||'').trim();
+      var analysisBlock = '';
+      if (hasRealAnalysis) {
         var paras = c.fullAnalysis.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,3);
-        analysisHtml = paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
-      } else {
-        analysisHtml = '<p>'+(c.summary||c.detail||'Analysis will appear after next bot run.')+'</p>';
+        if (!paras.length) paras = [c.fullAnalysis.trim()];
+        analysisBlock =
+          '<div class="ai-analysis-box">'+
+            '<div class="ai-analysis-lbl">AI Analysis · Gemini</div>'+
+            '<div class="ai-analysis-txt">'+paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('')+'</div>'+
+          '</div>';
+      } else if (c.whyTxt && c.whyTxt.trim().length > 40) {
+        /* Fallback: show "why it matters" context instead of repeating summary */
+        analysisBlock =
+          '<div class="ai-analysis-box">'+
+            '<div class="ai-analysis-lbl">Why It Matters</div>'+
+            '<div class="ai-analysis-txt"><p>'+c.whyTxt.trim()+'</p></div>'+
+          '</div>';
       }
+      /* If neither is available, show nothing — better than repeating the summary */
 
       el.innerHTML =
         '<div class="rot-source">'+timeLbl+' <span class="'+tagCls+'">'+tagLbl+'</span></div>'+
         '<div class="rot-headline">'+(c.headline||'')+'</div>'+
         '<div class="rot-summary">'+(c.summary||'')+'</div>'+
-        '<div class="ai-analysis-box">'+
-          '<div class="ai-analysis-lbl">AI Analysis · Gemini</div>'+
-          '<div class="ai-analysis-txt">'+analysisHtml+'</div>'+
-        '</div>'+
+        analysisBlock+
         '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="'+articleUrl+'" target="_blank">'+channelName+'</a></div>';
 
       stage.appendChild(el);
