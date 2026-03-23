@@ -1,35 +1,23 @@
 """
-scraper.py — Fetches war/conflict articles from reliable RSS sources.
+scraper.py — Bulletproof RSS fetcher with parallel fetching + article cache.
 
-Reduced to 6 working sources only:
-  - Al Jazeera (working, war-focused)
-  - BBC World (working, reliable)
-  - NDTV Top Stories (working)
-  - Indian Express World (working, India angle)
-  - Middle East Eye (working, conflict-focused)
-  - Defense One (working, military angle)
-
-Removed (broken or too noisy):
-  - Reuters → DNS failure in GitHub Actions
-  - AP News → DNS failure
-  - Times of Israel → 403 Forbidden
-  - TRT World → 404 Not Found
-  - Haaretz → 92 articles, mostly paywalled opinion
-  - Indian Express → 127 articles, too many irrelevant
-  - Hindustan Times → 403 Forbidden
-  - Iran International → XML parse errors
-  - i24 News → XML parse errors
-  - LiveMint → low war relevance
-  - The Hindu → low war relevance
-  - Foreign Policy → low war relevance
+Improvements over original:
+  - ThreadPoolExecutor: all sources fetched in parallel, not sequentially
+  - Per-source 12s hard timeout — one slow source never blocks others
+  - Article cache: if ALL sources fail, serves last good scrape
+  - og:image fetch is parallel and capped at 5 with 6s timeout
+  - Never returns empty list if cache exists
 """
 
-import re
-import requests
+import re, json, warnings
 import xml.etree.ElementTree as ET
+from concurrent.futures import ThreadPoolExecutor, as_completed, TimeoutError as FuturesTimeout
 from datetime import datetime
+from pathlib import Path
+from urllib.parse import quote
+
+import requests
 from bs4 import BeautifulSoup
-import warnings
 
 warnings.filterwarnings("ignore")
 
@@ -46,44 +34,43 @@ HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/122.0.0.0 Safari/537.36"
     ),
-    "Accept": "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
+    "Accept":          "text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8",
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-MAX_ARTICLES = 25  # Hard cap — keeps Gemini prompt manageable
+MAX_ARTICLES   = 25
+CACHE_FILE     = Path("cache/articles.json")
+SOURCE_TIMEOUT = 12   # seconds per RSS source
+IMAGE_TIMEOUT  = 6    # seconds per og:image fetch
 
-# ── Reliable RSS sources only ──────────────────────────────────────────────
 RSS_SOURCES = [
-    # Tier 1: Reliable wire/broadcast
-    ("Al Jazeera",   "https://www.aljazeera.com/xml/rss/all.xml"),
-    ("BBC",          "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
-    ("BBC",          "https://feeds.bbci.co.uk/news/world/rss.xml"),
-    ("NDTV",         "https://feeds.feedburner.com/ndtvnews-top-stories"),
-    # Tier 2: Conflict/India focused
+    ("Al Jazeera",    "https://www.aljazeera.com/xml/rss/all.xml"),
+    ("BBC",           "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
+    ("BBC",           "https://feeds.bbci.co.uk/news/world/rss.xml"),
+    ("NDTV",          "https://feeds.feedburner.com/ndtvnews-top-stories"),
     ("Indian Express","https://indianexpress.com/section/world/feed/"),
     ("Middle East Eye","https://www.middleeasteye.net/rss"),
-    ("Defense One",  "https://www.defenseone.com/rss/all/"),
+    ("Defense One",   "https://www.defenseone.com/rss/all/"),
 ]
 
-# ── Keywords ───────────────────────────────────────────────────────────────
 HIGH_WEIGHT_KEYWORDS = [
-    "iran war", "us strike", "israel strike", "irgc", "idf strike",
-    "nuclear deal", "strait of hormuz", "kharg island", "chabahar",
-    "iranian missile", "iranian drone", "shahed", "ballistic missile",
-    "khamenei", "netanyahu", "pentagon iran", "us iran", "israel iran",
+    "iran war","us strike","israel strike","irgc","idf strike",
+    "nuclear deal","strait of hormuz","kharg island","chabahar",
+    "iranian missile","iranian drone","shahed","ballistic missile",
+    "khamenei","netanyahu","pentagon iran","us iran","israel iran",
 ]
 
 MEDIUM_WEIGHT_KEYWORDS = [
-    "iran", "israel", "hamas", "hezbollah", "gaza", "middle east",
-    "nuclear", "idf", "pentagon", "missile", "drone", "netanyahu",
-    "trump iran", "tehran", "tel aviv", "west bank",
-    "ceasefire", "sanctions", "hormuz", "saudi arabia",
-    "proxy", "warship", "airstrike", "retaliation", "escalation",
-    "india iran", "india oil", "india gulf", "indian sailors",
-    "brent crude", "oil price", "opec", "energy crisis",
+    "iran","israel","hamas","hezbollah","gaza","middle east",
+    "nuclear","idf","pentagon","missile","drone","netanyahu",
+    "trump iran","tehran","tel aviv","west bank",
+    "ceasefire","sanctions","hormuz","saudi arabia",
+    "proxy","warship","airstrike","retaliation","escalation",
+    "india iran","india oil","india gulf","indian sailors",
+    "brent crude","oil price","opec","energy crisis",
 ]
 
-UNSPLASH_PHOTO_IDS = {
+UNSPLASH_FALLBACKS = {
     "oil":       "1474546499760-77a0b18c5e69",
     "drone":     "1585776245991-cf89dd7fc73a",
     "nuclear":   "1518709414768-a88981a4515d",
@@ -97,82 +84,70 @@ UNSPLASH_PHOTO_IDS = {
 }
 
 
-def _get_relevance_score(title: str, desc: str) -> int:
+# ── Helpers ───────────────────────────────────────────────────────────────────
+
+def _score(title: str, desc: str) -> int:
     text = (title + " " + desc).lower()
-    score = 0
+    s = 0
     for kw in HIGH_WEIGHT_KEYWORDS:
-        if kw in text:
-            score += 3
+        if kw in text: s += 3
     for kw in MEDIUM_WEIGHT_KEYWORDS:
-        if kw in text:
-            score += 1
-    return score
+        if kw in text: s += 1
+    return s
 
 
-def _get_unsplash_fallback(title: str) -> str:
-    title_lower = title.lower()
-    for key, photo_id in UNSPLASH_PHOTO_IDS.items():
-        if key in title_lower:
-            return f"https://images.unsplash.com/photo-{photo_id}?w=800&h=450&q=80&fit=crop"
-    return f"https://images.unsplash.com/photo-{UNSPLASH_PHOTO_IDS['default']}?w=800&h=450&q=80&fit=crop"
+def _unsplash(title: str) -> str:
+    tl = title.lower()
+    for key, pid in UNSPLASH_FALLBACKS.items():
+        if key in tl:
+            return f"https://images.unsplash.com/photo-{pid}?w=800&h=450&q=80&fit=crop"
+    return f"https://images.unsplash.com/photo-{UNSPLASH_FALLBACKS['default']}?w=800&h=450&q=80&fit=crop"
 
 
-def _proxy_image(url):
-    if not url:
-        return url
-    if "unsplash.com" in url:
-        return url
-    from urllib.parse import quote
+def _proxy_image(url: str) -> str:
+    if not url: return url
+    if "unsplash.com" in url: return url
     clean = url.split("?")[0]
     return f"https://images.weserv.nl/?url={quote(clean, safe='')}&w=800&h=450&fit=cover&output=jpg"
 
 
-def _extract_image_from_rss(item) -> str:
+def _extract_rss_image(item) -> str:
     for mc in item.findall("media:content", NAMESPACES):
-        url = mc.get("url", "")
-        if url and any(ext in url.lower() for ext in [".jpg", ".jpeg", ".png", ".webp"]):
+        url = mc.get("url","")
+        if url and any(e in url.lower() for e in [".jpg",".jpeg",".png",".webp"]):
             return url
     mg = item.find("media:group", NAMESPACES)
     if mg is not None:
         mc = mg.find("media:content", NAMESPACES)
-        if mc is not None:
-            url = mc.get("url", "")
-            if url:
-                return url
+        if mc is not None and mc.get("url"):
+            return mc.get("url")
     mt = item.find("media:thumbnail", NAMESPACES)
-    if mt is not None:
-        url = mt.get("url", "")
-        if url:
-            return url
+    if mt is not None and mt.get("url"):
+        return mt.get("url","")
     enc = item.find("enclosure")
-    if enc is not None and "image" in enc.get("type", ""):
-        url = enc.get("url", "")
-        if url:
-            return url
-    desc = item.findtext("description", "")
+    if enc is not None and "image" in enc.get("type",""):
+        return enc.get("url","")
+    desc = item.findtext("description","")
     if desc and "<img" in desc:
         m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', desc)
-        if m:
-            return m.group(1)
+        if m: return m.group(1)
     return ""
 
 
 def _fetch_og_image(url: str) -> str:
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=12, verify=False)
-        if resp.status_code != 200:
-            return ""
+        resp = requests.get(url, headers=HEADERS, timeout=IMAGE_TIMEOUT, verify=False)
+        if resp.status_code != 200: return ""
         html = resp.text[:30000]
-        patterns = [
+        for pat in [
             r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']',
             r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']',
-        ]
-        for pat in patterns:
+        ]:
             m = re.search(pat, html)
             if m:
                 img = m.group(1)
                 if img.startswith("http") and any(
-                    ext in img.lower() for ext in [".jpg", ".jpeg", ".png", ".webp", "image"]
+                    e in img.lower() for e in [".jpg",".jpeg",".png",".webp","image"]
                 ):
                     return img
     except Exception:
@@ -183,121 +158,168 @@ def _fetch_og_image(url: str) -> str:
 def fetch_article_content(url: str) -> str:
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
-        if resp.status_code != 200:
-            return ""
+        if resp.status_code != 200: return ""
         soup = BeautifulSoup(resp.text, "lxml")
-        for tag in soup(["script", "style", "nav", "header", "footer",
-                          "aside", "figure", "figcaption", "noscript"]):
+        for tag in soup(["script","style","nav","header","footer",
+                          "aside","figure","figcaption","noscript"]):
             tag.decompose()
-        selectors = [
-            "article", ".article-body", ".story-body", ".post-content",
-            ".article__body", ".article-text", ".story-content",
-            "#article-body", "#story-body", ".entry-content",
-        ]
-        for sel in selectors:
+        for sel in [
+            "article",".article-body",".story-body",".post-content",
+            ".article__body",".article-text",".story-content",
+            "#article-body","#story-body",".entry-content",
+        ]:
             container = soup.select_one(sel)
             if container:
-                paragraphs = container.find_all("p")
-                text = " ".join(
-                    p.get_text(" ", strip=True) for p in paragraphs
+                paras = container.find_all("p")
+                text  = " ".join(
+                    p.get_text(" ",strip=True) for p in paras
                     if len(p.get_text(strip=True)) > 40
                 )
                 if len(text) > 200:
                     return text[:3000]
-        paragraphs = soup.find_all("p")
-        text = " ".join(
-            p.get_text(" ", strip=True) for p in paragraphs
-            if len(p.get_text(strip=True)) > 40
-        )
+        paras = soup.find_all("p")
+        text  = " ".join(p.get_text(" ",strip=True) for p in paras if len(p.get_text(strip=True)) > 40)
         return text[:3000]
     except Exception as e:
         print(f"  [WARN] Content fetch failed for {url}: {e}")
         return ""
 
 
-def _parse_feed(source_label: str, url: str, seen: set) -> list:
+# ── Per-source fetcher (runs in thread) ───────────────────────────────────────
+
+def _fetch_source(source_label: str, url: str, seen: set) -> list:
     results = []
     try:
-        resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
+        resp = requests.get(url, headers=HEADERS, timeout=SOURCE_TIMEOUT, verify=False)
         resp.raise_for_status()
         root = ET.fromstring(resp.content)
 
         for item in root.findall(".//item"):
-            title = item.findtext("title", "").strip()
-            link  = item.findtext("link", "").strip()
-            desc  = item.findtext("description", "").strip()
+            title = item.findtext("title","").strip()
+            link  = item.findtext("link","").strip()
+            desc  = item.findtext("description","").strip()
 
             if not link:
                 link_el = item.find("{http://www.w3.org/2005/Atom}link")
                 if link_el is not None:
-                    link = link_el.get("href", "").strip()
+                    link = link_el.get("href","").strip()
 
             if not link or link in seen or len(title) < 10:
                 continue
 
-            score = _get_relevance_score(title, desc)
-            if score == 0:
+            s = _score(title, desc)
+            if s == 0:
                 continue
 
             seen.add(link)
-            image_url = _proxy_image(_extract_image_from_rss(item))
-
             results.append({
                 "title":      title,
                 "url":        link,
                 "content":    desc,
                 "source":     source_label,
-                "imageUrl":   image_url,
-                "score":      score,
+                "imageUrl":   _proxy_image(_extract_rss_image(item)),
+                "score":      s,
                 "fetched_at": datetime.utcnow().isoformat(),
             })
 
     except ET.ParseError as e:
-        print(f"  [WARN] XML parse error for {source_label}: {e}")
+        print(f"  [WARN] XML parse error {source_label}: {e}")
     except requests.RequestException as e:
-        print(f"  [ERROR] {source_label}: {e}")
+        print(f"  [WARN] Request failed {source_label}: {e}")
     except Exception as e:
-        print(f"  [ERROR] Unexpected for {source_label}: {e}")
+        print(f"  [WARN] Unexpected error {source_label}: {e}")
 
     return results
 
 
+# ── Cache helpers ─────────────────────────────────────────────────────────────
+
+def _save_cache(articles: list):
+    try:
+        CACHE_FILE.parent.mkdir(exist_ok=True)
+        CACHE_FILE.write_text(json.dumps(articles, indent=2))
+    except Exception as e:
+        print(f"  [WARN] Cache save failed: {e}")
+
+
+def _load_cache() -> list:
+    try:
+        if CACHE_FILE.exists():
+            data = json.loads(CACHE_FILE.read_text())
+            print(f"  [INFO] Loaded {len(data)} articles from cache")
+            return data
+    except Exception as e:
+        print(f"  [WARN] Cache load failed: {e}")
+    return []
+
+
+# ── Main fetch ────────────────────────────────────────────────────────────────
+
 def fetch_all_articles() -> list:
-    articles = []
-    seen = set()
+    """
+    Fetch all RSS sources in parallel. Falls back to cache if all fail.
+    Never returns empty list if cache exists.
+    """
+    articles: list = []
+    seen:     set  = set()
     source_counts: dict = {}
 
-    print(f"  Fetching RSS from {len(RSS_SOURCES)} sources...")
-    for source_label, url in RSS_SOURCES:
-        batch = _parse_feed(source_label, url, seen)
-        if batch:
-            source_counts[source_label] = source_counts.get(source_label, 0) + len(batch)
-            articles.extend(batch)
+    print(f"  Fetching {len(RSS_SOURCES)} RSS sources in parallel...")
+
+    # Parallel fetch — each source in its own thread
+    with ThreadPoolExecutor(max_workers=len(RSS_SOURCES)) as executor:
+        futures = {
+            executor.submit(_fetch_source, label, url, seen): label
+            for label, url in RSS_SOURCES
+        }
+        for future in as_completed(futures, timeout=20):
+            label = futures[future]
+            try:
+                batch = future.result(timeout=1)
+                if batch:
+                    source_counts[label] = source_counts.get(label, 0) + len(batch)
+                    articles.extend(batch)
+            except FuturesTimeout:
+                print(f"  [WARN] {label} timed out")
+            except Exception as e:
+                print(f"  [WARN] {label} future error: {e}")
 
     articles.sort(key=lambda a: a.get("score", 0), reverse=True)
 
-    print(f"  Relevant articles found: {len(articles)}")
-    for src, count in sorted(source_counts.items()):
-        print(f"    {src}: {count}")
+    print(f"  Relevant articles: {len(articles)}")
+    for src, cnt in sorted(source_counts.items()):
+        print(f"    {src}: {cnt}")
 
-    # Hard cap — take only top MAX_ARTICLES by relevance score
+    # If scraper got nothing, fall back to cache
+    if not articles:
+        print("  [WARN] All sources returned 0 articles — loading from cache")
+        return _load_cache()
+
+    # Save good scrape to cache
     articles = articles[:MAX_ARTICLES]
-    print(f"  Using top {len(articles)} articles (capped at {MAX_ARTICLES})")
+    _save_cache(articles)
 
-    # Fetch og:image for top 8 missing images only
-    missing = [a for a in articles if not a["imageUrl"]][:8]
+    # Parallel og:image fetch for top 5 missing images
+    missing = [a for a in articles if not a["imageUrl"]][:5]
     if missing:
-        print(f"  Fetching og:image for {len(missing)} articles...")
-        for art in missing:
-            img = _fetch_og_image(art["url"])
-            if img:
-                art["imageUrl"] = _proxy_image(img)
+        print(f"  Fetching og:image for {len(missing)} articles in parallel...")
+        with ThreadPoolExecutor(max_workers=5) as executor:
+            futures = {executor.submit(_fetch_og_image, a["url"]): a for a in missing}
+            for future in as_completed(futures, timeout=15):
+                art = futures[future]
+                try:
+                    img = future.result(timeout=1)
+                    if img:
+                        art["imageUrl"] = _proxy_image(img)
+                except Exception:
+                    pass
 
-    # Unsplash fallback
+    # Unsplash fallback for anything still missing
     for art in articles:
         if not art["imageUrl"]:
-            art["imageUrl"] = _get_unsplash_fallback(art["title"])
+            art["imageUrl"] = _unsplash(art["title"])
 
+    print(f"  Using top {len(articles)} articles (capped at {MAX_ARTICLES})")
     return articles
 
 
