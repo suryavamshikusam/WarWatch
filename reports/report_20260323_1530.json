@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 15:17 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial. US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S. Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made. Israel's Mossad promised it could ignite regime change in Iran, says report. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial",
+      "detail": "Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\" Israel's claim that missiles allegedly targeting the UK - US base on Diego Garcia last week were fired by Iran . His comments raise further questions about the strike against the military base in the Indian Ocean, whic",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/nato-cannot-confirm-iran-behind-attack-uk-us-base-after-iranian-denial",
+      "fullAnalysis": "Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\" Israel's claim that missiles allegedly targeting the UK - US base on Diego Garcia last week were fired by Iran . His comments raise further questions about the strike against the military base in the Indian Ocean, whic",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S",
+      "detail": "While interacting with reporters at Florida's Palm Beach on Monday, US President Donald Trump said that Washington and Tehran \"have major points of agreement\". \"We have major point of agreement; I would say almost all points of agreement,\" Trump told reporters on Iran.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-donald-trump-threats-oil-hormuz-10594811/",
+      "fullAnalysis": "While interacting with reporters at Florida's Palm Beach on Monday, US President Donald Trump said that Washington and Tehran \"have major points of agreement\". \"We have major point of agreement; I would say almost all points of agreement,\" Trump told reporters on Iran.",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made",
+      "detail": "US President Donald Trump claimed to reporters that the price of oil will \"drop like a rock\" if the United States makes a deal with Iran to end the war. Since the conflict began, oil prices have increased significantly, after Iran threatened to strike vessels crossing the Strait of Hormuz. Trump cla",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-suggests-price-oil-will-drop-rock-if-deal-iran-made",
+      "fullAnalysis": "US President Donald Trump claimed to reporters that the price of oil will \"drop like a rock\" if the United States makes a deal with Iran to end the war. Since the conflict began, oil prices have increased significantly, after Iran threatened to strike vessels crossing the Strait of Hormuz. Trump cla",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israel's Mossad promised it could ignite regime change in Iran, says report",
+      "detail": "Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that would lead to the collapse of Iran \u2019s government, the New York Times has reported . David Barnea, Mossad\u2019s chief, met with Israeli Prime Minister Benjamin Netanyahu days before the US and Israel began their war on Iran an",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/israels-mossad-promised-it-could-ignite-regime-change-iran-says-report",
+      "fullAnalysis": "Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that would lead to the collapse of Iran \u2019s government, the New York Times has reported . David Barnea, Mossad\u2019s chief, met with Israeli Prime Minister Benjamin Netanyahu days before the US and Israel began their war on Iran an",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-23 15:17 UTC"
+}

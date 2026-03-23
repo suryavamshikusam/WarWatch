@@ -1,16 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 14:13 UTC",
+  "generatedAt": "2026-03-23 15:17 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Turkey seeks off-ramp to war through US-Iran negotiations \u00b7 Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the \u2026",
-    "Other: Israel destroys key bridge in southern Lebanon, stoking fears of 'ground invasio \u00b7 Israeli forces destroyed a key bridge linking southern Lebanon to the rest of th\u2026",
-    "Other: Pope Leo says aerial military strikes should be banned \u00b7 Pope Leo sharply criticised aerial bombardments on Monday, saying they are indis\u2026"
+    "Other: Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial \u00b7 Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\u2026",
+    "Other: US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S \u00b7 While interacting with reporters at Florida's Palm Beach on Monday, US President\u2026",
+    "Other: Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made \u00b7 US President Donald Trump claimed to reporters that the price of oil will \"drop \u2026",
+    "Other: Israel's Mossad promised it could ignite regime change in Iran, says report \u00b7 Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that w\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-23 14:13 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-23 15:17 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -50,15 +51,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Turkey seeks off-ramp to war through US-Iran negotiations",
-      "summary": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
+      "time": "13 min ago",
+      "headline": "Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial",
+      "summary": "Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\" Israel's claim that missiles allegedly targeting the UK - US base on Diego Garcia last week were fired by Iran . His comments raise further questions about the strike against the military base in the Indian Ocean, whic",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Turkey is seeking an off-ramp to the war on Iran , engaging both the US and the Islamic Republic in an effort to initiate negotiations on a potential deal, sources familiar with the matter told Middle East Eye. On Sunday, Turkish Foreign Minister Hakan Fidan held a series of phone calls with his Ira",
-      "sourceUrl": "https://www.middleeasteye.net/news/turkey-seeks-off-ramp-war-through-us-iran-negotiations",
+      "fullAnalysis": "Nato Secretary General Mark Rutte has said the military alliance \"cannot confirm\" Israel's claim that missiles allegedly targeting the UK - US base on Diego Garcia last week were fired by Iran . His comments raise further questions about the strike against the military base in the Indian Ocean, whic",
+      "sourceUrl": "https://www.middleeasteye.net/news/nato-cannot-confirm-iran-behind-attack-uk-us-base-after-iranian-denial",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +67,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Israel destroys key bridge in southern Lebanon, stoking fears of 'ground invasio",
-      "summary": "Israeli forces destroyed a key bridge linking southern Lebanon to the rest of the country on Sunday, and attacked homes near the southern border,\u00a0an escalation Lebanese President Joseph Aoun warned was a \"prelude to ground invasion\". The Israeli army appeared to destroy the Qasmiyeh Bridge near the ",
+      "time": "13 min ago",
+      "headline": "US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S",
+      "summary": "While interacting with reporters at Florida's Palm Beach on Monday, US President Donald Trump said that Washington and Tehran \"have major points of agreement\". \"We have major point of agreement; I would say almost all points of agreement,\" Trump told reporters on Iran.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli forces destroyed a key bridge linking southern Lebanon to the rest of the country on Sunday, and attacked homes near the southern border,\u00a0an escalation Lebanese President Joseph Aoun warned was a \"prelude to ground invasion\". The Israeli army appeared to destroy the Qasmiyeh Bridge near the",
-      "sourceUrl": "https://www.middleeasteye.net/news/israel-destroys-key-bridge-lebanon-stoking-fears-ground-invasion",
+      "fullAnalysis": "While interacting with reporters at Florida's Palm Beach on Monday, US President Donald Trump said that Washington and Tehran \"have major points of agreement\". \"We have major point of agreement; I would say almost all points of agreement,\" Trump told reporters on Iran.",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-donald-trump-threats-oil-hormuz-10594811/",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made",
+      "summary": "US President Donald Trump claimed to reporters that the price of oil will \"drop like a rock\" if the United States makes a deal with Iran to end the war. Since the conflict began, oil prices have increased significantly, after Iran threatened to strike vessels crossing the Strait of Hormuz. Trump cla",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US President Donald Trump claimed to reporters that the price of oil will \"drop like a rock\" if the United States makes a deal with Iran to end the war. Since the conflict began, oil prices have increased significantly, after Iran threatened to strike vessels crossing the Strait of Hormuz. Trump cla",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-suggests-price-oil-will-drop-rock-if-deal-iran-made",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -82,15 +99,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Pope Leo says aerial military strikes should be banned",
-      "summary": "Pope Leo sharply criticised aerial bombardments on Monday, saying they are indiscriminate and should be banned, in his latest anti-war comments as the US-Israeli war on Iran enters its fourth week. Leo, the first US pope, did not specifically mention the expanding conflict in a meeting with executiv",
+      "time": "13 min ago",
+      "headline": "Israel's Mossad promised it could ignite regime change in Iran, says report",
+      "summary": "Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that would lead to the collapse of Iran \u2019s government, the New York Times has reported . David Barnea, Mossad\u2019s chief, met with Israeli Prime Minister Benjamin Netanyahu days before the US and Israel began their war on Iran an",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Pope Leo sharply criticised aerial bombardments on Monday, saying they are indiscriminate and should be banned, in his latest anti-war comments as the US-Israeli war on Iran enters its fourth week. Leo, the first US pope, did not specifically mention the expanding conflict in a meeting with executiv",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/pope-leo-says-aerial-military-strikes-should-be-banned",
+      "fullAnalysis": "Israel \u2019s intelligence agency Mossad had a plan to ignite public protests that would lead to the collapse of Iran \u2019s government, the New York Times has reported . David Barnea, Mossad\u2019s chief, met with Israeli Prime Minister Benjamin Netanyahu days before the US and Israel began their war on Iran an",
+      "sourceUrl": "https://www.middleeasteye.net/news/israels-mossad-promised-it-could-ignite-regime-change-iran-says-report",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -98,10 +115,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 15:27 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 16:04 UTC",
       "l": "MEDIUM",
@@ -228,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 14:13 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-23 15:17 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Turkey seeks off-ramp to war through US-Iran negotiations. Israel destroys key bridge in southern Lebanon, stoking fears of 'ground invasio. Pope Leo says aerial military strikes should be banned. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Nato 'cannot confirm' Iran behind attack on UK-US base after Iranian denial. US-Israel-Iran War News Live Updates: \u2018Washington, Tehran will jointly control S. Trump suggests price of oil will 'drop like a rock' if a deal with Iran is made. Israel's Mossad promised it could ignite regime change in Iran, says report. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
