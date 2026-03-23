@@ -1,18 +1,18 @@
 """
-summarizer.py — Generates conflict analysis reports using Gemini 2.0 Flash.
+summarizer.py — Generates ALL AI content in CI using Gemini 2.0 Flash.
 
-Produces deeply researched, long-form content:
-  - Executive summary: 3 rich paragraphs
-  - Per-development full analysis: 7 paragraphs each
-  - India summary: 5-6 paragraphs
-  - Each key development gets sourceUrl (NO external imageUrls — images removed)
-  - India impact items get sourceUrl
+Everything pre-generated server-side, baked into live_data.js.
+Frontend reads static data — zero API calls, zero exposed keys, instant loads.
+
+Per CI run generates:
+  - Structured report JSON
+  - Panel summary (3 paragraphs)     → report["execSummaryRich"]
+  - Per-card analysis (3 paragraphs) → dev["fullAnalysis"] for each card
+  - India summary (5 paragraphs)     → report["indiaSummary"]
+  - India tension meter              → report["indiaMeter"] {pct, lvl, color}
 """
 
-import os
-import json
-import time
-import certifi
+import os, json, time, certifi
 from datetime import datetime
 
 os.environ["SSL_CERT_FILE"] = certifi.where()
@@ -29,362 +29,307 @@ def _get_client():
 
 
 def _call(model, prompt: str, max_tokens: int = 2000, temperature: float = 0.4) -> str:
-    """Single Gemini API call with retry on rate limit."""
-    config = genai.types.GenerationConfig(
-        max_output_tokens=max_tokens,
-        temperature=temperature,
-    )
+    config = genai.types.GenerationConfig(max_output_tokens=max_tokens, temperature=temperature)
     for attempt in range(3):
         try:
-            response = model.generate_content(prompt, generation_config=config)
-            return response.text.strip()
+            return model.generate_content(prompt, generation_config=config).text.strip()
         except Exception as e:
             err = str(e).lower()
             if "429" in err or "quota" in err or "rate" in err:
                 wait = (attempt + 1) * 30
-                print(f"[WARN] Rate limit hit, waiting {wait}s...")
+                print(f"[WARN] Rate limit, waiting {wait}s...")
                 time.sleep(wait)
             else:
                 raise
     return ""
 
 
-def _generate_full_analysis(model, dev: dict, report: dict) -> str:
-    prompt = f"""You are a senior conflict journalist writing for everyone — from a curious teenager to a retired grandparent who wants to understand the news.
-
-Write a deep, warm, clear analysis of this war development in exactly 7 paragraphs. No bullet points. No lists. No headers. Only flowing prose paragraphs, each 4–6 sentences long.
+def _card_analysis(model, dev: dict, report: dict) -> str:
+    """3-paragraph analysis for one news card. Stored in dev['fullAnalysis']."""
+    prompt = f"""You are a senior geopolitical analyst covering the US-Israel-Iran war of 2026.
 
 Headline: {dev.get('headline', '')}
 Detail: {dev.get('detail', '')}
-Actor involved: {dev.get('actor', '')}
-Overall conflict context: {report.get('escalation_reason', '')}
-Bigger picture: {report.get('executive_summary', '')}
+Actor: {dev.get('actor', '')}
+Context: {report.get('escalation_reason', '')}
 
-Write exactly 7 paragraphs in this order:
+Write exactly 3 paragraphs. No headings, no bullets, plain prose only.
 
-Paragraph 1 — THE SIMPLE VERSION: Explain what happened as if to a curious 12-year-old.
-Paragraph 2 — WHO DID WHAT AND WHY: Identify the specific actors and their motive.
-Paragraph 3 — THE BACKSTORY: Context going back weeks or months.
-Paragraph 4 — WHAT THIS MEANS FOR ORDINARY PEOPLE: Prices, safety, daily life.
-Paragraph 5 — HOW THE OTHER SIDE IS RESPONDING: Their reaction and options.
-Paragraph 6 — THE INDIA CONNECTION: Oil prices, Gulf workers, Chabahar, diplomacy.
-Paragraph 7 — WHAT HAPPENS NEXT: Two or three most likely next moves.
+Para 1 — WHAT HAPPENED: Immediate military/political facts. Who, what, where, when.
+Para 2 — WHY IT MATTERS: Strategic significance, regional impact, India angle (oil/diaspora/diplomacy).
+Para 3 — WHAT'S NEXT: Two most likely scenarios in the next 24-48 hours.
 
-Rules:
-- Explain EVERY military acronym in plain English on first use
-- No jargon without explanation
-- Warm, human tone
-- Each paragraph must be at least 4 full sentences
-- Total output should be at least 600 words"""
+50-70 words each. Specific and direct. Explain acronyms on first use."""
 
     try:
-        return _call(model, prompt, max_tokens=2000, temperature=0.45)
+        return _call(model, prompt, max_tokens=600, temperature=0.4)
     except Exception as e:
-        print(f"[WARN] Full analysis failed: {e}")
-        return ""
+        print(f"        [WARN] Card analysis failed: {e}")
+        return dev.get("detail", "")
 
 
-def _generate_india_summary(model, report: dict) -> str:
-    india_items = report.get("india_impact", [])
-    if not india_items:
-        return ""
-
-    items_text = "\n".join([
-        f"- [{item.get('category', '')}] {item.get('headline', '')}: {item.get('detail', '')}"
-        for item in india_items
-    ])
-
-    prompt = f"""You are a senior journalist writing for an Indian audience — from students to working families to retirees.
-
-Here are the India-related developments from today's news:
-{items_text}
-
-Overall conflict situation: {report.get('executive_summary', '')}
-
-Write a clear, warm, specific summary in exactly 5 to 6 paragraphs. No bullet points. No lists. Only flowing prose.
-
-Paragraph 1 — WHAT'S HAPPENING RIGHT NOW that directly affects India.
-Paragraph 2 — THE PETROL PUMP AND KITCHEN: How this hits ordinary Indian families.
-Paragraph 3 — INDIANS ABROAD: Millions in UAE, Saudi Arabia, Kuwait, Qatar, Oman.
-Paragraph 4 — INDIA'S DIPLOMATIC TIGHTROPE: Iran (Chabahar), Israel (defence), US (Quad).
-Paragraph 5 — WHAT INDIA SHOULD WATCH: Two or three key developments to follow.
-Paragraph 6 (optional) — WHAT THE GOVERNMENT IS DOING: Emergency planning, fuel reserves, evacuation.
-
-Rules:
-- Warm, direct tone
-- Use ₹ for Indian currency
-- Explain any acronym on first use
-- Minimum 500 words total"""
-
-    try:
-        return _call(model, prompt, max_tokens=1600, temperature=0.4)
-    except Exception as e:
-        print(f"[WARN] India summary failed: {e}")
-        return ""
-
-
-def _generate_executive_summary_rich(model, report: dict) -> str:
-    devs_text = "\n".join([
-        f"- {d.get('actor', '')}: {d.get('headline', '')} — {d.get('detail', '')}"
+def _panel_summary(model, report: dict) -> str:
+    """3-paragraph panel summary shown to every visitor on the left side."""
+    devs = "\n".join([
+        f"- {d.get('actor','')}: {d.get('headline','')} — {d.get('detail','')}"
         for d in report.get("key_developments", [])[:6]
     ])
+    prompt = f"""You are the senior editor of a conflict monitoring service.
 
-    prompt = f"""You are the senior editor of a conflict monitoring service. Write a clear, authoritative executive summary of the current US-Israel-Iran conflict situation.
+Escalation: {report.get('escalation_level','')} · Tone: {report.get('sentiment',{}).get('overall_tone','')}
 
-Today's key developments:
-{devs_text}
+Key developments:
+{devs}
 
-Escalation level: {report.get('escalation_level', '')}
-Tone: {report.get('sentiment', {}).get('overall_tone', '')}
+Write exactly 3 paragraphs. No headings, no bullets, plain prose. Blank line between paragraphs.
 
-Write exactly 3 paragraphs of flowing prose. No bullet points. No headers.
+Para 1: What is happening RIGHT NOW — most critical developments last 12-24 hrs. Specific. Max 4 sentences.
+Para 2: Broader consequences — region, oil markets, India specifically. Max 4 sentences.
+Para 3: What is most likely next 24 hours. What to watch. Max 4 sentences.
 
-Paragraph 1: What is happening RIGHT NOW — the most critical developments in the last 12-24 hours. Max 4 sentences.
-Paragraph 2: What led to this point — immediate chain of events. Max 4 sentences.
-Paragraph 3: What the stakes are — for oil markets, for India, for the region. Max 4 sentences.
-
-Separate each paragraph with a blank line. Total output must be under 200 words."""
+Under 220 words total. No jargon without explanation."""
 
     try:
-        return _call(model, prompt, max_tokens=900, temperature=0.35)
+        return _call(model, prompt, max_tokens=700, temperature=0.35)
     except Exception as e:
-        print(f"[WARN] Rich exec summary failed: {e}")
+        print(f"      [WARN] Panel summary failed: {e}")
         return report.get("executive_summary", "")
 
 
+def _india_summary(model, report: dict) -> str:
+    """5-paragraph India impact summary."""
+    items = report.get("india_impact", [])
+    if not items:
+        return ""
+    items_text = "\n".join([
+        f"- [{i.get('category','')}] {i.get('headline','')}: {i.get('detail','')}"
+        for i in items
+    ])
+    prompt = f"""You are a senior journalist writing for an Indian audience.
+
+India developments:
+{items_text}
+
+Overall situation: {report.get('executive_summary','')}
+
+Write exactly 5 paragraphs. No bullets. Only flowing prose.
+
+Para 1: What's happening RIGHT NOW affecting India — oil routes, ports, investments at risk.
+Para 2: The petrol pump and kitchen — how this hits ordinary Indian families. Real ₹ numbers.
+Para 3: Indians abroad — UAE, Saudi Arabia, Kuwait, Qatar, Oman. Impact on them and families back home.
+Para 4: India's diplomatic tightrope — Iran (Chabahar), Israel (defence), US (Quad). India's position.
+Para 5: What India should watch — two or three key developments in coming days.
+
+Warm, direct tone. Use ₹. Explain acronyms. Minimum 400 words."""
+
+    try:
+        return _call(model, prompt, max_tokens=1400, temperature=0.4)
+    except Exception as e:
+        print(f"      [WARN] India summary failed: {e}")
+        return ""
+
+
+def _india_meter(model, report: dict) -> dict:
+    """India tension meter — {pct, lvl, color} stored in live_data.js."""
+    items = report.get("india_impact", [])
+    context = " ".join([i.get("headline", "") for i in items])
+    context += " " + report.get("indiaSummary", "")[:200]
+
+    prompt = f"""Situation: "{context}"
+Escalation: {report.get('escalation_level','MEDIUM')}
+
+Return ONLY valid JSON, no markdown:
+{{"pct": 72, "lvl": "High", "color": "#d4892a"}}
+
+pct = 0-100 integer India impact score.
+lvl = one word: Low, Moderate, High, Severe, or Critical
+color = "#3daa72" if Low/Moderate, "#d4892a" if High, "#e05555" if Severe/Critical"""
+
+    try:
+        raw = _call(model, prompt, max_tokens=60, temperature=0.1)
+        return json.loads(raw.replace("```json","").replace("```","").strip())
+    except Exception as e:
+        print(f"      [WARN] India meter failed: {e}")
+        defaults = {
+            "LOW":{"pct":30,"lvl":"Low","color":"#3daa72"},
+            "MEDIUM":{"pct":52,"lvl":"Moderate","color":"#3daa72"},
+            "HIGH":{"pct":72,"lvl":"High","color":"#d4892a"},
+            "CRITICAL":{"pct":88,"lvl":"Severe","color":"#e05555"},
+        }
+        return defaults.get(report.get("escalation_level","MEDIUM"), {"pct":52,"lvl":"Moderate","color":"#3daa72"})
+
+
 def generate_report(articles: list) -> dict:
+    """
+    Full CI pipeline — generates everything, stores in report dict.
+    dashboard.py then bakes it all into live_data.js.
+    Frontend reads statically — no browser API calls at all.
+    """
     if not articles:
-        return {"error": "No articles found", "timestamp": datetime.utcnow().isoformat()}
+        return {"error": "No articles", "timestamp": datetime.utcnow().isoformat()}
 
     model = _get_client()
 
+    # ── 1. Parse articles into structured JSON ────────────────────────────────
+    print("      [1/5] Parsing articles...")
     article_text = ""
     for i, art in enumerate(articles[:20], 1):
-        source  = art.get("source", "Unknown")
-        content = art.get("content", "")
-        article_text += f"\n[{i}] SOURCE: {source} | URL: {art['url']}\n"
+        article_text += f"\n[{i}] SOURCE: {art.get('source','?')} | URL: {art['url']}\n"
         article_text += f"    HEADLINE: {art['title']}\n"
-        if content:
-            article_text += f"    CONTENT: {content[:600]}\n"
+        if art.get("content"):
+            article_text += f"    CONTENT: {art['content'][:600]}\n"
 
-    prompt = f"""You are a senior conflict analyst monitoring the US-Israel-Iran war.
-Analyze these articles from 17 news sources and return ONLY a JSON object. No markdown. No extra text. No backticks.
-
-Pay close attention to INDIA angles — Indian nationals abroad, Indian oil/energy, Indian diplomacy, Indian economy.
-Also include INDIRECT war news: Pakistan statements, Russia/China positions, Houthi actions, oil markets, global diplomacy.
+    prompt = f"""Analyze these war news articles. Return ONLY a JSON object. No markdown, no backticks.
 
 ARTICLES:
 {article_text}
 
-Return this EXACT JSON structure:
+Return this EXACT structure:
 {{
   "report_title": "War Monitor Report — {datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}",
-  "executive_summary": "3-4 sentence plain English summary of the most critical developments",
+  "executive_summary": "3-4 sentence plain English summary",
   "escalation_level": "LOW or MEDIUM or HIGH or CRITICAL",
-  "escalation_reason": "one clear sentence explaining why this level",
+  "escalation_reason": "one sentence explaining the level",
   "key_developments": [
     {{
-      "headline": "punchy 8-12 word headline",
-      "detail": "3-4 sentence clear explanation — what happened, who, where, why it matters",
+      "headline": "8-12 word headline",
+      "detail": "3-4 sentence explanation of what happened, who, why it matters",
       "actor": "US or Israel or Iran or Hamas or Hezbollah or Pakistan or Russia or China or Houthis or Markets or Other",
       "type": "war or wider_war or markets or diplomacy or military or india",
       "significance": "LOW or MEDIUM or HIGH",
       "source": "source name",
-      "sourceUrl": "the article URL from the input"
+      "sourceUrl": "article URL"
     }}
   ],
   "sentiment": {{
     "overall_tone": "TENSE or ESCALATING or DE-ESCALATING or VOLATILE or STABLE",
-    "us_stance": "one sentence on US position",
-    "israel_stance": "one sentence on Israel position",
-    "iran_stance": "one sentence on Iran position"
+    "us_stance": "one sentence",
+    "israel_stance": "one sentence",
+    "iran_stance": "one sentence"
   }},
   "terminology_explained": [
-    {{"term": "acronym or hard word", "simple_explanation": "plain English definition in 1-2 sentences"}}
+    {{"term": "word", "simple_explanation": "plain English"}}
   ],
-  "what_to_watch_next": "2-3 specific things to watch in the next 6-12 hours",
+  "what_to_watch_next": "2-3 things to watch in next 6-12 hours",
   "india_impact": [
     {{
-      "headline": "specific headline about India's stakes",
-      "detail": "3 sentence plain English explanation",
+      "headline": "India-specific headline",
+      "detail": "3 sentence explanation",
       "category": "Economy or Diaspora or Diplomacy or Security or Energy or Trade",
       "source": "source name",
       "sourceUrl": "article URL",
       "significance": "LOW or MEDIUM or HIGH",
-      "full_detail": "5-6 sentence deeper explanation for expanded view"
+      "full_detail": "5-6 sentence deeper explanation"
     }}
   ],
   "sources_used": {len(articles)},
   "generated_at": "{datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
 }}
 
-Include 8-10 key_developments. Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
+8-10 key_developments, 2-4 india_impact, 8-10 terminology_explained."""
 
     raw = _call(model, prompt, max_tokens=4000, temperature=0.3)
-
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
             raw = raw[4:]
     raw = raw.strip()
-
     if not raw:
-        raise ValueError("Gemini returned empty response — likely rate limited. Will retry next run.")
+        raise ValueError("Empty Gemini response — rate limited, will retry.")
+
     report = json.loads(raw)
 
-    print("      Matching source URLs to developments...")
+    # Match source URLs
     used_urls = set()
-
     for dev in report.get("key_developments", []):
-        dev["fullAnalysis"] = ""
-
-        headline       = dev.get("headline", "").lower()
-        headline_words = [w for w in headline.split() if len(w) > 3]
-
-        best_art, best_score = None, -1
+        words = [w for w in dev.get("headline","").lower().split() if len(w) > 3]
+        best, best_score = None, -1
         for art in articles:
-            art_title = art["title"].lower()
-            score = sum(1 for w in headline_words if w in art_title)
-            if art["url"] not in used_urls:
-                score += 0.5
-            if score > best_score:
-                best_score = score
-                best_art = art
+            score = sum(1 for w in words if w in art["title"].lower())
+            if art["url"] not in used_urls: score += 0.5
+            if score > best_score: best_score, best = score, art
+        if best:
+            dev["sourceUrl"]   = best["url"]
+            dev["sourceLabel"] = best.get("source", dev.get("source", "Source"))
+            used_urls.add(best["url"])
+        dev["fullAnalysis"] = ""  # filled in step 3
 
-        if best_art:
-            dev["sourceUrl"]   = best_art["url"]
-            dev["sourceLabel"] = best_art.get("source", dev.get("source", "Source"))
-            used_urls.add(best_art["url"])
-
-    india_used_urls = set()
+    india_used = set()
     for item in report.get("india_impact", []):
-        headline       = item.get("headline", "").lower()
-        headline_words = [w for w in headline.split() if len(w) > 3]
-        best_art, best_score = None, -1
+        words = [w for w in item.get("headline","").lower().split() if len(w) > 3]
+        best, best_score = None, -1
         for art in articles:
-            art_title = art["title"].lower()
-            score = sum(1 for w in headline_words if w in art_title)
-            if art["url"] not in india_used_urls:
-                score += 0.5
-            if score > best_score:
-                best_score = score
-                best_art = art
-        if best_art:
-            item["sourceUrl"] = best_art["url"]
-            item["source"]    = best_art.get("source", item.get("source", "Source"))
-            india_used_urls.add(best_art["url"])
+            score = sum(1 for w in words if w in art["title"].lower())
+            if art["url"] not in india_used: score += 0.5
+            if score > best_score: best_score, best = score, art
+        if best:
+            item["sourceUrl"] = best["url"]
+            item["source"]    = best.get("source", item.get("source","Source"))
+            india_used.add(best["url"])
 
-    print("      Generating rich executive summary...")
-    report["execSummaryRich"] = _generate_executive_summary_rich(model, report)
+    # ── 2. Panel summary ──────────────────────────────────────────────────────
+    print("      [2/5] Panel summary...")
+    report["execSummaryRich"] = _panel_summary(model, report)
 
+    # ── 3. Per-card analyses ──────────────────────────────────────────────────
+    cards = report.get("key_developments", [])[:8]
+    print(f"      [3/5] Card analyses ({len(cards)} cards)...")
+    for i, dev in enumerate(cards):
+        print(f"        {i+1}/{len(cards)}: {dev.get('headline','')[:55]}...")
+        dev["fullAnalysis"] = _card_analysis(model, dev, report)
+        time.sleep(0.5)
+
+    # ── 4. India summary ──────────────────────────────────────────────────────
     if report.get("india_impact"):
-        print("      Generating India summary (5-6 paragraphs)...")
-        _summary = _generate_india_summary(model, report)
-        report["india_summary"] = _summary
-        report["indiaSummary"]  = _summary
+        print("      [4/5] India summary...")
+        s = _india_summary(model, report)
+        report["india_summary"] = s
+        report["indiaSummary"]  = s
+
+    # ── 5. India meter ────────────────────────────────────────────────────────
+    print("      [5/5] India tension meter...")
+    report["indiaMeter"] = _india_meter(model, report)
 
     return report
 
 
-def generate_monthly_summary(reports: list) -> list:
-    if not reports:
-        return []
-
-    model = _get_client()
-
-    all_events = ""
-    for r in reports[:48]:
-        all_events += f"\n[{r.get('generated_at', '')}] Level: {r.get('escalation_level', '')}\n"
-        all_events += f"Summary: {r.get('executive_summary', '')}\n"
-        for dev in r.get("key_developments", [])[:3]:
-            all_events += f"  - {dev.get('actor', '')}: {dev.get('headline', '')}\n"
-
-    prompt = f"""You are explaining a war to a curious 10-year-old and their grandparent at the same time.
-
-Based on these news reports, write exactly 8 bullet points summarising what has happened in the US-Israel-Iran conflict.
-
-REPORTS:
-{all_events[:3000]}
-
-Rules:
-- Each bullet point must be ONE clear simple sentence
-- No jargon. Explain any hard word immediately
-- Write warmly, clearly — like telling a story
-- Cover the most important things in roughly chronological order
-- Each bullet starts with a relevant emoji
-
-Return ONLY a JSON array of strings, no markdown, no extra text:
-["🔥 Something happened...", "✈️ Then this happened..."]"""
-
-    try:
-        raw = _call(model, prompt, max_tokens=800, temperature=0.3)
-        if raw.startswith("```"):
-            raw = raw.split("```")[1]
-            if raw.startswith("json"):
-                raw = raw[4:]
-        return json.loads(raw.strip())
-    except Exception as e:
-        print(f"[WARN] Monthly summary failed: {e}")
-        return []
-
-
 def format_report_html(report: dict) -> str:
-    """Format a report as HTML email (used by emailer.py)."""
-    level_colors = {"LOW": "#1D9E75", "MEDIUM": "#BA7517", "HIGH": "#D85A30", "CRITICAL": "#A32D2D"}
-    level     = report.get("escalation_level", "MEDIUM")
-    color     = level_colors.get(level, "#888")
-    sentiment = report.get("sentiment", {})
+    level_colors = {"LOW":"#1D9E75","MEDIUM":"#BA7517","HIGH":"#D85A30","CRITICAL":"#A32D2D"}
+    level = report.get("escalation_level","MEDIUM")
+    color = level_colors.get(level,"#888")
+    sentiment = report.get("sentiment",{})
 
-    developments_html = ""
-    for dev in report.get("key_developments", []):
-        sig_colors = {"HIGH": "#D85A30", "MEDIUM": "#BA7517", "LOW": "#1D9E75"}
-        sig_c    = sig_colors.get(dev.get("significance", "LOW"), "#888")
-        src_link = ""
-        if dev.get("sourceUrl"):
-            src_label = dev.get("source", "Source")
-            src_link  = f'<a href="{dev["sourceUrl"]}" style="font-size:11px;color:#5b9cf6;text-decoration:none">Read → {src_label} ↗</a>'
-        developments_html += f"""
-        <tr><td style="padding:10px 12px;border-bottom:1px solid #eee;">
-            <strong style="color:#111">{dev.get('headline', '')}</strong>
-            <span style="margin-left:8px;padding:2px 8px;border-radius:4px;font-size:11px;background:{sig_c}22;color:{sig_c}">{dev.get('actor', '')}</span>
-            <p style="margin:4px 0 4px;color:#555;font-size:13px">{dev.get('detail', '')}</p>
-            {src_link}
-        </td></tr>"""
+    devs_html = ""
+    for dev in report.get("key_developments",[]):
+        sc = {"HIGH":"#D85A30","MEDIUM":"#BA7517","LOW":"#1D9E75"}.get(dev.get("significance","LOW"),"#888")
+        link = f'<a href="{dev["sourceUrl"]}" style="font-size:11px;color:#5b9cf6;text-decoration:none">Read → {dev.get("sourceLabel","Source")} ↗</a>' if dev.get("sourceUrl") else ""
+        devs_html += f'<tr><td style="padding:10px 12px;border-bottom:1px solid #eee;"><strong style="color:#111">{dev.get("headline","")}</strong><span style="margin-left:8px;padding:2px 8px;border-radius:4px;font-size:11px;background:{sc}22;color:{sc}">{dev.get("actor","")}</span><p style="margin:4px 0 4px;color:#555;font-size:13px">{dev.get("detail","")}</p>{link}</td></tr>'
 
     india_html = ""
-    for item in report.get("india_impact", []):
-        india_html += f"""
-        <tr><td style="padding:10px 12px;border-bottom:1px solid #eee;">
-            <strong style="color:#111">{item.get('headline', '')}</strong>
-            <span style="margin-left:8px;padding:2px 8px;border-radius:4px;font-size:10px;background:#1D9E7522;color:#1D9E75">{item.get('category', '')}</span>
-            <p style="margin:4px 0 0;color:#555;font-size:13px">{item.get('detail', '')}</p>
-        </td></tr>"""
+    for item in report.get("india_impact",[]):
+        india_html += f'<tr><td style="padding:10px 12px;border-bottom:1px solid #eee;"><strong style="color:#111">{item.get("headline","")}</strong><span style="margin-left:8px;padding:2px 8px;border-radius:4px;font-size:10px;background:#1D9E7522;color:#1D9E75">{item.get("category","")}</span><p style="margin:4px 0 0;color:#555;font-size:13px">{item.get("detail","")}</p></td></tr>'
+
+    india_section = f'<div style="padding:20px 28px;border-bottom:1px solid #eee"><h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">India Impact</h3><table style="width:100%;border-collapse:collapse">{india_html}</table></div>' if india_html else ""
 
     return f"""<!DOCTYPE html><html><head><meta charset="UTF-8"></head>
 <body style="font-family:Georgia,serif;background:#f5f5f0;margin:0;padding:20px">
 <div style="max-width:640px;margin:0 auto;background:#fff;border-radius:8px;overflow:hidden">
   <div style="background:#1a1a1a;color:#fff;padding:24px 28px">
     <div style="display:inline-block;padding:4px 12px;border-radius:4px;background:{color}22;color:{color};font-size:12px;font-weight:700;border:1px solid {color};margin-bottom:10px">{level} ESCALATION</div>
-    <h1 style="margin:0;font-size:20px;font-weight:400">{report.get('report_title', 'War Monitor')}</h1>
-    <p style="margin:8px 0 0;color:#aaa;font-size:13px">WarWatch · 17 sources · AI Summariser</p>
+    <h1 style="margin:0;font-size:20px;font-weight:400">{report.get('report_title','War Monitor')}</h1>
+    <p style="margin:8px 0 0;color:#aaa;font-size:13px">WarWatch · Powered by Gemini</p>
   </div>
   <div style="padding:20px 28px;border-bottom:1px solid #eee">
-    <h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">Executive Summary</h3>
-    <p style="font-size:15px;line-height:1.7;color:#222;margin:0">{report.get('executive_summary', '')}</p>
+    <h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">Summary</h3>
+    <p style="font-size:15px;line-height:1.7;color:#222;margin:0">{report.get('executive_summary','')}</p>
   </div>
   <div style="padding:20px 28px;border-bottom:1px solid #eee">
     <h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">Key Developments</h3>
-    <table style="width:100%;border-collapse:collapse">{developments_html}</table>
+    <table style="width:100%;border-collapse:collapse">{devs_html}</table>
   </div>
-  {'<div style="padding:20px 28px;border-bottom:1px solid #eee"><h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">India Impact</h3><table style="width:100%;border-collapse:collapse">' + india_html + '</table></div>' if india_html else ''}
+  {india_section}
   <div style="padding:20px 28px;border-bottom:1px solid #eee">
-    <h3 style="font-size:13px;letter-spacing:.08em;text-transform:uppercase;color:#999;margin:0 0 12px">Sentiment</h3>
-    <p style="font-size:13px;color:#555">Tone: <strong>{sentiment.get('overall_tone', '')}</strong></p>
-    <p style="font-size:13px;color:#555">US: {sentiment.get('us_stance', '')}</p>
-    <p style="font-size:13px;color:#555">Israel: {sentiment.get('israel_stance', '')}</p>
-    <p style="font-size:13px;color:#555">Iran: {sentiment.get('iran_stance', '')}</p>
+    <p style="font-size:13px;color:#555">Tone: <strong>{sentiment.get('overall_tone','')}</strong> &nbsp;·&nbsp; US: {sentiment.get('us_stance','')} &nbsp;·&nbsp; Iran: {sentiment.get('iran_stance','')}</p>
   </div>
-  <div style="padding:16px 28px;text-align:center;font-size:12px;color:#aaa">
-    WarWatch Bot · {report.get('generated_at', '')} · 17 sources
-  </div>
+  <div style="padding:16px 28px;text-align:center;font-size:12px;color:#aaa">WarWatch · {report.get('generated_at','')} · Gemini AI</div>
 </div></body></html>"""
