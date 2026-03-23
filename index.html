@@ -174,49 +174,45 @@ nav { display: flex; align-items: center; gap: 0; }
 .india-summary-para { font-size: 14px; line-height: 1.75; color: #aaa; margin-bottom: 14px; font-weight: 300; }
 .india-summary-para:last-child { margin-bottom: 0; }
 
-/* ── FOOTER ── */
-footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
-.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
-.footer-logo span { color: #c41e3a; }
-.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; text-align: right; line-height: 1.7; }
-
+/* ── ECONOMY STRIP ── */
 @keyframes econSlideUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
 @keyframes econSlideDn{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
 @keyframes econTriUp{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(-3px);opacity:.5}}
 @keyframes econTriDn{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(3px);opacity:.5}}
-/* ── ECONOMY STRIP ── */
 .econ-strip { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 0; cursor: pointer; transition: border-color .2s; overflow: hidden; text-decoration: none; display: block; }
 .econ-strip:hover { border-color: #c41e3a; }
 .econ-strip-inner { display: flex; align-items: center; gap: 0; }
 .econ-strip-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #666; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; padding: 10px 16px; border-right: 1px solid #2a2a2a; }
-.econ-strip-label:hover { color: #aaa; }
 .econ-sep { width: 1px; height: 32px; background: #2a2a2a; flex-shrink: 0; }
 .econ-cells { display: flex; flex: 1; overflow: hidden; }
 .econ-cell { flex: 1; padding: 7px 14px; border-right: 1px solid #222; min-width: 0; position: relative; }
 .econ-cell:last-child { border-right: none; }
-.econ-cell-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; width: fit-content; transition: color .15s ease, transform .2s cubic-bezier(0.34,1.56,0.64,1); }
-.econ-cell:hover .econ-cell-ticker { color: #bbb; transform: scale(1.08); transform-origin: left center; }
+.econ-cell-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; }
 .econ-cell-val { font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 700; color: #ccc; line-height: 1; display: inline-block; transition: color .15s ease; }
 .econ-cell-val.slide-up { animation: econSlideUp .4s cubic-bezier(.34,1.56,.64,1) forwards; }
 .econ-cell-val.slide-dn { animation: econSlideDn .4s cubic-bezier(.34,1.56,.64,1) forwards; }
 .econ-cell-chg { font-family: 'IBM Plex Mono', monospace; font-size: 9px; margin-top: 2px; }
 .econ-cell-chg.up { color: #c41e3a; }
 .econ-cell-chg.dn { color: #3daa72; }
-.econ-cell-chg.up::before { content: '▲ '; font-size: 7px; animation: econTriUp 1.4s ease-in-out infinite; display: inline-block; }
-.econ-cell-chg.dn::before { content: '▼ '; font-size: 7px; animation: econTriDn 1.4s ease-in-out infinite; display: inline-block; }
 .econ-strip-cta { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #c41e3a; letter-spacing: .1em; text-transform: uppercase; padding: 10px 14px; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 5px; border-left: 1px solid #2a2a2a; }
 .econ-strip-cta::after { content: '→'; }
 
+/* ── FOOTER ── */
+footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+.footer-logo span { color: #c41e3a; }
+.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; text-align: right; line-height: 1.7; }
+.ai-sum-badge{background:transparent;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
+
 @media (max-width: 900px) { .newspaper-grid { grid-template-columns: 1fr; } .col-left, .col-right { display: none; } .india-inner { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .tension-section { display: none; } header { padding: 10px 16px; } .masthead { font-size: 18px; } .nav-item { padding: 0 10px; font-size: 10px; } }
-.ai-sum-badge{background:transparent;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
 </style>
 </head>
 <body>
 
 <header>
   <div style="display:flex;flex-direction:column;gap:0"><div style="display:flex;align-items:center;gap:10px"><h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1><span class="ai-sum-badge">AI Summariser</span></div>
-  <div class="header-date" id="header-date" style="font-size:9px;color:#555;letter-spacing:.06em;font-family:\'IBM Plex Mono\',monospace;margin-top:3px"></div>
+  <div class="header-date" id="header-date" style="font-size:9px;color:#555;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace;margin-top:3px"></div>
   </div>
   <nav>
     <a class="nav-item live active" href="index.html"><span class="live-dot"></span>Live</a>
@@ -238,7 +234,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   </div>
 </div>
 
-<!-- 16:9 HERO IMAGE -->
 <div class="hero-img-wrap">
   <div class="hero-img-inner">
     <img src="war.png" alt="War Monitor" onerror="this.parentElement.style.background='#1a1a1a'"/>
@@ -252,7 +247,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 
 <div class="page-sections">
 
-<!-- TENSION METERS -->
 <div class="tension-section">
   <div class="tension-inner">
     <div class="tension-label"><div class="tension-live-dot"></div>Tension Meters</div>
@@ -265,7 +259,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   </div>
 </div>
 
-<!-- ECONOMY STRIP -->
 <a class="econ-strip" href="economy.html">
   <div class="econ-strip-inner">
     <div class="econ-strip-label"><span style="width:5px;height:5px;border-radius:50%;background:#d4892a;display:inline-block;flex-shrink:0"></span>Markets</div>
@@ -281,13 +274,11 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   </div>
 </a>
 
-<!-- THREE-COLUMN GRID -->
 <div class="newspaper-grid" id="live">
 
-  <!-- LEFT: AI SUMMARY -->
   <div class="col-left">
     <div class="ai-summary-box">
-      <div class="ai-summary-label">AI Summary &middot; <div class="ai-speaking-dot"><span></span><span></span><span></span></div> &mdash; <span id="summary-time">—</span></div>
+      <div class="ai-summary-label">AI Summary · <div class="ai-speaking-dot"><span></span><span></span><span></span></div> — <span id="summary-time">—</span></div>
       <div class="ai-summary-text" id="summary-text-inner">
         <div class="loading-dots"><span></span><span></span><span></span></div>
       </div>
@@ -299,7 +290,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
     </div>
   </div>
 
-  <!-- CENTER: LIVE ROTATOR -->
   <div class="col-center">
     <div class="rot-topbar">
       <div class="live-badge">Live</div>
@@ -314,7 +304,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
     </div>
   </div>
 
-  <!-- RIGHT: UNIFIED TIMELINE -->
   <div class="col-right">
     <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
     <div class="timeline" id="timeline"></div>
@@ -323,7 +312,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 
 </div>
 
-<!-- WAR & INDIA -->
 <div id="india-section" style="border-radius:8px;overflow:hidden;">
   <div class="india-ribbon">
     <div class="india-ribbon-inner">
@@ -341,21 +329,21 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
             <div class="india-card-meta"><span class="india-sev-high">High</span><span class="india-cat">Energy</span><span class="india-card-time">Loading...</span></div>
             <div class="india-card-headline">India scrambles for oil alternatives as Chabahar and Hormuz threatened</div>
             <div class="india-card-detail">India imports 7% crude from Iran. With Chabahar struck and Hormuz under threat, refiners are building 30-day strategic reserves.</div>
-            <div class="india-card-expanded">India's energy vulnerability is in sharp focus. The Chabahar port strike affects India's $85 million investment. Over 60% of India's crude imports pass through Hormuz. Brent crossing $97/barrel would add ~₹8–10/litre at the pump and widen the current account deficit by ~$25 billion annually.</div>
+            <div class="india-card-expanded">India's energy vulnerability is in sharp focus. The Chabahar port strike affects India's $85 million investment. Over 60% of India's crude imports pass through Hormuz.</div>
             <button class="india-read-btn" onclick="toggleIndiaCard(this)">Read more ↓</button>
           </div>
           <div class="india-card">
             <div class="india-card-meta"><span class="india-sev-high">High</span><span class="india-cat">Diaspora</span><span class="india-card-time">Loading...</span></div>
             <div class="india-card-headline">3.5M Indians in UAE on alert after Dubai airport drone strike</div>
             <div class="india-card-detail">MEA opened a 24-hour control room. Air India and IndiGo rerouted flights, affecting ~4,200 passengers.</div>
-            <div class="india-card-expanded">No Indian casualties reported. The Indian Consulate is processing welfare calls. Remittances from UAE account for a major share of India's $125 billion annual inflow — disruption hits Kerala, Andhra Pradesh, and Tamil Nadu hardest.</div>
+            <div class="india-card-expanded">No Indian casualties reported. Remittances from UAE account for a major share of India's $125 billion annual inflow.</div>
             <button class="india-read-btn" onclick="toggleIndiaCard(this)">Read more ↓</button>
           </div>
           <div class="india-card">
             <div class="india-card-meta"><span class="india-sev-med">Medium</span><span class="india-cat">Diplomacy</span><span class="india-card-time">Loading...</span></div>
             <div class="india-card-headline">India walks diplomatic tightrope between Iran, Israel, and US</div>
             <div class="india-card-detail">India abstained from UN votes condemning US strikes, maintaining non-alignment. PM Modi has issued no public statement.</div>
-            <div class="india-card-expanded">India has $2.4 billion in active defence contracts with Israel, relies on Iran for the Chabahar corridor, and is a core Quad member. Foreign Minister Jaishankar is managing all communications below the PM level — a deliberate distancing strategy.</div>
+            <div class="india-card-expanded">India has $2.4 billion in active defence contracts with Israel, relies on Iran for the Chabahar corridor, and is a core Quad member.</div>
             <button class="india-read-btn" onclick="toggleIndiaCard(this)">Read more ↓</button>
           </div>
         </div>
@@ -367,7 +355,7 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
         </div>
         <div id="india-summary-text">
           <p class="india-summary-para">India is caught at every pressure point in this conflict. Its oil supply, 5M diaspora in the Gulf, Chabahar investment, and carefully balanced diplomatic relationships with all combatants are simultaneously under stress.</p>
-          <p class="india-summary-para">For ordinary Indians, the most immediate impact is at the petrol pump. Crude above $97 means fuel price hikes are likely within weeks. Families in Kerala, Andhra Pradesh, and Tamil Nadu are watching with particular anxiety after the Dubai airport strike.</p>
+          <p class="india-summary-para">For ordinary Indians, the most immediate impact is at the petrol pump. Crude above $97 means fuel price hikes are likely within weeks.</p>
           <p class="india-summary-para">The government is managing quietly, working back channels intensively. Priority: protecting nationals, securing energy alternatives, and avoiding forced diplomatic choices between Washington, Tel Aviv, and Tehran.</p>
         </div>
       </div>
@@ -375,25 +363,24 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   </div>
 </div>
 
-</div><!-- /page-sections -->
+</div>
 <div style="padding: 0 24px 32px; max-width: 1660px; margin: 0 auto;">
 <footer>
   <div class="footer-logo">War<span>Watch</span></div>
   <div class="footer-meta" id="footer-meta">
-    Sources: NDTV &middot; BBC &middot; Reuters &middot; Al Jazeera &middot; Times of Israel &middot; Iran International<br>
-    AI Summariser
+    Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel · Iran International<br>
+    AI Summariser · Powered by Gemini
   </div>
 </footer>
 </div>
 
 <script src="live_data.js" onerror="void 0"></script>
-<script>/* GROQ_API_KEY must be set in live_data.js as: window.GROQ_API_KEY = 'gsk_...'; */</script>
+<script src="gemini_helper.js" onerror="void 0"></script>
 <script>
 (function () {
   var LEVEL_COLOR = { LOW:'#3daa72', MEDIUM:'#d4892a', HIGH:'#c87830', CRITICAL:'#a32d2d' };
   var TONE_COLOR  = { VOLATILE:'#e05555', ESCALATING:'#f5a623', TENSE:'#d4892a', STABLE:'#3daa72', 'DE-ESCALATING':'#1d9e75' };
 
-  /* Live date */
   var d = new Date();
   var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -401,7 +388,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 
   var D = window.WARWATCH_LIVE;
 
-  /* Alert bar */
   if (D && D.escalationLevel) {
     var badge = document.getElementById('alert-escalation');
     badge.textContent = D.escalationLevel;
@@ -409,7 +395,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   }
   if (D && D.alerts && D.alerts.length) window._alertHeadlines = D.alerts;
 
-  /* Tension meters */
   if (D && D.tensionMeters && D.tensionMeters.length) {
     var grid = document.getElementById('tension-meters-grid');
     grid.innerHTML = D.tensionMeters.map(function(m) {
@@ -426,7 +411,6 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
     });
   }, 120);
 
-  /* Tone badge */
   if (D && D.sentiment && D.sentiment.overall_tone) {
     var tone = D.sentiment.overall_tone;
     var tb = document.getElementById('tone-badge');
@@ -434,30 +418,23 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
     tb.style.background = TONE_COLOR[tone] || '#d4892a';
   }
 
-  /* Summary time */
   if (D && D.generatedAt) document.getElementById('summary-time').textContent = D.generatedAt;
 
-  /* Rotator cards from live data */
   window._rotatorCards = (D && D.newsCards && D.newsCards.length) ? D.newsCards.slice(0, 8) : null;
   if (window._initRotator) window._initRotator();
 
-  /* Timeline from live data */
   var tl = document.getElementById('timeline');
   var NEWS_ITEMS = window._rotatorCards || [];
   if (NEWS_ITEMS.length && tl) {
     tl.innerHTML = NEWS_ITEMS.map(function(card, idx) {
       var src = card.sourceLabel || (card.orgs && card.orgs[0] ? card.orgs[0] : 'News');
-      var url = card.sourceUrl || '#';
-      var tagCls = 'tl-tag-d';
-      var tagLbl = 'War';
       return '<div class="timeline-item' + (idx === 0 ? ' active' : '') + '" onclick="pickStory(' + idx + ')">'
-        + '<div class="tl-meta"><span class="' + tagCls + '">' + tagLbl + '</span><span class="tl-time">' + (card.time || '') + '</span><span class="tl-src">' + src.toUpperCase() + '</span></div>'
+        + '<div class="tl-meta"><span class="tl-tag-d">War</span><span class="tl-time">' + (card.time || '') + '</span><span class="tl-src">' + src.toUpperCase() + '</span></div>'
         + '<div class="tl-headline">' + card.headline + '</div>'
         + '</div>';
     }).join('');
   }
 
-  /* India section */
   var SEV_CLS = { HIGH:'india-sev-high', MEDIUM:'india-sev-med', LOW:'india-sev-low' };
   if (D && D.indiaImpact && D.indiaImpact.length) {
     var container = document.getElementById('india-impact-cards');
@@ -490,11 +467,9 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
     }
   }
 
-  /* Footer */
   var fm = document.getElementById('footer-meta');
   if (fm && D && D.generatedAt) {
-    var srcList = D.heroStats && D.heroStats.sourcesUsed ? D.heroStats.sourcesUsed + ' sources' : 'NDTV · BBC · Reuters · Al Jazeera';
-    fm.innerHTML = 'Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel<br>Last updated: ' + D.generatedAt + (D.totalReports ? ' · ' + D.totalReports + ' reports logged' : '') + '';
+    fm.innerHTML = 'Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel<br>Last updated: ' + D.generatedAt + (D.totalReports ? ' · ' + D.totalReports + ' reports logged' : '') + ' · Powered by Gemini';
   }
 
   function timeAgo(ts) {
@@ -511,9 +486,8 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   }
 })();
 
-/* ── LIVE AI SUMMARY ── */
+/* ── LIVE AI SUMMARY (Gemini) ── */
 var _summaryRefreshTimer = null;
-var _summaryLastFetch = 0;
 var SUMMARY_INTERVAL_MS = 15 * 60 * 1000;
 
 async function fetchAISummary() {
@@ -526,33 +500,19 @@ async function fetchAISummary() {
   }
   var escalation = (D && D.escalationLevel) ? D.escalationLevel : 'CRITICAL';
 
-  var prompt = 'You are a senior conflict analyst. The current escalation level is ' + escalation + '.\n\nTop 3-4 most critical stories right now:\n' + headlines + '\n\nWrite exactly 3 short paragraphs (no headings, no bullet points, plain prose). Para 1: what is happening right now — the most critical developments. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen in the next 24 hours. Be specific and direct. Max 55 words per paragraph.';
-
   var inner = document.getElementById('summary-text-inner');
   var noteEl = document.getElementById('ai-refresh-note');
   inner.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
 
   try {
-    var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
-      body: JSON.stringify({
-        model: 'llama-3.3-70b-versatile',
-        max_tokens: 500,
-        messages: [{ role: 'user', content: prompt }]
-      })
-    });
-    if (!res.ok) throw new Error('API ' + res.status);
-    var data = await res.json();
-    var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
+    var txt = await window.GeminiAI.panelSummary(headlines, escalation);
     var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
     inner.innerHTML = paras.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
-    _summaryLastFetch = Date.now();
     var now = new Date();
     if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
   } catch(e) {
     var D2 = window.WARWATCH_LIVE;
-    var fallbackRaw = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active including Chabahar, Dubai and Kharg Island pressure. India faces significant energy and diaspora exposure.';
+    var fallbackRaw = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation. Multiple simultaneous fronts are active.';
     var parts = fallbackRaw.split('\n\n').filter(Boolean);
     if (parts.length < 2) {
       var sentences = fallbackRaw.match(/[^.!?]+[.!?]+/g) || [fallbackRaw];
@@ -564,31 +524,17 @@ async function fetchAISummary() {
   }
 }
 
-function scheduleSummaryRefresh() {
-  fetchAISummary();
-  _summaryRefreshTimer = setInterval(fetchAISummary, SUMMARY_INTERVAL_MS);
-}
+window.addEventListener('load', function() { setTimeout(fetchAISummary, 600); setInterval(fetchAISummary, SUMMARY_INTERVAL_MS); });
 
-window.addEventListener('load', function() { setTimeout(scheduleSummaryRefresh, 600); });
-
-/* ── AI INDIA METER ── */
+/* ── AI INDIA METER (Gemini) ── */
 async function fetchIndiaMeters() {
   var D = window.WARWATCH_LIVE;
   var context = '';
   if (D && D.indiaSummary) context = D.indiaSummary.slice(0, 500);
   if (D && D.indiaImpact) context += ' ' + D.indiaImpact.map(function(i){ return i.headline; }).join('. ');
 
-  var prompt = 'Based on this India-war situation: "' + context + '"\n\nReturn ONLY valid JSON, no markdown:\n{"pct":72,"lvl":"High","color":"#d4892a"}\n\npct = 0-100 overall impact score. lvl = one word (Low/Moderate/High/Severe/Critical). color = #3daa72 if low, #d4892a if moderate/high, #e05555 if severe/critical.';
-
   try {
-    var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
-      body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 80, messages: [{ role: 'user', content: prompt }] })
-    });
-    var data = await res.json();
-    var text = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
-    var obj = JSON.parse(text.replace(/```json|```/g, '').trim());
+    var obj = await window.GeminiAI.indiaMeter(context);
     var bar = document.getElementById('india-war-bar');
     var lvl = document.getElementById('india-war-lvl');
     if (bar && lvl) {
@@ -604,7 +550,7 @@ async function fetchIndiaMeters() {
 }
 window.addEventListener('load', function() { setTimeout(fetchIndiaMeters, 1200); });
 
-/* ── ECONOMY STRIP: populate from prices_data.js if loaded ── */
+/* ── ECONOMY STRIP ── */
 (function() {
   function setCell(id, val, warPct) {
     var el = document.getElementById(id);
@@ -621,36 +567,21 @@ window.addEventListener('load', function() { setTimeout(fetchIndiaMeters, 1200);
     el.textContent = (prefix || '') + sign + pct.toFixed(1) + '% since war';
     el.className = 'econ-cell-chg ' + (pct > 0 ? 'up' : 'dn');
   }
-  /* Staggered entrance animation on cells */
   window.addEventListener('load', function() {
     var cells = document.querySelectorAll('.econ-cell');
     cells.forEach(function(c, i) {
       var val = c.querySelector('.econ-cell-val');
-      var chg = c.querySelector('.econ-cell-chg');
       if (val) { val.style.opacity = '0'; setTimeout(function() { val.classList.add('slide-up'); val.style.opacity = ''; }, 200 + i * 80); }
-      if (chg) { chg.style.opacity = '0'; setTimeout(function() { chg.style.opacity = '1'; chg.style.transition = 'opacity .3s ease'; }, 350 + i * 80); }
     });
     var P = window.WARWATCH_PRICES;
     if (!P) return;
     var pr = P.prices || {};
     var ind = P.india || {};
-    var fb = {
-      'BZ=F':  { formatted:'$94.8',  war_pct:24.7 },
-      'CL=F':  { formatted:'$91.3',  war_pct:22.1 },
-      'GC=F':  { formatted:'$3,082', war_pct:14.6 },
-      'INR=X': { formatted:'₹85.42', war_pct:-4.1 },
-      'CRUDEOIL.MCX': { formatted:'₹7,842', war_pct:23.4 }
-    };
-    var b = pr['BZ=F'] || fb['BZ=F'];
-    if (b) { setCell('es-brent', b.formatted, b.war_pct); setChg('es-brent-chg', b.war_pct); }
-    var w = pr['CL=F'] || fb['CL=F'];
-    if (w) { setCell('es-wti', w.formatted, w.war_pct); setChg('es-wti-chg', w.war_pct); }
-    var g = pr['GC=F'] || fb['GC=F'];
-    if (g) { setCell('es-gold', g.formatted, g.war_pct); setChg('es-gold-chg', g.war_pct); }
-    var i = pr['INR=X'] || fb['INR=X'];
-    if (i) { setCell('es-inr', i.formatted, i.war_pct); setChg('es-inr-chg', i.war_pct); }
-    var mc = (ind && ind['CRUDEOIL.MCX']) || pr['CRUDEOIL.MCX'] || fb['CRUDEOIL.MCX'];
-    if (mc) { setCell('es-mcx', mc.formatted, mc.war_pct); setChg('es-mcx-chg', mc.war_pct); }
+    var b = pr['BZ=F']; if (b) { setCell('es-brent', b.formatted, b.war_pct); setChg('es-brent-chg', b.war_pct); }
+    var w = pr['CL=F']; if (w) { setCell('es-wti', w.formatted, w.war_pct); setChg('es-wti-chg', w.war_pct); }
+    var g = pr['GC=F']; if (g) { setCell('es-gold', g.formatted, g.war_pct); setChg('es-gold-chg', g.war_pct); }
+    var i = pr['INR=X']; if (i) { setCell('es-inr', i.formatted, i.war_pct); setChg('es-inr-chg', i.war_pct); }
+    var mc = pr['CRUDEOIL.MCX']; if (mc) { setCell('es-mcx', mc.formatted, mc.war_pct); setChg('es-mcx-chg', mc.war_pct); }
     var pet = ind && ind.petrolPump;
     if (pet) {
       setCell('es-petrol', pet.formatted || '₹97.4');
@@ -660,7 +591,6 @@ window.addEventListener('load', function() { setTimeout(fetchIndiaMeters, 1200);
     }
   });
 })();
-
 
 function toggleIndiaCard(btn) {
   var card = btn.closest('.india-card');
@@ -691,16 +621,16 @@ function toggleIndiaCard(btn) {
   setTimeout(tick, 800);
 })();
 
-/* ── LIVE NEWS ROTATOR ── */
+/* ── LIVE NEWS ROTATOR (Gemini AI) ── */
 (function() {
   var DEFAULT_CARDS = [
     { headline:'US jets strike Iranian facilities near Chabahar trade zone', summary:'American carrier-based aircraft struck two IRGC logistics depots near the Chabahar free-trade zone overnight. Iran called the strikes an act of war.', sourceLabel:'NDTV', time:'2 hrs ago', sourceUrl:'https://www.ndtv.com', type:'direct' },
     { headline:'Iranian drones strike near Dubai International Airport', summary:'Drone strikes caused a large fire near Dubai airport perimeter. UAE authorities confirmed no runway damage but flights were diverted for several hours.', sourceLabel:'BBC', time:'4 hrs ago', sourceUrl:'https://www.bbc.com', type:'direct' },
     { headline:'IDF places Kharg Island on active target list', summary:'Israel formally added Kharg Island — responsible for 90% of Iranian oil exports — to its active military target list, raising fears of an oil price shock.', sourceLabel:'Reuters', time:'6 hrs ago', sourceUrl:'https://www.reuters.com', type:'direct' },
     { headline:"Pakistan warns it will not allow territory used for strikes on Iran", summary:"Pakistan's foreign ministry issued a strong statement refusing to permit any country to use Pakistani airspace or territory for military operations against Iran.", sourceLabel:'Dawn', time:'3 hrs ago', sourceUrl:'https://www.dawn.com', type:'indirect' },
-    { headline:"Russia calls US strikes on Iran 'illegal aggression,' demands UN session", summary:"Russia condemned the US airstrikes as illegal aggression and demanded an emergency UN Security Council session, signalling it will veto any pro-US resolution.", sourceLabel:'TASS', time:'5 hrs ago', sourceUrl:'https://tass.com', type:'indirect' },
-    { headline:'Houthi rebels resume Red Sea shipping attacks in solidarity with Iran', summary:"Yemen's Houthi movement announced it is resuming attacks on Red Sea shipping in solidarity with Iran, threatening to disrupt one of the world's busiest maritime trade routes.", sourceLabel:'Al Jazeera', time:'7 hrs ago', sourceUrl:'https://www.aljazeera.com', type:'indirect' },
-    { headline:'Brent crude surges past $97 as Strait of Hormuz closure fears spike', summary:"Oil markets opened sharply higher as Hormuz closure fears spiked. Analysts warn $120/barrel is possible if the strait is disrupted. Asian markets fell sharply.", sourceLabel:'Bloomberg', time:'8 hrs ago', sourceUrl:'https://www.bloomberg.com', type:'markets' },
+    { headline:"Russia calls US strikes on Iran 'illegal aggression,' demands UN session", summary:"Russia condemned the US airstrikes as illegal aggression and demanded an emergency UN Security Council session.", sourceLabel:'TASS', time:'5 hrs ago', sourceUrl:'https://tass.com', type:'indirect' },
+    { headline:'Houthi rebels resume Red Sea shipping attacks in solidarity with Iran', summary:"Yemen's Houthi movement announced it is resuming attacks on Red Sea shipping in solidarity with Iran.", sourceLabel:'Al Jazeera', time:'7 hrs ago', sourceUrl:'https://www.aljazeera.com', type:'indirect' },
+    { headline:'Brent crude surges past $97 as Strait of Hormuz closure fears spike', summary:"Oil markets opened sharply higher as Hormuz closure fears spiked. Analysts warn $120/barrel is possible if the strait is disrupted.", sourceLabel:'Bloomberg', time:'8 hrs ago', sourceUrl:'https://www.bloomberg.com', type:'markets' },
     { headline:'China urges maximum restraint, offers to mediate between US and Iran', summary:"Beijing issued an unusually direct call for maximum restraint from all parties and offered to play a mediating role between Washington and Tehran.", sourceLabel:'The Hindu', time:'9 hrs ago', sourceUrl:'https://www.thehindu.com', type:'indirect' }
   ];
 
@@ -731,7 +661,7 @@ function toggleIndiaCard(btn) {
         '<div class="rot-headline">' + (c.headline || '') + '</div>' +
         '<div class="rot-summary">' + (c.summary || '') + '</div>' +
         '<div class="ai-analysis-box" id="ai-box-' + i + '">' +
-          '<div class="ai-analysis-lbl">AI Analysis · Live <div class="ai-speaking-dot"><span></span><span></span><span></span></div></div>' +
+          '<div class="ai-analysis-lbl">AI Analysis · Gemini <div class="ai-speaking-dot"><span></span><span></span><span></span></div></div>' +
           '<div class="ai-analysis-txt" id="ai-txt-' + i + '"><div class="loading-dots"><span></span><span></span><span></span></div></div>' +
         '</div>' +
         '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>';
@@ -745,7 +675,6 @@ function toggleIndiaCard(btn) {
     });
 
     counterEl.textContent = '1 / ' + cards.length;
-
     loadAI(0);
   }
 
@@ -755,25 +684,17 @@ function toggleIndiaCard(btn) {
     if (aiCache[idx]) { box.innerHTML = aiCache[idx]; return; }
     var c = rotCards[idx];
 
-    /* 1 — Use pre-built fullAnalysis from bot (best, no API call needed) */
+    /* 1 — Use pre-built fullAnalysis from bot */
     if (c.fullAnalysis && c.fullAnalysis.length > 80) {
       var pre = c.fullAnalysis.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,3);
       var preHtml = pre.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
       aiCache[idx] = preHtml; box.innerHTML = preHtml; return;
     }
 
-    /* 2 — Live Groq call (runs if fullAnalysis is empty) */
-    var prompt = c.headline+' — '+c.summary+'\n\nWrite exactly 3 short paragraphs (no headings, no bullets, plain prose): Para 1: what happened and immediate fallout. Para 2: broader consequences for the region, oil markets and India. Para 3: what is most likely to happen next. Max 50 words each paragraph.';
-    var key = window.GROQ_API_KEY || '';
-    if (key) {
+    /* 2 — Live Gemini call */
+    if (window.GeminiAI && window.GEMINI_API_KEY) {
       try {
-        var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-          method: 'POST',
-          headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
-          body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 450, messages: [{ role: 'user', content: prompt }] })
-        });
-        var data = await res.json();
-        var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
+        var txt = await window.GeminiAI.cardAnalysis(c.headline, c.summary || '');
         var paras = txt.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,3);
         if (paras.length) {
           var html = paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
@@ -782,7 +703,7 @@ function toggleIndiaCard(btn) {
       } catch(e) {}
     }
 
-    /* 3 — Always show summary as last resort — never blank */
+    /* 3 — Fallback to summary */
     var fallback = '<p>' + (c.summary || 'Analysis loading...') + '</p>';
     aiCache[idx] = fallback; box.innerHTML = fallback;
   }
@@ -799,22 +720,12 @@ function toggleIndiaCard(btn) {
     els[cur].className = 'rot-card rot-active';
     dotsEl.querySelectorAll('span').forEach(function(d, i) { d.className = i === cur ? 'on' : ''; });
     counterEl.textContent = (cur + 1) + ' / ' + rotCards.length;
-    startProgress();
     setTimeout(function() { animating = false; loadAI(cur); }, 560);
-
-    /* sync timeline highlight */
     document.querySelectorAll('.timeline-item').forEach(function(el, i){ el.classList.toggle('active', i === cur); });
   }
 
   function pickStory(idx) { goTo(idx, idx > cur ? 1 : -1); }
   window.pickStory = pickStory;
-
-  function startProgress() {
-    if (!pfEl) return;
-    pfEl.classList.remove('running'); pfEl.style.width = '0%';
-    void pfEl.offsetWidth;
-    pfEl.classList.add('running'); pfEl.style.width = '100%';
-  }
 
   document.addEventListener('DOMContentLoaded', function() {
     var cards = window._rotatorCards || DEFAULT_CARDS;
@@ -822,7 +733,6 @@ function toggleIndiaCard(btn) {
     document.getElementById('rot-next').onclick = function() { if (!animating) goTo(cur + 1, 1); };
     document.getElementById('rot-prev').onclick = function() { if (!animating) goTo(cur - 1, -1); };
 
-    /* Build timeline from same cards */
     var tl = document.getElementById('timeline');
     if (tl && (!window.WARWATCH_LIVE || !window.WARWATCH_LIVE.newsCards)) {
       tl.innerHTML = cards.map(function(c, i) {

@@ -50,10 +50,6 @@ def _call(model, prompt: str, max_tokens: int = 2000, temperature: float = 0.4) 
 
 
 def _generate_full_analysis(model, dev: dict, report: dict) -> str:
-    """
-    Generate a 7-paragraph deep-dive plain-English analysis for one development.
-    Aimed at a general audience — clear, warm, no jargon without explanation.
-    """
     prompt = f"""You are a senior conflict journalist writing for everyone — from a curious teenager to a retired grandparent who wants to understand the news.
 
 Write a deep, warm, clear analysis of this war development in exactly 7 paragraphs. No bullet points. No lists. No headers. Only flowing prose paragraphs, each 4–6 sentences long.
@@ -66,24 +62,18 @@ Bigger picture: {report.get('executive_summary', '')}
 
 Write exactly 7 paragraphs in this order:
 
-Paragraph 1 — THE SIMPLE VERSION: Explain what happened as if to a curious 12-year-old. Use an analogy if it helps. Make it feel real and immediate.
-
-Paragraph 2 — WHO DID WHAT AND WHY: Identify the specific actors (explain who they are in plain English). Explain their motive — what did they hope to achieve? What were they responding to?
-
-Paragraph 3 — THE BACKSTORY: What history and tensions led to this moment? Give context going back weeks or months. What earlier events made this possible or inevitable?
-
-Paragraph 4 — WHAT THIS MEANS FOR ORDINARY PEOPLE: How does this affect civilians — prices, safety, daily life, travel, jobs? Be specific. Real examples.
-
-Paragraph 5 — HOW THE OTHER SIDE IS RESPONDING: What has the opposing party said or done in response? What options do they have? Is this escalation or de-escalation?
-
-Paragraph 6 — THE INDIA CONNECTION: How does this specifically affect India? Think about oil prices, Indian workers in the Gulf, Indian investments like Chabahar, Indian diplomacy, Indian economy.
-
-Paragraph 7 — WHAT HAPPENS NEXT: What are the two or three most likely next moves? What should readers watch for in the next 24-48 hours? End with what the stakes really are.
+Paragraph 1 — THE SIMPLE VERSION: Explain what happened as if to a curious 12-year-old.
+Paragraph 2 — WHO DID WHAT AND WHY: Identify the specific actors and their motive.
+Paragraph 3 — THE BACKSTORY: Context going back weeks or months.
+Paragraph 4 — WHAT THIS MEANS FOR ORDINARY PEOPLE: Prices, safety, daily life.
+Paragraph 5 — HOW THE OTHER SIDE IS RESPONDING: Their reaction and options.
+Paragraph 6 — THE INDIA CONNECTION: Oil prices, Gulf workers, Chabahar, diplomacy.
+Paragraph 7 — WHAT HAPPENS NEXT: Two or three most likely next moves.
 
 Rules:
-- Explain EVERY military acronym in plain English on first use (e.g., "the IRGC — Iran's elite Revolutionary Guard Corps")
+- Explain EVERY military acronym in plain English on first use
 - No jargon without explanation
-- Warm, human tone — not cold or bureaucratic
+- Warm, human tone
 - Each paragraph must be at least 4 full sentences
 - Total output should be at least 600 words"""
 
@@ -95,10 +85,6 @@ Rules:
 
 
 def _generate_india_summary(model, report: dict) -> str:
-    """
-    Generate a 5-6 paragraph India impact summary.
-    Written for a general Indian audience — concrete, specific, warm.
-    """
     india_items = report.get("india_impact", [])
     if not india_items:
         return ""
@@ -108,7 +94,7 @@ def _generate_india_summary(model, report: dict) -> str:
         for item in india_items
     ])
 
-    prompt = f"""You are a senior journalist writing for an Indian audience — from students to working families to retirees. You are explaining how the US-Israel-Iran war is affecting India right now.
+    prompt = f"""You are a senior journalist writing for an Indian audience — from students to working families to retirees.
 
 Here are the India-related developments from today's news:
 {items_text}
@@ -117,20 +103,15 @@ Overall conflict situation: {report.get('executive_summary', '')}
 
 Write a clear, warm, specific summary in exactly 5 to 6 paragraphs. No bullet points. No lists. Only flowing prose.
 
-Paragraph 1 — WHAT'S HAPPENING RIGHT NOW that directly affects India. Be specific — which oil routes, which ports, which Indian investments are at risk.
-
-Paragraph 2 — THE PETROL PUMP AND KITCHEN: How does this hit ordinary Indian families? Think: petrol prices, cooking gas, inflation, grocery prices. Use real rupee numbers where possible.
-
-Paragraph 3 — INDIANS ABROAD: What about the millions of Indians living and working in the UAE, Saudi Arabia, Kuwait, Qatar, Oman? What does the latest development mean for them specifically? For their families back home?
-
-Paragraph 4 — INDIA'S DIPLOMATIC TIGHTROPE: How is the Indian government navigating this? India has ties with Iran (Chabahar), Israel (defence contracts), the US (Quad), and Russia. What positions has India taken at the UN? What is Jaishankar doing?
-
-Paragraph 5 — WHAT INDIA SHOULD WATCH: What are the two or three developments in this conflict that Indian citizens should pay closest attention to in the coming days? Why?
-
-Paragraph 6 (optional) — WHAT THE GOVERNMENT IS DOING: Any emergency planning, fuel reserve orders, diplomatic calls, evacuation arrangements for Gulf workers.
+Paragraph 1 — WHAT'S HAPPENING RIGHT NOW that directly affects India.
+Paragraph 2 — THE PETROL PUMP AND KITCHEN: How this hits ordinary Indian families.
+Paragraph 3 — INDIANS ABROAD: Millions in UAE, Saudi Arabia, Kuwait, Qatar, Oman.
+Paragraph 4 — INDIA'S DIPLOMATIC TIGHTROPE: Iran (Chabahar), Israel (defence), US (Quad).
+Paragraph 5 — WHAT INDIA SHOULD WATCH: Two or three key developments to follow.
+Paragraph 6 (optional) — WHAT THE GOVERNMENT IS DOING: Emergency planning, fuel reserves, evacuation.
 
 Rules:
-- Warm, direct tone — like a trusted journalist explaining to a friend
+- Warm, direct tone
 - Use ₹ for Indian currency
 - Explain any acronym on first use
 - Minimum 500 words total"""
@@ -143,10 +124,6 @@ Rules:
 
 
 def _generate_executive_summary_rich(model, report: dict) -> str:
-    """
-    Generate a 3-paragraph rich executive summary.
-    Suitable for the main dashboard left panel — refreshed every 15 min by the browser.
-    """
     devs_text = "\n".join([
         f"- {d.get('actor', '')}: {d.get('headline', '')} — {d.get('detail', '')}"
         for d in report.get("key_developments", [])[:6]
@@ -162,13 +139,11 @@ Tone: {report.get('sentiment', {}).get('overall_tone', '')}
 
 Write exactly 3 paragraphs of flowing prose. No bullet points. No headers.
 
-Paragraph 1: What is happening RIGHT NOW — the most critical developments in the last 12-24 hours. Be specific. Name actors, places, numbers. Max 4 sentences.
+Paragraph 1: What is happening RIGHT NOW — the most critical developments in the last 12-24 hours. Max 4 sentences.
+Paragraph 2: What led to this point — immediate chain of events. Max 4 sentences.
+Paragraph 3: What the stakes are — for oil markets, for India, for the region. Max 4 sentences.
 
-Paragraph 2: What led to this point — the immediate chain of events. Context for someone who hasn't been following. Max 4 sentences.
-
-Paragraph 3: What the stakes are — for oil markets, for India, for the region. What the next 24 hours could bring. Max 4 sentences.
-
-Separate each paragraph with a blank line. Total output must be under 200 words. No headers, no bullets."""
+Separate each paragraph with a blank line. Total output must be under 200 words."""
 
     try:
         return _call(model, prompt, max_tokens=900, temperature=0.35)
@@ -178,20 +153,11 @@ Separate each paragraph with a blank line. Total output must be under 200 words.
 
 
 def generate_report(articles: list) -> dict:
-    """
-    Main entry point.
-    1. Calls Gemini to analyze articles and extract structured JSON
-    2. Generates 7-paragraph full analysis per development
-    3. Generates 5-paragraph India summary
-    4. Generates rich 3-paragraph executive summary
-    5. Attaches sourceUrl to every development and India item
-    """
     if not articles:
         return {"error": "No articles found", "timestamp": datetime.utcnow().isoformat()}
 
     model = _get_client()
 
-    # Build article text for the primary prompt
     article_text = ""
     for i, art in enumerate(articles[:20], 1):
         source  = art.get("source", "Unknown")
@@ -252,18 +218,10 @@ Return this EXACT JSON structure:
   "generated_at": "{datetime.utcnow().strftime('%Y-%m-%d %H:%M UTC')}"
 }}
 
-Include 8-10 key_developments. Assign type precisely:
-  war = direct US/Israel/Iran strikes or attacks
-  wider_war = Pakistan/Russia/China/Houthi/proxy actions
-  markets = oil prices/economy/sanctions/shipping
-  diplomacy = ceasefire talks/UN/back-channels/statements
-  military = naval movements/weapons/troop deployments/hardware
-  india = anything directly affecting India (diaspora/energy/Chabahar/diplomacy)
-Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
+Include 8-10 key_developments. Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
 
     raw = _call(model, prompt, max_tokens=4000, temperature=0.3)
 
-    # Strip markdown fences if Gemini wraps in ```json
     if raw.startswith("```"):
         raw = raw.split("```")[1]
         if raw.startswith("json"):
@@ -274,12 +232,11 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
         raise ValueError("Gemini returned empty response — likely rate limited. Will retry next run.")
     report = json.loads(raw)
 
-    # ── Match sourceUrl to each development (no AI call needed) ──────────────
     print("      Matching source URLs to developments...")
     used_urls = set()
 
     for dev in report.get("key_developments", []):
-        dev["fullAnalysis"] = ""  # disabled — saves API quota
+        dev["fullAnalysis"] = ""
 
         headline       = dev.get("headline", "").lower()
         headline_words = [w for w in headline.split() if len(w) > 3]
@@ -299,7 +256,6 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
             dev["sourceLabel"] = best_art.get("source", dev.get("source", "Source"))
             used_urls.add(best_art["url"])
 
-    # ── India impact: unique sourceUrl ────────────────────────────────────────
     india_used_urls = set()
     for item in report.get("india_impact", []):
         headline       = item.get("headline", "").lower()
@@ -318,11 +274,9 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
             item["source"]    = best_art.get("source", item.get("source", "Source"))
             india_used_urls.add(best_art["url"])
 
-    # ── Rich executive summary (3 paragraphs) ─────────────────────────────────
     print("      Generating rich executive summary...")
     report["execSummaryRich"] = _generate_executive_summary_rich(model, report)
 
-    # ── India summary (5-6 paragraphs) ────────────────────────────────────────
     if report.get("india_impact"):
         print("      Generating India summary (5-6 paragraphs)...")
         _summary = _generate_india_summary(model, report)
@@ -333,7 +287,6 @@ Include 2-4 india_impact items. Include 8-10 terminology_explained items."""
 
 
 def generate_monthly_summary(reports: list) -> list:
-    """Generate 8 plain-English bullet points summarising the month."""
     if not reports:
         return []
 

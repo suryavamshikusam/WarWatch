@@ -1,9 +1,6 @@
 """
 dashboard.py — Generates live_data.js from saved JSON reports.
 warwatch.html loads live_data.js to populate all live sections.
-
-Run automatically by bot.py after every report, or manually:
-  python dashboard.py
 """
 
 import json
@@ -47,7 +44,6 @@ def _significance_badge(sig: str) -> str:
 
 
 def _time_ago(ts: str) -> str:
-    """Convert '2026-03-14 05:35 UTC' to '2 hrs ago' style."""
     try:
         dt = datetime.strptime(ts, "%Y-%m-%d %H:%M UTC").replace(tzinfo=timezone.utc)
         diff = int((datetime.now(timezone.utc) - dt).total_seconds())
@@ -65,7 +61,6 @@ def _time_ago(ts: str) -> str:
 
 
 def _build_india_impact(report: dict) -> list:
-    """Map india_impact items with all required fields for the frontend."""
     items = []
     for item in report.get("india_impact", []):
         items.append({
@@ -83,7 +78,6 @@ def _build_india_impact(report: dict) -> list:
 def build_dashboard():
     REPORTS_DIR.mkdir(exist_ok=True)
 
-    # Load up to 48 most recent reports (12 days @ 6hr cadence)
     reports = []
     for f in sorted(REPORTS_DIR.glob("*.json"), reverse=True)[:48]:
         try:
@@ -95,7 +89,6 @@ def build_dashboard():
     latest = reports[0] if reports else {}
     level  = latest.get("escalation_level", "CRITICAL")
 
-    # ── Alert typewriter strings (from latest report) ──────────────────────
     alerts = []
     for dev in latest.get("key_developments", [])[:5]:
         headline = dev.get("headline", "")
@@ -104,11 +97,9 @@ def build_dashboard():
         if headline:
             alerts.append(f"{actor}: {headline} · {detail[:80]}{'…' if len(detail) > 80 else ''}")
 
-    # Fallback if no developments
     if not alerts:
         alerts = [latest.get("executive_summary", "No updates yet.")]
 
-    # ── Hero stats ──────────────────────────────────────────────────────────
     updates_today = sum(
         1 for r in reports
         if r.get("generated_at", "").startswith(
@@ -122,9 +113,6 @@ def build_dashboard():
         "sourcesUsed":  latest.get("sources_used", 0),
     }
 
-    # ── Tension meters (derived from latest report) ─────────────────────────
-    # We compute the US-Iran and Israel-Iran bars from the escalation level
-    # and enrich with sentiment tone.
     tone = latest.get("sentiment", {}).get("overall_tone", "")
     tone_boost = {"VOLATILE": 8, "ESCALATING": 5, "TENSE": 2, "STABLE": -10, "DE-ESCALATING": -15}.get(tone, 0)
     base = _level_to_pct(level)
@@ -137,7 +125,6 @@ def build_dashboard():
         {"label": "Regional war risk", "pct": min(95, base - 10 + tone_boost), "lvl": "Elevated","color": "var(--red)"},
     ]
 
-    # ── News cards from latest report ────────────────────────────────────────
     news_cards = []
     for dev in latest.get("key_developments", []):
         actor    = dev.get("actor", "Other")
@@ -156,13 +143,11 @@ def build_dashboard():
             "summary":      detail,
             "whyTxt":       latest.get("escalation_reason", ""),
             "orgs":         [actor],
-            # ── These two carry the pre-built AI analysis to the frontend ──
             "fullAnalysis": dev.get("fullAnalysis", ""),
             "sourceUrl":    dev.get("sourceUrl", "#"),
             "sourceLabel":  dev.get("sourceLabel", dev.get("source", "Source")),
         })
 
-    # Also add a "what to watch" card
     watch = latest.get("what_to_watch_next", "")
     if watch:
         news_cards.append({
@@ -177,7 +162,6 @@ def build_dashboard():
             "orgs":        [],
         })
 
-    # ── Historical escalation data for a chart (last 20 reports) ────────────
     history = [
         {
             "t": r.get("generated_at", ""),
@@ -187,13 +171,9 @@ def build_dashboard():
         for r in reversed(reports[:20])
     ]
 
-    # ── Sentiment block ──────────────────────────────────────────────────────
     sentiment = latest.get("sentiment", {})
-
-    # ── Terms glossary ──────────────────────────────────────────────────────
     terms = latest.get("terminology_explained", [])
 
-    # ── Assemble live_data.js ────────────────────────────────────────────────
     payload = {
         "generatedAt":     latest.get("generated_at", ""),
         "escalationLevel": level,
@@ -206,28 +186,26 @@ def build_dashboard():
         "history":         history,
         "execSummary":     latest.get("executive_summary", ""),
         "totalReports":    len(reports),
-        # ── Fields required by india.html and warwatch.html ──────────────
         "execSummaryRich": latest.get("execSummaryRich", latest.get("executive_summary", "")),
         "indiaSummary":    latest.get("india_summary", latest.get("indiaSummary", "")),
         "indiaImpact":     _build_india_impact(latest),
     }
 
     js = f"window.WARWATCH_LIVE = {json.dumps(payload, indent=2)};\n"
-    # Expose Groq API key for frontend live AI analysis
-    groq_key = os.environ.get("GROQ_API_KEY", "")
-    print(f"[DEBUG] GROQ key length: {len(groq_key)}")
-    js += f"window.GROQ_API_KEY = '{groq_key}';\n"
+
+    # Inject Gemini API key for frontend live AI calls (replaces old GROQ key)
+    gemini_key = os.environ.get("GEMINI_API_KEY", "")
+    print(f"[DEBUG] GEMINI key length: {len(gemini_key)}")
+    js += f"window.GEMINI_API_KEY = '{gemini_key}';\n"
 
     with open("live_data.js", "w") as f:
         f.write(js)
     print("[OK] live_data.js written")
 
-    # Also keep the legacy dashboard.html for local viewing
     _build_legacy_html(reports)
 
 
 def _build_legacy_html(reports):
-    """Keep a basic legacy dashboard.html as a fallback."""
     level_colors = {"LOW":"#1D9E75","MEDIUM":"#BA7517","HIGH":"#D85A30","CRITICAL":"#A32D2D"}
     cards = ""
     for r in reports[:10]:
@@ -282,7 +260,7 @@ def _build_legacy_html(reports):
 <div class="bar">
   <span style="font-family:monospace;font-size:14px;font-weight:500;
     letter-spacing:.06em;text-transform:uppercase">War<span style="color:#e05555">Watch</span> Bot</span>
-  <span style="font-size:12px;color:#555">NDTV · Groq · Every 6hrs</span>
+  <span style="font-size:12px;color:#555">NDTV · Gemini · Every 15min</span>
   <span style="margin-left:auto;font-size:12px;color:#555">
     Last run: {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}</span>
 </div>
@@ -299,7 +277,7 @@ def _build_legacy_html(reports):
     <div class="card">
       <h2>About</h2>
       <p style="font-size:12px;color:#666;line-height:1.7">
-        Bot scrapes NDTV every 6 hrs · Summarises with Groq/Llama ·
+        Bot scrapes NDTV every 15 min · Summarises with Gemini 2.0 Flash ·
         Emails report · Updates <a href="warwatch.html">warwatch.html</a> live.<br><br>
         <strong style="color:#9a9a9a">live_data.js</strong> is regenerated every run.
       </p>
