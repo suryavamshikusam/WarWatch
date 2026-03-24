@@ -1,17 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 02:40 UTC",
+  "generatedAt": "2026-03-24 04:34 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: IRGC says Dimona,\u00a0Tel Aviv and Eilat\u00a0targeted in new wave of missiles \u00b7 Iran\u2019s Revolutionary Guard said it launched a new wave of strikes targeting Isra\u2026",
-    "Other: Iran military adviser says war continues until compensation, sanctions lifted \u00b7 A senior military adviser to Iran\u2019s leader, Mojtaba Khamenei, said the war will \u2026",
-    "Other: \u2018We will soon get the Strait of Hormuz open\u2019: Trump urges China, UK and other na \u00b7 US President Donald Trump has called on the UK and other countries to send warsh\u2026",
-    "Other: Middle East War Day 14: US aircraft crashes in Iraq, Netanyahu warns of toppling \u00b7 March 13 marks the fourteenth day of war between the United States-Israel and Ir\u2026"
+    "Other: Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War \u00b7 Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+    "Other: Netanyahu says spoke with Trump on potential Iran deal \u00b7 Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald\u2026",
+    "Other: US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f \u00b7 Israel\u2019s air defence system has been activated after the military detected new i\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-24 02:40 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-24 04:34 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -51,15 +50,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "IRGC says Dimona,\u00a0Tel Aviv and Eilat\u00a0targeted in new wave of missiles",
-      "summary": "Iran\u2019s Revolutionary Guard said it launched a new wave of strikes targeting Israel and US positions, including sites in Dimona, Tel Aviv and Eilat, according to a statement reported by Press TV. \u201cWe negotiate with enemies with impact-driven strikes,\u201d the IRGC said, describing the latest phase as hav",
+      "time": "11 min ago",
+      "headline": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+      "summary": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Revolutionary Guard said it launched a new wave of strikes targeting Israel and US positions, including sites in Dimona, Tel Aviv and Eilat, according to a statement reported by Press TV. \u201cWe negotiate with enemies with impact-driven strikes,\u201d the IRGC said, describing the latest phase as hav",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-dimona-tel-aviv-and-eilat-targeted-new-wave-missiles",
+      "fullAnalysis": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-news-inside-the-call-between-trump-netanyahu-that-sealed-ali-khameneis-fate-11257417#publisher=newsstand",
+      "sourceLabel": "NDTV"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Netanyahu says spoke with Trump on potential Iran deal",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald Trump about a potential agreement with Iran, as Israeli strikes continued in Iran and Lebanon. \u201cEarlier today, I spoke with our friend, President Trump,\u201d Netanyahu said, adding that Trump sees an opportunity to \u201cleverag",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald Trump about a potential agreement with Iran, as Israeli strikes continued in Iran and Lebanon. \u201cEarlier today, I spoke with our friend, President Trump,\u201d Netanyahu said, adding that Trump sees an opportunity to \u201cleverag",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-spoke-trump-potential-iran-deal",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,47 +82,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran military adviser says war continues until compensation, sanctions lifted",
-      "summary": "A senior military adviser to Iran\u2019s leader, Mojtaba Khamenei, said the war will continue until Tehran receives full compensation and sanctions are lifted. Mohsen Rezaei said Iran would keep fighting until \u201call economic sanctions are lifted, and legally binding international guarantees are obtained\u201d ",
+      "time": "11 min ago",
+      "headline": "US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f",
+      "summary": "Israel\u2019s air defence system has been activated after the military detected new incoming missiles from Iran, the military said in a message posted on Telegram. \u201cIn the past few minutes, the Home Front Command has sent a precautionary directive directly to mobile phones in the relevant areas,\u201d the mil",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A senior military adviser to Iran\u2019s leader, Mojtaba Khamenei, said the war will continue until Tehran receives full compensation and sanctions are lifted. Mohsen Rezaei said Iran would keep fighting until \u201call economic sanctions are lifted, and legally binding international guarantees are obtained\u201d",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-military-adviser-says-war-continues-until-compensation-sanctions",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "\u2018We will soon get the Strait of Hormuz open\u2019: Trump urges China, UK and other na",
-      "summary": "US President Donald Trump has called on the UK and other countries to send warships to help keep the Strait of Hormuz open as tensions with Iran continue. In a post on his Truth Social platform, Trump urged countries affected by the disruption of shipping in the narrow waterway to deploy naval vesse",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "US President Donald Trump has called on the UK and other countries to send warships to help keep the Strait of Hormuz open as tensions with Iran continue. In a post on his Truth Social platform, Trump urged countries affected by the disruption of shipping in the narrow waterway to deploy naval vesse",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-urges-uk-allies-warships-strait-of-hormuz-iran-oil-crisis-10582387/",
-      "sourceLabel": "Indian Express"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Middle East War Day 14: US aircraft crashes in Iraq, Netanyahu warns of toppling",
-      "summary": "March 13 marks the fourteenth day of war between the United States-Israel and Iran. The war began on February 28 with joint US and Israeli strikes on Iranian targets. Around 2,000 people have been killed during the strikes on Iran by the US and Israel. Here are the top developments as the war enters",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "March 13 marks the fourteenth day of war between the United States-Israel and Iran. The war began on February 28 with joint US and Israeli strikes on Iranian targets. Around 2,000 people have been killed during the strikes on Iran by the US and Israel. Here are the top developments as the war enters",
-      "sourceUrl": "https://indianexpress.com/article/world/us-mojtaba-khamenei-vows-revenge-us-israel-and-iran-war-10579292/",
+      "fullAnalysis": "Israel\u2019s air defence system has been activated after the military detected new incoming missiles from Iran, the military said in a message posted on Telegram. \u201cIn the past few minutes, the Home Front Command has sent a precautionary directive directly to mobile phones in the relevant areas,\u201d the mil",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-power-plant-strike-delay-ghalibaf-fake-news-10597551/",
       "sourceLabel": "Indian Express"
     },
     {
@@ -115,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 22:20 UTC",
-      "l": "MEDIUM",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 23:50 UTC",
       "l": "HIGH",
@@ -245,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 02:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 04:34 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC says Dimona,\u00a0Tel Aviv and Eilat\u00a0targeted in new wave of missiles. Iran military adviser says war continues until compensation, sanctions lifted. \u2018We will soon get the Strait of Hormuz open\u2019: Trump urges China, UK and other na. Middle East War Day 14: US aircraft crashes in Iraq, Netanyahu warns of toppling. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War. Netanyahu says spoke with Trump on potential Iran deal. US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

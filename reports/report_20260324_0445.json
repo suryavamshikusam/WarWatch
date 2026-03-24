@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 04:34 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War. Netanyahu says spoke with Trump on potential Iran deal. US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+      "detail": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "NDTV",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-news-inside-the-call-between-trump-netanyahu-that-sealed-ali-khameneis-fate-11257417#publisher=newsstand",
+      "fullAnalysis": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+      "sourceLabel": "NDTV"
+    },
+    {
+      "headline": "Netanyahu says spoke with Trump on potential Iran deal",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald Trump about a potential agreement with Iran, as Israeli strikes continued in Iran and Lebanon. \u201cEarlier today, I spoke with our friend, President Trump,\u201d Netanyahu said, adding that Trump sees an opportunity to \u201cleverag",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-spoke-trump-potential-iran-deal",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald Trump about a potential agreement with Iran, as Israeli strikes continued in Iran and Lebanon. \u201cEarlier today, I spoke with our friend, President Trump,\u201d Netanyahu said, adding that Trump sees an opportunity to \u201cleverag",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f",
+      "detail": "Israel\u2019s air defence system has been activated after the military detected new incoming missiles from Iran, the military said in a message posted on Telegram. \u201cIn the past few minutes, the Home Front Command has sent a precautionary directive directly to mobile phones in the relevant areas,\u201d the mil",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-power-plant-strike-delay-ghalibaf-fake-news-10597551/",
+      "fullAnalysis": "Israel\u2019s air defence system has been activated after the military detected new incoming missiles from Iran, the military said in a message posted on Telegram. \u201cIn the past few minutes, the Home Front Command has sent a precautionary directive directly to mobile phones in the relevant areas,\u201d the mil",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-24 04:34 UTC"
+}
