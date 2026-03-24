@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 14:54 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war shows why Europe is no longer relevant. Trump's stringent demands on Iran risk bogging down potential talks, sources say. Israel to \u2018control\u2019 southern Lebanon as Smotrich urges border shift to Litani Ri. Modi-Trump call: \u2018Ensuring Strait of Hormuz remains open\u2019, PM to US president am. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran war shows why Europe is no longer relevant",
+      "detail": "The US and Israel have started another myopic and dangerous regional war that is ultimately doomed to be counterproductive for all. Unlike Israel, the US may be willing to settle for a significant and durable degradation of Iran \u2019s nuclear and missile capabilities, and of Tehran\u2019s allies, especially",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/iran-war-shows-why-europe-no-longer-relevant",
+      "fullAnalysis": "The US and Israel have started another myopic and dangerous regional war that is ultimately doomed to be counterproductive for all. Unlike Israel, the US may be willing to settle for a significant and durable degradation of Iran \u2019s nuclear and missile capabilities, and of Tehran\u2019s allies, especially",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump's stringent demands on Iran risk bogging down potential talks, sources say",
+      "detail": "The US has issued far-reaching demands to Iran to end the war , conditions that Tehran is likely to view as a non-starter, sources familiar with the matter have told Middle East Eye. Turkey , Pakistan and Egypt have been trying to establish a channel between the US and Iran to secure a short ceasefi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-trump-demands-risk-talks-ending-iran-war",
+      "fullAnalysis": "The US has issued far-reaching demands to Iran to end the war , conditions that Tehran is likely to view as a non-starter, sources familiar with the matter have told Middle East Eye. Turkey , Pakistan and Egypt have been trying to establish a channel between the US and Iran to secure a short ceasefi",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israel to \u2018control\u2019 southern Lebanon as Smotrich urges border shift to Litani Ri",
+      "detail": "Israel \u2019s defence minister, Israel Katz, said on Tuesday that the army plans to \u201ccontrol\u201d southern Lebanon , a day after Finance Minister Bezalel Smotrich called for the border to be redrawn at the Litani River. Katz said hundreds of thousands of Lebanese civilians forced to flee the south would not",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/litani-river-must-be-new-border-lebanon-israels-smotrich-says",
+      "fullAnalysis": "Israel \u2019s defence minister, Israel Katz, said on Tuesday that the army plans to \u201ccontrol\u201d southern Lebanon , a day after Finance Minister Bezalel Smotrich called for the border to be redrawn at the Litani River. Katz said hundreds of thousands of Lebanese civilians forced to flee the south would not",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Modi-Trump call: \u2018Ensuring Strait of Hormuz remains open\u2019, PM to US president am",
+      "detail": "Prime Minister Narendra Modi Tuesday spoke with US President Donald Trump, focusing on the ongoing crisis in the West Asia and the need to keep critical global shipping routes open. Confirming the development, US Ambassador to India Sergio Gor said the two leaders discussed the situation in the regi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/india/modi-trump-call-west-asia-crisis-hormuz-10599060/",
+      "fullAnalysis": "Prime Minister Narendra Modi Tuesday spoke with US President Donald Trump, focusing on the ongoing crisis in the West Asia and the need to keep critical global shipping routes open. Confirming the development, US Ambassador to India Sergio Gor said the two leaders discussed the situation in the regi",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-24 14:54 UTC"
+}
