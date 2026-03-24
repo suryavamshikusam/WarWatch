@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 08:44 UTC",
+  "generatedAt": "2026-03-24 09:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: War on Iran: How Israel is demolishing the myth that once shielded it \u00b7 Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201c\u2026",
-    "Other: South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping \u00b7 South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart fo\u2026",
-    "Other: Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says \u00b7 At least six people were injured in Tel Aviv after an Iranian air strike, The Ti\u2026"
+    "Other: Trump wants a deal with Iran but success of talks unlikely, Israeli officials sa \u00b7 US President Donald Trump appears to be determined to reach a deal with\u00a0Iran\u00a0aim\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-24 08:44 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-24 09:40 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,47 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "War on Iran: How Israel is demolishing the myth that once shielded it",
-      "summary": "Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201ca villa in the jungle\u201d, \u201ctough neighbourhood\u201d or, perhaps most tiresomely, \u201conly democracy in the Middle East\u201d. The function of this propaganda has been to persuade their audience - both the domestic Israeli electorate, ",
+      "time": "7 min ago",
+      "headline": "Trump wants a deal with Iran but success of talks unlikely, Israeli officials sa",
+      "summary": "US President Donald Trump appears to be determined to reach a deal with\u00a0Iran\u00a0aimed at ending hostilities in the Middle East, three senior Israeli officials said on Tuesday. The officials, speaking on condition of anonymity, said that they viewed it is unlikely that Iran would agree to US demands in ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201ca villa in the jungle\u201d, \u201ctough neighbourhood\u201d or, perhaps most tiresomely, \u201conly democracy in the Middle East\u201d. The function of this propaganda has been to persuade their audience - both the domestic Israeli electorate,",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/war-iran-how-israel-demolishing-myth-once-shielded-it",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping",
-      "summary": "South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart for support on crude oil and LNG supplies, Cho's office said, due to shipment disruptions linked to the conflict in the Middle East.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart for support on crude oil and LNG supplies, Cho's office said, due to shipment disruptions linked to the conflict in the Middle East.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korea-seeks-omani-support-oil-lng-iran-war-disrupts-shipping",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says",
-      "summary": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/injuries-damage-tel-aviv-after-iranian-attacks-israeli-media-says",
+      "fullAnalysis": "US President Donald Trump appears to be determined to reach a deal with\u00a0Iran\u00a0aimed at ending hostilities in the Middle East, three senior Israeli officials said on Tuesday. The officials, speaking on condition of anonymity, said that they viewed it is unlikely that Iran would agree to US demands in",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-wants-deal-iran-success-talks-unlikely-israeli-officials-say",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -98,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-21 07:02 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 05:45 UTC",
       "l": "HIGH",
@@ -228,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 08:44 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 09:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: War on Iran: How Israel is demolishing the myth that once shielded it. South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping. Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump wants a deal with Iran but success of talks unlikely, Israeli officials sa. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
