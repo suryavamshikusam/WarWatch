@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 21:57 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination . US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call. \u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination ",
+      "detail": "Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu which they said was taken while he was ordering the elimination of Iranian officials, as false rumours claiming Netanyahu has died continued to buzz on social media. The picture comes a day after Netanyahu posted a vide",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/israel-pm-benjamin-netanyahu-death-rumours-ai-deepfake-video-iran-threat-explained-10587042/",
+      "fullAnalysis": "Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu which they said was taken while he was ordering the elimination of Iranian officials, as false rumours claiming Netanyahu has died continued to buzz on social media. The picture comes a day after Netanyahu posted a vide",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call",
+      "detail": "US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warhead missiles at Israel early Wednesday, with the Revolutionary Guard describing the attack as revenge for Israel killing top security official Ali Larijani. Iran\u2019s Supreme National Security Council Wednesday confirmed th",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-nato-strait-of-hormuz-10584202/",
+      "fullAnalysis": "US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warhead missiles at Israel early Wednesday, with the Revolutionary Guard describing the attack as revenge for Israel killing top security official Ali Larijani. Iran\u2019s Supreme National Security Council Wednesday confirmed th",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "\u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N",
+      "detail": "Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Benjamin Netanyahu amid the ongoing war with Israel and the United States. Calling him a \u201cchild-killing criminal\u201d, the Guards said that they will continue to target Netanyahu with full force if he remains alive. \u201cIf this c",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-revolutionary-guards-kill-netanyahu-israel-us-war-10582846/",
+      "fullAnalysis": "Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Benjamin Netanyahu amid the ongoing war with Israel and the United States. Calling him a \u201cchild-killing criminal\u201d, the Guards said that they will continue to target Netanyahu with full force if he remains alive. \u201cIf this c",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-23 21:57 UTC"
+}

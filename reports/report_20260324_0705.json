@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 06:58 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says",
+      "detail": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/injuries-damage-tel-aviv-after-iranian-attacks-israeli-media-says",
+      "fullAnalysis": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-03-24 06:58 UTC"
+}

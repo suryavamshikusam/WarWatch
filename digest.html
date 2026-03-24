@@ -158,6 +158,7 @@ footer{padding:18px 24px;border:1px solid #2a2a2a;background:#1a1a1a;border-radi
 <script>
 (function(){
 
+/* ── Date ── */
 var d=new Date();
 var DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
 var MONS=['January','February','March','April','May','June','July','August','September','October','November','December'];
@@ -165,7 +166,8 @@ var dateStr=DAYS[d.getDay()]+', '+MONS[d.getMonth()]+' '+d.getDate()+', '+d.getF
 document.getElementById('header-date').textContent=dateStr;
 document.getElementById('tb-date').textContent=dateStr;
 
-var SECTIONS=[
+/* ── All possible sections (order matters for sidebar) ── */
+var ALL_SECTIONS=[
   {key:'war',      label:'War',          color:'#c41e3a',tagBg:'rgba(196,30,58,.15)',  tagColor:'#e07070'},
   {key:'military', label:'Military',     color:'#7f77dd',tagBg:'rgba(127,119,221,.15)',tagColor:'#a89fe0'},
   {key:'diplomacy',label:'Diplomacy',    color:'#3daa72',tagBg:'rgba(61,170,114,.15)', tagColor:'#5ccc8e'},
@@ -174,50 +176,72 @@ var SECTIONS=[
   {key:'india',    label:'India Impact', color:'#c41e3a',tagBg:'rgba(196,30,58,.12)',  tagColor:'#e07070',isIndia:true}
 ];
 
-var FALLBACK={
-  war:[
-    {headline:'US launches Operation Midnight Hammer — strikes Iran\'s nuclear sites',summary:'B-2 bombers hit Fordow, Natanz and Isfahan overnight.',fullAnalysis:'US B-2 stealth bombers struck Iran\'s three hardened nuclear facilities simultaneously.\n\nThis is the single largest US military action against Iran in history — a fundamental shift from sanctions to direct confrontation.\n\nWatch for IRGC movements toward the Strait of Hormuz in the next 24-48 hours.',actor:'US',sourceLabel:'NDTV',time:'2h ago',sourceUrl:'#'},
-  ],
-  military:[],diplomacy:[],wider_war:[],markets:[],india:[]
-};
-
-/* ── Build data groups from live_data.js ── */
+/* ── Build data groups from live_data.js — NO fallback data ── */
 var D=window.WARWATCH_LIVE;
 var groups={};
-SECTIONS.forEach(function(s){groups[s.key]=[];});
+ALL_SECTIONS.forEach(function(s){groups[s.key]=[];});
 
 if(D&&D.newsCards&&D.newsCards.length){
   D.newsCards.forEach(function(c){
-    var t=(c.type||'war').toLowerCase().replace(/ /g,'_');
-    if(groups[t])groups[t].push(c);
+    /* Skip the "what to watch" monitor card from digest */
+    if(c.actor==='Monitor') return;
+    var t=(c.type||c.badgeLabel||'war').toLowerCase().replace(/ /g,'_');
+    /* Map badge labels to section keys */
+    var keyMap={
+      'war':'war','military':'military','diplomacy':'diplomacy',
+      'wider_war':'wider_war','wider war':'wider_war',
+      'markets':'markets','markets & oil':'markets',
+      'india':'india','high':'war','medium':'war','low':'war','analysis':'war'
+    };
+    var key=keyMap[t]||'war';
+    if(groups[key]!==undefined) groups[key].push(c);
     else groups.war.push(c);
   });
 }
+
+/* ── India impact cards from indiaImpact — separate from newsCards ── */
 if(D&&D.indiaImpact&&D.indiaImpact.length){
   groups.india=D.indiaImpact.map(function(i){
     return{
-      headline:i.headline,
-      summary:i.detail,
+      headline:    i.headline||'',
+      summary:     i.detail||'',
       fullAnalysis:i.full_detail||i.detail||'',
-      category:i.category,
-      significance:i.significance,
-      sourceUrl:i.sourceUrl,
-      source:i.source,
-      time:'Today'
+      category:    i.category||'India',
+      significance:i.significance||'MEDIUM',
+      sourceUrl:   i.sourceUrl||'#',
+      source:      i.source||'WarWatch',
+      sourceLabel: i.source||'WarWatch',
+      time:        'Today'
     };
   });
 }
-SECTIONS.forEach(function(s){if(!groups[s.key].length)groups[s.key]=FALLBACK[s.key]||[];});
+
+/* ── Only keep sections that have at least 1 story ── */
+var SECTIONS=ALL_SECTIONS.filter(function(s){
+  return groups[s.key]&&groups[s.key].length>0;
+});
 
 /* ── Topbar stats ── */
 if(D){
-  var tot=0; SECTIONS.forEach(function(s){tot+=groups[s.key].length;});
+  var tot=0;
+  ALL_SECTIONS.forEach(function(s){tot+=(groups[s.key]||[]).length;});
   var tc=document.getElementById('tb-count'); if(tc)tc.textContent=tot;
   var tl=document.getElementById('tb-level'); if(tl)tl.textContent=D.escalationLevel||'—';
-  var tg=document.getElementById('tb-gen');   if(tg&&D.generatedAt)tg.textContent=D.generatedAt.slice(11,16)+' UTC';
+  var tg=document.getElementById('tb-gen');
+  if(tg&&D.generatedAt)tg.textContent=D.generatedAt.slice(11,16)+' UTC';
 }
 
-/* ── Show analysis — reads pre-generated fullAnalysis, no API calls ── */
+/* ── No data at all — show empty state ── */
+if(!SECTIONS.length){
+  document.getElementById('cat-list').innerHTML=
+    '<div style="padding:24px 18px;font-family:\'IBM Plex Mono\',monospace;font-size:10px;color:#333;letter-spacing:.08em;text-transform:uppercase;line-height:2">'+
+    'No stories yet.<br>Bot runs every<br>15 minutes.</div>';
+  document.getElementById('analysis-inner').innerHTML=
+    '<div class="an-empty">Waiting for first bot run — check back soon.</div>';
+  return;
+}
+
+/* ── Show analysis panel ── */
 function showAnalysis(card, sec){
   var inner=document.getElementById('analysis-inner');
   var srcLbl=card.sourceLabel||card.source||'Source';
@@ -233,20 +257,21 @@ function showAnalysis(card, sec){
     '</div>'+
     '<div class="an-hl" style="animation:fadeIn .3s ease">'+card.headline+'</div>'+
     '<div class="an-divider"></div>'+
-    '<div class="an-ai-lbl">AI Analysis · Gemini</div>'+
+    '<div class="an-ai-lbl"><span style="display:inline-flex;gap:3px;align-items:center;margin-right:6px"><span style="display:inline-block;width:3px;height:3px;border-radius:50%;background:#7f77dd;animation:aiDot 1.2s ease-in-out infinite"></span><span style="display:inline-block;width:3px;height:3px;border-radius:50%;background:#7f77dd;animation:aiDot 1.2s ease-in-out infinite;animation-delay:.2s"></span><span style="display:inline-block;width:3px;height:3px;border-radius:50%;background:#7f77dd;animation:aiDot 1.2s ease-in-out infinite;animation-delay:.4s"></span></span>AI Analysis · Gemini</div>'+
     '<div class="an-body" id="an-body-content"></div>'+
-    (srcUrl!=='#'?'<a class="an-link" href="'+srcUrl+'" target="_blank">Read → '+srcLbl+' ↗</a>':'');
+    (srcUrl!=='#'?'<a class="an-link" href="'+srcUrl+'" target="_blank">Read full story → '+srcLbl+' ↗</a>':'');
 
-  /* Read fullAnalysis pre-generated by CI — zero API calls */
-  var analysisText = card.fullAnalysis||card.full_detail||card.detail||card.summary||'';
-  var bodyEl = document.getElementById('an-body-content');
+  var analysisText=card.fullAnalysis||card.full_detail||card.detail||card.summary||'';
+  var bodyEl=document.getElementById('an-body-content');
   if(bodyEl){
-    if(analysisText && analysisText.length > 30){
-      var paras = analysisText.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,5);
+    if(analysisText&&analysisText.length>30){
+      var paras=analysisText.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,5);
       if(!paras.length) paras=[analysisText];
-      bodyEl.innerHTML = paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
+      bodyEl.innerHTML=paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
     } else {
-      bodyEl.innerHTML = '<p style="color:#444;font-style:italic">Analysis will appear after the next bot run.</p>';
+      bodyEl.innerHTML='<p style="color:#444;font-style:italic">'+
+        (card.summary||card.detail||'Analysis will appear after the next bot run.')+
+      '</p>';
     }
   }
 }
@@ -271,7 +296,8 @@ function loadSection(sec){
 
     var sigBadge='';
     if(sec.isIndia&&card.significance){
-      var sc=card.significance==='HIGH'?'background:#c41e3a;color:#fff':card.significance==='MEDIUM'?'background:#8b5e0a;color:#fff':'background:#1d6e42;color:#fff';
+      var sc=card.significance==='HIGH'?'background:#c41e3a;color:#fff':
+             card.significance==='MEDIUM'?'background:#8b5e0a;color:#fff':'background:#1d6e42;color:#fff';
       sigBadge='<span class="stag" style="'+sc+'">'+card.significance+'</span>';
     }
     var catBadge='<span class="stag" style="background:'+sec.tagBg+';color:'+sec.tagColor+'">'+(sec.isIndia&&card.category?card.category:sec.label)+'</span>';
@@ -296,10 +322,9 @@ function loadSection(sec){
   });
 
   if(cards.length) showAnalysis(cards[0],sec);
-  else document.getElementById('analysis-inner').innerHTML='<div class="an-empty">No stories in this section yet.</div>';
 }
 
-/* ── Build sidebar ── */
+/* ── Build sidebar — only populated sections ── */
 var catList=document.getElementById('cat-list');
 SECTIONS.forEach(function(sec,i){
   var item=document.createElement('div');
@@ -317,6 +342,7 @@ SECTIONS.forEach(function(sec,i){
   catList.appendChild(item);
 });
 
+/* ── Load first available section ── */
 loadSection(SECTIONS[0]);
 
 })();

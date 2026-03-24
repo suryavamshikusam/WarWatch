@@ -1,37 +1,26 @@
 """
-scraper.py — Fetches war/conflict articles from reliable RSS sources.
+scraper.py — Pure RSS scraper. No AI. No API keys.
 
-Reduced to 6 working sources only:
-  - Al Jazeera (working, war-focused)
-  - BBC World (working, reliable)
-  - NDTV Top Stories (working)
-  - Indian Express World (working, India angle)
-  - Middle East Eye (working, conflict-focused)
-  - Defense One (working, military angle)
-
-Removed (broken or too noisy):
-  - Reuters → DNS failure in GitHub Actions
-  - AP News → DNS failure
-  - Times of Israel → 403 Forbidden
-  - TRT World → 404 Not Found
-  - Haaretz → 92 articles, mostly paywalled opinion
-  - Indian Express → 127 articles, too many irrelevant
-  - Hindustan Times → 403 Forbidden
-  - Iran International → XML parse errors
-  - i24 News → XML parse errors
-  - LiveMint → low war relevance
-  - The Hindu → low war relevance
-  - Foreign Policy → low war relevance
+- Fetches 8 RSS sources (war + India specific)
+- Scores by keyword relevance
+- Tags India articles
+- Saves to today.json (auto-resets at midnight UTC)
+- Keeps latest 25 articles, drops oldest
 """
 
 import re
+import json
 import requests
 import xml.etree.ElementTree as ET
-from datetime import datetime
+from datetime import datetime, timezone
+from pathlib import Path
 from bs4 import BeautifulSoup
 import warnings
 
 warnings.filterwarnings("ignore")
+
+TODAY_FILE   = Path("today.json")
+MAX_ARTICLES = 25
 
 NAMESPACES = {
     "media":   "http://search.yahoo.com/mrss/",
@@ -50,106 +39,110 @@ HEADERS = {
     "Accept-Language": "en-US,en;q=0.9",
 }
 
-MAX_ARTICLES = 25  # Hard cap — keeps Gemini prompt manageable
-
-# ── Reliable RSS sources only ──────────────────────────────────────────────
-RSS_SOURCES = [
-    # Tier 1: Reliable wire/broadcast
-    ("Al Jazeera",   "https://www.aljazeera.com/xml/rss/all.xml"),
-    ("BBC",          "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
-    ("BBC",          "https://feeds.bbci.co.uk/news/world/rss.xml"),
-    ("NDTV",         "https://feeds.feedburner.com/ndtvnews-top-stories"),
-    # Tier 2: Conflict/India focused
-    ("Indian Express","https://indianexpress.com/section/world/feed/"),
+# ── RSS Sources ────────────────────────────────────────────────────────────────
+WAR_SOURCES = [
+    ("Al Jazeera",     "https://www.aljazeera.com/xml/rss/all.xml"),
+    ("BBC",            "https://feeds.bbci.co.uk/news/world/middle_east/rss.xml"),
+    ("BBC World",      "https://feeds.bbci.co.uk/news/world/rss.xml"),
     ("Middle East Eye","https://www.middleeasteye.net/rss"),
-    ("Defense One",  "https://www.defenseone.com/rss/all/"),
+    ("Defense One",    "https://www.defenseone.com/rss/all/"),
 ]
 
-# ── Keywords ───────────────────────────────────────────────────────────────
-HIGH_WEIGHT_KEYWORDS = [
-    "iran war", "us strike", "israel strike", "irgc", "idf strike",
-    "nuclear deal", "strait of hormuz", "kharg island", "chabahar",
-    "iranian missile", "iranian drone", "shahed", "ballistic missile",
-    "khamenei", "netanyahu", "pentagon iran", "us iran", "israel iran",
+INDIA_SOURCES = [
+    ("NDTV",           "https://feeds.feedburner.com/ndtvnews-top-stories"),
+    ("Indian Express", "https://indianexpress.com/section/world/feed/"),
+    ("Indian Express", "https://indianexpress.com/section/india/feed/"),
 ]
 
-MEDIUM_WEIGHT_KEYWORDS = [
-    "iran", "israel", "hamas", "hezbollah", "gaza", "middle east",
-    "nuclear", "idf", "pentagon", "missile", "drone", "netanyahu",
-    "trump iran", "tehran", "tel aviv", "west bank",
-    "ceasefire", "sanctions", "hormuz", "saudi arabia",
-    "proxy", "warship", "airstrike", "retaliation", "escalation",
-    "india iran", "india oil", "india gulf", "indian sailors",
-    "brent crude", "oil price", "opec", "energy crisis",
+# ── Keywords ──────────────────────────────────────────────────────────────────
+HIGH_WAR_KEYWORDS = [
+    "iran war","us strike","israel strike","irgc","idf strike",
+    "strait of hormuz","kharg island","chabahar","iranian missile",
+    "iranian drone","shahed","ballistic missile","khamenei","netanyahu",
+    "pentagon iran","us iran","israel iran","operation midnight",
+    "nuclear site","fordow","natanz","isfahan",
 ]
 
-UNSPLASH_PHOTO_IDS = {
-    "oil":       "1474546499760-77a0b18c5e69",
-    "drone":     "1585776245991-cf89dd7fc73a",
-    "nuclear":   "1518709414768-a88981a4515d",
-    "diplomacy": "1529107386315-e1a2ed48a1e3",
-    "india":     "1582510003544-4d00b7f74220",
-    "strike":    "1540575467063-178a50c2df87",
-    "hormuz":    "1505118380757-91f5f5632de0",
-    "ship":      "1566753323558-f4e0952af115",
-    "iran":      "1604072366595-e75dc92d6bdc",
-    "default":   "1579548122080-c35fd6820734",
-}
+MEDIUM_WAR_KEYWORDS = [
+    "iran","israel","hamas","hezbollah","gaza","middle east",
+    "nuclear","idf","pentagon","missile","drone",
+    "trump iran","tehran","tel aviv","ceasefire","sanctions",
+    "hormuz","saudi arabia","proxy war","airstrike","retaliation",
+    "escalation","warship","carrier group","houthi",
+]
+
+INDIA_KEYWORDS = [
+    "india iran","india oil","india gulf","indian sailors","indian nationals",
+    "mea india","ministry of external affairs","air india","indigo gulf",
+    "india crude","india energy","chabahar india","india diaspora",
+    "india israel","india diplomacy","modi iran","modi israel",
+    "rupee","bpcl","hpcl","ioc refin","indian navy gulf",
+    "kerala gulf","ndtv","indian express","india war",
+    "indians in uae","indians in saudi","indians in kuwait",
+    "india remittance","india petrol","india fuel",
+]
+
+CATEGORY_RULES = [
+    ("Energy",    ["oil","crude","brent","hormuz","petrol","fuel","energy","opec","refin"]),
+    ("Diaspora",  ["diaspora","nationals","evacuation","helpline","mea","air india","expat","kerala","remittance"]),
+    ("Diplomacy", ["diplomacy","ceasefire","talks","negotiat","oman","qatar mediat","un vote","abstain","modi call"]),
+    ("Trade",     ["chabahar","port","trade","mundra","cargo","shipping","supply chain","central asia"]),
+    ("Economy",   ["rupee","inflation","petrol price","fuel price","market","stock","bse","nse","gdp"]),
+    ("Security",  ["navy","evacuation","military","ndrf","standby","troops","defence"]),
+    ("War",       ["strike","missile","drone","bomb","attack","irgc","idf","airstrike"]),
+    ("Markets",   ["brent","wti","gold","crude","wheat","opec","oil price"]),
+]
 
 
-def _get_relevance_score(title: str, desc: str) -> int:
+def _score_article(title, desc):
     text = (title + " " + desc).lower()
     score = 0
-    for kw in HIGH_WEIGHT_KEYWORDS:
+    for kw in HIGH_WAR_KEYWORDS:
         if kw in text:
             score += 3
-    for kw in MEDIUM_WEIGHT_KEYWORDS:
+    for kw in MEDIUM_WAR_KEYWORDS:
         if kw in text:
             score += 1
     return score
 
 
-def _get_unsplash_fallback(title: str) -> str:
-    title_lower = title.lower()
-    for key, photo_id in UNSPLASH_PHOTO_IDS.items():
-        if key in title_lower:
-            return f"https://images.unsplash.com/photo-{photo_id}?w=800&h=450&q=80&fit=crop"
-    return f"https://images.unsplash.com/photo-{UNSPLASH_PHOTO_IDS['default']}?w=800&h=450&q=80&fit=crop"
+def _is_india_tagged(title, desc):
+    text = (title + " " + desc).lower()
+    return any(kw in text for kw in INDIA_KEYWORDS)
 
 
-def _proxy_image(url):
-    if not url:
-        return url
-    if "unsplash.com" in url:
-        return url
-    from urllib.parse import quote
-    clean = url.split("?")[0]
-    return f"https://images.weserv.nl/?url={quote(clean, safe='')}&w=800&h=450&fit=cover&output=jpg"
+def _get_category(title, desc, is_india):
+    text = (title + " " + desc).lower()
+    for cat, keywords in CATEGORY_RULES:
+        if any(kw in text for kw in keywords):
+            if is_india and cat in ("War", "Markets"):
+                continue
+            return cat
+    return "India" if is_india else "War"
 
 
-def _extract_image_from_rss(item) -> str:
+def _get_significance(score):
+    if score >= 6:
+        return "HIGH"
+    if score >= 3:
+        return "MEDIUM"
+    return "LOW"
+
+
+def _extract_image(item):
     for mc in item.findall("media:content", NAMESPACES):
         url = mc.get("url", "")
-        if url and any(ext in url.lower() for ext in [".jpg", ".jpeg", ".png", ".webp"]):
+        if url and any(ext in url.lower() for ext in [".jpg",".jpeg",".png",".webp"]):
             return url
-    mg = item.find("media:group", NAMESPACES)
-    if mg is not None:
-        mc = mg.find("media:content", NAMESPACES)
-        if mc is not None:
-            url = mc.get("url", "")
-            if url:
-                return url
     mt = item.find("media:thumbnail", NAMESPACES)
     if mt is not None:
-        url = mt.get("url", "")
+        url = mt.get("url","")
         if url:
             return url
     enc = item.find("enclosure")
-    if enc is not None and "image" in enc.get("type", ""):
-        url = enc.get("url", "")
-        if url:
-            return url
-    desc = item.findtext("description", "")
+    if enc is not None and "image" in enc.get("type",""):
+        return enc.get("url","")
+    desc = item.findtext("description","")
     if desc and "<img" in desc:
         m = re.search(r'<img[^>]+src=["\']([^"\']+)["\']', desc)
         if m:
@@ -157,65 +150,15 @@ def _extract_image_from_rss(item) -> str:
     return ""
 
 
-def _fetch_og_image(url: str) -> str:
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=12, verify=False)
-        if resp.status_code != 200:
-            return ""
-        html = resp.text[:30000]
-        patterns = [
-            r'property=["\']og:image["\'][^>]*content=["\']([^"\']+)["\']',
-            r'content=["\']([^"\']+)["\'][^>]*property=["\']og:image["\']',
-        ]
-        for pat in patterns:
-            m = re.search(pat, html)
-            if m:
-                img = m.group(1)
-                if img.startswith("http") and any(
-                    ext in img.lower() for ext in [".jpg", ".jpeg", ".png", ".webp", "image"]
-                ):
-                    return img
-    except Exception:
-        pass
-    return ""
-
-
-def fetch_article_content(url: str) -> str:
-    try:
-        resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
-        if resp.status_code != 200:
-            return ""
-        soup = BeautifulSoup(resp.text, "lxml")
-        for tag in soup(["script", "style", "nav", "header", "footer",
-                          "aside", "figure", "figcaption", "noscript"]):
-            tag.decompose()
-        selectors = [
-            "article", ".article-body", ".story-body", ".post-content",
-            ".article__body", ".article-text", ".story-content",
-            "#article-body", "#story-body", ".entry-content",
-        ]
-        for sel in selectors:
-            container = soup.select_one(sel)
-            if container:
-                paragraphs = container.find_all("p")
-                text = " ".join(
-                    p.get_text(" ", strip=True) for p in paragraphs
-                    if len(p.get_text(strip=True)) > 40
-                )
-                if len(text) > 200:
-                    return text[:3000]
-        paragraphs = soup.find_all("p")
-        text = " ".join(
-            p.get_text(" ", strip=True) for p in paragraphs
-            if len(p.get_text(strip=True)) > 40
-        )
-        return text[:3000]
-    except Exception as e:
-        print(f"  [WARN] Content fetch failed for {url}: {e}")
+def _clean_html(text):
+    if not text:
         return ""
+    text = re.sub(r'<[^>]+>', ' ', text)
+    text = re.sub(r'\s+', ' ', text).strip()
+    return text[:400]
 
 
-def _parse_feed(source_label: str, url: str, seen: set) -> list:
+def _parse_feed(source_label, url, seen_urls, force_india=False):
     results = []
     try:
         resp = requests.get(url, headers=HEADERS, timeout=15, verify=False)
@@ -223,92 +166,120 @@ def _parse_feed(source_label: str, url: str, seen: set) -> list:
         root = ET.fromstring(resp.content)
 
         for item in root.findall(".//item"):
-            title = item.findtext("title", "").strip()
-            link  = item.findtext("link", "").strip()
-            desc  = item.findtext("description", "").strip()
+            title = item.findtext("title","").strip()
+            link  = item.findtext("link","").strip()
+            desc  = _clean_html(item.findtext("description",""))
 
             if not link:
                 link_el = item.find("{http://www.w3.org/2005/Atom}link")
                 if link_el is not None:
-                    link = link_el.get("href", "").strip()
+                    link = link_el.get("href","").strip()
 
-            if not link or link in seen or len(title) < 10:
+            if not link or link in seen_urls or len(title) < 10:
                 continue
 
-            score = _get_relevance_score(title, desc)
-            if score == 0:
+            score = _score_article(title, desc)
+            if not force_india and score == 0:
                 continue
 
-            seen.add(link)
-            image_url = _proxy_image(_extract_image_from_rss(item))
+            is_india = force_india or _is_india_tagged(title, desc)
+            category = _get_category(title, desc, is_india)
+            significance = _get_significance(score)
 
+            seen_urls.add(link)
             results.append({
-                "title":      title,
-                "url":        link,
-                "content":    desc,
-                "source":     source_label,
-                "imageUrl":   image_url,
-                "score":      score,
-                "fetched_at": datetime.utcnow().isoformat(),
+                "url":          link,
+                "title":        title,
+                "snippet":      desc or title,
+                "source":       source_label,
+                "image":        _extract_image(item),
+                "score":        score,
+                "india":        is_india,
+                "category":     category,
+                "significance": significance,
+                "fetched_at":   datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC"),
+                "time_ago":     "just now",
             })
 
     except ET.ParseError as e:
-        print(f"  [WARN] XML parse error for {source_label}: {e}")
+        print(f"  [WARN] XML parse error {source_label}: {e}")
     except requests.RequestException as e:
         print(f"  [ERROR] {source_label}: {e}")
     except Exception as e:
-        print(f"  [ERROR] Unexpected for {source_label}: {e}")
+        print(f"  [ERROR] Unexpected {source_label}: {e}")
 
     return results
 
 
-def fetch_all_articles() -> list:
-    articles = []
-    seen = set()
-    source_counts: dict = {}
-
-    print(f"  Fetching RSS from {len(RSS_SOURCES)} sources...")
-    for source_label, url in RSS_SOURCES:
-        batch = _parse_feed(source_label, url, seen)
-        if batch:
-            source_counts[source_label] = source_counts.get(source_label, 0) + len(batch)
-            articles.extend(batch)
-
-    articles.sort(key=lambda a: a.get("score", 0), reverse=True)
-
-    print(f"  Relevant articles found: {len(articles)}")
-    for src, count in sorted(source_counts.items()):
-        print(f"    {src}: {count}")
-
-    # Hard cap — take only top MAX_ARTICLES by relevance score
-    articles = articles[:MAX_ARTICLES]
-    print(f"  Using top {len(articles)} articles (capped at {MAX_ARTICLES})")
-
-    # Fetch og:image for top 8 missing images only
-    missing = [a for a in articles if not a["imageUrl"]][:8]
-    if missing:
-        print(f"  Fetching og:image for {len(missing)} articles...")
-        for art in missing:
-            img = _fetch_og_image(art["url"])
-            if img:
-                art["imageUrl"] = _proxy_image(img)
-
-    # Unsplash fallback
-    for art in articles:
-        if not art["imageUrl"]:
-            art["imageUrl"] = _get_unsplash_fallback(art["title"])
-
-    return articles
+def _load_today():
+    today_str = datetime.now(timezone.utc).strftime("%Y-%m-%d")
+    if TODAY_FILE.exists():
+        try:
+            data = json.loads(TODAY_FILE.read_text())
+            if data.get("date") == today_str:
+                return data
+            else:
+                print(f"  New day ({today_str}) — wiping previous data ({data.get('date','?')})")
+        except Exception:
+            pass
+    return {"date": today_str, "articles": [], "seen_urls": []}
 
 
-# Backwards-compatibility alias
-def fetch_ndtv_articles() -> list:
-    return fetch_all_articles()
+def _save_today(data):
+    TODAY_FILE.write_text(json.dumps(data, indent=2, ensure_ascii=False))
+
+
+def fetch_and_update():
+    today     = _load_today()
+    seen_urls = set(today.get("seen_urls", []))
+    existing  = today.get("articles", [])
+
+    print(f"  Today: {today['date']} | Existing: {len(existing)} | Seen URLs: {len(seen_urls)}")
+
+    new_articles = []
+
+    for source_label, url in WAR_SOURCES:
+        print(f"  Fetching {source_label}...")
+        batch = _parse_feed(source_label, url, seen_urls, force_india=False)
+        new_articles.extend(batch)
+        print(f"    → {len(batch)} new articles")
+
+    for source_label, url in INDIA_SOURCES:
+        print(f"  Fetching {source_label} (India)...")
+        batch = _parse_feed(source_label, url, seen_urls, force_india=True)
+        new_articles.extend(batch)
+        print(f"    → {len(batch)} India articles")
+
+    new_articles.sort(key=lambda a: a["score"], reverse=True)
+
+    print(f"  New articles found: {len(new_articles)}")
+
+    merged = new_articles + existing
+    merged = merged[:MAX_ARTICLES]
+
+    all_seen = list(seen_urls) + [a["url"] for a in new_articles]
+    all_seen = list(dict.fromkeys(all_seen))[-500:]
+
+    today["articles"]  = merged
+    today["seen_urls"] = all_seen
+    today["last_run"]  = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+    today["total"]     = len(merged)
+
+    _save_today(today)
+    print(f"  Saved today.json — {len(merged)} articles total")
+    return today
+
+
+def fetch_all_articles():
+    data = fetch_and_update()
+    return data.get("articles", [])
 
 
 if __name__ == "__main__":
-    arts = fetch_all_articles()
-    print(f"\nTotal returned: {len(arts)}")
-    for a in arts[:10]:
-        has_img = "✓ img" if a.get("imageUrl") else "✗"
-        print(f"  [{a['source']}] score={a['score']} {has_img} {a['title'][:70]}")
+    data = fetch_and_update()
+    arts = data["articles"]
+    india = [a for a in arts if a["india"]]
+    print(f"\nTotal: {len(arts)} | India: {len(india)} | War: {len(arts)-len(india)}")
+    for a in arts[:5]:
+        tag = "[IN]" if a["india"] else "[WR]"
+        print(f"  {tag} [{a['source']}] score={a['score']} {a['title'][:65]}")

@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-23 19:14 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'This war is not of their making,' Omani foreign minister says of Iran. Israelis say southern towns left unprotected as war with Iran intensifies. Netanyahu says Trump sees chance of deal with Iran. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "'This war is not of their making,' Omani foreign minister says of Iran",
+      "detail": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/war-not-their-making-omani-fm-says-iran",
+      "fullAnalysis": "The man who oversaw the negotiations between the US and Iran into their final hours last month has now publicly declared that the Islamic Republic is not the one responsible for the war the US and Israel began on 28 February. \"Whatever your view of Iran, this war is not of their making,\" Oman's fore",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israelis say southern towns left unprotected as war with Iran intensifies",
+      "detail": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israelis-say-southern-towns-left-unprotected-war-iran-intensifies",
+      "fullAnalysis": "Residents of Israel 's southern\u00a0Negev region say they've been left defenceless against Iranian missile fire , and have called the government's response \"a complete failure\" rooted in years of policy neglect. Avi Dabush, the executive director of Rabbis for Human Rights, told Middle East Eye that Sat",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Netanyahu says Trump sees chance of deal with Iran",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu said on Monday that he spoke with US President Donald Trump, who saw a chance of reaching a deal with Iran. Trump says there was a possibility of \"leveraging the mighty achievements obtained by the IDF and the US military, in order to realise the goals of th",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-trump-sees-chance-deal-ira",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said on Monday that he spoke with US President Donald Trump, who saw a chance of reaching a deal with Iran. Trump says there was a possibility of \"leveraging the mighty achievements obtained by the IDF and the US military, in order to realise the goals of th",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-23 19:14 UTC"
+}
