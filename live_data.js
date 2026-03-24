@@ -1,7 +1,7 @@
 window.WARWATCH_LIVE = {
   "date": "2026-03-24",
-  "lastRun": "2026-03-24 07:51 UTC",
-  "generatedAt": "2026-03-24 07:51 UTC",
+  "lastRun": "2026-03-24 07:43 UTC",
+  "generatedAt": "2026-03-24 07:43 UTC",
   "totalArticles": 25,
   "escalationLevel": "CRITICAL",
   "alerts": [
@@ -27,7 +27,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "Indian Navy on readiness for potential Gulf evacuation scenario",
@@ -46,7 +46,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -65,7 +65,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Middle East Eye · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -85,7 +85,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Middle East Eye · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -105,7 +105,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "US-Israel-Iran conflict — escalation level HIGH. Day count rising.",
@@ -124,7 +124,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "Chabahar port ($85M Indian investment) and Central Asia trade route affected",
@@ -143,7 +143,7 @@ window.WARWATCH_LIVE = {
       "significance": "MEDIUM",
       "sigColor": "#7a530a",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Al Jazeera · Significance: Medium",
         "US-Israel-Iran conflict — escalation level HIGH. Day count rising.",
@@ -164,7 +164,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by NDTV · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -183,7 +183,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -202,7 +202,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -221,7 +221,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "‘Iranian missiles now have capacity to reach deep into Europe’: Netanyahu calls on countries to join war against Tehran."
@@ -239,7 +239,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -258,7 +258,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "Day 21 Iran war: Trump mulls Kharg Island ‘takeover’, slams NATO; rift with Israel widens."
@@ -276,7 +276,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -295,7 +295,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "Middle East War Day 15: US strikes Iran’s Kharg Island, US embassy in Baghdad attacked — What happened in last 24 hours."
@@ -313,7 +313,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -332,7 +332,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "Day 23 of war: Trump vows to ‘obliterate’ Iran’s power plants as Tehran strikes Israeli towns near nuclear site."
@@ -350,7 +350,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "US-Israel vs Iran war Day 18: Iran steps up attack across Middle East; Israel continues to strike Beirut, Tehran."
@@ -368,7 +368,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -387,7 +387,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "$10 million bounty: US targets Iran’s new Supreme Leader Mojtaba Khamenei and top IRGC brass."
@@ -405,7 +405,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "‘I wouldn’t get a life insurance policy for him’: Netanyahu’s warning to Iran’s new leader Mojtaba Khamenei."
@@ -423,7 +423,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by NDTV · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -442,7 +442,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by NDTV · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -461,7 +461,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -480,7 +480,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, calls it ‘revenge’ for Ali Larijani’s killing."
@@ -500,7 +500,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "Indian Navy on readiness for potential Gulf evacuation scenario",
@@ -519,7 +519,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -538,7 +538,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Middle East Eye · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -558,7 +558,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Middle East Eye · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -578,7 +578,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "US-Israel-Iran conflict — escalation level HIGH. Day count rising.",
@@ -597,7 +597,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by BBC · Significance: High",
         "Chabahar port ($85M Indian investment) and Central Asia trade route affected",
@@ -616,7 +616,7 @@ window.WARWATCH_LIVE = {
       "significance": "MEDIUM",
       "sigColor": "#7a530a",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Al Jazeera · Significance: Medium",
         "US-Israel-Iran conflict — escalation level HIGH. Day count rising.",
@@ -635,7 +635,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by NDTV · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -654,7 +654,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -673,7 +673,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -692,7 +692,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "‘Iranian missiles now have capacity to reach deep into Europe’: Netanyahu calls on countries to join war against Tehran."
@@ -710,7 +710,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -729,7 +729,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "Day 21 Iran war: Trump mulls Kharg Island ‘takeover’, slams NATO; rift with Israel widens."
@@ -747,7 +747,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -766,7 +766,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "Middle East War Day 15: US strikes Iran’s Kharg Island, US embassy in Baghdad attacked — What happened in last 24 hours."
@@ -784,7 +784,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -803,7 +803,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "Day 23 of war: Trump vows to ‘obliterate’ Iran’s power plants as Tehran strikes Israeli towns near nuclear site."
@@ -821,7 +821,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "US-Israel vs Iran war Day 18: Iran steps up attack across Middle East; Israel continues to strike Beirut, Tehran."
@@ -839,7 +839,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India imports 60%+ of crude — Hormuz transit affects ₹200B+ annual oil bill",
@@ -858,7 +858,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "$10 million bounty: US targets Iran’s new Supreme Leader Mojtaba Khamenei and top IRGC brass."
@@ -876,7 +876,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "‘I wouldn’t get a life insurance policy for him’: Netanyahu’s warning to Iran’s new leader Mojtaba Khamenei."
@@ -894,7 +894,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by NDTV · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -913,7 +913,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by NDTV · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -932,7 +932,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "India maintains ties with US, Israel and Iran simultaneously — non-aligned stance",
@@ -951,7 +951,7 @@ window.WARWATCH_LIVE = {
       "significance": "HIGH",
       "sigColor": "#a32d2d",
       "timeAgo": "just now",
-      "fetchedAt": "2026-03-24 07:51 UTC",
+      "fetchedAt": "2026-03-24 07:43 UTC",
       "keyFacts": [
         "Reported by Indian Express · Significance: High",
         "US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, calls it ‘revenge’ for Ali Larijani’s killing."
@@ -961,7 +961,7 @@ window.WARWATCH_LIVE = {
   "heroStats": {
     "tension": "CRITICAL",
     "updatesToday": 25,
-    "lastUpdated": "2026-03-24 07:51 UTC",
+    "lastUpdated": "2026-03-24 07:43 UTC",
     "sourcesUsed": 5
   },
   "tensionMeters": [
