@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 20:04 UTC",
+  "generatedAt": "2026-03-24 20:59 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: What impact is the war on Iran having on Israel? \u00b7 Iranian missiles hit the country as global economic damage deepens. Millions of \u2026"
+    "Other: US air superiority over Iran hobbled by lower-altitude threats, experts say \u00b7 Washington's inability to secure uncontested aerial superiority over Iran stems \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-24 20:04 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-24 20:59 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "What impact is the war on Iran having on Israel?",
-      "summary": "Iranian missiles hit the country as global economic damage deepens. Millions of Israelis have been forced to take shelter day and night from repeated Iranian missile attacks. The economic shock waves of the war that Israel and the United States have launched against Iran are being felt across the wo",
+      "time": "7 min ago",
+      "headline": "US air superiority over Iran hobbled by lower-altitude threats, experts say",
+      "summary": "Washington's inability to secure uncontested aerial superiority over Iran stems from US underinvestment in countering lower-altitude threats that Iran has effectively deployed, experts speaking to the Middle East Institute said on Tuesday. \"One of the strange things about this war is that the United",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iranian missiles hit the country as global economic damage deepens. Millions of Israelis have been forced to take shelter day and night from repeated Iranian missile attacks. The economic shock waves of the war that Israel and the United States have launched against Iran are being felt across the wo",
-      "sourceUrl": "https://www.aljazeera.com/video/inside-story/2026/3/24/what-impact-is-the-war-on-iran-having-on-israel?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Washington's inability to secure uncontested aerial superiority over Iran stems from US underinvestment in countering lower-altitude threats that Iran has effectively deployed, experts speaking to the Middle East Institute said on Tuesday. \"One of the strange things about this war is that the United",
+      "sourceUrl": "https://www.middleeasteye.net/news/lack-us-air-superiority-over-iran-comes-neglected-lower-altitude-threats-experts-say",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 17:10 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 18:05 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 20:04 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 20:59 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: What impact is the war on Iran having on Israel?. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US air superiority over Iran hobbled by lower-altitude threats, experts say. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
