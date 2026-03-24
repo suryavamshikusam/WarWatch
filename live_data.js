@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 05:49 UTC",
+  "generatedAt": "2026-03-24 08:44 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Morning update \u00b7 Here are some of the latest key updates from the Iran war: Iran\u00a0launched a new w\u2026",
-    "Other: Iran launches fresh missiles amid claims of talks in Pakistan, Tehran denies \u00b7 Iran launched a new wave of missiles against Israel, hours after US President Do\u2026"
+    "Other: War on Iran: How Israel is demolishing the myth that once shielded it \u00b7 Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201c\u2026",
+    "Other: South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping \u00b7 South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart fo\u2026",
+    "Other: Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says \u00b7 At least six people were injured in Tel Aviv after an Iranian air strike, The Ti\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-24 05:49 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-24 08:44 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Morning update",
-      "summary": "Here are some of the latest key updates from the Iran war: Iran\u00a0launched a new wave of missiles against Israel Tuesday, hours after US President Donald Trump hailed \"very good\" talks to end the war despite Tehran denying any dialogue had taken place. Israel targeted seven areas of Beirut's southern ",
+      "time": "11 min ago",
+      "headline": "War on Iran: How Israel is demolishing the myth that once shielded it",
+      "summary": "Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201ca villa in the jungle\u201d, \u201ctough neighbourhood\u201d or, perhaps most tiresomely, \u201conly democracy in the Middle East\u201d. The function of this propaganda has been to persuade their audience - both the domestic Israeli electorate, ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Here are some of the latest key updates from the Iran war: Iran\u00a0launched a new wave of missiles against Israel Tuesday, hours after US President Donald Trump hailed \"very good\" talks to end the war despite Tehran denying any dialogue had taken place. Israel targeted seven areas of Beirut's southern",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-498",
+      "fullAnalysis": "Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201ca villa in the jungle\u201d, \u201ctough neighbourhood\u201d or, perhaps most tiresomely, \u201conly democracy in the Middle East\u201d. The function of this propaganda has been to persuade their audience - both the domestic Israeli electorate,",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/war-iran-how-israel-demolishing-myth-once-shielded-it",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,15 +66,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran launches fresh missiles amid claims of talks in Pakistan, Tehran denies",
-      "summary": "Iran launched a new wave of missiles against Israel, hours after US President Donald Trump said there had been \u201cvery good\u201d talks to end the war, despite Tehran denying any negotiations. The claims briefly lifted markets and pushed oil prices lower ahead of a US deadline for Iran to reopen the Strait",
+      "time": "11 min ago",
+      "headline": "South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping",
+      "summary": "South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart for support on crude oil and LNG supplies, Cho's office said, due to shipment disruptions linked to the conflict in the Middle East.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran launched a new wave of missiles against Israel, hours after US President Donald Trump said there had been \u201cvery good\u201d talks to end the war, despite Tehran denying any negotiations. The claims briefly lifted markets and pushed oil prices lower ahead of a US deadline for Iran to reopen the Strait",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-fresh-missiles-amid-claims-talks-pakistan-tehran-denies",
+      "fullAnalysis": "South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart for support on crude oil and LNG supplies, Cho's office said, due to shipment disruptions linked to the conflict in the Middle East.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korea-seeks-omani-support-oil-lng-iran-war-disrupts-shipping",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says",
+      "summary": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/injuries-damage-tel-aviv-after-iranian-attacks-israeli-media-says",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-21 01:18 UTC",
-      "l": "HIGH",
-      "tone": "TENSE"
-    },
     {
       "t": "2026-03-21 07:02 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 05:49 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 08:44 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Iran launches fresh missiles amid claims of talks in Pakistan, Tehran denies. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: War on Iran: How Israel is demolishing the myth that once shielded it. South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping. Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

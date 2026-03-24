@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 08:44 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: War on Iran: How Israel is demolishing the myth that once shielded it. South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping. Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "War on Iran: How Israel is demolishing the myth that once shielded it",
+      "detail": "Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201ca villa in the jungle\u201d, \u201ctough neighbourhood\u201d or, perhaps most tiresomely, \u201conly democracy in the Middle East\u201d. The function of this propaganda has been to persuade their audience - both the domestic Israeli electorate, ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/war-iran-how-israel-demolishing-myth-once-shielded-it",
+      "fullAnalysis": "Ever since the state\u2019s founding, Israeli leaders have trotted out phrases like \u201ca villa in the jungle\u201d, \u201ctough neighbourhood\u201d or, perhaps most tiresomely, \u201conly democracy in the Middle East\u201d. The function of this propaganda has been to persuade their audience - both the domestic Israeli electorate, ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "South Korea seeks Omani support on oil, LNG as Iran war disrupts shipping",
+      "detail": "South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart for support on crude oil and LNG supplies, Cho's office said, due to shipment disruptions linked to the conflict in the Middle East.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/south-korea-seeks-omani-support-oil-lng-iran-war-disrupts-shipping",
+      "fullAnalysis": "South Korean Foreign Minister Cho Hyun on Tuesday asked his Omani counterpart for support on crude oil and LNG supplies, Cho's office said, due to shipment disruptions linked to the conflict in the Middle East.",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Injuries, damage in Tel Aviv after Iranian attacks, Israeli media says",
+      "detail": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/injuries-damage-tel-aviv-after-iranian-attacks-israeli-media-says",
+      "fullAnalysis": "At least six people were injured in Tel Aviv after an Iranian air strike, The Times of Israel reported. Meanwhile, Channel 12 reported the Police saying that a munition carrying some 100 kilograms of explosives impacted in central Tel Aviv, leading to widespread damage to buildings and vehicles.",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-24 08:44 UTC"
+}
