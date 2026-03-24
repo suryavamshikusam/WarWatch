@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 12:07 UTC",
+  "generatedAt": "2026-03-24 13:52 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran questions Africa's silence as US-Israeli war grinds on \u00b7 Africa's muted response to the US - Israeli war on its territory has led Iran to\u2026"
+    "Other: Iran questions Africa's silence as US-Israeli war grinds on \u00b7 Africa's muted response to the US-Israeli war on its territory has led Iran to a\u2026",
+    "Other: \u2019Terrified\u2019 Israeli residents recount Iranian missile attack \u00b7 \u2019Terrified\u2019 Israeli residents recount Iranian missile attack Video shows the aft\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-24 12:07 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-24 13:52 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
+      "time": "8 min ago",
       "headline": "Iran questions Africa's silence as US-Israeli war grinds on",
-      "summary": "Africa's muted response to the US - Israeli war on its territory has led Iran to\u00a0accuse Israel of leveraging its expanding diplomatic footprint across the continent to deflect criticism of its actions in the Middle East. Since the war began in late February, most African states - alongside continent",
+      "summary": "Africa's muted response to the US-Israeli war on its territory has led Iran to accuse Israel of leveraging its expanding diplomatic footprint across the continent to deflect criticism of its actions in the Middle East. Since the war began in late February, most African states - alongside continental",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Africa's muted response to the US - Israeli war on its territory has led Iran to\u00a0accuse Israel of leveraging its expanding diplomatic footprint across the continent to deflect criticism of its actions in the Middle East. Since the war began in late February, most African states - alongside continent",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-questions-africa-silence-us-israel-war-grinds-on",
+      "fullAnalysis": "Africa's muted response to the US-Israeli war on its territory has led Iran to accuse Israel of leveraging its expanding diplomatic footprint across the continent to deflect criticism of its actions in the Middle East. Since the war began in late February, most African states - alongside continental",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-questions-africas-silence-us-israeli-war-grinds",
       "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "8 min ago",
+      "headline": "\u2019Terrified\u2019 Israeli residents recount Iranian missile attack",
+      "summary": "\u2019Terrified\u2019 Israeli residents recount Iranian missile attack Video shows the aftermath of an Iranian missile attack on the Israeli town of Nesher, where residents described fear and panic as explosions struck overnight.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "\u2019Terrified\u2019 Israeli residents recount Iranian missile attack Video shows the aftermath of an Iranian missile attack on the Israeli town of Nesher, where residents described fear and panic as explosions struck overnight.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/terrified-israeli-residents-recount-iranian-missile-attack?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 08:11 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 11:08 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 12:07 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 13:52 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran questions Africa's silence as US-Israeli war grinds on. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran questions Africa's silence as US-Israeli war grinds on. \u2019Terrified\u2019 Israeli residents recount Iranian missile attack. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
