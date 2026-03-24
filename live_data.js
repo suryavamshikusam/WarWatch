@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-23 21:57 UTC",
+  "generatedAt": "2026-03-24 00:02 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination  \u00b7 Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu\u2026",
-    "Other: US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call \u00b7 US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warh\u2026",
-    "Other: \u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N \u00b7 Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Be\u2026"
+    "Other: Netanyahu Says Spoke With Trump, Vows To Protect Israel's Interests \u00b7 Netanyahu Says Spoke With Trump, Vows To Protect Israel's Interests"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-23 21:57 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-24 00:02 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,58 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination ",
-      "summary": "Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu which they said was taken while he was ordering the elimination of Iranian officials, as false rumours claiming Netanyahu has died continued to buzz on social media. The picture comes a day after Netanyahu posted a vide",
+      "time": "6 min ago",
+      "headline": "Netanyahu Says Spoke With Trump, Vows To Protect Israel's Interests",
+      "summary": "Netanyahu Says Spoke With Trump, Vows To Protect Israel's Interests",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel\u2019s Prime Minister\u2019s Office on Tuesday shared a photo of Benjamin Netanyahu which they said was taken while he was ordering the elimination of Iranian officials, as false rumours claiming Netanyahu has died continued to buzz on social media. The picture comes a day after Netanyahu posted a vide",
-      "sourceUrl": "https://indianexpress.com/article/world/israel-pm-benjamin-netanyahu-death-rumours-ai-deepfake-video-iran-threat-explained-10587042/",
-      "sourceLabel": "Indian Express"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call",
-      "summary": "US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warhead missiles at Israel early Wednesday, with the Revolutionary Guard describing the attack as revenge for Israel killing top security official Ali Larijani. Iran\u2019s Supreme National Security Council Wednesday confirmed th",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "US-Israel-Iran War Today News Updates: Iran acknowledged launching multiple-warhead missiles at Israel early Wednesday, with the Revolutionary Guard describing the attack as revenge for Israel killing top security official Ali Larijani. Iran\u2019s Supreme National Security Council Wednesday confirmed th",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-nato-strait-of-hormuz-10584202/",
-      "sourceLabel": "Indian Express"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "\u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N",
-      "summary": "Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Benjamin Netanyahu amid the ongoing war with Israel and the United States. Calling him a \u201cchild-killing criminal\u201d, the Guards said that they will continue to target Netanyahu with full force if he remains alive. \u201cIf this c",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran\u2019s Revolutionary Guards vowed to \u201cpursue and kill\u201d Israeli Prime Minister Benjamin Netanyahu amid the ongoing war with Israel and the United States. Calling him a \u201cchild-killing criminal\u201d, the Guards said that they will continue to target Netanyahu with full force if he remains alive. \u201cIf this c",
-      "sourceUrl": "https://indianexpress.com/article/world/iran-revolutionary-guards-kill-netanyahu-israel-us-war-10582846/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Netanyahu Says Spoke With Trump, Vows To Protect Israel's Interests",
+      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-benjamin-netanyahu-says-spoke-with-donald-trump-vows-to-protect-israels-interests-11257045#publisher=newsstand",
+      "sourceLabel": "NDTV"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 21:25 UTC",
-      "l": "CRITICAL",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-20 21:52 UTC",
       "l": "MEDIUM",
@@ -228,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-23 21:57 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 00:02 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel releases Netanyahu\u2019s new photo amid death rumours: \u2018Ordering elimination . US-Israel-Iran War News: Iran launches multiple-warhead missiles at Israel, call. \u2018Child-killing criminal\u2019: Iran\u2019s Revolutionary Guards vow to \u2018pursue and kill\u2019 N. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu Says Spoke With Trump, Vows To Protect Israel's Interests. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
