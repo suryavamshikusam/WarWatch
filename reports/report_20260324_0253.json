@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 02:40 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC says Dimona,\u00a0Tel Aviv and Eilat\u00a0targeted in new wave of missiles. Iran military adviser says war continues until compensation, sanctions lifted. \u2018We will soon get the Strait of Hormuz open\u2019: Trump urges China, UK and other na. Middle East War Day 14: US aircraft crashes in Iraq, Netanyahu warns of toppling. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "IRGC says Dimona,\u00a0Tel Aviv and Eilat\u00a0targeted in new wave of missiles",
+      "detail": "Iran\u2019s Revolutionary Guard said it launched a new wave of strikes targeting Israel and US positions, including sites in Dimona, Tel Aviv and Eilat, according to a statement reported by Press TV. \u201cWe negotiate with enemies with impact-driven strikes,\u201d the IRGC said, describing the latest phase as hav",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-dimona-tel-aviv-and-eilat-targeted-new-wave-missiles",
+      "fullAnalysis": "Iran\u2019s Revolutionary Guard said it launched a new wave of strikes targeting Israel and US positions, including sites in Dimona, Tel Aviv and Eilat, according to a statement reported by Press TV. \u201cWe negotiate with enemies with impact-driven strikes,\u201d the IRGC said, describing the latest phase as hav",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran military adviser says war continues until compensation, sanctions lifted",
+      "detail": "A senior military adviser to Iran\u2019s leader, Mojtaba Khamenei, said the war will continue until Tehran receives full compensation and sanctions are lifted. Mohsen Rezaei said Iran would keep fighting until \u201call economic sanctions are lifted, and legally binding international guarantees are obtained\u201d ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-military-adviser-says-war-continues-until-compensation-sanctions",
+      "fullAnalysis": "A senior military adviser to Iran\u2019s leader, Mojtaba Khamenei, said the war will continue until Tehran receives full compensation and sanctions are lifted. Mohsen Rezaei said Iran would keep fighting until \u201call economic sanctions are lifted, and legally binding international guarantees are obtained\u201d ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "\u2018We will soon get the Strait of Hormuz open\u2019: Trump urges China, UK and other na",
+      "detail": "US President Donald Trump has called on the UK and other countries to send warships to help keep the Strait of Hormuz open as tensions with Iran continue. In a post on his Truth Social platform, Trump urged countries affected by the disruption of shipping in the narrow waterway to deploy naval vesse",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-urges-uk-allies-warships-strait-of-hormuz-iran-oil-crisis-10582387/",
+      "fullAnalysis": "US President Donald Trump has called on the UK and other countries to send warships to help keep the Strait of Hormuz open as tensions with Iran continue. In a post on his Truth Social platform, Trump urged countries affected by the disruption of shipping in the narrow waterway to deploy naval vesse",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Middle East War Day 14: US aircraft crashes in Iraq, Netanyahu warns of toppling",
+      "detail": "March 13 marks the fourteenth day of war between the United States-Israel and Iran. The war began on February 28 with joint US and Israeli strikes on Iranian targets. Around 2,000 people have been killed during the strikes on Iran by the US and Israel. Here are the top developments as the war enters",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-mojtaba-khamenei-vows-revenge-us-israel-and-iran-war-10579292/",
+      "fullAnalysis": "March 13 marks the fourteenth day of war between the United States-Israel and Iran. The war began on February 28 with joint US and Israeli strikes on Iranian targets. Around 2,000 people have been killed during the strikes on Iran by the US and Israel. Here are the top developments as the war enters",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-24 02:40 UTC"
+}
