@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 19:23 UTC",
+  "generatedAt": "2026-03-24 20:04 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Saudi Arabia diverged with Turkey and Pakistan on condemning Iran \u00b7 Turkey and Pakistan opposed the use of harsh language in a diplomatic statement \u2026",
-    "Other: War on Iran: Why Trump blinked first \u00b7 For 48 hours, the world was told to brace for fire. A deadline was drawn, an ult\u2026"
+    "Other: What impact is the war on Iran having on Israel? \u00b7 Iranian missiles hit the country as global economic damage deepens. Millions of \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-24 19:23 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-24 20:04 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Saudi Arabia diverged with Turkey and Pakistan on condemning Iran",
-      "summary": "Turkey and Pakistan opposed the use of harsh language in a diplomatic statement condemning Iran at a meeting of Arab and Muslim foreign ministers in Riyadh last week , multiple sources familiar with the matter told Middle East Eye. Saudi Arabia , in particular, pressed for a tough censure of Iran, w",
+      "time": "6 min ago",
+      "headline": "What impact is the war on Iran having on Israel?",
+      "summary": "Iranian missiles hit the country as global economic damage deepens. Millions of Israelis have been forced to take shelter day and night from repeated Iranian missile attacks. The economic shock waves of the war that Israel and the United States have launched against Iran are being felt across the wo",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Turkey and Pakistan opposed the use of harsh language in a diplomatic statement condemning Iran at a meeting of Arab and Muslim foreign ministers in Riyadh last week , multiple sources familiar with the matter told Middle East Eye. Saudi Arabia , in particular, pressed for a tough censure of Iran, w",
-      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-diverged-turkey-and-pakistan-condemning-iran",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "War on Iran: Why Trump blinked first",
-      "summary": "For 48 hours, the world was told to brace for fire. A deadline was drawn, an ultimatum delivered. Power plants would be obliterated, infrastructure shattered, a nation plunged deeper into war. The language was absolute. The threat was theatrical. The message was clear: comply or be crushed. And then",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "For 48 hours, the world was told to brace for fire. A deadline was drawn, an ultimatum delivered. Power plants would be obliterated, infrastructure shattered, a nation plunged deeper into war. The language was absolute. The threat was theatrical. The message was clear: comply or be crushed. And then",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/war-iran-why-trump-blinked-first",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Iranian missiles hit the country as global economic damage deepens. Millions of Israelis have been forced to take shelter day and night from repeated Iranian missile attacks. The economic shock waves of the war that Israel and the United States have launched against Iran are being felt across the wo",
+      "sourceUrl": "https://www.aljazeera.com/video/inside-story/2026/3/24/what-impact-is-the-war-on-iran-having-on-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 15:17 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 17:10 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 19:23 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 20:04 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Saudi Arabia diverged with Turkey and Pakistan on condemning Iran. War on Iran: Why Trump blinked first. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: What impact is the war on Iran having on Israel?. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
