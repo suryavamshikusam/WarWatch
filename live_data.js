@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 20:59 UTC",
+  "generatedAt": "2026-03-24 21:38 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: US air superiority over Iran hobbled by lower-altitude threats, experts say \u00b7 Washington's inability to secure uncontested aerial superiority over Iran stems \u2026"
+    "Other: Iranian missiles cause injuries and major damage across Israel \u00b7 Iranian missiles cause injuries and major damage across Israel Iran released a v\u2026",
+    "Other: Building collapses after Iranian missile strike on Israel \u00b7 Building collapses after Iranian missile strike on Israel A building has collaps\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-24 20:59 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-24 21:38 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "US air superiority over Iran hobbled by lower-altitude threats, experts say",
-      "summary": "Washington's inability to secure uncontested aerial superiority over Iran stems from US underinvestment in countering lower-altitude threats that Iran has effectively deployed, experts speaking to the Middle East Institute said on Tuesday. \"One of the strange things about this war is that the United",
+      "time": "9 min ago",
+      "headline": "Iranian missiles cause injuries and major damage across Israel",
+      "summary": "Iranian missiles cause injuries and major damage across Israel Iran released a video showing the launch of missiles as a new wave targeted areas across Israel on Tuesday, causing major damage and injuries. The attacks came after Iran warned Israel that it would widen strikes if civilian deaths in Ga",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Washington's inability to secure uncontested aerial superiority over Iran stems from US underinvestment in countering lower-altitude threats that Iran has effectively deployed, experts speaking to the Middle East Institute said on Tuesday. \"One of the strange things about this war is that the United",
-      "sourceUrl": "https://www.middleeasteye.net/news/lack-us-air-superiority-over-iran-comes-neglected-lower-altitude-threats-experts-say",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Iranian missiles cause injuries and major damage across Israel Iran released a video showing the launch of missiles as a new wave targeted areas across Israel on Tuesday, causing major damage and injuries. The attacks came after Iran warned Israel that it would widen strikes if civilian deaths in Ga",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/iranian-missiles-cause-injuries-and-major-damage-across-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Building collapses after Iranian missile strike on Israel",
+      "summary": "Building collapses after Iranian missile strike on Israel A building has collapsed in Bnei Brak, near Tel Aviv, after Israeli authorities said it was hit by an Iranian missile, injuring several people.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Building collapses after Iranian missile strike on Israel A building has collapsed in Bnei Brak, near Tel Aviv, after Israeli authorities said it was hit by an Iranian missile, injuring several people.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/building-collapses-after-iranian-missile-strike-on-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 18:05 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 19:14 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 20:59 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 21:38 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: US air superiority over Iran hobbled by lower-altitude threats, experts say. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missiles cause injuries and major damage across Israel. Building collapses after Iranian missile strike on Israel. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
