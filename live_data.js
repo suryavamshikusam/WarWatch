@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 16:02 UTC",
+  "generatedAt": "2026-03-24 17:08 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israeli press review: Expanding wars spark concerns over economy and air defence \u00b7 On Monday, the governor of the Bank of Israel , Amir Yaron, filed the financial \u2026"
+    "Other: Israeli defences questioned as Iran continues to cause damage \u00b7 Israeli defences questioned as Iran continues to cause damage Iranian missiles h\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-24 16:02 UTC",
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-24 17:08 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "6 min ago",
-      "headline": "Israeli press review: Expanding wars spark concerns over economy and air defence",
-      "summary": "On Monday, the governor of the Bank of Israel , Amir Yaron, filed the financial institution\u2019s 2025 annual report to the government and the Knesset. The report indicates that the Israeli economy has demonstrated resilience despite the ongoing conflicts, including Israel\u2019s genocidal war on Gaza , whil",
+      "headline": "Israeli defences questioned as Iran continues to cause damage",
+      "summary": "Israeli defences questioned as Iran continues to cause damage Iranian missiles have caused damage in central Israel, raising new questions about the effectiveness of the country\u2019s air defence systems despite claims that most projectiles are intercepted. Al Jazeera\u2019s Nida Ibrahim reports.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "On Monday, the governor of the Bank of Israel , Amir Yaron, filed the financial institution\u2019s 2025 annual report to the government and the Knesset. The report indicates that the Israeli economy has demonstrated resilience despite the ongoing conflicts, including Israel\u2019s genocidal war on Gaza , whil",
-      "sourceUrl": "https://www.middleeasteye.net/news/israeli-press-review-concerns-about-economy-and-air-defence-capacities",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Israeli defences questioned as Iran continues to cause damage Iranian missiles have caused damage in central Israel, raising new questions about the effectiveness of the country\u2019s air defence systems despite claims that most projectiles are intercepted. Al Jazeera\u2019s Nida Ibrahim reports.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/israeli-defences-questioned-as-iran-continues-to-cause-damage?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 12:51 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 14:13 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 16:02 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 17:08 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli press review: Expanding wars spark concerns over economy and air defence. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli defences questioned as Iran continues to cause damage. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
