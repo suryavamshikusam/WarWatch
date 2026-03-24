@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 19:23 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Saudi Arabia diverged with Turkey and Pakistan on condemning Iran. War on Iran: Why Trump blinked first. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Saudi Arabia diverged with Turkey and Pakistan on condemning Iran",
+      "detail": "Turkey and Pakistan opposed the use of harsh language in a diplomatic statement condemning Iran at a meeting of Arab and Muslim foreign ministers in Riyadh last week , multiple sources familiar with the matter told Middle East Eye. Saudi Arabia , in particular, pressed for a tough censure of Iran, w",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/saudi-arabia-diverged-turkey-and-pakistan-condemning-iran",
+      "fullAnalysis": "Turkey and Pakistan opposed the use of harsh language in a diplomatic statement condemning Iran at a meeting of Arab and Muslim foreign ministers in Riyadh last week , multiple sources familiar with the matter told Middle East Eye. Saudi Arabia , in particular, pressed for a tough censure of Iran, w",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "War on Iran: Why Trump blinked first",
+      "detail": "For 48 hours, the world was told to brace for fire. A deadline was drawn, an ultimatum delivered. Power plants would be obliterated, infrastructure shattered, a nation plunged deeper into war. The language was absolute. The threat was theatrical. The message was clear: comply or be crushed. And then",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/war-iran-why-trump-blinked-first",
+      "fullAnalysis": "For 48 hours, the world was told to brace for fire. A deadline was drawn, an ultimatum delivered. Power plants would be obliterated, infrastructure shattered, a nation plunged deeper into war. The language was absolute. The threat was theatrical. The message was clear: comply or be crushed. And then",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-24 19:23 UTC"
+}
