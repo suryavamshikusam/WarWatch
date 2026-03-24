@@ -5,564 +5,546 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>WarWatch — Live</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,600;0,700;1,400&family=IBM+Plex+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-*,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{font-family:'IBM Plex Sans',sans-serif;font-size:14px;line-height:1.7;background:#141414;color:#ddd;min-height:100vh}
-
-:root{
-  --red:#c41e3a;--amber:#d4892a;--green:#3daa72;--blue:#7aabee;
-  --bg:#141414;--bg2:#1a1a1a;--bg3:#1e1e1e;--border:#2a2a2a;
-}
-
-@keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
-@keyframes fadeUp{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:translateY(0)}}
-@keyframes ticker{0%{transform:translateX(0)}100%{transform:translateX(-50%)}}
-@keyframes spin{to{transform:rotate(360deg)}}
-
-/* ── HEADER ── */
-header{background:var(--bg2);padding:14px 28px;position:sticky;top:0;z-index:300;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border)}
-.masthead{font-size:22px;font-weight:900;letter-spacing:-.02em;display:flex;align-items:center;line-height:1}
-.masthead-war{background:var(--red);color:#fff;padding:4px 11px}
-.masthead-watch{color:#fff;padding:4px 6px}
-.rss-pill{border:1px solid var(--red);color:var(--red);font-family:'IBM Plex Mono',monospace;font-size:8px;font-weight:700;padding:3px 8px;letter-spacing:.12em;text-transform:uppercase;border-radius:2px;margin-left:8px;display:flex;align-items:center;gap:4px}
-.header-date{font-size:9px;color:#444;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace;margin-top:2px}
-nav{display:flex;align-items:center}
-.nav-item{color:#555;text-decoration:none;padding:0 13px;font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:600;border-right:1px solid #333;transition:color .15s;white-space:nowrap}
-.nav-item:last-child{border-right:none;padding-right:0}
-.nav-item:hover{color:#fff}
-.nav-item.active{color:var(--red)}
-.live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--red);margin-right:5px;animation:pulse 1.5s infinite;flex-shrink:0}
-
-/* ── TICKER ── */
-.ticker-bar{background:var(--bg3);border-bottom:1px solid var(--border);padding:7px 0;display:flex;align-items:center;overflow:hidden}
-.ticker-label{background:var(--red);color:#fff;font-size:9px;font-weight:700;padding:4px 14px;letter-spacing:.12em;text-transform:uppercase;white-space:nowrap;flex-shrink:0;display:flex;align-items:center;gap:5px;font-family:'IBM Plex Mono',monospace}
-.ticker-track{flex:1;overflow:hidden;white-space:nowrap;padding-left:14px}
-.ticker-inner{display:inline-block;white-space:nowrap;animation:ticker 50s linear infinite;font-size:12px;color:#999;font-family:'IBM Plex Mono',monospace}
-.ticker-sep{color:var(--red);margin:0 16px}
-
-/* ── PAGE ── */
-.page{max-width:1480px;margin:0 auto;padding:14px 22px 60px;display:flex;flex-direction:column;gap:10px}
-
-/* ── STATUS BAR ── */
-.status-bar{display:flex;align-items:center;gap:10px;padding:8px 14px;background:var(--bg2);border:1px solid var(--border);border-radius:6px}
-.status-badge{padding:3px 10px;border-radius:3px;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace}
-.status-info{font-size:10px;color:#444;font-family:'IBM Plex Mono',monospace}
-.status-info b{color:#666}
-.status-right{margin-left:auto;font-size:9px;color:#444;font-family:'IBM Plex Mono',monospace}
-
-/* ── ECON STRIP ── */
-.econ-strip{background:var(--bg2);border:1px solid var(--border);border-radius:6px;display:flex;align-items:center;overflow:hidden;text-decoration:none;transition:border-color .2s}
-.econ-strip:hover{border-color:var(--red)}
-.econ-label{padding:10px 16px;font-size:9px;color:#555;letter-spacing:.14em;text-transform:uppercase;border-right:1px solid var(--border);white-space:nowrap;font-family:'IBM Plex Mono',monospace;display:flex;align-items:center;gap:6px;flex-shrink:0}
-.econ-cells{display:flex;flex:1;overflow:hidden}
-.ec{padding:8px 14px;border-right:1px solid #1e1e1e;flex:1;min-width:0}
-.ec:last-child{border-right:none}
-.ec-tick{font-size:8px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace}
-.ec-val{font-size:14px;font-weight:700;color:#ccc;line-height:1.2;margin:2px 0;font-family:'IBM Plex Mono',monospace}
-.ec-chg{font-size:9px;font-family:'IBM Plex Mono',monospace;color:#444}
-.ec-chg.up{color:var(--red)}
-.ec-chg.dn{color:var(--green)}
-.econ-cta{padding:10px 16px;border-left:1px solid var(--border);font-size:9px;color:var(--red);letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;font-family:'IBM Plex Mono',monospace;flex-shrink:0}
-
-/* ── TENSION STRIP ── */
-.tension-strip{background:var(--bg3);border:1px solid var(--border);border-radius:6px;padding:10px 16px;display:flex;align-items:center;gap:14px}
-.tension-lbl{font-size:9px;color:#555;letter-spacing:.14em;text-transform:uppercase;white-space:nowrap;font-family:'IBM Plex Mono',monospace;display:flex;align-items:center;gap:6px;flex-shrink:0}
-.tension-div{width:1px;height:20px;background:var(--border);flex-shrink:0}
-.meters-row{display:flex;gap:8px;flex:1}
-.meter{flex:1;min-width:0}
-.meter-name{font-size:9px;color:#555;margin-bottom:5px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font-family:'IBM Plex Mono',monospace}
-.meter-bar-bg{height:4px;background:#252525;border-radius:2px;overflow:hidden}
-.meter-bar-fill{height:100%;border-radius:2px;width:0;transition:width 1.6s cubic-bezier(.4,0,.2,1)}
-.meter-lvl{font-size:8px;font-weight:700;letter-spacing:.06em;margin-top:4px;font-family:'IBM Plex Mono',monospace;text-transform:uppercase}
-
-/* ── MAIN GRID ── */
-.main-grid{display:grid;grid-template-columns:300px 1fr;gap:10px;height:620px}
-
-/* ── FEED COLUMN ── */
-.feed-col{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden}
-.feed-hdr{padding:10px 14px;border-bottom:1px solid var(--border);display:flex;align-items:center;gap:7px;background:var(--bg3);flex-shrink:0}
-.feed-hdr-title{font-size:11px;font-weight:600;color:#eee}
-.feed-count{font-size:9px;color:#444;margin-left:auto;font-family:'IBM Plex Mono',monospace}
-.feed-scroll{flex:1;overflow-y:auto}
-.feed-scroll::-webkit-scrollbar{width:3px}
-.feed-scroll::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:2px}
-.feed-item{padding:10px 14px;border-bottom:1px solid #1d1d1d;cursor:pointer;transition:background .1s;border-left:2px solid transparent;animation:fadeUp .35s ease forwards;opacity:0}
-.feed-item:hover{background:var(--bg3)}
-.feed-item.active{background:var(--bg3);border-left-color:var(--red)}
-.fi-meta{display:flex;align-items:center;gap:5px;margin-bottom:4px;flex-wrap:wrap}
-.fi-src{font-size:8px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace}
-.fi-time{font-size:8px;color:#333;font-family:'IBM Plex Mono',monospace}
-.fi-hl{font-size:12px;font-weight:600;color:#bbb;line-height:1.38;font-family:'Lora',serif}
-.tag{font-size:7px;font-weight:700;padding:1px 5px;border-radius:2px;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;letter-spacing:.04em}
-.tag-war{background:rgba(196,30,58,.14);color:#e07070}
-.tag-econ{background:rgba(212,137,42,.12);color:#d4a94a}
-.tag-india{background:rgba(61,170,114,.12);color:#5ccc8e}
-.tag-dipl{background:rgba(122,171,238,.1);color:#7aabee}
-.tag-mil{background:rgba(127,119,221,.1);color:#a89fe0}
-
-/* ── READER ── */
-.reader-col{background:var(--bg2);border:1px solid var(--border);border-radius:8px;overflow:hidden;display:flex;flex-direction:column}
-.reader-hdr{padding:10px 18px;border-bottom:1px solid var(--border);background:var(--bg3);display:flex;align-items:center;gap:10px;flex-shrink:0}
-.r-src-badge{font-size:8px;font-weight:700;padding:2px 8px;border-radius:2px;background:rgba(196,30,58,.12);color:var(--red);text-transform:uppercase;letter-spacing:.08em;font-family:'IBM Plex Mono',monospace;border:1px solid rgba(196,30,58,.2)}
-.r-time{font-size:9px;color:#444;font-family:'IBM Plex Mono',monospace}
-.r-ext-link{font-size:9px;color:var(--red);text-decoration:none;margin-left:auto;border-bottom:1px dashed rgba(196,30,58,.3);font-family:'IBM Plex Mono',monospace;padding-bottom:1px}
-.reader-body{padding:22px 26px;flex:1;overflow-y:auto}
-.reader-body::-webkit-scrollbar{width:3px}
-.reader-body::-webkit-scrollbar-thumb{background:#2a2a2a;border-radius:2px}
-.r-headline{font-size:22px;font-weight:700;color:#eee;line-height:1.25;margin-bottom:14px;font-family:'Lora',serif;letter-spacing:-.01em}
-.r-snippet{font-size:13px;color:#888;line-height:1.82;font-weight:300}
-.r-divider{height:1px;background:var(--border);margin:16px 0}
-.r-sec-lbl{font-size:8px;letter-spacing:.16em;text-transform:uppercase;color:#555;margin-bottom:10px;display:flex;align-items:center;gap:8px;font-family:'IBM Plex Mono',monospace}
-.r-sec-lbl::after{content:'';flex:1;height:1px;background:#222}
-.facts-grid{display:flex;flex-direction:column}
-.fact-row{display:flex;align-items:baseline;gap:10px;padding:7px 0;border-bottom:1px solid #1e1e1e}
-.fact-row:last-child{border-bottom:none}
-.fact-n{font-size:8px;font-weight:700;color:var(--red);font-family:'IBM Plex Mono',monospace;flex-shrink:0;width:18px}
-.fact-t{font-size:12px;color:#777;line-height:1.6}
-.ctx-grid{display:grid;grid-template-columns:1fr 1fr;gap:8px}
-.ctx-card{background:#141414;border:1px solid #252525;border-radius:4px;padding:9px 11px}
-.ctx-lbl{font-size:8px;color:#444;text-transform:uppercase;letter-spacing:.08em;margin-bottom:3px;font-family:'IBM Plex Mono',monospace}
-.ctx-val{font-size:12px;font-weight:500;line-height:1.3}
-.ctx-val.r{color:#e07070}.ctx-val.a{color:var(--amber)}.ctx-val.g{color:var(--green)}.ctx-val.b{color:var(--blue)}
-.read-full-btn{display:inline-flex;align-items:center;gap:6px;margin-top:16px;font-size:10px;color:var(--red);border:1px solid rgba(196,30,58,.3);border-radius:3px;padding:7px 16px;cursor:pointer;letter-spacing:.08em;text-transform:uppercase;font-weight:600;transition:background .15s;text-decoration:none;font-family:'IBM Plex Mono',monospace}
-.read-full-btn:hover{background:rgba(196,30,58,.08)}
-.empty-reader{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;color:#2a2a2a;font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;gap:12px}
-
-/* ── INDIA SECTION ── */
-.india-section{border-radius:8px;overflow:hidden;border:1px solid var(--border)}
-.india-ribbon{background:var(--bg2);padding:13px 22px;display:flex;align-items:center;gap:12px;border-bottom:1px solid var(--border)}
-.india-title{font-family:'Lora',serif;font-size:18px;font-weight:700;color:var(--red)}
-.india-sub{font-size:10px;color:#444;letter-spacing:.1em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace}
-.india-full-link{margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:9px;color:var(--red);text-decoration:none;letter-spacing:.1em;text-transform:uppercase;border:1px solid rgba(196,30,58,.3);padding:4px 11px;border-radius:2px;transition:background .15s}
-.india-full-link:hover{background:rgba(196,30,58,.08)}
-.india-body{background:#181818;padding:14px}
-.india-meters{display:flex;gap:8px;margin-bottom:12px}
-.india-meter{flex:1;background:var(--bg2);border:1px solid var(--border);border-radius:4px;padding:8px 12px}
-.im-name{font-size:9px;color:#555;margin-bottom:5px;font-family:'IBM Plex Mono',monospace}
-.im-bg{height:4px;background:#252525;border-radius:2px;overflow:hidden;margin-bottom:4px}
-.im-fill{height:100%;border-radius:2px;width:0;transition:width 1.6s cubic-bezier(.4,0,.2,1)}
-.im-lvl{font-size:8px;font-weight:700;font-family:'IBM Plex Mono',monospace;text-transform:uppercase}
-.india-grid{display:grid;grid-template-columns:280px 1fr;gap:10px}
-.india-feed-col{display:flex;flex-direction:column;background:var(--bg2);border:1px solid var(--border);border-radius:6px;overflow:hidden;max-height:360px}
-.india-feed-hdr{padding:9px 13px;border-bottom:1px solid var(--border);background:var(--bg3);display:flex;align-items:center;gap:6px;flex-shrink:0}
-.india-feed-scroll{flex:1;overflow-y:auto}
-.india-feed-scroll::-webkit-scrollbar{width:3px}
-.india-feed-scroll::-webkit-scrollbar-thumb{background:#2a2a2a}
-.icard{padding:10px 13px;border-bottom:1px solid #1d1d1d;cursor:pointer;transition:background .1s;border-left:2px solid transparent;animation:fadeUp .35s ease forwards;opacity:0}
-.icard:hover{background:var(--bg3)}
-.icard.active{background:var(--bg3);border-left-color:var(--red)}
-.ic-meta{display:flex;align-items:center;gap:5px;margin-bottom:3px;flex-wrap:wrap}
-.ic-src{font-size:8px;color:#333;text-transform:uppercase;letter-spacing:.05em;font-family:'IBM Plex Mono',monospace;margin-left:auto}
-.ic-hl{font-family:'Lora',serif;font-size:11px;font-weight:700;color:#bbb;line-height:1.35;margin-bottom:2px}
-.ic-det{font-size:10px;color:#444;line-height:1.5}
-.sev-high{background:#a32d2d;color:#fff;font-size:7px;font-weight:700;padding:1px 5px;border-radius:2px;text-transform:uppercase;font-family:'IBM Plex Mono',monospace}
-.sev-med{background:#7a530a;color:#fff;font-size:7px;font-weight:700;padding:1px 5px;border-radius:2px;font-family:'IBM Plex Mono',monospace}
-.sev-low{background:#1d6e42;color:#fff;font-size:7px;font-weight:700;padding:1px 5px;border-radius:2px;font-family:'IBM Plex Mono',monospace}
-.ic-cat{font-size:8px;color:#444;text-transform:uppercase;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace}
-.india-reader-col{background:var(--bg2);border:1px solid var(--border);border-radius:6px;overflow:hidden;display:flex;flex-direction:column;max-height:360px}
-.ir-hdr{padding:9px 14px;border-bottom:1px solid var(--border);background:var(--bg3);display:flex;align-items:center;gap:8px;flex-shrink:0}
-.ir-badge{font-size:8px;font-weight:700;padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.07em;font-family:'IBM Plex Mono',monospace;background:rgba(196,30,58,.12);color:var(--red);border:1px solid rgba(196,30,58,.2)}
-.ir-body{padding:16px 18px;flex:1;overflow-y:auto}
-.ir-body::-webkit-scrollbar{width:3px}
-.ir-body::-webkit-scrollbar-thumb{background:#2a2a2a}
-.ir-headline{font-family:'Lora',serif;font-size:17px;font-weight:700;color:#eee;line-height:1.3;margin-bottom:10px}
-.ir-snip{font-size:12px;color:#888;line-height:1.78;font-weight:300}
-
-/* ── FOOTER ── */
-footer{padding:16px 22px;border:1px solid var(--border);background:var(--bg2);border-radius:6px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.footer-logo{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#555}
-.footer-logo span{color:var(--red)}
-.footer-meta{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#444;text-align:right;line-height:1.8}
-
-/* no-data state */
-.no-data{padding:30px 20px;text-align:center;font-family:'IBM Plex Mono',monospace;font-size:11px;color:#333;line-height:2;letter-spacing:.06em}
-.no-data code{color:#555;background:#1e1e1e;padding:2px 6px;border-radius:3px;font-size:10px}
-
-/* ── RESPONSIVE ── */
-@media(max-width:1100px){.main-grid{grid-template-columns:260px 1fr}}
-@media(max-width:900px){.main-grid{grid-template-columns:1fr;height:auto}.reader-col{display:none}.india-grid{grid-template-columns:1fr}.india-reader-col{display:none}.meters-row .meter:nth-child(n+4){display:none}}
-@media(max-width:600px){header{padding:10px 14px}.masthead{font-size:18px}.page{padding:10px 12px 40px}.tension-strip{display:none}.econ-cells .ec:nth-child(n+4){display:none}}
+*, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { background: #141414; color: #e0e0dc; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; line-height: 1.75; }
+header { background: #1a1a1a; padding: 23px 32px; position: sticky; top: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2a2a2a; }
+.masthead { font-size: 22px; font-weight: 900; letter-spacing: -0.02em; display: flex; align-items: center; line-height: 1; }
+.masthead-war { background: #c41e3a; color: #fff; padding: 3px 10px; }
+.masthead-watch { color: #fff; padding: 3px 5px; }
+.header-date { font-size: 11px; color: #888; letter-spacing: 0.06em; font-family: 'IBM Plex Mono', monospace; }
+nav { display: flex; align-items: center; gap: 0; }
+.nav-item { color: #aaa; text-decoration: none; padding: 0 16px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; border-right: 1px solid #444; transition: color 0.2s; white-space: nowrap; }
+.nav-item:last-child { border-right: none; padding-right: 0; }
+.nav-item:hover { color: #fff; }
+.nav-item.live { color: #c41e3a; }
+@keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
+.live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; margin-right: 4px; animation: pulse 1.5s infinite; }
+.alert-bar { background: #2c2c2c; padding: 7px 24px; display: flex; align-items: center; gap: 12px; }
+.alert-badge { padding: 3px 10px; border-radius: 2px; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: #a32d2d; flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; }
+.alert-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #e05555; animation: pulse 1.5s infinite; flex-shrink: 0; }
+.alerts-scroll { flex: 1; overflow: hidden; }
+.alerts-text { font-size: 13px; color: #ddd; white-space: nowrap; }
+.typewriter-cursor { display: inline-block; width: 2px; height: 13px; background: #e05555; margin-left: 2px; animation: blink 0.8s step-end infinite; vertical-align: middle; }
+@keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
+.hero-img-wrap { position: relative; width: 100%; background: #1a1a1a; overflow: hidden; }
+.hero-img-wrap::before { content: ''; display: block; padding-top: 30%; }
+.hero-img-inner { position: absolute; inset: 0; }
+.hero-img-inner img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block; }
+.hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, transparent 40%, rgba(0,0,0,0.6) 100%); }
+.hero-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 14px 24px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
+.hero-caption-txt { font-size: 11px; color: rgba(255,255,255,0.45); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.06em; }
+.hero-live-pill { display: flex; align-items: center; gap: 5px; background: rgba(164,30,48,0.88); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 2px; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
+.page-sections { display: flex; flex-direction: column; gap: 14px; padding: 14px 24px 40px; max-width: 1660px; margin: 0 auto; }
+.tension-section { background: #1e1e1e; padding: 10px 20px; border-radius: 6px; border: 1px solid #2e2e2e; }
+.tension-inner { display: flex; align-items: center; gap: 24px; }
+.tension-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.14em; text-transform: uppercase; color: #666; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
+.tension-live-dot { width: 5px; height: 5px; border-radius: 50%; background: #e05555; animation: pulse 1.6s infinite; }
+.tension-separator { width: 1px; height: 24px; background: #2e2e2e; flex-shrink: 0; }
+.tension-meters-grid { display: flex; gap: 10px; flex: 1; overflow: hidden; }
+.tension-meter { flex: 1; background: #1e1e1e; border: 1px solid #2e2e2e; border-radius: 5px; padding: 10px 14px; min-width: 0; }
+.meter-row { display: flex; justify-content: space-between; align-items: baseline; gap: 4px; }
+.meter-label { font-size: 13px; color: #ccc; font-weight: 500; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.meter-level { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; white-space: nowrap; flex-shrink: 0; }
+.meter-bar-bg { height: 6px; background: #2e2e2e; border-radius: 3px; margin-top: 8px; overflow: hidden; }
+.meter-bar-fill { height: 100%; border-radius: 3px; width: 0; transition: width 1.4s cubic-bezier(0.4,0,0.2,1); }
+@keyframes econSlideUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
+@keyframes econTriUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
+@keyframes econTriDn{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
+.econ-strip { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; overflow: hidden; text-decoration: none; display: block; transition: border-color .2s; }
+.econ-strip:hover { border-color: #c41e3a; }
+.econ-strip-inner { display: flex; align-items: center; }
+.econ-strip-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #666; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; padding: 10px 16px; border-right: 1px solid #2a2a2a; }
+.econ-cells { display: flex; flex: 1; overflow: hidden; }
+.econ-cell { flex: 1; padding: 7px 14px; border-right: 1px solid #222; min-width: 0; }
+.econ-cell:last-child { border-right: none; }
+.econ-cell-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; }
+.econ-cell-val { font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 700; color: #ccc; line-height: 1; display: inline-block; }
+.econ-cell-val.slide-up { animation: econSlideUp .4s ease forwards; }
+.econ-cell-chg { font-family: 'IBM Plex Mono', monospace; font-size: 9px; margin-top: 2px; }
+.econ-cell-chg.up { color: #c41e3a; }
+.econ-cell-chg.dn { color: #3daa72; }
+.econ-strip-cta { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #c41e3a; letter-spacing: .1em; text-transform: uppercase; padding: 10px 14px; white-space: nowrap; flex-shrink: 0; border-left: 1px solid #2a2a2a; }
+.econ-strip-cta::after { content: ' →'; }
+.newspaper-grid { display: grid; grid-template-columns: 300px 1fr; border: 1px solid #2a2a2a; background: #1a1a1a; height: clamp(560px, calc(100vh - 220px), 820px); border-radius: 8px; overflow: hidden; }
+.col-left { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; background: #1e1e1e; min-height: 0; overflow: hidden; }
+.ai-summary-box { padding: 20px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px solid #2a2a2a; min-height: 0; overflow: hidden; }
+.ai-summary-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; font-weight: 500; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
+@keyframes aiDotBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-4px);opacity:1} }
+.ai-speaking-dot { display: inline-flex; gap: 3px; align-items: center; }
+.ai-speaking-dot span { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: #c41e3a; animation: aiDotBounce 1.2s ease-in-out infinite; }
+.ai-speaking-dot span:nth-child(2) { animation-delay: 0.2s; }
+.ai-speaking-dot span:nth-child(3) { animation-delay: 0.4s; }
+.ai-summary-text { font-size: 13px; color: #bbb; line-height: 1.75; font-weight: 300; flex: 1; overflow-y: auto; min-height: 0; height: 0; }
+.ai-summary-text::-webkit-scrollbar { width: 3px; }
+.ai-summary-text::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
+.ai-refresh-note { font-size: 10px; color: #444; font-family: 'IBM Plex Mono', monospace; margin-top: 8px; }
+.escalation-block { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid #2a2a2a; margin-top: 16px; }
+.escalation-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; }
+.escalation-badge { padding: 5px 14px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
+.col-center { border-left: none; display: flex; flex-direction: column; overflow: hidden; flex: 1; }
+.rot-topbar { display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-bottom: 1px solid #2a2a2a; flex-shrink: 0; background: #1a1a1a; }
+.live-badge { display: inline-flex; align-items: center; gap: 6px; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+.live-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; }
+.rot-counter { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #555; margin-left: auto; }
+.rot-stage { position: relative; flex: 1; overflow: hidden; }
+.rot-card { position: absolute; inset: 0; padding: 14px 18px 10px; display: flex; flex-direction: column; gap: 6px; transition: transform 0.52s cubic-bezier(0.4,0,0.2,1), opacity 0.52s ease; overflow-y: auto; }
+.rot-card::-webkit-scrollbar { width: 3px; }
+.rot-card::-webkit-scrollbar-thumb { background: #333; }
+.rot-card.rot-prev { transform: translateX(-100%); opacity: 0; }
+.rot-card.rot-active { transform: translateX(0); opacity: 1; }
+.rot-card.rot-next { transform: translateX(100%); opacity: 0; }
+.rot-source { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #555; text-transform: uppercase; flex-shrink: 0; }
+.rot-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
+.rot-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
+.rot-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
+.rot-headline { font-family: 'Lora', serif; font-size: 19px; font-weight: 700; color: #eee; line-height: 1.28; letter-spacing: -0.01em; flex-shrink: 0; }
+.rot-summary { font-size: 13px; color: #888; line-height: 1.65; font-weight: 300; flex-shrink: 0; }
+.ai-analysis-box { background: rgba(127,119,221,0.08); border: 0.5px solid rgba(127,119,221,0.25); border-radius: 6px; padding: 12px 14px; flex-shrink: 0; }
+.ai-analysis-lbl { font-size: 10px; color: #7f77dd; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 7px; display: flex; align-items: center; gap: 6px; font-family: 'IBM Plex Mono', monospace; }
+.ai-analysis-txt { font-size: 12px; color: #a89fe0; line-height: 1.75; }
+.ai-analysis-txt p { margin-bottom: 8px; }
+.ai-analysis-txt p:last-child { margin-bottom: 0; }
+.rot-read-row { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #555; padding-top: 4px; flex-shrink: 0; }
+.rot-channel-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; color: #c41e3a; text-decoration: none; border-bottom: 1px dashed #c41e3a; letter-spacing: 0.04em; }
+.rot-channel-link:hover { opacity: 0.7; }
+.rot-navrow { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 8px 14px; border-top: 1px solid #2a2a2a; flex-shrink: 0; }
+.rot-btn { background: none; border: 0.5px solid #333; border-radius: 6px; padding: 3px 12px; font-size: 13px; color: #888; cursor: pointer; transition: background 0.15s; }
+.rot-btn:hover { background: #2a2a2a; }
+.rot-dots { display: flex; gap: 5px; }
+.rot-dots span { width: 6px; height: 6px; border-radius: 50%; background: #333; cursor: pointer; transition: background 0.2s; }
+.rot-dots span.on { background: #c41e3a; }
+.col-right { display: flex; flex-direction: column; background: #1e1e1e; overflow: hidden; min-height: 0; height: 100%; }
+.col-center { display: flex; flex-direction: column; overflow: hidden; flex: 1; }
+.latest-title { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #c41e3a; padding: 12px 16px; border-bottom: 1px solid #2a2a2a; letter-spacing: -0.01em; flex-shrink: 0; display: flex; align-items: center; gap: 7px; }
+.latest-title-dot { width: 7px; height: 7px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; }
+.timeline { flex: 1; overflow-y: scroll; min-height: 0; }
+.timeline::-webkit-scrollbar { width: 4px; }
+.timeline::-webkit-scrollbar-track { background: #1a1a1a; }
+.timeline::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 2px; }
+.timeline-item { padding: 10px 14px; cursor: pointer; border-bottom: 1px solid #2a2a2a; transition: background 0.15s; }
+.timeline-item:hover { background: #252525; }
+.timeline-item.active { background: #222; border-left: 3px solid #c41e3a; padding-left: 11px; }
+.tl-meta { display: flex; align-items: center; gap: 5px; margin-bottom: 4px; flex-wrap: wrap; }
+.tl-time { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #555; }
+.tl-src { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.04em; }
+.tl-headline { font-family: 'Lora', serif; font-size: 13px; font-weight: 600; color: #ccc; line-height: 1.38; }
+.tl-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+.tl-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+.tl-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+.read-more-btn { padding: 12px 16px; text-align: center; border-top: 1px solid #2a2a2a; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; cursor: pointer; transition: color 0.2s, background 0.2s; background: #1a1a1a; flex-shrink: 0; }
+.read-more-btn:hover { color: #c41e3a; background: #222; }
+.india-ribbon { background: #1a1a1a; padding: 14px 24px; border-radius: 8px 8px 0 0; }
+.india-ribbon-inner { display: flex; align-items: center; gap: 12px; }
+.india-ribbon h2 { font-family: 'Lora', serif; font-size: 18px; font-weight: 700; color: #c41e3a; letter-spacing: -0.01em; }
+.india-ribbon-tag { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #aaa; letter-spacing: 0.1em; text-transform: uppercase; }
+.india-content { background: #181818; padding: 24px 24px 28px; border-radius: 0 0 8px 8px; border: 1px solid #2a2a2a; border-top: none; }
+.india-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: flex-start; }
+.india-card { padding: 14px 0 16px; cursor: pointer; border-bottom: 1px solid #2a2a2a; }
+.india-card:last-child { border-bottom: none; }
+.india-card:hover .india-card-headline { color: #c41e3a; }
+.india-card-meta { display: flex; align-items: center; gap: 6px; margin-bottom: 5px; }
+.india-sev-high { background: #c41e3a; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 2px; letter-spacing: 0.06em; text-transform: uppercase; }
+.india-sev-med { background: #d4892a; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
+.india-sev-low { background: #3daa72; color: #fff; font-size: 10px; font-weight: 700; padding: 2px 6px; border-radius: 2px; }
+.india-cat { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #666; text-transform: uppercase; letter-spacing: 0.06em; }
+.india-card-time { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #aaa; margin-left: auto; }
+.india-card-headline { font-family: 'Lora', serif; font-size: 15px; font-weight: 600; color: #ddd; line-height: 1.4; margin-bottom: 4px; transition: color 0.15s; }
+.india-card-detail { font-size: 13px; color: #999; line-height: 1.65; font-weight: 300; }
+.india-card-expanded { display: none; margin-top: 10px; padding-top: 10px; border-top: 1px solid #2a2a2a; font-size: 13px; color: #999; line-height: 1.75; font-weight: 300; }
+.india-card.open .india-card-expanded { display: block; }
+.india-read-btn { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #c41e3a; background: none; border: none; cursor: pointer; padding: 4px 0 0; letter-spacing: 0.06em; display: block; transition: opacity 0.15s; }
+.india-read-btn:hover { opacity: 0.65; }
+.india-summary-header { display: flex; align-items: center; gap: 10px; margin-bottom: 12px; }
+.india-summary-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; white-space: nowrap; display: flex; align-items: center; gap: 8px; }
+.india-summary-rule { flex: 1; height: 1px; background: #333; }
+.india-summary-para { font-size: 14px; line-height: 1.75; color: #aaa; margin-bottom: 14px; font-weight: 300; }
+.india-summary-para:last-child { margin-bottom: 0; }
+footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
+.footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
+.footer-logo span { color: #c41e3a; }
+.footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; text-align: right; line-height: 1.7; }
+.ai-sum-badge { background: transparent; border: 1px solid #c41e3a; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700; padding: 3px 9px; letter-spacing: .1em; text-transform: uppercase; border-radius: 2px; white-space: nowrap; }
+@media (max-width: 900px) { .newspaper-grid { grid-template-columns: 1fr; } .col-left, .col-right { display: none; } .india-inner { grid-template-columns: 1fr; } }
+@media (max-width: 600px) { .tension-section { display: none; } header { padding: 10px 16px; } .masthead { font-size: 18px; } }
 </style>
 </head>
 <body>
 
 <header>
-  <div>
-    <div style="display:flex;align-items:center">
+  <div style="display:flex;flex-direction:column;gap:0">
+    <div style="display:flex;align-items:center;gap:10px">
       <h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1>
-      <span class="rss-pill"><span class="live-dot" style="margin-right:0;width:5px;height:5px"></span>Live RSS</span>
+      <span class="ai-sum-badge">AI Summariser</span>
     </div>
-    <div class="header-date" id="header-date"></div>
+    <div class="header-date" id="header-date" style="font-size:9px;color:#555;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace;margin-top:3px"></div>
   </div>
   <nav>
-    <a class="nav-item active" href="index.html"><span class="live-dot" style="width:5px;height:5px"></span>Live</a>
+    <a class="nav-item live active" href="index.html"><span class="live-dot"></span>Live</a>
     <a class="nav-item" href="india.html">India</a>
     <a class="nav-item" href="economy.html">Economy</a>
-    <a class="nav-item" href="digest.html">Digest</a>
+    <a class="nav-item" href="digest.html">Daily Digest</a>
     <a class="nav-item" href="records.html">Records</a>
     <a class="nav-item" href="warwatch.html">War Context</a>
   </nav>
 </header>
 
-<div class="ticker-bar">
-  <div class="ticker-label"><span class="live-dot" style="margin-right:0;width:5px;height:5px"></span>&nbsp;Breaking</div>
-  <div class="ticker-track">
-    <div class="ticker-inner" id="ticker-inner">Loading latest headlines...</div>
+<div class="alert-bar">
+  <div class="alert-badge" id="alert-escalation">CRITICAL</div>
+  <div class="alert-dot"></div>
+  <div class="alerts-scroll">
+    <div class="alerts-text"><span id="typewriter-output"></span><span class="typewriter-cursor"></span></div>
   </div>
 </div>
 
-<div class="page">
-
-  <!-- Status -->
-  <div class="status-bar">
-    <span class="status-badge" id="status-badge" style="background:rgba(196,30,58,.12);color:var(--red);border:1px solid rgba(196,30,58,.2)">LIVE</span>
-    <span class="status-info"><b id="s-count">0</b> articles today · <b id="s-india">0</b> India stories · Updated every 15 min via GitHub Actions</span>
-    <span class="status-right" id="s-lastrun">—</span>
+<div class="hero-img-wrap">
+  <div class="hero-img-inner"><img src="war.png" alt="War Monitor" onerror="this.parentElement.style.background='#1a1a1a'"/></div>
+  <div class="hero-overlay"></div>
+  <div class="hero-caption">
+    <div class="hero-caption-txt">WarWatch · AI-powered conflict monitor · 17 sources</div>
+    <div class="hero-live-pill"><span class="live-dot" style="margin-right:0"></span>Live</div>
   </div>
-
-  <!-- Economy strip — populated from prices_data.js -->
-  <a class="econ-strip" href="economy.html">
-    <div class="econ-label"><span style="width:5px;height:5px;border-radius:50%;background:var(--amber);display:inline-block"></span>Markets</div>
-    <div class="econ-cells">
-      <div class="ec"><div class="ec-tick">Brent</div><div class="ec-val" id="es-brent">$—</div><div class="ec-chg" id="es-brent-chg">since war</div></div>
-      <div class="ec"><div class="ec-tick">WTI</div><div class="ec-val" id="es-wti">$—</div><div class="ec-chg" id="es-wti-chg">since war</div></div>
-      <div class="ec"><div class="ec-tick">Gold</div><div class="ec-val" id="es-gold">$—</div><div class="ec-chg" id="es-gold-chg">since war</div></div>
-      <div class="ec"><div class="ec-tick">USD/INR</div><div class="ec-val" id="es-inr">₹—</div><div class="ec-chg" id="es-inr-chg">since war</div></div>
-      <div class="ec"><div class="ec-tick">Petrol est.</div><div class="ec-val" id="es-petrol">₹—</div><div class="ec-chg" id="es-petrol-chg">since war</div></div>
-    </div>
-    <div class="econ-cta">Full Economy →</div>
-  </a>
-
-  <!-- Tension meters — populated from live_data.js -->
-  <div class="tension-strip">
-    <div class="tension-lbl"><span style="width:5px;height:5px;border-radius:50%;background:#e05555;animation:pulse 1.6s infinite;display:inline-block;flex-shrink:0"></span>Tension</div>
-    <div class="tension-div"></div>
-    <div class="meters-row" id="tension-meters">
-      <div class="meter"><div class="meter-name">US vs Iran</div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="80" style="background:#c87830"></div></div><div class="meter-lvl" style="color:#c87830">HIGH</div></div>
-      <div class="meter"><div class="meter-name">Israel vs Iran</div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="74" style="background:#c87830"></div></div><div class="meter-lvl" style="color:#c87830">HIGH</div></div>
-      <div class="meter"><div class="meter-name">Gaza ceasefire</div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="30" style="background:var(--green)"></div></div><div class="meter-lvl" style="color:var(--green)">Holding</div></div>
-      <div class="meter"><div class="meter-name">Nuclear risk</div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="72" style="background:var(--amber)"></div></div><div class="meter-lvl" style="color:var(--amber)">High</div></div>
-      <div class="meter"><div class="meter-name">Regional war</div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="68" style="background:#e05555"></div></div><div class="meter-lvl" style="color:#e05555">Elevated</div></div>
-    </div>
-  </div>
-
-  <!-- Main grid -->
-  <div class="main-grid">
-
-    <div class="feed-col">
-      <div class="feed-hdr">
-        <span class="live-dot" style="width:5px;height:5px"></span>
-        <span class="feed-hdr-title">War Feed</span>
-        <span class="feed-count" id="war-count">—</span>
-      </div>
-      <div class="feed-scroll" id="war-feed">
-        <div class="no-data">No data yet.<br>Run <code>python bot.py</code> first,<br>then open this page.</div>
-      </div>
-    </div>
-
-    <div class="reader-col" id="reader-col">
-      <div class="reader-hdr">
-        <span class="r-src-badge" id="r-src">—</span>
-        <span class="r-time" id="r-time">—</span>
-        <a class="r-ext-link" id="r-ext-link" href="#" target="_blank">Read full article ↗</a>
-      </div>
-      <div class="reader-body" id="reader-body">
-        <div class="empty-reader">
-          <svg width="28" height="28" viewBox="0 0 28 28" fill="none"><rect x="3" y="5" width="22" height="3" rx="1.5" fill="#2a2a2a"/><rect x="3" y="12" width="16" height="2.5" rx="1.25" fill="#2a2a2a"/><rect x="3" y="18.5" width="11" height="2.5" rx="1.25" fill="#2a2a2a"/></svg>
-          Select a story
-        </div>
-      </div>
-    </div>
-
-  </div>
-
-  <!-- India section -->
-  <div class="india-section">
-    <div class="india-ribbon">
-      <div class="india-title">War &amp; India</div>
-      <span class="india-sub">India-only RSS · Live</span>
-      <a href="india.html" class="india-full-link">Full India Page →</a>
-    </div>
-    <div class="india-body">
-      <div class="india-meters">
-        <div class="india-meter"><div class="im-name">Energy security</div><div class="im-bg"><div class="im-fill" data-w="82" style="background:var(--red)"></div></div><div class="im-lvl" style="color:var(--red)">HIGH</div></div>
-        <div class="india-meter"><div class="im-name">Diaspora safety</div><div class="im-bg"><div class="im-fill" data-w="68" style="background:var(--amber)"></div></div><div class="im-lvl" style="color:var(--amber)">Elevated</div></div>
-        <div class="india-meter"><div class="im-name">Diplomatic strain</div><div class="im-bg"><div class="im-fill" data-w="58" style="background:var(--amber)"></div></div><div class="im-lvl" style="color:var(--amber)">Elevated</div></div>
-        <div class="india-meter"><div class="im-name">Trade disruption</div><div class="im-bg"><div class="im-fill" data-w="75" style="background:var(--red)"></div></div><div class="im-lvl" style="color:var(--red)">HIGH</div></div>
-      </div>
-      <div class="india-grid">
-        <div class="india-feed-col">
-          <div class="india-feed-hdr">
-            <span class="live-dot" style="width:5px;height:5px"></span>
-            <span style="font-size:11px;font-weight:600;color:#eee">India Stories</span>
-            <span class="feed-count" id="india-count" style="margin-left:auto">—</span>
-          </div>
-          <div class="india-feed-scroll" id="india-feed">
-            <div class="no-data" style="font-size:10px">Run bot first</div>
-          </div>
-        </div>
-        <div class="india-reader-col">
-          <div class="ir-hdr">
-            <span class="ir-badge" id="ir-badge">—</span>
-            <span class="r-time" id="ir-time">—</span>
-            <a class="r-ext-link" id="ir-ext-link" href="#" target="_blank">Read ↗</a>
-          </div>
-          <div class="ir-body" id="ir-body">
-            <div class="empty-reader" style="font-size:9px">Select an India story</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-
 </div>
 
-<div style="max-width:1480px;margin:0 auto;padding:0 22px 30px">
+<div class="page-sections">
+
+<div class="tension-section">
+  <div class="tension-inner">
+    <div class="tension-label"><div class="tension-live-dot"></div>Tension Meters</div>
+    <div class="tension-separator"></div>
+    <div class="tension-meters-grid" id="tension-meters-grid">
+      <div class="tension-meter"><div class="meter-row"><span class="meter-label">US vs Iran</span><span class="meter-level" style="color:#e05555">Critical</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="92" style="background:#e05555"></div></div></div>
+      <div class="tension-meter"><div class="meter-row"><span class="meter-label">Israel vs Iran</span><span class="meter-level" style="color:#e05555">Critical</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="84" style="background:#e05555"></div></div></div>
+      <div class="tension-meter"><div class="meter-row"><span class="meter-label">War vs India</span><span class="meter-level" id="india-war-lvl" style="color:#d4892a">High</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" id="india-war-bar" data-w="72" style="background:#d4892a"></div></div></div>
+    </div>
+  </div>
+</div>
+
+<a class="econ-strip" href="economy.html">
+  <div class="econ-strip-inner">
+    <div class="econ-strip-label"><span style="width:5px;height:5px;border-radius:50%;background:#d4892a;display:inline-block;flex-shrink:0"></span>Markets</div>
+    <div class="econ-cells" id="econ-strip-cells">
+      <div class="econ-cell"><div class="econ-cell-ticker">Brent</div><div class="econ-cell-val" id="es-brent">$94.8</div><div class="econ-cell-chg up" id="es-brent-chg">+24.7% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">WTI</div><div class="econ-cell-val" id="es-wti">$91.3</div><div class="econ-cell-chg up" id="es-wti-chg">+22.1% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">Gold USD</div><div class="econ-cell-val" id="es-gold">$3,082</div><div class="econ-cell-chg up" id="es-gold-chg">+14.6% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">USD/INR</div><div class="econ-cell-val" id="es-inr">₹85.42</div><div class="econ-cell-chg dn" id="es-inr-chg">-4.1% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">MCX Crude</div><div class="econ-cell-val" id="es-mcx">₹7,842</div><div class="econ-cell-chg up" id="es-mcx-chg">+23.4% since war</div></div>
+      <div class="econ-cell"><div class="econ-cell-ticker">Petrol est.</div><div class="econ-cell-val" id="es-petrol">₹97.4</div><div class="econ-cell-chg up" id="es-petrol-chg">+₹4.2 since war</div></div>
+    </div>
+    <div class="econ-strip-cta">Full Economy</div>
+  </div>
+</a>
+
+<div class="newspaper-grid" id="live">
+  <!-- LEFT: Latest News timeline (300px) -->
+  <div class="col-right" style="border-right:1px solid #2a2a2a;">
+    <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
+    <div class="timeline" id="timeline"></div>
+    <div class="read-more-btn" onclick="window.location.href='records.html'">Read more stories &rarr;</div>
+  </div>
+  <!-- RIGHT: Live rotator (1fr) -->
+  <div class="col-center" style="border-left:none;">
+    <div class="rot-topbar">
+      <div class="live-badge">Live</div>
+      <span class="rot-counter" id="rot-counter">1 / 8</span>
+    </div>
+    <div class="rot-stage" id="rot-stage"></div>
+    <div class="rot-navrow">
+      <button class="rot-btn" id="rot-prev">&#8592;</button>
+      <div class="rot-dots" id="rot-dots"></div>
+      <button class="rot-btn" id="rot-next">&#8594;</button>
+    </div>
+  </div>
+</div>
+
+<div id="india-section" style="border-radius:8px;overflow:hidden;">
+  <div class="india-ribbon">
+    <div class="india-ribbon-inner">
+      <h2>War &amp; India</h2>
+      <span class="india-ribbon-tag">How the conflict affects India</span>
+      <a href="india.html" style="margin-left:auto;font-family:'IBM Plex Mono',monospace;font-size:9px;color:#c41e3a;text-decoration:none;letter-spacing:.08em;text-transform:uppercase;border:1px solid #c41e3a;padding:4px 10px;border-radius:2px;">Full India Page &rarr;</a>
+    </div>
+  </div>
+  <div class="india-content">
+    <div class="india-inner">
+      <div style="background:#1e1e1e;border-radius:6px;border:1px solid #2a2a2a;padding:18px 20px;">
+        <div style="font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:0.12em;text-transform:uppercase;color:#555;margin-bottom:14px;display:flex;align-items:center;gap:8px;"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:#c41e3a;animation:pulse 1.5s infinite;flex-shrink:0;"></span>Latest India Impact</div>
+        <div id="india-impact-cards"></div>
+      </div>
+      <div style="background:#1e1e1e;border-radius:6px;border:1px solid #2a2a2a;padding:18px 20px;">
+        <div class="india-summary-header">
+          <span class="india-summary-lbl">AI India Summary <div class="ai-speaking-dot"><span></span><span></span><span></span></div></span>
+          <div class="india-summary-rule"></div>
+        </div>
+        <div id="india-summary-text"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+<div style="padding:0 24px 32px;max-width:1660px;margin:0 auto;">
 <footer>
   <div class="footer-logo">War<span>Watch</span></div>
-  <div class="footer-meta" id="footer-meta">Al Jazeera · BBC · NDTV · Indian Express · Middle East Eye · Defense One<br>Pure RSS · Zero AI · GitHub Actions every 15 min</div>
+  <div class="footer-meta" id="footer-meta">Sources: NDTV · BBC · Reuters · Al Jazeera · 13 more<br>AI Summariser · Powered by Gemini · Updated every 15 min</div>
 </footer>
 </div>
 
-<!-- Written by bot.py every 15 min -->
-<script src="live_data.js" onerror="console.warn('live_data.js not found — run python bot.py first')"></script>
-<script src="prices_data.js" onerror="console.warn('prices_data.js not found')"></script>
-
+<!-- live_data.js contains ALL pre-generated AI content. No API calls from browser. -->
+<script src="live_data.js" onerror="void 0"></script>
+<script src="prices_data.js" onerror="void 0"></script>
 <script>
 (function(){
+  var LEVEL_COLOR = {LOW:'#3daa72',MEDIUM:'#d4892a',HIGH:'#c87830',CRITICAL:'#a32d2d'};
+  var TONE_COLOR  = {VOLATILE:'#e05555',ESCALATING:'#f5a623',TENSE:'#d4892a',STABLE:'#3daa72','DE-ESCALATING':'#1d9e75'};
+  var TYPE_TAG = {direct:'rot-tag-d',indirect:'rot-tag-i',markets:'rot-tag-e',war:'rot-tag-d',wider_war:'rot-tag-i',india:'rot-tag-i',military:'rot-tag-d',diplomacy:'rot-tag-i'};
+  var TYPE_LBL = {direct:'War',indirect:'Wider War',markets:'Markets',war:'War',wider_war:'Wider War',india:'India',military:'Military',diplomacy:'Diplomacy'};
 
-/* ── Date header ── */
-var d=new Date();
-var DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-document.getElementById('header-date').textContent=DAYS[d.getDay()]+', '+MONTHS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
+  /* Date */
+  var d = new Date();
+  var DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
+  var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
+  document.getElementById('header-date').textContent = DAYS[d.getDay()]+', '+MONTHS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
 
-/* ── Data sources ── */
-var D = window.WARWATCH_LIVE || {};
-var P = window.WARWATCH_PRICES || {};
+  var D = window.WARWATCH_LIVE;
+  if (!D) { console.warn('live_data.js not loaded'); return; }
 
-/* ── Prices ── */
-var pr=P.prices||{};
-var india_p=P.india||{};
-function setVal(id,val){ var el=document.getElementById(id); if(el&&val) el.textContent=val; }
-function setChg(id,pct){
-  var el=document.getElementById(id); if(!el||pct==null) return;
-  var sign=pct>0?'+':'';
-  el.textContent=sign+pct.toFixed(1)+'% since war';
-  el.className='ec-chg '+(pct>0?'up':'dn');
-}
-var b=pr['BZ=F']; if(b){ setVal('es-brent',b.formatted); setChg('es-brent-chg',b.war_pct); }
-var w=pr['CL=F']; if(w){ setVal('es-wti',w.formatted); setChg('es-wti-chg',w.war_pct); }
-var g=pr['GC=F']; if(g){ setVal('es-gold',g.formatted); setChg('es-gold-chg',g.war_pct); }
-var inr=pr['INR=X']; if(inr){ setVal('es-inr',inr.formatted); setChg('es-inr-chg',inr.war_pct); }
-var pet=india_p.petrolPump;
-if(pet){
-  setVal('es-petrol',pet.formatted||'₹—');
-  var wc=pet.war_change||0;
-  var pEl=document.getElementById('es-petrol-chg');
-  if(pEl){ pEl.textContent=(wc>0?'+':'')+'₹'+Math.abs(wc).toFixed(1)+' since war'; pEl.className='ec-chg '+(wc>0?'up':'dn'); }
-}
+  /* Alert badge */
+  var badge = document.getElementById('alert-escalation');
+  if (badge) { badge.textContent = D.escalationLevel||'HIGH'; badge.style.background = LEVEL_COLOR[D.escalationLevel]||'#a32d2d'; }
+  if (D.alerts && D.alerts.length) window._alertHeadlines = D.alerts;
 
-/* ── Status bar ── */
-var warCards   = D.warCards   || D.newsCards || [];
-var indiaCards = D.indiaCards || [];
-// filter out any war cards accidentally in india
-warCards = warCards.filter(function(c){ return !c.india; });
-
-document.getElementById('s-count').textContent   = (warCards.length+indiaCards.length);
-document.getElementById('s-india').textContent   = indiaCards.length;
-document.getElementById('s-lastrun').textContent = D.lastRun ? 'Last run: '+D.lastRun : '—';
-
-/* ── Status badge colour ── */
-var level=D.escalationLevel||'LIVE';
-var badge=document.getElementById('status-badge');
-var colMap={CRITICAL:'#e05555',HIGH:'#c87830',MEDIUM:'#d4892a',LOW:'#3daa72',LIVE:'#c41e3a'};
-var bgMap={CRITICAL:'rgba(224,85,85,.12)',HIGH:'rgba(200,120,48,.12)',MEDIUM:'rgba(212,137,42,.12)',LOW:'rgba(61,170,114,.12)',LIVE:'rgba(196,30,58,.12)'};
-badge.textContent=level;
-badge.style.color=colMap[level]||'#c41e3a';
-badge.style.background=bgMap[level]||'rgba(196,30,58,.12)';
-
-/* ── Ticker ── */
-var alerts=D.alerts||[];
-if(alerts.length){
-  var html=alerts.map(function(a){ return '<span>'+a+'</span><span class="ticker-sep">·</span>'; }).join('');
-  document.getElementById('ticker-inner').innerHTML=html+html;
-}
-
-/* ── Tension meters ── */
-if(D.tensionMeters&&D.tensionMeters.length){
-  var grid=document.getElementById('tension-meters');
-  grid.innerHTML=D.tensionMeters.map(function(m){
-    var c=m.color||'#888';
-    if(c==='var(--red)')c='#e05555';
-    if(c==='var(--green)')c='#3daa72';
-    if(c==='var(--amber)')c='#d4892a';
-    return '<div class="meter"><div class="meter-name">'+m.label+'</div>'
-      +'<div class="meter-bar-bg"><div class="meter-bar-fill" data-w="'+m.pct+'" style="background:'+c+'"></div></div>'
-      +'<div class="meter-lvl" style="color:'+c+'">'+m.lvl+'</div></div>';
-  }).join('');
-}
-
-/* ── Animate all meter bars ── */
-setTimeout(function(){
-  document.querySelectorAll('.meter-bar-fill[data-w],.im-fill[data-w]').forEach(function(b,i){
-    setTimeout(function(){ b.style.width=b.dataset.w+'%'; },i*100);
-  });
-},200);
-
-/* ── Helpers ── */
-function tagClass(cat){
-  var m={War:'tag-war',Military:'tag-mil',Diplomacy:'tag-dipl',Energy:'tag-econ',
-         Markets:'tag-econ',Economy:'tag-econ',Trade:'tag-econ',India:'tag-india',
-         Diaspora:'tag-india',Security:'tag-mil'};
-  return m[cat]||'tag-war';
-}
-function sevBadge(sig){
-  if(sig==='HIGH')   return '<span class="sev-high">High</span>';
-  if(sig==='LOW')    return '<span class="sev-low">Low</span>';
-  return '<span class="sev-med">Med</span>';
-}
-function sigCls(sig){ return sig==='HIGH'?'r':sig==='LOW'?'g':'a'; }
-
-/* ══════════════
-   WAR FEED
-══════════════ */
-var currentWarUrl='#';
-
-function buildWarFeed(){
-  var feed=document.getElementById('war-feed');
-  var cnt=document.getElementById('war-count');
-  if(cnt) cnt.textContent=warCards.length+' articles';
-
-  if(!warCards.length){
-    feed.innerHTML='<div class="no-data">No war articles yet.<br>Run <code>python bot.py</code> first.</div>';
-    return;
+  /* Tension meters */
+  if (D.tensionMeters && D.tensionMeters.length) {
+    var grid = document.getElementById('tension-meters-grid');
+    grid.innerHTML = D.tensionMeters.map(function(m){
+      var c = m.color||'#888';
+      if(c==='var(--red)')c='#e05555'; if(c==='var(--green)')c='#3daa72'; if(c==='var(--amber)')c='#d4892a';
+      return '<div class="tension-meter"><div class="meter-row"><span class="meter-label">'+m.label+'</span><span class="meter-level" style="color:'+c+'">'+m.lvl+'</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="'+m.pct+'" style="background:'+c+'"></div></div></div>';
+    }).join('');
   }
 
-  feed.innerHTML=warCards.map(function(card,i){
-    var delay=(i*.05).toFixed(2);
-    return '<div class="feed-item" style="animation-delay:'+delay+'s" data-i="'+i+'">'
-      +'<div class="fi-meta"><span class="tag '+tagClass(card.category)+'">'+card.category+'</span>'
-      +'<span class="fi-src">'+card.source+'</span>'
-      +'<span class="fi-time">'+card.timeAgo+'</span></div>'
-      +'<div class="fi-hl">'+card.title+'</div>'
-      +'</div>';
-  }).join('');
+  /* India meter — pre-generated by CI, read directly */
+  var meter = D.indiaMeter || {pct:72, lvl:'High', color:'#d4892a'};
+  var indBar = document.getElementById('india-war-bar');
+  var indLvl = document.getElementById('india-war-lvl');
+  if (indBar && indLvl) {
+    indLvl.textContent = meter.lvl;
+    indLvl.style.color = meter.color;
+    indBar.style.background = meter.color;
+  }
+  setTimeout(function(){
+    document.querySelectorAll('.meter-bar-fill[data-w]').forEach(function(b,i){
+      setTimeout(function(){ b.style.width = b.dataset.w+'%'; }, i*140);
+    });
+    if (indBar) indBar.style.width = meter.pct + '%';
+  }, 120);
 
-  feed.querySelectorAll('.feed-item').forEach(function(el){
-    el.addEventListener('click',function(){ selectWar(+el.dataset.i); });
-  });
-
-  selectWar(0);
-}
-
-function selectWar(idx){
-  var card=warCards[idx]; if(!card) return;
-  currentWarUrl=card.url||'#';
-  document.querySelectorAll('#war-feed .feed-item').forEach(function(el,i){ el.classList.toggle('active',i===idx); });
-  document.getElementById('r-src').textContent=card.source;
-  document.getElementById('r-time').textContent=card.timeAgo;
-  document.getElementById('r-ext-link').href=card.url||'#';
-
-  var facts=card.keyFacts||[];
-  var factsHtml=facts.map(function(f,i){
-    return '<div class="fact-row"><div class="fact-n">'+String(i+1).padStart(2,'0')+'</div><div class="fact-t">'+f+'</div></div>';
-  }).join('');
-
-  document.getElementById('reader-body').innerHTML=
-    '<div class="r-headline">'+card.title+'</div>'
-    +'<div class="r-snippet">'+card.snippet+'</div>'
-    +'<div class="r-divider"></div>'
-    +'<div class="r-sec-lbl">Key facts</div>'
-    +'<div class="facts-grid">'+factsHtml+'</div>'
-    +'<div class="r-divider"></div>'
-    +'<div class="r-sec-lbl">Context</div>'
-    +'<div class="ctx-grid">'
-    +'<div class="ctx-card"><div class="ctx-lbl">Source</div><div class="ctx-val a">'+card.source+'</div></div>'
-    +'<div class="ctx-card"><div class="ctx-lbl">Category</div><div class="ctx-val a">'+card.category+'</div></div>'
-    +'<div class="ctx-card"><div class="ctx-lbl">Significance</div><div class="ctx-val '+sigCls(card.significance)+'">'+card.significance+'</div></div>'
-    +'<div class="ctx-card"><div class="ctx-lbl">Score</div><div class="ctx-val b">'+card.score+' pts</div></div>'
-    +'</div>'
-    +'<a class="read-full-btn" href="'+card.url+'" target="_blank">Read full article on '+card.source+' ↗</a>';
-}
-
-/* ══════════════
-   INDIA FEED
-══════════════ */
-var currentIndiaUrl='#';
-
-function buildIndiaFeed(){
-  var feed=document.getElementById('india-feed');
-  var cnt=document.getElementById('india-count');
-  if(cnt) cnt.textContent=indiaCards.length+' stories';
-
-  if(!indiaCards.length){
-    feed.innerHTML='<div class="no-data" style="font-size:10px">No India articles yet</div>';
-    return;
+  /* Tone badge */
+  if (D.sentiment && D.sentiment.overall_tone) {
+    var tone = D.sentiment.overall_tone;
+    var tb = document.getElementById('tone-badge');
+    if (tb) {
+      tb.textContent = tone.charAt(0) + tone.slice(1).toLowerCase();
+      tb.style.background = TONE_COLOR[tone] || '#d4892a';
+    }
   }
 
-  feed.innerHTML=indiaCards.map(function(card,i){
-    var delay=(i*.06).toFixed(2);
-    return '<div class="icard" style="animation-delay:'+delay+'s" data-i="'+i+'">'
-      +'<div class="ic-meta">'+sevBadge(card.significance)+'<span class="ic-cat">'+card.category+'</span>'
-      +'<span class="ic-src">'+card.source+'</span></div>'
-      +'<div class="ic-hl">'+card.title+'</div>'
-      +'<div class="ic-det">'+(card.snippet||'').slice(0,90)+'...</div>'
-      +'</div>';
-  }).join('');
+  /* Panel summary — pre-generated by CI, render immediately */
+  var summaryTimeEl = document.getElementById('summary-time');
+  if (summaryTimeEl) summaryTimeEl.textContent = D.generatedAt || '';
+  var summaryEl = document.getElementById('summary-text-inner');
+  var summaryRaw = D.execSummaryRich || D.execSummary || D.executive_summary || '';
+  if (summaryEl) {
+    if (summaryRaw) {
+      var paras = summaryRaw.split(/\n\n+/).filter(function(p){return p.trim().length>10;}).slice(0,3);
+      summaryEl.innerHTML = paras.map(function(p){return '<p style="margin:0 0 10px;line-height:1.75">'+p.trim()+'</p>';}).join('');
+    } else {
+      summaryEl.innerHTML = '<p style="color:#444">Summary will appear after next bot run.</p>';
+    }
+  }
+  var noteEl = document.getElementById('ai-refresh-note');
+  if (noteEl) noteEl.textContent = 'Generated at ' + (D.generatedAt||'—') + ' · Updates every 15 min';
 
-  feed.querySelectorAll('.icard').forEach(function(el){
-    el.addEventListener('click',function(){ selectIndia(+el.dataset.i); });
-  });
+  /* India section */
+  var SEV_CLS = {HIGH:'india-sev-high',MEDIUM:'india-sev-med',LOW:'india-sev-low'};
+  var indiaCards = document.getElementById('india-impact-cards');
+  if (D.indiaImpact && D.indiaImpact.length && indiaCards) {
+    indiaCards.innerHTML = D.indiaImpact.map(function(item,idx){
+      var sevCls = SEV_CLS[item.significance]||'india-sev-med';
+      var expanded = '';
+      if (item.full_detail) {
+        expanded = item.full_detail.split('\n').filter(Boolean).map(function(p){return '<p style="margin-bottom:8px">'+p+'</p>';}).join('');
+      }
+      return '<div class="india-card'+(idx===0?' open':'')+'">'
+        +'<div class="india-card-meta"><span class="'+sevCls+'">'+(item.significance||'Medium')+'</span><span class="india-cat">'+(item.category||'')+'</span><span class="india-card-time">'+timeAgo(D.generatedAt)+'</span></div>'
+        +'<div class="india-card-headline">'+(item.headline||'')+'</div>'
+        +'<div class="india-card-detail">'+(item.detail||'')+'</div>'
+        +(expanded?'<div class="india-card-expanded">'+expanded+'</div><button class="india-read-btn" onclick="toggleIndiaCard(this)">'+(idx===0?'Read less ↑':'Read more ↓')+'</button>':'')
+        +'</div>';
+    }).join('');
+  }
+  var indiaSummEl = document.getElementById('india-summary-text');
+  if (D.indiaSummary && indiaSummEl) {
+    indiaSummEl.innerHTML = D.indiaSummary.split(/\n\n+/).filter(Boolean).map(function(p){
+      return '<p class="india-summary-para">'+p.trim()+'</p>';
+    }).join('');
+  }
 
-  selectIndia(0);
+  /* Footer */
+  var fm = document.getElementById('footer-meta');
+  if (fm && D.generatedAt) {
+    fm.innerHTML = 'NDTV · BBC · Reuters · Al Jazeera · 13 more · Gemini AI<br>Last updated: '+D.generatedAt+(D.totalReports?' · '+D.totalReports+' reports logged':'');
+  }
+
+  /* Economy strip */
+  var P = window.WARWATCH_PRICES;
+  if (P) {
+    var pr = P.prices||{}, ind = P.india||{};
+    function setCell(id,val,pct){
+      var el=document.getElementById(id); if(!el)return;
+      el.textContent=val; el.classList.remove('slide-up'); void el.offsetWidth; el.classList.add('slide-up');
+    }
+    function setChg(id,pct){
+      var el=document.getElementById(id); if(!el)return;
+      el.textContent=(pct>0?'+':'')+pct.toFixed(1)+'% since war';
+      el.className='econ-cell-chg '+(pct>0?'up':'dn');
+    }
+    var b=pr['BZ=F']; if(b){setCell('es-brent',b.formatted,b.war_pct);setChg('es-brent-chg',b.war_pct);}
+    var w=pr['CL=F']; if(w){setCell('es-wti',w.formatted,w.war_pct);setChg('es-wti-chg',w.war_pct);}
+    var g=pr['GC=F']; if(g){setCell('es-gold',g.formatted,g.war_pct);setChg('es-gold-chg',g.war_pct);}
+    var i=pr['INR=X']; if(i){setCell('es-inr',i.formatted,i.war_pct);setChg('es-inr-chg',i.war_pct);}
+    var mc=pr['CRUDEOIL.MCX']; if(mc){setCell('es-mcx',mc.formatted,mc.war_pct);setChg('es-mcx-chg',mc.war_pct);}
+    var pet=ind.petrolPump;
+    if(pet){
+      setCell('es-petrol',pet.formatted||'₹97.4');
+      var petEl=document.getElementById('es-petrol-chg');
+      var wc=pet.war_change||0;
+      if(petEl){petEl.textContent=(wc>0?'+':'')+'₹'+Math.abs(wc).toFixed(1)+' since war';petEl.className='econ-cell-chg '+(wc>0?'up':'dn');}
+    }
+  }
+
+  function timeAgo(ts){
+    try{
+      var m=ts.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/);
+      if(!m)return ts;
+      var dt=new Date(Date.UTC(+m[1],+m[2]-1,+m[3],+m[4],+m[5]));
+      var diff=Math.floor((Date.now()-dt)/1000);
+      if(diff<60)return 'just now';
+      if(diff<3600)return Math.floor(diff/60)+' min ago';
+      if(diff<86400){var h=Math.floor(diff/3600);return h+' hr'+(h>1?'s':'')+ ' ago';}
+      var dd=Math.floor(diff/86400);return dd+' day'+(dd>1?'s':'')+' ago';
+    }catch(e){return ts;}
+  }
+
+  /* ── ROTATOR — reads fullAnalysis from live_data.js, zero API calls ── */
+  var rotCards = (D.newsCards && D.newsCards.length) ? D.newsCards.slice(0,8) : [];
+  var stage = document.getElementById('rot-stage');
+  var dotsEl = document.getElementById('rot-dots');
+  var counterEl = document.getElementById('rot-counter');
+  var els = [], cur = 0, animating = false;
+
+  if (rotCards.length && stage) {
+    rotCards.forEach(function(c, i){
+      var el = document.createElement('div');
+      el.className = 'rot-card '+(i===0?'rot-active':'rot-next');
+      var tagType = c.type || 'direct';
+      var tagCls = TYPE_TAG[tagType] || 'rot-tag-d';
+      var tagLbl = TYPE_LBL[tagType] || 'War';
+      var channelName = c.sourceLabel || c.actor || 'Source';
+      var articleUrl = c.sourceUrl || '#';
+      var timeLbl = (channelName.toUpperCase()) + (c.time ? ' · '+c.time : '');
+
+      /* fullAnalysis pre-baked by Gemini in CI pipeline */
+      var analysisHtml = '';
+      var fa = (c.fullAnalysis || '').trim();
+      var isReal = fa.length > 100 && fa !== (c.summary||'').trim() && fa !== (c.detail||'').trim();
+      if (isReal) {
+        var paras = fa.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 4);
+        if (!paras.length) paras = [fa];
+        analysisHtml = paras.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
+      } else {
+        analysisHtml = '<p style="color:#3a3a3a;font-style:italic;font-size:11px">Analysis will appear after the next bot run.</p>';
+      }
+
+      el.innerHTML =
+        '<div class="rot-source">'+timeLbl+' <span class="'+tagCls+'">'+tagLbl+'</span></div>'+
+        '<div class="rot-headline">'+(c.headline||'')+'</div>'+
+        '<div class="rot-summary">'+(c.summary||'')+'</div>'+
+        (isReal ? '<div class="ai-analysis-box"><div class="ai-analysis-lbl">AI Analysis · Gemini</div><div class="ai-analysis-txt">'+analysisHtml+'</div></div>' : '')+
+        '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="'+articleUrl+'" target="_blank">'+channelName+'</a></div>';
+
+      stage.appendChild(el);
+      els.push(el);
+
+      var dot = document.createElement('span');
+      dot.className = i===0?'on':'';
+      (function(idx){ dot.onclick = function(){ if(!animating) goTo(idx, idx>cur?1:-1); }; })(i);
+      dotsEl.appendChild(dot);
+    });
+
+    counterEl.textContent = '1 / '+rotCards.length;
+
+    /* Timeline */
+    var tl = document.getElementById('timeline');
+    if (tl) {
+      tl.innerHTML = rotCards.map(function(c,i){
+        var tagType = c.type||'direct';
+        var tagCls = 'tl-tag-'+(tagType==='markets'?'e':tagType==='indirect'||tagType==='wider_war'||tagType==='diplomacy'?'i':'d');
+        var tagLbl = TYPE_LBL[tagType]||'War';
+        return '<div class="timeline-item'+(i===0?' active':'')+'" onclick="pickStory('+i+')">'
+          +'<div class="tl-meta"><span class="'+tagCls+'">'+tagLbl+'</span><span class="tl-time">'+(c.time||'')+'</span><span class="tl-src">'+(c.sourceLabel||'').toUpperCase()+'</span></div>'
+          +'<div class="tl-headline">'+c.headline+'</div>'
+          +'</div>';
+      }).join('');
+    }
+  }
+
+  function goTo(idx, dir) {
+    if (animating || !els.length) return;
+    var next = (idx + rotCards.length) % rotCards.length;
+    if (next === cur) return;
+    animating = true;
+    var prev = cur; cur = next;
+    els[cur].className = 'rot-card '+(dir>0?'rot-next':'rot-prev');
+    void els[cur].offsetWidth;
+    els[prev].className = 'rot-card '+(dir>0?'rot-prev':'rot-next');
+    els[cur].className = 'rot-card rot-active';
+    dotsEl.querySelectorAll('span').forEach(function(d,i){ d.className = i===cur?'on':''; });
+    counterEl.textContent = (cur+1)+' / '+rotCards.length;
+    document.querySelectorAll('.timeline-item').forEach(function(el,i){ el.classList.toggle('active', i===cur); });
+    setTimeout(function(){ animating = false; }, 560);
+  }
+
+  window.pickStory = function(idx){ goTo(idx, idx>cur?1:-1); };
+  document.getElementById('rot-next').onclick = function(){ if(!animating) goTo(cur+1,1); };
+  document.getElementById('rot-prev').onclick = function(){ if(!animating) goTo(cur-1,-1); };
+
+})();
+
+function toggleIndiaCard(btn) {
+  var card = btn.closest('.india-card');
+  var expanded = card.querySelector('.india-card-expanded');
+  if (!expanded) return;
+  var isOpen = card.classList.contains('open');
+  card.classList.toggle('open', !isOpen);
+  btn.textContent = isOpen ? 'Read more ↓' : 'Read less ↑';
 }
 
-function selectIndia(idx){
-  var card=indiaCards[idx]; if(!card) return;
-  currentIndiaUrl=card.url||'#';
-  document.querySelectorAll('#india-feed .icard').forEach(function(el,i){ el.classList.toggle('active',i===idx); });
-  document.getElementById('ir-badge').textContent=card.source;
-  document.getElementById('ir-time').textContent=card.timeAgo;
-  var irLink=document.getElementById('ir-ext-link');
-  irLink.href=card.url||'#';
-  irLink.textContent='Read on '+card.source+' ↗';
-
-  var facts=card.keyFacts||[];
-  var factsHtml=facts.map(function(f,i){
-    return '<div class="fact-row"><div class="fact-n">'+String(i+1).padStart(2,'0')+'</div><div class="fact-t">'+f+'</div></div>';
-  }).join('');
-
-  document.getElementById('ir-body').innerHTML=
-    '<div class="ir-headline">'+card.title+'</div>'
-    +'<div class="ir-snip">'+card.snippet+'</div>'
-    +'<div class="r-divider"></div>'
-    +'<div class="r-sec-lbl">Key facts</div>'
-    +'<div class="facts-grid">'+factsHtml+'</div>'
-    +'<div class="r-divider"></div>'
-    +'<div class="r-sec-lbl">India context</div>'
-    +'<div class="ctx-grid">'
-    +'<div class="ctx-card"><div class="ctx-lbl">Category</div><div class="ctx-val a">'+card.category+'</div></div>'
-    +'<div class="ctx-card"><div class="ctx-lbl">Significance</div><div class="ctx-val '+sigCls(card.significance)+'">'+card.significance+'</div></div>'
-    +'<div class="ctx-card"><div class="ctx-lbl">Source</div><div class="ctx-val" style="color:#777">'+card.source+'</div></div>'
-    +'<div class="ctx-card"><div class="ctx-lbl">Updated</div><div class="ctx-val" style="color:#777">'+card.timeAgo+'</div></div>'
-    +'</div>'
-    +'<a class="read-full-btn" href="'+card.url+'" target="_blank">Read on '+card.source+' ↗</a>';
-}
-
-/* ── Footer ── */
-var fm=document.getElementById('footer-meta');
-if(fm&&D.lastRun){
-  fm.innerHTML='Al Jazeera · BBC · NDTV · Indian Express · Middle East Eye · Defense One<br>'
-    +'Last updated: '+D.lastRun+' · '+(D.totalArticles||0)+' articles today · Pure RSS · Zero AI';
-}
-
-/* ── Build ── */
-buildWarFeed();
-buildIndiaFeed();
-
+/* Typewriter alert */
+(function(){
+  var DEFAULT = ['War Monitor — loading latest updates...'];
+  var TYPE_SPEED=65, ERASE_SPEED=32, PAUSE_AFTER=3200, PAUSE_BEFORE=500;
+  var output=document.getElementById('typewriter-output'), idx=0, charIdx=0, erasing=false;
+  function getH(){ return (window._alertHeadlines&&window._alertHeadlines.length)?window._alertHeadlines:DEFAULT; }
+  function tick(){
+    var hs=getH(), cur=hs[idx%hs.length];
+    if(!erasing){ output.textContent=cur.slice(0,charIdx+1); charIdx++; if(charIdx>=cur.length){erasing=true;setTimeout(tick,PAUSE_AFTER);}else setTimeout(tick,TYPE_SPEED); }
+    else{ output.textContent=cur.slice(0,charIdx-1); charIdx--; if(charIdx<=0){erasing=false;idx=(idx+1)%hs.length;setTimeout(tick,PAUSE_BEFORE);}else setTimeout(tick,ERASE_SPEED); }
+  }
+  setTimeout(tick, 800);
 })();
 </script>
 </body>
