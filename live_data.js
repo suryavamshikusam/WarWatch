@@ -1,17 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 14:54 UTC",
+  "generatedAt": "2026-03-24 16:02 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran war shows why Europe is no longer relevant \u00b7 The US and Israel have started another myopic and dangerous regional war that is\u2026",
-    "Other: Trump's stringent demands on Iran risk bogging down potential talks, sources say \u00b7 The US has issued far-reaching demands to Iran to end the war , conditions that \u2026",
-    "Other: Israel to \u2018control\u2019 southern Lebanon as Smotrich urges border shift to Litani Ri \u00b7 Israel \u2019s defence minister, Israel Katz, said on Tuesday that the army plans to \u2026",
-    "Other: Modi-Trump call: \u2018Ensuring Strait of Hormuz remains open\u2019, PM to US president am \u00b7 Prime Minister Narendra Modi Tuesday spoke with US President Donald Trump, focus\u2026"
+    "Other: Israeli press review: Expanding wars spark concerns over economy and air defence \u00b7 On Monday, the governor of the Bank of Israel , Amir Yaron, filed the financial \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-24 14:54 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-24 16:02 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -51,74 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran war shows why Europe is no longer relevant",
-      "summary": "The US and Israel have started another myopic and dangerous regional war that is ultimately doomed to be counterproductive for all. Unlike Israel, the US may be willing to settle for a significant and durable degradation of Iran \u2019s nuclear and missile capabilities, and of Tehran\u2019s allies, especially",
+      "time": "6 min ago",
+      "headline": "Israeli press review: Expanding wars spark concerns over economy and air defence",
+      "summary": "On Monday, the governor of the Bank of Israel , Amir Yaron, filed the financial institution\u2019s 2025 annual report to the government and the Knesset. The report indicates that the Israeli economy has demonstrated resilience despite the ongoing conflicts, including Israel\u2019s genocidal war on Gaza , whil",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The US and Israel have started another myopic and dangerous regional war that is ultimately doomed to be counterproductive for all. Unlike Israel, the US may be willing to settle for a significant and durable degradation of Iran \u2019s nuclear and missile capabilities, and of Tehran\u2019s allies, especially",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/iran-war-shows-why-europe-no-longer-relevant",
+      "fullAnalysis": "On Monday, the governor of the Bank of Israel , Amir Yaron, filed the financial institution\u2019s 2025 annual report to the government and the Knesset. The report indicates that the Israeli economy has demonstrated resilience despite the ongoing conflicts, including Israel\u2019s genocidal war on Gaza , whil",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-press-review-concerns-about-economy-and-air-defence-capacities",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Trump's stringent demands on Iran risk bogging down potential talks, sources say",
-      "summary": "The US has issued far-reaching demands to Iran to end the war , conditions that Tehran is likely to view as a non-starter, sources familiar with the matter have told Middle East Eye. Turkey , Pakistan and Egypt have been trying to establish a channel between the US and Iran to secure a short ceasefi",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "The US has issued far-reaching demands to Iran to end the war , conditions that Tehran is likely to view as a non-starter, sources familiar with the matter have told Middle East Eye. Turkey , Pakistan and Egypt have been trying to establish a channel between the US and Iran to secure a short ceasefi",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-trump-demands-risk-talks-ending-iran-war",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Israel to \u2018control\u2019 southern Lebanon as Smotrich urges border shift to Litani Ri",
-      "summary": "Israel \u2019s defence minister, Israel Katz, said on Tuesday that the army plans to \u201ccontrol\u201d southern Lebanon , a day after Finance Minister Bezalel Smotrich called for the border to be redrawn at the Litani River. Katz said hundreds of thousands of Lebanese civilians forced to flee the south would not",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Israel \u2019s defence minister, Israel Katz, said on Tuesday that the army plans to \u201ccontrol\u201d southern Lebanon , a day after Finance Minister Bezalel Smotrich called for the border to be redrawn at the Litani River. Katz said hundreds of thousands of Lebanese civilians forced to flee the south would not",
-      "sourceUrl": "https://www.middleeasteye.net/news/litani-river-must-be-new-border-lebanon-israels-smotrich-says",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Modi-Trump call: \u2018Ensuring Strait of Hormuz remains open\u2019, PM to US president am",
-      "summary": "Prime Minister Narendra Modi Tuesday spoke with US President Donald Trump, focusing on the ongoing crisis in the West Asia and the need to keep critical global shipping routes open. Confirming the development, US Ambassador to India Sergio Gor said the two leaders discussed the situation in the regi",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Prime Minister Narendra Modi Tuesday spoke with US President Donald Trump, focusing on the ongoing crisis in the West Asia and the need to keep critical global shipping routes open. Confirming the development, US Ambassador to India Sergio Gor said the two leaders discussed the situation in the regi",
-      "sourceUrl": "https://indianexpress.com/article/india/modi-trump-call-west-asia-crisis-hormuz-10599060/",
-      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 11:56 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 12:51 UTC",
       "l": "HIGH",
@@ -245,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 14:54 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 16:02 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war shows why Europe is no longer relevant. Trump's stringent demands on Iran risk bogging down potential talks, sources say. Israel to \u2018control\u2019 southern Lebanon as Smotrich urges border shift to Litani Ri. Modi-Trump call: \u2018Ensuring Strait of Hormuz remains open\u2019, PM to US president am. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli press review: Expanding wars spark concerns over economy and air defence. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
