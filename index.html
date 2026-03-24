@@ -51,8 +51,6 @@ nav { display: flex; align-items: center; gap: 0; }
 .meter-bar-bg { height: 6px; background: #2e2e2e; border-radius: 3px; margin-top: 8px; overflow: hidden; }
 .meter-bar-fill { height: 100%; border-radius: 3px; width: 0; transition: width 1.4s cubic-bezier(0.4,0,0.2,1); }
 @keyframes econSlideUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
-@keyframes econTriUp{0%,100%{transform:translateY(0)}50%{transform:translateY(-3px)}}
-@keyframes econTriDn{0%,100%{transform:translateY(0)}50%{transform:translateY(3px)}}
 .econ-strip { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; overflow: hidden; text-decoration: none; display: block; transition: border-color .2s; }
 .econ-strip:hover { border-color: #c41e3a; }
 .econ-strip-inner { display: flex; align-items: center; }
@@ -68,22 +66,10 @@ nav { display: flex; align-items: center; gap: 0; }
 .econ-cell-chg.dn { color: #3daa72; }
 .econ-strip-cta { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #c41e3a; letter-spacing: .1em; text-transform: uppercase; padding: 10px 14px; white-space: nowrap; flex-shrink: 0; border-left: 1px solid #2a2a2a; }
 .econ-strip-cta::after { content: ' →'; }
+
+/* ── MAIN NEWS GRID ── */
 .newspaper-grid { display: grid; grid-template-columns: 300px 1fr; border: 1px solid #2a2a2a; background: #1a1a1a; height: clamp(560px, calc(100vh - 220px), 820px); border-radius: 8px; overflow: hidden; }
 .col-left { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; background: #1e1e1e; min-height: 0; overflow: hidden; }
-.ai-summary-box { padding: 20px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px solid #2a2a2a; min-height: 0; overflow: hidden; }
-.ai-summary-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; font-weight: 500; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-@keyframes aiDotBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-4px);opacity:1} }
-.ai-speaking-dot { display: inline-flex; gap: 3px; align-items: center; }
-.ai-speaking-dot span { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: #c41e3a; animation: aiDotBounce 1.2s ease-in-out infinite; }
-.ai-speaking-dot span:nth-child(2) { animation-delay: 0.2s; }
-.ai-speaking-dot span:nth-child(3) { animation-delay: 0.4s; }
-.ai-summary-text { font-size: 13px; color: #bbb; line-height: 1.75; font-weight: 300; flex: 1; overflow-y: auto; min-height: 0; height: 0; }
-.ai-summary-text::-webkit-scrollbar { width: 3px; }
-.ai-summary-text::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
-.ai-refresh-note { font-size: 10px; color: #444; font-family: 'IBM Plex Mono', monospace; margin-top: 8px; }
-.escalation-block { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid #2a2a2a; margin-top: 16px; }
-.escalation-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; }
-.escalation-badge { padding: 5px 14px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
 .col-center { border-left: none; display: flex; flex-direction: column; overflow: hidden; flex: 1; }
 .rot-topbar { display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-bottom: 1px solid #2a2a2a; flex-shrink: 0; background: #1a1a1a; }
 .live-badge { display: inline-flex; align-items: center; gap: 6px; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
@@ -102,11 +88,6 @@ nav { display: flex; align-items: center; gap: 0; }
 .rot-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
 .rot-headline { font-family: 'Lora', serif; font-size: 19px; font-weight: 700; color: #eee; line-height: 1.28; letter-spacing: -0.01em; flex-shrink: 0; }
 .rot-summary { font-size: 13px; color: #888; line-height: 1.65; font-weight: 300; flex-shrink: 0; }
-.ai-analysis-box { background: rgba(127,119,221,0.08); border: 0.5px solid rgba(127,119,221,0.25); border-radius: 6px; padding: 12px 14px; flex-shrink: 0; }
-.ai-analysis-lbl { font-size: 10px; color: #7f77dd; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 7px; display: flex; align-items: center; gap: 6px; font-family: 'IBM Plex Mono', monospace; }
-.ai-analysis-txt { font-size: 12px; color: #a89fe0; line-height: 1.75; }
-.ai-analysis-txt p { margin-bottom: 8px; }
-.ai-analysis-txt p:last-child { margin-bottom: 0; }
 .rot-read-row { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #555; padding-top: 4px; flex-shrink: 0; }
 .rot-channel-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; color: #c41e3a; text-decoration: none; border-bottom: 1px dashed #c41e3a; letter-spacing: 0.04em; }
 .rot-channel-link:hover { opacity: 0.7; }
@@ -116,10 +97,11 @@ nav { display: flex; align-items: center; gap: 0; }
 .rot-dots { display: flex; gap: 5px; }
 .rot-dots span { width: 6px; height: 6px; border-radius: 50%; background: #333; cursor: pointer; transition: background 0.2s; }
 .rot-dots span.on { background: #c41e3a; }
-.col-right { display: flex; flex-direction: column; background: #1e1e1e; overflow: hidden; min-height: 0; height: 100%; }
-.col-center { display: flex; flex-direction: column; overflow: hidden; flex: 1; }
-.latest-title { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #c41e3a; padding: 12px 16px; border-bottom: 1px solid #2a2a2a; letter-spacing: -0.01em; flex-shrink: 0; display: flex; align-items: center; gap: 7px; }
-.latest-title-dot { width: 7px; height: 7px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; }
+
+/* ── LEFT PANEL: single Latest News feed ── */
+.col-left { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; background: #1e1e1e; min-height: 0; overflow: hidden; }
+.latest-title { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: 0.12em; text-transform: uppercase; color: #666; padding: 9px 14px; border-bottom: 1px solid #2a2a2a; flex-shrink: 0; display: flex; align-items: center; gap: 6px; }
+.latest-title-dot { width: 5px; height: 5px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; }
 .timeline { flex: 1; overflow-y: scroll; min-height: 0; }
 .timeline::-webkit-scrollbar { width: 4px; }
 .timeline::-webkit-scrollbar-track { background: #1a1a1a; }
@@ -134,8 +116,22 @@ nav { display: flex; align-items: center; gap: 0; }
 .tl-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
 .tl-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
 .tl-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
+
+/* live fetch label is inline in latest-title */
+
+.live-item { padding: 10px 14px; border-bottom: 1px solid #202020; cursor: pointer; transition: background 0.15s; }
+.live-item:hover { background: #252525; }
+.live-item.new-flash { animation: flashIn 0.6s ease forwards; }
+@keyframes flashIn { 0%{background:#1e1e2e;border-left:3px solid #c41e3a} 100%{background:transparent;border-left:none} }
+.live-item-meta { display: flex; align-items: center; gap: 5px; margin-bottom: 3px; flex-wrap: wrap; }
+.live-item-time { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #555; }
+.live-item-src { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #666; text-transform: uppercase; letter-spacing: 0.04em; background: #252525; padding: 1px 5px; border-radius: 2px; }
+.live-item-new { font-family: 'IBM Plex Mono', monospace; font-size: 8px; color: #fff; background: #c41e3a; padding: 1px 4px; border-radius: 2px; letter-spacing: 0.06em; }
+.live-item-headline { font-family: 'Lora', serif; font-size: 13px; font-weight: 600; color: #ccc; line-height: 1.35; }
 .read-more-btn { padding: 12px 16px; text-align: center; border-top: 1px solid #2a2a2a; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; cursor: pointer; transition: color 0.2s, background 0.2s; background: #1a1a1a; flex-shrink: 0; }
 .read-more-btn:hover { color: #c41e3a; background: #222; }
+
+/* India section */
 .india-ribbon { background: #1a1a1a; padding: 14px 24px; border-radius: 8px 8px 0 0; }
 .india-ribbon-inner { display: flex; align-items: center; gap: 12px; }
 .india-ribbon h2 { font-family: 'Lora', serif; font-size: 18px; font-weight: 700; color: #c41e3a; letter-spacing: -0.01em; }
@@ -167,7 +163,12 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 .footer-logo span { color: #c41e3a; }
 .footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; text-align: right; line-height: 1.7; }
 .ai-sum-badge { background: transparent; border: 1px solid #c41e3a; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700; padding: 3px 9px; letter-spacing: .1em; text-transform: uppercase; border-radius: 2px; white-space: nowrap; }
-@media (max-width: 900px) { .newspaper-grid { grid-template-columns: 1fr; } .col-left, .col-right { display: none; } .india-inner { grid-template-columns: 1fr; } }
+@keyframes aiDotBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-4px);opacity:1} }
+.ai-speaking-dot { display: inline-flex; gap: 3px; align-items: center; }
+.ai-speaking-dot span { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: #c41e3a; animation: aiDotBounce 1.2s ease-in-out infinite; }
+.ai-speaking-dot span:nth-child(2) { animation-delay: 0.2s; }
+.ai-speaking-dot span:nth-child(3) { animation-delay: 0.4s; }
+@media (max-width: 900px) { .newspaper-grid { grid-template-columns: 1fr; height: auto; } .col-left { height: 340px; } .india-inner { grid-template-columns: 1fr; } }
 @media (max-width: 600px) { .tension-section { display: none; } header { padding: 10px 16px; } .masthead { font-size: 18px; } }
 </style>
 </head>
@@ -177,7 +178,7 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   <div style="display:flex;flex-direction:column;gap:0">
     <div style="display:flex;align-items:center;gap:10px">
       <h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1>
-      <span class="ai-sum-badge">AI Summariser</span>
+      <span class="ai-sum-badge">Live Monitor</span>
     </div>
     <div class="header-date" id="header-date" style="font-size:9px;color:#555;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace;margin-top:3px"></div>
   </div>
@@ -203,7 +204,7 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   <div class="hero-img-inner"><img src="war.png" alt="War Monitor" onerror="this.parentElement.style.background='#1a1a1a'"/></div>
   <div class="hero-overlay"></div>
   <div class="hero-caption">
-    <div class="hero-caption-txt">WarWatch · AI-powered conflict monitor · 17 sources</div>
+    <div class="hero-caption-txt">WarWatch · Conflict monitor · Live RSS · Auto-refresh every 15 min</div>
     <div class="hero-live-pill"><span class="live-dot" style="margin-right:0"></span>Live</div>
   </div>
 </div>
@@ -238,16 +239,22 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 </a>
 
 <div class="newspaper-grid" id="live">
-  <!-- LEFT: Latest News timeline (300px) -->
-  <div class="col-right" style="border-right:1px solid #2a2a2a;">
-    <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
-    <div class="timeline" id="timeline"></div>
+  <!-- LEFT: Single unified Latest News — live RSS on top, bot archive below -->
+  <div class="col-left">
+    <div class="latest-title">
+      <span class="latest-title-dot"></span>Latest News
+      <span id="fetch-label" style="margin-left:auto;font-size:9px;color:#444;letter-spacing:.04em;text-transform:none;font-weight:400;">Loading…</span>
+    </div>
+    <!-- One scrollable list: live items injected at top, bot items appended below -->
+    <div class="timeline" id="unified-feed"></div>
     <div class="read-more-btn" onclick="window.location.href='records.html'">Read more stories &rarr;</div>
   </div>
-  <!-- RIGHT: Live rotator (1fr) -->
+
+  <!-- RIGHT: Live rotator -->
   <div class="col-center" style="border-left:none;">
     <div class="rot-topbar">
       <div class="live-badge">Live</div>
+      <span id="rot-live-src" style="font-family:'IBM Plex Mono',monospace;font-size:9px;color:#555;margin-left:8px;letter-spacing:.06em;text-transform:uppercase;"></span>
       <span class="rot-counter" id="rot-counter">1 / 8</span>
     </div>
     <div class="rot-stage" id="rot-stage"></div>
@@ -275,7 +282,7 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
       </div>
       <div style="background:#1e1e1e;border-radius:6px;border:1px solid #2a2a2a;padding:18px 20px;">
         <div class="india-summary-header">
-          <span class="india-summary-lbl">AI India Summary <div class="ai-speaking-dot"><span></span><span></span><span></span></div></span>
+          <span class="india-summary-lbl">India Summary <div class="ai-speaking-dot"><span></span><span></span><span></span></div></span>
           <div class="india-summary-rule"></div>
         </div>
         <div id="india-summary-text"></div>
@@ -288,166 +295,315 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
 <div style="padding:0 24px 32px;max-width:1660px;margin:0 auto;">
 <footer>
   <div class="footer-logo">War<span>Watch</span></div>
-  <div class="footer-meta" id="footer-meta">Sources: NDTV · BBC · Reuters · Al Jazeera · 13 more<br>AI Summariser · Powered by Gemini · Updated every 15 min</div>
+  <div class="footer-meta" id="footer-meta">Sources: NDTV · BBC · Reuters · Al Jazeera · 13 more<br>Live RSS · Updates every 15 min</div>
 </footer>
 </div>
 
-<!-- live_data.js contains ALL pre-generated AI content. No API calls from browser. -->
 <script src="live_data.js" onerror="void 0"></script>
 <script src="prices_data.js" onerror="void 0"></script>
 <script>
 (function(){
+  /* ══════════════════════════════════════════════════
+     TAB SWITCHER
+  ══════════════════════════════════════════════════ */
+  window.switchTab = function(tab) {
+    document.querySelectorAll('.news-tab').forEach(function(t){ t.classList.remove('active'); });
+    document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('active'); });
+    document.getElementById('tab-'+tab).classList.add('active');
+    document.getElementById('panel-'+tab).classList.add('active');
+  };
+
+  /* ══════════════════════════════════════════════════
+     LIVE RSS FETCHER — runs every 15 min
+     Uses a CORS proxy to fetch RSS feeds client-side
+  ══════════════════════════════════════════════════ */
+  var RSS_SOURCES = [
+    { label: 'Al Jazeera',     url: 'https://www.aljazeera.com/xml/rss/all.xml' },
+    { label: 'BBC World',      url: 'https://feeds.bbci.co.uk/news/world/rss.xml' },
+    { label: 'Middle East Eye',url: 'https://www.middleeasteye.net/rss' },
+    { label: 'NDTV',           url: 'https://feeds.feedburner.com/ndtvnews-top-stories' },
+    { label: 'Indian Express', url: 'https://indianexpress.com/section/world/feed/' },
+  ];
+
+  var HIGH_KW = ['iran war','us strike','israel strike','irgc','idf strike','nuclear deal','strait of hormuz','iranian missile','iranian drone','ballistic missile','khamenei','netanyahu','pentagon iran','tehran attack'];
+  var MED_KW  = ['iran','israel','hamas','hezbollah','gaza','middle east','nuclear','idf','pentagon','missile','drone','ceasefire','sanctions','hormuz','oil price','india gulf','retaliation','escalation'];
+
+  function scoreArticle(title, desc) {
+    var text = (title + ' ' + (desc||'')).toLowerCase();
+    var s = 0;
+    HIGH_KW.forEach(function(kw){ if (text.indexOf(kw) > -1) s += 3; });
+    MED_KW.forEach(function(kw){ if (text.indexOf(kw) > -1) s += 1; });
+    return s;
+  }
+
+  function rssToJson(rssUrl) {
+    var apiUrl = 'https://api.rss2json.com/v1/api.json?rss_url=' + encodeURIComponent(rssUrl) + '&count=15';
+    return fetch(apiUrl).then(function(r){ return r.json(); });
+  }
+
+  var seenUrls = {};
+  var REFRESH_MS = 15 * 60 * 1000;
+  var botDivider = null; /* divider element separating live RSS from bot archive */
+
+  function relTime(pubDate) {
+    try {
+      var dt = new Date(pubDate);
+      if (isNaN(dt)) return '';
+      var diff = Math.floor((Date.now() - dt) / 1000);
+      if (diff < 60)   return 'just now';
+      if (diff < 3600) return Math.floor(diff/60) + ' min ago';
+      var h = Math.floor(diff/3600);
+      if (diff < 86400) return h + ' hr' + (h>1?'s':'') + ' ago';
+      return Math.floor(diff/86400) + 'd ago';
+    } catch(e) { return ''; }
+  }
+
+  function setFetchLabel(text) {
+    var el = document.getElementById('fetch-label');
+    if (el) el.textContent = text;
+  }
+
+  /* Insert a live RSS item BEFORE the divider (so it stays above bot archive) */
+  function insertLiveItem(art, isNew) {
+    var feed = document.getElementById('unified-feed');
+    if (!feed) return;
+    var item = document.createElement('div');
+    item.className = 'live-item' + (isNew ? ' new-flash' : '');
+    item.innerHTML =
+      '<div class="live-item-meta">' +
+        '<span class="live-item-src">' + escHtml(art.sourceLabel) + '</span>' +
+        '<span class="live-item-time">' + relTime(art.pubDate) + '</span>' +
+        (isNew ? '<span class="live-item-new">NEW</span>' : '') +
+      '</div>' +
+      '<div class="live-item-headline">' + escHtml(art.title) + '</div>';
+    item.onclick = function(){ window.open(art.link, '_blank'); };
+    feed.insertBefore(item, botDivider);
+  }
+
+  function fetchLiveNews(isRefresh) {
+    setFetchLabel(isRefresh ? 'Checking for new…' : 'Fetching live news…');
+
+    var promises = RSS_SOURCES.map(function(src) {
+      return rssToJson(src.url)
+        .then(function(data) {
+          return ((data && data.items) || [])
+            .map(function(item){ item.sourceLabel = src.label; return item; })
+            .filter(function(item){ return scoreArticle(item.title||'', item.description||'') > 0; });
+        })
+        .catch(function(){ return []; });
+    });
+
+    Promise.allSettled(promises).then(function(results) {
+      var all = [];
+      results.forEach(function(r){ if (r.status === 'fulfilled') all = all.concat(r.value); });
+
+      all.sort(function(a,b){ return new Date(b.pubDate||0) - new Date(a.pubDate||0); });
+
+      var seen = {};
+      all = all.filter(function(a){
+        if (!a.link || seen[a.link] || seenUrls[a.link]) return false;
+        seen[a.link] = true;
+        return true;
+      });
+
+      if (all.length === 0) {
+        setFetchLabel('No new · retrying in 15 min');
+        return;
+      }
+
+      all.forEach(function(art, i){
+        seenUrls[art.link] = true;
+        insertLiveItem(art, isRefresh && i < 5);
+      });
+
+      var ts = new Date().toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'});
+      setFetchLabel(
+        isRefresh
+          ? all.length + ' new · ' + ts
+          : all.length + ' live · next: ' + new Date(Date.now()+REFRESH_MS).toLocaleTimeString('en-GB',{hour:'2-digit',minute:'2-digit'})
+      );
+
+      /* push fresh items into rotator too */
+      if (!isRefresh) {
+        var mapped = all.slice(0,8).map(function(a){
+          return { headline:a.title||'', summary:(a.description||'').replace(/<[^>]+>/g,'').slice(0,280), time:relTime(a.pubDate), sourceLabel:a.sourceLabel, sourceUrl:a.link, type:'direct' };
+        });
+        var existing = (window.WARWATCH_LIVE && window.WARWATCH_LIVE.newsCards) ? window.WARWATCH_LIVE.newsCards : [];
+        buildRotator(mapped.concat(existing).slice(0,10));
+      }
+    });
+  }
+
+  /* Build bot-archive section at bottom of unified-feed, then fetch live on top */
+  function buildBotArchive() {
+    var feed = document.getElementById('unified-feed');
+    if (!feed) return;
+    var D = window.WARWATCH_LIVE;
+    var botCards = (D && D.newsCards && D.newsCards.length) ? D.newsCards : [];
+
+    botDivider = document.createElement('div');
+    botDivider.style.cssText = 'padding:5px 14px;font-family:\'IBM Plex Mono\',monospace;font-size:9px;color:#333;letter-spacing:.1em;text-transform:uppercase;border-top:1px solid #222;border-bottom:1px solid #1a1a1a;background:#181818;';
+    botDivider.textContent = '— Bot archive · ' + (D && D.generatedAt ? D.generatedAt : 'today') + ' —';
+    feed.appendChild(botDivider);
+
+    botCards.forEach(function(c, i){
+      var el = document.createElement('div');
+      el.className = 'timeline-item' + (i===0?' active':'');
+      el.onclick = function(){ pickStory(i); };
+      var tagType = c.type||'direct';
+      var tagCls = 'tl-tag-'+(tagType==='markets'?'e':tagType==='indirect'||tagType==='wider_war'||tagType==='diplomacy'?'i':'d');
+      var tagLbl = TYPE_LBL[tagType]||'War';
+      el.innerHTML =
+        '<div class="tl-meta"><span class="'+tagCls+'">'+tagLbl+'</span><span class="tl-time">'+(c.time||'')+'</span><span class="tl-src">'+(c.sourceLabel||'').toUpperCase()+'</span></div>'+
+        '<div class="tl-headline">'+escHtml(c.headline)+'</div>';
+      feed.appendChild(el);
+    });
+  }
+
+  buildBotArchive();
+  setTimeout(function(){ fetchLiveNews(false); }, 400);
+  setInterval(function(){ fetchLiveNews(true); }, REFRESH_MS);
+
+  /* ══════════════════════════════════════════════════
+     HELPERS
+  ══════════════════════════════════════════════════ */
+  function escHtml(str) {
+    return (str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+  }
+
   var LEVEL_COLOR = {LOW:'#3daa72',MEDIUM:'#d4892a',HIGH:'#c87830',CRITICAL:'#a32d2d'};
-  var TONE_COLOR  = {VOLATILE:'#e05555',ESCALATING:'#f5a623',TENSE:'#d4892a',STABLE:'#3daa72','DE-ESCALATING':'#1d9e75'};
   var TYPE_TAG = {direct:'rot-tag-d',indirect:'rot-tag-i',markets:'rot-tag-e',war:'rot-tag-d',wider_war:'rot-tag-i',india:'rot-tag-i',military:'rot-tag-d',diplomacy:'rot-tag-i'};
   var TYPE_LBL = {direct:'War',indirect:'Wider War',markets:'Markets',war:'War',wider_war:'Wider War',india:'India',military:'Military',diplomacy:'Diplomacy'};
 
-  /* Date */
+  function timeAgo(ts) {
+    try {
+      var m = ts.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/);
+      if (!m) return ts;
+      var dt = new Date(Date.UTC(+m[1],+m[2]-1,+m[3],+m[4],+m[5]));
+      var diff = Math.floor((Date.now()-dt)/1000);
+      if (diff<60) return 'just now';
+      if (diff<3600) return Math.floor(diff/60)+' min ago';
+      if (diff<86400){var h=Math.floor(diff/3600);return h+' hr'+(h>1?'s':'')+' ago';}
+      var dd=Math.floor(diff/86400);return dd+' day'+(dd>1?'s':'')+' ago';
+    } catch(e) { return ts; }
+  }
+
+  /* ══════════════════════════════════════════════════
+     DATE HEADER
+  ══════════════════════════════════════════════════ */
   var d = new Date();
   var DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var MONTHS=['January','February','March','April','May','June','July','August','September','October','November','December'];
   document.getElementById('header-date').textContent = DAYS[d.getDay()]+', '+MONTHS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
 
+  /* ══════════════════════════════════════════════════
+     LIVE_DATA.JS BOOT
+  ══════════════════════════════════════════════════ */
   var D = window.WARWATCH_LIVE;
-  if (!D) { console.warn('live_data.js not loaded'); return; }
+  if (!D) { console.warn('live_data.js not loaded'); }
 
-  /* Alert badge */
-  var badge = document.getElementById('alert-escalation');
-  if (badge) { badge.textContent = D.escalationLevel||'HIGH'; badge.style.background = LEVEL_COLOR[D.escalationLevel]||'#a32d2d'; }
-  if (D.alerts && D.alerts.length) window._alertHeadlines = D.alerts;
+  if (D) {
+    /* Alert badge */
+    var badge = document.getElementById('alert-escalation');
+    if (badge) { badge.textContent = D.escalationLevel||'HIGH'; badge.style.background = LEVEL_COLOR[D.escalationLevel]||'#a32d2d'; }
+    if (D.alerts && D.alerts.length) window._alertHeadlines = D.alerts;
 
-  /* Tension meters */
-  if (D.tensionMeters && D.tensionMeters.length) {
-    var grid = document.getElementById('tension-meters-grid');
-    grid.innerHTML = D.tensionMeters.map(function(m){
-      var c = m.color||'#888';
-      if(c==='var(--red)')c='#e05555'; if(c==='var(--green)')c='#3daa72'; if(c==='var(--amber)')c='#d4892a';
-      return '<div class="tension-meter"><div class="meter-row"><span class="meter-label">'+m.label+'</span><span class="meter-level" style="color:'+c+'">'+m.lvl+'</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="'+m.pct+'" style="background:'+c+'"></div></div></div>';
-    }).join('');
+    /* Tension meters */
+    if (D.tensionMeters && D.tensionMeters.length) {
+      var grid = document.getElementById('tension-meters-grid');
+      grid.innerHTML = D.tensionMeters.map(function(m){
+        var c = m.color||'#888';
+        if(c==='var(--red)')c='#e05555'; if(c==='var(--green)')c='#3daa72'; if(c==='var(--amber)')c='#d4892a';
+        return '<div class="tension-meter"><div class="meter-row"><span class="meter-label">'+m.label+'</span><span class="meter-level" style="color:'+c+'">'+m.lvl+'</span></div><div class="meter-bar-bg"><div class="meter-bar-fill" data-w="'+m.pct+'" style="background:'+c+'"></div></div></div>';
+      }).join('');
+    }
+
+    /* India meter */
+    var meter = D.indiaMeter || {pct:72, lvl:'High', color:'#d4892a'};
+    var indBar = document.getElementById('india-war-bar');
+    var indLvl = document.getElementById('india-war-lvl');
+    if (indBar && indLvl) {
+      indLvl.textContent = meter.lvl;
+      indLvl.style.color = meter.color;
+      indBar.style.background = meter.color;
+    }
+
+    /* India section */
+    var SEV_CLS = {HIGH:'india-sev-high',MEDIUM:'india-sev-med',LOW:'india-sev-low'};
+    var indiaCards = document.getElementById('india-impact-cards');
+    if (D.indiaImpact && D.indiaImpact.length && indiaCards) {
+      indiaCards.innerHTML = D.indiaImpact.map(function(item,idx){
+        var sevCls = SEV_CLS[item.significance]||'india-sev-med';
+        var expanded = '';
+        if (item.full_detail) {
+          expanded = item.full_detail.split('\n').filter(Boolean).map(function(p){return '<p style="margin-bottom:8px">'+p+'</p>';}).join('');
+        }
+        return '<div class="india-card'+(idx===0?' open':'')+'">'
+          +'<div class="india-card-meta"><span class="'+sevCls+'">'+(item.significance||'Medium')+'</span><span class="india-cat">'+(item.category||'')+'</span><span class="india-card-time">'+timeAgo(D.generatedAt)+'</span></div>'
+          +'<div class="india-card-headline">'+(item.headline||'')+'</div>'
+          +'<div class="india-card-detail">'+(item.detail||'')+'</div>'
+          +(expanded?'<div class="india-card-expanded">'+expanded+'</div><button class="india-read-btn" onclick="toggleIndiaCard(this)">'+(idx===0?'Read less ↑':'Read more ↓')+'</button>':'')
+          +'</div>';
+      }).join('');
+    }
+
+    var indiaSummEl = document.getElementById('india-summary-text');
+    if (D.indiaSummary && indiaSummEl) {
+      indiaSummEl.innerHTML = D.indiaSummary.split(/\n\n+/).filter(Boolean).map(function(p){
+        return '<p class="india-summary-para">'+p.trim()+'</p>';
+      }).join('');
+    }
+
+    /* Footer */
+    var fm = document.getElementById('footer-meta');
+    if (fm && D.generatedAt) {
+      fm.innerHTML = 'NDTV · BBC · Reuters · Al Jazeera · Middle East Eye<br>Live RSS + Bot archive · Last bot run: '+D.generatedAt+(D.totalReports?' · '+D.totalReports+' reports':'');
+    }
   }
 
-  /* India meter — pre-generated by CI, read directly */
-  var meter = D.indiaMeter || {pct:72, lvl:'High', color:'#d4892a'};
-  var indBar = document.getElementById('india-war-bar');
-  var indLvl = document.getElementById('india-war-lvl');
-  if (indBar && indLvl) {
-    indLvl.textContent = meter.lvl;
-    indLvl.style.color = meter.color;
-    indBar.style.background = meter.color;
-  }
+  /* animate tension bars */
   setTimeout(function(){
     document.querySelectorAll('.meter-bar-fill[data-w]').forEach(function(b,i){
       setTimeout(function(){ b.style.width = b.dataset.w+'%'; }, i*140);
     });
+    var indBar = document.getElementById('india-war-bar');
+    var meter = (D && D.indiaMeter) || {pct:72};
     if (indBar) indBar.style.width = meter.pct + '%';
   }, 120);
 
-  /* Tone badge */
-  if (D.sentiment && D.sentiment.overall_tone) {
-    var tone = D.sentiment.overall_tone;
-    var tb = document.getElementById('tone-badge');
-    if (tb) {
-      tb.textContent = tone.charAt(0) + tone.slice(1).toLowerCase();
-      tb.style.background = TONE_COLOR[tone] || '#d4892a';
-    }
-  }
-
-  /* Panel summary — pre-generated by CI, render immediately */
-  var summaryTimeEl = document.getElementById('summary-time');
-  if (summaryTimeEl) summaryTimeEl.textContent = D.generatedAt || '';
-  var summaryEl = document.getElementById('summary-text-inner');
-  var summaryRaw = D.execSummaryRich || D.execSummary || D.executive_summary || '';
-  if (summaryEl) {
-    if (summaryRaw) {
-      var paras = summaryRaw.split(/\n\n+/).filter(function(p){return p.trim().length>10;}).slice(0,3);
-      summaryEl.innerHTML = paras.map(function(p){return '<p style="margin:0 0 10px;line-height:1.75">'+p.trim()+'</p>';}).join('');
-    } else {
-      summaryEl.innerHTML = '<p style="color:#444">Summary will appear after next bot run.</p>';
-    }
-  }
-  var noteEl = document.getElementById('ai-refresh-note');
-  if (noteEl) noteEl.textContent = 'Generated at ' + (D.generatedAt||'—') + ' · Updates every 15 min';
-
-  /* India section */
-  var SEV_CLS = {HIGH:'india-sev-high',MEDIUM:'india-sev-med',LOW:'india-sev-low'};
-  var indiaCards = document.getElementById('india-impact-cards');
-  if (D.indiaImpact && D.indiaImpact.length && indiaCards) {
-    indiaCards.innerHTML = D.indiaImpact.map(function(item,idx){
-      var sevCls = SEV_CLS[item.significance]||'india-sev-med';
-      var expanded = '';
-      if (item.full_detail) {
-        expanded = item.full_detail.split('\n').filter(Boolean).map(function(p){return '<p style="margin-bottom:8px">'+p+'</p>';}).join('');
-      }
-      return '<div class="india-card'+(idx===0?' open':'')+'">'
-        +'<div class="india-card-meta"><span class="'+sevCls+'">'+(item.significance||'Medium')+'</span><span class="india-cat">'+(item.category||'')+'</span><span class="india-card-time">'+timeAgo(D.generatedAt)+'</span></div>'
-        +'<div class="india-card-headline">'+(item.headline||'')+'</div>'
-        +'<div class="india-card-detail">'+(item.detail||'')+'</div>'
-        +(expanded?'<div class="india-card-expanded">'+expanded+'</div><button class="india-read-btn" onclick="toggleIndiaCard(this)">'+(idx===0?'Read less ↑':'Read more ↓')+'</button>':'')
-        +'</div>';
-    }).join('');
-  }
-  var indiaSummEl = document.getElementById('india-summary-text');
-  if (D.indiaSummary && indiaSummEl) {
-    indiaSummEl.innerHTML = D.indiaSummary.split(/\n\n+/).filter(Boolean).map(function(p){
-      return '<p class="india-summary-para">'+p.trim()+'</p>';
-    }).join('');
-  }
-
-  /* Footer */
-  var fm = document.getElementById('footer-meta');
-  if (fm && D.generatedAt) {
-    fm.innerHTML = 'NDTV · BBC · Reuters · Al Jazeera · 13 more · Gemini AI<br>Last updated: '+D.generatedAt+(D.totalReports?' · '+D.totalReports+' reports logged':'');
-  }
-
-  /* Economy strip */
+  /* ══════════════════════════════════════════════════
+     ECONOMY STRIP
+  ══════════════════════════════════════════════════ */
   var P = window.WARWATCH_PRICES;
   if (P) {
     var pr = P.prices||{}, ind = P.india||{};
-    function setCell(id,val,pct){
-      var el=document.getElementById(id); if(!el)return;
-      el.textContent=val; el.classList.remove('slide-up'); void el.offsetWidth; el.classList.add('slide-up');
-    }
-    function setChg(id,pct){
-      var el=document.getElementById(id); if(!el)return;
-      el.textContent=(pct>0?'+':'')+pct.toFixed(1)+'% since war';
-      el.className='econ-cell-chg '+(pct>0?'up':'dn');
-    }
-    var b=pr['BZ=F']; if(b){setCell('es-brent',b.formatted,b.war_pct);setChg('es-brent-chg',b.war_pct);}
-    var w=pr['CL=F']; if(w){setCell('es-wti',w.formatted,w.war_pct);setChg('es-wti-chg',w.war_pct);}
-    var g=pr['GC=F']; if(g){setCell('es-gold',g.formatted,g.war_pct);setChg('es-gold-chg',g.war_pct);}
-    var i=pr['INR=X']; if(i){setCell('es-inr',i.formatted,i.war_pct);setChg('es-inr-chg',i.war_pct);}
-    var mc=pr['CRUDEOIL.MCX']; if(mc){setCell('es-mcx',mc.formatted,mc.war_pct);setChg('es-mcx-chg',mc.war_pct);}
+    function setCell(id,val){ var el=document.getElementById(id); if(!el)return; el.textContent=val; el.classList.remove('slide-up'); void el.offsetWidth; el.classList.add('slide-up'); }
+    function setChg(id,pct){ var el=document.getElementById(id); if(!el)return; el.textContent=(pct>0?'+':'')+pct.toFixed(1)+'% since war'; el.className='econ-cell-chg '+(pct>0?'up':'dn'); }
+    var b=pr['BZ=F']; if(b){setCell('es-brent',b.formatted);setChg('es-brent-chg',b.war_pct);}
+    var w=pr['CL=F']; if(w){setCell('es-wti',w.formatted);setChg('es-wti-chg',w.war_pct);}
+    var g=pr['GC=F']; if(g){setCell('es-gold',g.formatted);setChg('es-gold-chg',g.war_pct);}
+    var ii=pr['INR=X']; if(ii){setCell('es-inr',ii.formatted);setChg('es-inr-chg',ii.war_pct);}
+    var mc=pr['CRUDEOIL.MCX']; if(mc){setCell('es-mcx',mc.formatted);setChg('es-mcx-chg',mc.war_pct);}
     var pet=ind.petrolPump;
-    if(pet){
-      setCell('es-petrol',pet.formatted||'₹97.4');
-      var petEl=document.getElementById('es-petrol-chg');
-      var wc=pet.war_change||0;
-      if(petEl){petEl.textContent=(wc>0?'+':'')+'₹'+Math.abs(wc).toFixed(1)+' since war';petEl.className='econ-cell-chg '+(wc>0?'up':'dn');}
-    }
+    if(pet){ setCell('es-petrol',pet.formatted||'₹97.4'); var petEl=document.getElementById('es-petrol-chg'); var wc=pet.war_change||0; if(petEl){petEl.textContent=(wc>0?'+':'')+'₹'+Math.abs(wc).toFixed(1)+' since war';petEl.className='econ-cell-chg '+(wc>0?'up':'dn');} }
   }
 
-  function timeAgo(ts){
-    try{
-      var m=ts.match(/(\d{4})-(\d{2})-(\d{2}) (\d{2}):(\d{2})/);
-      if(!m)return ts;
-      var dt=new Date(Date.UTC(+m[1],+m[2]-1,+m[3],+m[4],+m[5]));
-      var diff=Math.floor((Date.now()-dt)/1000);
-      if(diff<60)return 'just now';
-      if(diff<3600)return Math.floor(diff/60)+' min ago';
-      if(diff<86400){var h=Math.floor(diff/3600);return h+' hr'+(h>1?'s':'')+ ' ago';}
-      var dd=Math.floor(diff/86400);return dd+' day'+(dd>1?'s':'')+' ago';
-    }catch(e){return ts;}
-  }
-
-  /* ── ROTATOR — reads fullAnalysis from live_data.js, zero API calls ── */
-  var rotCards = (D.newsCards && D.newsCards.length) ? D.newsCards.slice(0,8) : [];
+  /* ══════════════════════════════════════════════════
+     ROTATOR — NO AI ANALYSIS BOX
+  ══════════════════════════════════════════════════ */
+  var rotCards = (D && D.newsCards && D.newsCards.length) ? D.newsCards.slice(0,10) : [];
   var stage = document.getElementById('rot-stage');
   var dotsEl = document.getElementById('rot-dots');
   var counterEl = document.getElementById('rot-counter');
   var els = [], cur = 0, animating = false;
 
-  if (rotCards.length && stage) {
-    rotCards.forEach(function(c, i){
+  function buildRotator(cards) {
+    if (!stage || !cards.length) return;
+    stage.innerHTML = '';
+    dotsEl.innerHTML = '';
+    els = []; cur = 0;
+
+    cards.forEach(function(c, i){
       var el = document.createElement('div');
       el.className = 'rot-card '+(i===0?'rot-active':'rot-next');
       var tagType = c.type || 'direct';
@@ -455,26 +611,14 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
       var tagLbl = TYPE_LBL[tagType] || 'War';
       var channelName = c.sourceLabel || c.actor || 'Source';
       var articleUrl = c.sourceUrl || '#';
-      var timeLbl = (channelName.toUpperCase()) + (c.time ? ' · '+c.time : '');
+      var timeLbl = channelName.toUpperCase() + (c.time ? ' · '+c.time : '');
 
-      /* fullAnalysis pre-baked by Gemini in CI pipeline */
-      var analysisHtml = '';
-      var fa = (c.fullAnalysis || '').trim();
-      var isReal = fa.length > 100 && fa !== (c.summary||'').trim() && fa !== (c.detail||'').trim();
-      if (isReal) {
-        var paras = fa.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 4);
-        if (!paras.length) paras = [fa];
-        analysisHtml = paras.map(function(p){ return '<p>' + p.trim() + '</p>'; }).join('');
-      } else {
-        analysisHtml = '<p style="color:#3a3a3a;font-style:italic;font-size:11px">Analysis will appear after the next bot run.</p>';
-      }
-
+      /* NO AI analysis box — removed as requested */
       el.innerHTML =
-        '<div class="rot-source">'+timeLbl+' <span class="'+tagCls+'">'+tagLbl+'</span></div>'+
-        '<div class="rot-headline">'+(c.headline||'')+'</div>'+
-        '<div class="rot-summary">'+(c.summary||'')+'</div>'+
-        (isReal ? '<div class="ai-analysis-box"><div class="ai-analysis-lbl">AI Analysis · Gemini</div><div class="ai-analysis-txt">'+analysisHtml+'</div></div>' : '')+
-        '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="'+articleUrl+'" target="_blank">'+channelName+'</a></div>';
+        '<div class="rot-source">'+escHtml(timeLbl)+' <span class="'+tagCls+'">'+tagLbl+'</span></div>'+
+        '<div class="rot-headline">'+escHtml(c.headline||'')+'</div>'+
+        '<div class="rot-summary">'+escHtml((c.summary||'').replace(/<[^>]+>/g,''))+'</div>'+
+        '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="'+escHtml(articleUrl)+'" target="_blank" rel="noopener">'+escHtml(channelName)+'</a></div>';
 
       stage.appendChild(el);
       els.push(el);
@@ -484,27 +628,20 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
       (function(idx){ dot.onclick = function(){ if(!animating) goTo(idx, idx>cur?1:-1); }; })(i);
       dotsEl.appendChild(dot);
     });
+    counterEl.textContent = '1 / '+cards.length;
 
-    counterEl.textContent = '1 / '+rotCards.length;
-
-    /* Timeline */
-    var tl = document.getElementById('timeline');
-    if (tl) {
-      tl.innerHTML = rotCards.map(function(c,i){
-        var tagType = c.type||'direct';
-        var tagCls = 'tl-tag-'+(tagType==='markets'?'e':tagType==='indirect'||tagType==='wider_war'||tagType==='diplomacy'?'i':'d');
-        var tagLbl = TYPE_LBL[tagType]||'War';
-        return '<div class="timeline-item'+(i===0?' active':'')+'" onclick="pickStory('+i+')">'
-          +'<div class="tl-meta"><span class="'+tagCls+'">'+tagLbl+'</span><span class="tl-time">'+(c.time||'')+'</span><span class="tl-src">'+(c.sourceLabel||'').toUpperCase()+'</span></div>'
-          +'<div class="tl-headline">'+c.headline+'</div>'
-          +'</div>';
-      }).join('');
-    }
+    /* sync Today tab selection to rotator */
+    document.querySelectorAll('.timeline-item').forEach(function(el,i){
+      el.classList.toggle('active', i===cur);
+    });
   }
+
+  buildRotator(rotCards);
 
   function goTo(idx, dir) {
     if (animating || !els.length) return;
-    var next = (idx + rotCards.length) % rotCards.length;
+    var total = els.length;
+    var next = ((idx % total) + total) % total;
     if (next === cur) return;
     animating = true;
     var prev = cur; cur = next;
@@ -513,7 +650,7 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
     els[prev].className = 'rot-card '+(dir>0?'rot-prev':'rot-next');
     els[cur].className = 'rot-card rot-active';
     dotsEl.querySelectorAll('span').forEach(function(d,i){ d.className = i===cur?'on':''; });
-    counterEl.textContent = (cur+1)+' / '+rotCards.length;
+    counterEl.textContent = (cur+1)+' / '+total;
     document.querySelectorAll('.timeline-item').forEach(function(el,i){ el.classList.toggle('active', i===cur); });
     setTimeout(function(){ animating = false; }, 560);
   }
@@ -522,8 +659,27 @@ footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; bor
   document.getElementById('rot-next').onclick = function(){ if(!animating) goTo(cur+1,1); };
   document.getElementById('rot-prev').onclick = function(){ if(!animating) goTo(cur-1,-1); };
 
+  /* ══════════════════════════════════════════════════
+     TYPEWRITER ALERT BAR
+  ══════════════════════════════════════════════════ */
+  (function(){
+    var DEFAULT = ['War Monitor — loading latest updates…'];
+    var TYPE_SPEED=65, ERASE_SPEED=32, PAUSE_AFTER=3200, PAUSE_BEFORE=500;
+    var output=document.getElementById('typewriter-output'), idx=0, charIdx=0, erasing=false;
+    function getH(){ return (window._alertHeadlines&&window._alertHeadlines.length)?window._alertHeadlines:DEFAULT; }
+    function tick(){
+      var hs=getH(), cur=hs[idx%hs.length];
+      if(!erasing){ output.textContent=cur.slice(0,charIdx+1); charIdx++; if(charIdx>=cur.length){erasing=true;setTimeout(tick,PAUSE_AFTER);}else setTimeout(tick,TYPE_SPEED); }
+      else{ output.textContent=cur.slice(0,charIdx-1); charIdx--; if(charIdx<=0){erasing=false;idx=(idx+1)%hs.length;setTimeout(tick,PAUSE_BEFORE);}else setTimeout(tick,ERASE_SPEED); }
+    }
+    setTimeout(tick, 800);
+  })();
+
 })();
 
+/* ══════════════════════════════════════════════════
+   INDIA CARD TOGGLE
+══════════════════════════════════════════════════ */
 function toggleIndiaCard(btn) {
   var card = btn.closest('.india-card');
   var expanded = card.querySelector('.india-card-expanded');
@@ -532,20 +688,6 @@ function toggleIndiaCard(btn) {
   card.classList.toggle('open', !isOpen);
   btn.textContent = isOpen ? 'Read more ↓' : 'Read less ↑';
 }
-
-/* Typewriter alert */
-(function(){
-  var DEFAULT = ['War Monitor — loading latest updates...'];
-  var TYPE_SPEED=65, ERASE_SPEED=32, PAUSE_AFTER=3200, PAUSE_BEFORE=500;
-  var output=document.getElementById('typewriter-output'), idx=0, charIdx=0, erasing=false;
-  function getH(){ return (window._alertHeadlines&&window._alertHeadlines.length)?window._alertHeadlines:DEFAULT; }
-  function tick(){
-    var hs=getH(), cur=hs[idx%hs.length];
-    if(!erasing){ output.textContent=cur.slice(0,charIdx+1); charIdx++; if(charIdx>=cur.length){erasing=true;setTimeout(tick,PAUSE_AFTER);}else setTimeout(tick,TYPE_SPEED); }
-    else{ output.textContent=cur.slice(0,charIdx-1); charIdx--; if(charIdx<=0){erasing=false;idx=(idx+1)%hs.length;setTimeout(tick,PAUSE_BEFORE);}else setTimeout(tick,ERASE_SPEED); }
-  }
-  setTimeout(tick, 800);
-})();
 </script>
 </body>
 </html>
