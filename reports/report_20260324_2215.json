@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 22:07 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump says he received Iranian 'present' as thousands of US troops head towards . France's Macron urges Iranian president to end attacks. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Trump says he received Iranian 'present' as thousands of US troops head towards ",
+      "detail": "President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related to \u201coil and gas\u201d, while repeating that talks were underway with the Islamic Republic to end the war, even as thousands of US troops are en route to the region. Trump delivered his remarks at the White House, claiming th",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-touts-iranian-present-thousands-us-troops-head-towards-gulf",
+      "fullAnalysis": "President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related to \u201coil and gas\u201d, while repeating that talks were underway with the Islamic Republic to end the war, even as thousands of US troops are en route to the region. Trump delivered his remarks at the White House, claiming th",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "France's Macron urges Iranian president to end attacks",
+      "detail": "French President Emmanuel Macron said on Tuesday he spoke to Iranian President Masoud Pezeshkian and asked him to put an end to attacks against countries in the region and called on the country to engage in good faith negotiations. \"I spoke again of the absolute necessity of putting a stop to these ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/frances-macron-urges-iran-president-end-attacks",
+      "fullAnalysis": "French President Emmanuel Macron said on Tuesday he spoke to Iranian President Masoud Pezeshkian and asked him to put an end to attacks against countries in the region and called on the country to engage in good faith negotiations. \"I spoke again of the absolute necessity of putting a stop to these ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-24 22:07 UTC"
+}

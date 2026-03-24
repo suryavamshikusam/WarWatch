@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 21:38 UTC",
+  "generatedAt": "2026-03-24 22:07 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian missiles cause injuries and major damage across Israel \u00b7 Iranian missiles cause injuries and major damage across Israel Iran released a v\u2026",
-    "Other: Building collapses after Iranian missile strike on Israel \u00b7 Building collapses after Iranian missile strike on Israel A building has collaps\u2026"
+    "Other: Trump says he received Iranian 'present' as thousands of US troops head towards  \u00b7 President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related\u2026",
+    "Other: France's Macron urges Iranian president to end attacks \u00b7 French President Emmanuel Macron said on Tuesday he spoke to Iranian President M\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-24 21:38 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-24 22:07 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,39 +49,39 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iranian missiles cause injuries and major damage across Israel",
-      "summary": "Iranian missiles cause injuries and major damage across Israel Iran released a video showing the launch of missiles as a new wave targeted areas across Israel on Tuesday, causing major damage and injuries. The attacks came after Iran warned Israel that it would widen strikes if civilian deaths in Ga",
+      "time": "8 min ago",
+      "headline": "Trump says he received Iranian 'present' as thousands of US troops head towards ",
+      "summary": "President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related to \u201coil and gas\u201d, while repeating that talks were underway with the Islamic Republic to end the war, even as thousands of US troops are en route to the region. Trump delivered his remarks at the White House, claiming th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iranian missiles cause injuries and major damage across Israel Iran released a video showing the launch of missiles as a new wave targeted areas across Israel on Tuesday, causing major damage and injuries. The attacks came after Iran warned Israel that it would widen strikes if civilian deaths in Ga",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/iranian-missiles-cause-injuries-and-major-damage-across-israel?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related to \u201coil and gas\u201d, while repeating that talks were underway with the Islamic Republic to end the war, even as thousands of US troops are en route to the region. Trump delivered his remarks at the White House, claiming th",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-touts-iranian-present-thousands-us-troops-head-towards-gulf",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Building collapses after Iranian missile strike on Israel",
-      "summary": "Building collapses after Iranian missile strike on Israel A building has collapsed in Bnei Brak, near Tel Aviv, after Israeli authorities said it was hit by an Iranian missile, injuring several people.",
+      "time": "8 min ago",
+      "headline": "France's Macron urges Iranian president to end attacks",
+      "summary": "French President Emmanuel Macron said on Tuesday he spoke to Iranian President Masoud Pezeshkian and asked him to put an end to attacks against countries in the region and called on the country to engage in good faith negotiations. \"I spoke again of the absolute necessity of putting a stop to these ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Building collapses after Iranian missile strike on Israel A building has collapsed in Bnei Brak, near Tel Aviv, after Israeli authorities said it was hit by an Iranian missile, injuring several people.",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/building-collapses-after-iranian-missile-strike-on-israel?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "French President Emmanuel Macron said on Tuesday he spoke to Iranian President Masoud Pezeshkian and asked him to put an end to attacks against countries in the region and called on the country to engage in good faith negotiations. \"I spoke again of the absolute necessity of putting a stop to these ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/frances-macron-urges-iran-president-end-attacks",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 19:14 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 19:57 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 21:38 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 22:07 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missiles cause injuries and major damage across Israel. Building collapses after Iranian missile strike on Israel. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump says he received Iranian 'present' as thousands of US troops head towards . France's Macron urges Iranian president to end attacks. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
