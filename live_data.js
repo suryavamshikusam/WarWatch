@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 04:34 UTC",
+  "generatedAt": "2026-03-24 05:49 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War \u00b7 Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
-    "Other: Netanyahu says spoke with Trump on potential Iran deal \u00b7 Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald\u2026",
-    "Other: US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f \u00b7 Israel\u2019s air defence system has been activated after the military detected new i\u2026"
+    "Other: Morning update \u00b7 Here are some of the latest key updates from the Iran war: Iran\u00a0launched a new w\u2026",
+    "Other: Iran launches fresh missiles amid claims of talks in Pakistan, Tehran denies \u00b7 Iran launched a new wave of missiles against Israel, hours after US President Do\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-03-24 04:34 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 4,
+    "lastUpdated": "2026-03-24 05:49 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,31 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
-      "summary": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
+      "time": "9 min ago",
+      "headline": "Morning update",
+      "summary": "Here are some of the latest key updates from the Iran war: Iran\u00a0launched a new wave of missiles against Israel Tuesday, hours after US President Donald Trump hailed \"very good\" talks to end the war despite Tehran denying any dialogue had taken place. Israel targeted seven areas of Beirut's southern ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War",
-      "sourceUrl": "https://www.ndtv.com/world-news/iran-war-news-inside-the-call-between-trump-netanyahu-that-sealed-ali-khameneis-fate-11257417#publisher=newsstand",
-      "sourceLabel": "NDTV"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Netanyahu says spoke with Trump on potential Iran deal",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald Trump about a potential agreement with Iran, as Israeli strikes continued in Iran and Lebanon. \u201cEarlier today, I spoke with our friend, President Trump,\u201d Netanyahu said, adding that Trump sees an opportunity to \u201cleverag",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said he spoke with US President Donald Trump about a potential agreement with Iran, as Israeli strikes continued in Iran and Lebanon. \u201cEarlier today, I spoke with our friend, President Trump,\u201d Netanyahu said, adding that Trump sees an opportunity to \u201cleverag",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-spoke-trump-potential-iran-deal",
+      "fullAnalysis": "Here are some of the latest key updates from the Iran war: Iran\u00a0launched a new wave of missiles against Israel Tuesday, hours after US President Donald Trump hailed \"very good\" talks to end the war despite Tehran denying any dialogue had taken place. Israel targeted seven areas of Beirut's southern",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-498",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -82,26 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f",
-      "summary": "Israel\u2019s air defence system has been activated after the military detected new incoming missiles from Iran, the military said in a message posted on Telegram. \u201cIn the past few minutes, the Home Front Command has sent a precautionary directive directly to mobile phones in the relevant areas,\u201d the mil",
+      "time": "9 min ago",
+      "headline": "Iran launches fresh missiles amid claims of talks in Pakistan, Tehran denies",
+      "summary": "Iran launched a new wave of missiles against Israel, hours after US President Donald Trump said there had been \u201cvery good\u201d talks to end the war, despite Tehran denying any negotiations. The claims briefly lifted markets and pushed oil prices lower ahead of a US deadline for Iran to reopen the Strait",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel\u2019s air defence system has been activated after the military detected new incoming missiles from Iran, the military said in a message posted on Telegram. \u201cIn the past few minutes, the Home Front Command has sent a precautionary directive directly to mobile phones in the relevant areas,\u201d the mil",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-power-plant-strike-delay-ghalibaf-fake-news-10597551/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Iran launched a new wave of missiles against Israel, hours after US President Donald Trump said there had been \u201cvery good\u201d talks to end the war, despite Tehran denying any negotiations. The claims briefly lifted markets and pushed oil prices lower ahead of a US deadline for Iran to reopen the Strait",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-fresh-missiles-amid-claims-talks-pakistan-tehran-denies",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-20 23:50 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-21 01:18 UTC",
       "l": "HIGH",
@@ -228,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 04:34 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-24 05:49 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Inside Trump-Netanyahu Call 48 Hours Before Khamenei's Killing In Iran War. Netanyahu says spoke with Trump on potential Iran deal. US-Israel-Iran War News Live Updates: Trump says power grid bombing delayed to f. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Iran launches fresh missiles amid claims of talks in Pakistan, Tehran denies. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
