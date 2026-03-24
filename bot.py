@@ -1,186 +1,262 @@
-import sys, os
-print("[BOT] Starting...", flush=True)
+"""
+bot.py — War Monitor Bot
 
-import json, time, shutil
-print("[BOT] stdlib imports OK", flush=True)
+Modes:
+  python bot.py              # Run once (ignores seen cache — good for testing)
+  python bot.py --watch      # Continuous loop, polls every 15 min (local use)
+  python bot.py --actions    # GitHub Actions mode: check for new articles, exit
 
-from datetime import datetime, timezone
+GitHub Actions runs --actions every 15 minutes automatically.
+seen_urls.json and reports/ are committed back to the repo after each run,
+so state persists across runs even though each Action starts fresh.
+
+Data freshness policy:
+  - If new articles found        → always run full pipeline
+  - If no new articles BUT data is older than MAX_DATA_AGE_HOURS → re-run pipeline
+    (uses existing seen articles so Gemini still has context)
+  - If no new articles AND data is fresh → prices-only refresh, skip AI
+"""
+
+import json
+import sys
+import time
+from datetime import datetime, timezone, timedelta
 from pathlib import Path
-print("[BOT] datetime/pathlib OK", flush=True)
 
-print("[BOT] Importing scraper...", flush=True)
 from scraper import fetch_all_articles, fetch_article_content
-print("[BOT] scraper OK", flush=True)
-
-print("[BOT] Importing summarizer...", flush=True)
 from summarizer import generate_report, format_report_html
-print("[BOT] summarizer OK", flush=True)
-
-print("[BOT] Importing dashboard...", flush=True)
 from dashboard import build_dashboard
-print("[BOT] dashboard OK", flush=True)
+from emailer import send_report_email
+from prices_fetcher import build_prices_js
 
-try:
-    from emailer import send_report_email
-    HAS_EMAIL = True
-    print("[BOT] emailer OK", flush=True)
-except ImportError:
-    HAS_EMAIL = False
-    print("[BOT] emailer not found — skipped", flush=True)
+REPORTS_DIR         = Path("reports")
+SEEN_FILE           = Path("seen_urls.json")
+CHECK_INTERVAL_MINS = 15
+MIN_NEW_ARTICLES    = 1
+MAX_SEEN_URLS       = 500
+MAX_DATA_AGE_HOURS  = 6   # Regenerate AI content if live_data.js is older than this
 
-try:
-    from prices_fetcher import build_prices_js
-    HAS_PRICES = True
-    print("[BOT] prices_fetcher OK", flush=True)
-except ImportError:
-    HAS_PRICES = False
-    print("[BOT] prices_fetcher not found — skipped", flush=True)
 
-REPORTS_DIR    = Path("reports")
-SEEN_FILE      = Path("seen_urls.json")
-LIVE_JS        = Path("live_data.js")
-LIVE_JS_TMP    = Path("live_data.tmp.js")
-LIVE_JS_BACKUP = Path("live_data.bak.js")
-MAX_SEEN_URLS  = 500
-MAX_DATA_AGE_HOURS = 1
-MIN_NEW_ARTICLES   = 1
+# ── Seen-URL cache ────────────────────────────────────────────────────────────
 
-def load_seen():
+def load_seen() -> set:
     if SEEN_FILE.exists():
-        try: return set(json.loads(SEEN_FILE.read_text()))
-        except: pass
+        try:
+            return set(json.loads(SEEN_FILE.read_text()))
+        except Exception:
+            pass
     return set()
 
-def save_seen(seen):
-    SEEN_FILE.write_text(json.dumps(list(seen)[-MAX_SEEN_URLS:], indent=2))
 
-def _live_data_age_hours():
-    if not LIVE_JS.exists(): return 999.0
-    mtime = datetime.fromtimestamp(LIVE_JS.stat().st_mtime, tz=timezone.utc)
+def save_seen(seen: set):
+    urls = list(seen)[-MAX_SEEN_URLS:]
+    SEEN_FILE.write_text(json.dumps(urls, indent=2))
+
+
+def _live_data_age_hours() -> float:
+    """Return how many hours ago live_data.js was last written. 999 if missing."""
+    live_js = Path("live_data.js")
+    if not live_js.exists():
+        return 999.0
+    mtime = datetime.fromtimestamp(live_js.stat().st_mtime, tz=timezone.utc)
     return (datetime.now(timezone.utc) - mtime).total_seconds() / 3600
 
-REQUIRED_KEYS = ["generatedAt","escalationLevel","newsCards","execSummaryRich","indiaSummary","indiaImpact","indiaMeter"]
 
-def _validate_live_data(path):
-    try:
-        text = path.read_text()
-        json_str = text.replace("window.WARWATCH_LIVE =","").strip().rstrip(";")
-        data = json.loads(json_str)
-        for key in REQUIRED_KEYS:
-            if key not in data:
-                print(f"  [HEALTH] Missing key: {key}", flush=True)
-                return False
-        if not data.get("newsCards"):
-            print("  [HEALTH] newsCards empty", flush=True)
-            return False
-        print(f"  [HEALTH] Valid — {len(data.get('newsCards',[]))} cards", flush=True)
-        return True
-    except Exception as e:
-        print(f"  [HEALTH] Failed: {e}", flush=True)
-        return False
+# ── Core pipeline ─────────────────────────────────────────────────────────────
 
-def _atomic_replace():
-    if not LIVE_JS_TMP.exists(): return False
-    if not _validate_live_data(LIVE_JS_TMP):
-        LIVE_JS_TMP.unlink(missing_ok=True)
-        return False
-    if LIVE_JS.exists(): shutil.copy2(LIVE_JS, LIVE_JS_BACKUP)
-    LIVE_JS_TMP.rename(LIVE_JS)
-    print("  [ATOMIC] live_data.js updated ✓", flush=True)
-    return True
+def run_pipeline(articles: list):
+    """Summarise articles, save report, update dashboard, send email."""
+    print(f"\n[1/4] Fetching article content...")
+    for i, art in enumerate(articles[:8]):
+        print(f"      [{i+1}/{min(8,len(articles))}] {art['title'][:65]}...")
+        art["content"] = fetch_article_content(art["url"])
 
-def _refresh_prices():
-    if not HAS_PRICES: return
+    print(f"\n[2/4] Generating AI content (all 5 steps in CI)...")
+    report = generate_report(articles)
+    print(f"      Escalation  : {report.get('escalation_level','?')}")
+    print(f"      Developments: {len(report.get('key_developments',[]))}")
+    print(f"      India angles: {len(report.get('india_impact',[]))}")
+    print(f"      Panel summary: {len(report.get('execSummaryRich',''))} chars")
+    print(f"      India summary: {len(report.get('indiaSummary',''))} chars")
+    print(f"      India meter : {report.get('indiaMeter',{})}")
+
+    print(f"\n[3/4] Saving report + updating live_data.js...")
+    REPORTS_DIR.mkdir(exist_ok=True)
+    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
+    path = REPORTS_DIR / f"report_{ts}.json"
+    path.write_text(json.dumps(report, indent=2))
+    print(f"      Saved: {path}")
+    build_dashboard()
+    print(f"      live_data.js updated — all AI content pre-baked")
+
+    print(f"\n[3b] Fetching live prices...")
     try:
         build_prices_js()
-        print("  [OK] prices_data.js refreshed", flush=True)
     except Exception as e:
-        print(f"  [WARN] Prices failed: {e}", flush=True)
+        print(f"      [WARN] Prices fetch failed: {e}")
 
-def run_pipeline(articles):
-    REPORTS_DIR.mkdir(exist_ok=True)
-    print(f"\n[1/4] Fetching content for top 8 articles...", flush=True)
-    for i, art in enumerate(articles[:8]):
-        print(f"      [{i+1}/8] {art['title'][:60]}...", flush=True)
-        try: art["content"] = fetch_article_content(art["url"])
-        except Exception as e:
-            print(f"      [WARN] {e}", flush=True)
-            art["content"] = ""
-
-    print(f"\n[2/4] Running AI pipeline...", flush=True)
+    print(f"\n[4/4] Sending email report...")
     try:
-        report = generate_report(articles)
+        html_body = format_report_html(report)
+        level = report.get("escalation_level", "MEDIUM")
+        subject = f"[{level}] WarWatch Report — {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}"
+        send_report_email(html_body, subject=subject)
     except Exception as e:
-        print(f"  [ERROR] generate_report: {e}", flush=True)
-        from summarizer import _fallback_report, _validate_and_fill
-        report = _fallback_report(articles)
-        _validate_and_fill(report, articles)
+        print(f"      [WARN] Email failed: {e}")
 
-    print(f"\n[3/4] Building dashboard...", flush=True)
-    ts = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M")
-    try:
-        (REPORTS_DIR / f"report_{ts}.json").write_text(json.dumps(report, indent=2))
-    except Exception as e:
-        print(f"  [WARN] Report save failed: {e}", flush=True)
-    try:
-        build_dashboard()
-        _atomic_replace()
-    except Exception as e:
-        print(f"  [ERROR] Dashboard: {e}", flush=True)
+    print()
 
-    print(f"\n[3b] Refreshing prices...", flush=True)
-    _refresh_prices()
 
-    print(f"\n[4/4] Email...", flush=True)
-    if HAS_EMAIL:
-        try:
-            send_report_email(format_report_html(report),
-                subject=f"[{report.get('escalation_level','HIGH')}] WarWatch — {datetime.now(timezone.utc).strftime('%b %d %H:%M UTC')}")
-            print("  Email sent ✓", flush=True)
-        except Exception as e:
-            print(f"  [WARN] Email failed: {e}", flush=True)
-    else:
-        print("  Email skipped", flush=True)
+# ── Run modes ─────────────────────────────────────────────────────────────────
 
 def run_actions():
+    """
+    GitHub Actions mode.
+
+    Logic:
+      1. Load seen URL cache
+      2. Fetch all RSS feeds
+      3. Find new articles
+      4. If new articles exist → run full pipeline
+      5. If NO new articles BUT live_data.js is stale (> MAX_DATA_AGE_HOURS) →
+           re-run pipeline with recent seen articles so data stays fresh
+      6. If NO new articles AND data is fresh → prices-only refresh
+    """
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
-    print(f"\n=== WarWatch Bot — GitHub Actions [{now}] ===\n", flush=True)
+    print(f"\n=== WarWatch Bot — GitHub Actions [{now}] ===\n")
 
     seen = load_seen()
-    print("[BOT] Fetching articles...", flush=True)
+    print(f"Loaded {len(seen)} seen URLs from cache.")
+
     all_articles = fetch_all_articles()
-    new_articles = [a for a in all_articles if a["url"] not in seen]
+    new_articles  = [a for a in all_articles if a["url"] not in seen]
+
+    print(f"Found {len(all_articles)} articles total, {len(new_articles)} new.")
+
+    if len(all_articles) == 0:
+        print("[WARN] Scraper returned 0 articles.")
+        print("       Causes: RSS URLs broken/403, keyword filter too strict, or network issue.")
+
     age_hours = _live_data_age_hours()
     data_is_stale = age_hours > MAX_DATA_AGE_HOURS
+    print(f"live_data.js age: {age_hours:.1f}h (stale if >{MAX_DATA_AGE_HOURS}h) → {'STALE' if data_is_stale else 'fresh'}\n")
 
-    print(f"Seen: {len(seen)} | All: {len(all_articles)} | New: {len(new_articles)}", flush=True)
-    print(f"live_data.js age: {age_hours:.1f}h → {'STALE' if data_is_stale else 'fresh'}\n", flush=True)
-
+    # Always update seen cache
     seen.update(a["url"] for a in all_articles)
     save_seen(seen)
 
     if len(new_articles) >= MIN_NEW_ARTICLES:
-        print(f">>> {len(new_articles)} new articles — full pipeline", flush=True)
+        # New articles → run full pipeline
+        print(f">>> {len(new_articles)} new article(s) — running full pipeline:")
+        for a in new_articles:
+            print(f"    [{a['source']}] {a['title'][:72]}")
         run_pipeline(new_articles)
-    elif data_is_stale:
-        print(f">>> Data stale — refreshing", flush=True)
-        run_pipeline(all_articles[:20] or [])
-    else:
-        print("No new articles, data fresh — prices only", flush=True)
-        _refresh_prices()
 
-    print("=== Done ===", flush=True)
+    elif len(all_articles) > 0 and data_is_stale:
+        # No new articles but data is stale → re-run to refresh AI content
+        print(f">>> No new articles but data is {age_hours:.1f}h old — refreshing AI content...")
+        recent = all_articles[:20]
+        print(f"    Re-running pipeline with {len(recent)} recent articles")
+        run_pipeline(recent)
+
+    elif len(all_articles) == 0 and data_is_stale:
+        print(f">>> Scraper empty AND data stale ({age_hours:.1f}h) — prices only.")
+        try:
+            build_prices_js()
+            print("    [OK] prices_data.js refreshed.")
+        except Exception as e:
+            print(f"    [WARN] Prices fetch failed: {e}")
+
+    else:
+        # No new articles, data is fresh → prices only
+        print(f"No new articles, data fresh ({age_hours:.1f}h old) — prices only.")
+        try:
+            build_prices_js()
+            print("  [OK] prices_data.js refreshed.")
+        except Exception as e:
+            print(f"  [WARN] Prices fetch failed: {e}")
+
+    print("=== Done ===")
+
+
+def run_once():
+    """Force a full run regardless of seen cache. Good for local testing."""
+    print(f"\n=== WarWatch Bot — ONE-TIME RUN ===\n")
+
+    articles = fetch_all_articles()
+    if not articles:
+        print("No articles found.")
+        return
+
+    print(f"Found {len(articles)} articles.\n")
+    run_pipeline(articles)
+
+    seen = load_seen()
+    seen.update(a["url"] for a in articles)
+    save_seen(seen)
+    print("Done! Open index.html in your browser.")
+
+
+def run_watch():
+    """
+    Continuous local loop — polls every CHECK_INTERVAL_MINS minutes.
+    """
+    print(f"\n=== WarWatch Bot — WATCHER (every {CHECK_INTERVAL_MINS} min) ===")
+    print("Press Ctrl+C to stop\n")
+
+    seen = load_seen()
+    print(f"Loaded {len(seen)} seen URLs.\n")
+
+    updates = 0
+    while True:
+        try:
+            now = datetime.now(timezone.utc).strftime("%Y-%m-%d %H:%M UTC")
+            age_hours = _live_data_age_hours()
+            data_is_stale = age_hours > MAX_DATA_AGE_HOURS
+            print(f"[{now}] Checking... (data age: {age_hours:.1f}h)", end=" ", flush=True)
+
+            all_articles = fetch_all_articles()
+            new_articles  = [a for a in all_articles if a["url"] not in seen]
+
+            seen.update(a["url"] for a in all_articles)
+            save_seen(seen)
+
+            if len(new_articles) >= MIN_NEW_ARTICLES:
+                print(f"\n>>> {len(new_articles)} new articles!")
+                for a in new_articles:
+                    print(f"    [{a['source']}] {a['title'][:72]}")
+                run_pipeline(new_articles)
+                updates += 1
+                print(f"Session updates: {updates}\n")
+            elif data_is_stale:
+                print(f"\n>>> Data stale ({age_hours:.1f}h) — refreshing with recent articles")
+                run_pipeline(all_articles[:20])
+                updates += 1
+            else:
+                print(f"0 new — skipping (data fresh).")
+
+        except KeyboardInterrupt:
+            print(f"\nStopped. {updates} update(s) this session.")
+            break
+        except Exception as e:
+            print(f"\n[ERROR] {e} — retrying in {CHECK_INTERVAL_MINS} min")
+
+        time.sleep(CHECK_INTERVAL_MINS * 60)
+
+
+# ── Entry point ───────────────────────────────────────────────────────────────
 
 if __name__ == "__main__":
-    try:
-        if "--actions" in sys.argv:
-            run_actions()
-        elif "--prices" in sys.argv:
-            _refresh_prices()
-        else:
-            print("Usage: python bot.py --actions", flush=True)
-    except Exception as e:
-        print(f"\n[FATAL] {e}", flush=True)
-        import traceback; traceback.print_exc()
-    finally:
-        sys.exit(0)
+    if "--actions" in sys.argv:
+        run_actions()
+    elif "--watch" in sys.argv or "--loop" in sys.argv:
+        run_watch()
+    elif "--prices" in sys.argv:
+        print("\n=== WarWatch Bot — PRICES ONLY ===\n")
+        try:
+            build_prices_js()
+            print("Done!")
+        except Exception as e:
+            print(f"[ERROR] {e}")
+    else:
+        run_once()
