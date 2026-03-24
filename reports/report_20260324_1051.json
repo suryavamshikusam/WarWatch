@@ -1,0 +1,115 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-24 10:36 UTC",
+  "executive_summary": "Latest updates from 6 sources covering the US-Israel-Iran conflict. Monitoring 6 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war highlights: Iran threatens to 'completely' close Strait of Hormu. Netanyahu visits site of Iranian missile attack, claims U.S.-Israel fighting for. Saudi Arabia orders Iranian military attache, four embassy staff to leave. Drone footage shows aftermath of Iranian missile attack in Tel Aviv. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran-Israel war highlights: Iran threatens to 'completely' close Strait of Hormu",
+      "detail": "A protester holds a placard at a mass unity protest set to highlight opposition to the conflict in West Asia and restrictions against Cuba being imposed by the U.S., outside the U.S. Embassy in central London on March 22, 2026. \n                                                  | Photo Credit:  \n   ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-us-war-west-asia-conflict-hezbollah-oil-supply-march-22-2026/article70771375.ece",
+      "fullAnalysis": "A protester holds a placard at a mass unity protest set to highlight opposition to the conflict in West Asia and restrictions against Cuba being imposed by the U.S., outside the U.S. Embassy in central London on March 22, 2026. \n                                                  | Photo Credit:  \n   ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Netanyahu visits site of Iranian missile attack, claims U.S.-Israel fighting for",
+      "detail": "Updated - March 22, 2026 07:12 pm IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu. File\n                                          | Photo Credit: Reuters Israeli Prime Minister Benjamin Netanyahu on Sunday (March 22, 2026) said the recent missile attacks on Diego Garcia shows that Iran has",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/netanyahu-visits-site-of-iranian-missile-attack-claims-us-israel-fighting-for-entire-world/article70772387.ece",
+      "fullAnalysis": "Updated - March 22, 2026 07:12 pm IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu. File\n                                          | Photo Credit: Reuters Israeli Prime Minister Benjamin Netanyahu on Sunday (March 22, 2026) said the recent missile attacks on Diego Garcia shows that Iran has",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Saudi Arabia orders Iranian military attache, four embassy staff to leave",
+      "detail": "The Saudi Foreign Ministry said in a statement that continued Iranian attacks would lead \u200cto further escalation and have \u201csignificant consequences\u201d \u200bfor current and future relations\n                                          | Photo Credit: Reuters Saudi Arabia informed Iran\u2019s military \u200battache, his ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/saudi-arabia-orders-iranian-military-attache-four-embassy-staff-to-leave/article70773203.ece",
+      "fullAnalysis": "The Saudi Foreign Ministry said in a statement that continued Iranian attacks would lead \u200cto further escalation and have \u201csignificant consequences\u201d \u200bfor current and future relations\n                                          | Photo Credit: Reuters Saudi Arabia informed Iran\u2019s military \u200battache, his ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Drone footage shows aftermath of Iranian missile attack in Tel Aviv",
+      "detail": "Drone footage shows aftermath of Iranian missile attack in Tel Aviv Drone footage shows extensive damage to a multi-storey residential building in Tel Aviv following a wave of Iranian missile strikes on the Israeli city.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/24/drone-footage-shows-aftermath-of-iranian-missile-attack-in-tel-aviv?traffic_source=rss",
+      "fullAnalysis": "Drone footage shows aftermath of Iranian missile attack in Tel Aviv Drone footage shows extensive damage to a multi-storey residential building in Tel Aviv following a wave of Iranian missile strikes on the Israeli city.",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "In photos: Aftermath of Iranian strikes in Tel Aviv",
+      "detail": "In photos: Aftermath of Iranian strikes in Tel Aviv",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/photos-aftermath-iranian-strikes-tel-aviv",
+      "fullAnalysis": "In photos: Aftermath of Iranian strikes in Tel Aviv",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Netanyahu says spoke with Trump, vows to protect Israel's interests",
+      "detail": "Updated - March 24, 2026 07:49 am IST - Jerusalem U.S. President Donald Trump and Israeli Prime Minister Benjamin Netanyahu.\n                                          | Photo Credit: Reuters Prime Minister Benjamin Netanyahu said on Monday (March 23, 2026) that he spoke with Donald Trump, saying tha",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/netanyahu-says-spoke-with-trump-vows-to-protect-israels-interests/article70777264.ece",
+      "fullAnalysis": "Updated - March 24, 2026 07:49 am IST - Jerusalem U.S. President Donald Trump and Israeli Prime Minister Benjamin Netanyahu.\n                                          | Photo Credit: Reuters Prime Minister Benjamin Netanyahu said on Monday (March 23, 2026) that he spoke with Donald Trump, saying tha",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 6,
+  "generated_at": "2026-03-24 10:36 UTC"
+}
