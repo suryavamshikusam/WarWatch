@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 05:26 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels. Iranian missile attacks intensify over Israel after brief lull. Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels",
+      "detail": "Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the United States, Israel and other countries it accuses of aggression, the Financial Times reported. The policy was outlined in a letter",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-allow-non-hostile-ships-through-hormuz-excludes-us-linked-vessels",
+      "fullAnalysis": "Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the United States, Israel and other countries it accuses of aggression, the Financial Times reported. The policy was outlined in a letter",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iranian missile attacks intensify over Israel after brief lull",
+      "detail": "Missile attacks from Iran resumed over Israel after a brief lull, with air raid alerts sounding across central areas, including Tel Aviv, Al Jazeera reported. Israeli defences intercepted several incoming projectiles, with images showing interceptions in the skies over the city. In Bnei Barak, a mis",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attacks-intensify-over-israel-after-brief-lull",
+      "fullAnalysis": "Missile attacks from Iran resumed over Israel after a brief lull, with air raid alerts sounding across central areas, including Tel Aviv, Al Jazeera reported. Israeli defences intercepted several incoming projectiles, with images showing interceptions in the skies over the city. In Bnei Barak, a mis",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz",
+      "detail": "Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a collapse of maritime traffic through the waterway that has prompted the biggest global energy crisis in decades. In a statement on Tuesday, Iran\u2019s mission to the United Nations said vessels may avail of \u201csafe passage\u201d thr",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/25/iran-says-non-hostile-ships-can-pass-safely-through-strait-of-hormuz?traffic_source=rss",
+      "fullAnalysis": "Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a collapse of maritime traffic through the waterway that has prompted the biggest global energy crisis in decades. In a statement on Tuesday, Iran\u2019s mission to the United Nations said vessels may avail of \u201csafe passage\u201d thr",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-25 05:26 UTC"
+}

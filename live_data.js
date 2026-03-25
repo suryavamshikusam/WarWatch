@@ -1,17 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 04:01 UTC",
+  "generatedAt": "2026-03-25 05:26 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Washington's proposal to Iran outlines nuclear rollback, US media says \u00b7 US media outlets, citing unnamed officials, reported that Washington has sent a \u2026",
-    "Other: Trump says 'this war has been won' as Iran denies any agreement \u00b7 US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Isra\u2026",
-    "Other: Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank \u00b7 A woman stands among the ruins of her family home, which was destroyed by an Isr\u2026",
-    "Other: 'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels \u00b7 Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u2026",
+    "Other: Iranian missile attacks intensify over Israel after brief lull \u00b7 Missile attacks from Iran resumed over Israel after a brief lull, with air raid \u2026",
+    "Other: Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz \u00b7 Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a c\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-25 04:01 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-25 05:26 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -51,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Washington's proposal to Iran outlines nuclear rollback, US media says",
-      "summary": "US media outlets, citing unnamed officials, reported that Washington has sent a 15-point plan to Iran aimed at ending the war. The Wall Street Journal said the proposal calls on Tehran to dismantle its main nuclear sites, halt uranium enrichment and suspend its ballistic missile program, while also ",
+      "time": "12 min ago",
+      "headline": "Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels",
+      "summary": "Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the United States, Israel and other countries it accuses of aggression, the Financial Times reported. The policy was outlined in a letter",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US media outlets, citing unnamed officials, reported that Washington has sent a 15-point plan to Iran aimed at ending the war. The Wall Street Journal said the proposal calls on Tehran to dismantle its main nuclear sites, halt uranium enrichment and suspend its ballistic missile program, while also ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/washintons-proposal-iran-outlines-nuclear-rollback-us-media-says",
+      "fullAnalysis": "Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the United States, Israel and other countries it accuses of aggression, the Financial Times reported. The policy was outlined in a letter",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-allow-non-hostile-ships-through-hormuz-excludes-us-linked-vessels",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,15 +66,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Trump says 'this war has been won' as Iran denies any agreement",
-      "summary": "US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Israel campaign against Iran had eliminated key leaders and secured commitments from Tehran to never seek a nuclear weapon. Iran denied any negotiations and reiterated its longstanding position that it does not seek nuclear ",
+      "time": "12 min ago",
+      "headline": "Iranian missile attacks intensify over Israel after brief lull",
+      "summary": "Missile attacks from Iran resumed over Israel after a brief lull, with air raid alerts sounding across central areas, including Tel Aviv, Al Jazeera reported. Israeli defences intercepted several incoming projectiles, with images showing interceptions in the skies over the city. In Bnei Barak, a mis",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Israel campaign against Iran had eliminated key leaders and secured commitments from Tehran to never seek a nuclear weapon. Iran denied any negotiations and reiterated its longstanding position that it does not seek nuclear ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-war-has-been-won-iran-denies-any-agreement",
+      "fullAnalysis": "Missile attacks from Iran resumed over Israel after a brief lull, with air raid alerts sounding across central areas, including Tel Aviv, Al Jazeera reported. Israeli defences intercepted several incoming projectiles, with images showing interceptions in the skies over the city. In Bnei Barak, a mis",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attacks-intensify-over-israel-after-brief-lull",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -83,42 +82,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank",
-      "summary": "A woman stands among the ruins of her family home, which was destroyed by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Tyre, Lebanon, on March 24, 2026.\n                                                  | Photo Cred",
+      "time": "12 min ago",
+      "headline": "Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz",
+      "summary": "Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a collapse of maritime traffic through the waterway that has prompted the biggest global energy crisis in decades. In a statement on Tuesday, Iran\u2019s mission to the United Nations said vessels may avail of \u201csafe passage\u201d thr",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A woman stands among the ruins of her family home, which was destroyed by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Tyre, Lebanon, on March 24, 2026.\n                                                  | Photo Cred",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-march-25-2026-live-updates/article70782463.ece",
-      "sourceLabel": "The Hindu"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/they-cannot-have-a-nuclear-weapon-us-pushes-15-point-plan-to-end-iran-war-sent-via-pakistan/articleshow/129789762.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a collapse of maritime traffic through the waterway that has prompted the biggest global energy crisis in decades. In a statement on Tuesday, Iran\u2019s mission to the United Nations said vessels may avail of \u201csafe passage\u201d thr",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/25/iran-says-non-hostile-ships-can-pass-safely-through-strait-of-hormuz?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "12 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 21:57 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 00:02 UTC",
       "l": "HIGH",
@@ -245,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 04:01 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 05:26 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Washington's proposal to Iran outlines nuclear rollback, US media says. Trump says 'this war has been won' as Iran denies any agreement. Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank. 'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels. Iranian missile attacks intensify over Israel after brief lull. Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

@@ -1,40 +1,40 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-03-25 04:14 UTC",
+  "fetchedAt": "2026-03-25 05:38 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
-      "price": 99.76,
-      "formatted": "$99.76",
-      "day_pct": -4.53,
-      "war_pct": 30.92
+      "price": 99.7,
+      "formatted": "$99.70",
+      "day_pct": -4.58,
+      "war_pct": 30.84
     },
     "CL=F": {
       "name": "WTI Crude",
-      "price": 88.91,
-      "formatted": "$88.91",
-      "day_pct": -3.72,
-      "war_pct": 21.63
+      "price": 88.79,
+      "formatted": "$88.79",
+      "day_pct": -3.85,
+      "war_pct": 21.46
     },
     "NG=F": {
       "name": "Natural Gas",
-      "price": 2.838,
-      "formatted": "$2.838",
-      "day_pct": -3.57,
-      "war_pct": -1.46
+      "price": 2.832,
+      "formatted": "$2.832",
+      "day_pct": -3.77,
+      "war_pct": -1.67
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4569.2998,
-      "formatted": "$4,569",
-      "day_pct": 3.86,
-      "war_pct": 69.86
+      "price": 4556.8999,
+      "formatted": "$4,557",
+      "day_pct": 3.58,
+      "war_pct": 69.4
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 73.61,
-      "formatted": "$73.610",
-      "day_pct": 6.26,
-      "war_pct": 158.28
+      "price": 73.3,
+      "formatted": "$73.300",
+      "day_pct": 5.81,
+      "war_pct": 157.19
     },
     "ZW=F": {
       "name": "Wheat",
@@ -45,54 +45,54 @@ window.WARWATCH_PRICES = {
     },
     "INR=X": {
       "name": "USD / INR",
-      "price": 93.96,
-      "formatted": "\u20b993.96",
-      "day_pct": 0.77,
-      "war_pct": 14.45
+      "price": 93.925,
+      "formatted": "\u20b993.93",
+      "day_pct": 0.73,
+      "war_pct": 14.4
     },
     "IOC.NS": {
       "name": "IOC",
-      "price": 140.24,
-      "formatted": "\u20b9140.24",
-      "day_pct": 1.11,
-      "war_pct": -12.62
+      "price": 140.1,
+      "formatted": "\u20b9140.1",
+      "day_pct": 1.01,
+      "war_pct": -12.71
     },
     "ADANIPORTS.NS": {
       "name": "Adani Ports",
-      "price": 1388.0,
-      "formatted": "\u20b91,388",
-      "day_pct": 3.26,
-      "war_pct": 12.57
+      "price": 1390.7,
+      "formatted": "\u20b91,390.7",
+      "day_pct": 3.46,
+      "war_pct": 12.79
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 138033,
-      "formatted": "\u20b9138,033",
-      "day_pct": 3.86,
-      "war_pct": 84.54
+      "price": 137607,
+      "formatted": "\u20b9137,607",
+      "day_pct": 3.58,
+      "war_pct": 83.97
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
-      "price": 8354,
-      "formatted": "\u20b98,354",
-      "day_pct": -3.72,
-      "war_pct": 31.56
+      "price": 8340,
+      "formatted": "\u20b98,340",
+      "day_pct": -3.85,
+      "war_pct": 31.34
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 222367,
-      "formatted": "\u20b9222,367",
-      "day_pct": 6.26,
-      "war_pct": 143.02
+      "price": 221348,
+      "formatted": "\u20b9221,348",
+      "day_pct": 5.81,
+      "war_pct": 141.91
     }
   },
   "india": {
     "petrolPump": {
-      "formatted": "\u20b9113.0",
-      "war_change": 13.6,
+      "formatted": "\u20b9112.9",
+      "war_change": 13.5,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
-    "goldSilverRatio": 62.1
+    "goldSilverRatio": 62.2
   },
   "history": [
     {
@@ -293,17 +293,17 @@ window.WARWATCH_PRICES = {
     },
     {
       "date": "2026-03-25",
-      "brent": 99.76,
-      "wti": 88.91,
-      "ng": 2.838,
-      "gold": 4569,
+      "brent": 99.7,
+      "wti": 88.79,
+      "ng": 2.832,
+      "gold": 4557,
       "wheat": 586,
-      "inr": 93.96,
-      "mcx_crude": 8354,
-      "mcx_gold": 138033,
-      "mcx_silver": 222367,
-      "ioc": 140.2,
-      "adani": 1388
+      "inr": 93.92,
+      "mcx_crude": 8340,
+      "mcx_gold": 137607,
+      "mcx_silver": 221348,
+      "ioc": 140.1,
+      "adani": 1391
     }
   ]
 };
