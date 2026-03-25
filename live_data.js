@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 07:41 UTC",
+  "generatedAt": "2026-03-25 09:31 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Nazi-era weapons maker Volkswagen eyes return to arms production, this time with \u00b7 Volkswagen is exploring plans to convert a German car factory into a production \u2026",
-    "Other: Israeli forces turn Palestinian homes into military bases \u00b7 Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli\u2026"
+    "Other: Spain PM says Israel seeks Gaza-level destruction in Lebanon \u00b7 Spanish Prime Minister Pedro Sanchez has accused Israeli leader Benjamin Netanya\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-25 07:41 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-25 09:31 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,31 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Nazi-era weapons maker Volkswagen eyes return to arms production, this time with",
-      "summary": "Volkswagen is exploring plans to convert a German car factory into a production hub for Israel\u2019s missile defence systems, deepening ties between Europe\u2019s industrial base and Israel\u2019s war machine. The German carmaker has held talks with Rafael Advanced Defence Systems to repurpose its Osnabruck plant",
+      "time": "6 min ago",
+      "headline": "Spain PM says Israel seeks Gaza-level destruction in Lebanon",
+      "summary": "Spanish Prime Minister Pedro Sanchez has accused Israeli leader Benjamin Netanyahu of aiming to replicate the scale of devastation seen in Gaza in Lebanon. Speaking before Spain\u2019s lower house, Sanchez said Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli fo",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Volkswagen is exploring plans to convert a German car factory into a production hub for Israel\u2019s missile defence systems, deepening ties between Europe\u2019s industrial base and Israel\u2019s war machine. The German carmaker has held talks with Rafael Advanced Defence Systems to repurpose its Osnabruck plant",
-      "sourceUrl": "https://www.middleeasteye.net/news/nazi-era-weapons-maker-volkswagen-eyes-return-arms-production-time-israel",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Israeli forces turn Palestinian homes into military bases",
-      "summary": "Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli soldiers took over his home in al-Rehiyya, south of Hebron in the occupied West Bank. \u201cWe were asleep. It was 2.42am. The door was forced open. I woke up to find the house surrounded,\u201d he says. There were 20 Israeli sol",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli soldiers took over his home in al-Rehiyya, south of Hebron in the occupied West Bank. \u201cWe were asleep. It was 2.42am. The door was forced open. I woke up to find the house surrounded,\u201d he says. There were 20 Israeli sol",
-      "sourceUrl": "https://www.middleeasteye.net/news/israeli-forces-turning-palestinian-homes-military-bases",
+      "fullAnalysis": "Spanish Prime Minister Pedro Sanchez has accused Israeli leader Benjamin Netanyahu of aiming to replicate the scale of devastation seen in Gaza in Lebanon. Speaking before Spain\u2019s lower house, Sanchez said Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli fo",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/spain-pm-says-israel-seeks-gaza-level-destruction-lebanon",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 04:34 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 05:49 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 07:41 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 09:31 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Nazi-era weapons maker Volkswagen eyes return to arms production, this time with. Israeli forces turn Palestinian homes into military bases. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Spain PM says Israel seeks Gaza-level destruction in Lebanon. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
