@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 13:01 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel. Majority of Americans view US strikes on Iran as excessive; gas price fears rise. 'There's no safety anymore': Palestinians warn of expanding settler violence. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel",
+      "detail": "The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upper hand in its war with Israel and the US . \u201cThe reality is the US underestimated the task and I think as of about two weeks ago lost the initiative to Iran,\u201d Sir Alex Younger, who ran the UK \u2019s Secret Intelligence Servi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/former-head-uks-mi6-says-iran-has-upper-hand-war-us-and-israel",
+      "fullAnalysis": "The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upper hand in its war with Israel and the US . \u201cThe reality is the US underestimated the task and I think as of about two weeks ago lost the initiative to Iran,\u201d Sir Alex Younger, who ran the UK \u2019s Secret Intelligence Servi",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Majority of Americans view US strikes on Iran as excessive; gas price fears rise",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/majority-of-americans-view-us-strikes-on-iran-as-excessive-gas-price-fears-rise-poll/articleshow/129800820.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "'There's no safety anymore': Palestinians warn of expanding settler violence",
+      "detail": "\"This assault wasn't just meant to burn the houses but also to kill - to kill women and children,\" says Barhan Omar, standing in the charred ruins of his family's large villa, which Israeli settlers attacked on Sunday. \"They came in big numbers. This was organised terrorism,\" he tells me, fighting b",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/articles/c747x00m83vo?at_medium=RSS&at_campaign=rss",
+      "fullAnalysis": "\"This assault wasn't just meant to burn the houses but also to kill - to kill women and children,\" says Barhan Omar, standing in the charred ruins of his family's large villa, which Israeli settlers attacked on Sunday. \"They came in big numbers. This was organised terrorism,\" he tells me, fighting b",
+      "sourceLabel": "BBC"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-25 13:01 UTC"
+}

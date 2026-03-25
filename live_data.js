@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 11:14 UTC",
+  "generatedAt": "2026-03-25 13:01 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian  \u00b7 An Iranian security analyst has warned that Tehran is ready to capture the coast\u2026",
-    "Other: Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r \u00b7 Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privat\u2026"
+    "Other: Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel \u00b7 The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upp\u2026",
+    "Other: Majority of Americans view US strikes on Iran as excessive; gas price fears rise \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
+    "Other: 'There's no safety anymore': Palestinians warn of expanding settler violence \u00b7 \"This assault wasn't just meant to burn the houses but also to kill - to kill wo\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-25 11:14 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-25 13:01 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian ",
-      "summary": "An Iranian security analyst has warned that Tehran is ready to capture the coastlines of Bahrain and the United Arab Emirates , in an interview aired on Iranian national TV. Speaking to Iran's state broadcaster IRIB, national security analyst Morteza Simiari said that Iran's military is \"ready to ta",
+      "time": "10 min ago",
+      "headline": "Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel",
+      "summary": "The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upper hand in its war with Israel and the US . \u201cThe reality is the US underestimated the task and I think as of about two weeks ago lost the initiative to Iran,\u201d Sir Alex Younger, who ran the UK \u2019s Secret Intelligence Servi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "An Iranian security analyst has warned that Tehran is ready to capture the coastlines of Bahrain and the United Arab Emirates , in an interview aired on Iranian national TV. Speaking to Iran's state broadcaster IRIB, national security analyst Morteza Simiari said that Iran's military is \"ready to ta",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-ready-seize-bahrain-and-uae-coastlines-if-us-makes-mistake-iranian-expert-warns",
+      "fullAnalysis": "The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upper hand in its war with Israel and the US . \u201cThe reality is the US underestimated the task and I think as of about two weeks ago lost the initiative to Iran,\u201d Sir Alex Younger, who ran the UK \u2019s Secret Intelligence Servi",
+      "sourceUrl": "https://www.middleeasteye.net/news/former-head-uks-mi6-says-iran-has-upper-hand-war-us-and-israel",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,26 +66,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r",
-      "summary": "Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privately urging US President Donald Trump to press ahead with the ongoing US-Israel military campaign against Iran, not as a mere tactical manoeuvre, but as a defining strategic moment to fundamentally reshape the region\u2019s ba",
+      "time": "10 min ago",
+      "headline": "Majority of Americans view US strikes on Iran as excessive; gas price fears rise",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privately urging US President Donald Trump to press ahead with the ongoing US-Israel military campaign against Iran, not as a mere tactical manoeuvre, but as a defining strategic moment to fundamentally reshape the region\u2019s ba",
-      "sourceUrl": "https://indianexpress.com/article/world/iran-war-why-saudi-arabia-prince-is-privately-urging-trump-to-push-for-tehran-regime-change-10599141/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/majority-of-americans-view-us-strikes-on-iran-as-excessive-gas-price-fears-rise-poll/articleshow/129800820.cms",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "10 min ago",
+      "headline": "'There's no safety anymore': Palestinians warn of expanding settler violence",
+      "summary": "\"This assault wasn't just meant to burn the houses but also to kill - to kill women and children,\" says Barhan Omar, standing in the charred ruins of his family's large villa, which Israeli settlers attacked on Sunday. \"They came in big numbers. This was organised terrorism,\" he tells me, fighting b",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "\"This assault wasn't just meant to burn the houses but also to kill - to kill women and children,\" says Barhan Omar, standing in the charred ruins of his family's large villa, which Israeli settlers attacked on Sunday. \"They came in big numbers. This was organised terrorism,\" he tells me, fighting b",
+      "sourceUrl": "https://www.bbc.com/news/articles/c747x00m83vo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "10 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 09:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 10:36 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 11:14 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 13:01 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian . Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel. Majority of Americans view US strikes on Iran as excessive; gas price fears rise. 'There's no safety anymore': Palestinians warn of expanding settler violence. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
