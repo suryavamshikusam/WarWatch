@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 07:41 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Nazi-era weapons maker Volkswagen eyes return to arms production, this time with. Israeli forces turn Palestinian homes into military bases. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Nazi-era weapons maker Volkswagen eyes return to arms production, this time with",
+      "detail": "Volkswagen is exploring plans to convert a German car factory into a production hub for Israel\u2019s missile defence systems, deepening ties between Europe\u2019s industrial base and Israel\u2019s war machine. The German carmaker has held talks with Rafael Advanced Defence Systems to repurpose its Osnabruck plant",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/nazi-era-weapons-maker-volkswagen-eyes-return-arms-production-time-israel",
+      "fullAnalysis": "Volkswagen is exploring plans to convert a German car factory into a production hub for Israel\u2019s missile defence systems, deepening ties between Europe\u2019s industrial base and Israel\u2019s war machine. The German carmaker has held talks with Rafael Advanced Defence Systems to repurpose its Osnabruck plant",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israeli forces turn Palestinian homes into military bases",
+      "detail": "Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli soldiers took over his home in al-Rehiyya, south of Hebron in the occupied West Bank. \u201cWe were asleep. It was 2.42am. The door was forced open. I woke up to find the house surrounded,\u201d he says. There were 20 Israeli sol",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-forces-turning-palestinian-homes-military-bases",
+      "fullAnalysis": "Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli soldiers took over his home in al-Rehiyya, south of Hebron in the occupied West Bank. \u201cWe were asleep. It was 2.42am. The door was forced open. I woke up to find the house surrounded,\u201d he says. There were 20 Israeli sol",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-25 07:41 UTC"
+}

@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 06:40 UTC",
+  "generatedAt": "2026-03-25 07:41 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L \u00b7 Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be\u2026",
-    "Other: Recap of todays events \u00b7 This live page will close shortly, with ongoing coverage continuing on a new pag\u2026",
-    "Other: Morning recap \u00b7 Tensions remain high across the Middle East as Israeli and Iranian military stri\u2026"
+    "Other: Nazi-era weapons maker Volkswagen eyes return to arms production, this time with \u00b7 Volkswagen is exploring plans to convert a German car factory into a production \u2026",
+    "Other: Israeli forces turn Palestinian homes into military bases \u00b7 Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-25 06:40 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-25 07:41 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L",
-      "summary": "Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be included in any US-Iran negotiations, warning the region\u2019s future cannot be decided without them. Amid conflicting reports of possible talks, which Tehran denies, he said: \u201cGCC [Gulf Cooperation Council]\u00a0states cannot b",
+      "time": "9 min ago",
+      "headline": "Nazi-era weapons maker Volkswagen eyes return to arms production, this time with",
+      "summary": "Volkswagen is exploring plans to convert a German car factory into a production hub for Israel\u2019s missile defence systems, deepening ties between Europe\u2019s industrial base and Israel\u2019s war machine. The German carmaker has held talks with Rafael Advanced Defence Systems to repurpose its Osnabruck plant",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be included in any US-Iran negotiations, warning the region\u2019s future cannot be decided without them. Amid conflicting reports of possible talks, which Tehran denies, he said: \u201cGCC [Gulf Cooperation Council]\u00a0states cannot b",
-      "sourceUrl": "https://www.middleeasteye.net/live/iran-war-live-israel-says-it-will-control-bridges-and-area-south-lebanons-litani-river",
+      "fullAnalysis": "Volkswagen is exploring plans to convert a German car factory into a production hub for Israel\u2019s missile defence systems, deepening ties between Europe\u2019s industrial base and Israel\u2019s war machine. The German carmaker has held talks with Rafael Advanced Defence Systems to repurpose its Osnabruck plant",
+      "sourceUrl": "https://www.middleeasteye.net/news/nazi-era-weapons-maker-volkswagen-eyes-return-arms-production-time-israel",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,31 +65,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Recap of todays events",
-      "summary": "This live page will close shortly, with ongoing coverage continuing on a new page . Here is a recap of the day\u2019s key developments: Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the Un",
+      "time": "9 min ago",
+      "headline": "Israeli forces turn Palestinian homes into military bases",
+      "summary": "Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli soldiers took over his home in al-Rehiyya, south of Hebron in the occupied West Bank. \u201cWe were asleep. It was 2.42am. The door was forced open. I woke up to find the house surrounded,\u201d he says. There were 20 Israeli sol",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "This live page will close shortly, with ongoing coverage continuing on a new page . Here is a recap of the day\u2019s key developments: Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the Un",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-todays-events-0",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Morning recap",
-      "summary": "Tensions remain high across the Middle East as Israeli and Iranian military strikes intensify, while US President Donald Trump sends mixed signals on diplomacy and Iran\u2019s leadership continues to deny any negotiations. Reports say Washington sent Iran a proposal including nuclear rollback and ceasefi",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Tensions remain high across the Middle East as Israeli and Iranian military strikes intensify, while US President Donald Trump sends mixed signals on diplomacy and Iran\u2019s leadership continues to deny any negotiations. Reports say Washington sent Iran a proposal including nuclear rollback and ceasefi",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-136",
+      "fullAnalysis": "Khalid Jamal, a middle-aged Palestinian father, is describing the moment Israeli soldiers took over his home in al-Rehiyya, south of Hebron in the occupied West Bank. \u201cWe were asleep. It was 2.42am. The door was forced open. I woke up to find the house surrounded,\u201d he says. There were 20 Israeli sol",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-forces-turning-palestinian-homes-military-bases",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -98,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 02:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 04:34 UTC",
       "l": "HIGH",
@@ -228,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 06:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 07:41 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L. Recap of todays events. Morning recap. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Nazi-era weapons maker Volkswagen eyes return to arms production, this time with. Israeli forces turn Palestinian homes into military bases. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
