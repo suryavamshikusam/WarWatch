@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 17:54 UTC",
+  "generatedAt": "2026-03-25 18:48 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Netanyahu says Israel expanding buffer zone in southern Lebanon \u00b7 Israeli Prime Minister Benjamin Netanyahu said Israeli forces are expanding a \u201cb\u2026",
-    "Other: Gaza toddler released from Israeli custody with \u2018cigarette burn\u2019 wounds \u00b7 A Palestinian toddler was returned from a 10-hour detention by Israeli forces in\u2026"
+    "Other: Iran rejects Trump's 15-point peace proposal with five conditions of its own \u00b7 Iran has rejected a US proposal to end the war with the Islamic Republic, settin\u2026",
+    "Other: IRGC commander warns Trump threats amount to \u2018act of war\u2019 \u00b7 Majid Mousavi, commander of the IRGC\u2019s Aerospace Force, said any threats or ulti\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-25 17:54 UTC",
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-25 18:48 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Netanyahu says Israel expanding buffer zone in southern Lebanon",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu said Israeli forces are expanding a \u201cbuffer zone\u201d in southern Lebanon as operations against Hezbollah continue. \u201cWe have created a genuine security zone preventing any infiltration toward the Galilee and the northern border,\u201d he said in a video statement. He",
+      "headline": "Iran rejects Trump's 15-point peace proposal with five conditions of its own",
+      "summary": "Iran has rejected a US proposal to end the war with the Islamic Republic, setting out its own conditions for peace, according to Iranian state media. \"Iran has responded negatively\" to the American proposal, an unidentified official told Iran\u2019s Press TV on Wednesday, referring to a 15-point ceasefir",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said Israeli forces are expanding a \u201cbuffer zone\u201d in southern Lebanon as operations against Hezbollah continue. \u201cWe have created a genuine security zone preventing any infiltration toward the Galilee and the northern border,\u201d he said in a video statement. He",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-fm-says-trust-iran-completely-shattered",
+      "fullAnalysis": "Iran has rejected a US proposal to end the war with the Islamic Republic, setting out its own conditions for peace, according to Iranian state media. \"Iran has responded negatively\" to the American proposal, an unidentified official told Iran\u2019s Press TV on Wednesday, referring to a 15-point ceasefir",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-counters-trumps-15-point-plan-own-5-conditions-end-war",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,14 +66,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Gaza toddler released from Israeli custody with \u2018cigarette burn\u2019 wounds",
-      "summary": "A Palestinian toddler was returned from a 10-hour detention by Israeli forces in the Gaza Strip with apparent cigarette burns on his thighs, according to medical reports. Jawad Abu Nassar, aged 21 months, was detained alongside his father, Osama Abu Nassar, 25, in central Gaza on 19 March. According",
+      "headline": "IRGC commander warns Trump threats amount to \u2018act of war\u2019",
+      "summary": "Majid Mousavi, commander of the IRGC\u2019s Aerospace Force, said any threats or ultimatums against Iran should be seen as an act of war. In a post on X, Mousavi said recent strikes on Dimona and Haifa were a \u201cclear message\u201d in response to what he described as US threats over the Strait of Hormuz.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A Palestinian toddler was returned from a 10-hour detention by Israeli forces in the Gaza Strip with apparent cigarette burns on his thighs, according to medical reports. Jawad Abu Nassar, aged 21 months, was detained alongside his father, Osama Abu Nassar, 25, in central Gaza on 19 March. According",
-      "sourceUrl": "https://www.middleeasteye.net/news/gaza-toddler-released-israeli-custody-cigarette-burn-wounds",
+      "fullAnalysis": "Majid Mousavi, commander of the IRGC\u2019s Aerospace Force, said any threats or ultimatums against Iran should be seen as an act of war. In a post on X, Mousavi said recent strikes on Dimona and Haifa were a \u201cclear message\u201d in response to what he described as US threats over the Strait of Hormuz.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-warns-trump-threats-amount-act-war",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 16:02 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 17:08 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 17:54 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 18:48 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says Israel expanding buffer zone in southern Lebanon. Gaza toddler released from Israeli custody with \u2018cigarette burn\u2019 wounds. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran rejects Trump's 15-point peace proposal with five conditions of its own. IRGC commander warns Trump threats amount to \u2018act of war\u2019. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
