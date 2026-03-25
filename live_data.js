@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-24 22:07 UTC",
+  "generatedAt": "2026-03-25 01:28 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump says he received Iranian 'present' as thousands of US troops head towards  \u00b7 President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related\u2026",
-    "Other: France's Macron urges Iranian president to end attacks \u00b7 French President Emmanuel Macron said on Tuesday he spoke to Iranian President M\u2026"
+    "Other: Oil drops over 5% after Trump proposes talks with Iran \u00b7 Oil prices dropped more than 5 percent after US President Donald Trump sent a de\u2026",
+    "Other: Iran war live: Trump again says talks under way; 12 killed in south Tehran \u00b7 Iran war live: Trump again says talks under way; 12 killed in south Tehran"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-24 22:07 UTC",
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-25 01:28 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Trump says he received Iranian 'present' as thousands of US troops head towards ",
-      "summary": "President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related to \u201coil and gas\u201d, while repeating that talks were underway with the Islamic Republic to end the war, even as thousands of US troops are en route to the region. Trump delivered his remarks at the White House, claiming th",
+      "time": "9 min ago",
+      "headline": "Oil drops over 5% after Trump proposes talks with Iran",
+      "summary": "Oil prices dropped more than 5 percent after US President Donald Trump sent a delegation to Iran, raising hopes of an end to nearly a month of war, AFP news agency reported. Brent crude fell close to 6 percent to $98.30, while US benchmark West Texas Intermediate dropped about 5 percent to $87.72. T",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "President Donald Trump said on Tuesday that Iran gave the US a \"present\u201d related to \u201coil and gas\u201d, while repeating that talks were underway with the Islamic Republic to end the war, even as thousands of US troops are en route to the region. Trump delivered his remarks at the White House, claiming th",
-      "sourceUrl": "https://www.middleeasteye.net/news/trump-touts-iranian-present-thousands-us-troops-head-towards-gulf",
+      "fullAnalysis": "Oil prices dropped more than 5 percent after US President Donald Trump sent a delegation to Iran, raising hopes of an end to nearly a month of war, AFP news agency reported. Brent crude fell close to 6 percent to $98.30, while US benchmark West Texas Intermediate dropped about 5 percent to $87.72. T",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-drops-over-5-after-trump-proposes-talks-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,23 +65,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "France's Macron urges Iranian president to end attacks",
-      "summary": "French President Emmanuel Macron said on Tuesday he spoke to Iranian President Masoud Pezeshkian and asked him to put an end to attacks against countries in the region and called on the country to engage in good faith negotiations. \"I spoke again of the absolute necessity of putting a stop to these ",
+      "time": "9 min ago",
+      "headline": "Iran war live: Trump again says talks under way; 12 killed in south Tehran",
+      "summary": "Iran war live: Trump again says talks under way; 12 killed in south Tehran",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "French President Emmanuel Macron said on Tuesday he spoke to Iranian President Masoud Pezeshkian and asked him to put an end to attacks against countries in the region and called on the country to engage in good faith negotiations. \"I spoke again of the absolute necessity of putting a stop to these ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/frances-macron-urges-iran-president-end-attacks",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Iran war live: Trump again says talks under way; 12 killed in south Tehran",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/25/iran-war-live-trump-again-says-talks-underway-12-killed-in-south-tehran?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 19:57 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 20:33 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-24 22:07 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 01:28 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump says he received Iranian 'present' as thousands of US troops head towards . France's Macron urges Iranian president to end attacks. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oil drops over 5% after Trump proposes talks with Iran. Iran war live: Trump again says talks under way; 12 killed in south Tehran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
