@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 09:31 UTC",
+  "generatedAt": "2026-03-25 10:28 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Spain PM says Israel seeks Gaza-level destruction in Lebanon \u00b7 Spanish Prime Minister Pedro Sanchez has accused Israeli leader Benjamin Netanya\u2026"
+    "Other: Why US supercarrier had to leave Middle East amid Iran war: Many problems of USS \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-25 09:31 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-25 10:28 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Spain PM says Israel seeks Gaza-level destruction in Lebanon",
-      "summary": "Spanish Prime Minister Pedro Sanchez has accused Israeli leader Benjamin Netanyahu of aiming to replicate the scale of devastation seen in Gaza in Lebanon. Speaking before Spain\u2019s lower house, Sanchez said Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli fo",
+      "time": "7 min ago",
+      "headline": "Why US supercarrier had to leave Middle East amid Iran war: Many problems of USS",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Spanish Prime Minister Pedro Sanchez has accused Israeli leader Benjamin Netanyahu of aiming to replicate the scale of devastation seen in Gaza in Lebanon. Speaking before Spain\u2019s lower house, Sanchez said Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli fo",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/spain-pm-says-israel-seeks-gaza-level-destruction-lebanon",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/defence/international/why-us-supercarrier-had-to-leave-middle-east-amid-iran-war-many-problems-of-uss-gerald-ford/articleshow/129791790.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 05:49 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 08:44 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 09:31 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 10:28 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Spain PM says Israel seeks Gaza-level destruction in Lebanon. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Why US supercarrier had to leave Middle East amid Iran war: Many problems of USS. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
