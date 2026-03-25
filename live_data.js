@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 13:01 UTC",
+  "generatedAt": "2026-03-25 14:21 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel \u00b7 The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upp\u2026",
-    "Other: Majority of Americans view US strikes on Iran as excessive; gas price fears rise \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
-    "Other: 'There's no safety anymore': Palestinians warn of expanding settler violence \u00b7 \"This assault wasn't just meant to burn the houses but also to kill - to kill wo\u2026"
+    "Other: UN confirms Gaza security force to include Kazakhstan, Indonesia and Morocco \u00b7 The UN has confirmed which countries are to be members of a post-war military fo\u2026",
+    "Other: UK to host talks on mission to reopen Hormuz, says official \u00b7 Britain and France will chair military talks this week involving around 30 natio\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-25 13:01 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-25 14:21 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "10 min ago",
-      "headline": "Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel",
-      "summary": "The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upper hand in its war with Israel and the US . \u201cThe reality is the US underestimated the task and I think as of about two weeks ago lost the initiative to Iran,\u201d Sir Alex Younger, who ran the UK \u2019s Secret Intelligence Servi",
+      "time": "9 min ago",
+      "headline": "UN confirms Gaza security force to include Kazakhstan, Indonesia and Morocco",
+      "summary": "The UN has confirmed which countries are to be members of a post-war military force planned for the Gaza Strip . Speaking to the UN Security Council (UNSC) on Tuesday,\u00a0High Representative for Gaza Nickolay Mladenov said that\u00a0Indonesia, Morocco , Kazakhstan, Kosovo and Albania had committed troops to",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The former chief of Britain\u2019s MI6 intelligence service has said Iran has the upper hand in its war with Israel and the US . \u201cThe reality is the US underestimated the task and I think as of about two weeks ago lost the initiative to Iran,\u201d Sir Alex Younger, who ran the UK \u2019s Secret Intelligence Servi",
-      "sourceUrl": "https://www.middleeasteye.net/news/former-head-uks-mi6-says-iran-has-upper-hand-war-us-and-israel",
+      "fullAnalysis": "The UN has confirmed which countries are to be members of a post-war military force planned for the Gaza Strip . Speaking to the UN Security Council (UNSC) on Tuesday,\u00a0High Representative for Gaza Nickolay Mladenov said that\u00a0Indonesia, Morocco , Kazakhstan, Kosovo and Albania had committed troops to",
+      "sourceUrl": "https://www.middleeasteye.net/news/un-confirms-member-gaza-security-force-include-kazakhstan-indonesia-and-morocco",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,42 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "10 min ago",
-      "headline": "Majority of Americans view US strikes on Iran as excessive; gas price fears rise",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "9 min ago",
+      "headline": "UK to host talks on mission to reopen Hormuz, says official",
+      "summary": "Britain and France will chair military talks this week involving around 30 nations to form a coalition to reopen the Strait of Hormuz, a UK defence official has told AFP. Britain, France, Germany, Italy, Japan and the Netherlands said last week they were ready \"to contribute to appropriate efforts t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/majority-of-americans-view-us-strikes-on-iran-as-excessive-gas-price-fears-rise-poll/articleshow/129800820.cms",
-      "sourceLabel": "Times of India"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "10 min ago",
-      "headline": "'There's no safety anymore': Palestinians warn of expanding settler violence",
-      "summary": "\"This assault wasn't just meant to burn the houses but also to kill - to kill women and children,\" says Barhan Omar, standing in the charred ruins of his family's large villa, which Israeli settlers attacked on Sunday. \"They came in big numbers. This was organised terrorism,\" he tells me, fighting b",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "\"This assault wasn't just meant to burn the houses but also to kill - to kill women and children,\" says Barhan Omar, standing in the charred ruins of his family's large villa, which Israeli settlers attacked on Sunday. \"They came in big numbers. This was organised terrorism,\" he tells me, fighting b",
-      "sourceUrl": "https://www.bbc.com/news/articles/c747x00m83vo?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC"
+      "fullAnalysis": "Britain and France will chair military talks this week involving around 30 nations to form a coalition to reopen the Strait of Hormuz, a UK defence official has told AFP. Britain, France, Germany, Italy, Japan and the Netherlands said last week they were ready \"to contribute to appropriate efforts t",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-host-talks-mission-reopen-hormuz-says-official",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "10 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 10:36 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 12:07 UTC",
       "l": "HIGH",
@@ -228,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 13:01 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 14:21 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Former head of UK's MI6 says Iran has 'upper hand' in war with US and Israel. Majority of Americans view US strikes on Iran as excessive; gas price fears rise. 'There's no safety anymore': Palestinians warn of expanding settler violence. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UN confirms Gaza security force to include Kazakhstan, Indonesia and Morocco. UK to host talks on mission to reopen Hormuz, says official. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

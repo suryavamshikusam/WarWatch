@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 14:21 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UN confirms Gaza security force to include Kazakhstan, Indonesia and Morocco. UK to host talks on mission to reopen Hormuz, says official. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "UN confirms Gaza security force to include Kazakhstan, Indonesia and Morocco",
+      "detail": "The UN has confirmed which countries are to be members of a post-war military force planned for the Gaza Strip . Speaking to the UN Security Council (UNSC) on Tuesday,\u00a0High Representative for Gaza Nickolay Mladenov said that\u00a0Indonesia, Morocco , Kazakhstan, Kosovo and Albania had committed troops to",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/un-confirms-member-gaza-security-force-include-kazakhstan-indonesia-and-morocco",
+      "fullAnalysis": "The UN has confirmed which countries are to be members of a post-war military force planned for the Gaza Strip . Speaking to the UN Security Council (UNSC) on Tuesday,\u00a0High Representative for Gaza Nickolay Mladenov said that\u00a0Indonesia, Morocco , Kazakhstan, Kosovo and Albania had committed troops to",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "UK to host talks on mission to reopen Hormuz, says official",
+      "detail": "Britain and France will chair military talks this week involving around 30 nations to form a coalition to reopen the Strait of Hormuz, a UK defence official has told AFP. Britain, France, Germany, Italy, Japan and the Netherlands said last week they were ready \"to contribute to appropriate efforts t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-host-talks-mission-reopen-hormuz-says-official",
+      "fullAnalysis": "Britain and France will chair military talks this week involving around 30 nations to form a coalition to reopen the Strait of Hormuz, a UK defence official has told AFP. Britain, France, Germany, Italy, Japan and the Netherlands said last week they were ready \"to contribute to appropriate efforts t",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-25 14:21 UTC"
+}
