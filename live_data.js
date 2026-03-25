@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 21:45 UTC",
+  "generatedAt": "2026-03-25 23:03 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: White House doubles down on Iran threats as Republican lawmakers retreat \u00b7 Republican lawmakers emerging from a closed-door briefing on the Trump administr\u2026"
+    "Other: Explosions and smoke seen as Iranian missiles hit Israel \u00b7 Explosions and smoke seen as Iranian missiles hit Israel Explosions and smoke we\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-25 21:45 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-25 23:03 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "White House doubles down on Iran threats as Republican lawmakers retreat",
-      "summary": "Republican lawmakers emerging from a closed-door briefing on the Trump administration's war on Iran warned on Wednesday that they are not being given enough information to make informed decisions about the potential deployment of soldiers for ground combat. \"I will not support troops on the ground i",
+      "headline": "Explosions and smoke seen as Iranian missiles hit Israel",
+      "summary": "Explosions and smoke seen as Iranian missiles hit Israel Explosions and smoke were seen in Israel after suspected Iranian strikes, including a reported hit on a power plant in Haifa and falling rocket fragments in the Negev desert.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Republican lawmakers emerging from a closed-door briefing on the Trump administration's war on Iran warned on Wednesday that they are not being given enough information to make informed decisions about the potential deployment of soldiers for ground combat. \"I will not support troops on the ground i",
-      "sourceUrl": "https://www.middleeasteye.net/news/white-house-doubles-down-iran-threats-republican-lawmakers-retreat",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Explosions and smoke seen as Iranian missiles hit Israel Explosions and smoke were seen in Israel after suspected Iranian strikes, including a reported hit on a power plant in Haifa and falling rocket fragments in the Negev desert.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/25/explosions-and-smoke-seen-as-iranian-missiles-hit-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 20:04 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 20:59 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 21:45 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 23:03 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: White House doubles down on Iran threats as Republican lawmakers retreat. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Explosions and smoke seen as Iranian missiles hit Israel. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
