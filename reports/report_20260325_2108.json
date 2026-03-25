@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 21:01 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra",
+      "detail": "Pakistan plans to export surplus food supplies to the Arab Gulf states as food security concerns mount due to Iran's control of the strategic Strait of Hormuz. Pakistani Prime Minister Shehbaz Sharif on Wednesday directed authorities to accelerate the export of surplus food items to Gulf countries w",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/pakistan-will-export-surplus-food-gulf-iran-cements-control-strait-hormuz",
+      "fullAnalysis": "Pakistan plans to export surplus food supplies to the Arab Gulf states as food security concerns mount due to Iran's control of the strategic Strait of Hormuz. Pakistani Prime Minister Shehbaz Sharif on Wednesday directed authorities to accelerate the export of surplus food items to Gulf countries w",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-03-25 21:01 UTC"
+}

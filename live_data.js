@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 18:48 UTC",
+  "generatedAt": "2026-03-25 21:01 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran rejects Trump's 15-point peace proposal with five conditions of its own \u00b7 Iran has rejected a US proposal to end the war with the Islamic Republic, settin\u2026",
-    "Other: IRGC commander warns Trump threats amount to \u2018act of war\u2019 \u00b7 Majid Mousavi, commander of the IRGC\u2019s Aerospace Force, said any threats or ulti\u2026"
+    "Other: Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra \u00b7 Pakistan plans to export surplus food supplies to the Arab Gulf states as food s\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-25 18:48 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-25 21:01 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,31 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran rejects Trump's 15-point peace proposal with five conditions of its own",
-      "summary": "Iran has rejected a US proposal to end the war with the Islamic Republic, setting out its own conditions for peace, according to Iranian state media. \"Iran has responded negatively\" to the American proposal, an unidentified official told Iran\u2019s Press TV on Wednesday, referring to a 15-point ceasefir",
+      "time": "7 min ago",
+      "headline": "Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra",
+      "summary": "Pakistan plans to export surplus food supplies to the Arab Gulf states as food security concerns mount due to Iran's control of the strategic Strait of Hormuz. Pakistani Prime Minister Shehbaz Sharif on Wednesday directed authorities to accelerate the export of surplus food items to Gulf countries w",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran has rejected a US proposal to end the war with the Islamic Republic, setting out its own conditions for peace, according to Iranian state media. \"Iran has responded negatively\" to the American proposal, an unidentified official told Iran\u2019s Press TV on Wednesday, referring to a 15-point ceasefir",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-counters-trumps-15-point-plan-own-5-conditions-end-war",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "IRGC commander warns Trump threats amount to \u2018act of war\u2019",
-      "summary": "Majid Mousavi, commander of the IRGC\u2019s Aerospace Force, said any threats or ultimatums against Iran should be seen as an act of war. In a post on X, Mousavi said recent strikes on Dimona and Haifa were a \u201cclear message\u201d in response to what he described as US threats over the Strait of Hormuz.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Majid Mousavi, commander of the IRGC\u2019s Aerospace Force, said any threats or ultimatums against Iran should be seen as an act of war. In a post on X, Mousavi said recent strikes on Dimona and Haifa were a \u201cclear message\u201d in response to what he described as US threats over the Strait of Hormuz.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-commander-warns-trump-threats-amount-act-war",
+      "fullAnalysis": "Pakistan plans to export surplus food supplies to the Arab Gulf states as food security concerns mount due to Iran's control of the strategic Strait of Hormuz. Pakistani Prime Minister Shehbaz Sharif on Wednesday directed authorities to accelerate the export of surplus food items to Gulf countries w",
+      "sourceUrl": "https://www.middleeasteye.net/news/pakistan-will-export-surplus-food-gulf-iran-cements-control-strait-hormuz",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 17:08 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 19:23 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 18:48 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 21:01 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran rejects Trump's 15-point peace proposal with five conditions of its own. IRGC commander warns Trump threats amount to \u2018act of war\u2019. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
