@@ -1,15 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 01:28 UTC",
+  "generatedAt": "2026-03-25 04:01 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Oil drops over 5% after Trump proposes talks with Iran \u00b7 Oil prices dropped more than 5 percent after US President Donald Trump sent a de\u2026",
-    "Other: Iran war live: Trump again says talks under way; 12 killed in south Tehran \u00b7 Iran war live: Trump again says talks under way; 12 killed in south Tehran"
+    "Other: Washington's proposal to Iran outlines nuclear rollback, US media says \u00b7 US media outlets, citing unnamed officials, reported that Washington has sent a \u2026",
+    "Other: Trump says 'this war has been won' as Iran denies any agreement \u00b7 US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Isra\u2026",
+    "Other: Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank \u00b7 A woman stands among the ruins of her family home, which was destroyed by an Isr\u2026",
+    "Other: 'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-25 01:28 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-25 04:01 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -49,15 +51,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Oil drops over 5% after Trump proposes talks with Iran",
-      "summary": "Oil prices dropped more than 5 percent after US President Donald Trump sent a delegation to Iran, raising hopes of an end to nearly a month of war, AFP news agency reported. Brent crude fell close to 6 percent to $98.30, while US benchmark West Texas Intermediate dropped about 5 percent to $87.72. T",
+      "time": "13 min ago",
+      "headline": "Washington's proposal to Iran outlines nuclear rollback, US media says",
+      "summary": "US media outlets, citing unnamed officials, reported that Washington has sent a 15-point plan to Iran aimed at ending the war. The Wall Street Journal said the proposal calls on Tehran to dismantle its main nuclear sites, halt uranium enrichment and suspend its ballistic missile program, while also ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Oil prices dropped more than 5 percent after US President Donald Trump sent a delegation to Iran, raising hopes of an end to nearly a month of war, AFP news agency reported. Brent crude fell close to 6 percent to $98.30, while US benchmark West Texas Intermediate dropped about 5 percent to $87.72. T",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-drops-over-5-after-trump-proposes-talks-iran",
+      "fullAnalysis": "US media outlets, citing unnamed officials, reported that Washington has sent a 15-point plan to Iran aimed at ending the war. The Wall Street Journal said the proposal calls on Tehran to dismantle its main nuclear sites, halt uranium enrichment and suspend its ballistic missile program, while also ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/washintons-proposal-iran-outlines-nuclear-rollback-us-media-says",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,26 +67,58 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran war live: Trump again says talks under way; 12 killed in south Tehran",
-      "summary": "Iran war live: Trump again says talks under way; 12 killed in south Tehran",
+      "time": "13 min ago",
+      "headline": "Trump says 'this war has been won' as Iran denies any agreement",
+      "summary": "US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Israel campaign against Iran had eliminated key leaders and secured commitments from Tehran to never seek a nuclear weapon. Iran denied any negotiations and reiterated its longstanding position that it does not seek nuclear ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran war live: Trump again says talks under way; 12 killed in south Tehran",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/25/iran-war-live-trump-again-says-talks-underway-12-killed-in-south-tehran?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Israel campaign against Iran had eliminated key leaders and secured commitments from Tehran to never seek a nuclear weapon. Iran denied any negotiations and reiterated its longstanding position that it does not seek nuclear ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-war-has-been-won-iran-denies-any-agreement",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank",
+      "summary": "A woman stands among the ruins of her family home, which was destroyed by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Tyre, Lebanon, on March 24, 2026.\n                                                  | Photo Cred",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "A woman stands among the ruins of her family home, which was destroyed by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Tyre, Lebanon, on March 24, 2026.\n                                                  | Photo Cred",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-march-25-2026-live-updates/article70782463.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/they-cannot-have-a-nuclear-weapon-us-pushes-15-point-plan-to-end-iran-war-sent-via-pakistan/articleshow/129789762.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-23 20:33 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-23 21:57 UTC",
       "l": "HIGH",
@@ -211,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 01:28 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 04:01 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Oil drops over 5% after Trump proposes talks with Iran. Iran war live: Trump again says talks under way; 12 killed in south Tehran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Washington's proposal to Iran outlines nuclear rollback, US media says. Trump says 'this war has been won' as Iran denies any agreement. Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank. 'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

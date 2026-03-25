@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 04:01 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Washington's proposal to Iran outlines nuclear rollback, US media says. Trump says 'this war has been won' as Iran denies any agreement. Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank. 'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Washington's proposal to Iran outlines nuclear rollback, US media says",
+      "detail": "US media outlets, citing unnamed officials, reported that Washington has sent a 15-point plan to Iran aimed at ending the war. The Wall Street Journal said the proposal calls on Tehran to dismantle its main nuclear sites, halt uranium enrichment and suspend its ballistic missile program, while also ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/washintons-proposal-iran-outlines-nuclear-rollback-us-media-says",
+      "fullAnalysis": "US media outlets, citing unnamed officials, reported that Washington has sent a 15-point plan to Iran aimed at ending the war. The Wall Street Journal said the proposal calls on Tehran to dismantle its main nuclear sites, halt uranium enrichment and suspend its ballistic missile program, while also ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump says 'this war has been won' as Iran denies any agreement",
+      "detail": "US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Israel campaign against Iran had eliminated key leaders and secured commitments from Tehran to never seek a nuclear weapon. Iran denied any negotiations and reiterated its longstanding position that it does not seek nuclear ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-war-has-been-won-iran-denies-any-agreement",
+      "fullAnalysis": "US President Donald Trump said \u201cthis war has been won,\u201d claiming a joint US-Israel campaign against Iran had eliminated key leaders and secured commitments from Tehran to never seek a nuclear weapon. Iran denied any negotiations and reiterated its longstanding position that it does not seek nuclear ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran-Israel war LIVE: Fire at Kuwait airport after drones hit fuel tank",
+      "detail": "A woman stands among the ruins of her family home, which was destroyed by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Tyre, Lebanon, on March 24, 2026.\n                                                  | Photo Cred",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-march-25-2026-live-updates/article70782463.ece",
+      "fullAnalysis": "A woman stands among the ruins of her family home, which was destroyed by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Tyre, Lebanon, on March 24, 2026.\n                                                  | Photo Cred",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "'They cannot have a nuclear weapon': US pushes 15-point plan to end Iran war; se",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/they-cannot-have-a-nuclear-weapon-us-pushes-15-point-plan-to-end-iran-war-sent-via-pakistan/articleshow/129789762.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-25 04:01 UTC"
+}
