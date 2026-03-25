@@ -1,14 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 15:45 UTC",
+  "generatedAt": "2026-03-25 16:48 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: \u2018Trump will not dictate end of war\u2019: Iran dismisses US' 15-point de-escalation p \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Oops, we have wrecked another country \u00b7 As the war on Iran lurches towards its second month, a steady stream of voices f\u2026",
+    "Other: Netanyahu aide's racist slurs about Mizrahi Jews spark outrage \u00b7 Racist remarks attributed to a close aide of Israeli Prime Minister Benjamin Net\u2026",
+    "Other: Iran rejects U.S. proposal, sets out conditions to end war \u00b7 Vehicles drive under billboards showing portraits of the late Iranian Supreme Le\u2026",
+    "Other: Starmer reaffirms UK support for ICC when asked about Karim Khan exoneration rep \u00b7 British Prime Minister Keir Starmer on Wednesday reaffirmed the UK 's support fo\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-25 15:45 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-25 16:48 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -48,26 +51,74 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "\u2018Trump will not dictate end of war\u2019: Iran dismisses US' 15-point de-escalation p",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "14 min ago",
+      "headline": "Oops, we have wrecked another country",
+      "summary": "As the war on Iran lurches towards its second month, a steady stream of voices from the intelligence communities in the US and Israel are making public their dissension with the whole project. As a result, more details are coming out about the decision to launch the attack in February. It had, then,",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/trump-will-not-dictate-end-of-war-iran-rejects-us-15-point-plan-counters-with-its-own-5-demands/articleshow/129804889.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "As the war on Iran lurches towards its second month, a steady stream of voices from the intelligence communities in the US and Israel are making public their dissension with the whole project. As a result, more details are coming out about the decision to launch the attack in February. It had, then,",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/oops-we-have-wrecked-another-country",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "14 min ago",
+      "headline": "Netanyahu aide's racist slurs about Mizrahi Jews spark outrage",
+      "summary": "Racist remarks attributed to a close aide of Israeli Prime Minister Benjamin Netanyahu have caused a political stir in Israel, after Channel 12 News on Tuesday revealed disparaging comments about Mizrahi Jews. Released recordings feature Ziv Agmon, Netanyahu\u2019s personal spokesperson and interim chief",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Racist remarks attributed to a close aide of Israeli Prime Minister Benjamin Netanyahu have caused a political stir in Israel, after Channel 12 News on Tuesday revealed disparaging comments about Mizrahi Jews. Released recordings feature Ziv Agmon, Netanyahu\u2019s personal spokesperson and interim chief",
+      "sourceUrl": "https://www.middleeasteye.net/news/netanyahu-aide-racist-slurs-mizrahi-jews-spark-outrage",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "14 min ago",
+      "headline": "Iran rejects U.S. proposal, sets out conditions to end war",
+      "summary": "Vehicles drive under billboards showing portraits of the late Iranian Supreme Leader Ayatollah Ali Khamenei, foreground, and his son Ayatollah Mojtaba Khamenei, the successor to him, along a highway in Tehran, Iran, on March 24, 2026.\n                                          | Photo Credit: AP Iran",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Vehicles drive under billboards showing portraits of the late Iranian Supreme Leader Ayatollah Ali Khamenei, foreground, and his son Ayatollah Mojtaba Khamenei, the successor to him, along a highway in Tehran, Iran, on March 24, 2026.\n                                          | Photo Credit: AP Iran",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-rejects-us-proposal-sets-out-conditions-to-end-war/article70785197.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "14 min ago",
+      "headline": "Starmer reaffirms UK support for ICC when asked about Karim Khan exoneration rep",
+      "summary": "British Prime Minister Keir Starmer on Wednesday reaffirmed the UK 's support for the International Criminal Court (ICC) after being asked about Middle East Eye's revelation that a judges' panel cleared its British chief prosecutor Karim Khan of misconduct. Starmer was also asked about MEE's report ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "British Prime Minister Keir Starmer on Wednesday reaffirmed the UK 's support for the International Criminal Court (ICC) after being asked about Middle East Eye's revelation that a judges' panel cleared its British chief prosecutor Karim Khan of misconduct. Starmer was also asked about MEE's report ",
+      "sourceUrl": "https://www.middleeasteye.net/news/starmer-reaffirms-british-support-icc-when-asked-about-karim-khan-case",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "14 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 13:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 14:54 UTC",
       "l": "HIGH",
@@ -194,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 15:45 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 16:48 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Trump will not dictate end of war\u2019: Iran dismisses US' 15-point de-escalation p. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oops, we have wrecked another country. Netanyahu aide's racist slurs about Mizrahi Jews spark outrage. Iran rejects U.S. proposal, sets out conditions to end war. Starmer reaffirms UK support for ICC when asked about Karim Khan exoneration rep. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
