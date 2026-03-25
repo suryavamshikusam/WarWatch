@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 05:26 UTC",
+  "generatedAt": "2026-03-25 06:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels \u00b7 Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u2026",
-    "Other: Iranian missile attacks intensify over Israel after brief lull \u00b7 Missile attacks from Iran resumed over Israel after a brief lull, with air raid \u2026",
-    "Other: Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz \u00b7 Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a c\u2026"
+    "Other: Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L \u00b7 Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be\u2026",
+    "Other: Recap of todays events \u00b7 This live page will close shortly, with ongoing coverage continuing on a new pag\u2026",
+    "Other: Morning recap \u00b7 Tensions remain high across the Middle East as Israeli and Iranian military stri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-03-25 05:26 UTC",
+    "updatesToday": 4,
+    "lastUpdated": "2026-03-25 06:40 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "12 min ago",
-      "headline": "Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels",
-      "summary": "Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the United States, Israel and other countries it accuses of aggression, the Financial Times reported. The policy was outlined in a letter",
+      "time": "11 min ago",
+      "headline": "Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L",
+      "summary": "Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be included in any US-Iran negotiations, warning the region\u2019s future cannot be decided without them. Amid conflicting reports of possible talks, which Tehran denies, he said: \u201cGCC [Gulf Cooperation Council]\u00a0states cannot b",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the United States, Israel and other countries it accuses of aggression, the Financial Times reported. The policy was outlined in a letter",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-allow-non-hostile-ships-through-hormuz-excludes-us-linked-vessels",
+      "fullAnalysis": "Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be included in any US-Iran negotiations, warning the region\u2019s future cannot be decided without them. Amid conflicting reports of possible talks, which Tehran denies, he said: \u201cGCC [Gulf Cooperation Council]\u00a0states cannot b",
+      "sourceUrl": "https://www.middleeasteye.net/live/iran-war-live-israel-says-it-will-control-bridges-and-area-south-lebanons-litani-river",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "12 min ago",
-      "headline": "Iranian missile attacks intensify over Israel after brief lull",
-      "summary": "Missile attacks from Iran resumed over Israel after a brief lull, with air raid alerts sounding across central areas, including Tel Aviv, Al Jazeera reported. Israeli defences intercepted several incoming projectiles, with images showing interceptions in the skies over the city. In Bnei Barak, a mis",
+      "time": "11 min ago",
+      "headline": "Recap of todays events",
+      "summary": "This live page will close shortly, with ongoing coverage continuing on a new page . Here is a recap of the day\u2019s key developments: Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the Un",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Missile attacks from Iran resumed over Israel after a brief lull, with air raid alerts sounding across central areas, including Tel Aviv, Al Jazeera reported. Israeli defences intercepted several incoming projectiles, with images showing interceptions in the skies over the city. In Bnei Barak, a mis",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attacks-intensify-over-israel-after-brief-lull",
+      "fullAnalysis": "This live page will close shortly, with ongoing coverage continuing on a new page . Here is a recap of the day\u2019s key developments: Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the Un",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-todays-events-0",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -82,23 +82,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "12 min ago",
-      "headline": "Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz",
-      "summary": "Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a collapse of maritime traffic through the waterway that has prompted the biggest global energy crisis in decades. In a statement on Tuesday, Iran\u2019s mission to the United Nations said vessels may avail of \u201csafe passage\u201d thr",
+      "time": "11 min ago",
+      "headline": "Morning recap",
+      "summary": "Tensions remain high across the Middle East as Israeli and Iranian military strikes intensify, while US President Donald Trump sends mixed signals on diplomacy and Iran\u2019s leadership continues to deny any negotiations. Reports say Washington sent Iran a proposal including nuclear rollback and ceasefi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran has said that \u201cnon-hostile\u201d ships may transit the Strait of Hormuz amid a collapse of maritime traffic through the waterway that has prompted the biggest global energy crisis in decades. In a statement on Tuesday, Iran\u2019s mission to the United Nations said vessels may avail of \u201csafe passage\u201d thr",
-      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/25/iran-says-non-hostile-ships-can-pass-safely-through-strait-of-hormuz?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Tensions remain high across the Middle East as Israeli and Iranian military strikes intensify, while US President Donald Trump sends mixed signals on diplomacy and Iran\u2019s leadership continues to deny any negotiations. Reports say Washington sent Iran a proposal including nuclear rollback and ceasefi",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-136",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "12 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
@@ -129,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 00:02 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 02:40 UTC",
       "l": "HIGH",
@@ -228,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 05:26 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 06:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran to allow 'non-hostile' ships through Hormuz,\u00a0excludes US-linked vessels. Iranian missile attacks intensify over Israel after brief lull. Iran says \u2018non-hostile\u2019 ships can pass safely through Strait of Hormuz. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L. Recap of todays events. Morning recap. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

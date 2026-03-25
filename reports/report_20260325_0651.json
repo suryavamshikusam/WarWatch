@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 06:40 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L. Recap of todays events. Morning recap. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran war live: Israel says it will control bridges and area south of Lebanon\u2019s L",
+      "detail": "Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be included in any US-Iran negotiations, warning the region\u2019s future cannot be decided without them. Amid conflicting reports of possible talks, which Tehran denies, he said: \u201cGCC [Gulf Cooperation Council]\u00a0states cannot b",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live/iran-war-live-israel-says-it-will-control-bridges-and-area-south-lebanons-litani-river",
+      "fullAnalysis": "Qatar\u2019s former Prime Minister Hamad bin Jassim al-Thani says Gulf states must be included in any US-Iran negotiations, warning the region\u2019s future cannot be decided without them. Amid conflicting reports of possible talks, which Tehran denies, he said: \u201cGCC [Gulf Cooperation Council]\u00a0states cannot b",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Recap of todays events",
+      "detail": "This live page will close shortly, with ongoing coverage continuing on a new page . Here is a recap of the day\u2019s key developments: Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the Un",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/recap-todays-events-0",
+      "fullAnalysis": "This live page will close shortly, with ongoing coverage continuing on a new page . Here is a recap of the day\u2019s key developments: Iran has told the International Maritime Organisation it will allow \u201cnon-hostile\u201d shipping to pass through the Strait of Hormuz, while excluding vessels linked to the Un",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Morning recap",
+      "detail": "Tensions remain high across the Middle East as Israeli and Iranian military strikes intensify, while US President Donald Trump sends mixed signals on diplomacy and Iran\u2019s leadership continues to deny any negotiations. Reports say Washington sent Iran a proposal including nuclear rollback and ceasefi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-136",
+      "fullAnalysis": "Tensions remain high across the Middle East as Israeli and Iranian military strikes intensify, while US President Donald Trump sends mixed signals on diplomacy and Iran\u2019s leadership continues to deny any negotiations. Reports say Washington sent Iran a proposal including nuclear rollback and ceasefi",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-25 06:40 UTC"
+}
