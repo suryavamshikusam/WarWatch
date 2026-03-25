@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 10:28 UTC",
+  "generatedAt": "2026-03-25 11:14 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Why US supercarrier had to leave Middle East amid Iran war: Many problems of USS \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian  \u00b7 An Iranian security analyst has warned that Tehran is ready to capture the coast\u2026",
+    "Other: Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r \u00b7 Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privat\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-25 10:28 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-25 11:14 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Why US supercarrier had to leave Middle East amid Iran war: Many problems of USS",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "8 min ago",
+      "headline": "Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian ",
+      "summary": "An Iranian security analyst has warned that Tehran is ready to capture the coastlines of Bahrain and the United Arab Emirates , in an interview aired on Iranian national TV. Speaking to Iran's state broadcaster IRIB, national security analyst Morteza Simiari said that Iran's military is \"ready to ta",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/defence/international/why-us-supercarrier-had-to-leave-middle-east-amid-iran-war-many-problems-of-uss-gerald-ford/articleshow/129791790.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "An Iranian security analyst has warned that Tehran is ready to capture the coastlines of Bahrain and the United Arab Emirates , in an interview aired on Iranian national TV. Speaking to Iran's state broadcaster IRIB, national security analyst Morteza Simiari said that Iran's military is \"ready to ta",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-ready-seize-bahrain-and-uae-coastlines-if-us-makes-mistake-iranian-expert-warns",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "8 min ago",
+      "headline": "Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r",
+      "summary": "Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privately urging US President Donald Trump to press ahead with the ongoing US-Israel military campaign against Iran, not as a mere tactical manoeuvre, but as a defining strategic moment to fundamentally reshape the region\u2019s ba",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privately urging US President Donald Trump to press ahead with the ongoing US-Israel military campaign against Iran, not as a mere tactical manoeuvre, but as a defining strategic moment to fundamentally reshape the region\u2019s ba",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-war-why-saudi-arabia-prince-is-privately-urging-trump-to-push-for-tehran-regime-change-10599141/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 08:44 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 09:40 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 10:28 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 11:14 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Why US supercarrier had to leave Middle East amid Iran war: Many problems of USS. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian . Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

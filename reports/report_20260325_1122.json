@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 11:14 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian . Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran ready to seize Bahrain and UAE coastlines if US 'makes a mistake', Iranian ",
+      "detail": "An Iranian security analyst has warned that Tehran is ready to capture the coastlines of Bahrain and the United Arab Emirates , in an interview aired on Iranian national TV. Speaking to Iran's state broadcaster IRIB, national security analyst Morteza Simiari said that Iran's military is \"ready to ta",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-ready-seize-bahrain-and-uae-coastlines-if-us-makes-mistake-iranian-expert-warns",
+      "fullAnalysis": "An Iranian security analyst has warned that Tehran is ready to capture the coastlines of Bahrain and the United Arab Emirates , in an interview aired on Iranian national TV. Speaking to Iran's state broadcaster IRIB, national security analyst Morteza Simiari said that Iran's military is \"ready to ta",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war: Why Saudi Arabia prince is privately urging Trump to push for Tehran r",
+      "detail": "Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privately urging US President Donald Trump to press ahead with the ongoing US-Israel military campaign against Iran, not as a mere tactical manoeuvre, but as a defining strategic moment to fundamentally reshape the region\u2019s ba",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-war-why-saudi-arabia-prince-is-privately-urging-trump-to-push-for-tehran-regime-change-10599141/",
+      "fullAnalysis": "Saudi Arabia\u2019s de facto ruler, Crown Prince Mohammed bin Salman, has been privately urging US President Donald Trump to press ahead with the ongoing US-Israel military campaign against Iran, not as a mere tactical manoeuvre, but as a defining strategic moment to fundamentally reshape the region\u2019s ba",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-25 11:14 UTC"
+}
