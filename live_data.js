@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 21:01 UTC",
+  "generatedAt": "2026-03-25 21:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra \u00b7 Pakistan plans to export surplus food supplies to the Arab Gulf states as food s\u2026"
+    "Other: White House doubles down on Iran threats as Republican lawmakers retreat \u00b7 Republican lawmakers emerging from a closed-door briefing on the Trump administr\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-25 21:01 UTC",
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-25 21:45 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra",
-      "summary": "Pakistan plans to export surplus food supplies to the Arab Gulf states as food security concerns mount due to Iran's control of the strategic Strait of Hormuz. Pakistani Prime Minister Shehbaz Sharif on Wednesday directed authorities to accelerate the export of surplus food items to Gulf countries w",
+      "headline": "White House doubles down on Iran threats as Republican lawmakers retreat",
+      "summary": "Republican lawmakers emerging from a closed-door briefing on the Trump administration's war on Iran warned on Wednesday that they are not being given enough information to make informed decisions about the potential deployment of soldiers for ground combat. \"I will not support troops on the ground i",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Pakistan plans to export surplus food supplies to the Arab Gulf states as food security concerns mount due to Iran's control of the strategic Strait of Hormuz. Pakistani Prime Minister Shehbaz Sharif on Wednesday directed authorities to accelerate the export of surplus food items to Gulf countries w",
-      "sourceUrl": "https://www.middleeasteye.net/news/pakistan-will-export-surplus-food-gulf-iran-cements-control-strait-hormuz",
+      "fullAnalysis": "Republican lawmakers emerging from a closed-door briefing on the Trump administration's war on Iran warned on Wednesday that they are not being given enough information to make informed decisions about the potential deployment of soldiers for ground combat. \"I will not support troops on the ground i",
+      "sourceUrl": "https://www.middleeasteye.net/news/white-house-doubles-down-iran-threats-republican-lawmakers-retreat",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 19:23 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 20:04 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 21:01 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-25 21:45 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan will export surplus food to Gulf as Iran cements control of Hormuz stra. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: White House doubles down on Iran threats as Republican lawmakers retreat. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
