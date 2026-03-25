@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-25 17:54 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says Israel expanding buffer zone in southern Lebanon. Gaza toddler released from Israeli custody with \u2018cigarette burn\u2019 wounds. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Netanyahu says Israel expanding buffer zone in southern Lebanon",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu said Israeli forces are expanding a \u201cbuffer zone\u201d in southern Lebanon as operations against Hezbollah continue. \u201cWe have created a genuine security zone preventing any infiltration toward the Galilee and the northern border,\u201d he said in a video statement. He",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-fm-says-trust-iran-completely-shattered",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu said Israeli forces are expanding a \u201cbuffer zone\u201d in southern Lebanon as operations against Hezbollah continue. \u201cWe have created a genuine security zone preventing any infiltration toward the Galilee and the northern border,\u201d he said in a video statement. He",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Gaza toddler released from Israeli custody with \u2018cigarette burn\u2019 wounds",
+      "detail": "A Palestinian toddler was returned from a 10-hour detention by Israeli forces in the Gaza Strip with apparent cigarette burns on his thighs, according to medical reports. Jawad Abu Nassar, aged 21 months, was detained alongside his father, Osama Abu Nassar, 25, in central Gaza on 19 March. According",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/gaza-toddler-released-israeli-custody-cigarette-burn-wounds",
+      "fullAnalysis": "A Palestinian toddler was returned from a 10-hour detention by Israeli forces in the Gaza Strip with apparent cigarette burns on his thighs, according to medical reports. Jawad Abu Nassar, aged 21 months, was detained alongside his father, Osama Abu Nassar, 25, in central Gaza on 19 March. According",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-25 17:54 UTC"
+}
