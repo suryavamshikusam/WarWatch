@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 18:16 UTC",
+  "generatedAt": "2026-03-26 19:35 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian missiles cause widespread damage across Israel in latest wave \u00b7 Iranian missiles cause widespread damage across Israel in latest wave Iranian mi\u2026"
+    "Other: Targeted assassinations of Iranian leaders will continue, Israeli military spoke \u00b7 Israeli military Spokesman Brig. Gen. Effie Defrin said that the Israeli militar\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-26 18:16 UTC",
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-26 19:35 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Iranian missiles cause widespread damage across Israel in latest wave",
-      "summary": "Iranian missiles cause widespread damage across Israel in latest wave Iranian missiles have caused widespread damage across Israel in the latest wave of attacks, as President Donald Trump says US-Israeli strikes have destroyed the majority of Iran\u2019s missile launchers.",
+      "time": "6 min ago",
+      "headline": "Targeted assassinations of Iranian leaders will continue, Israeli military spoke",
+      "summary": "Israeli military Spokesman Brig. Gen. Effie Defrin said that the Israeli military will continue to pursue Iranian leaders, following the killing of IRGC Navy chief Alireza Tangsiri in Bandar Abbas overnight, the Times of Israel is reporting. \u201cThe eliminations will not stop; we will continue to pursu",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iranian missiles cause widespread damage across Israel in latest wave Iranian missiles have caused widespread damage across Israel in the latest wave of attacks, as President Donald Trump says US-Israeli strikes have destroyed the majority of Iran\u2019s missile launchers.",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/26/iranian-missiles-cause-widespread-damage-across-israel-in-latest-wave?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Israeli military Spokesman Brig. Gen. Effie Defrin said that the Israeli military will continue to pursue Iranian leaders, following the killing of IRGC Navy chief Alireza Tangsiri in Bandar Abbas overnight, the Times of Israel is reporting. \u201cThe eliminations will not stop; we will continue to pursu",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/targeted-assassinations-iranian-leaders-will-continue-idf-spokesman-says",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 13:01 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 14:21 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 18:16 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 19:35 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missiles cause widespread damage across Israel in latest wave. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Targeted assassinations of Iranian leaders will continue, Israeli military spoke. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
