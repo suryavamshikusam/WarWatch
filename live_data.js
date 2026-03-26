@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 13:25 UTC",
+  "generatedAt": "2026-03-26 14:49 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: US-Iran war: Indian, Pakistani nationals killed in Abu Dhabi after being hit by  \u00b7 An Indian national and a Pakistani national were killed in Abu Dhabi after debri\u2026"
+    "Other: Iranian naval chief killed in attack, Israel says \u00b7 Iranian naval chief killed in attack, Israel says Israel says it has killed IRGC\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-26 13:25 UTC",
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-26 14:49 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "US-Iran war: Indian, Pakistani nationals killed in Abu Dhabi after being hit by ",
-      "summary": "An Indian national and a Pakistani national were killed in Abu Dhabi after debris fell from an intercepted ballistic missile amid the US-Israel\u2019s war with Iran in West Asia , UAE\u2019s media office said on Thursday. In a post on X, the Abu Dhabi media office wrote, \u201cIn the context of the ongoing follow-",
+      "time": "5 min ago",
+      "headline": "Iranian naval chief killed in attack, Israel says",
+      "summary": "Iranian naval chief killed in attack, Israel says Israel says it has killed IRGC naval commander Alireza Tangsiri in a strike near Bandar Abbas by the Strait of Hormuz.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "An Indian national and a Pakistani national were killed in Abu Dhabi after debris fell from an intercepted ballistic missile amid the US-Israel\u2019s war with Iran in West Asia , UAE\u2019s media office said on Thursday. In a post on X, the Abu Dhabi media office wrote, \u201cIn the context of the ongoing follow-",
-      "sourceUrl": "https://indianexpress.com/article/world/abu-dhabi-missile-interception-indian-pakistani-nationals-killed-debris-10602885/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Iranian naval chief killed in attack, Israel says Israel says it has killed IRGC naval commander Alireza Tangsiri in a strike near Bandar Abbas by the Strait of Hormuz.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/26/iranian-naval-chief-killed-in-attack-israel-says?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "5 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 07:41 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 09:31 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 13:25 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 14:49 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: US-Iran war: Indian, Pakistani nationals killed in Abu Dhabi after being hit by . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian naval chief killed in attack, Israel says. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
