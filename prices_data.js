@@ -1,54 +1,54 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-03-26 10:12 UTC",
+  "fetchedAt": "2026-03-26 11:20 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
-      "price": 100.45,
-      "formatted": "$100.45",
-      "day_pct": -1.73,
-      "war_pct": 31.82
+      "price": 100.38,
+      "formatted": "$100.38",
+      "day_pct": -1.8,
+      "war_pct": 31.73
     },
     "CL=F": {
       "name": "WTI Crude",
-      "price": 93.59,
-      "formatted": "$93.59",
-      "day_pct": 3.62,
-      "war_pct": 28.03
+      "price": 93.12,
+      "formatted": "$93.12",
+      "day_pct": 3.1,
+      "war_pct": 27.39
     },
     "NG=F": {
       "name": "Natural Gas",
-      "price": 2.925,
-      "formatted": "$2.925",
-      "day_pct": -0.91,
-      "war_pct": 1.56
+      "price": 2.9,
+      "formatted": "$2.900",
+      "day_pct": -1.76,
+      "war_pct": 0.69
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4422.2998,
-      "formatted": "$4,422",
-      "day_pct": -2.8,
-      "war_pct": 64.4
+      "price": 4440.1001,
+      "formatted": "$4,440",
+      "day_pct": -2.41,
+      "war_pct": 65.06
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 68.19,
-      "formatted": "$68.190",
-      "day_pct": -5.76,
-      "war_pct": 139.26
+      "price": 68.46,
+      "formatted": "$68.460",
+      "day_pct": -5.39,
+      "war_pct": 140.21
     },
     "ZW=F": {
       "name": "Wheat",
-      "price": 595.0,
-      "formatted": "595\u00a2",
-      "day_pct": -0.46,
-      "war_pct": 11.21
+      "price": 594.25,
+      "formatted": "594\u00a2",
+      "day_pct": -0.59,
+      "war_pct": 11.07
     },
     "INR=X": {
       "name": "USD / INR",
-      "price": 94.05,
-      "formatted": "\u20b994.05",
-      "day_pct": -0.26,
-      "war_pct": 14.56
+      "price": 94.152,
+      "formatted": "\u20b994.15",
+      "day_pct": -0.16,
+      "war_pct": 14.68
     },
     "IOC.NS": {
       "name": "IOC",
@@ -66,30 +66,30 @@ window.WARWATCH_PRICES = {
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 133720,
-      "formatted": "\u20b9133,720",
-      "day_pct": -2.8,
-      "war_pct": 78.77
+      "price": 134404,
+      "formatted": "\u20b9134,404",
+      "day_pct": -2.41,
+      "war_pct": 79.68
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
-      "price": 8802,
-      "formatted": "\u20b98,802",
-      "day_pct": 3.62,
-      "war_pct": 38.61
+      "price": 8767,
+      "formatted": "\u20b98,767",
+      "day_pct": 3.1,
+      "war_pct": 38.06
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 206191,
-      "formatted": "\u20b9206,191",
-      "day_pct": -5.76,
-      "war_pct": 125.35
+      "price": 207232,
+      "formatted": "\u20b9207,232",
+      "day_pct": -5.39,
+      "war_pct": 126.48
     }
   },
   "india": {
     "petrolPump": {
-      "formatted": "\u20b9116.1",
-      "war_change": 16.7,
+      "formatted": "\u20b9115.8",
+      "war_change": 16.4,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
     "goldSilverRatio": 64.9
@@ -307,15 +307,15 @@ window.WARWATCH_PRICES = {
     },
     {
       "date": "2026-03-26",
-      "brent": 100.45,
-      "wti": 93.59,
-      "ng": 2.925,
-      "gold": 4422,
-      "wheat": 595,
-      "inr": 94.05,
-      "mcx_crude": 8802,
-      "mcx_gold": 133720,
-      "mcx_silver": 206191,
+      "brent": 100.38,
+      "wti": 93.12,
+      "ng": 2.9,
+      "gold": 4440,
+      "wheat": 594,
+      "inr": 94.15,
+      "mcx_crude": 8767,
+      "mcx_gold": 134404,
+      "mcx_silver": 207232,
       "ioc": 140.5,
       "adani": 1376
     }

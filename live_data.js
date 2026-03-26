@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 09:15 UTC",
+  "generatedAt": "2026-03-26 11:14 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israeli media claim IRGC naval commander killed \u00b7 Israeli media report that a senior commander in Iran\u2019s Revolutionary Guard Navy \u2026",
-    "Other: Iraqi Kurdish commander says there are no plans to invade Iran \u00b7 A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans \u2026",
-    "Other: Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands \u00b7 As the US-Israel war on Iran expands, attacks by Israel and the United States ki\u2026"
+    "Other: Four injured in Tel Aviv by missile debris \u00b7 Four people have been wounded in Tel Aviv after shrapnel from an Iranian missile\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-26 09:15 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-26 11:14 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,58 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Israeli media claim IRGC naval commander killed",
-      "summary": "Israeli media report that a senior commander in Iran\u2019s Revolutionary Guard Navy has been killed. Channel 12 said the commander was killed in Bandar Abbas and had been responsible for efforts to close the Strait of Hormuz. Channel 14 also reported that the commander of the Revolutionary Guard Navy ha",
+      "time": "6 min ago",
+      "headline": "Four injured in Tel Aviv by missile debris",
+      "summary": "Four people have been wounded in Tel Aviv after shrapnel from an Iranian missile fell across the city, Israeli media report. Reports said fragments landed in at least six locations, causing injuries and damage. Channel 12 said one site in the city sustained damage after debris struck the area.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli media report that a senior commander in Iran\u2019s Revolutionary Guard Navy has been killed. Channel 12 said the commander was killed in Bandar Abbas and had been responsible for efforts to close the Strait of Hormuz. Channel 14 also reported that the commander of the Revolutionary Guard Navy ha",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-media-claim-irgc-naval-commander-killed",
+      "fullAnalysis": "Four people have been wounded in Tel Aviv after shrapnel from an Iranian missile fell across the city, Israeli media report. Reports said fragments landed in at least six locations, causing injuries and damage. Channel 12 said one site in the city sustained damage after debris struck the area.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/four-injured-tel-aviv-missile-debris",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iraqi Kurdish commander says there are no plans to invade Iran",
-      "summary": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iraqi-kurdish-commander-says-there-are-no-plans-invade-iran",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands",
-      "summary": "As the US-Israel war on Iran expands, attacks by Israel and the United States killed two teenagers in Shiraz, while two people were reportedly killed in the Emirati capital, Abu Dhabi. The Iranian teenagers were killed on Wednesday evening in an assault on a residential area in the county of Shiraz,",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "As the US-Israel war on Iran expands, attacks by Israel and the United States killed two teenagers in Shiraz, while two people were reportedly killed in the Emirati capital, Abu Dhabi. The Iranian teenagers were killed on Wednesday evening in an assault on a residential area in the county of Shiraz,",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/26/us-israel-launch-extensive-strikes-on-central-iran-two-teenagers-killed?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 04:01 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 05:26 UTC",
       "l": "HIGH",
@@ -228,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 09:15 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 11:14 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli media claim IRGC naval commander killed. Iraqi Kurdish commander says there are no plans to invade Iran. Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Four injured in Tel Aviv by missile debris. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
