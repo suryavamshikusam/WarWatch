@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 04:30 UTC",
+  "generatedAt": "2026-03-26 08:10 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St \u00b7 US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensi\u2026",
-    "Other: Netanyahu's political advisor doubtful of Iran's willingness to negotiate \u00b7 Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Ira\u2026"
+    "Other: Iraqi Kurdish commander says there are no plans to invade Iran \u00b7 A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans \u2026",
+    "Other: Reports of injuries in Israel as second Iranian salvo detected in past 20 minute \u00b7 Israel\u2019s army says it detected a new wave of Iranian missiles, the second salvo \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-26 04:30 UTC",
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-26 08:10 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,31 +49,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St",
-      "summary": "US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensive\" wave of airstrikes in Iran, said the Israel Defense Forces (IDF). The military said that it targeted Iranian regime infrastructure sites.",
+      "time": "9 min ago",
+      "headline": "Iraqi Kurdish commander says there are no plans to invade Iran",
+      "summary": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensive\" wave of airstrikes in Iran, said the Israel Defense Forces (IDF). The military said that it targeted Iranian regime infrastructure sites.",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-iran-araghchi-trump-netanyahu-10601795/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
+      "sourceUrl": "https://www.middleeasteye.net/news/iraqi-kurdish-commander-says-there-are-no-plans-invade-iran",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Netanyahu's political advisor doubtful of Iran's willingness to negotiate",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Iran's willingness to negotiate an end to the war in an interview with CNN. \u201cWell, Iran always lies. We\u2019ve learned that they always lie,\u201d Ophir Falk remarked, adding that Tel Aviv's primary goal was to \"remove the existenti",
+      "time": "9 min ago",
+      "headline": "Reports of injuries in Israel as second Iranian salvo detected in past 20 minute",
+      "summary": "Israel\u2019s army says it detected a new wave of Iranian missiles, the second salvo in about 20 minutes. Sirens have sounded in\u00a0central Israel and Jerusalem. According to local media, loud explosions were heard in central Israel. Search and rescue teams are conducting operations in Petah Tikva and Kfar ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Iran's willingness to negotiate an end to the war in an interview with CNN. \u201cWell, Iran always lies. We\u2019ve learned that they always lie,\u201d Ophir Falk remarked, adding that Tel Aviv's primary goal was to \"remove the existenti",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-political-advisor-doubtful-irans-willingness-negotiate",
+      "fullAnalysis": "Israel\u2019s army says it detected a new wave of Iranian missiles, the second salvo in about 20 minutes. Sirens have sounded in\u00a0central Israel and Jerusalem. According to local media, loud explosions were heard in central Israel. Search and rescue teams are conducting operations in Petah Tikva and Kfar ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/second-iranian-salvo-detected-israel-past-30-minutes",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,7 +81,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 22:07 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 01:28 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 04:30 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 08:10 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St. Netanyahu's political advisor doubtful of Iran's willingness to negotiate. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iraqi Kurdish commander says there are no plans to invade Iran. Reports of injuries in Israel as second Iranian salvo detected in past 20 minute. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

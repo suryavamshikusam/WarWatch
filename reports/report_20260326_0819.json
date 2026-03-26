@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-26 08:10 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iraqi Kurdish commander says there are no plans to invade Iran. Reports of injuries in Israel as second Iranian salvo detected in past 20 minute. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iraqi Kurdish commander says there are no plans to invade Iran",
+      "detail": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iraqi-kurdish-commander-says-there-are-no-plans-invade-iran",
+      "fullAnalysis": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Reports of injuries in Israel as second Iranian salvo detected in past 20 minute",
+      "detail": "Israel\u2019s army says it detected a new wave of Iranian missiles, the second salvo in about 20 minutes. Sirens have sounded in\u00a0central Israel and Jerusalem. According to local media, loud explosions were heard in central Israel. Search and rescue teams are conducting operations in Petah Tikva and Kfar ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/second-iranian-salvo-detected-israel-past-30-minutes",
+      "fullAnalysis": "Israel\u2019s army says it detected a new wave of Iranian missiles, the second salvo in about 20 minutes. Sirens have sounded in\u00a0central Israel and Jerusalem. According to local media, loud explosions were heard in central Israel. Search and rescue teams are conducting operations in Petah Tikva and Kfar ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-26 08:10 UTC"
+}
