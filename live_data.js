@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-25 23:03 UTC",
+  "generatedAt": "2026-03-26 01:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Explosions and smoke seen as Iranian missiles hit Israel \u00b7 Explosions and smoke seen as Iranian missiles hit Israel Explosions and smoke we\u2026"
+    "Other: Iran-Israel war highlights: Israel strikes Tehran as Trump says U.S. negotiating \u00b7 Iran's domestically built missiles are displayed in a permanent exhibition at a \u2026",
+    "Other: Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon \u00b7 Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-25 23:03 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-26 01:47 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,15 +49,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Explosions and smoke seen as Iranian missiles hit Israel",
-      "summary": "Explosions and smoke seen as Iranian missiles hit Israel Explosions and smoke were seen in Israel after suspected Iranian strikes, including a reported hit on a power plant in Haifa and falling rocket fragments in the Negev desert.",
+      "time": "9 min ago",
+      "headline": "Iran-Israel war highlights: Israel strikes Tehran as Trump says U.S. negotiating",
+      "summary": "Iran's domestically built missiles are displayed in a permanent exhibition at a recreational area in northern Tehran, Iran, on March 24, 2026. \n                                                  | Photo Credit:  \n                          AP I srael struck the Iranian capital Tehran on Wednesday (Mar",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Explosions and smoke seen as Iranian missiles hit Israel Explosions and smoke were seen in Israel after suspected Iranian strikes, including a reported hit on a power plant in Haifa and falling rocket fragments in the Negev desert.",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/25/explosions-and-smoke-seen-as-iranian-missiles-hit-israel?traffic_source=rss",
+      "fullAnalysis": "Iran's domestically built missiles are displayed in a permanent exhibition at a recreational area in northern Tehran, Iran, on March 24, 2026. \n                                                  | Photo Credit:  \n                          AP I srael struck the Iranian capital Tehran on Wednesday (Mar",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-march-25-2026-highlights/article70782463.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon",
+      "summary": "Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/26/iran-war-live-us-demands-tehran-accept-defeat-israel-pounds-lebanon?traffic_source=rss",
       "sourceLabel": "Al Jazeera"
     },
     {
@@ -64,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 20:59 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 21:38 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-25 23:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 01:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Explosions and smoke seen as Iranian missiles hit Israel. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war highlights: Israel strikes Tehran as Trump says U.S. negotiating. Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
