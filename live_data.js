@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 11:14 UTC",
+  "generatedAt": "2026-03-26 12:01 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Four injured in Tel Aviv by missile debris \u00b7 Four people have been wounded in Tel Aviv after shrapnel from an Iranian missile\u2026"
+    "Other: Iran-Israel war LIVE: Iran\u2019s Parliament working on Bill to impose fees on ships  \u00b7 Cargo ships in the Gulf, near the Strait of Hormuz, as seen from northern Ras al\u2026",
+    "Other: Iranian naval commander Alireza Tangsiri killed in attack, Israel says \u00b7 An Israeli air strike has killed Alireza Tangsiri, commander of Iran\u2019s Islamic R\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-26 11:14 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-26 12:01 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Four injured in Tel Aviv by missile debris",
-      "summary": "Four people have been wounded in Tel Aviv after shrapnel from an Iranian missile fell across the city, Israeli media report. Reports said fragments landed in at least six locations, causing injuries and damage. Channel 12 said one site in the city sustained damage after debris struck the area.",
+      "time": "9 min ago",
+      "headline": "Iran-Israel war LIVE: Iran\u2019s Parliament working on Bill to impose fees on ships ",
+      "summary": "Cargo ships in the Gulf, near the Strait of Hormuz, as seen from northern Ras al-Khaimah, near the border with Oman\u2019s Musandam governance, amid the U.S.-Israeli war on Iran, in United Arab Emirates.\n                                                  | Photo Credit:  \n                          Reuters",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Four people have been wounded in Tel Aviv after shrapnel from an Iranian missile fell across the city, Israeli media report. Reports said fragments landed in at least six locations, causing injuries and damage. Channel 12 said one site in the city sustained damage after debris struck the area.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/four-injured-tel-aviv-missile-debris",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Cargo ships in the Gulf, near the Strait of Hormuz, as seen from northern Ras al-Khaimah, near the border with Oman\u2019s Musandam governance, amid the U.S.-Israeli war on Iran, in United Arab Emirates.\n                                                  | Photo Credit:  \n                          Reuters",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-live-updates-west-asia-conflict-march-26-2026/article70786492.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Iranian naval commander Alireza Tangsiri killed in attack, Israel says",
+      "summary": "An Israeli air strike has killed Alireza Tangsiri, commander of Iran\u2019s Islamic Revolutionary Guard Corps navy, Israel\u2019s defence minister says. The killing was carried out on Wednesday night \u201cin a precise \u2026 operation\u201d and targeted other \u201csenior officers of the naval command\u201d, Israel Katz said on Thur",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "An Israeli air strike has killed Alireza Tangsiri, commander of Iran\u2019s Islamic Revolutionary Guard Corps navy, Israel\u2019s defence minister says. The killing was carried out on Wednesday night \u201cin a precise \u2026 operation\u201d and targeted other \u201csenior officers of the naval command\u201d, Israel Katz said on Thur",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/26/iranian-naval-commander-alireza-tangsiri-killed-in-attack-says-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 05:26 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 06:40 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 11:14 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 12:01 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Four injured in Tel Aviv by missile debris. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war LIVE: Iran\u2019s Parliament working on Bill to impose fees on ships . Iranian naval commander Alireza Tangsiri killed in attack, Israel says. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-26 12:01 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war LIVE: Iran\u2019s Parliament working on Bill to impose fees on ships . Iranian naval commander Alireza Tangsiri killed in attack, Israel says. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran-Israel war LIVE: Iran\u2019s Parliament working on Bill to impose fees on ships ",
+      "detail": "Cargo ships in the Gulf, near the Strait of Hormuz, as seen from northern Ras al-Khaimah, near the border with Oman\u2019s Musandam governance, amid the U.S.-Israeli war on Iran, in United Arab Emirates.\n                                                  | Photo Credit:  \n                          Reuters",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-live-updates-west-asia-conflict-march-26-2026/article70786492.ece",
+      "fullAnalysis": "Cargo ships in the Gulf, near the Strait of Hormuz, as seen from northern Ras al-Khaimah, near the border with Oman\u2019s Musandam governance, amid the U.S.-Israeli war on Iran, in United Arab Emirates.\n                                                  | Photo Credit:  \n                          Reuters",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Iranian naval commander Alireza Tangsiri killed in attack, Israel says",
+      "detail": "An Israeli air strike has killed Alireza Tangsiri, commander of Iran\u2019s Islamic Revolutionary Guard Corps navy, Israel\u2019s defence minister says. The killing was carried out on Wednesday night \u201cin a precise \u2026 operation\u201d and targeted other \u201csenior officers of the naval command\u201d, Israel Katz said on Thur",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/26/iranian-naval-commander-alireza-tangsiri-killed-in-attack-says-israel?traffic_source=rss",
+      "fullAnalysis": "An Israeli air strike has killed Alireza Tangsiri, commander of Iran\u2019s Islamic Revolutionary Guard Corps navy, Israel\u2019s defence minister says. The killing was carried out on Wednesday night \u201cin a precise \u2026 operation\u201d and targeted other \u201csenior officers of the naval command\u201d, Israel Katz said on Thur",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-26 12:01 UTC"
+}
