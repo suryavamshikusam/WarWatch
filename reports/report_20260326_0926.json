@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-26 09:15 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli media claim IRGC naval commander killed. Iraqi Kurdish commander says there are no plans to invade Iran. Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Israeli media claim IRGC naval commander killed",
+      "detail": "Israeli media report that a senior commander in Iran\u2019s Revolutionary Guard Navy has been killed. Channel 12 said the commander was killed in Bandar Abbas and had been responsible for efforts to close the Strait of Hormuz. Channel 14 also reported that the commander of the Revolutionary Guard Navy ha",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-media-claim-irgc-naval-commander-killed",
+      "fullAnalysis": "Israeli media report that a senior commander in Iran\u2019s Revolutionary Guard Navy has been killed. Channel 12 said the commander was killed in Bandar Abbas and had been responsible for efforts to close the Strait of Hormuz. Channel 14 also reported that the commander of the Revolutionary Guard Navy ha",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iraqi Kurdish commander says there are no plans to invade Iran",
+      "detail": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iraqi-kurdish-commander-says-there-are-no-plans-invade-iran",
+      "fullAnalysis": "A top Iraqi Kurdish commander has told Middle East Eye his forces have no plans to invade Iran but that he is exasperated by Iranian attacks on their bases. Sirwan Barzani, a Peshmerga major-general and millionaire businessman, said that since the US - Israeli war on Iran began on 28 February, the K",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Two teenagers killed in Shiraz, two dead in Abu Dhabi as Iran war expands",
+      "detail": "As the US-Israel war on Iran expands, attacks by Israel and the United States killed two teenagers in Shiraz, while two people were reportedly killed in the Emirati capital, Abu Dhabi. The Iranian teenagers were killed on Wednesday evening in an assault on a residential area in the county of Shiraz,",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/26/us-israel-launch-extensive-strikes-on-central-iran-two-teenagers-killed?traffic_source=rss",
+      "fullAnalysis": "As the US-Israel war on Iran expands, attacks by Israel and the United States killed two teenagers in Shiraz, while two people were reportedly killed in the Emirati capital, Abu Dhabi. The Iranian teenagers were killed on Wednesday evening in an assault on a residential area in the county of Shiraz,",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-26 09:15 UTC"
+}
