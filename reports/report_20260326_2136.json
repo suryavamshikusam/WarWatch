@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-26 21:27 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: How Pakistan positioned itself at the centre of global crisis management. War on Iran could be 'catalyst' for erosion of US petrodollar, Deutsche Bank say. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "How Pakistan positioned itself at the centre of global crisis management",
+      "detail": "In the high-stakes theatre of Middle Eastern diplomacy, where the line between war and peace is obscured by the smoke of active air strikes and the volatility of global energy markets, an unlikely protagonist has stepped into the spotlight. Pakistan , a nuclear-armed state long portrayed through the",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/how-pakistan-positioned-itself-centre-global-crisis-management",
+      "fullAnalysis": "In the high-stakes theatre of Middle Eastern diplomacy, where the line between war and peace is obscured by the smoke of active air strikes and the volatility of global energy markets, an unlikely protagonist has stepped into the spotlight. Pakistan , a nuclear-armed state long portrayed through the",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "War on Iran could be 'catalyst' for erosion of US petrodollar, Deutsche Bank say",
+      "detail": "The US-Israeli war on Iran could usher in the end of the petrodollar, a key pillar of the US\u2019s financial heft in the world, according to a new report by Deutsche Bank. \"The huge strategic importance of the Middle East to the dollar's role as the world's reserve currency should not be underestimated.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/war-iran-could-be-catalyst-erosion-us-petrodollar-deutsche-bank-says",
+      "fullAnalysis": "The US-Israeli war on Iran could usher in the end of the petrodollar, a key pillar of the US\u2019s financial heft in the world, according to a new report by Deutsche Bank. \"The huge strategic importance of the Middle East to the dollar's role as the world's reserve currency should not be underestimated.",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-26 21:27 UTC"
+}
