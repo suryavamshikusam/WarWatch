@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 01:47 UTC",
+  "generatedAt": "2026-03-26 04:30 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran-Israel war highlights: Israel strikes Tehran as Trump says U.S. negotiating \u00b7 Iran's domestically built missiles are displayed in a permanent exhibition at a \u2026",
-    "Other: Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon \u00b7 Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon"
+    "Other: US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St \u00b7 US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensi\u2026",
+    "Other: Netanyahu's political advisor doubtful of Iran's willingness to negotiate \u00b7 Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Ira\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-26 01:47 UTC",
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-26 04:30 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,39 +49,39 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran-Israel war highlights: Israel strikes Tehran as Trump says U.S. negotiating",
-      "summary": "Iran's domestically built missiles are displayed in a permanent exhibition at a recreational area in northern Tehran, Iran, on March 24, 2026. \n                                                  | Photo Credit:  \n                          AP I srael struck the Iranian capital Tehran on Wednesday (Mar",
+      "time": "8 min ago",
+      "headline": "US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St",
+      "summary": "US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensive\" wave of airstrikes in Iran, said the Israel Defense Forces (IDF). The military said that it targeted Iranian regime infrastructure sites.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran's domestically built missiles are displayed in a permanent exhibition at a recreational area in northern Tehran, Iran, on March 24, 2026. \n                                                  | Photo Credit:  \n                          AP I srael struck the Iranian capital Tehran on Wednesday (Mar",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-march-25-2026-highlights/article70782463.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensive\" wave of airstrikes in Iran, said the Israel Defense Forces (IDF). The military said that it targeted Iranian regime infrastructure sites.",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-iran-araghchi-trump-netanyahu-10601795/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon",
-      "summary": "Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon",
+      "time": "8 min ago",
+      "headline": "Netanyahu's political advisor doubtful of Iran's willingness to negotiate",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Iran's willingness to negotiate an end to the war in an interview with CNN. \u201cWell, Iran always lies. We\u2019ve learned that they always lie,\u201d Ophir Falk remarked, adding that Tel Aviv's primary goal was to \"remove the existenti",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/26/iran-war-live-us-demands-tehran-accept-defeat-israel-pounds-lebanon?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Iran's willingness to negotiate an end to the war in an interview with CNN. \u201cWell, Iran always lies. We\u2019ve learned that they always lie,\u201d Ophir Falk remarked, adding that Tel Aviv's primary goal was to \"remove the existenti",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-political-advisor-doubtful-irans-willingness-negotiate",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-24 21:38 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-24 22:07 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 01:47 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 04:30 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war highlights: Israel strikes Tehran as Trump says U.S. negotiating. Iran war live: US demands Tehran accept defeat; Israel pounds Lebanon. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St. Netanyahu's political advisor doubtful of Iran's willingness to negotiate. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

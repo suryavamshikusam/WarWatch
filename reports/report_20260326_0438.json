@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-26 04:30 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St. Netanyahu's political advisor doubtful of Iran's willingness to negotiate. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "US-Israel-Iran War News Live Updates: Iran allows passage to India, China via St",
+      "detail": "US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensive\" wave of airstrikes in Iran, said the Israel Defense Forces (IDF). The military said that it targeted Iranian regime infrastructure sites.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-news-live-updates-iran-araghchi-trump-netanyahu-10601795/",
+      "fullAnalysis": "US-Israel-Iran War News Live Updates: The Israeli Air Force launched an \"extensive\" wave of airstrikes in Iran, said the Israel Defense Forces (IDF). The military said that it targeted Iranian regime infrastructure sites.",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Netanyahu's political advisor doubtful of Iran's willingness to negotiate",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Iran's willingness to negotiate an end to the war in an interview with CNN. \u201cWell, Iran always lies. We\u2019ve learned that they always lie,\u201d Ophir Falk remarked, adding that Tel Aviv's primary goal was to \"remove the existenti",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahus-political-advisor-doubtful-irans-willingness-negotiate",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu's political advisor has\u00a0questioned\u00a0Iran's willingness to negotiate an end to the war in an interview with CNN. \u201cWell, Iran always lies. We\u2019ve learned that they always lie,\u201d Ophir Falk remarked, adding that Tel Aviv's primary goal was to \"remove the existenti",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-26 04:30 UTC"
+}
