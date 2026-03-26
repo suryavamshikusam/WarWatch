@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 19:35 UTC",
+  "generatedAt": "2026-03-26 20:52 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Targeted assassinations of Iranian leaders will continue, Israeli military spoke \u00b7 Israeli military Spokesman Brig. Gen. Effie Defrin said that the Israeli militar\u2026"
+    "Other: Trump has called Middle East wars 'crazy', but the US-Israel war on Iran may be  \u00b7 It is difficult to overstate the extent of US President Donald Trump 's Iran war\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-26 19:35 UTC",
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-26 20:52 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Targeted assassinations of Iranian leaders will continue, Israeli military spoke",
-      "summary": "Israeli military Spokesman Brig. Gen. Effie Defrin said that the Israeli military will continue to pursue Iranian leaders, following the killing of IRGC Navy chief Alireza Tangsiri in Bandar Abbas overnight, the Times of Israel is reporting. \u201cThe eliminations will not stop; we will continue to pursu",
+      "time": "7 min ago",
+      "headline": "Trump has called Middle East wars 'crazy', but the US-Israel war on Iran may be ",
+      "summary": "It is difficult to overstate the extent of US President Donald Trump 's Iran war misadventure. Despite Trump's claims to the contrary, his decision to go to war with Iran has produced an unmitigated disaster. In one fell swoop, Trump has undermined his own political brand, hardened Iranian resolve, ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli military Spokesman Brig. Gen. Effie Defrin said that the Israeli military will continue to pursue Iranian leaders, following the killing of IRGC Navy chief Alireza Tangsiri in Bandar Abbas overnight, the Times of Israel is reporting. \u201cThe eliminations will not stop; we will continue to pursu",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/targeted-assassinations-iranian-leaders-will-continue-idf-spokesman-says",
+      "fullAnalysis": "It is difficult to overstate the extent of US President Donald Trump 's Iran war misadventure. Despite Trump's claims to the contrary, his decision to go to war with Iran has produced an unmitigated disaster. In one fell swoop, Trump has undermined his own political brand, hardened Iranian resolve, ",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/trump-has-called-middle-east-wars-crazy-us-israel-iran-war-may-be-craziest-yet",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 14:21 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 15:45 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 19:35 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 20:52 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Targeted assassinations of Iranian leaders will continue, Israeli military spoke. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump has called Middle East wars 'crazy', but the US-Israel war on Iran may be . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
