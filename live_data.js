@@ -1,14 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 14:49 UTC",
+  "generatedAt": "2026-03-26 16:08 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian naval chief killed in attack, Israel says \u00b7 Iranian naval chief killed in attack, Israel says Israel says it has killed IRGC\u2026"
+    "Other: UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war \u00b7 The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire\u2026",
+    "Other: Iran war is a test the Gulf cannot afford to fail \u00b7 As the Middle East teeters on the edge of a broader conflagration, the daily hea\u2026",
+    "Other: UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war \u00b7 The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire\u2026",
+    "Other: West Bank Palestinians face Israel's interceptor debris with no protection \u00b7 For days, Hadeel al-Masalmeh has sat alone in her room, refusing to speak. The 2\u2026",
+    "Other: Cubans face darkest hour as US blockade strangles island \u00b7 \u201cThe resilience\u2026\u201d\u00a0The lights went out before the Irish rapper Mo Chara could fin\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-26 14:49 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-26 16:08 UTC",
+    "sourcesUsed": 5
   },
   "tensionMeters": [
     {
@@ -48,26 +52,90 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "5 min ago",
-      "headline": "Iranian naval chief killed in attack, Israel says",
-      "summary": "Iranian naval chief killed in attack, Israel says Israel says it has killed IRGC naval commander Alireza Tangsiri in a strike near Bandar Abbas by the Strait of Hormuz.",
+      "time": "16 min ago",
+      "headline": "UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war",
+      "summary": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iranian naval chief killed in attack, Israel says Israel says it has killed IRGC naval commander Alireza Tangsiri in a strike near Bandar Abbas by the Strait of Hormuz.",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/26/iranian-naval-chief-killed-in-attack-israel-says?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "sourceUrl": "https://www.middleeasteye.net/news/uae-envoy-says-ceasefire-not-enough-calls-escalation-israel-us-war-iran",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Iran war is a test the Gulf cannot afford to fail",
+      "summary": "As the Middle East teeters on the edge of a broader conflagration, the daily headlines \u2013 focusing on missiles, drones and death tolls \u2013 capture the immediate horrors, but miss the deeper story. The current escalation involving Iran , Israel and the United States is not merely another tragic chapter ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "As the Middle East teeters on the edge of a broader conflagration, the daily headlines \u2013 focusing on missiles, drones and death tolls \u2013 capture the immediate horrors, but miss the deeper story. The current escalation involving Iran , Israel and the United States is not merely another tragic chapter ",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/iran-war-test-gulf-cannot-afford-fail",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war",
+      "summary": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-envoy-us-says-ceasefire-not-enough-and-calls-escalation-iran-war",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "West Bank Palestinians face Israel's interceptor debris with no protection",
+      "summary": "For days, Hadeel al-Masalmeh has sat alone in her room, refusing to speak. The 23-year-old Palestinian is still reeling from last week\u2019s deadly strike, when missile shrapnel tore through the beauty salon she co-owned with her cousin and friend, Sahira al-Masalmeh, near Hebron in the occupied West Ba",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "For days, Hadeel al-Masalmeh has sat alone in her room, refusing to speak. The 23-year-old Palestinian is still reeling from last week\u2019s deadly strike, when missile shrapnel tore through the beauty salon she co-owned with her cousin and friend, Sahira al-Masalmeh, near Hebron in the occupied West Ba",
+      "sourceUrl": "https://www.middleeasteye.net/news/west-bank-palestinians-face-israels-interceptor-debris-no-protection",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Cubans face darkest hour as US blockade strangles island",
+      "summary": "\u201cThe resilience\u2026\u201d\u00a0The lights went out before the Irish rapper Mo Chara could finish his sentence. Kneecap was holding a press conference on Saturday in Havana\u2019s Vedado neighbourhood as part of the Nuestra America Convoy, an international aid mission that had brought the Irish group to Cuba 's capita",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "\u201cThe resilience\u2026\u201d\u00a0The lights went out before the Irish rapper Mo Chara could finish his sentence. Kneecap was holding a press conference on Saturday in Havana\u2019s Vedado neighbourhood as part of the Nuestra America Convoy, an international aid mission that had brought the Irish group to Cuba 's capita",
+      "sourceUrl": "https://www.middleeasteye.net/news/after-gaza-and-iran-cubans-face-darkest-hour-blockade",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "5 min ago",
+      "time": "16 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +163,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 09:31 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 10:28 UTC",
       "l": "HIGH",
@@ -194,11 +257,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 14:49 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-26 16:08 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian naval chief killed in attack, Israel says. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war. Iran war is a test the Gulf cannot afford to fail. UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war. West Bank Palestinians face Israel's interceptor debris with no protection. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

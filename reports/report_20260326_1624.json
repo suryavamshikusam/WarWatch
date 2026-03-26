@@ -1,0 +1,104 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-26 16:08 UTC",
+  "executive_summary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war. Iran war is a test the Gulf cannot afford to fail. UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war. West Bank Palestinians face Israel's interceptor debris with no protection. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war",
+      "detail": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/uae-envoy-says-ceasefire-not-enough-calls-escalation-israel-us-war-iran",
+      "fullAnalysis": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war is a test the Gulf cannot afford to fail",
+      "detail": "As the Middle East teeters on the edge of a broader conflagration, the daily headlines \u2013 focusing on missiles, drones and death tolls \u2013 capture the immediate horrors, but miss the deeper story. The current escalation involving Iran , Israel and the United States is not merely another tragic chapter ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/iran-war-test-gulf-cannot-afford-fail",
+      "fullAnalysis": "As the Middle East teeters on the edge of a broader conflagration, the daily headlines \u2013 focusing on missiles, drones and death tolls \u2013 capture the immediate horrors, but miss the deeper story. The current escalation involving Iran , Israel and the United States is not merely another tragic chapter ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "UAE envoy to US says \u2018ceasefire not enough\u2019 and calls for escalation in Iran war",
+      "detail": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-envoy-us-says-ceasefire-not-enough-and-calls-escalation-iran-war",
+      "fullAnalysis": "The United Arab Emirates (UAE)\u00a0ambassador to the US has said \u201ca simple ceasefire is not enough\u201d in the ongoing Israeli -US war on Iran , calling instead for a \u201cconclusive outcome\u201d against Tehran. Writing in the Wall Street Journal ,\u00a0Yousef al-Otaiba did not mention who initiated the war and seemed t",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "West Bank Palestinians face Israel's interceptor debris with no protection",
+      "detail": "For days, Hadeel al-Masalmeh has sat alone in her room, refusing to speak. The 23-year-old Palestinian is still reeling from last week\u2019s deadly strike, when missile shrapnel tore through the beauty salon she co-owned with her cousin and friend, Sahira al-Masalmeh, near Hebron in the occupied West Ba",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/west-bank-palestinians-face-israels-interceptor-debris-no-protection",
+      "fullAnalysis": "For days, Hadeel al-Masalmeh has sat alone in her room, refusing to speak. The 23-year-old Palestinian is still reeling from last week\u2019s deadly strike, when missile shrapnel tore through the beauty salon she co-owned with her cousin and friend, Sahira al-Masalmeh, near Hebron in the occupied West Ba",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Cubans face darkest hour as US blockade strangles island",
+      "detail": "\u201cThe resilience\u2026\u201d\u00a0The lights went out before the Irish rapper Mo Chara could finish his sentence. Kneecap was holding a press conference on Saturday in Havana\u2019s Vedado neighbourhood as part of the Nuestra America Convoy, an international aid mission that had brought the Irish group to Cuba 's capita",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/after-gaza-and-iran-cubans-face-darkest-hour-blockade",
+      "fullAnalysis": "\u201cThe resilience\u2026\u201d\u00a0The lights went out before the Irish rapper Mo Chara could finish his sentence. Kneecap was holding a press conference on Saturday in Havana\u2019s Vedado neighbourhood as part of the Nuestra America Convoy, an international aid mission that had brought the Irish group to Cuba 's capita",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 5,
+  "generated_at": "2026-03-26 16:08 UTC"
+}
