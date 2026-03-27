@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 19:13 UTC",
+  "generatedAt": "2026-03-27 20:32 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: How Trump's regime has become captive to its own lies \u00b7 In The Power of the Powerless , Vaclav Havel described a system in which lies ar\u2026",
-    "Other: Rubio says US expects to finish Iran war 'in next couple of weeks' \u00b7 US Secretary of State Marco Rubio says the US expects to finish its operations i\u2026"
+    "Other: Drone reveals extent of Iranian missile damage in Israeli city of Arad \u00b7 Drone reveals extent of Iranian missile damage in Israeli city of Arad Drone foo\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-27 19:13 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-27 20:32 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "How Trump's regime has become captive to its own lies",
-      "summary": "In The Power of the Powerless , Vaclav Havel described a system in which lies are not incidental, but foundational. A system that does not merely tolerate falsehood, but requires it, reproduces it, lives within it: \u201cBecause the regime is captive to its own lies, it must falsify everything.\u201d What Hav",
+      "time": "7 min ago",
+      "headline": "Drone reveals extent of Iranian missile damage in Israeli city of Arad",
+      "summary": "Drone reveals extent of Iranian missile damage in Israeli city of Arad Drone footage has revealed the extent of damage in Arad days after an Iranian missile attack that injured at least 116 people.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "In The Power of the Powerless , Vaclav Havel described a system in which lies are not incidental, but foundational. A system that does not merely tolerate falsehood, but requires it, reproduces it, lives within it: \u201cBecause the regime is captive to its own lies, it must falsify everything.\u201d What Hav",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/how-trumps-regime-has-become-captive-its-own-lies",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Rubio says US expects to finish Iran war 'in next couple of weeks'",
-      "summary": "US Secretary of State Marco Rubio says the US expects to finish its operations in Iran \"in the next couple of weeks\". The objectives were being achieved and were ahead of schedule, he said at the end of a meeting in France of foreign ministers from the group of major Western economies, known the G7.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "US Secretary of State Marco Rubio says the US expects to finish its operations in Iran \"in the next couple of weeks\". The objectives were being achieved and were ahead of schedule, he said at the end of a meeting in France of foreign ministers from the group of major Western economies, known the G7.",
-      "sourceUrl": "https://www.bbc.com/news/articles/c1l9vz064nqo?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC"
+      "fullAnalysis": "Drone reveals extent of Iranian missile damage in Israeli city of Arad Drone footage has revealed the extent of damage in Arad days after an Iranian missile attack that injured at least 116 people.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/27/drone-reveals-extent-of-iranian-missile-damage-in-israeli-city-of-arad?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 18:16 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 19:35 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 19:13 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 20:32 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: How Trump's regime has become captive to its own lies. Rubio says US expects to finish Iran war 'in next couple of weeks'. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Drone reveals extent of Iranian missile damage in Israeli city of Arad. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
