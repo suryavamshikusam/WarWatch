@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 01:48 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Trump delays attacks on Iranian energy sector by 10 days. Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree. Iranian Foreign Minister defends Hormuz Strait curb. Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+      "detail": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/27/iran-war-live-trump-delays-attacks-on-iranian-energy-sector-by-10-days?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree",
+      "detail": "President Donald Trump speaks during a Cabinet meeting at the White House in Washington, D.C. on March 26, 2026.\n                                                  | Photo Credit:  \n                          AP U .S. President Donald Trump said on Thursday (March 27, 2026) he will delay a threatened ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-highlights-west-asia-conflict-march-26-2026/article70786492.ece",
+      "fullAnalysis": "President Donald Trump speaks during a Cabinet meeting at the White House in Washington, D.C. on March 26, 2026.\n                                                  | Photo Credit:  \n                          AP U .S. President Donald Trump said on Thursday (March 27, 2026) he will delay a threatened ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Iranian Foreign Minister defends Hormuz Strait curb",
+      "detail": "Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Guterres\u00a0said that the country's blocking of vessels in the Strait of Hormuz is Tehran's legal right. Araghchi said that the current insecurity in the waterway\u00a0\"was a direct result of lawbreaking and aggression\" by the US an",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-foreign-minister-defends-hormuz-strait-curb",
+      "fullAnalysis": "Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Guterres\u00a0said that the country's blocking of vessels in the Strait of Hormuz is Tehran's legal right. Araghchi said that the current insecurity in the waterway\u00a0\"was a direct result of lawbreaking and aggression\" by the US an",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t",
+      "detail": "A local digs with his shovel inside a crater created by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Nabi Chit, Lebanon on March 26, 2026.\n                                                  | Photo Credit:  \n        ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-highlights-west-asia-conflict-march-27-2026/article70790939.ece",
+      "fullAnalysis": "A local digs with his shovel inside a crater created by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Nabi Chit, Lebanon on March 26, 2026.\n                                                  | Photo Credit:  \n        ",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-27 01:48 UTC"
+}

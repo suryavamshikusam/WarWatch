@@ -1,14 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-26 22:23 UTC",
+  "generatedAt": "2026-03-27 01:48 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump postpones US strikes on Iranian power grid to April 6 amid talks \u00b7 United States President Donald Trump has pushed back a self-imposed deadline for\u2026"
+    "Other: Iran war live: Trump delays attacks on Iranian energy sector by 10 days \u00b7 Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+    "Other: Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree \u00b7 President Donald Trump speaks during a Cabinet meeting at the White House in Was\u2026",
+    "Other: Iranian Foreign Minister defends Hormuz Strait curb \u00b7 Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Gute\u2026",
+    "Other: Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t \u00b7 A local digs with his shovel inside a crater created by an Israeli strike, amid \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-26 22:23 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-27 01:48 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -48,26 +51,74 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Trump postpones US strikes on Iranian power grid to April 6 amid talks",
-      "summary": "United States President Donald Trump has pushed back a self-imposed deadline for attacks on Iran\u2019s power grid to April 6, citing progress in negotiations to end the ongoing war in the country. Thursday\u2019s announcement comes as the president continues to pressure Iran to reopen the Strait of Hormuz, a",
+      "time": "13 min ago",
+      "headline": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+      "summary": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "United States President Donald Trump has pushed back a self-imposed deadline for attacks on Iran\u2019s power grid to April 6, citing progress in negotiations to end the ongoing war in the country. Thursday\u2019s announcement comes as the president continues to pressure Iran to reopen the Strait of Hormuz, a",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/26/trump-postpones-us-strikes-on-iranian-power-grid-to-april-6-amid-talks?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/27/iran-war-live-trump-delays-attacks-on-iranian-energy-sector-by-10-days?traffic_source=rss",
       "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree",
+      "summary": "President Donald Trump speaks during a Cabinet meeting at the White House in Washington, D.C. on March 26, 2026.\n                                                  | Photo Credit:  \n                          AP U .S. President Donald Trump said on Thursday (March 27, 2026) he will delay a threatened ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "President Donald Trump speaks during a Cabinet meeting at the White House in Washington, D.C. on March 26, 2026.\n                                                  | Photo Credit:  \n                          AP U .S. President Donald Trump said on Thursday (March 27, 2026) he will delay a threatened ",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-highlights-west-asia-conflict-march-26-2026/article70786492.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iranian Foreign Minister defends Hormuz Strait curb",
+      "summary": "Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Guterres\u00a0said that the country's blocking of vessels in the Strait of Hormuz is Tehran's legal right. Araghchi said that the current insecurity in the waterway\u00a0\"was a direct result of lawbreaking and aggression\" by the US an",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Guterres\u00a0said that the country's blocking of vessels in the Strait of Hormuz is Tehran's legal right. Araghchi said that the current insecurity in the waterway\u00a0\"was a direct result of lawbreaking and aggression\" by the US an",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-foreign-minister-defends-hormuz-strait-curb",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t",
+      "summary": "A local digs with his shovel inside a crater created by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Nabi Chit, Lebanon on March 26, 2026.\n                                                  | Photo Credit:  \n        ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "A local digs with his shovel inside a crater created by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Nabi Chit, Lebanon on March 26, 2026.\n                                                  | Photo Credit:  \n        ",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-highlights-west-asia-conflict-march-27-2026/article70790939.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 17:54 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 18:48 UTC",
       "l": "HIGH",
@@ -194,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-26 22:23 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 01:48 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump postpones US strikes on Iranian power grid to April 6 amid talks. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Trump delays attacks on Iranian energy sector by 10 days. Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree. Iranian Foreign Minister defends Hormuz Strait curb. Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
