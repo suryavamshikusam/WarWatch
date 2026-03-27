@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 09:09 UTC",
+  "generatedAt": "2026-03-27 10:08 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel army says it is targeting Iran's ballistic missile system \u00b7 The Israeli army said in a statement that it targeted Iranian military infrastru\u2026"
+    "Other: Iran-Israel war: A day\u2011by\u2011day rundown of the escalating crisis \u00b7 A plume of smoke rises from the site of an Israeli airstrike in the southern sub\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-27 09:09 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-27 10:08 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Israel army says it is targeting Iran's ballistic missile system",
-      "summary": "The Israeli army said in a statement that it targeted Iranian military infrastructure overnight, including\u00a0missile launchers and storage sites. It added that ballistic missiles were especially targeted to reduce the number of launches against Israel.",
+      "time": "6 min ago",
+      "headline": "Iran-Israel war: A day\u2011by\u2011day rundown of the escalating crisis",
+      "summary": "A plume of smoke rises from the site of an Israeli airstrike in the southern suburbs of Beirut in Lebanon. File\n                                          | Photo Credit: AFP The United States and Israel launched an attack on Saturday (February 28, 2026) on Iran, plunging West Asia into a new conflic",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli army said in a statement that it targeted Iranian military infrastructure overnight, including\u00a0missile launchers and storage sites. It added that ballistic missiles were especially targeted to reduce the number of launches against Israel.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-army-says-it-targeting-irans-ballistic-missile-system",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "A plume of smoke rises from the site of an Israeli airstrike in the southern suburbs of Beirut in Lebanon. File\n                                          | Photo Credit: AFP The United States and Israel launched an attack on Saturday (February 28, 2026) on Iran, plunging West Asia into a new conflic",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-united-states-west-asia-gulf-middle-east-escalating-crisis/article70702914.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 04:30 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 08:10 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 09:09 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 10:08 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel army says it is targeting Iran's ballistic missile system. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war: A day\u2011by\u2011day rundown of the escalating crisis. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
