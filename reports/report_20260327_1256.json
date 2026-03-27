@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 12:47 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report. Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report",
+      "detail": "A majority of states among the 21 members of the executive bureau of the International Criminal Court's ruling body are in favour of upholding the findings of a judicial panel which cleared chief prosecutor Karim Khan of wrongdoing, according to French newspaper Le Monde. Le Monde's report comes aft",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/le-monde-majority-icc-bureau-members-support-karim-khan-exoneration",
+      "fullAnalysis": "A majority of states among the 21 members of the executive bureau of the International Criminal Court's ruling body are in favour of upholding the findings of a judicial panel which cleared chief prosecutor Karim Khan of wrongdoing, according to French newspaper Le Monde. Le Monde's report comes aft",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia",
+      "detail": "Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countries continue to come under Iranian attack amid the United States and Israel\u2019s war on Iran. President Volodymyr Zelenskyy, who arrived in the kingdom on Thursday, said on X that an \u201cimportant arrangement\u201d had been made ahe",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/ukraine-announces-defense-pact-with-saudi-arabia?traffic_source=rss",
+      "fullAnalysis": "Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countries continue to come under Iranian attack amid the United States and Israel\u2019s war on Iran. President Volodymyr Zelenskyy, who arrived in the kingdom on Thursday, said on X that an \u201cimportant arrangement\u201d had been made ahe",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-27 12:47 UTC"
+}

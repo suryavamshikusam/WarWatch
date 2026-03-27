@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 11:56 UTC",
+  "generatedAt": "2026-03-27 12:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: IRGC says it 'turned back' three ships in Strait of Hormuz \u00b7 Iran's Islamic Revolutionary Guard Corps said on Friday that it had turned back \u2026"
+    "Other: Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report \u00b7 A majority of states among the 21 members of the executive bureau of the Interna\u2026",
+    "Other: Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia \u00b7 Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-27 11:56 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-27 12:47 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "IRGC says it 'turned back' three ships in Strait of Hormuz",
-      "summary": "Iran's Islamic Revolutionary Guard Corps said on Friday that it had turned back three ships trying to transit the Strait of Hormuz, adding the route was closed to vessels travelling to and from ports linked to its \"enemies\". \"This morning, following the lies of the corrupt US president claiming that",
+      "time": "9 min ago",
+      "headline": "Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report",
+      "summary": "A majority of states among the 21 members of the executive bureau of the International Criminal Court's ruling body are in favour of upholding the findings of a judicial panel which cleared chief prosecutor Karim Khan of wrongdoing, according to French newspaper Le Monde. Le Monde's report comes aft",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran's Islamic Revolutionary Guard Corps said on Friday that it had turned back three ships trying to transit the Strait of Hormuz, adding the route was closed to vessels travelling to and from ports linked to its \"enemies\". \"This morning, following the lies of the corrupt US president claiming that",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-guards-say-turned-back-three-ships-strait-hormuz",
+      "fullAnalysis": "A majority of states among the 21 members of the executive bureau of the International Criminal Court's ruling body are in favour of upholding the findings of a judicial panel which cleared chief prosecutor Karim Khan of wrongdoing, according to French newspaper Le Monde. Le Monde's report comes aft",
+      "sourceUrl": "https://www.middleeasteye.net/news/le-monde-majority-icc-bureau-members-support-karim-khan-exoneration",
       "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia",
+      "summary": "Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countries continue to come under Iranian attack amid the United States and Israel\u2019s war on Iran. President Volodymyr Zelenskyy, who arrived in the kingdom on Thursday, said on X that an \u201cimportant arrangement\u201d had been made ahe",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countries continue to come under Iranian attack amid the United States and Israel\u2019s war on Iran. President Volodymyr Zelenskyy, who arrived in the kingdom on Thursday, said on X that an \u201cimportant arrangement\u201d had been made ahe",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/ukraine-announces-defense-pact-with-saudi-arabia?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 11:14 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 12:01 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 11:56 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 12:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC says it 'turned back' three ships in Strait of Hormuz. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report. Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
