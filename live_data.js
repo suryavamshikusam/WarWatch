@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 12:47 UTC",
+  "generatedAt": "2026-03-27 14:09 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report \u00b7 A majority of states among the 21 members of the executive bureau of the Interna\u2026",
-    "Other: Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia \u00b7 Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countri\u2026"
+    "Other: US and Israel 'burning through' Tomahawk and interceptor missiles in Iran \u00b7 The US and Israel are \"burning through\" their supply of Tomahawk and interceptor\u2026",
+    "Other: \u2018Policing thought\u2019: French bill to fight antisemitism accused of silencing Israe \u00b7 A bill \"aimed at combating renewed forms of antisemitism\", which is due to be de\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-27 12:47 UTC",
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-27 14:09 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report",
-      "summary": "A majority of states among the 21 members of the executive bureau of the International Criminal Court's ruling body are in favour of upholding the findings of a judicial panel which cleared chief prosecutor Karim Khan of wrongdoing, according to French newspaper Le Monde. Le Monde's report comes aft",
+      "headline": "US and Israel 'burning through' Tomahawk and interceptor missiles in Iran",
+      "summary": "The US and Israel are \"burning through\" their supply of Tomahawk and interceptor missiles in their war on Iran , alarming some in the Pentagon. According to officials speaking to the Washington Post, the US\u00a0has fired more than 850 Tomahawk cruise missiles in four weeks of its war with Iran. Only a f",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A majority of states among the 21 members of the executive bureau of the International Criminal Court's ruling body are in favour of upholding the findings of a judicial panel which cleared chief prosecutor Karim Khan of wrongdoing, according to French newspaper Le Monde. Le Monde's report comes aft",
-      "sourceUrl": "https://www.middleeasteye.net/news/le-monde-majority-icc-bureau-members-support-karim-khan-exoneration",
+      "fullAnalysis": "The US and Israel are \"burning through\" their supply of Tomahawk and interceptor missiles in their war on Iran , alarming some in the Pentagon. According to officials speaking to the Washington Post, the US\u00a0has fired more than 850 Tomahawk cruise missiles in four weeks of its war with Iran. Only a f",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-israel-burning-through-tomahawk-interceptor-missiles-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia",
-      "summary": "Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countries continue to come under Iranian attack amid the United States and Israel\u2019s war on Iran. President Volodymyr Zelenskyy, who arrived in the kingdom on Thursday, said on X that an \u201cimportant arrangement\u201d had been made ahe",
+      "headline": "\u2018Policing thought\u2019: French bill to fight antisemitism accused of silencing Israe",
+      "summary": "A bill \"aimed at combating renewed forms of antisemitism\", which is due to be debated on by parliament next month, has sparked a heated controversy in France in recent weeks. Many organisations and parts of the political left suspect the proposed legislation of exploiting the fight against antisemit",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Ukraine says it has signed a defence agreement with Saudi Arabia as Gulf countries continue to come under Iranian attack amid the United States and Israel\u2019s war on Iran. President Volodymyr Zelenskyy, who arrived in the kingdom on Thursday, said on X that an \u201cimportant arrangement\u201d had been made ahe",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/ukraine-announces-defense-pact-with-saudi-arabia?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "A bill \"aimed at combating renewed forms of antisemitism\", which is due to be debated on by parliament next month, has sparked a heated controversy in France in recent weeks. Many organisations and parts of the political left suspect the proposed legislation of exploiting the fight against antisemit",
+      "sourceUrl": "https://www.middleeasteye.net/news/policing-thought-french-bill-renewed-forms-antisemitism-accused-silencing-israel-critics",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 12:01 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 13:25 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 12:47 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 14:09 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Le Monde: 'Majority' of ICC bureau members support Karim Khan exoneration report. Ukraine announces \u2018mutually beneficial\u2019 defence deal with Saudi Arabia. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US and Israel 'burning through' Tomahawk and interceptor missiles in Iran. \u2018Policing thought\u2019: French bill to fight antisemitism accused of silencing Israe. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
