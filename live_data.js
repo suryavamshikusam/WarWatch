@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 05:59 UTC",
+  "generatedAt": "2026-03-27 07:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz \u00b7 Image for representational purposes only. File Photo.\n                          \u2026",
-    "Other: UAE urges international force to reopen Hormuz Strait: Report \u00b7 The United Arab Emirates has told allies that it would join a multinational mari\u2026"
+    "Other: Trump extends Hormuz deadline even as strikes continue; oil prices ease: What's  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-03-27 05:59 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 4,
+    "lastUpdated": "2026-03-27 07:06 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz",
-      "summary": "Image for representational purposes only. File Photo.\n                                          | Photo Credit: Reuters Amid the escalating war in the Middle East, Iran has given its explicit permission to some countries, allowing their ships to safely pass through the strategic Strait of Hormuz. St",
+      "time": "7 min ago",
+      "headline": "Trump extends Hormuz deadline even as strikes continue; oil prices ease: What's ",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Image for representational purposes only. File Photo.\n                                          | Photo Credit: Reuters Amid the escalating war in the Middle East, Iran has given its explicit permission to some countries, allowing their ships to safely pass through the strategic Strait of Hormuz. St",
-      "sourceUrl": "https://www.thehindu.com/news/international/us-israel-iran-war-list-of-countries-allowed-to-cross-the-strait-of-hormuz/article70791104.ece",
-      "sourceLabel": "The Hindu"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "UAE urges international force to reopen Hormuz Strait: Report",
-      "summary": "The United Arab Emirates has told allies that it would join a multinational maritime task force aimed at reopening the Strait of Hormuz as it suffers from Iran's curb on the waterway, according to a report by the Financial Times. \u201cThe focus is on creating as broad an international force as possible,",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "The United Arab Emirates has told allies that it would join a multinational maritime task force aimed at reopening the Strait of Hormuz as it suffers from Iran's curb on the waterway, according to a report by the Financial Times. \u201cThe focus is on creating as broad an international force as possible,",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-urges-international-force-reopen-hormuz-strait-report",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/trump-extends-hormuz-deadline-even-as-strikes-continue-oil-prices-ease-whats-happening-in-us-israel-vs-iran-war/articleshow/129839061.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 21:45 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 23:03 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 05:59 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 07:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz. UAE urges international force to reopen Hormuz Strait: Report. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump extends Hormuz deadline even as strikes continue; oil prices ease: What's . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
