@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 07:06 UTC",
+  "generatedAt": "2026-03-27 08:08 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump extends Hormuz deadline even as strikes continue; oil prices ease: What's  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Israel says it has killed Iran's navy chief overseeing Strait of Hormuz blockade \u00b7 Israel says it has killed the Iranian navy chief overseeing what is a near-total\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-27 07:06 UTC",
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-27 08:08 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Trump extends Hormuz deadline even as strikes continue; oil prices ease: What's ",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "6 min ago",
+      "headline": "Israel says it has killed Iran's navy chief overseeing Strait of Hormuz blockade",
+      "summary": "Israel says it has killed the Iranian navy chief overseeing what is a near-total blockade of the Strait of Hormuz. Alireza Tangsiri, head of the Islamic Revolutionary Guards Corps (IRGC) navy, was \"directly responsible for the terrorist act of bombing and blocking the Strait of Hormuz\", and has been",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/trump-extends-hormuz-deadline-even-as-strikes-continue-oil-prices-ease-whats-happening-in-us-israel-vs-iran-war/articleshow/129839061.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "Israel says it has killed the Iranian navy chief overseeing what is a near-total blockade of the Strait of Hormuz. Alireza Tangsiri, head of the Islamic Revolutionary Guards Corps (IRGC) navy, was \"directly responsible for the terrorist act of bombing and blocking the Strait of Hormuz\", and has been",
+      "sourceUrl": "https://www.bbc.com/news/articles/cy81p99x07no?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 23:03 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 01:47 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 07:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 08:08 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump extends Hormuz deadline even as strikes continue; oil prices ease: What's . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel says it has killed Iran's navy chief overseeing Strait of Hormuz blockade. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
