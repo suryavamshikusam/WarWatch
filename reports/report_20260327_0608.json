@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 05:59 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz. UAE urges international force to reopen Hormuz Strait: Report. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz",
+      "detail": "Image for representational purposes only. File Photo.\n                                          | Photo Credit: Reuters Amid the escalating war in the Middle East, Iran has given its explicit permission to some countries, allowing their ships to safely pass through the strategic Strait of Hormuz. St",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/us-israel-iran-war-list-of-countries-allowed-to-cross-the-strait-of-hormuz/article70791104.ece",
+      "fullAnalysis": "Image for representational purposes only. File Photo.\n                                          | Photo Credit: Reuters Amid the escalating war in the Middle East, Iran has given its explicit permission to some countries, allowing their ships to safely pass through the strategic Strait of Hormuz. St",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "UAE urges international force to reopen Hormuz Strait: Report",
+      "detail": "The United Arab Emirates has told allies that it would join a multinational maritime task force aimed at reopening the Strait of Hormuz as it suffers from Iran's curb on the waterway, according to a report by the Financial Times. \u201cThe focus is on creating as broad an international force as possible,",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-urges-international-force-reopen-hormuz-strait-report",
+      "fullAnalysis": "The United Arab Emirates has told allies that it would join a multinational maritime task force aimed at reopening the Strait of Hormuz as it suffers from Iran's curb on the waterway, according to a report by the Financial Times. \u201cThe focus is on creating as broad an international force as possible,",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-27 05:59 UTC"
+}

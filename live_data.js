@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 04:31 UTC",
+  "generatedAt": "2026-03-27 05:59 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: At least six killed in Iran's Qom, as Tehran announces hits across region \u00b7 A US-Israeli attack on a residential area in the Iranian city of Qom has killed \u2026",
-    "Other: Iran launches assault on US-Israeli infrastructure \u00b7 Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile \u2026"
+    "Other: U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz \u00b7 Image for representational purposes only. File Photo.\n                          \u2026",
+    "Other: UAE urges international force to reopen Hormuz Strait: Report \u00b7 The United Arab Emirates has told allies that it would join a multinational mari\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-27 04:31 UTC",
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-27 05:59 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "At least six killed in Iran's Qom, as Tehran announces hits across region",
-      "summary": "A US-Israeli attack on a residential area in the Iranian city of Qom has killed at least six people, with the deputy governor indicating that the number of those wounded remains unknown. Following the latest assault, the Red Crescent said in a post on Telegram that rescuers and firefighters are cond",
+      "headline": "U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz",
+      "summary": "Image for representational purposes only. File Photo.\n                                          | Photo Credit: Reuters Amid the escalating war in the Middle East, Iran has given its explicit permission to some countries, allowing their ships to safely pass through the strategic Strait of Hormuz. St",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A US-Israeli attack on a residential area in the Iranian city of Qom has killed at least six people, with the deputy governor indicating that the number of those wounded remains unknown. Following the latest assault, the Red Crescent said in a post on Telegram that rescuers and firefighters are cond",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/least-six-killed-irans-qom-tehran-announces-hits-across-region",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Image for representational purposes only. File Photo.\n                                          | Photo Credit: Reuters Amid the escalating war in the Middle East, Iran has given its explicit permission to some countries, allowing their ships to safely pass through the strategic Strait of Hormuz. St",
+      "sourceUrl": "https://www.thehindu.com/news/international/us-israel-iran-war-list-of-countries-allowed-to-cross-the-strait-of-hormuz/article70791104.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-crit",
@@ -66,14 +66,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Iran launches assault on US-Israeli infrastructure",
-      "summary": "Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile and drone attacks on Israeli and US bases across the region.",
+      "headline": "UAE urges international force to reopen Hormuz Strait: Report",
+      "summary": "The United Arab Emirates has told allies that it would join a multinational maritime task force aimed at reopening the Strait of Hormuz as it suffers from Iran's curb on the waterway, according to a report by the Financial Times. \u201cThe focus is on creating as broad an international force as possible,",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile and drone attacks on Israeli and US bases across the region.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-assault-us-israeli-infrastructure",
+      "fullAnalysis": "The United Arab Emirates has told allies that it would join a multinational maritime task force aimed at reopening the Strait of Hormuz as it suffers from Iran's curb on the waterway, according to a report by the Financial Times. \u201cThe focus is on creating as broad an international force as possible,",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-urges-international-force-reopen-hormuz-strait-report",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 21:01 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 21:45 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 04:31 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 05:59 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: At least six killed in Iran's Qom, as Tehran announces hits across region. Iran launches assault on US-Israeli infrastructure. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: U.S.-Israel-Iran war: List of countries allowed to cross the Strait of Hormuz. UAE urges international force to reopen Hormuz Strait: Report. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
