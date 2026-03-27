@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 11:08 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran's way of warfare is being tested to its limits. Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction. Bahrain says it has downed 154 missiles and 362 drones during war. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran's way of warfare is being tested to its limits",
+      "detail": "\u201cWe will not initiate war, but we possess overwhelming power to confront any aggression,\u201d Iranian military commander Hossein Salami declared a year ago, just months before he was killed in an Israeli air strike. Iran\u2019s way of warfare is best understood as a layered system of forward defence, rather ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/irans-way-warfare-being-tested-its-limits",
+      "fullAnalysis": "\u201cWe will not initiate war, but we possess overwhelming power to confront any aggression,\u201d Iranian military commander Hossein Salami declared a year ago, just months before he was killed in an Israeli air strike. Iran\u2019s way of warfare is best understood as a layered system of forward defence, rather ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli forces had wrought on Gaza, Spanish Prime Minister Pedro Sanchez told lawmakers on Wednesday. Sanchez, who appeared before the lower house to explain his government's stance ag",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/spanish-prime-minister-says-israel-wants-inflict-lebanon-same",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli forces had wrought on Gaza, Spanish Prime Minister Pedro Sanchez told lawmakers on Wednesday. Sanchez, who appeared before the lower house to explain his government's stance ag",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Bahrain says it has downed 154 missiles and 362 drones during war",
+      "detail": "Bahrain\u2019s military says its air defences have intercepted a total of 154 missiles and 362 drones from Iran since the start of the war. In a statement, the military thanked\u00a0\"the vigilance of its personnel\", saying its air defence systems continue to confront successive \"waves of heinous Iranian terro",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-it-downed-154-missiles-362-drones-during-war",
+      "fullAnalysis": "Bahrain\u2019s military says its air defences have intercepted a total of 154 missiles and 362 drones from Iran since the start of the war. In a statement, the military thanked\u00a0\"the vigilance of its personnel\", saying its air defence systems continue to confront successive \"waves of heinous Iranian terro",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-27 11:08 UTC"
+}

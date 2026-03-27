@@ -1,14 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 10:08 UTC",
+  "generatedAt": "2026-03-27 11:08 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran-Israel war: A day\u2011by\u2011day rundown of the escalating crisis \u00b7 A plume of smoke rises from the site of an Israeli airstrike in the southern sub\u2026"
+    "Other: Iran's way of warfare is being tested to its limits \u00b7 \u201cWe will not initiate war, but we possess overwhelming power to confront any agg\u2026",
+    "Other: Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction \u00b7 Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of da\u2026",
+    "Other: Bahrain says it has downed 154 missiles and 362 drones during war \u00b7 Bahrain\u2019s military says its air defences have intercepted a total of 154 missile\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-27 10:08 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-27 11:08 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -48,26 +50,58 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Iran-Israel war: A day\u2011by\u2011day rundown of the escalating crisis",
-      "summary": "A plume of smoke rises from the site of an Israeli airstrike in the southern suburbs of Beirut in Lebanon. File\n                                          | Photo Credit: AFP The United States and Israel launched an attack on Saturday (February 28, 2026) on Iran, plunging West Asia into a new conflic",
+      "time": "11 min ago",
+      "headline": "Iran's way of warfare is being tested to its limits",
+      "summary": "\u201cWe will not initiate war, but we possess overwhelming power to confront any aggression,\u201d Iranian military commander Hossein Salami declared a year ago, just months before he was killed in an Israeli air strike. Iran\u2019s way of warfare is best understood as a layered system of forward defence, rather ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A plume of smoke rises from the site of an Israeli airstrike in the southern suburbs of Beirut in Lebanon. File\n                                          | Photo Credit: AFP The United States and Israel launched an attack on Saturday (February 28, 2026) on Iran, plunging West Asia into a new conflic",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-united-states-west-asia-gulf-middle-east-escalating-crisis/article70702914.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "\u201cWe will not initiate war, but we possess overwhelming power to confront any aggression,\u201d Iranian military commander Hossein Salami declared a year ago, just months before he was killed in an Israeli air strike. Iran\u2019s way of warfare is best understood as a layered system of forward defence, rather ",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/irans-way-warfare-being-tested-its-limits",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli forces had wrought on Gaza, Spanish Prime Minister Pedro Sanchez told lawmakers on Wednesday. Sanchez, who appeared before the lower house to explain his government's stance ag",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli forces had wrought on Gaza, Spanish Prime Minister Pedro Sanchez told lawmakers on Wednesday. Sanchez, who appeared before the lower house to explain his government's stance ag",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/spanish-prime-minister-says-israel-wants-inflict-lebanon-same",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Bahrain says it has downed 154 missiles and 362 drones during war",
+      "summary": "Bahrain\u2019s military says its air defences have intercepted a total of 154 missiles and 362 drones from Iran since the start of the war. In a statement, the military thanked\u00a0\"the vigilance of its personnel\", saying its air defence systems continue to confront successive \"waves of heinous Iranian terro",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Bahrain\u2019s military says its air defences have intercepted a total of 154 missiles and 362 drones from Iran since the start of the war. In a statement, the military thanked\u00a0\"the vigilance of its personnel\", saying its air defence systems continue to confront successive \"waves of heinous Iranian terro",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-it-downed-154-missiles-362-drones-during-war",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 08:10 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 09:15 UTC",
       "l": "HIGH",
@@ -194,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 10:08 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 11:08 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war: A day\u2011by\u2011day rundown of the escalating crisis. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran's way of warfare is being tested to its limits. Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction. Bahrain says it has downed 154 missiles and 362 drones during war. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
