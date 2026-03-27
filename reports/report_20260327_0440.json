@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 04:31 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: At least six killed in Iran's Qom, as Tehran announces hits across region. Iran launches assault on US-Israeli infrastructure. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "At least six killed in Iran's Qom, as Tehran announces hits across region",
+      "detail": "A US-Israeli attack on a residential area in the Iranian city of Qom has killed at least six people, with the deputy governor indicating that the number of those wounded remains unknown. Following the latest assault, the Red Crescent said in a post on Telegram that rescuers and firefighters are cond",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/least-six-killed-irans-qom-tehran-announces-hits-across-region",
+      "fullAnalysis": "A US-Israeli attack on a residential area in the Iranian city of Qom has killed at least six people, with the deputy governor indicating that the number of those wounded remains unknown. Following the latest assault, the Red Crescent said in a post on Telegram that rescuers and firefighters are cond",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran launches assault on US-Israeli infrastructure",
+      "detail": "Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile and drone attacks on Israeli and US bases across the region.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-assault-us-israeli-infrastructure",
+      "fullAnalysis": "Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile and drone attacks on Israeli and US bases across the region.",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-27 04:31 UTC"
+}

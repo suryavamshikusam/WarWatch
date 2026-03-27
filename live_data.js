@@ -1,17 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 01:48 UTC",
+  "generatedAt": "2026-03-27 04:31 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran war live: Trump delays attacks on Iranian energy sector by 10 days \u00b7 Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
-    "Other: Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree \u00b7 President Donald Trump speaks during a Cabinet meeting at the White House in Was\u2026",
-    "Other: Iranian Foreign Minister defends Hormuz Strait curb \u00b7 Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Gute\u2026",
-    "Other: Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t \u00b7 A local digs with his shovel inside a crater created by an Israeli strike, amid \u2026"
+    "Other: At least six killed in Iran's Qom, as Tehran announces hits across region \u00b7 A US-Israeli attack on a residential area in the Iranian city of Qom has killed \u2026",
+    "Other: Iran launches assault on US-Israeli infrastructure \u00b7 Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-27 01:48 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-27 04:31 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -51,47 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
-      "summary": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
+      "time": "9 min ago",
+      "headline": "At least six killed in Iran's Qom, as Tehran announces hits across region",
+      "summary": "A US-Israeli attack on a residential area in the Iranian city of Qom has killed at least six people, with the deputy governor indicating that the number of those wounded remains unknown. Following the latest assault, the Red Crescent said in a post on Telegram that rescuers and firefighters are cond",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran war live: Trump delays attacks on Iranian energy sector by 10 days",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/27/iran-war-live-trump-delays-attacks-on-iranian-energy-sector-by-10-days?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree",
-      "summary": "President Donald Trump speaks during a Cabinet meeting at the White House in Washington, D.C. on March 26, 2026.\n                                                  | Photo Credit:  \n                          AP U .S. President Donald Trump said on Thursday (March 27, 2026) he will delay a threatened ",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "President Donald Trump speaks during a Cabinet meeting at the White House in Washington, D.C. on March 26, 2026.\n                                                  | Photo Credit:  \n                          AP U .S. President Donald Trump said on Thursday (March 27, 2026) he will delay a threatened ",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-highlights-west-asia-conflict-march-26-2026/article70786492.ece",
-      "sourceLabel": "The Hindu"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iranian Foreign Minister defends Hormuz Strait curb",
-      "summary": "Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Guterres\u00a0said that the country's blocking of vessels in the Strait of Hormuz is Tehran's legal right. Araghchi said that the current insecurity in the waterway\u00a0\"was a direct result of lawbreaking and aggression\" by the US an",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iranian Foreign Minister Abbas Araghchi during a call with UN chief Antonio Guterres\u00a0said that the country's blocking of vessels in the Strait of Hormuz is Tehran's legal right. Araghchi said that the current insecurity in the waterway\u00a0\"was a direct result of lawbreaking and aggression\" by the US an",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-foreign-minister-defends-hormuz-strait-curb",
+      "fullAnalysis": "A US-Israeli attack on a residential area in the Iranian city of Qom has killed at least six people, with the deputy governor indicating that the number of those wounded remains unknown. Following the latest assault, the Red Crescent said in a post on Telegram that rescuers and firefighters are cond",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/least-six-killed-irans-qom-tehran-announces-hits-across-region",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -99,26 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t",
-      "summary": "A local digs with his shovel inside a crater created by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Nabi Chit, Lebanon on March 26, 2026.\n                                                  | Photo Credit:  \n        ",
+      "time": "9 min ago",
+      "headline": "Iran launches assault on US-Israeli infrastructure",
+      "summary": "Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile and drone attacks on Israeli and US bases across the region.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A local digs with his shovel inside a crater created by an Israeli strike, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in Nabi Chit, Lebanon on March 26, 2026.\n                                                  | Photo Credit:  \n        ",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-highlights-west-asia-conflict-march-27-2026/article70790939.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "Iran's\u00a0Islamic Revolutionary Guard Corps (IRGC) said it has carried out missile and drone attacks on Israeli and US bases across the region.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-assault-us-israeli-infrastructure",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-25 18:48 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-25 21:01 UTC",
       "l": "HIGH",
@@ -245,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 01:48 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 04:31 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Trump delays attacks on Iranian energy sector by 10 days. Iran-Israel war highlights: Trump delays Strait of Hormuz deadline as Wall Stree. Iranian Foreign Minister defends Hormuz Strait curb. Iran-Israel war LIVE: Trump extends deadline for Iran to open Strait of Hormuz t. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: At least six killed in Iran's Qom, as Tehran announces hits across region. Iran launches assault on US-Israeli infrastructure. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
