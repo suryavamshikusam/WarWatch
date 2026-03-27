@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 18:05 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UAE has an active role in Iran war and will be pounded if US invades, Iranian so. From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "UAE has an active role in Iran war and will be pounded if US invades, Iranian so",
+      "detail": "Tehran believes the United Arab Emirates is playing an active role in the US-Israeli war on Iran and any ground invasion could lead to widespread attacks on Emirati state assets, two senior Iranian sources told Middle East Eye. A month into the conflict, which has battered global markets, Donald Tru",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/uae-has-active-role-iran-war-and-will-be-pounded-if-us-invades-iranian-sources-say",
+      "fullAnalysis": "Tehran believes the United Arab Emirates is playing an active role in the US-Israeli war on Iran and any ground invasion could lead to widespread attacks on Emirati state assets, two senior Iranian sources told Middle East Eye. A month into the conflict, which has battered global markets, Donald Tru",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/from-kharg-to-qeshm-6-iranian-islands-trump-may-target-amid-strait-of-hormuz-tensions/articleshow/129851456.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-27 18:05 UTC"
+}

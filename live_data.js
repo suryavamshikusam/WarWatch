@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 17:11 UTC",
+  "generatedAt": "2026-03-27 18:05 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Suez was the death knell for the British empire. Hormuz may do the same for the  \u00b7 Empires decline when their military reach outpaces their political strategy, whe\u2026",
-    "Other: US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report \u00b7 US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Isr\u2026",
-    "Other: Pakistan easing regulation to boost food exports to Iran \u00b7 Pakistan has eased a key financial regulation to make it easier for exporters to\u2026"
+    "Other: UAE has an active role in Iran war and will be pounded if US invades, Iranian so \u00b7 Tehran believes the United Arab Emirates is playing an active role in the US-Isr\u2026",
+    "Other: From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-27 17:11 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-27 18:05 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Suez was the death knell for the British empire. Hormuz may do the same for the ",
-      "summary": "Empires decline when their military reach outpaces their political strategy, when their economic foundations weaken, and when the people they seek to dominate endure long enough to outlast their overwhelming force. The nationalisation of the Suez Canal in 1956 marked such a turning point for the Bri",
+      "time": "8 min ago",
+      "headline": "UAE has an active role in Iran war and will be pounded if US invades, Iranian so",
+      "summary": "Tehran believes the United Arab Emirates is playing an active role in the US-Israeli war on Iran and any ground invasion could lead to widespread attacks on Emirati state assets, two senior Iranian sources told Middle East Eye. A month into the conflict, which has battered global markets, Donald Tru",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Empires decline when their military reach outpaces their political strategy, when their economic foundations weaken, and when the people they seek to dominate endure long enough to outlast their overwhelming force. The nationalisation of the Suez Canal in 1956 marked such a turning point for the Bri",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/suez-sounded-death-knell-british-empire-hormuz-may-do-same-us",
+      "fullAnalysis": "Tehran believes the United Arab Emirates is playing an active role in the US-Israeli war on Iran and any ground invasion could lead to widespread attacks on Emirati state assets, two senior Iranian sources told Middle East Eye. A month into the conflict, which has battered global markets, Donald Tru",
+      "sourceUrl": "https://www.middleeasteye.net/news/uae-has-active-role-iran-war-and-will-be-pounded-if-us-invades-iranian-sources-say",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,42 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report",
-      "summary": "US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Israeli war on Iran should end in a matter of \"weeks, not months\", Reuters is reporting, citing three people familiar with the talks. At a meeting of G7 foreign ministers in France, Rubio did not ask his counterparts to con",
+      "time": "8 min ago",
+      "headline": "From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Israeli war on Iran should end in a matter of \"weeks, not months\", Reuters is reporting, citing three people familiar with the talks. At a meeting of G7 foreign ministers in France, Rubio did not ask his counterparts to con",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-secretary-state-tells-g7-ministers-iran-war-should-end-weeks-report",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Pakistan easing regulation to boost food exports to Iran",
-      "summary": "Pakistan has eased a key financial regulation to make it easier for exporters to send goods to and through Iran , according to a report on Friday by Pakistan's Profit magazine. Pakistani exporters looking to send goods to Iran have traditionally needed to use specific payment channels so export proc",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Pakistan has eased a key financial regulation to make it easier for exporters to send goods to and through Iran , according to a report on Friday by Pakistan's Profit magazine. Pakistani exporters looking to send goods to Iran have traditionally needed to use specific payment channels so export proc",
-      "sourceUrl": "https://www.middleeasteye.net/news/pakistan-easing-regulation-boost-food-exports-iran",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/from-kharg-to-qeshm-6-iranian-islands-trump-may-target-amid-strait-of-hormuz-tensions/articleshow/129851456.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 16:08 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 17:20 UTC",
       "l": "HIGH",
@@ -228,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 17:11 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 18:05 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Suez was the death knell for the British empire. Hormuz may do the same for the . US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report. Pakistan easing regulation to boost food exports to Iran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UAE has an active role in Iran war and will be pounded if US invades, Iranian so. From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
