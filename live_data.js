@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 14:09 UTC",
+  "generatedAt": "2026-03-27 16:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: US and Israel 'burning through' Tomahawk and interceptor missiles in Iran \u00b7 The US and Israel are \"burning through\" their supply of Tomahawk and interceptor\u2026",
-    "Other: \u2018Policing thought\u2019: French bill to fight antisemitism accused of silencing Israe \u00b7 A bill \"aimed at combating renewed forms of antisemitism\", which is due to be de\u2026"
+    "Other: US only certain of having destroyed a third of Iran's missiles \u00b7 The US is only certain it has destroyed around a third of Iran 's missiles, desp\u2026",
+    "Other: Saudi Arabia and Ukraine sign defence procurement memorandum \u00b7 Saudi Arabia's defence ministry has signed a memorandum regarding arrangements r\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-27 14:09 UTC",
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-27 16:06 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "US and Israel 'burning through' Tomahawk and interceptor missiles in Iran",
-      "summary": "The US and Israel are \"burning through\" their supply of Tomahawk and interceptor missiles in their war on Iran , alarming some in the Pentagon. According to officials speaking to the Washington Post, the US\u00a0has fired more than 850 Tomahawk cruise missiles in four weeks of its war with Iran. Only a f",
+      "headline": "US only certain of having destroyed a third of Iran's missiles",
+      "summary": "The US is only certain it has destroyed around a third of Iran 's missiles, despite comments from President Donald Trump boasting of military success. According to five people familiar with the US intelligence who spoke to Reuters, the status of around another third is less clear. However, US-Israel",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The US and Israel are \"burning through\" their supply of Tomahawk and interceptor missiles in their war on Iran , alarming some in the Pentagon. According to officials speaking to the Washington Post, the US\u00a0has fired more than 850 Tomahawk cruise missiles in four weeks of its war with Iran. Only a f",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-israel-burning-through-tomahawk-interceptor-missiles-iran",
+      "fullAnalysis": "The US is only certain it has destroyed around a third of Iran 's missiles, despite comments from President Donald Trump boasting of military success. According to five people familiar with the US intelligence who spoke to Reuters, the status of around another third is less clear. However, US-Israel",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-only-certain-having-destroyed-third-irans-missiles",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,14 +66,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "\u2018Policing thought\u2019: French bill to fight antisemitism accused of silencing Israe",
-      "summary": "A bill \"aimed at combating renewed forms of antisemitism\", which is due to be debated on by parliament next month, has sparked a heated controversy in France in recent weeks. Many organisations and parts of the political left suspect the proposed legislation of exploiting the fight against antisemit",
+      "headline": "Saudi Arabia and Ukraine sign defence procurement memorandum",
+      "summary": "Saudi Arabia's defence ministry has signed a memorandum regarding arrangements related to defence procurement with Ukraine's defence ministry in Jeddah, the Saudi state news agency SPA reported on Friday. Watch the video below for more on how Gulf states are turning to Ukraine for help against Irani",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A bill \"aimed at combating renewed forms of antisemitism\", which is due to be debated on by parliament next month, has sparked a heated controversy in France in recent weeks. Many organisations and parts of the political left suspect the proposed legislation of exploiting the fight against antisemit",
-      "sourceUrl": "https://www.middleeasteye.net/news/policing-thought-french-bill-renewed-forms-antisemitism-accused-silencing-israel-critics",
+      "fullAnalysis": "Saudi Arabia's defence ministry has signed a memorandum regarding arrangements related to defence procurement with Ukraine's defence ministry in Jeddah, the Saudi state news agency SPA reported on Friday. Watch the video below for more on how Gulf states are turning to Ukraine for help against Irani",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-and-ukraine-sign-defence-procurement-memorandum",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 13:25 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 14:49 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 14:09 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 16:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: US and Israel 'burning through' Tomahawk and interceptor missiles in Iran. \u2018Policing thought\u2019: French bill to fight antisemitism accused of silencing Israe. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US only certain of having destroyed a third of Iran's missiles. Saudi Arabia and Ukraine sign defence procurement memorandum. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 16:06 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US only certain of having destroyed a third of Iran's missiles. Saudi Arabia and Ukraine sign defence procurement memorandum. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "US only certain of having destroyed a third of Iran's missiles",
+      "detail": "The US is only certain it has destroyed around a third of Iran 's missiles, despite comments from President Donald Trump boasting of military success. According to five people familiar with the US intelligence who spoke to Reuters, the status of around another third is less clear. However, US-Israel",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-only-certain-having-destroyed-third-irans-missiles",
+      "fullAnalysis": "The US is only certain it has destroyed around a third of Iran 's missiles, despite comments from President Donald Trump boasting of military success. According to five people familiar with the US intelligence who spoke to Reuters, the status of around another third is less clear. However, US-Israel",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Saudi Arabia and Ukraine sign defence procurement memorandum",
+      "detail": "Saudi Arabia's defence ministry has signed a memorandum regarding arrangements related to defence procurement with Ukraine's defence ministry in Jeddah, the Saudi state news agency SPA reported on Friday. Watch the video below for more on how Gulf states are turning to Ukraine for help against Irani",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-and-ukraine-sign-defence-procurement-memorandum",
+      "fullAnalysis": "Saudi Arabia's defence ministry has signed a memorandum regarding arrangements related to defence procurement with Ukraine's defence ministry in Jeddah, the Saudi state news agency SPA reported on Friday. Watch the video below for more on how Gulf states are turning to Ukraine for help against Irani",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-27 16:06 UTC"
+}
