@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-27 17:11 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Suez was the death knell for the British empire. Hormuz may do the same for the . US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report. Pakistan easing regulation to boost food exports to Iran. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Suez was the death knell for the British empire. Hormuz may do the same for the ",
+      "detail": "Empires decline when their military reach outpaces their political strategy, when their economic foundations weaken, and when the people they seek to dominate endure long enough to outlast their overwhelming force. The nationalisation of the Suez Canal in 1956 marked such a turning point for the Bri",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/suez-sounded-death-knell-british-empire-hormuz-may-do-same-us",
+      "fullAnalysis": "Empires decline when their military reach outpaces their political strategy, when their economic foundations weaken, and when the people they seek to dominate endure long enough to outlast their overwhelming force. The nationalisation of the Suez Canal in 1956 marked such a turning point for the Bri",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report",
+      "detail": "US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Israeli war on Iran should end in a matter of \"weeks, not months\", Reuters is reporting, citing three people familiar with the talks. At a meeting of G7 foreign ministers in France, Rubio did not ask his counterparts to con",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-secretary-state-tells-g7-ministers-iran-war-should-end-weeks-report",
+      "fullAnalysis": "US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Israeli war on Iran should end in a matter of \"weeks, not months\", Reuters is reporting, citing three people familiar with the talks. At a meeting of G7 foreign ministers in France, Rubio did not ask his counterparts to con",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Pakistan easing regulation to boost food exports to Iran",
+      "detail": "Pakistan has eased a key financial regulation to make it easier for exporters to send goods to and through Iran , according to a report on Friday by Pakistan's Profit magazine. Pakistani exporters looking to send goods to Iran have traditionally needed to use specific payment channels so export proc",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/pakistan-easing-regulation-boost-food-exports-iran",
+      "fullAnalysis": "Pakistan has eased a key financial regulation to make it easier for exporters to send goods to and through Iran , according to a report on Friday by Pakistan's Profit magazine. Pakistani exporters looking to send goods to Iran have traditionally needed to use specific payment channels so export proc",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-27 17:11 UTC"
+}

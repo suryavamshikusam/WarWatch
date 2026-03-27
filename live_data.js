@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 16:06 UTC",
+  "generatedAt": "2026-03-27 17:11 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: US only certain of having destroyed a third of Iran's missiles \u00b7 The US is only certain it has destroyed around a third of Iran 's missiles, desp\u2026",
-    "Other: Saudi Arabia and Ukraine sign defence procurement memorandum \u00b7 Saudi Arabia's defence ministry has signed a memorandum regarding arrangements r\u2026"
+    "Other: Suez was the death knell for the British empire. Hormuz may do the same for the  \u00b7 Empires decline when their military reach outpaces their political strategy, whe\u2026",
+    "Other: US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report \u00b7 US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Isr\u2026",
+    "Other: Pakistan easing regulation to boost food exports to Iran \u00b7 Pakistan has eased a key financial regulation to make it easier for exporters to\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-27 16:06 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-27 17:11 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "US only certain of having destroyed a third of Iran's missiles",
-      "summary": "The US is only certain it has destroyed around a third of Iran 's missiles, despite comments from President Donald Trump boasting of military success. According to five people familiar with the US intelligence who spoke to Reuters, the status of around another third is less clear. However, US-Israel",
+      "time": "11 min ago",
+      "headline": "Suez was the death knell for the British empire. Hormuz may do the same for the ",
+      "summary": "Empires decline when their military reach outpaces their political strategy, when their economic foundations weaken, and when the people they seek to dominate endure long enough to outlast their overwhelming force. The nationalisation of the Suez Canal in 1956 marked such a turning point for the Bri",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The US is only certain it has destroyed around a third of Iran 's missiles, despite comments from President Donald Trump boasting of military success. According to five people familiar with the US intelligence who spoke to Reuters, the status of around another third is less clear. However, US-Israel",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-only-certain-having-destroyed-third-irans-missiles",
+      "fullAnalysis": "Empires decline when their military reach outpaces their political strategy, when their economic foundations weaken, and when the people they seek to dominate endure long enough to outlast their overwhelming force. The nationalisation of the Suez Canal in 1956 marked such a turning point for the Bri",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/suez-sounded-death-knell-british-empire-hormuz-may-do-same-us",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,15 +66,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Saudi Arabia and Ukraine sign defence procurement memorandum",
-      "summary": "Saudi Arabia's defence ministry has signed a memorandum regarding arrangements related to defence procurement with Ukraine's defence ministry in Jeddah, the Saudi state news agency SPA reported on Friday. Watch the video below for more on how Gulf states are turning to Ukraine for help against Irani",
+      "time": "11 min ago",
+      "headline": "US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report",
+      "summary": "US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Israeli war on Iran should end in a matter of \"weeks, not months\", Reuters is reporting, citing three people familiar with the talks. At a meeting of G7 foreign ministers in France, Rubio did not ask his counterparts to con",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Saudi Arabia's defence ministry has signed a memorandum regarding arrangements related to defence procurement with Ukraine's defence ministry in Jeddah, the Saudi state news agency SPA reported on Friday. Watch the video below for more on how Gulf states are turning to Ukraine for help against Irani",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/saudi-arabia-and-ukraine-sign-defence-procurement-memorandum",
+      "fullAnalysis": "US Secretary of State Marco Rubio told G7 counterparts on Friday that the US-Israeli war on Iran should end in a matter of \"weeks, not months\", Reuters is reporting, citing three people familiar with the talks. At a meeting of G7 foreign ministers in France, Rubio did not ask his counterparts to con",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-secretary-state-tells-g7-ministers-iran-war-should-end-weeks-report",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Pakistan easing regulation to boost food exports to Iran",
+      "summary": "Pakistan has eased a key financial regulation to make it easier for exporters to send goods to and through Iran , according to a report on Friday by Pakistan's Profit magazine. Pakistani exporters looking to send goods to Iran have traditionally needed to use specific payment channels so export proc",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Pakistan has eased a key financial regulation to make it easier for exporters to send goods to and through Iran , according to a report on Friday by Pakistan's Profit magazine. Pakistani exporters looking to send goods to Iran have traditionally needed to use specific payment channels so export proc",
+      "sourceUrl": "https://www.middleeasteye.net/news/pakistan-easing-regulation-boost-food-exports-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 14:49 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 16:08 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 16:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 17:11 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: US only certain of having destroyed a third of Iran's missiles. Saudi Arabia and Ukraine sign defence procurement memorandum. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Suez was the death knell for the British empire. Hormuz may do the same for the . US's Rubio tells G7 ministers Iran war should end in 'weeks, not months': Report. Pakistan easing regulation to boost food exports to Iran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
