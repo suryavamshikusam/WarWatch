@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 22:01 UTC",
+  "generatedAt": "2026-03-27 22:39 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'Shooting gallery': How a US invasion of Iranian islands might unfold \u00b7 US Marines and paratroopers who could be sent to seize an Iranian island in the \u2026",
-    "Other: Former US soldiers argue Israeli policy is now guiding US interests \u00b7 A group of anti-war, US military veterans have slammed what they say are Israeli\u2026"
+    "Other: Guns in the streets as US, Israel intensify month-long attacks across Iran \u00b7 Tehran, Iran \u2013 Heavily armed state forces continue to control Iran\u2019s streets, de\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 18,
-    "lastUpdated": "2026-03-27 22:01 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 19,
+    "lastUpdated": "2026-03-27 22:39 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "'Shooting gallery': How a US invasion of Iranian islands might unfold",
-      "summary": "US Marines and paratroopers who could be sent to seize an Iranian island in the Gulf will be thrust into a \u201cshooting gallery\u201d with vulnerable supply lines and ill-defined strategic objectives, former US military officials and analysts tell Middle East Eye. A US invasion would start with a campaign t",
+      "time": "6 min ago",
+      "headline": "Guns in the streets as US, Israel intensify month-long attacks across Iran",
+      "summary": "Tehran, Iran \u2013 Heavily armed state forces continue to control Iran\u2019s streets, despite the United States and Israel launching more strikes and preparing for a potential ground attack, as the nearly one-month war proceeds with no clear end point on the horizon Checkpoints, roadblocks and patrols, some",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US Marines and paratroopers who could be sent to seize an Iranian island in the Gulf will be thrust into a \u201cshooting gallery\u201d with vulnerable supply lines and ill-defined strategic objectives, former US military officials and analysts tell Middle East Eye. A US invasion would start with a campaign t",
-      "sourceUrl": "https://www.middleeasteye.net/news/shooting-gallery-how-us-invasion-iranian-islands-would-unfold",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Former US soldiers argue Israeli policy is now guiding US interests",
-      "summary": "A group of anti-war, US military veterans have slammed what they say are Israeli interests guiding US military policy, culminating in the current US-Israeli war on Iran that is putting American lives at risk. To the public's knowledge, 13 US military personnel have so far been killed since the war w",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "A group of anti-war, US military veterans have slammed what they say are Israeli interests guiding US military policy, culminating in the current US-Israeli war on Iran that is putting American lives at risk. To the public's knowledge, 13 US military personnel have so far been killed since the war w",
-      "sourceUrl": "https://www.middleeasteye.net/news/former-us-soldiers-say-us-has-become-extension-israeli-foreign-policy-not-other-way-around",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Tehran, Iran \u2013 Heavily armed state forces continue to control Iran\u2019s streets, despite the United States and Israel launching more strikes and preparing for a potential ground attack, as the nearly one-month war proceeds with no clear end point on the horizon Checkpoints, roadblocks and patrols, some",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/guns-in-the-streets-as-us-israel-intensify-month-long-attacks-across?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 21:27 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 22:23 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 22:01 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 22:39 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'Shooting gallery': How a US invasion of Iranian islands might unfold. Former US soldiers argue Israeli policy is now guiding US interests. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Guns in the streets as US, Israel intensify month-long attacks across Iran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
