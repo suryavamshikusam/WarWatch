@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 11:08 UTC",
+  "generatedAt": "2026-03-27 11:56 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran's way of warfare is being tested to its limits \u00b7 \u201cWe will not initiate war, but we possess overwhelming power to confront any agg\u2026",
-    "Other: Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction \u00b7 Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of da\u2026",
-    "Other: Bahrain says it has downed 154 missiles and 362 drones during war \u00b7 Bahrain\u2019s military says its air defences have intercepted a total of 154 missile\u2026"
+    "Other: IRGC says it 'turned back' three ships in Strait of Hormuz \u00b7 Iran's Islamic Revolutionary Guard Corps said on Friday that it had turned back \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-27 11:08 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-27 11:56 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,47 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran's way of warfare is being tested to its limits",
-      "summary": "\u201cWe will not initiate war, but we possess overwhelming power to confront any aggression,\u201d Iranian military commander Hossein Salami declared a year ago, just months before he was killed in an Israeli air strike. Iran\u2019s way of warfare is best understood as a layered system of forward defence, rather ",
+      "time": "7 min ago",
+      "headline": "IRGC says it 'turned back' three ships in Strait of Hormuz",
+      "summary": "Iran's Islamic Revolutionary Guard Corps said on Friday that it had turned back three ships trying to transit the Strait of Hormuz, adding the route was closed to vessels travelling to and from ports linked to its \"enemies\". \"This morning, following the lies of the corrupt US president claiming that",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "\u201cWe will not initiate war, but we possess overwhelming power to confront any aggression,\u201d Iranian military commander Hossein Salami declared a year ago, just months before he was killed in an Israeli air strike. Iran\u2019s way of warfare is best understood as a layered system of forward defence, rather ",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/irans-way-warfare-being-tested-its-limits",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli forces had wrought on Gaza, Spanish Prime Minister Pedro Sanchez told lawmakers on Wednesday. Sanchez, who appeared before the lower house to explain his government's stance ag",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu \"seeks to inflict the same level of damage and destruction\" on Lebanon as Israeli forces had wrought on Gaza, Spanish Prime Minister Pedro Sanchez told lawmakers on Wednesday. Sanchez, who appeared before the lower house to explain his government's stance ag",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/spanish-prime-minister-says-israel-wants-inflict-lebanon-same",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Bahrain says it has downed 154 missiles and 362 drones during war",
-      "summary": "Bahrain\u2019s military says its air defences have intercepted a total of 154 missiles and 362 drones from Iran since the start of the war. In a statement, the military thanked\u00a0\"the vigilance of its personnel\", saying its air defence systems continue to confront successive \"waves of heinous Iranian terro",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Bahrain\u2019s military says its air defences have intercepted a total of 154 missiles and 362 drones from Iran since the start of the war. In a statement, the military thanked\u00a0\"the vigilance of its personnel\", saying its air defence systems continue to confront successive \"waves of heinous Iranian terro",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/bahrain-says-it-downed-154-missiles-362-drones-during-war",
+      "fullAnalysis": "Iran's Islamic Revolutionary Guard Corps said on Friday that it had turned back three ships trying to transit the Strait of Hormuz, adding the route was closed to vessels travelling to and from ports linked to its \"enemies\". \"This morning, following the lies of the corrupt US president claiming that",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-guards-say-turned-back-three-ships-strait-hormuz",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -98,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 09:15 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 11:14 UTC",
       "l": "HIGH",
@@ -228,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 11:08 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 11:56 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran's way of warfare is being tested to its limits. Spanish prime minister says Israel wants to inflict on Lebanon 'same destruction. Bahrain says it has downed 154 missiles and 362 drones during war. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC says it 'turned back' three ships in Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
