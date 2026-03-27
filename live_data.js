@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 18:05 UTC",
+  "generatedAt": "2026-03-27 19:13 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UAE has an active role in Iran war and will be pounded if US invades, Iranian so \u00b7 Tehran believes the United Arab Emirates is playing an active role in the US-Isr\u2026",
-    "Other: From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: How Trump's regime has become captive to its own lies \u00b7 In The Power of the Powerless , Vaclav Havel described a system in which lies ar\u2026",
+    "Other: Rubio says US expects to finish Iran war 'in next couple of weeks' \u00b7 US Secretary of State Marco Rubio says the US expects to finish its operations i\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-27 18:05 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-27 19:13 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "UAE has an active role in Iran war and will be pounded if US invades, Iranian so",
-      "summary": "Tehran believes the United Arab Emirates is playing an active role in the US-Israeli war on Iran and any ground invasion could lead to widespread attacks on Emirati state assets, two senior Iranian sources told Middle East Eye. A month into the conflict, which has battered global markets, Donald Tru",
+      "time": "9 min ago",
+      "headline": "How Trump's regime has become captive to its own lies",
+      "summary": "In The Power of the Powerless , Vaclav Havel described a system in which lies are not incidental, but foundational. A system that does not merely tolerate falsehood, but requires it, reproduces it, lives within it: \u201cBecause the regime is captive to its own lies, it must falsify everything.\u201d What Hav",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Tehran believes the United Arab Emirates is playing an active role in the US-Israeli war on Iran and any ground invasion could lead to widespread attacks on Emirati state assets, two senior Iranian sources told Middle East Eye. A month into the conflict, which has battered global markets, Donald Tru",
-      "sourceUrl": "https://www.middleeasteye.net/news/uae-has-active-role-iran-war-and-will-be-pounded-if-us-invades-iranian-sources-say",
+      "fullAnalysis": "In The Power of the Powerless , Vaclav Havel described a system in which lies are not incidental, but foundational. A system that does not merely tolerate falsehood, but requires it, reproduces it, lives within it: \u201cBecause the regime is captive to its own lies, it must falsify everything.\u201d What Hav",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/how-trumps-regime-has-become-captive-its-own-lies",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,23 +65,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "9 min ago",
+      "headline": "Rubio says US expects to finish Iran war 'in next couple of weeks'",
+      "summary": "US Secretary of State Marco Rubio says the US expects to finish its operations in Iran \"in the next couple of weeks\". The objectives were being achieved and were ahead of schedule, he said at the end of a meeting in France of foreign ministers from the group of major Western economies, known the G7.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/from-kharg-to-qeshm-6-iranian-islands-trump-may-target-amid-strait-of-hormuz-tensions/articleshow/129851456.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "US Secretary of State Marco Rubio says the US expects to finish its operations in Iran \"in the next couple of weeks\". The objectives were being achieved and were ahead of schedule, he said at the end of a meeting in France of foreign ministers from the group of major Western economies, known the G7.",
+      "sourceUrl": "https://www.bbc.com/news/articles/c1l9vz064nqo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 17:20 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 18:16 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 18:05 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 19:13 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UAE has an active role in Iran war and will be pounded if US invades, Iranian so. From Kharg to Qeshm: 6 Iranian Islands Trump may target amid Strait of Hormuz te. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: How Trump's regime has become captive to its own lies. Rubio says US expects to finish Iran war 'in next couple of weeks'. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
