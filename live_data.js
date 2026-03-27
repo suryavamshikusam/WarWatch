@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 20:32 UTC",
+  "generatedAt": "2026-03-27 21:21 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Drone reveals extent of Iranian missile damage in Israeli city of Arad \u00b7 Drone reveals extent of Iranian missile damage in Israeli city of Arad Drone foo\u2026"
+    "Other: Israel launches strikes on nuclear sites as Iran warns of retaliation \u00b7 Israel has struck a uranium processing facility in the central Iranian city of Y\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-27 20:32 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-27 21:21 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Drone reveals extent of Iranian missile damage in Israeli city of Arad",
-      "summary": "Drone reveals extent of Iranian missile damage in Israeli city of Arad Drone footage has revealed the extent of damage in Arad days after an Iranian missile attack that injured at least 116 people.",
+      "time": "6 min ago",
+      "headline": "Israel launches strikes on nuclear sites as Iran warns of retaliation",
+      "summary": "Israel has struck a uranium processing facility in the central Iranian city of Yazd, the Israeli military confirmed, in an escalatory move that comes as regional diplomats have been attempting to broker an agreement to halt the joint US-Israeli war on Iran. The Israeli Air Force said it hit a plant ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Drone reveals extent of Iranian missile damage in Israeli city of Arad Drone footage has revealed the extent of damage in Arad days after an Iranian missile attack that injured at least 116 people.",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/27/drone-reveals-extent-of-iranian-missile-damage-in-israeli-city-of-arad?traffic_source=rss",
+      "fullAnalysis": "Israel has struck a uranium processing facility in the central Iranian city of Yazd, the Israeli military confirmed, in an escalatory move that comes as regional diplomats have been attempting to broker an agreement to halt the joint US-Israeli war on Iran. The Israeli Air Force said it hit a plant ",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/israel-launches-strikes-on-iran-nuclear-sites-as-war-enters-fifth-week?traffic_source=rss",
       "sourceLabel": "Al Jazeera"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 19:35 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 20:52 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 20:32 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 21:21 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Drone reveals extent of Iranian missile damage in Israeli city of Arad. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel launches strikes on nuclear sites as Iran warns of retaliation. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
