@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 08:08 UTC",
+  "generatedAt": "2026-03-27 09:09 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel says it has killed Iran's navy chief overseeing Strait of Hormuz blockade \u00b7 Israel says it has killed the Iranian navy chief overseeing what is a near-total\u2026"
+    "Other: Israel army says it is targeting Iran's ballistic missile system \u00b7 The Israeli army said in a statement that it targeted Iranian military infrastru\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-27 08:08 UTC",
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-27 09:09 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Israel says it has killed Iran's navy chief overseeing Strait of Hormuz blockade",
-      "summary": "Israel says it has killed the Iranian navy chief overseeing what is a near-total blockade of the Strait of Hormuz. Alireza Tangsiri, head of the Islamic Revolutionary Guards Corps (IRGC) navy, was \"directly responsible for the terrorist act of bombing and blocking the Strait of Hormuz\", and has been",
+      "time": "7 min ago",
+      "headline": "Israel army says it is targeting Iran's ballistic missile system",
+      "summary": "The Israeli army said in a statement that it targeted Iranian military infrastructure overnight, including\u00a0missile launchers and storage sites. It added that ballistic missiles were especially targeted to reduce the number of launches against Israel.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel says it has killed the Iranian navy chief overseeing what is a near-total blockade of the Strait of Hormuz. Alireza Tangsiri, head of the Islamic Revolutionary Guards Corps (IRGC) navy, was \"directly responsible for the terrorist act of bombing and blocking the Strait of Hormuz\", and has been",
-      "sourceUrl": "https://www.bbc.com/news/articles/cy81p99x07no?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC"
+      "fullAnalysis": "The Israeli army said in a statement that it targeted Iranian military infrastructure overnight, including\u00a0missile launchers and storage sites. It added that ballistic missiles were especially targeted to reduce the number of launches against Israel.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-army-says-it-targeting-irans-ballistic-missile-system",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 01:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 04:30 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 08:08 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 09:09 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel says it has killed Iran's navy chief overseeing Strait of Hormuz blockade. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel army says it is targeting Iran's ballistic missile system. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
