@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 21:21 UTC",
+  "generatedAt": "2026-03-27 22:01 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel launches strikes on nuclear sites as Iran warns of retaliation \u00b7 Israel has struck a uranium processing facility in the central Iranian city of Y\u2026"
+    "Other: 'Shooting gallery': How a US invasion of Iranian islands might unfold \u00b7 US Marines and paratroopers who could be sent to seize an Iranian island in the \u2026",
+    "Other: Former US soldiers argue Israeli policy is now guiding US interests \u00b7 A group of anti-war, US military veterans have slammed what they say are Israeli\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-27 21:21 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 18,
+    "lastUpdated": "2026-03-27 22:01 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Israel launches strikes on nuclear sites as Iran warns of retaliation",
-      "summary": "Israel has struck a uranium processing facility in the central Iranian city of Yazd, the Israeli military confirmed, in an escalatory move that comes as regional diplomats have been attempting to broker an agreement to halt the joint US-Israeli war on Iran. The Israeli Air Force said it hit a plant ",
+      "time": "9 min ago",
+      "headline": "'Shooting gallery': How a US invasion of Iranian islands might unfold",
+      "summary": "US Marines and paratroopers who could be sent to seize an Iranian island in the Gulf will be thrust into a \u201cshooting gallery\u201d with vulnerable supply lines and ill-defined strategic objectives, former US military officials and analysts tell Middle East Eye. A US invasion would start with a campaign t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel has struck a uranium processing facility in the central Iranian city of Yazd, the Israeli military confirmed, in an escalatory move that comes as regional diplomats have been attempting to broker an agreement to halt the joint US-Israeli war on Iran. The Israeli Air Force said it hit a plant ",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/israel-launches-strikes-on-iran-nuclear-sites-as-war-enters-fifth-week?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "US Marines and paratroopers who could be sent to seize an Iranian island in the Gulf will be thrust into a \u201cshooting gallery\u201d with vulnerable supply lines and ill-defined strategic objectives, former US military officials and analysts tell Middle East Eye. A US invasion would start with a campaign t",
+      "sourceUrl": "https://www.middleeasteye.net/news/shooting-gallery-how-us-invasion-iranian-islands-would-unfold",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Former US soldiers argue Israeli policy is now guiding US interests",
+      "summary": "A group of anti-war, US military veterans have slammed what they say are Israeli interests guiding US military policy, culminating in the current US-Israeli war on Iran that is putting American lives at risk. To the public's knowledge, 13 US military personnel have so far been killed since the war w",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "A group of anti-war, US military veterans have slammed what they say are Israeli interests guiding US military policy, culminating in the current US-Israeli war on Iran that is putting American lives at risk. To the public's knowledge, 13 US military personnel have so far been killed since the war w",
+      "sourceUrl": "https://www.middleeasteye.net/news/former-us-soldiers-say-us-has-become-extension-israeli-foreign-policy-not-other-way-around",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 20:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-26 21:27 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 21:21 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-27 22:01 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel launches strikes on nuclear sites as Iran warns of retaliation. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Shooting gallery': How a US invasion of Iranian islands might unfold. Former US soldiers argue Israeli policy is now guiding US interests. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
