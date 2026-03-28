@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 10:06 UTC",
+  "generatedAt": "2026-03-28 10:52 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Thailand reaches deal with Iran to allow Hormuz oil transit, PM says \u00b7 Thailand\u2019s Prime Minister said he has reached an agreement with Iran to allow Th\u2026"
+    "Other: Yemen's Houthis launch first missile strike on Israel since Iran war began \u00b7 Yemen \u2019s Houthis fired missiles at Israel on Saturday for the first time since t\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-28 10:06 UTC",
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-28 10:52 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Thailand reaches deal with Iran to allow Hormuz oil transit, PM says",
-      "summary": "Thailand\u2019s Prime Minister said he has reached an agreement with Iran to allow Thai oil vessels to transit the Strait of Hormuz, aiming to safeguard the country\u2019s energy supplies, AFP reported. Speaking to reporters, Anutin Charnvirakul said the deal would help ease concerns as Thailand relies heavil",
+      "headline": "Yemen's Houthis launch first missile strike on Israel since Iran war began",
+      "summary": "Yemen \u2019s Houthis fired missiles at Israel on Saturday for the first time since the war on Iran broke out a month ago. In a video statement, military spokesperson Yahya Saree said the group had launched ballistic missiles at Israeli military sites. \u201c[We] have carried out the first military operation ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Thailand\u2019s Prime Minister said he has reached an agreement with Iran to allow Thai oil vessels to transit the Strait of Hormuz, aiming to safeguard the country\u2019s energy supplies, AFP reported. Speaking to reporters, Anutin Charnvirakul said the deal would help ease concerns as Thailand relies heavil",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/thailand-reaches-iran-deal-allow-hormuz-oil-transit-pm-says",
+      "fullAnalysis": "Yemen \u2019s Houthis fired missiles at Israel on Saturday for the first time since the war on Iran broke out a month ago. In a video statement, military spokesperson Yahya Saree said the group had launched ballistic missiles at Israeli military sites. \u201c[We] have carried out the first military operation ",
+      "sourceUrl": "https://www.middleeasteye.net/news/yemens-houthis-launch-first-missile-strike-israel-iran-war-began",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 10:08 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 11:08 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 10:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 10:52 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Thailand reaches deal with Iran to allow Hormuz oil transit, PM says. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Yemen's Houthis launch first missile strike on Israel since Iran war began. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
