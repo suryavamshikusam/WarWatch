@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-03-28 15:27 UTC",
+  "fetchedAt": "2026-03-28 15:54 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
