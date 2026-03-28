@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 08:08 UTC",
+  "generatedAt": "2026-03-28 08:58 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Yemen's Houthis claim missile attack on Israel, say attacks will continue \u00b7 Yemen's Houthis claimed responsibility for a missile attack on Israel, their fir\u2026"
+    "Other: Yemen\u2019s Houthis launch missile attack on Israel as war on Iran intensifies \u00b7 Yemen\u2019s Houthi rebels attacked Israel with a barrage of ballistic missiles \u2013 the\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-28 08:08 UTC",
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-28 08:58 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Yemen's Houthis claim missile attack on Israel, say attacks will continue",
-      "summary": "Yemen's Houthis claimed responsibility for a missile attack on Israel, their first since the broader Middle East conflict began, according to a statement aired on the group\u2019s Al-Masirah television. Houthi military spokesperson, Yahya Saree,\u00a0said the attack involved ballistic missiles targeting what ",
+      "time": "7 min ago",
+      "headline": "Yemen\u2019s Houthis launch missile attack on Israel as war on Iran intensifies",
+      "summary": "Yemen\u2019s Houthi rebels attacked Israel with a barrage of ballistic missiles \u2013 their first such strikes since the US-Israel war on Iran began. Brigadier-General Yahya Saree, a military spokesman for the Houthis, announced the attack on Saturday on the rebels\u2019 Al-Masirah satellite television. Strikes \u201c",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Yemen's Houthis claimed responsibility for a missile attack on Israel, their first since the broader Middle East conflict began, according to a statement aired on the group\u2019s Al-Masirah television. Houthi military spokesperson, Yahya Saree,\u00a0said the attack involved ballistic missiles targeting what ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/yemens-houthis-claim-missile-attack-israel-say-attacks-will-continue",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Yemen\u2019s Houthi rebels attacked Israel with a barrage of ballistic missiles \u2013 their first such strikes since the US-Israel war on Iran began. Brigadier-General Yahya Saree, a military spokesman for the Houthis, announced the attack on Saturday on the rebels\u2019 Al-Masirah satellite television. Strikes \u201c",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/28/yemens-houthis-claim-responsibility-for-a-missile-attack-on-israel-2?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 07:06 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 08:08 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 08:08 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 08:58 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Yemen's Houthis claim missile attack on Israel, say attacks will continue. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Yemen\u2019s Houthis launch missile attack on Israel as war on Iran intensifies. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
