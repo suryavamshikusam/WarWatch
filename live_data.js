@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 10:52 UTC",
+  "generatedAt": "2026-03-28 11:25 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Yemen's Houthis launch first missile strike on Israel since Iran war began \u00b7 Yemen \u2019s Houthis fired missiles at Israel on Saturday for the first time since t\u2026"
+    "Other: Iran says it 'destroyed' Ukrainian air defence depot in Dubai \u00b7 Iran\u2019s Revolutionary Guards said they fired missiles that \u201cdestroyed\u201d a Ukrainia\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-28 10:52 UTC",
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-28 11:25 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Yemen's Houthis launch first missile strike on Israel since Iran war began",
-      "summary": "Yemen \u2019s Houthis fired missiles at Israel on Saturday for the first time since the war on Iran broke out a month ago. In a video statement, military spokesperson Yahya Saree said the group had launched ballistic missiles at Israeli military sites. \u201c[We] have carried out the first military operation ",
+      "time": "6 min ago",
+      "headline": "Iran says it 'destroyed' Ukrainian air defence depot in Dubai",
+      "summary": "Iran\u2019s Revolutionary Guards said they fired missiles that \u201cdestroyed\u201d a Ukrainian air defence depot in Dubai, according to Fars news agency. The claim came hours after Ukrainian President Volodymyr Zelensky said Kyiv and Abu Dhabi had agreed to deepen defence cooperation amid Iranian drone attacks.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Yemen \u2019s Houthis fired missiles at Israel on Saturday for the first time since the war on Iran broke out a month ago. In a video statement, military spokesperson Yahya Saree said the group had launched ballistic missiles at Israeli military sites. \u201c[We] have carried out the first military operation ",
-      "sourceUrl": "https://www.middleeasteye.net/news/yemens-houthis-launch-first-missile-strike-israel-iran-war-began",
+      "fullAnalysis": "Iran\u2019s Revolutionary Guards said they fired missiles that \u201cdestroyed\u201d a Ukrainian air defence depot in Dubai, according to Fars news agency. The claim came hours after Ukrainian President Volodymyr Zelensky said Kyiv and Abu Dhabi had agreed to deepen defence cooperation amid Iranian drone attacks.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-destroyed-ukrainian-air-defence-depot-dubai",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 11:08 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 11:56 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 10:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 11:25 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Yemen's Houthis launch first missile strike on Israel since Iran war began. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran says it 'destroyed' Ukrainian air defence depot in Dubai. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
