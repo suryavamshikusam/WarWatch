@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-28 11:52 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran vs US-Israel War News Live Updates: Kuwait airport suffers \u2018significant\u2019 ra. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran vs US-Israel War News Live Updates: Kuwait airport suffers \u2018significant\u2019 ra",
+      "detail": "Kuwait International Airport was targeted by multiple \u200bdrone \u200battacks that \u2060caused significant damage to its radar \u200csystem but resulted in no casualties, state news agency KUNA said \u2060on \u2060Saturday, citing the country's \u2060Civil Aviation \u200cAuthority. The \u200bauthority's spokesperson later \u200csaid the attacks ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-us-israel-war-live-updates-araghchi-power-plant-attack-trump-pause-10605786/",
+      "fullAnalysis": "Kuwait International Airport was targeted by multiple \u200bdrone \u200battacks that \u2060caused significant damage to its radar \u200csystem but resulted in no casualties, state news agency KUNA said \u2060on \u2060Saturday, citing the country's \u2060Civil Aviation \u200cAuthority. The \u200bauthority's spokesperson later \u200csaid the attacks ",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-03-28 11:52 UTC"
+}
