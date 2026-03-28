@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 08:58 UTC",
+  "generatedAt": "2026-03-28 09:34 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Yemen\u2019s Houthis launch missile attack on Israel as war on Iran intensifies \u00b7 Yemen\u2019s Houthi rebels attacked Israel with a barrage of ballistic missiles \u2013 the\u2026"
+    "Other: Morning update \u00b7 Good morning Middle East Eye readers, Tensions across the Middle East have escal\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-28 08:58 UTC",
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-28 09:34 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Yemen\u2019s Houthis launch missile attack on Israel as war on Iran intensifies",
-      "summary": "Yemen\u2019s Houthi rebels attacked Israel with a barrage of ballistic missiles \u2013 their first such strikes since the US-Israel war on Iran began. Brigadier-General Yahya Saree, a military spokesman for the Houthis, announced the attack on Saturday on the rebels\u2019 Al-Masirah satellite television. Strikes \u201c",
+      "headline": "Morning update",
+      "summary": "Good morning Middle East Eye readers, Tensions across the Middle East have escalated overnight, with new fronts opening, missile exchanges continuing and diplomatic efforts struggling to keep pace. Here are the key developments this morning: Yemen\u2019s Houthis claimed a missile attack on Israel, warnin",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Yemen\u2019s Houthi rebels attacked Israel with a barrage of ballistic missiles \u2013 their first such strikes since the US-Israel war on Iran began. Brigadier-General Yahya Saree, a military spokesman for the Houthis, announced the attack on Saturday on the rebels\u2019 Al-Masirah satellite television. Strikes \u201c",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/28/yemens-houthis-claim-responsibility-for-a-missile-attack-on-israel-2?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Good morning Middle East Eye readers, Tensions across the Middle East have escalated overnight, with new fronts opening, missile exchanges continuing and diplomatic efforts struggling to keep pace. Here are the key developments this morning: Yemen\u2019s Houthis claimed a missile attack on Israel, warnin",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-500",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 08:08 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 09:09 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 08:58 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 09:34 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Yemen\u2019s Houthis launch missile attack on Israel as war on Iran intensifies. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
