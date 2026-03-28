@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-28 22:23 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan secures Iran deal to send 20 ships through Strait of Hormuz. Could Ukraine\u2019s drone expertise serve Gulf countries?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Pakistan secures Iran deal to send 20 ships through Strait of Hormuz",
+      "detail": "Iran has agreed to allow 20 Pakistani-flagged vessels to transit the Strait of Hormuz, in what Islamabad has called a meaningful step towards easing one of the worst energy crises in modern history. Ishaq Dar, Pakistan\u2019s foreign minister, announced the move on Saturday, posting on X that two ships w",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/28/pakistan-secures-iran-deal-to-send-20-ships-through-strait-of-hormuz?traffic_source=rss",
+      "fullAnalysis": "Iran has agreed to allow 20 Pakistani-flagged vessels to transit the Strait of Hormuz, in what Islamabad has called a meaningful step towards easing one of the worst energy crises in modern history. Ishaq Dar, Pakistan\u2019s foreign minister, announced the move on Saturday, posting on X that two ships w",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Could Ukraine\u2019s drone expertise serve Gulf countries?",
+      "detail": "Gulf nations seek new defence partnerships as Iran war escalates. Gulf countries have been bombarded by Iranian missiles and drones since the US-Israeli war on Iran began a month ago. They have used advanced air defence systems to counter the attacks. But interceptor missiles are expensive and take ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/inside-story/2026/3/28/could-ukraines-drone-expertise-serve-gulf-countries?traffic_source=rss",
+      "fullAnalysis": "Gulf nations seek new defence partnerships as Iran war escalates. Gulf countries have been bombarded by Iranian missiles and drones since the US-Israeli war on Iran began a month ago. They have used advanced air defence systems to counter the attacks. But interceptor missiles are expensive and take ",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-28 22:23 UTC"
+}
