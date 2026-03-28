@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 11:52 UTC",
+  "generatedAt": "2026-03-28 13:39 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran vs US-Israel War News Live Updates: Kuwait airport suffers \u2018significant\u2019 ra \u00b7 Kuwait International Airport was targeted by multiple \u200bdrone \u200battacks that \u2060caus\u2026"
+    "Other: Iranian attack on US base in Saudi Arabia wounds troops and damages aircraft \u00b7 An Iranian strike on a US military base in Saudi Arabia wounded at least a dozen\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-28 11:52 UTC",
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-28 13:39 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Iran vs US-Israel War News Live Updates: Kuwait airport suffers \u2018significant\u2019 ra",
-      "summary": "Kuwait International Airport was targeted by multiple \u200bdrone \u200battacks that \u2060caused significant damage to its radar \u200csystem but resulted in no casualties, state news agency KUNA said \u2060on \u2060Saturday, citing the country's \u2060Civil Aviation \u200cAuthority. The \u200bauthority's spokesperson later \u200csaid the attacks ",
+      "time": "7 min ago",
+      "headline": "Iranian attack on US base in Saudi Arabia wounds troops and damages aircraft",
+      "summary": "An Iranian strike on a US military base in Saudi Arabia wounded at least a dozen American troops and damaged aircraft on Friday, according to media reports. The Wall Street Journal cited officials as saying at least one missile and several drones struck Prince Sultan Air Base near Riyadh. The Associ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Kuwait International Airport was targeted by multiple \u200bdrone \u200battacks that \u2060caused significant damage to its radar \u200csystem but resulted in no casualties, state news agency KUNA said \u2060on \u2060Saturday, citing the country's \u2060Civil Aviation \u200cAuthority. The \u200bauthority's spokesperson later \u200csaid the attacks ",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-us-israel-war-live-updates-araghchi-power-plant-attack-trump-pause-10605786/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "An Iranian strike on a US military base in Saudi Arabia wounded at least a dozen American troops and damaged aircraft on Friday, according to media reports. The Wall Street Journal cited officials as saying at least one missile and several drones struck Prince Sultan Air Base near Riyadh. The Associ",
+      "sourceUrl": "https://www.middleeasteye.net/news/iranian-attack-us-base-saudi-arabia-wounds-troops-and-damages-aircraft",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 12:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 14:09 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 11:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 13:39 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran vs US-Israel War News Live Updates: Kuwait airport suffers \u2018significant\u2019 ra. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian attack on US base in Saudi Arabia wounds troops and damages aircraft. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
