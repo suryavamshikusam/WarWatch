@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 16:27 UTC",
+  "generatedAt": "2026-03-28 17:00 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UAE aluminium firm reports damage and injuries from Iranian attack \u00b7 The firm Emirates Global Aluminium (EGA) reported significant damage and multipl\u2026"
+    "Other: 'Down with the king': Death of Bahraini in custody sparks angry dissent \u00b7 The death and alleged torture of a Bahraini man detained in connection with the \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-28 16:27 UTC",
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-28 17:00 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "UAE aluminium firm reports damage and injuries from Iranian attack",
-      "summary": "The firm Emirates Global Aluminium (EGA) reported significant damage and multiple injuries on Saturday from an Iranian attack at a facility it operates. In a statement, EGA said its \"Al Taweelah site sustained significant damage during the Iranian missile and drone attacks at Khalifa Economic Zone A",
+      "time": "6 min ago",
+      "headline": "'Down with the king': Death of Bahraini in custody sparks angry dissent",
+      "summary": "The death and alleged torture of a Bahraini man detained in connection with the war on Iran has sparked angry dissent in the Gulf state. Mohamed al-Mosawi, 32, went out with friends on 19 March to eat the morning suhoor meal during the last days of Ramadan. At some point, according to the Bahrain In",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The firm Emirates Global Aluminium (EGA) reported significant damage and multiple injuries on Saturday from an Iranian attack at a facility it operates. In a statement, EGA said its \"Al Taweelah site sustained significant damage during the Iranian missile and drone attacks at Khalifa Economic Zone A",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-aluminium-firm-reports-damage-and-injuries-iranian-attack",
+      "fullAnalysis": "The death and alleged torture of a Bahraini man detained in connection with the war on Iran has sparked angry dissent in the Gulf state. Mohamed al-Mosawi, 32, went out with friends on 19 March to eat the morning suhoor meal during the last days of Ramadan. At some point, according to the Bahrain In",
+      "sourceUrl": "https://www.middleeasteye.net/news/down-king-death-bahraini-custody-sparks-angry-dissent",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 16:06 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 17:11 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 16:27 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 17:00 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UAE aluminium firm reports damage and injuries from Iranian attack. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Down with the king': Death of Bahraini in custody sparks angry dissent. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
