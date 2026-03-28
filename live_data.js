@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 09:34 UTC",
+  "generatedAt": "2026-03-28 10:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Morning update \u00b7 Good morning Middle East Eye readers, Tensions across the Middle East have escal\u2026"
+    "Other: Thailand reaches deal with Iran to allow Hormuz oil transit, PM says \u00b7 Thailand\u2019s Prime Minister said he has reached an agreement with Iran to allow Th\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-28 09:34 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-28 10:06 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Morning update",
-      "summary": "Good morning Middle East Eye readers, Tensions across the Middle East have escalated overnight, with new fronts opening, missile exchanges continuing and diplomatic efforts struggling to keep pace. Here are the key developments this morning: Yemen\u2019s Houthis claimed a missile attack on Israel, warnin",
+      "headline": "Thailand reaches deal with Iran to allow Hormuz oil transit, PM says",
+      "summary": "Thailand\u2019s Prime Minister said he has reached an agreement with Iran to allow Thai oil vessels to transit the Strait of Hormuz, aiming to safeguard the country\u2019s energy supplies, AFP reported. Speaking to reporters, Anutin Charnvirakul said the deal would help ease concerns as Thailand relies heavil",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Good morning Middle East Eye readers, Tensions across the Middle East have escalated overnight, with new fronts opening, missile exchanges continuing and diplomatic efforts struggling to keep pace. Here are the key developments this morning: Yemen\u2019s Houthis claimed a missile attack on Israel, warnin",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-500",
+      "fullAnalysis": "Thailand\u2019s Prime Minister said he has reached an agreement with Iran to allow Thai oil vessels to transit the Strait of Hormuz, aiming to safeguard the country\u2019s energy supplies, AFP reported. Speaking to reporters, Anutin Charnvirakul said the deal would help ease concerns as Thailand relies heavil",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/thailand-reaches-iran-deal-allow-hormuz-oil-transit-pm-says",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 09:09 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 10:08 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 09:34 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 10:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Thailand reaches deal with Iran to allow Hormuz oil transit, PM says. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
