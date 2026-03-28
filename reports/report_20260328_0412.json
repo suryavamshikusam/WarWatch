@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-28 03:59 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war LIVE: Israel military says striking 'regime targets' in Tehran; . IRGC threatens 'beyond eye for eye' retaliatory strikes on US-Israeli\u00a0sites in r. Amid Iran war, Trump says he\u2019d love his legacy to be made as \u2018great peacemaker\u2019. Hezbollah says it targeted Israeli advance toward Litani River. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran-Israel war LIVE: Israel military says striking 'regime targets' in Tehran; ",
+      "detail": "n Israeli rescue personnel works at the impact site following Iranian missile barrages as the U.S.-Israeli conflict with Iran continues, in Tel Aviv, Israel, March 28, 2026.\n                                                  | Photo Credit:  \n                          Reuters I srael\u2019s military said ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-us-war-west-asia-conflict-strait-of-hormuz-attacks-march-28-2026/article70795241.ece",
+      "fullAnalysis": "n Israeli rescue personnel works at the impact site following Iranian missile barrages as the U.S.-Israeli conflict with Iran continues, in Tel Aviv, Israel, March 28, 2026.\n                                                  | Photo Credit:  \n                          Reuters I srael\u2019s military said ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "IRGC threatens 'beyond eye for eye' retaliatory strikes on US-Israeli\u00a0sites in r",
+      "detail": "Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) warned it would carry out retaliatory strikes on industrial facilities across the region following attacks on its nuclear and infrastructure sites. In a statement issued, the IRGC said that Tehran's retaliation will be beyond a simple proportional resp",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-threatens-beyond-eye-eye-retaliatory-strikes-us-israeli-sites",
+      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) warned it would carry out retaliatory strikes on industrial facilities across the region following attacks on its nuclear and infrastructure sites. In a statement issued, the IRGC said that Tehran's retaliation will be beyond a simple proportional resp",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Amid Iran war, Trump says he\u2019d love his legacy to be made as \u2018great peacemaker\u2019",
+      "detail": "Updated - March 28, 2026 07:19 am IST - Washington U.S. President Donald Trump said \u2018Cuba is next\u2019 after \u2018knocking the hell out of Iran\u2019\n                                          | Photo Credit: Reuters U.S. President Donald Trump has said he would love his legacy to be made as a great peacemaker as",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/amid-iran-war-trump-says-hed-love-his-legacy-to-be-made-as-great-peacemaker/article70795235.ece",
+      "fullAnalysis": "Updated - March 28, 2026 07:19 am IST - Washington U.S. President Donald Trump said \u2018Cuba is next\u2019 after \u2018knocking the hell out of Iran\u2019\n                                          | Photo Credit: Reuters U.S. President Donald Trump has said he would love his legacy to be made as a great peacemaker as",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Hezbollah says it targeted Israeli advance toward Litani River",
+      "detail": "Hezbollah said it carried out multiple attacks on Israeli soldiers who crossed into Lebanese territory, targeting forces advancing toward the Litani River, Al Jazeera reported. The group said the operations \u200b\u200b\u200b\u00a0began after midnight local time and included strikes using rockets, artillery shells and ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-says-it-targeted-israeli-advance-toward-litani-river",
+      "fullAnalysis": "Hezbollah said it carried out multiple attacks on Israeli soldiers who crossed into Lebanese territory, targeting forces advancing toward the Litani River, Al Jazeera reported. The group said the operations \u200b\u200b\u200b\u00a0began after midnight local time and included strikes using rockets, artillery shells and ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-28 03:59 UTC"
+}
