@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 17:00 UTC",
+  "generatedAt": "2026-03-28 19:52 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'Down with the king': Death of Bahraini in custody sparks angry dissent \u00b7 The death and alleged torture of a Bahraini man detained in connection with the \u2026"
+    "Other: Qatar elder statesman warns Israel\u2019s war on Iran risks spiralling out of control \u00b7 A senior member of Qatar\u2019s ruling family and veteran statesman warned on Saturda\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-28 17:00 UTC",
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-28 19:52 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "6 min ago",
-      "headline": "'Down with the king': Death of Bahraini in custody sparks angry dissent",
-      "summary": "The death and alleged torture of a Bahraini man detained in connection with the war on Iran has sparked angry dissent in the Gulf state. Mohamed al-Mosawi, 32, went out with friends on 19 March to eat the morning suhoor meal during the last days of Ramadan. At some point, according to the Bahrain In",
+      "headline": "Qatar elder statesman warns Israel\u2019s war on Iran risks spiralling out of control",
+      "summary": "A senior member of Qatar\u2019s ruling family and veteran statesman warned on Saturday that the coming days will prove decisive, cautioning that failure to resolve the Israeli -US war on Iran could push the region into a prolonged escalation. Hamad bin Jassim bin Jaber Al Thani, also known as HBJ, served",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The death and alleged torture of a Bahraini man detained in connection with the war on Iran has sparked angry dissent in the Gulf state. Mohamed al-Mosawi, 32, went out with friends on 19 March to eat the morning suhoor meal during the last days of Ramadan. At some point, according to the Bahrain In",
-      "sourceUrl": "https://www.middleeasteye.net/news/down-king-death-bahraini-custody-sparks-angry-dissent",
+      "fullAnalysis": "A senior member of Qatar\u2019s ruling family and veteran statesman warned on Saturday that the coming days will prove decisive, cautioning that failure to resolve the Israeli -US war on Iran could push the region into a prolonged escalation. Hamad bin Jassim bin Jaber Al Thani, also known as HBJ, served",
+      "sourceUrl": "https://www.middleeasteye.net/news/qatar-elder-statesman-warns-israels-war-iran-risks-spiralling-out-control",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 17:11 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 18:05 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 17:00 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 19:52 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'Down with the king': Death of Bahraini in custody sparks angry dissent. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Qatar elder statesman warns Israel\u2019s war on Iran risks spiralling out of control. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
