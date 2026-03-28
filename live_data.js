@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-27 22:39 UTC",
+  "generatedAt": "2026-03-28 01:27 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Guns in the streets as US, Israel intensify month-long attacks across Iran \u00b7 Tehran, Iran \u2013 Heavily armed state forces continue to control Iran\u2019s streets, de\u2026"
+    "Other: Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran \u00b7 Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 19,
-    "lastUpdated": "2026-03-27 22:39 UTC",
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-28 01:27 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Guns in the streets as US, Israel intensify month-long attacks across Iran",
-      "summary": "Tehran, Iran \u2013 Heavily armed state forces continue to control Iran\u2019s streets, despite the United States and Israel launching more strikes and preparing for a potential ground attack, as the nearly one-month war proceeds with no clear end point on the horizon Checkpoints, roadblocks and patrols, some",
+      "time": "7 min ago",
+      "headline": "Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran",
+      "summary": "Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Tehran, Iran \u2013 Heavily armed state forces continue to control Iran\u2019s streets, despite the United States and Israel launching more strikes and preparing for a potential ground attack, as the nearly one-month war proceeds with no clear end point on the horizon Checkpoints, roadblocks and patrols, some",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/27/guns-in-the-streets-as-us-israel-intensify-month-long-attacks-across?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/28/iran-war-live-trump-again-slams-natos-lack-of-support-for-war-on-tehran?traffic_source=rss",
       "sourceLabel": "Al Jazeera"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-26 22:23 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 01:48 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-27 22:39 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 01:27 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Guns in the streets as US, Israel intensify month-long attacks across Iran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war live: Trump again slams NATO\u2019s lack of support for war on Tehran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
