@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 19:52 UTC",
+  "generatedAt": "2026-03-28 21:54 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Qatar elder statesman warns Israel\u2019s war on Iran risks spiralling out of control \u00b7 A senior member of Qatar\u2019s ruling family and veteran statesman warned on Saturda\u2026"
+    "Other: Netanyahu admits to arming crime families and militias in Gaza to fight Hamas \u00b7 Prime Minister Benjamin Netanyahu admitted to arming crime families and militias\u2026",
+    "Other: Kuwait airport hit by Iranian drone strikes \u00b7 Kuwait airport hit by Iranian drone strikes Thick, black smoke rose from Kuwait \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-28 19:52 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-28 21:54 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Qatar elder statesman warns Israel\u2019s war on Iran risks spiralling out of control",
-      "summary": "A senior member of Qatar\u2019s ruling family and veteran statesman warned on Saturday that the coming days will prove decisive, cautioning that failure to resolve the Israeli -US war on Iran could push the region into a prolonged escalation. Hamad bin Jassim bin Jaber Al Thani, also known as HBJ, served",
+      "time": "8 min ago",
+      "headline": "Netanyahu admits to arming crime families and militias in Gaza to fight Hamas",
+      "summary": "Prime Minister Benjamin Netanyahu admitted to arming crime families and militias in Gaza to fight Hamas in a statement following Yisrael Beytenu chair MK Avigdor Liberman's claims in an interview on KAN Reshet Bet Thursday. \"On the advice of security officials, we activated clans in Gaza that oppose",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A senior member of Qatar\u2019s ruling family and veteran statesman warned on Saturday that the coming days will prove decisive, cautioning that failure to resolve the Israeli -US war on Iran could push the region into a prolonged escalation. Hamad bin Jassim bin Jaber Al Thani, also known as HBJ, served",
-      "sourceUrl": "https://www.middleeasteye.net/news/qatar-elder-statesman-warns-israels-war-iran-risks-spiralling-out-control",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Prime Minister Benjamin Netanyahu admitted to arming crime families and militias in Gaza to fight Hamas in a statement following Yisrael Beytenu chair MK Avigdor Liberman's claims in an interview on KAN Reshet Bet Thursday. \"On the advice of security officials, we activated clans in Gaza that oppose",
+      "sourceUrl": "https://www.jpost.com/breaking-news/article-856742",
+      "sourceLabel": "Jerusalem Post"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "8 min ago",
+      "headline": "Kuwait airport hit by Iranian drone strikes",
+      "summary": "Kuwait airport hit by Iranian drone strikes Thick, black smoke rose from Kuwait International Airport Saturday after suspected Iranian drone strikes damaged radar systems and fuel storage facilities, state media said. No fatalities were reported. The airport has been repeatedly targeted since the US",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Kuwait airport hit by Iranian drone strikes Thick, black smoke rose from Kuwait International Airport Saturday after suspected Iranian drone strikes damaged radar systems and fuel storage facilities, state media said. No fatalities were reported. The airport has been repeatedly targeted since the US",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/28/kuwait-airport-hit-by-iranian-drone-strikes?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 18:05 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 19:13 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 19:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-28 21:54 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Qatar elder statesman warns Israel\u2019s war on Iran risks spiralling out of control. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu admits to arming crime families and militias in Gaza to fight Hamas. Kuwait airport hit by Iranian drone strikes. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
