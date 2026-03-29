@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 08:03 UTC",
+  "generatedAt": "2026-03-29 09:00 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran\u2019s IRGC claims attacks on UAE, Bahrain aluminium facilities \u00b7 Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) has said it carried out missile \u2026",
-    "Other: \u2018Trump has to open the Strait of Hormuz\u2019 with ground forces \u00b7 \u2018Trump has to open the Strait of Hormuz\u2019 with ground forces \u2018Once the US starts \u2026"
+    "Other: Morning update \u00b7 Here are the latest updates on the US and Israel\u2019s aggression against Iran, as t\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-29 08:03 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-29 09:00 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran\u2019s IRGC claims attacks on UAE, Bahrain aluminium facilities",
-      "summary": "Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) has said it carried out missile and drone attacks on aluminium facilities in Bahrain and the United Arab Emirates. In a statement carried by Iran\u2019s state broadcaster IRIB overnight on Sunday, the IRGC claimed the sites targeted on Saturday were linked ",
+      "time": "7 min ago",
+      "headline": "Morning update",
+      "summary": "Here are the latest updates on the US and Israel\u2019s aggression against Iran, as tensions continue to escalate across the region: Smoke rose over Tehran on Sunday after explosions, with air defences activated and targets unclear. A reported strike on a port in Hormozgan province killed five people and",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) has said it carried out missile and drone attacks on aluminium facilities in Bahrain and the United Arab Emirates. In a statement carried by Iran\u2019s state broadcaster IRIB overnight on Sunday, the IRGC claimed the sites targeted on Saturday were linked ",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/29/irans-irgc-claim-attacks-on-uae-bahrain-facilities-linked-to-us-war?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "\u2018Trump has to open the Strait of Hormuz\u2019 with ground forces",
-      "summary": "\u2018Trump has to open the Strait of Hormuz\u2019 with ground forces \u2018Once the US starts capturing territory in Iran, all bets are off.\u2019 \nKenneth Katzman, a senior fellow at the Soufan Center for Strategic Dialogue, says US war objectives in Iran that cannot be met with air power can be met with a limited gr",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "\u2018Trump has to open the Strait of Hormuz\u2019 with ground forces \u2018Once the US starts capturing territory in Iran, all bets are off.\u2019 \nKenneth Katzman, a senior fellow at the Soufan Center for Strategic Dialogue, says US war objectives in Iran that cannot be met with air power can be met with a limited gr",
-      "sourceUrl": "https://www.aljazeera.com/video/quotable/2026/3/29/trump-has-to-open-the-strait-of-hormuz-with-ground-forces?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Here are the latest updates on the US and Israel\u2019s aggression against Iran, as tensions continue to escalate across the region: Smoke rose over Tehran on Sunday after explosions, with air defences activated and targets unclear. A reported strike on a port in Hormozgan province killed five people and",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-502",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 07:35 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 08:08 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 08:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 09:00 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran\u2019s IRGC claims attacks on UAE, Bahrain aluminium facilities. \u2018Trump has to open the Strait of Hormuz\u2019 with ground forces. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
