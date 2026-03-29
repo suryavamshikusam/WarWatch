@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 17:26 UTC",
+  "generatedAt": "2026-03-29 19:55 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Pakistan hosts talks with Saudi, Turkey, Egypt to push Iran war de-escalation \u00b7 Pakistan says it is stepping up diplomatic efforts to halt the widening Israeli-\u2026",
-    "Other: Israeli PM says ordered military to \u2018further expand\u2019 security zone in Lebanon \u00b7 Updated - March 29, 2026 10:28 pm IST - Jerusalem Israeli Prime Minister Benjami\u2026"
+    "Other: War wipes $120bn from UAE markets, as economy comes under pressure \u00b7 The United Arab Emirates (UAE) is facing its most serious economic shock in deca\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-29 17:26 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-29 19:55 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Pakistan hosts talks with Saudi, Turkey, Egypt to push Iran war de-escalation",
-      "summary": "Pakistan says it is stepping up diplomatic efforts to halt the widening Israeli-US war on Iran, hosting regional powers for urgent talks in Islamabad. Foreign Minister Ishaq Dar said Pakistan, Saudi Arabia, Turkey and Egypt explored \"possible ways to bring an early and permanent end to the war\" in t",
+      "time": "6 min ago",
+      "headline": "War wipes $120bn from UAE markets, as economy comes under pressure",
+      "summary": "The United Arab Emirates (UAE) is facing its most serious economic shock in decades, as the Israeli -US war on Iran delivers a direct hit to its core industries, from finance to aviation, exposing major vulnerabilities in its economic model. More than $120bn has been wiped from market capitalisation",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Pakistan says it is stepping up diplomatic efforts to halt the widening Israeli-US war on Iran, hosting regional powers for urgent talks in Islamabad. Foreign Minister Ishaq Dar said Pakistan, Saudi Arabia, Turkey and Egypt explored \"possible ways to bring an early and permanent end to the war\" in t",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-hosts-talks-saudi-turkey-egypt-push-iran-war-de-escalation",
+      "fullAnalysis": "The United Arab Emirates (UAE) is facing its most serious economic shock in decades, as the Israeli -US war on Iran delivers a direct hit to its core industries, from finance to aviation, exposing major vulnerabilities in its economic model. More than $120bn has been wiped from market capitalisation",
+      "sourceUrl": "https://www.middleeasteye.net/news/war-wipes-120bn-uae-markets-economy-comes-under-pressure",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Israeli PM says ordered military to \u2018further expand\u2019 security zone in Lebanon",
-      "summary": "Updated - March 29, 2026 10:28 pm IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu\n                                          | Photo Credit: Reuters Israel's Prime Minister Benjamin Netanyahu said on Sunday (March 29, 2026) that he had ordered the military to \"further expand\" a security zon",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Updated - March 29, 2026 10:28 pm IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu\n                                          | Photo Credit: Reuters Israel's Prime Minister Benjamin Netanyahu said on Sunday (March 29, 2026) that he had ordered the military to \"further expand\" a security zon",
-      "sourceUrl": "https://www.thehindu.com/news/international/israeli-pm-says-ordered-military-to-further-expand-security-zone-in-lebanon/article70800448.ece",
-      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 16:27 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 17:00 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 17:26 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 19:55 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan hosts talks with Saudi, Turkey, Egypt to push Iran war de-escalation. Israeli PM says ordered military to \u2018further expand\u2019 security zone in Lebanon. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: War wipes $120bn from UAE markets, as economy comes under pressure. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
