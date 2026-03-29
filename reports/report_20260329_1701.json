@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-29 16:53 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran hits industrial zone in southern Israel. Israeli police block Latin Patriarch from Palm Sunday mass in Jerusalem. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran hits industrial zone in southern Israel",
+      "detail": "Iran hits industrial zone in southern Israel An Iranian missile barrage has caused a fire a chemical plant near Beersheba in southern Israel, following expanded attacks on Iranian infrastructure.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/29/iran-hits-industrial-zone-in-southern-israel?traffic_source=rss",
+      "fullAnalysis": "Iran hits industrial zone in southern Israel An Iranian missile barrage has caused a fire a chemical plant near Beersheba in southern Israel, following expanded attacks on Iranian infrastructure.",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Israeli police block Latin Patriarch from Palm Sunday mass in Jerusalem",
+      "detail": "Israeli police have blocked Catholic leaders from entering the Church of the Holy Sepulchre to celebrate Palm Sunday mass \"for the first time in centuries\", church authorities in Jerusalem said. The Latin Patriarch of Jerusalem, Cardinal Pierbattista Pizzaballa, and Rev Francesco Ielpo were stopped ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/articles/cvg0128z41eo?at_medium=RSS&at_campaign=rss",
+      "fullAnalysis": "Israeli police have blocked Catholic leaders from entering the Church of the Holy Sepulchre to celebrate Palm Sunday mass \"for the first time in centuries\", church authorities in Jerusalem said. The Latin Patriarch of Jerusalem, Cardinal Pierbattista Pizzaballa, and Rev Francesco Ielpo were stopped ",
+      "sourceLabel": "BBC"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-29 16:53 UTC"
+}

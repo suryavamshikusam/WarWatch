@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 16:03 UTC",
+  "generatedAt": "2026-03-29 16:53 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Pakistan deputy PM Ishaq Dhar falls while welcoming Egyptian FM to Middle East p \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Iran hits industrial zone in southern Israel \u00b7 Iran hits industrial zone in southern Israel An Iranian missile barrage has caus\u2026",
+    "Other: Israeli police block Latin Patriarch from Palm Sunday mass in Jerusalem \u00b7 Israeli police have blocked Catholic leaders from entering the Church of the Hol\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-29 16:03 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-29 16:53 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Pakistan deputy PM Ishaq Dhar falls while welcoming Egyptian FM to Middle East p",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "8 min ago",
+      "headline": "Iran hits industrial zone in southern Israel",
+      "summary": "Iran hits industrial zone in southern Israel An Iranian missile barrage has caused a fire a chemical plant near Beersheba in southern Israel, following expanded attacks on Iranian infrastructure.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/pakistan/pakistan-deputy-pm-ishaq-dhar-falls-while-welcoming-egyptian-fm-to-middle-east-peace-talks-video-goes-viral/articleshow/129882475.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "Iran hits industrial zone in southern Israel An Iranian missile barrage has caused a fire a chemical plant near Beersheba in southern Israel, following expanded attacks on Iranian infrastructure.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/29/iran-hits-industrial-zone-in-southern-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "8 min ago",
+      "headline": "Israeli police block Latin Patriarch from Palm Sunday mass in Jerusalem",
+      "summary": "Israeli police have blocked Catholic leaders from entering the Church of the Holy Sepulchre to celebrate Palm Sunday mass \"for the first time in centuries\", church authorities in Jerusalem said. The Latin Patriarch of Jerusalem, Cardinal Pierbattista Pizzaballa, and Rev Francesco Ielpo were stopped ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli police have blocked Catholic leaders from entering the Church of the Holy Sepulchre to celebrate Palm Sunday mass \"for the first time in centuries\", church authorities in Jerusalem said. The Latin Patriarch of Jerusalem, Cardinal Pierbattista Pizzaballa, and Rev Francesco Ielpo were stopped ",
+      "sourceUrl": "https://www.bbc.com/news/articles/cvg0128z41eo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 11:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 13:39 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 16:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 16:53 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan deputy PM Ishaq Dhar falls while welcoming Egyptian FM to Middle East p. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran hits industrial zone in southern Israel. Israeli police block Latin Patriarch from Palm Sunday mass in Jerusalem. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
