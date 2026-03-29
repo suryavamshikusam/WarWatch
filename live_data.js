@@ -1,17 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 01:50 UTC",
+  "generatedAt": "2026-03-29 04:34 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Pentagon prepares for weeks of ground operations in Iran, report says \u00b7 The Pentagon is preparing for the possibility of weeks of ground operations in I\u2026",
-    "Other: Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles \u00b7 Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
-    "Other: Video: US lawmaker Bernie Sanders calls Iran war unconstitutional and illegal \u00b7 At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota, Senator Bernie \u2026",
-    "Other: Iran-Israel war LIVE: Yemen's Houthis enter Iran war with attacks on Israel, whi \u00b7 An Israeli artillery unit fires towards Lebanon, amid escalating hostilities bet\u2026"
+    "Other: Gulf strikes threaten fuel, fertiliser and medical supplies globally \u00b7 A wave of strikes across Gulf countries is raising concerns about global supplie\u2026",
+    "Other: IRGC condemns attack on Iraqi Kurdish leader\u2019s residence \u00b7 Iran\u2019s Islamic Revolutionary Guard Corps condemned a drone attack on the residen\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-29 01:50 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-29 04:34 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -51,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Pentagon prepares for weeks of ground operations in Iran, report says",
-      "summary": "The Pentagon is preparing for the possibility of weeks of ground operations in Iran, though any action under consideration would likely be limited in scope and not a full-scale invasion, The Washington Post reported, citing US officials. Discussions have included potential joint raids involving spec",
+      "time": "9 min ago",
+      "headline": "Gulf strikes threaten fuel, fertiliser and medical supplies globally",
+      "summary": "A wave of strikes across Gulf countries is raising concerns about global supplies of fuel, fertiliser and critical medical resources, as attacks hit industrial and infrastructure sites across the region, reports said. Aluminium Bahrain said its facility was targeted, injuring two people, while incid",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Pentagon is preparing for the possibility of weeks of ground operations in Iran, though any action under consideration would likely be limited in scope and not a full-scale invasion, The Washington Post reported, citing US officials. Discussions have included potential joint raids involving spec",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/pentagon-prepares-weeks-long-iran-ground-operations-report-says",
+      "fullAnalysis": "A wave of strikes across Gulf countries is raising concerns about global supplies of fuel, fertiliser and critical medical resources, as attacks hit industrial and infrastructure sites across the region, reports said. Aluminium Bahrain said its facility was targeted, injuring two people, while incid",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gulf-strikes-threaten-fuel-fertiliser-and-medical-supplies-globally",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,58 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
-      "summary": "Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
+      "time": "9 min ago",
+      "headline": "IRGC condemns attack on Iraqi Kurdish leader\u2019s residence",
+      "summary": "Iran\u2019s Islamic Revolutionary Guard Corps condemned a drone attack on the residence of Iraqi Kurdistan President Nechirvan Barzani, blaming the United States and Israel and calling the incident a \u201cclear act of terrorism,\u201d according to remarks carried by Press TV. The IRGC described the strike as an a",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/29/iran-war-live-houthis-attack-israel-anti-war-protesters-rally-in-tel-aviv?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Video: US lawmaker Bernie Sanders calls Iran war unconstitutional and illegal",
-      "summary": "At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota, Senator Bernie Sanders condemned the ongoing US and Israeli military campaign against Iran, arguing that it lacked constitutional authority and violated international law. At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota, Senator Bernie Sanders condemned the ongoing US and Israeli military campaign against Iran, arguing that it lacked constitutional authority and violated international law. At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-us-senator-bernie-sanders-calls-iran-war-unconstitutional-and",
+      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps condemned a drone attack on the residence of Iraqi Kurdistan President Nechirvan Barzani, blaming the United States and Israel and calling the incident a \u201cclear act of terrorism,\u201d according to remarks carried by Press TV. The IRGC described the strike as an a",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-condemns-attack-iraqi-kurdish-leaders-residence",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran-Israel war LIVE: Yemen's Houthis enter Iran war with attacks on Israel, whi",
-      "summary": "An Israeli artillery unit fires towards Lebanon, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in northern Israel.  \n                                                  | Photo Credit:  \n                          Reuters T he risk of an exp",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "An Israeli artillery unit fires towards Lebanon, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in northern Israel.  \n                                                  | Photo Credit:  \n                          Reuters T he risk of an exp",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-us-war-updates-live-march-29-2026/article70798605.ece",
-      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 22:01 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 22:39 UTC",
       "l": "HIGH",
@@ -245,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 01:50 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 04:34 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Pentagon prepares for weeks of ground operations in Iran, report says. Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles. Video: US lawmaker Bernie Sanders calls Iran war unconstitutional and illegal. Iran-Israel war LIVE: Yemen's Houthis enter Iran war with attacks on Israel, whi. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Gulf strikes threaten fuel, fertiliser and medical supplies globally. IRGC condemns attack on Iraqi Kurdish leader\u2019s residence. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
