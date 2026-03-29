@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-29 06:04 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel says Iran moving military command centres to mobile structures. What happens in the occupied West Bank under the shadow of the Iran war. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Israel says Iran moving military command centres to mobile structures",
+      "detail": "The Israeli military on Sunday said Iran has been moving its command centres to mobile structures in recent days following strikes on fixed headquarters during the conflict, according to reporting in local media. Time of Israel reported that the military said the shift was identified after earlier a",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-iran-moving-mlitary-command-centres-mobile-structures",
+      "fullAnalysis": "The Israeli military on Sunday said Iran has been moving its command centres to mobile structures in recent days following strikes on fixed headquarters during the conflict, according to reporting in local media. Time of Israel reported that the military said the shift was identified after earlier a",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "What happens in the occupied West Bank under the shadow of the Iran war",
+      "detail": "What happens in the occupied West Bank under the shadow of the Iran war",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/by-the-numbers-3/2026/3/29/what-happens-in-the-occupied-west-bank-under-the-shadow-of-the-iran-war?traffic_source=rss",
+      "fullAnalysis": "What happens in the occupied West Bank under the shadow of the Iran war",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-29 06:04 UTC"
+}

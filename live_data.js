@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 04:34 UTC",
+  "generatedAt": "2026-03-29 06:04 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Gulf strikes threaten fuel, fertiliser and medical supplies globally \u00b7 A wave of strikes across Gulf countries is raising concerns about global supplie\u2026",
-    "Other: IRGC condemns attack on Iraqi Kurdish leader\u2019s residence \u00b7 Iran\u2019s Islamic Revolutionary Guard Corps condemned a drone attack on the residen\u2026"
+    "Other: Israel says Iran moving military command centres to mobile structures \u00b7 The Israeli military on Sunday said Iran has been moving its command centres to \u2026",
+    "Other: What happens in the occupied West Bank under the shadow of the Iran war \u00b7 What happens in the occupied West Bank under the shadow of the Iran war"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-29 04:34 UTC",
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-29 06:04 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Gulf strikes threaten fuel, fertiliser and medical supplies globally",
-      "summary": "A wave of strikes across Gulf countries is raising concerns about global supplies of fuel, fertiliser and critical medical resources, as attacks hit industrial and infrastructure sites across the region, reports said. Aluminium Bahrain said its facility was targeted, injuring two people, while incid",
+      "headline": "Israel says Iran moving military command centres to mobile structures",
+      "summary": "The Israeli military on Sunday said Iran has been moving its command centres to mobile structures in recent days following strikes on fixed headquarters during the conflict, according to reporting in local media. Time of Israel reported that the military said the shift was identified after earlier a",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A wave of strikes across Gulf countries is raising concerns about global supplies of fuel, fertiliser and critical medical resources, as attacks hit industrial and infrastructure sites across the region, reports said. Aluminium Bahrain said its facility was targeted, injuring two people, while incid",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/gulf-strikes-threaten-fuel-fertiliser-and-medical-supplies-globally",
+      "fullAnalysis": "The Israeli military on Sunday said Iran has been moving its command centres to mobile structures in recent days following strikes on fixed headquarters during the conflict, according to reporting in local media. Time of Israel reported that the military said the shift was identified after earlier a",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-iran-moving-mlitary-command-centres-mobile-structures",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "IRGC condemns attack on Iraqi Kurdish leader\u2019s residence",
-      "summary": "Iran\u2019s Islamic Revolutionary Guard Corps condemned a drone attack on the residence of Iraqi Kurdistan President Nechirvan Barzani, blaming the United States and Israel and calling the incident a \u201cclear act of terrorism,\u201d according to remarks carried by Press TV. The IRGC described the strike as an a",
+      "headline": "What happens in the occupied West Bank under the shadow of the Iran war",
+      "summary": "What happens in the occupied West Bank under the shadow of the Iran war",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps condemned a drone attack on the residence of Iraqi Kurdistan President Nechirvan Barzani, blaming the United States and Israel and calling the incident a \u201cclear act of terrorism,\u201d according to remarks carried by Press TV. The IRGC described the strike as an a",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-condemns-attack-iraqi-kurdish-leaders-residence",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "What happens in the occupied West Bank under the shadow of the Iran war",
+      "sourceUrl": "https://www.aljazeera.com/video/by-the-numbers-3/2026/3/29/what-happens-in-the-occupied-west-bank-under-the-shadow-of-the-iran-war?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 22:39 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 01:27 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 04:34 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 06:04 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Gulf strikes threaten fuel, fertiliser and medical supplies globally. IRGC condemns attack on Iraqi Kurdish leader\u2019s residence. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel says Iran moving military command centres to mobile structures. What happens in the occupied West Bank under the shadow of the Iran war. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
