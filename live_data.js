@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 20:58 UTC",
+  "generatedAt": "2026-03-29 21:29 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran\u2019s supreme leader thanks Iraq for support in war \u00b7 Iran\u2019s newly elected supreme leader Mojtaba Khamenei has thanked Iraq for backin\u2026"
+    "Other: American University of Beirut moves online after Iran warns of retaliation over  \u00b7 The American University of Beirut will shift to remote operations for two days a\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-29 20:58 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-29 21:29 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "6 min ago",
-      "headline": "Iran\u2019s supreme leader thanks Iraq for support in war",
-      "summary": "Iran\u2019s newly elected supreme leader Mojtaba Khamenei has thanked Iraq for backing Tehran in the war against the United States and Israel, according to a message carried by Iranian media. He \u201cexpresses his gratitude to the supreme religious authority and the Iraqi people for their clear stance agains",
+      "headline": "American University of Beirut moves online after Iran warns of retaliation over ",
+      "summary": "The American University of Beirut will shift to remote operations for two days after Iran\u2019s Islamic Revolutionary Guard Corps threatened US universities across the region. \u201cLike many of you, we learned early this morning of threats issued against American universities in the region,\u201d President Fadlo",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s newly elected supreme leader Mojtaba Khamenei has thanked Iraq for backing Tehran in the war against the United States and Israel, according to a message carried by Iranian media. He \u201cexpresses his gratitude to the supreme religious authority and the Iraqi people for their clear stance agains",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irans-supreme-leader-thanks-iraq-support-war",
+      "fullAnalysis": "The American University of Beirut will shift to remote operations for two days after Iran\u2019s Islamic Revolutionary Guard Corps threatened US universities across the region. \u201cLike many of you, we learned early this morning of threats issued against American universities in the region,\u201d President Fadlo",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/american-university-beirut-moves-online-after-iran-warns-retaliation",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 19:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 21:54 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 20:58 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 21:29 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran\u2019s supreme leader thanks Iraq for support in war. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: American University of Beirut moves online after Iran warns of retaliation over . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
