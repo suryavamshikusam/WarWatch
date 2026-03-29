@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 09:00 UTC",
+  "generatedAt": "2026-03-29 10:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Morning update \u00b7 Here are the latest updates on the US and Israel\u2019s aggression against Iran, as t\u2026"
+    "Other: Pentagon preparing for US ground assault in Iran, says report \u00b7 The Pentagon is preparing options for a ground assault in Iran , as thousands of\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-29 09:00 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-29 10:06 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Morning update",
-      "summary": "Here are the latest updates on the US and Israel\u2019s aggression against Iran, as tensions continue to escalate across the region: Smoke rose over Tehran on Sunday after explosions, with air defences activated and targets unclear. A reported strike on a port in Hormozgan province killed five people and",
+      "headline": "Pentagon preparing for US ground assault in Iran, says report",
+      "summary": "The Pentagon is preparing options for a ground assault in Iran , as thousands of US troops and marines arrive in the Middle East, The Washington Post reported on Saturday. Citing US officials, the report said any such operation would not be a full-scale invasion, but could involve raids by a mixture",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Here are the latest updates on the US and Israel\u2019s aggression against Iran, as tensions continue to escalate across the region: Smoke rose over Tehran on Sunday after explosions, with air defences activated and targets unclear. A reported strike on a port in Hormozgan province killed five people and",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-502",
+      "fullAnalysis": "The Pentagon is preparing options for a ground assault in Iran , as thousands of US troops and marines arrive in the Middle East, The Washington Post reported on Saturday. Citing US officials, the report said any such operation would not be a full-scale invasion, but could involve raids by a mixture",
+      "sourceUrl": "https://www.middleeasteye.net/news/pentagon-preparing-us-ground-assault-iran-says-report",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 08:08 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 08:58 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 09:00 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 10:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Pentagon preparing for US ground assault in Iran, says report. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
