@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 21:29 UTC",
+  "generatedAt": "2026-03-29 22:24 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: American University of Beirut moves online after Iran warns of retaliation over  \u00b7 The American University of Beirut will shift to remote operations for two days a\u2026"
+    "Other: After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t \u00b7 A close ally of US President Donald Trump said on Saturday that Gulf leaders sho\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-29 21:29 UTC",
+    "updatesToday": 18,
+    "lastUpdated": "2026-03-29 22:24 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "American University of Beirut moves online after Iran warns of retaliation over ",
-      "summary": "The American University of Beirut will shift to remote operations for two days after Iran\u2019s Islamic Revolutionary Guard Corps threatened US universities across the region. \u201cLike many of you, we learned early this morning of threats issued against American universities in the region,\u201d President Fadlo",
+      "time": "7 min ago",
+      "headline": "After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t",
+      "summary": "A close ally of US President Donald Trump said on Saturday that Gulf leaders should send their own children to fight on the front lines in the Israeli -US war on Iran . Speaking on his \u201cWar Room\u201d podcast, former White House strategist Steve Bannon said Gulf elites should form the \u201cfirst wave\u201d of any",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The American University of Beirut will shift to remote operations for two days after Iran\u2019s Islamic Revolutionary Guard Corps threatened US universities across the region. \u201cLike many of you, we learned early this morning of threats issued against American universities in the region,\u201d President Fadlo",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/american-university-beirut-moves-online-after-iran-warns-retaliation",
+      "fullAnalysis": "A close ally of US President Donald Trump said on Saturday that Gulf leaders should send their own children to fight on the front lines in the Israeli -US war on Iran . Speaking on his \u201cWar Room\u201d podcast, former White House strategist Steve Bannon said Gulf elites should form the \u201cfirst wave\u201d of any",
+      "sourceUrl": "https://www.middleeasteye.net/news/after-trump-said-mbs-was-kissing-his-ass-gulf-leaders-told-send-children-fight-israel",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 21:54 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 22:23 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 21:29 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 22:24 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: American University of Beirut moves online after Iran warns of retaliation over . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-29 22:24 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t",
+      "detail": "A close ally of US President Donald Trump said on Saturday that Gulf leaders should send their own children to fight on the front lines in the Israeli -US war on Iran . Speaking on his \u201cWar Room\u201d podcast, former White House strategist Steve Bannon said Gulf elites should form the \u201cfirst wave\u201d of any",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/after-trump-said-mbs-was-kissing-his-ass-gulf-leaders-told-send-children-fight-israel",
+      "fullAnalysis": "A close ally of US President Donald Trump said on Saturday that Gulf leaders should send their own children to fight on the front lines in the Israeli -US war on Iran . Speaking on his \u201cWar Room\u201d podcast, former White House strategist Steve Bannon said Gulf elites should form the \u201cfirst wave\u201d of any",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-03-29 22:24 UTC"
+}
