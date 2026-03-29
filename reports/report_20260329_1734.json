@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-29 17:26 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Pakistan hosts talks with Saudi, Turkey, Egypt to push Iran war de-escalation. Israeli PM says ordered military to \u2018further expand\u2019 security zone in Lebanon. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Pakistan hosts talks with Saudi, Turkey, Egypt to push Iran war de-escalation",
+      "detail": "Pakistan says it is stepping up diplomatic efforts to halt the widening Israeli-US war on Iran, hosting regional powers for urgent talks in Islamabad. Foreign Minister Ishaq Dar said Pakistan, Saudi Arabia, Turkey and Egypt explored \"possible ways to bring an early and permanent end to the war\" in t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/pakistan-hosts-talks-saudi-turkey-egypt-push-iran-war-de-escalation",
+      "fullAnalysis": "Pakistan says it is stepping up diplomatic efforts to halt the widening Israeli-US war on Iran, hosting regional powers for urgent talks in Islamabad. Foreign Minister Ishaq Dar said Pakistan, Saudi Arabia, Turkey and Egypt explored \"possible ways to bring an early and permanent end to the war\" in t",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israeli PM says ordered military to \u2018further expand\u2019 security zone in Lebanon",
+      "detail": "Updated - March 29, 2026 10:28 pm IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu\n                                          | Photo Credit: Reuters Israel's Prime Minister Benjamin Netanyahu said on Sunday (March 29, 2026) that he had ordered the military to \"further expand\" a security zon",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/israeli-pm-says-ordered-military-to-further-expand-security-zone-in-lebanon/article70800448.ece",
+      "fullAnalysis": "Updated - March 29, 2026 10:28 pm IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu\n                                          | Photo Credit: Reuters Israel's Prime Minister Benjamin Netanyahu said on Sunday (March 29, 2026) that he had ordered the military to \"further expand\" a security zon",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-29 17:26 UTC"
+}
