@@ -1,14 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-28 23:26 UTC",
+  "generatedAt": "2026-03-29 01:50 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian attack on US base in Saudi Arabia wounds troops and damages aircraft \u00b7 An Iranian strike on a US military base in Saudi Arabia wounded at least a dozen\u2026"
+    "Other: Pentagon prepares for weeks of ground operations in Iran, report says \u00b7 The Pentagon is preparing for the possibility of weeks of ground operations in I\u2026",
+    "Other: Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles \u00b7 Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
+    "Other: Video: US lawmaker Bernie Sanders calls Iran war unconstitutional and illegal \u00b7 At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota, Senator Bernie \u2026",
+    "Other: Iran-Israel war LIVE: Yemen's Houthis enter Iran war with attacks on Israel, whi \u00b7 An Israeli artillery unit fires towards Lebanon, amid escalating hostilities bet\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-28 23:26 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-29 01:50 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -48,26 +51,74 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Iranian attack on US base in Saudi Arabia wounds troops and damages aircraft",
-      "summary": "An Iranian strike on a US military base in Saudi Arabia wounded at least a dozen American troops and damaged aircraft on Friday, according to media reports. The Wall Street Journal cited officials as saying at least one missile and several drones struck Prince Sultan Air Base near Riyadh. The Associ",
+      "time": "13 min ago",
+      "headline": "Pentagon prepares for weeks of ground operations in Iran, report says",
+      "summary": "The Pentagon is preparing for the possibility of weeks of ground operations in Iran, though any action under consideration would likely be limited in scope and not a full-scale invasion, The Washington Post reported, citing US officials. Discussions have included potential joint raids involving spec",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "An Iranian strike on a US military base in Saudi Arabia wounded at least a dozen American troops and damaged aircraft on Friday, according to media reports. The Wall Street Journal cited officials as saying at least one missile and several drones struck Prince Sultan Air Base near Riyadh. The Associ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-attack-us-base-saudi-arabia-wounds-troops-and-damages-aircraft",
+      "fullAnalysis": "The Pentagon is preparing for the possibility of weeks of ground operations in Iran, though any action under consideration would likely be limited in scope and not a full-scale invasion, The Washington Post reported, citing US officials. Discussions have included potential joint raids involving spec",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/pentagon-prepares-weeks-long-iran-ground-operations-report-says",
       "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
+      "summary": "Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/29/iran-war-live-houthis-attack-israel-anti-war-protesters-rally-in-tel-aviv?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Video: US lawmaker Bernie Sanders calls Iran war unconstitutional and illegal",
+      "summary": "At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota, Senator Bernie Sanders condemned the ongoing US and Israeli military campaign against Iran, arguing that it lacked constitutional authority and violated international law. At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota, Senator Bernie Sanders condemned the ongoing US and Israeli military campaign against Iran, arguing that it lacked constitutional authority and violated international law. At the flagship \u201cNo Kings\u201d protest rally in St. Paul, Minnesota",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-us-senator-bernie-sanders-calls-iran-war-unconstitutional-and",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran-Israel war LIVE: Yemen's Houthis enter Iran war with attacks on Israel, whi",
+      "summary": "An Israeli artillery unit fires towards Lebanon, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in northern Israel.  \n                                                  | Photo Credit:  \n                          Reuters T he risk of an exp",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "An Israeli artillery unit fires towards Lebanon, amid escalating hostilities between Israel and Hezbollah, as the U.S.-Israeli conflict with Iran continues, in northern Israel.  \n                                                  | Photo Credit:  \n                          Reuters T he risk of an exp",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-us-war-updates-live-march-29-2026/article70798605.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-27 21:21 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-27 22:01 UTC",
       "l": "HIGH",
@@ -194,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-28 23:26 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 01:50 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian attack on US base in Saudi Arabia wounds troops and damages aircraft. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Pentagon prepares for weeks of ground operations in Iran, report says. Iran war live: Tehran warns US, Israeli universities; Houthis fire missiles. Video: US lawmaker Bernie Sanders calls Iran war unconstitutional and illegal. Iran-Israel war LIVE: Yemen's Houthis enter Iran war with attacks on Israel, whi. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
