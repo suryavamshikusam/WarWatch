@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 13:41 UTC",
+  "generatedAt": "2026-03-29 14:21 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Pentagon preparing for US ground assault in Iran, says report \u00b7 The Pentagon is preparing options for a ground assault in Iran , as thousands of\u2026"
+    "Other: Middle East crisis: Mediators gather in Pakistan for talks on ending month-long  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
+    "Other: ICC bureau must uphold judges\u2019 verdict on Karim Khan, say top lawyers \u00b7 Leading lawyers and legal experts have called on the governing bureau of the Int\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-29 13:41 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-29 14:21 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,15 +49,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Pentagon preparing for US ground assault in Iran, says report",
-      "summary": "The Pentagon is preparing options for a ground assault in Iran , as thousands of US troops and marines arrive in the Middle East, The Washington Post reported on Saturday. Citing US officials, the report said any such operation would not be a full-scale invasion, but could involve raids by a mixture",
+      "time": "9 min ago",
+      "headline": "Middle East crisis: Mediators gather in Pakistan for talks on ending month-long ",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Pentagon is preparing options for a ground assault in Iran , as thousands of US troops and marines arrive in the Middle East, The Washington Post reported on Saturday. Citing US officials, the report said any such operation would not be a full-scale invasion, but could involve raids by a mixture",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/pentagon-preparing-us-ground-assault-iran-says-report",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/middle-east-crisis-mediators-gather-in-pakistan-for-talks-on-ending-month-long-iran-war/articleshow/129881093.cms",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "ICC bureau must uphold judges\u2019 verdict on Karim Khan, say top lawyers",
+      "summary": "Leading lawyers and legal experts have called on the governing bureau of the International Criminal Court (ICC) to uphold the findings of a judicial panel that cleared the court\u2019s chief prosecutor, Karim Khan, of wrongdoing following a sexual misconduct complaint. The 21-member bureau of the ICC\u2019s A",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Leading lawyers and legal experts have called on the governing bureau of the International Criminal Court (ICC) to uphold the findings of a judicial panel that cleared the court\u2019s chief prosecutor, Karim Khan, of wrongdoing following a sexual misconduct complaint. The 21-member bureau of the ICC\u2019s A",
+      "sourceUrl": "https://www.middleeasteye.net/news/icc-bureau-must-uphold-judges-verdict-karim-khan-say-legal-experts",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 10:06 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 10:52 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 13:41 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 14:21 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Pentagon preparing for US ground assault in Iran, says report. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Middle East crisis: Mediators gather in Pakistan for talks on ending month-long . ICC bureau must uphold judges\u2019 verdict on Karim Khan, say top lawyers. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

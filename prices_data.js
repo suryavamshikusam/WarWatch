@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-03-29 13:47 UTC",
+  "fetchedAt": "2026-03-29 14:30 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -56,6 +56,13 @@ window.WARWATCH_PRICES = {
       "formatted": "\u20b9137.76",
       "day_pct": -1.96,
       "war_pct": -14.17
+    },
+    "ADANIPORTS.NS": {
+      "name": "Adani Ports",
+      "price": 1337.8,
+      "formatted": "\u20b91,337.8",
+      "day_pct": -2.77,
+      "war_pct": 8.5
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
@@ -352,7 +359,7 @@ window.WARWATCH_PRICES = {
       "mcx_gold": 137833,
       "mcx_silver": 212634,
       "ioc": 137.8,
-      "adani": 0
+      "adani": 1338
     }
   ]
 };
