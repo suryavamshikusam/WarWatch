@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-29 08:03 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran\u2019s IRGC claims attacks on UAE, Bahrain aluminium facilities. \u2018Trump has to open the Strait of Hormuz\u2019 with ground forces. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran\u2019s IRGC claims attacks on UAE, Bahrain aluminium facilities",
+      "detail": "Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) has said it carried out missile and drone attacks on aluminium facilities in Bahrain and the United Arab Emirates. In a statement carried by Iran\u2019s state broadcaster IRIB overnight on Sunday, the IRGC claimed the sites targeted on Saturday were linked ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/29/irans-irgc-claim-attacks-on-uae-bahrain-facilities-linked-to-us-war?traffic_source=rss",
+      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps (IRGC) has said it carried out missile and drone attacks on aluminium facilities in Bahrain and the United Arab Emirates. In a statement carried by Iran\u2019s state broadcaster IRIB overnight on Sunday, the IRGC claimed the sites targeted on Saturday were linked ",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "\u2018Trump has to open the Strait of Hormuz\u2019 with ground forces",
+      "detail": "\u2018Trump has to open the Strait of Hormuz\u2019 with ground forces \u2018Once the US starts capturing territory in Iran, all bets are off.\u2019 \nKenneth Katzman, a senior fellow at the Soufan Center for Strategic Dialogue, says US war objectives in Iran that cannot be met with air power can be met with a limited gr",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/quotable/2026/3/29/trump-has-to-open-the-strait-of-hormuz-with-ground-forces?traffic_source=rss",
+      "fullAnalysis": "\u2018Trump has to open the Strait of Hormuz\u2019 with ground forces \u2018Once the US starts capturing territory in Iran, all bets are off.\u2019 \nKenneth Katzman, a senior fellow at the Soufan Center for Strategic Dialogue, says US war objectives in Iran that cannot be met with air power can be met with a limited gr",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-29 08:03 UTC"
+}
