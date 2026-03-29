@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 10:06 UTC",
+  "generatedAt": "2026-03-29 10:54 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Pentagon preparing for US ground assault in Iran, says report \u00b7 The Pentagon is preparing options for a ground assault in Iran , as thousands of\u2026"
+    "Other: $3 billion toll: US counts losses in aircraft, drones, defence systems \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-29 10:06 UTC",
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-29 10:54 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Pentagon preparing for US ground assault in Iran, says report",
-      "summary": "The Pentagon is preparing options for a ground assault in Iran , as thousands of US troops and marines arrive in the Middle East, The Washington Post reported on Saturday. Citing US officials, the report said any such operation would not be a full-scale invasion, but could involve raids by a mixture",
+      "headline": "$3 billion toll: US counts losses in aircraft, drones, defence systems",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Pentagon is preparing options for a ground assault in Iran , as thousands of US troops and marines arrive in the Middle East, The Washington Post reported on Saturday. Citing US officials, the report said any such operation would not be a full-scale invasion, but could involve raids by a mixture",
-      "sourceUrl": "https://www.middleeasteye.net/news/pentagon-preparing-us-ground-assault-iran-says-report",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/defence/international/3-billion-toll-us-counts-losses-in-aircraft-drones-defence-systems/articleshow/129878775.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-gray",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 08:58 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 09:34 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 10:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-29 10:54 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Pentagon preparing for US ground assault in Iran, says report. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: $3 billion toll: US counts losses in aircraft, drones, defence systems. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
