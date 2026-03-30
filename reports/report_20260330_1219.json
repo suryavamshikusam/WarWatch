@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-30 12:10 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel is making sure Trump can't find an off-ramp in Iran. Fire at Israel\u2019s Haifa oil refinery after Iranian missile attack. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Israel is making sure Trump can't find an off-ramp in Iran",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu must have persuaded Donald Trump that a war on Iran would unfold much like the pager attack in Lebanon 18 months ago. The two militaries would jointly decapitate the leadership in Tehran, and it would crumble just as Hezbollah had collapsed - or so it then s",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/israel-making-sure-trump-cannot-find-ramp-iran",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu must have persuaded Donald Trump that a war on Iran would unfold much like the pager attack in Lebanon 18 months ago. The two militaries would jointly decapitate the leadership in Tehran, and it would crumble just as Hezbollah had collapsed - or so it then s",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Fire at Israel\u2019s Haifa oil refinery after Iranian missile attack",
+      "detail": "A fire broke out on Monday at an oil refinery in the northern Israeli city of Haifa for the second time during the monthlong war with Iran , according to footage from the scene. Video showed flames on a large refinery tank with thick black smoke that was quickly extinguished by Israel\u2019s fire and res",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/fire-israel-haifa-oil-refinery-iranian-missile-attack-10609743/",
+      "fullAnalysis": "A fire broke out on Monday at an oil refinery in the northern Israeli city of Haifa for the second time during the monthlong war with Iran , according to footage from the scene. Video showed flames on a large refinery tank with thick black smoke that was quickly extinguished by Israel\u2019s fire and res",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-30 12:10 UTC"
+}

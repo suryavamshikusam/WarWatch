@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 11:20 UTC",
+  "generatedAt": "2026-03-30 12:10 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Donald Trump threatens to 'take the oil' in Iran \u00b7 US President Donald Trump said his country could \"take the oil in Iran \" as thou\u2026",
-    "Other: Iran says US demands for talks are 'excessive' \u00b7 Iran\u00a0received messages via intermediaries indicating the United States' willingn\u2026"
+    "Other: Israel is making sure Trump can't find an off-ramp in Iran \u00b7 Israeli Prime Minister Benjamin Netanyahu must have persuaded Donald Trump that \u2026",
+    "Other: Fire at Israel\u2019s Haifa oil refinery after Iranian missile attack \u00b7 A fire broke out on Monday at an oil refinery in the northern Israeli city of Ha\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-30 11:20 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-30 12:10 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Donald Trump threatens to 'take the oil' in Iran",
-      "summary": "US President Donald Trump said his country could \"take the oil in Iran \" as thousands of American troops mobilise to the Middle East. Speaking with the Financial Times on Sunday, Trump also suggested the US\u00a0could seize the Iranian export hub of Kharg Island. \"To be honest with you, my favourite thin",
+      "headline": "Israel is making sure Trump can't find an off-ramp in Iran",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu must have persuaded Donald Trump that a war on Iran would unfold much like the pager attack in Lebanon 18 months ago. The two militaries would jointly decapitate the leadership in Tehran, and it would crumble just as Hezbollah had collapsed - or so it then s",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump said his country could \"take the oil in Iran \" as thousands of American troops mobilise to the Middle East. Speaking with the Financial Times on Sunday, Trump also suggested the US\u00a0could seize the Iranian export hub of Kharg Island. \"To be honest with you, my favourite thin",
-      "sourceUrl": "https://www.middleeasteye.net/news/donald-trump-threatens-take-oil-iran",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu must have persuaded Donald Trump that a war on Iran would unfold much like the pager attack in Lebanon 18 months ago. The two militaries would jointly decapitate the leadership in Tehran, and it would crumble just as Hezbollah had collapsed - or so it then s",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/israel-making-sure-trump-cannot-find-ramp-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Iran says US demands for talks are 'excessive'",
-      "summary": "Iran\u00a0received messages via intermediaries indicating the United States' willingness to negotiate, but deemed US proposals to be \"unrealistic, illogical and excessive\", foreign ministry spokesperson Esmaeil Baghaei said on Monday. Baghaei's press conference took place a day after the foreign minister",
+      "headline": "Fire at Israel\u2019s Haifa oil refinery after Iranian missile attack",
+      "summary": "A fire broke out on Monday at an oil refinery in the northern Israeli city of Haifa for the second time during the monthlong war with Iran , according to footage from the scene. Video showed flames on a large refinery tank with thick black smoke that was quickly extinguished by Israel\u2019s fire and res",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u00a0received messages via intermediaries indicating the United States' willingness to negotiate, but deemed US proposals to be \"unrealistic, illogical and excessive\", foreign ministry spokesperson Esmaeil Baghaei said on Monday. Baghaei's press conference took place a day after the foreign minister",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-us-demands-talks-are-excessive",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "A fire broke out on Monday at an oil refinery in the northern Israeli city of Haifa for the second time during the monthlong war with Iran , according to footage from the scene. Video showed flames on a large refinery tank with thick black smoke that was quickly extinguished by Israel\u2019s fire and res",
+      "sourceUrl": "https://indianexpress.com/article/world/fire-israel-haifa-oil-refinery-iranian-missile-attack-10609743/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 08:03 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 09:00 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 11:20 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 12:10 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Donald Trump threatens to 'take the oil' in Iran. Iran says US demands for talks are 'excessive'. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel is making sure Trump can't find an off-ramp in Iran. Fire at Israel\u2019s Haifa oil refinery after Iranian missile attack. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
