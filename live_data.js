@@ -1,14 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-29 22:24 UTC",
+  "generatedAt": "2026-03-30 02:37 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t \u00b7 A close ally of US President Donald Trump said on Saturday that Gulf leaders sho\u2026"
+    "Other: 'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion \u00b7 Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand t\u2026",
+    "Other: Israel to allow 'limited prayer' at Holy Sepulchre after outrage \u00b7 Israeli police said they reached an agreement with Christian leaders to allow li\u2026",
+    "Other: Trump says Iran talks progressing through Pakistan channels \u00b7 US President Donald Trump said indirect negotiations between the United States a\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 18,
-    "lastUpdated": "2026-03-29 22:24 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 1,
+    "lastUpdated": "2026-03-30 02:37 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -48,15 +50,47 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t",
-      "summary": "A close ally of US President Donald Trump said on Saturday that Gulf leaders should send their own children to fight on the front lines in the Israeli -US war on Iran . Speaking on his \u201cWar Room\u201d podcast, former White House strategist Steve Bannon said Gulf elites should form the \u201cfirst wave\u201d of any",
+      "time": "11 min ago",
+      "headline": "'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion",
+      "summary": "Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand the ground offensive in southern Lebanon, including widening the \"security buffer zone\". Speaking in a video statement from Northern Command, Netanyahu said Israel is \u201cdetermined to fundamentally change the situation in t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A close ally of US President Donald Trump said on Saturday that Gulf leaders should send their own children to fight on the front lines in the Israeli -US war on Iran . Speaking on his \u201cWar Room\u201d podcast, former White House strategist Steve Bannon said Gulf elites should form the \u201cfirst wave\u201d of any",
-      "sourceUrl": "https://www.middleeasteye.net/news/after-trump-said-mbs-was-kissing-his-ass-gulf-leaders-told-send-children-fight-israel",
+      "fullAnalysis": "Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand the ground offensive in southern Lebanon, including widening the \"security buffer zone\". Speaking in a video statement from Northern Command, Netanyahu said Israel is \u201cdetermined to fundamentally change the situation in t",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/replicate-gaza-model-netanyahu-orders-expansion-lebanon-invasion",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Israel to allow 'limited prayer' at Holy Sepulchre after outrage",
+      "summary": "Israeli police said they reached an agreement with Christian leaders to allow limited prayer at the Church of the Holy Sepulchre following criticism over earlier restrictions. The arrangement was reached after talks between police officials and representatives of the Latin Patriarchate, with authori",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli police said they reached an agreement with Christian leaders to allow limited prayer at the Church of the Holy Sepulchre following criticism over earlier restrictions. The arrangement was reached after talks between police officials and representatives of the Latin Patriarchate, with authori",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-allow-limited-prayer-holy-sepulchre-after-outrage",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Trump says Iran talks progressing through Pakistan channels",
+      "summary": "US President Donald Trump said indirect negotiations between the United States and Iran, facilitated by Pakistani intermediaries, are making progress,\u00a0 the Financial Times reported. Trump did not provide details when asked whether a ceasefire agreement to reopen the Strait of Hormuz could be reached",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US President Donald Trump said indirect negotiations between the United States and Iran, facilitated by Pakistani intermediaries, are making progress,\u00a0 the Financial Times reported. Trump did not provide details when asked whether a ceasefire agreement to reopen the Strait of Hormuz could be reached",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-talks-progressing-through-pakistan-channels",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 22:23 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-28 23:26 UTC",
       "l": "HIGH",
@@ -194,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-29 22:24 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 02:37 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: After Trump said MBS was \u2018kissing his ass\u2019, Gulf leaders told to send children t. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion. Israel to allow 'limited prayer' at Holy Sepulchre after outrage. Trump says Iran talks progressing through Pakistan channels. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

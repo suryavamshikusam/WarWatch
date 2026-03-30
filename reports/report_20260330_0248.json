@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-30 02:37 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion. Israel to allow 'limited prayer' at Holy Sepulchre after outrage. Trump says Iran talks progressing through Pakistan channels. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion",
+      "detail": "Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand the ground offensive in southern Lebanon, including widening the \"security buffer zone\". Speaking in a video statement from Northern Command, Netanyahu said Israel is \u201cdetermined to fundamentally change the situation in t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/replicate-gaza-model-netanyahu-orders-expansion-lebanon-invasion",
+      "fullAnalysis": "Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand the ground offensive in southern Lebanon, including widening the \"security buffer zone\". Speaking in a video statement from Northern Command, Netanyahu said Israel is \u201cdetermined to fundamentally change the situation in t",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israel to allow 'limited prayer' at Holy Sepulchre after outrage",
+      "detail": "Israeli police said they reached an agreement with Christian leaders to allow limited prayer at the Church of the Holy Sepulchre following criticism over earlier restrictions. The arrangement was reached after talks between police officials and representatives of the Latin Patriarchate, with authori",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-allow-limited-prayer-holy-sepulchre-after-outrage",
+      "fullAnalysis": "Israeli police said they reached an agreement with Christian leaders to allow limited prayer at the Church of the Holy Sepulchre following criticism over earlier restrictions. The arrangement was reached after talks between police officials and representatives of the Latin Patriarchate, with authori",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump says Iran talks progressing through Pakistan channels",
+      "detail": "US President Donald Trump said indirect negotiations between the United States and Iran, facilitated by Pakistani intermediaries, are making progress,\u00a0 the Financial Times reported. Trump did not provide details when asked whether a ceasefire agreement to reopen the Strait of Hormuz could be reached",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-talks-progressing-through-pakistan-channels",
+      "fullAnalysis": "US President Donald Trump said indirect negotiations between the United States and Iran, facilitated by Pakistani intermediaries, are making progress,\u00a0 the Financial Times reported. Trump did not provide details when asked whether a ceasefire agreement to reopen the Strait of Hormuz could be reached",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-30 02:37 UTC"
+}
