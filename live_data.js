@@ -1,17 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 07:04 UTC",
+  "generatedAt": "2026-03-30 08:50 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Morning update \u00b7 Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said fiv\u2026",
-    "Other: Oil prices top $116 per barrel as Iran prepares for US ground invasion \u00b7 Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in th\u2026",
-    "Other: \u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by \u00b7 US President Donald Trump has extended the deadline for Iran to reopen the Strai\u2026",
-    "Other: Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th \u00b7 US President Donald Trump, during the first cabinet meeting since the war began \u2026"
+    "Other: Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza  \u00b7 Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Na\u2026",
+    "Other: US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te \u00b7 US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great nego\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-03-30 07:04 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 4,
+    "lastUpdated": "2026-03-30 08:50 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -51,47 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Morning update",
-      "summary": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Kuwait National Guard says it has downed five drones, according to the Kuwait News Agency. Air strikes targeted multiple sites in Tehran, including Mehra",
+      "time": "9 min ago",
+      "headline": "Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza ",
+      "summary": "Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Navy commander, Alireza Tangsiri, saying he succumbed to severe injuries, four days after Israel had said that they have targeted him. The IRGC on Monday announced the martyrdom of its Navy commander, Rear Admiral Alireza ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Kuwait National Guard says it has downed five drones, according to the Kuwait News Agency. Air strikes targeted multiple sites in Tehran, including Mehra",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-503",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Oil prices top $116 per barrel as Iran prepares for US ground invasion",
-      "summary": "Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in the Middle East continues to disrupt important\u00a0trade routes. As the US-Israel war on Iran engulfs the region, Brent\u00a0crude rose more than 3 percent on Monday morning to top $116 a barrel. The fresh jump comes as Iranian off",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in the Middle East continues to disrupt important\u00a0trade routes. As the US-Israel war on Iran engulfs the region, Brent\u00a0crude rose more than 3 percent on Monday morning to top $116 a barrel. The fresh jump comes as Iranian off",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-prices-top-116-barrel-iran-prepares-us-ground-invasion",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "\u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by",
-      "summary": "US President Donald Trump has extended the deadline for Iran to reopen the Strait of Hormuz by 10 days, while pausing strikes on Iranian energy facilities until April 6, as contacts between the two sides continue. The announcement came in a post on Truth Social on Thursday, where Trump said the deci",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "US President Donald Trump has extended the deadline for Iran to reopen the Strait of Hormuz by 10 days, while pausing strikes on Iranian energy facilities until April 6, as contacts between the two sides continue. The announcement came in a post on Truth Social on Thursday, where Trump said the deci",
-      "sourceUrl": "https://indianexpress.com/article/world/trump-extends-hormuz-deadline-iran-energy-strikes-pause-april-6-10603530/",
+      "fullAnalysis": "Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Navy commander, Alireza Tangsiri, saying he succumbed to severe injuries, four days after Israel had said that they have targeted him. The IRGC on Monday announced the martyrdom of its Navy commander, Rear Admiral Alireza ",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-war-news-live-updates-trump-iran-kharg-island-oil-price-pakistan-israel-10608849/",
       "sourceLabel": "Indian Express"
     },
     {
@@ -99,15 +65,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th",
-      "summary": "US President Donald Trump, during the first cabinet meeting since the war began in West Asia, on Thursday talked about Iran\u2019s mystery \u201cpresent\u201d to America, which he mentioned two days earlier, was the passage of 10 oil-carrying ships through the Strait of Hormuz. Trump said Iran allowed the 10 oil t",
+      "time": "9 min ago",
+      "headline": "US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te",
+      "summary": "US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great negotiators, but \u200cthat he is not \u2060sure \u2060he is willing \u2060to \u200cmake \u200ba \u200cdeal with \u200cthem \u200bto end \u200bthe \u200bwar. The US president was addressing a news conference from the White House on the US-Israel war against Iran. He made the com",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump, during the first cabinet meeting since the war began in West Asia, on Thursday talked about Iran\u2019s mystery \u201cpresent\u201d to America, which he mentioned two days earlier, was the passage of 10 oil-carrying ships through the Strait of Hormuz. Trump said Iran allowed the 10 oil t",
-      "sourceUrl": "https://indianexpress.com/article/world/donald-trump-iran-present-revealed-strait-of-hormuz-oil-tankers-west-asia-war-10603288/",
+      "fullAnalysis": "US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great negotiators, but \u200cthat he is not \u2060sure \u2060he is willing \u2060to \u200cmake \u200ba \u200cdeal with \u200cthem \u200bto end \u200bthe \u200bwar. The US president was addressing a news conference from the White House on the US-Israel war against Iran. He made the com",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-news-donald-trump-iran-war-quotes-negotiations-ceasefire-10603174/",
       "sourceLabel": "Indian Express"
     },
     {
@@ -115,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 04:34 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 06:04 UTC",
       "l": "HIGH",
@@ -245,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 07:04 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 08:50 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Oil prices top $116 per barrel as Iran prepares for US ground invasion. \u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by. Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza . US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

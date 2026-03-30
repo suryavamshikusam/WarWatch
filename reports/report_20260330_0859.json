@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-30 08:50 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza . US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza ",
+      "detail": "Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Navy commander, Alireza Tangsiri, saying he succumbed to severe injuries, four days after Israel had said that they have targeted him. The IRGC on Monday announced the martyrdom of its Navy commander, Rear Admiral Alireza ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-war-news-live-updates-trump-iran-kharg-island-oil-price-pakistan-israel-10608849/",
+      "fullAnalysis": "Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Navy commander, Alireza Tangsiri, saying he succumbed to severe injuries, four days after Israel had said that they have targeted him. The IRGC on Monday announced the martyrdom of its Navy commander, Rear Admiral Alireza ",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te",
+      "detail": "US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great negotiators, but \u200cthat he is not \u2060sure \u2060he is willing \u2060to \u200cmake \u200ba \u200cdeal with \u200cthem \u200bto end \u200bthe \u200bwar. The US president was addressing a news conference from the White House on the US-Israel war against Iran. He made the com",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-news-donald-trump-iran-war-quotes-negotiations-ceasefire-10603174/",
+      "fullAnalysis": "US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great negotiators, but \u200cthat he is not \u2060sure \u2060he is willing \u2060to \u200cmake \u200ba \u200cdeal with \u200cthem \u200bto end \u200bthe \u200bwar. The US president was addressing a news conference from the White House on the US-Israel war against Iran. He made the com",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-30 08:50 UTC"
+}
