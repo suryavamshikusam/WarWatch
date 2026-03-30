@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 16:40 UTC",
+  "generatedAt": "2026-03-30 18:39 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UK must have independent nuclear deterrent, says major parliamentary report \u00b7 Amid the US - Israeli war on Iran ,\u00a0calls are growing in Britain for a major re-\u2026",
-    "Other: How Spain's memory of Iraq shaped Sanchez's response to war on Iran \u00b7 On 4 March, just days after the US and Israel attacked Iran , Spain's prime mini\u2026"
+    "Other: \u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran  \u00b7 Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be k\u2026",
+    "Other: Iran war: How can US military forcibly reopen Strait of Hormuz \u00b7 As US President Donald Trump rakes up pressure on Iran to sign a deal and end th\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-03-30 16:40 UTC",
+    "updatesToday": 11,
+    "lastUpdated": "2026-03-30 18:39 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "UK must have independent nuclear deterrent, says major parliamentary report",
-      "summary": "Amid the US - Israeli war on Iran ,\u00a0calls are growing in Britain for a major re-evaluation of the country's foreign policy - and its nuclear deterrent. The Joint Committee on the National Security Strategy, a parliamentary committee tasked with monitoring the government's security strategy, publishe",
+      "headline": "\u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran ",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be kicked out of the West and put on the front lines of an Iran invasion before the US sends its own troops, Steve Bannon, US President Donald Trump\u2019s former chief strategist, said. Yair, the 34-year-old son of Israel\u2019s lead",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Amid the US - Israeli war on Iran ,\u00a0calls are growing in Britain for a major re-evaluation of the country's foreign policy - and its nuclear deterrent. The Joint Committee on the National Security Strategy, a parliamentary committee tasked with monitoring the government's security strategy, publishe",
-      "sourceUrl": "https://www.middleeasteye.net/news/uk-must-have-independent-nuclear-deterrent-says-major-parliamentary-report",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be kicked out of the West and put on the front lines of an Iran invasion before the US sends its own troops, Steve Bannon, US President Donald Trump\u2019s former chief strategist, said. Yair, the 34-year-old son of Israel\u2019s lead",
+      "sourceUrl": "https://www.middleeasteye.net/news/get-them-out-casinos-bannon-wants-netanyahus-son-gulf-royals-iran-front-lines",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "How Spain's memory of Iraq shaped Sanchez's response to war on Iran",
-      "summary": "On 4 March, just days after the US and Israel attacked Iran , Spain's prime minister addressed the nation. \u201cThe position of the government of Spain can be summed up in four words,\u201d Pedro Sanchez said. \u201cNo to the war.\u201d While other European leaders were working out how to respond to strikes widely que",
+      "headline": "Iran war: How can US military forcibly reopen Strait of Hormuz",
+      "summary": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "On 4 March, just days after the US and Israel attacked Iran , Spain's prime minister addressed the nation. \u201cThe position of the government of Spain can be summed up in four words,\u201d Pedro Sanchez said. \u201cNo to the war.\u201d While other European leaders were working out how to respond to strikes widely que",
-      "sourceUrl": "https://www.middleeasteye.net/news/how-spains-memory-iraq-shaped-sanchez-response-war-iran",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
+      "sourceUrl": "https://indianexpress.com/article/world/us-iran-conflict-trump-kharg-island-ground-troops-oil-prices-10610253/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 13:41 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 14:21 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 16:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 18:39 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UK must have independent nuclear deterrent, says major parliamentary report. How Spain's memory of Iraq shaped Sanchez's response to war on Iran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran . Iran war: How can US military forcibly reopen Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

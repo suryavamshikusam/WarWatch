@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-30 18:39 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran . Iran war: How can US military forcibly reopen Strait of Hormuz. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "\u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran ",
+      "detail": "Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be kicked out of the West and put on the front lines of an Iran invasion before the US sends its own troops, Steve Bannon, US President Donald Trump\u2019s former chief strategist, said. Yair, the 34-year-old son of Israel\u2019s lead",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/get-them-out-casinos-bannon-wants-netanyahus-son-gulf-royals-iran-front-lines",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be kicked out of the West and put on the front lines of an Iran invasion before the US sends its own troops, Steve Bannon, US President Donald Trump\u2019s former chief strategist, said. Yair, the 34-year-old son of Israel\u2019s lead",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war: How can US military forcibly reopen Strait of Hormuz",
+      "detail": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-iran-conflict-trump-kharg-island-ground-troops-oil-prices-10610253/",
+      "fullAnalysis": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-30 18:39 UTC"
+}
