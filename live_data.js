@@ -1,15 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 08:50 UTC",
+  "generatedAt": "2026-03-30 10:12 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza  \u00b7 Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Na\u2026",
-    "Other: US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te \u00b7 US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great nego\u2026"
+    "Other: Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone' \u00b7 Israeli Prime Minister Benjamin Netanyahu has said the military will seize addit\u2026",
+    "Other: Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone' \u00b7 Israeli Prime Minister Benjamin Netanyahu has said the military will seize addit\u2026",
+    "Other: Iran confirms Revolutionary Guard navy chief Alireza Tangsiri\u2019s death \u00b7 Updated - March 30, 2026 03:17 pm IST - Dubai In this image provided by Sepahnew\u2026",
+    "Other: US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi \u00b7 As the US-Israel conflict with Iran entered day 31, US President Donald Trump sa\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-30 08:50 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-30 10:12 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -49,31 +51,63 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza ",
-      "summary": "Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Navy commander, Alireza Tangsiri, saying he succumbed to severe injuries, four days after Israel had said that they have targeted him. The IRGC on Monday announced the martyrdom of its Navy commander, Rear Admiral Alireza ",
+      "time": "13 min ago",
+      "headline": "Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran's Islamic Revolutionary Guard Corps on Monday confirmed the death of its Navy commander, Alireza Tangsiri, saying he succumbed to severe injuries, four days after Israel had said that they have targeted him. The IRGC on Monday announced the martyrdom of its Navy commander, Rear Admiral Alireza ",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-war-news-live-updates-trump-iran-kharg-island-oil-price-pakistan-israel-10608849/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
+      "sourceUrl": "https://www.middleeasteye.net/news/netanyahu-orders-army-seize-more-land-lebanon-expand-buffer-zone",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te",
-      "summary": "US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great negotiators, but \u200cthat he is not \u2060sure \u2060he is willing \u2060to \u200cmake \u200ba \u200cdeal with \u200cthem \u200bto end \u200bthe \u200bwar. The US president was addressing a news conference from the White House on the US-Israel war against Iran. He made the com",
+      "time": "13 min ago",
+      "headline": "Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump said \u2060on \u200bThursday \u200bthat the \u200bIranians \u2060are great negotiators, but \u200cthat he is not \u2060sure \u2060he is willing \u2060to \u200cmake \u200ba \u200cdeal with \u200cthem \u200bto end \u200bthe \u200bwar. The US president was addressing a news conference from the White House on the US-Israel war against Iran. He made the com",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-news-donald-trump-iran-war-quotes-negotiations-ceasefire-10603174/",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-seize-more-lebanese-lands-and-expand-buffer-zone",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran confirms Revolutionary Guard navy chief Alireza Tangsiri\u2019s death",
+      "summary": "Updated - March 30, 2026 03:17 pm IST - Dubai In this image provided by Sepahnews of the Iranian Revolutionary Guard on Feb. 16, 2026, the guard's navy commander Alireza Tangsiri speaks during a military drill Feb. 2026 in the Persian Gulf, Iran. (Sepahnews via AP) Iran confirmed on Monday (March 30",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Updated - March 30, 2026 03:17 pm IST - Dubai In this image provided by Sepahnews of the Iranian Revolutionary Guard on Feb. 16, 2026, the guard's navy commander Alireza Tangsiri speaks during a military drill Feb. 2026 in the Persian Gulf, Iran. (Sepahnews via AP) Iran confirmed on Monday (March 30",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-confirms-revolutionary-guard-navy-chief-alireza-tangsiris-death/article70802247.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi",
+      "summary": "As the US-Israel conflict with Iran entered day 31, US President Donald Trump said he would like to \u201ctake the oil in Iran\u201d in an interview with the Financial Times, even as Pakistan prepares to host talks aimed at easing tensions. Meanwhile, Kuwait reported that an Indian worker was killed in an Ira",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "As the US-Israel conflict with Iran entered day 31, US President Donald Trump said he would like to \u201ctake the oil in Iran\u201d in an interview with the Financial Times, even as Pakistan prepares to host talks aimed at easing tensions. Meanwhile, Kuwait reported that an Indian worker was killed in an Ira",
+      "sourceUrl": "https://indianexpress.com/article/world/us-iran-war-day-31-trump-iran-kharg-island-for-oil-pakistan-emerges-as-mediator-for-de-escalation-10609325/",
       "sourceLabel": "Indian Express"
     },
     {
@@ -81,10 +115,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 06:04 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 07:21 UTC",
       "l": "HIGH",
@@ -211,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 08:50 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 10:12 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran War News Live Updates: Iran confirms death of IRGC Naval commander Alireza . US-Iran war, Day 27: Trump says Iran \u2018begging for a deal\u2019, US eyes control of Te. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'. Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'. Iran confirms Revolutionary Guard navy chief Alireza Tangsiri\u2019s death. US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
