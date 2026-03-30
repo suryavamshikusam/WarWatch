@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 18:39 UTC",
+  "generatedAt": "2026-03-30 19:43 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: \u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran  \u00b7 Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be k\u2026",
-    "Other: Iran war: How can US military forcibly reopen Strait of Hormuz \u00b7 As US President Donald Trump rakes up pressure on Iran to sign a deal and end th\u2026"
+    "Other: In defence of Benjamin Netanyahu \u00b7 The recent right-wing campaign in the US - joined by many leftists - to blame Is\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-30 18:39 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-30 19:43 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "\u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran ",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be kicked out of the West and put on the front lines of an Iran invasion before the US sends its own troops, Steve Bannon, US President Donald Trump\u2019s former chief strategist, said. Yair, the 34-year-old son of Israel\u2019s lead",
+      "time": "6 min ago",
+      "headline": "In defence of Benjamin Netanyahu",
+      "summary": "The recent right-wing campaign in the US - joined by many leftists - to blame Israeli Prime Minister Benjamin Netanyahu for dragging Washington into a war on Iran is only the latest campaign to exonerate the US from its imperialist crimes and to absolve Israel of Netanyahu's alleged machinations. Th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu\u2019s son and Arab Gulf royals should be kicked out of the West and put on the front lines of an Iran invasion before the US sends its own troops, Steve Bannon, US President Donald Trump\u2019s former chief strategist, said. Yair, the 34-year-old son of Israel\u2019s lead",
-      "sourceUrl": "https://www.middleeasteye.net/news/get-them-out-casinos-bannon-wants-netanyahus-son-gulf-royals-iran-front-lines",
+      "fullAnalysis": "The recent right-wing campaign in the US - joined by many leftists - to blame Israeli Prime Minister Benjamin Netanyahu for dragging Washington into a war on Iran is only the latest campaign to exonerate the US from its imperialist crimes and to absolve Israel of Netanyahu's alleged machinations. Th",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/defence-benjamin-netanyahu",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran war: How can US military forcibly reopen Strait of Hormuz",
-      "summary": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
-      "sourceUrl": "https://indianexpress.com/article/world/us-iran-conflict-trump-kharg-island-ground-troops-oil-prices-10610253/",
-      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 14:21 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 15:37 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 18:39 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 19:43 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Get them out of casinos\u2019: Bannon wants Netanyahu\u2019s son and Gulf royals on Iran . Iran war: How can US military forcibly reopen Strait of Hormuz. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: In defence of Benjamin Netanyahu. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
