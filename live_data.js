@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 19:43 UTC",
+  "generatedAt": "2026-03-30 21:58 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: In defence of Benjamin Netanyahu \u00b7 The recent right-wing campaign in the US - joined by many leftists - to blame Is\u2026"
+    "Other: US used new ballistic missile in strike that killed teens in Iran sports hall: R \u00b7 A US -made ballistic missile previously untested in combat struck a sports hall \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-03-30 19:43 UTC",
+    "updatesToday": 13,
+    "lastUpdated": "2026-03-30 21:58 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "In defence of Benjamin Netanyahu",
-      "summary": "The recent right-wing campaign in the US - joined by many leftists - to blame Israeli Prime Minister Benjamin Netanyahu for dragging Washington into a war on Iran is only the latest campaign to exonerate the US from its imperialist crimes and to absolve Israel of Netanyahu's alleged machinations. Th",
+      "time": "7 min ago",
+      "headline": "US used new ballistic missile in strike that killed teens in Iran sports hall: R",
+      "summary": "A US -made ballistic missile previously untested in combat struck a sports hall and an elementary school in southern Iran on the opening day of the US-Israeli war , according to a report by The New York Times. The school and sports hall in Lamerd, Iran , featured damage consistent with a short-range",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The recent right-wing campaign in the US - joined by many leftists - to blame Israeli Prime Minister Benjamin Netanyahu for dragging Washington into a war on Iran is only the latest campaign to exonerate the US from its imperialist crimes and to absolve Israel of Netanyahu's alleged machinations. Th",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/defence-benjamin-netanyahu",
+      "fullAnalysis": "A US -made ballistic missile previously untested in combat struck a sports hall and an elementary school in southern Iran on the opening day of the US-Israeli war , according to a report by The New York Times. The school and sports hall in Lamerd, Iran , featured damage consistent with a short-range",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-used-new-ballistic-missile-strike-hit-iran-sports-hall-teens",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 15:37 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 16:03 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 19:43 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 21:58 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: In defence of Benjamin Netanyahu. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US used new ballistic missile in strike that killed teens in Iran sports hall: R. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
