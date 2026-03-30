@@ -1,16 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 05:15 UTC",
+  "generatedAt": "2026-03-30 07:04 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israeli military reports multiple Iranian missile interceptions \u00b7 The Israeli military said it detected multiple ballistic missile launches from I\u2026",
-    "Other: Video: Netanyahu orders military to \u2018further expand\u2019 invasion of Lebanon \u00b7 Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a video stateme\u2026",
-    "Other: Trump: US will shut down attempt to charge Hormuz passage toll in minutes \u00b7 President Donald Trump said the United States could quickly shut down any Irania\u2026",
-    "Other: Netanyahu orders deeper Israeli invasion into Lebanon \u00b7 Netanyahu orders deeper Israeli invasion into Lebanon Israeli Prime Minister Ben\u2026"
+    "Other: Morning update \u00b7 Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said fiv\u2026",
+    "Other: Oil prices top $116 per barrel as Iran prepares for US ground invasion \u00b7 Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in th\u2026",
+    "Other: \u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by \u00b7 US President Donald Trump has extended the deadline for Iran to reopen the Strai\u2026",
+    "Other: Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th \u00b7 US President Donald Trump, during the first cabinet meeting since the war began \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-30 05:15 UTC",
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-30 07:04 UTC",
     "sourcesUsed": 4
   },
   "tensionMeters": [
@@ -52,14 +52,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Israeli military reports multiple Iranian missile interceptions",
-      "summary": "The Israeli military said it detected multiple ballistic missile launches from Iran targeting southern Israel, triggering sirens across affected areas. It said air defences intercepted the missiles, and alerts were issued in parts of southern Israel and the southern West Bank. Al Jazeera reported th",
+      "headline": "Morning update",
+      "summary": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Kuwait National Guard says it has downed five drones, according to the Kuwait News Agency. Air strikes targeted multiple sites in Tehran, including Mehra",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli military said it detected multiple ballistic missile launches from Iran targeting southern Israel, triggering sirens across affected areas. It said air defences intercepted the missiles, and alerts were issued in parts of southern Israel and the southern West Bank. Al Jazeera reported th",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-reports-multiple-iranian-missile-interceptions",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Kuwait National Guard says it has downed five drones, according to the Kuwait News Agency. Air strikes targeted multiple sites in Tehran, including Mehra",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-503",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -68,14 +68,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Video: Netanyahu orders military to \u2018further expand\u2019 invasion of Lebanon",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a video statement that he has instructed the military to \u201cfurther expand\u201d its invasion of southern Lebanon, as tensions rise amid the ongoing US-Israeli war on Iran. Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a vi",
+      "headline": "Oil prices top $116 per barrel as Iran prepares for US ground invasion",
+      "summary": "Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in the Middle East continues to disrupt important\u00a0trade routes. As the US-Israel war on Iran engulfs the region, Brent\u00a0crude rose more than 3 percent on Monday morning to top $116 a barrel. The fresh jump comes as Iranian off",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a video statement that he has instructed the military to \u201cfurther expand\u201d its invasion of southern Lebanon, as tensions rise amid the ongoing US-Israeli war on Iran. Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a vi",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-netanyahu-orders-military-further-expand-invasion-lebanon",
+      "fullAnalysis": "Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in the Middle East continues to disrupt important\u00a0trade routes. As the US-Israel war on Iran engulfs the region, Brent\u00a0crude rose more than 3 percent on Monday morning to top $116 a barrel. The fresh jump comes as Iranian off",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-prices-top-116-barrel-iran-prepares-us-ground-invasion",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -84,15 +84,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Trump: US will shut down attempt to charge Hormuz passage toll in minutes",
-      "summary": "President Donald Trump said the United States could quickly shut down any Iranian attempt to charge toll fees for ships passing through the Strait of Hormuz. \u201cWe could close that up in 2 minutes. We could close that up so fast, your head would spin,\u201d Trump said when asked about the reported plan. Tr",
+      "headline": "\u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by",
+      "summary": "US President Donald Trump has extended the deadline for Iran to reopen the Strait of Hormuz by 10 days, while pausing strikes on Iranian energy facilities until April 6, as contacts between the two sides continue. The announcement came in a post on Truth Social on Thursday, where Trump said the deci",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "President Donald Trump said the United States could quickly shut down any Iranian attempt to charge toll fees for ships passing through the Strait of Hormuz. \u201cWe could close that up in 2 minutes. We could close that up so fast, your head would spin,\u201d Trump said when asked about the reported plan. Tr",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-us-will-shut-down-attempt-charge-hormuz-passage-toll-minutes",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "US President Donald Trump has extended the deadline for Iran to reopen the Strait of Hormuz by 10 days, while pausing strikes on Iranian energy facilities until April 6, as contacts between the two sides continue. The announcement came in a post on Truth Social on Thursday, where Trump said the deci",
+      "sourceUrl": "https://indianexpress.com/article/world/trump-extends-hormuz-deadline-iran-energy-strikes-pause-april-6-10603530/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-crit",
@@ -100,15 +100,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Netanyahu orders deeper Israeli invasion into Lebanon",
-      "summary": "Netanyahu orders deeper Israeli invasion into Lebanon Israeli Prime Minister Benjamin Netanyahu has ordered the military to expand its invasion in southern Lebanon, pushing deeper to extend what he calls a \u2018buffer zone\u2019. As Israeli forces advance towards the Litani River, an explosion at a UN positi",
+      "headline": "Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th",
+      "summary": "US President Donald Trump, during the first cabinet meeting since the war began in West Asia, on Thursday talked about Iran\u2019s mystery \u201cpresent\u201d to America, which he mentioned two days earlier, was the passage of 10 oil-carrying ships through the Strait of Hormuz. Trump said Iran allowed the 10 oil t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Netanyahu orders deeper Israeli invasion into Lebanon Israeli Prime Minister Benjamin Netanyahu has ordered the military to expand its invasion in southern Lebanon, pushing deeper to extend what he calls a \u2018buffer zone\u2019. As Israeli forces advance towards the Litani River, an explosion at a UN positi",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/30/netanyahu-orders-deeper-israeli-invasion-into-lebanon?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "US President Donald Trump, during the first cabinet meeting since the war began in West Asia, on Thursday talked about Iran\u2019s mystery \u201cpresent\u201d to America, which he mentioned two days earlier, was the passage of 10 oil-carrying ships through the Strait of Hormuz. Trump said Iran allowed the 10 oil t",
+      "sourceUrl": "https://indianexpress.com/article/world/donald-trump-iran-present-revealed-strait-of-hormuz-oil-tankers-west-asia-war-10603288/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
@@ -146,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 01:50 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 04:34 UTC",
       "l": "HIGH",
@@ -245,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 05:15 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 07:04 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli military reports multiple Iranian missile interceptions. Video: Netanyahu orders military to \u2018further expand\u2019 invasion of Lebanon. Trump: US will shut down attempt to charge Hormuz passage toll in minutes. Netanyahu orders deeper Israeli invasion into Lebanon. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Oil prices top $116 per barrel as Iran prepares for US ground invasion. \u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by. Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

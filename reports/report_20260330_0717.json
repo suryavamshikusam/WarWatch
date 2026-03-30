@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-30 07:04 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Oil prices top $116 per barrel as Iran prepares for US ground invasion. \u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by. Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Morning update",
+      "detail": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Kuwait National Guard says it has downed five drones, according to the Kuwait News Agency. Air strikes targeted multiple sites in Tehran, including Mehra",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-503",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Kuwait National Guard says it has downed five drones, according to the Kuwait News Agency. Air strikes targeted multiple sites in Tehran, including Mehra",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Oil prices top $116 per barrel as Iran prepares for US ground invasion",
+      "detail": "Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in the Middle East continues to disrupt important\u00a0trade routes. As the US-Israel war on Iran engulfs the region, Brent\u00a0crude rose more than 3 percent on Monday morning to top $116 a barrel. The fresh jump comes as Iranian off",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oil-prices-top-116-barrel-iran-prepares-us-ground-invasion",
+      "fullAnalysis": "Oil prices have hit their highest\u00a0point in nearly 15 days, as the conflict in the Middle East continues to disrupt important\u00a0trade routes. As the US-Israel war on Iran engulfs the region, Brent\u00a0crude rose more than 3 percent on Monday morning to top $116 a barrel. The fresh jump comes as Iranian off",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "\u2018Talks are ongoing\u2019: Trump extends deadline for Iran to open strait of Hormuz by",
+      "detail": "US President Donald Trump has extended the deadline for Iran to reopen the Strait of Hormuz by 10 days, while pausing strikes on Iranian energy facilities until April 6, as contacts between the two sides continue. The announcement came in a post on Truth Social on Thursday, where Trump said the deci",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/trump-extends-hormuz-deadline-iran-energy-strikes-pause-april-6-10603530/",
+      "fullAnalysis": "US President Donald Trump has extended the deadline for Iran to reopen the Strait of Hormuz by 10 days, while pausing strikes on Iranian energy facilities until April 6, as contacts between the two sides continue. The announcement came in a post on Truth Social on Thursday, where Trump said the deci",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Donald Trump reveals Iran\u2019s mystery \u2018present\u2019: 10 oil tankers cleared to pass th",
+      "detail": "US President Donald Trump, during the first cabinet meeting since the war began in West Asia, on Thursday talked about Iran\u2019s mystery \u201cpresent\u201d to America, which he mentioned two days earlier, was the passage of 10 oil-carrying ships through the Strait of Hormuz. Trump said Iran allowed the 10 oil t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/donald-trump-iran-present-revealed-strait-of-hormuz-oil-tankers-west-asia-war-10603288/",
+      "fullAnalysis": "US President Donald Trump, during the first cabinet meeting since the war began in West Asia, on Thursday talked about Iran\u2019s mystery \u201cpresent\u201d to America, which he mentioned two days earlier, was the passage of 10 oil-carrying ships through the Strait of Hormuz. Trump said Iran allowed the 10 oil t",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-30 07:04 UTC"
+}
