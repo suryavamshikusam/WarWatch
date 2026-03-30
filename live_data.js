@@ -1,16 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 02:37 UTC",
+  "generatedAt": "2026-03-30 05:15 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion \u00b7 Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand t\u2026",
-    "Other: Israel to allow 'limited prayer' at Holy Sepulchre after outrage \u00b7 Israeli police said they reached an agreement with Christian leaders to allow li\u2026",
-    "Other: Trump says Iran talks progressing through Pakistan channels \u00b7 US President Donald Trump said indirect negotiations between the United States a\u2026"
+    "Other: Israeli military reports multiple Iranian missile interceptions \u00b7 The Israeli military said it detected multiple ballistic missile launches from I\u2026",
+    "Other: Video: Netanyahu orders military to \u2018further expand\u2019 invasion of Lebanon \u00b7 Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a video stateme\u2026",
+    "Other: Trump: US will shut down attempt to charge Hormuz passage toll in minutes \u00b7 President Donald Trump said the United States could quickly shut down any Irania\u2026",
+    "Other: Netanyahu orders deeper Israeli invasion into Lebanon \u00b7 Netanyahu orders deeper Israeli invasion into Lebanon Israeli Prime Minister Ben\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-03-30 02:37 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 2,
+    "lastUpdated": "2026-03-30 05:15 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -50,15 +51,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion",
-      "summary": "Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand the ground offensive in southern Lebanon, including widening the \"security buffer zone\". Speaking in a video statement from Northern Command, Netanyahu said Israel is \u201cdetermined to fundamentally change the situation in t",
+      "time": "13 min ago",
+      "headline": "Israeli military reports multiple Iranian missile interceptions",
+      "summary": "The Israeli military said it detected multiple ballistic missile launches from Iran targeting southern Israel, triggering sirens across affected areas. It said air defences intercepted the missiles, and alerts were issued in parts of southern Israel and the southern West Bank. Al Jazeera reported th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Prime Minister Benjamin Netanyahu said he has ordered Israeli troops to expand the ground offensive in southern Lebanon, including widening the \"security buffer zone\". Speaking in a video statement from Northern Command, Netanyahu said Israel is \u201cdetermined to fundamentally change the situation in t",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/replicate-gaza-model-netanyahu-orders-expansion-lebanon-invasion",
+      "fullAnalysis": "The Israeli military said it detected multiple ballistic missile launches from Iran targeting southern Israel, triggering sirens across affected areas. It said air defences intercepted the missiles, and alerts were issued in parts of southern Israel and the southern West Bank. Al Jazeera reported th",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-reports-multiple-iranian-missile-interceptions",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +67,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Israel to allow 'limited prayer' at Holy Sepulchre after outrage",
-      "summary": "Israeli police said they reached an agreement with Christian leaders to allow limited prayer at the Church of the Holy Sepulchre following criticism over earlier restrictions. The arrangement was reached after talks between police officials and representatives of the Latin Patriarchate, with authori",
+      "time": "13 min ago",
+      "headline": "Video: Netanyahu orders military to \u2018further expand\u2019 invasion of Lebanon",
+      "summary": "Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a video statement that he has instructed the military to \u201cfurther expand\u201d its invasion of southern Lebanon, as tensions rise amid the ongoing US-Israeli war on Iran. Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a vi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli police said they reached an agreement with Christian leaders to allow limited prayer at the Church of the Holy Sepulchre following criticism over earlier restrictions. The arrangement was reached after talks between police officials and representatives of the Latin Patriarchate, with authori",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-allow-limited-prayer-holy-sepulchre-after-outrage",
+      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a video statement that he has instructed the military to \u201cfurther expand\u201d its invasion of southern Lebanon, as tensions rise amid the ongoing US-Israeli war on Iran. Israeli Prime Minister Benjamin Netanyahu announced on Sunday in a vi",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-netanyahu-orders-military-further-expand-invasion-lebanon",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -82,26 +83,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Trump says Iran talks progressing through Pakistan channels",
-      "summary": "US President Donald Trump said indirect negotiations between the United States and Iran, facilitated by Pakistani intermediaries, are making progress,\u00a0 the Financial Times reported. Trump did not provide details when asked whether a ceasefire agreement to reopen the Strait of Hormuz could be reached",
+      "time": "13 min ago",
+      "headline": "Trump: US will shut down attempt to charge Hormuz passage toll in minutes",
+      "summary": "President Donald Trump said the United States could quickly shut down any Iranian attempt to charge toll fees for ships passing through the Strait of Hormuz. \u201cWe could close that up in 2 minutes. We could close that up so fast, your head would spin,\u201d Trump said when asked about the reported plan. Tr",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump said indirect negotiations between the United States and Iran, facilitated by Pakistani intermediaries, are making progress,\u00a0 the Financial Times reported. Trump did not provide details when asked whether a ceasefire agreement to reopen the Strait of Hormuz could be reached",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-iran-talks-progressing-through-pakistan-channels",
+      "fullAnalysis": "President Donald Trump said the United States could quickly shut down any Iranian attempt to charge toll fees for ships passing through the Strait of Hormuz. \u201cWe could close that up in 2 minutes. We could close that up so fast, your head would spin,\u201d Trump said when asked about the reported plan. Tr",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-us-will-shut-down-attempt-charge-hormuz-passage-toll-minutes",
       "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Netanyahu orders deeper Israeli invasion into Lebanon",
+      "summary": "Netanyahu orders deeper Israeli invasion into Lebanon Israeli Prime Minister Benjamin Netanyahu has ordered the military to expand its invasion in southern Lebanon, pushing deeper to extend what he calls a \u2018buffer zone\u2019. As Israeli forces advance towards the Litani River, an explosion at a UN positi",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Netanyahu orders deeper Israeli invasion into Lebanon Israeli Prime Minister Benjamin Netanyahu has ordered the military to expand its invasion in southern Lebanon, pushing deeper to extend what he calls a \u2018buffer zone\u2019. As Israeli forces advance towards the Litani River, an explosion at a UN positi",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/30/netanyahu-orders-deeper-israeli-invasion-into-lebanon?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-28 23:26 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 01:50 UTC",
       "l": "HIGH",
@@ -228,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 02:37 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 05:15 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'Replicate Gaza model': Netanyahu orders expansion of Lebanon invasion. Israel to allow 'limited prayer' at Holy Sepulchre after outrage. Trump says Iran talks progressing through Pakistan channels. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli military reports multiple Iranian missile interceptions. Video: Netanyahu orders military to \u2018further expand\u2019 invasion of Lebanon. Trump: US will shut down attempt to charge Hormuz passage toll in minutes. Netanyahu orders deeper Israeli invasion into Lebanon. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
