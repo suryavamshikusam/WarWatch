@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 15:41 UTC",
+  "generatedAt": "2026-03-30 16:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'Inhumane and degrading': Israel set to approve death penalty for Palestinians \u00b7 Israel 's parliament, the Knesset, is set to vote on Monday on the final reading\u2026",
-    "Other: Rubio tells Al Jazeera Strait of Hormuz will reopen \u2018one way or another\u2019 \u00b7 United States Secretary of State Marco Rubio has told Al Jazeera that the Strait\u2026"
+    "Other: UK must have independent nuclear deterrent, says major parliamentary report \u00b7 Amid the US - Israeli war on Iran ,\u00a0calls are growing in Britain for a major re-\u2026",
+    "Other: How Spain's memory of Iraq shaped Sanchez's response to war on Iran \u00b7 On 4 March, just days after the US and Israel attacked Iran , Spain's prime mini\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-30 15:41 UTC",
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-30 16:40 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "'Inhumane and degrading': Israel set to approve death penalty for Palestinians",
-      "summary": "Israel 's parliament, the Knesset, is set to vote on Monday on the final readings of a bill that would allow the death penalty for Palestinian prisoners convicted of \"terrorism\". The legislation has drawn criticism for violating the right to life and for its potentially discriminatory application, w",
+      "headline": "UK must have independent nuclear deterrent, says major parliamentary report",
+      "summary": "Amid the US - Israeli war on Iran ,\u00a0calls are growing in Britain for a major re-evaluation of the country's foreign policy - and its nuclear deterrent. The Joint Committee on the National Security Strategy, a parliamentary committee tasked with monitoring the government's security strategy, publishe",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel 's parliament, the Knesset, is set to vote on Monday on the final readings of a bill that would allow the death penalty for Palestinian prisoners convicted of \"terrorism\". The legislation has drawn criticism for violating the right to life and for its potentially discriminatory application, w",
-      "sourceUrl": "https://www.middleeasteye.net/news/israel-set-final-vote-palestinian-prisoner-death-penalty-bill",
+      "fullAnalysis": "Amid the US - Israeli war on Iran ,\u00a0calls are growing in Britain for a major re-evaluation of the country's foreign policy - and its nuclear deterrent. The Joint Committee on the National Security Strategy, a parliamentary committee tasked with monitoring the government's security strategy, publishe",
+      "sourceUrl": "https://www.middleeasteye.net/news/uk-must-have-independent-nuclear-deterrent-says-major-parliamentary-report",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Rubio tells Al Jazeera Strait of Hormuz will reopen \u2018one way or another\u2019",
-      "summary": "United States Secretary of State Marco Rubio has told Al Jazeera that the Strait of Hormuz will \u201creopen one way or another\u201d in the wake of the eventual end of the US-Israeli war with Iran. The exclusive interview on Monday came as speculation has grown over a possible US troop deployment in Iran and",
+      "headline": "How Spain's memory of Iraq shaped Sanchez's response to war on Iran",
+      "summary": "On 4 March, just days after the US and Israel attacked Iran , Spain's prime minister addressed the nation. \u201cThe position of the government of Spain can be summed up in four words,\u201d Pedro Sanchez said. \u201cNo to the war.\u201d While other European leaders were working out how to respond to strikes widely que",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "United States Secretary of State Marco Rubio has told Al Jazeera that the Strait of Hormuz will \u201creopen one way or another\u201d in the wake of the eventual end of the US-Israeli war with Iran. The exclusive interview on Monday came as speculation has grown over a possible US troop deployment in Iran and",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/3/30/rubio-tells-al-jazeera-strait-of-hormuz-will-reopen-one-way-or-another?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "On 4 March, just days after the US and Israel attacked Iran , Spain's prime minister addressed the nation. \u201cThe position of the government of Spain can be summed up in four words,\u201d Pedro Sanchez said. \u201cNo to the war.\u201d While other European leaders were working out how to respond to strikes widely que",
+      "sourceUrl": "https://www.middleeasteye.net/news/how-spains-memory-iraq-shaped-sanchez-response-war-iran",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 10:54 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 13:41 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 15:41 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 16:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'Inhumane and degrading': Israel set to approve death penalty for Palestinians. Rubio tells Al Jazeera Strait of Hormuz will reopen \u2018one way or another\u2019. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UK must have independent nuclear deterrent, says major parliamentary report. How Spain's memory of Iraq shaped Sanchez's response to war on Iran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
