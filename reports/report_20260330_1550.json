@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-30 15:41 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Inhumane and degrading': Israel set to approve death penalty for Palestinians. Rubio tells Al Jazeera Strait of Hormuz will reopen \u2018one way or another\u2019. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "'Inhumane and degrading': Israel set to approve death penalty for Palestinians",
+      "detail": "Israel 's parliament, the Knesset, is set to vote on Monday on the final readings of a bill that would allow the death penalty for Palestinian prisoners convicted of \"terrorism\". The legislation has drawn criticism for violating the right to life and for its potentially discriminatory application, w",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-set-final-vote-palestinian-prisoner-death-penalty-bill",
+      "fullAnalysis": "Israel 's parliament, the Knesset, is set to vote on Monday on the final readings of a bill that would allow the death penalty for Palestinian prisoners convicted of \"terrorism\". The legislation has drawn criticism for violating the right to life and for its potentially discriminatory application, w",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Rubio tells Al Jazeera Strait of Hormuz will reopen \u2018one way or another\u2019",
+      "detail": "United States Secretary of State Marco Rubio has told Al Jazeera that the Strait of Hormuz will \u201creopen one way or another\u201d in the wake of the eventual end of the US-Israeli war with Iran. The exclusive interview on Monday came as speculation has grown over a possible US troop deployment in Iran and",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/30/rubio-tells-al-jazeera-strait-of-hormuz-will-reopen-one-way-or-another?traffic_source=rss",
+      "fullAnalysis": "United States Secretary of State Marco Rubio has told Al Jazeera that the Strait of Hormuz will \u201creopen one way or another\u201d in the wake of the eventual end of the US-Israeli war with Iran. The exclusive interview on Monday came as speculation has grown over a possible US troop deployment in Iran and",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-30 15:41 UTC"
+}
