@@ -1,17 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-30 10:12 UTC",
+  "generatedAt": "2026-03-30 11:20 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone' \u00b7 Israeli Prime Minister Benjamin Netanyahu has said the military will seize addit\u2026",
-    "Other: Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone' \u00b7 Israeli Prime Minister Benjamin Netanyahu has said the military will seize addit\u2026",
-    "Other: Iran confirms Revolutionary Guard navy chief Alireza Tangsiri\u2019s death \u00b7 Updated - March 30, 2026 03:17 pm IST - Dubai In this image provided by Sepahnew\u2026",
-    "Other: US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi \u00b7 As the US-Israel conflict with Iran entered day 31, US President Donald Trump sa\u2026"
+    "Other: Donald Trump threatens to 'take the oil' in Iran \u00b7 US President Donald Trump said his country could \"take the oil in Iran \" as thou\u2026",
+    "Other: Iran says US demands for talks are 'excessive' \u00b7 Iran\u00a0received messages via intermediaries indicating the United States' willingn\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-03-30 10:12 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 6,
+    "lastUpdated": "2026-03-30 11:20 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -51,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
+      "time": "9 min ago",
+      "headline": "Donald Trump threatens to 'take the oil' in Iran",
+      "summary": "US President Donald Trump said his country could \"take the oil in Iran \" as thousands of American troops mobilise to the Middle East. Speaking with the Financial Times on Sunday, Trump also suggested the US\u00a0could seize the Iranian export hub of Kharg Island. \"To be honest with you, my favourite thin",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
-      "sourceUrl": "https://www.middleeasteye.net/news/netanyahu-orders-army-seize-more-land-lebanon-expand-buffer-zone",
+      "fullAnalysis": "US President Donald Trump said his country could \"take the oil in Iran \" as thousands of American troops mobilise to the Middle East. Speaking with the Financial Times on Sunday, Trump also suggested the US\u00a0could seize the Iranian export hub of Kharg Island. \"To be honest with you, my favourite thin",
+      "sourceUrl": "https://www.middleeasteye.net/news/donald-trump-threatens-take-oil-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,58 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'",
-      "summary": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
+      "time": "9 min ago",
+      "headline": "Iran says US demands for talks are 'excessive'",
+      "summary": "Iran\u00a0received messages via intermediaries indicating the United States' willingness to negotiate, but deemed US proposals to be \"unrealistic, illogical and excessive\", foreign ministry spokesperson Esmaeil Baghaei said on Monday. Baghaei's press conference took place a day after the foreign minister",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli Prime Minister Benjamin Netanyahu has said the military will seize additional territory in southern Lebanon and expand the so-called \u201cbuffer zone\u201d. In a video statement on Sunday, Netanyahu said the move was intended to \u201cdefinitively thwart the [Hezbollah] invasion threat\u201d and push anti-tank",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/netanyahu-says-israel-seize-more-lebanese-lands-and-expand-buffer-zone",
+      "fullAnalysis": "Iran\u00a0received messages via intermediaries indicating the United States' willingness to negotiate, but deemed US proposals to be \"unrealistic, illogical and excessive\", foreign ministry spokesperson Esmaeil Baghaei said on Monday. Baghaei's press conference took place a day after the foreign minister",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-us-demands-talks-are-excessive",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran confirms Revolutionary Guard navy chief Alireza Tangsiri\u2019s death",
-      "summary": "Updated - March 30, 2026 03:17 pm IST - Dubai In this image provided by Sepahnews of the Iranian Revolutionary Guard on Feb. 16, 2026, the guard's navy commander Alireza Tangsiri speaks during a military drill Feb. 2026 in the Persian Gulf, Iran. (Sepahnews via AP) Iran confirmed on Monday (March 30",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Updated - March 30, 2026 03:17 pm IST - Dubai In this image provided by Sepahnews of the Iranian Revolutionary Guard on Feb. 16, 2026, the guard's navy commander Alireza Tangsiri speaks during a military drill Feb. 2026 in the Persian Gulf, Iran. (Sepahnews via AP) Iran confirmed on Monday (March 30",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-confirms-revolutionary-guard-navy-chief-alireza-tangsiris-death/article70802247.ece",
-      "sourceLabel": "The Hindu"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi",
-      "summary": "As the US-Israel conflict with Iran entered day 31, US President Donald Trump said he would like to \u201ctake the oil in Iran\u201d in an interview with the Financial Times, even as Pakistan prepares to host talks aimed at easing tensions. Meanwhile, Kuwait reported that an Indian worker was killed in an Ira",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "As the US-Israel conflict with Iran entered day 31, US President Donald Trump said he would like to \u201ctake the oil in Iran\u201d in an interview with the Financial Times, even as Pakistan prepares to host talks aimed at easing tensions. Meanwhile, Kuwait reported that an Indian worker was killed in an Ira",
-      "sourceUrl": "https://indianexpress.com/article/world/us-iran-war-day-31-trump-iran-kharg-island-for-oil-pakistan-emerges-as-mediator-for-de-escalation-10609325/",
-      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 07:21 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 08:03 UTC",
       "l": "HIGH",
@@ -245,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-30 10:12 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-30 11:20 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'. Netanyahu says Israel to seize more Lebanese lands and expand 'buffer zone'. Iran confirms Revolutionary Guard navy chief Alireza Tangsiri\u2019s death. US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Donald Trump threatens to 'take the oil' in Iran. Iran says US demands for talks are 'excessive'. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
