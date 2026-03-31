@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 18:39 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missiles don't pose a threat to the US, Pete Hegseth admits. UNDP warns war could wipe up to $194bn from regional economy. Last 24 hours saw \u2018lowest number\u2019 of Iranian missile and drone attacks, Hegseth . Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iranian missiles don't pose a threat to the US, Pete Hegseth admits",
+      "detail": "In his first briefing since 19 March, and more than one month into the US- Israeli war on Iran , US Secretary of War Pete Hegseth openly conceded that Iranian ballistic missiles do not pose a threat to the US mainland, undercutting talk of the \"imminent threat\" repeated by the White House. Because o",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iranian-missiles-dont-pose-threat-to-us-pete-hegseth-admits",
+      "fullAnalysis": "In his first briefing since 19 March, and more than one month into the US- Israeli war on Iran , US Secretary of War Pete Hegseth openly conceded that Iranian ballistic missiles do not pose a threat to the US mainland, undercutting talk of the \"imminent threat\" repeated by the White House. Because o",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "UNDP warns war could wipe up to $194bn from regional economy",
+      "detail": "The United Nations Development Programme has warned of severe economic fallout from the US-Israeli war on Iran. In a new report, it said a localised conflict risks becoming a \u201csystemic regional shock\u201d. Regional GDP could shrink by between 3.7 and 6 percent, amounting to losses of up to $194bn, drive",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/undp-warns-war-could-wipe-194bn-regional-economy",
+      "fullAnalysis": "The United Nations Development Programme has warned of severe economic fallout from the US-Israeli war on Iran. In a new report, it said a localised conflict risks becoming a \u201csystemic regional shock\u201d. Regional GDP could shrink by between 3.7 and 6 percent, amounting to losses of up to $194bn, drive",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Last 24 hours saw \u2018lowest number\u2019 of Iranian missile and drone attacks, Hegseth ",
+      "detail": "Iran launched fewer missiles and drones in the past day than in any previous 24-hour period since the U. S. and Israel started their war,Defense Secretary Pete Hegseth said Tuesday during a press briefing at the Pentagon. But the secretary declined to quantify progress toward the administration\u2019s ob",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Defense One",
+      "sourceUrl": "https://www.defenseone.com/policy/2026/03/last-24-hours-saw-lowest-number-iranian-missile-and-drone-attacks-hegseth-says/412521/",
+      "fullAnalysis": "Iran launched fewer missiles and drones in the past day than in any previous 24-hour period since the U. S. and Israel started their war,Defense Secretary Pete Hegseth said Tuesday during a press briefing at the Pentagon. But the secretary declined to quantify progress toward the administration\u2019s ob",
+      "sourceLabel": "Defense One"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-31 18:39 UTC"
+}
