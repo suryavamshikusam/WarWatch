@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 06:17 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat. Trump tells aides he is willing to end Iran war without reopening Hormuz: Report. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Morning update",
+      "detail": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Israeli military said on Tuesday four soldiers had been killed in combat in southern Lebanon where its forces are clashing with\u00a0Hezbollah. Thousands of I",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-504",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Israeli military said on Tuesday four soldiers had been killed in combat in southern Lebanon where its forces are clashing with\u00a0Hezbollah. Thousands of I",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat",
+      "detail": "Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crossed the halfway mark but declined to give a timeline for when it may end, in remarks to US network Newsmax. \u201cIt\u2019s definitely beyond the halfway point. But I don\u2019t want to put a schedule on it,\u201d Netanyahu said. He said the ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/netanyahu-no-schedule-iran-war-trump-energy-facility-threats-10610465/",
+      "fullAnalysis": "Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crossed the halfway mark but declined to give a timeline for when it may end, in remarks to US network Newsmax. \u201cIt\u2019s definitely beyond the halfway point. But I don\u2019t want to put a schedule on it,\u201d Netanyahu said. He said the ",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Trump tells aides he is willing to end Iran war without reopening Hormuz: Report",
+      "detail": "US President Donald Trump has told aides he is willing to end the military campaign against Iran even if the Strait of Hormuz remains largely closed, according to a Wall Street Journal report citing administration officials. The report said Trump is considering ending the war first and dealing with ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-told-aides-he-is-willing-to-end-the-military-campaign-against-iran-10610552/",
+      "fullAnalysis": "US President Donald Trump has told aides he is willing to end the military campaign against Iran even if the Strait of Hormuz remains largely closed, according to a Wall Street Journal report citing administration officials. The report said Trump is considering ending the war first and dealing with ",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-31 06:17 UTC"
+}

@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 04:59 UTC",
+  "generatedAt": "2026-03-31 06:17 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump shares video of massive explosions in Iran's Isfahan following US-Israeli  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
-    "Other: Pentagon denies that Hegseth\u2019s broker sought investment before Iran war \u00b7 The United States Department of Defense has demanded the retraction of a newspap\u2026"
+    "Other: Morning update \u00b7 Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said fiv\u2026",
+    "Other: Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat \u00b7 Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crosse\u2026",
+    "Other: Trump tells aides he is willing to end Iran war without reopening Hormuz: Report \u00b7 US President Donald Trump has told aides he is willing to end the military campa\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-03-31 04:59 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 3,
+    "lastUpdated": "2026-03-31 06:17 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,42 +50,58 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Trump shares video of massive explosions in Iran's Isfahan following US-Israeli ",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "11 min ago",
+      "headline": "Morning update",
+      "summary": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Israeli military said on Tuesday four soldiers had been killed in combat in southern Lebanon where its forces are clashing with\u00a0Hezbollah. Thousands of I",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/trump-shares-video-of-massive-explosions-in-irans-isfahan-following-us-israeli-strikes-bunker-busters-used/articleshow/129914709.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Israeli military said on Tuesday four soldiers had been killed in combat in southern Lebanon where its forces are clashing with\u00a0Hezbollah. Thousands of I",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-504",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Pentagon denies that Hegseth\u2019s broker sought investment before Iran war",
-      "summary": "The United States Department of Defense has demanded the retraction of a newspaper report alleging that a broker for defence chief Pete Hegseth attempted to make a large investment in weapons companies in the run-up to the war on Iran. Pentagon spokesman Sean Parnell demanded the \u201cimmediate\u201d retract",
+      "time": "11 min ago",
+      "headline": "Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat",
+      "summary": "Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crossed the halfway mark but declined to give a timeline for when it may end, in remarks to US network Newsmax. \u201cIt\u2019s definitely beyond the halfway point. But I don\u2019t want to put a schedule on it,\u201d Netanyahu said. He said the ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The United States Department of Defense has demanded the retraction of a newspaper report alleging that a broker for defence chief Pete Hegseth attempted to make a large investment in weapons companies in the run-up to the war on Iran. Pentagon spokesman Sean Parnell demanded the \u201cimmediate\u201d retract",
-      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/31/pentagon-denies-hegseths-broker-sought-defence-investment-before-iran-war?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crossed the halfway mark but declined to give a timeline for when it may end, in remarks to US network Newsmax. \u201cIt\u2019s definitely beyond the halfway point. But I don\u2019t want to put a schedule on it,\u201d Netanyahu said. He said the ",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/netanyahu-no-schedule-iran-war-trump-energy-facility-threats-10610465/",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Trump tells aides he is willing to end Iran war without reopening Hormuz: Report",
+      "summary": "US President Donald Trump has told aides he is willing to end the military campaign against Iran even if the Strait of Hormuz remains largely closed, according to a Wall Street Journal report citing administration officials. The report said Trump is considering ending the war first and dealing with ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US President Donald Trump has told aides he is willing to end the military campaign against Iran even if the Strait of Hormuz remains largely closed, according to a Wall Street Journal report citing administration officials. The report said Trump is considering ending the war first and dealing with ",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-told-aides-he-is-willing-to-end-the-military-campaign-against-iran-10610552/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 19:55 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 20:58 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 04:59 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 06:17 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump shares video of massive explosions in Iran's Isfahan following US-Israeli . Pentagon denies that Hegseth\u2019s broker sought investment before Iran war. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat. Trump tells aides he is willing to end Iran war without reopening Hormuz: Report. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
