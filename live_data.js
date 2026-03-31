@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 10:49 UTC",
+  "generatedAt": "2026-03-31 11:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Al-Aqsa and the Holy Sepulchre: How has Israel undermined the Status Quo? \u00b7 The Old City in occupied East Jerusalem is home to some of the world\u2019s most impo\u2026"
+    "Other: Israel\u2019s closure of the Holy Sepulchre is proof that no faith is safe from occup \u00b7 In Jerusalem, the Church of the Holy Sepulchre stands at the heart of Christian \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-03-31 10:49 UTC",
+    "updatesToday": 8,
+    "lastUpdated": "2026-03-31 11:45 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Al-Aqsa and the Holy Sepulchre: How has Israel undermined the Status Quo?",
-      "summary": "The Old City in occupied East Jerusalem is home to some of the world\u2019s most important religious sites for Muslims, Christians and Jews. For decades, an internationally recognised arrangement known as the Status Quo has governed access and control. Since Israel \u2019s illegal occupation of East Jerusalem",
+      "time": "6 min ago",
+      "headline": "Israel\u2019s closure of the Holy Sepulchre is proof that no faith is safe from occup",
+      "summary": "In Jerusalem, the Church of the Holy Sepulchre stands at the heart of Christian worship. It is the site for commemorating the crucifixion and resurrection. To deny access to this site is not a simple administrative act. It is a violent interruption of ancestral religious ties, a colonial imposition ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Old City in occupied East Jerusalem is home to some of the world\u2019s most important religious sites for Muslims, Christians and Jews. For decades, an internationally recognised arrangement known as the Status Quo has governed access and control. Since Israel \u2019s illegal occupation of East Jerusalem",
-      "sourceUrl": "https://www.middleeasteye.net/explainers/al-aqsa-holy-sepulchre-how-has-israel-undermined-status-quo",
+      "fullAnalysis": "In Jerusalem, the Church of the Holy Sepulchre stands at the heart of Christian worship. It is the site for commemorating the crucifixion and resurrection. To deny access to this site is not a simple administrative act. It is a violent interruption of ancestral religious ties, a colonial imposition ",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/israel-closure-holy-sepulchre-manoeuvre-no-faith-safe-occupation",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 05:15 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 07:04 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 10:49 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 11:45 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Al-Aqsa and the Holy Sepulchre: How has Israel undermined the Status Quo?. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel\u2019s closure of the Holy Sepulchre is proof that no faith is safe from occup. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
