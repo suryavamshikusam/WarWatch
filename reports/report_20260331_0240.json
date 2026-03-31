@@ -1,0 +1,104 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 02:24 UTC",
+  "executive_summary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC navy commander to be buried in Abadan, Fars news reports. Iran-Israel war LIVE updates: Kuwait says Iranian attack sparks fire on fully lo. WSJ: Trump open to ending Iran war despite Hormuz closure. Supreme leader Ali Khamenei, security chief Larijani &amp; more - key Iranian le. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "IRGC navy commander to be buried in Abadan, Fars news reports",
+      "detail": "Commander of the Islamic Revolutionary Guard Corps\u2019s (IRGC) navy, Admiral Alireza Tangsiri,\u00a0who was killed in an Israeli strike, will be buried in the city of Abadan in the western province of Khuzestan, Fars news agency reported. Citing officials in Khuzestan, the report said that his funeral will ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-navy-commander-be-buried-abadan-fars-news-reports",
+      "fullAnalysis": "Commander of the Islamic Revolutionary Guard Corps\u2019s (IRGC) navy, Admiral Alireza Tangsiri,\u00a0who was killed in an Israeli strike, will be buried in the city of Abadan in the western province of Khuzestan, Fars news agency reported. Citing officials in Khuzestan, the report said that his funeral will ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran-Israel war LIVE updates: Kuwait says Iranian attack sparks fire on fully lo",
+      "detail": "A yacht sails past a plume of smoke rising from the port of Jebel Ali following a reported Iranian strike in Dubai. Image for representational purposes only.\n                                                  | Photo Credit:  \n                          AFP A s Iran vowed to be defiant against U.S. Pr",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/us-israel-iran-war-updates-live-march-31-2026/article70805560.ece",
+      "fullAnalysis": "A yacht sails past a plume of smoke rising from the port of Jebel Ali following a reported Iranian strike in Dubai. Image for representational purposes only.\n                                                  | Photo Credit:  \n                          AFP A s Iran vowed to be defiant against U.S. Pr",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "WSJ: Trump open to ending Iran war despite Hormuz closure",
+      "detail": "US President Donald Trump has told aides he is prepared to end the US military campaign against Iran even if the Strait of Hormuz remains closed, The Wall Street Journal reported, citing administration officials. According to the report, Trump is willing to defer efforts to reopen the strategic wate",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/wsj-trump-open-ending-iran-war-despite-hormuz-closure",
+      "fullAnalysis": "US President Donald Trump has told aides he is prepared to end the US military campaign against Iran even if the Strait of Hormuz remains closed, The Wall Street Journal reported, citing administration officials. According to the report, Trump is willing to defer efforts to reopen the strategic wate",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Supreme leader Ali Khamenei, security chief Larijani &amp; more - key Iranian le",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/supreme-leader-ali-khamenei-security-chief-larijani-more-key-iranian-leaders-killed-in-us-israeli-strikes/articleshow/129907599.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Iran war live: Kuwaiti oil tanker hit in Dubai port; 3 UN troops killed",
+      "detail": "Iran war live: Kuwaiti oil tanker hit in Dubai port; 3 UN troops killed",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/3/31/iran-war-live-kuwaiti-oil-tanker-hit-in-dubai-port-3-un-troops-killed?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Kuwaiti oil tanker hit in Dubai port; 3 UN troops killed",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 5,
+  "generated_at": "2026-03-31 02:24 UTC"
+}
