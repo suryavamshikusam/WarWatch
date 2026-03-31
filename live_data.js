@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 22:30 UTC",
+  "generatedAt": "2026-03-31 23:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: \u2018Google, Apple, Microsoft, Tesla\u2019: Iran\u2019s IRGC threatens to target US firms in M \u00b7 Iran\u2019s Islamic Revolutionary Guards Corps (IRGC) on Tuesday said that they will \u2026"
+    "Other: \u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a \u00b7 US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflic\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-03-31 22:30 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-03-31 23:40 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "6 min ago",
-      "headline": "\u2018Google, Apple, Microsoft, Tesla\u2019: Iran\u2019s IRGC threatens to target US firms in M",
-      "summary": "Iran\u2019s Islamic Revolutionary Guards Corps (IRGC) on Tuesday said that they will target US companies in the \u2060region \u200bfrom April 1 in retaliation for \u200battacks \u200bon Tehran , \u2060state media reported. Among the 18 companies listed in the IRGC\u2019s threat include Google, Microsoft, Apple, Intel, IBM, Tesla \u2060and",
+      "headline": "\u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a",
+      "summary": "US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflict with Iran would be \u201cdecisive\u201d, as he revealed he made an unannounced visit to American troops in the Middle East over the weekend and witnessed missile interceptions and strike preparations firsthand. Speaking alongsid",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guards Corps (IRGC) on Tuesday said that they will target US companies in the \u2060region \u200bfrom April 1 in retaliation for \u200battacks \u200bon Tehran , \u2060state media reported. Among the 18 companies listed in the IRGC\u2019s threat include Google, Microsoft, Apple, Intel, IBM, Tesla \u2060and",
-      "sourceUrl": "https://indianexpress.com/article/world/iran-irgc-threatens-google-apple-microsoft-tesla-retaliation-april-1-deadline-10612075/",
+      "fullAnalysis": "US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflict with Iran would be \u201cdecisive\u201d, as he revealed he made an unannounced visit to American troops in the Middle East over the weekend and witnessed missile interceptions and strike preparations firsthand. Speaking alongsid",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/pete-hegseth-unannounced-middle-east-visit-operation-epic-fury-iran-decisive-days-10611986/",
       "sourceLabel": "Indian Express"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 18:39 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 19:43 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 22:30 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 23:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Google, Apple, Microsoft, Tesla\u2019: Iran\u2019s IRGC threatens to target US firms in M. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

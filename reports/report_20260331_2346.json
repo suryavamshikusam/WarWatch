@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 23:40 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "\u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a",
+      "detail": "US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflict with Iran would be \u201cdecisive\u201d, as he revealed he made an unannounced visit to American troops in the Middle East over the weekend and witnessed missile interceptions and strike preparations firsthand. Speaking alongsid",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/pete-hegseth-unannounced-middle-east-visit-operation-epic-fury-iran-decisive-days-10611986/",
+      "fullAnalysis": "US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflict with Iran would be \u201cdecisive\u201d, as he revealed he made an unannounced visit to American troops in the Middle East over the weekend and witnessed missile interceptions and strike preparations firsthand. Speaking alongsid",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-03-31 23:40 UTC"
+}
