@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 09:47 UTC",
+  "generatedAt": "2026-03-31 10:49 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel prepared to keep striking Iran for 'weeks to come', military spokesperson \u00b7 Israel is prepared for \"weeks\" more of attacks on Iran, a military spokesman sai\u2026"
+    "Other: Al-Aqsa and the Holy Sepulchre: How has Israel undermined the Status Quo? \u00b7 The Old City in occupied East Jerusalem is home to some of the world\u2019s most impo\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-03-31 09:47 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-03-31 10:49 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Israel prepared to keep striking Iran for 'weeks to come', military spokesperson",
-      "summary": "Israel is prepared for \"weeks\" more of attacks on Iran, a military spokesman said on Tuesday after Prime Minister Benjamin Netanyahu said in an interview that the war was \"beyond the halfway point\". Lieutenant Colonel Nadav Shoshani told reporters the decision was up to political leaders, but said \"",
+      "headline": "Al-Aqsa and the Holy Sepulchre: How has Israel undermined the Status Quo?",
+      "summary": "The Old City in occupied East Jerusalem is home to some of the world\u2019s most important religious sites for Muslims, Christians and Jews. For decades, an internationally recognised arrangement known as the Status Quo has governed access and control. Since Israel \u2019s illegal occupation of East Jerusalem",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel is prepared for \"weeks\" more of attacks on Iran, a military spokesman said on Tuesday after Prime Minister Benjamin Netanyahu said in an interview that the war was \"beyond the halfway point\". Lieutenant Colonel Nadav Shoshani told reporters the decision was up to political leaders, but said \"",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-prepared-keep-striking-iran-weeks-come-military-spokesperson-says",
+      "fullAnalysis": "The Old City in occupied East Jerusalem is home to some of the world\u2019s most important religious sites for Muslims, Christians and Jews. For decades, an internationally recognised arrangement known as the Status Quo has governed access and control. Since Israel \u2019s illegal occupation of East Jerusalem",
+      "sourceUrl": "https://www.middleeasteye.net/explainers/al-aqsa-holy-sepulchre-how-has-israel-undermined-status-quo",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 02:37 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 05:15 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 09:47 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 10:49 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel prepared to keep striking Iran for 'weeks to come', military spokesperson. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Al-Aqsa and the Holy Sepulchre: How has Israel undermined the Status Quo?. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
