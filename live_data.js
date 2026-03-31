@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 19:42 UTC",
+  "generatedAt": "2026-03-31 21:03 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Why Iran believes it can outlast the US \u00b7 Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can thi\u2026"
+    "Other: 'Go take your oil:' Nato fissure erupts over Iran as allies brush off US \u00b7 The US-Israeli war on Iran is driving a fissure between Washington and its Nato \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-03-31 19:42 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-03-31 21:03 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Why Iran believes it can outlast the US",
-      "summary": "Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can this war end before it widens? Iran appears to believe it can survive this war. That calculation may be shaping its stance on a ceasefire, even as strikes continue and talk of US troops on the ground is growing. Why does Ir",
+      "headline": "'Go take your oil:' Nato fissure erupts over Iran as allies brush off US",
+      "summary": "The US-Israeli war on Iran is driving a fissure between Washington and its Nato allies, as US requests for overflight permission, basing, and air defence systems are brushed off, while the Trump administration casts doubt on its commitment to Nato\u2019s mutual defence clause. Spain has closed its airspa",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can this war end before it widens? Iran appears to believe it can survive this war. That calculation may be shaping its stance on a ceasefire, even as strikes continue and talk of US troops on the ground is growing. Why does Ir",
-      "sourceUrl": "https://www.aljazeera.com/video/the-take-2/2026/3/31/aje-onl-tt_irn_whatcouldendthewar_av_v2-310326?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "The US-Israeli war on Iran is driving a fissure between Washington and its Nato allies, as US requests for overflight permission, basing, and air defence systems are brushed off, while the Trump administration casts doubt on its commitment to Nato\u2019s mutual defence clause. Spain has closed its airspa",
+      "sourceUrl": "https://www.middleeasteye.net/news/go-take-your-oil-nato-fissure-erupts-over-iran-allies-brush-off-us",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 15:41 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 16:40 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 19:42 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 21:03 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Why Iran believes it can outlast the US. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Go take your oil:' Nato fissure erupts over Iran as allies brush off US. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
