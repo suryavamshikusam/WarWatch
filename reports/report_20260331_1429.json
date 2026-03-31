@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 14:16 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Trump doesn't bluff': Pentagon chief warns Iran, says US wants deal but 'prepar. Israeli invasion of Lebanon could be worse than 1982, warn European officials. 'Get your own oil': Trump mocks UK, other countries amid Iran chokehold on Hormu. Cancer drug facility, religious site hit in Israeli-US strikes on Iran. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "'Trump doesn't bluff': Pentagon chief warns Iran, says US wants deal but 'prepar",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/trump-doesnt-bluff-pentagon-chief-warns-iran-says-us-wants-deal-but-prepared-to-continue-with-bombs/articleshow/129926200.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Israeli invasion of Lebanon could be worse than 1982, warn European officials",
+      "detail": "Israel \u2019s invasion of southern Lebanon is drawing parallels with its 1982 campaign, and could prove even worse as it becomes more protracted,\u00a0European officials told Middle East Eye. For many Lebanese, the broad scope of Israel\u2019s military campaign in recent weeks already recalls its 18-year occupati",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-invasion-lebanon-could-be-worse-1982-say-european-officials",
+      "fullAnalysis": "Israel \u2019s invasion of southern Lebanon is drawing parallels with its 1982 campaign, and could prove even worse as it becomes more protracted,\u00a0European officials told Middle East Eye. For many Lebanese, the broad scope of Israel\u2019s military campaign in recent weeks already recalls its 18-year occupati",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "'Get your own oil': Trump mocks UK, other countries amid Iran chokehold on Hormu",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/get-your-own-oil-trump-mocks-uk-other-countries-amid-iran-chokehold-on-hormuz-slams-france-for-being-unhelpful/articleshow/129924758.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Cancer drug facility, religious site hit in Israeli-US strikes on Iran",
+      "detail": "Israeli-US strikes have hit one of Iran\u2019s largest pharmaceutical companies in Tehran, which produces anaesthetics and cancer drugs, the Iranian government said. Separate attacks were reported on Tuesday at a Shia religious site in the northwestern city of Zanjan, local media said. \u201cDuring the US and",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/31/cancer-drug-facility-religious-site-hit-in-israeli-us-strikes-on-iran?traffic_source=rss",
+      "fullAnalysis": "Israeli-US strikes have hit one of Iran\u2019s largest pharmaceutical companies in Tehran, which produces anaesthetics and cancer drugs, the Iranian government said. Separate attacks were reported on Tuesday at a Shia religious site in the northwestern city of Zanjan, local media said. \u201cDuring the US and",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-03-31 14:16 UTC"
+}

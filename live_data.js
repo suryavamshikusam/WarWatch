@@ -1,15 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 12:43 UTC",
+  "generatedAt": "2026-03-31 14:16 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p \u00b7 As the Iran-Israel war stretches into its fifth week, cracks are widening betwee\u2026",
-    "Other: Iran war: Pete Hegseth says he visited US troops in Middle East \u00b7 US Defence Secretary Pete Hegseth said the coming days would be decisive in the \u2026"
+    "Other: 'Trump doesn't bluff': Pentagon chief warns Iran, says US wants deal but 'prepar \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
+    "Other: Israeli invasion of Lebanon could be worse than 1982, warn European officials \u00b7 Israel \u2019s invasion of southern Lebanon is drawing parallels with its 1982 campai\u2026",
+    "Other: 'Get your own oil': Trump mocks UK, other countries amid Iran chokehold on Hormu \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
+    "Other: Cancer drug facility, religious site hit in Israeli-US strikes on Iran \u00b7 Israeli-US strikes have hit one of Iran\u2019s largest pharmaceutical companies in Te\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-03-31 12:43 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 10,
+    "lastUpdated": "2026-03-31 14:16 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -49,42 +51,74 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p",
-      "summary": "As the Iran-Israel war stretches into its fifth week, cracks are widening between Washington and Tel Aviv; and the world\u2019s most critical oil chokepoint is caught in the middle. The Strait of Hormuz has become the defining fault line of a war that has already reshaped global energy markets, tested th",
+      "time": "13 min ago",
+      "headline": "'Trump doesn't bluff': Pentagon chief warns Iran, says US wants deal but 'prepar",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "As the Iran-Israel war stretches into its fifth week, cracks are widening between Washington and Tel Aviv; and the world\u2019s most critical oil chokepoint is caught in the middle. The Strait of Hormuz has become the defining fault line of a war that has already reshaped global energy markets, tested th",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/strait-of-hormuz-crisis-us-israel-rift-iran-war-10611328/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/trump-doesnt-bluff-pentagon-chief-warns-iran-says-us-wants-deal-but-prepared-to-continue-with-bombs/articleshow/129926200.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Iran war: Pete Hegseth says he visited US troops in Middle East",
-      "summary": "US Defence Secretary Pete Hegseth said the coming days would be decisive in the war against Iran, revealing on Tuesday that he visited American troops in the Middle East over the weekend to witness ongoing military operations and assess the situation on the ground. Hegseth, speaking alongside Chairm",
+      "time": "13 min ago",
+      "headline": "Israeli invasion of Lebanon could be worse than 1982, warn European officials",
+      "summary": "Israel \u2019s invasion of southern Lebanon is drawing parallels with its 1982 campaign, and could prove even worse as it becomes more protracted,\u00a0European officials told Middle East Eye. For many Lebanese, the broad scope of Israel\u2019s military campaign in recent weeks already recalls its 18-year occupati",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US Defence Secretary Pete Hegseth said the coming days would be decisive in the war against Iran, revealing on Tuesday that he visited American troops in the Middle East over the weekend to witness ongoing military operations and assess the situation on the ground. Hegseth, speaking alongside Chairm",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-war-us-defence-secretary-pete-hegseth-says-he-visited-us-troops-in-middle-east-10611787/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Israel \u2019s invasion of southern Lebanon is drawing parallels with its 1982 campaign, and could prove even worse as it becomes more protracted,\u00a0European officials told Middle East Eye. For many Lebanese, the broad scope of Israel\u2019s military campaign in recent weeks already recalls its 18-year occupati",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-invasion-lebanon-could-be-worse-1982-say-european-officials",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "'Get your own oil': Trump mocks UK, other countries amid Iran chokehold on Hormu",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/get-your-own-oil-trump-mocks-uk-other-countries-amid-iran-chokehold-on-hormuz-slams-france-for-being-unhelpful/articleshow/129924758.cms",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Cancer drug facility, religious site hit in Israeli-US strikes on Iran",
+      "summary": "Israeli-US strikes have hit one of Iran\u2019s largest pharmaceutical companies in Tehran, which produces anaesthetics and cancer drugs, the Iranian government said. Separate attacks were reported on Tuesday at a Shia religious site in the northwestern city of Zanjan, local media said. \u201cDuring the US and",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli-US strikes have hit one of Iran\u2019s largest pharmaceutical companies in Tehran, which produces anaesthetics and cancer drugs, the Iranian government said. Separate attacks were reported on Tuesday at a Shia religious site in the northwestern city of Zanjan, local media said. \u201cDuring the US and",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/31/cancer-drug-facility-religious-site-hit-in-israeli-us-strikes-on-iran?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 08:50 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 10:12 UTC",
       "l": "HIGH",
@@ -211,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 12:43 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 14:16 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p. Iran war: Pete Hegseth says he visited US troops in Middle East. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Trump doesn't bluff': Pentagon chief warns Iran, says US wants deal but 'prepar. Israeli invasion of Lebanon could be worse than 1982, warn European officials. 'Get your own oil': Trump mocks UK, other countries amid Iran chokehold on Hormu. Cancer drug facility, religious site hit in Israeli-US strikes on Iran. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
