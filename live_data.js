@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 21:03 UTC",
+  "generatedAt": "2026-03-31 22:30 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'Go take your oil:' Nato fissure erupts over Iran as allies brush off US \u00b7 The US-Israeli war on Iran is driving a fissure between Washington and its Nato \u2026"
+    "Other: \u2018Google, Apple, Microsoft, Tesla\u2019: Iran\u2019s IRGC threatens to target US firms in M \u00b7 Iran\u2019s Islamic Revolutionary Guards Corps (IRGC) on Tuesday said that they will \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-03-31 21:03 UTC",
+    "updatesToday": 16,
+    "lastUpdated": "2026-03-31 22:30 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "'Go take your oil:' Nato fissure erupts over Iran as allies brush off US",
-      "summary": "The US-Israeli war on Iran is driving a fissure between Washington and its Nato allies, as US requests for overflight permission, basing, and air defence systems are brushed off, while the Trump administration casts doubt on its commitment to Nato\u2019s mutual defence clause. Spain has closed its airspa",
+      "time": "6 min ago",
+      "headline": "\u2018Google, Apple, Microsoft, Tesla\u2019: Iran\u2019s IRGC threatens to target US firms in M",
+      "summary": "Iran\u2019s Islamic Revolutionary Guards Corps (IRGC) on Tuesday said that they will target US companies in the \u2060region \u200bfrom April 1 in retaliation for \u200battacks \u200bon Tehran , \u2060state media reported. Among the 18 companies listed in the IRGC\u2019s threat include Google, Microsoft, Apple, Intel, IBM, Tesla \u2060and",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The US-Israeli war on Iran is driving a fissure between Washington and its Nato allies, as US requests for overflight permission, basing, and air defence systems are brushed off, while the Trump administration casts doubt on its commitment to Nato\u2019s mutual defence clause. Spain has closed its airspa",
-      "sourceUrl": "https://www.middleeasteye.net/news/go-take-your-oil-nato-fissure-erupts-over-iran-allies-brush-off-us",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guards Corps (IRGC) on Tuesday said that they will target US companies in the \u2060region \u200bfrom April 1 in retaliation for \u200battacks \u200bon Tehran , \u2060state media reported. Among the 18 companies listed in the IRGC\u2019s threat include Google, Microsoft, Apple, Intel, IBM, Tesla \u2060and",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-irgc-threatens-google-apple-microsoft-tesla-retaliation-april-1-deadline-10612075/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 16:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 18:39 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 21:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 22:30 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'Go take your oil:' Nato fissure erupts over Iran as allies brush off US. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018Google, Apple, Microsoft, Tesla\u2019: Iran\u2019s IRGC threatens to target US firms in M. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
