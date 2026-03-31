@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 15:39 UTC",
+  "generatedAt": "2026-03-31 16:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Jerusalem's Christians urge church leaders to challenge harsh Israeli restrictio \u00b7 Cardinal Pierbattista\u00a0Pizzaballa, the Catholic Patriarch of Jerusalem, has been \u2026",
-    "Other: China and Pakistan call for 'immediate cessation of hostilities' \u00b7 China and Pakistan's foreign ministers have called for an immediate ceasefire to\u2026",
-    "Other: US-Israeli strikes on Iran's oil and gas could poison people and environment for \u00b7 On the night of 7 March, air strikes hit four oil depots and refineries in and a\u2026"
+    "Other: China and Pakistan issue five-point plan for 'immediate ceasefire' in war on Ira \u00b7 China and Pakistan have proposed a five-point plan to end the US-Israeli war on \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-03-31 15:39 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 12,
+    "lastUpdated": "2026-03-31 16:40 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,47 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Jerusalem's Christians urge church leaders to challenge harsh Israeli restrictio",
-      "summary": "Cardinal Pierbattista\u00a0Pizzaballa, the Catholic Patriarch of Jerusalem, has been the subject of a wave of global sympathy after Israeli forces stopped him on the way to pray at the Church of the Holy Sepulchre on Sunday. But on our visit to the ancient church in\u00a0the Christian Quarter of Jerusalem\u2019s O",
+      "time": "7 min ago",
+      "headline": "China and Pakistan issue five-point plan for 'immediate ceasefire' in war on Ira",
+      "summary": "China and Pakistan have proposed a five-point plan to end the US-Israeli war on Iran that calls for an immediate ceasefire and restoration of \u201cnormal passage\u201d for vessels through the Strait of Hormuz. The proposal was released on Tuesday after Pakistani Foreign Minister Ishaq Dar met his Chinese cou",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Cardinal Pierbattista\u00a0Pizzaballa, the Catholic Patriarch of Jerusalem, has been the subject of a wave of global sympathy after Israeli forces stopped him on the way to pray at the Church of the Holy Sepulchre on Sunday. But on our visit to the ancient church in\u00a0the Christian Quarter of Jerusalem\u2019s O",
-      "sourceUrl": "https://www.middleeasteye.net/news/christians-jerusalem-call-church-leaders-challenge-harsh-israeli-restrictions",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "China and Pakistan call for 'immediate cessation of hostilities'",
-      "summary": "China and Pakistan's foreign ministers have called for an immediate ceasefire to end hostilities amid the US-Israeli war on Iran, urging peace talks as soon as possible, Pakistan's foreign ministry and Chinese state news agency Xinhua is reporting. China's Foreign Minister Wang Yi and his Pakistani ",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "China and Pakistan's foreign ministers have called for an immediate ceasefire to end hostilities amid the US-Israeli war on Iran, urging peace talks as soon as possible, Pakistan's foreign ministry and Chinese state news agency Xinhua is reporting. China's Foreign Minister Wang Yi and his Pakistani ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-and-pakistan-call-immediate-cessation-hostilities",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "US-Israeli strikes on Iran's oil and gas could poison people and environment for",
-      "summary": "On the night of 7 March, air strikes hit four oil depots and refineries in and around Tehran. The resulting petrochemical fires burned for days, spewing columns of thick smoke which shrouded the skies of Iran 's capital and poisoned its air. Residents described the fires as \u201chellscapes\u201d and a \u201cblack",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "On the night of 7 March, air strikes hit four oil depots and refineries in and around Tehran. The resulting petrochemical fires burned for days, spewing columns of thick smoke which shrouded the skies of Iran 's capital and poisoned its air. Residents described the fires as \u201chellscapes\u201d and a \u201cblack",
-      "sourceUrl": "https://www.middleeasteye.net/news/us-israel-strikes-iran-oil-gas-poison-people-environment-decades",
+      "fullAnalysis": "China and Pakistan have proposed a five-point plan to end the US-Israeli war on Iran that calls for an immediate ceasefire and restoration of \u201cnormal passage\u201d for vessels through the Strait of Hormuz. The proposal was released on Tuesday after Pakistani Foreign Minister Ishaq Dar met his Chinese cou",
+      "sourceUrl": "https://www.middleeasteye.net/news/china-and-pakistan-issue-five-point-plan-immediate-ceasefire-war-iran",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -98,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 11:20 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 12:10 UTC",
       "l": "HIGH",
@@ -228,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 15:39 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 16:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Jerusalem's Christians urge church leaders to challenge harsh Israeli restrictio. China and Pakistan call for 'immediate cessation of hostilities'. US-Israeli strikes on Iran's oil and gas could poison people and environment for. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: China and Pakistan issue five-point plan for 'immediate ceasefire' in war on Ira. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
