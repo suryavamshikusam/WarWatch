@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 15:39 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Jerusalem's Christians urge church leaders to challenge harsh Israeli restrictio. China and Pakistan call for 'immediate cessation of hostilities'. US-Israeli strikes on Iran's oil and gas could poison people and environment for. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Jerusalem's Christians urge church leaders to challenge harsh Israeli restrictio",
+      "detail": "Cardinal Pierbattista\u00a0Pizzaballa, the Catholic Patriarch of Jerusalem, has been the subject of a wave of global sympathy after Israeli forces stopped him on the way to pray at the Church of the Holy Sepulchre on Sunday. But on our visit to the ancient church in\u00a0the Christian Quarter of Jerusalem\u2019s O",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/christians-jerusalem-call-church-leaders-challenge-harsh-israeli-restrictions",
+      "fullAnalysis": "Cardinal Pierbattista\u00a0Pizzaballa, the Catholic Patriarch of Jerusalem, has been the subject of a wave of global sympathy after Israeli forces stopped him on the way to pray at the Church of the Holy Sepulchre on Sunday. But on our visit to the ancient church in\u00a0the Christian Quarter of Jerusalem\u2019s O",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "China and Pakistan call for 'immediate cessation of hostilities'",
+      "detail": "China and Pakistan's foreign ministers have called for an immediate ceasefire to end hostilities amid the US-Israeli war on Iran, urging peace talks as soon as possible, Pakistan's foreign ministry and Chinese state news agency Xinhua is reporting. China's Foreign Minister Wang Yi and his Pakistani ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/china-and-pakistan-call-immediate-cessation-hostilities",
+      "fullAnalysis": "China and Pakistan's foreign ministers have called for an immediate ceasefire to end hostilities amid the US-Israeli war on Iran, urging peace talks as soon as possible, Pakistan's foreign ministry and Chinese state news agency Xinhua is reporting. China's Foreign Minister Wang Yi and his Pakistani ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US-Israeli strikes on Iran's oil and gas could poison people and environment for",
+      "detail": "On the night of 7 March, air strikes hit four oil depots and refineries in and around Tehran. The resulting petrochemical fires burned for days, spewing columns of thick smoke which shrouded the skies of Iran 's capital and poisoned its air. Residents described the fires as \u201chellscapes\u201d and a \u201cblack",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-israel-strikes-iran-oil-gas-poison-people-environment-decades",
+      "fullAnalysis": "On the night of 7 March, air strikes hit four oil depots and refineries in and around Tehran. The resulting petrochemical fires burned for days, spewing columns of thick smoke which shrouded the skies of Iran 's capital and poisoned its air. Residents described the fires as \u201chellscapes\u201d and a \u201cblack",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-31 15:39 UTC"
+}
