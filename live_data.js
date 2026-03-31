@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 11:45 UTC",
+  "generatedAt": "2026-03-31 12:43 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel\u2019s closure of the Holy Sepulchre is proof that no faith is safe from occup \u00b7 In Jerusalem, the Church of the Holy Sepulchre stands at the heart of Christian \u2026"
+    "Other: Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p \u00b7 As the Iran-Israel war stretches into its fifth week, cracks are widening betwee\u2026",
+    "Other: Iran war: Pete Hegseth says he visited US troops in Middle East \u00b7 US Defence Secretary Pete Hegseth said the coming days would be decisive in the \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-03-31 11:45 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 9,
+    "lastUpdated": "2026-03-31 12:43 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Israel\u2019s closure of the Holy Sepulchre is proof that no faith is safe from occup",
-      "summary": "In Jerusalem, the Church of the Holy Sepulchre stands at the heart of Christian worship. It is the site for commemorating the crucifixion and resurrection. To deny access to this site is not a simple administrative act. It is a violent interruption of ancestral religious ties, a colonial imposition ",
+      "time": "8 min ago",
+      "headline": "Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p",
+      "summary": "As the Iran-Israel war stretches into its fifth week, cracks are widening between Washington and Tel Aviv; and the world\u2019s most critical oil chokepoint is caught in the middle. The Strait of Hormuz has become the defining fault line of a war that has already reshaped global energy markets, tested th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "In Jerusalem, the Church of the Holy Sepulchre stands at the heart of Christian worship. It is the site for commemorating the crucifixion and resurrection. To deny access to this site is not a simple administrative act. It is a violent interruption of ancestral religious ties, a colonial imposition ",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/israel-closure-holy-sepulchre-manoeuvre-no-faith-safe-occupation",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "As the Iran-Israel war stretches into its fifth week, cracks are widening between Washington and Tel Aviv; and the world\u2019s most critical oil chokepoint is caught in the middle. The Strait of Hormuz has become the defining fault line of a war that has already reshaped global energy markets, tested th",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/strait-of-hormuz-crisis-us-israel-rift-iran-war-10611328/",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "8 min ago",
+      "headline": "Iran war: Pete Hegseth says he visited US troops in Middle East",
+      "summary": "US Defence Secretary Pete Hegseth said the coming days would be decisive in the war against Iran, revealing on Tuesday that he visited American troops in the Middle East over the weekend to witness ongoing military operations and assess the situation on the ground. Hegseth, speaking alongside Chairm",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US Defence Secretary Pete Hegseth said the coming days would be decisive in the war against Iran, revealing on Tuesday that he visited American troops in the Middle East over the weekend to witness ongoing military operations and assess the situation on the ground. Hegseth, speaking alongside Chairm",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-war-us-defence-secretary-pete-hegseth-says-he-visited-us-troops-in-middle-east-10611787/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 07:04 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 08:50 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 11:45 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 12:43 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel\u2019s closure of the Holy Sepulchre is proof that no faith is safe from occup. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p. Iran war: Pete Hegseth says he visited US troops in Middle East. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

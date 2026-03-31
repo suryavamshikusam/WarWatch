@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 12:43 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p. Iran war: Pete Hegseth says he visited US troops in Middle East. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Hormuz no longer core goal in Iran war? Trump signals early exit but Netanyahu p",
+      "detail": "As the Iran-Israel war stretches into its fifth week, cracks are widening between Washington and Tel Aviv; and the world\u2019s most critical oil chokepoint is caught in the middle. The Strait of Hormuz has become the defining fault line of a war that has already reshaped global energy markets, tested th",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/strait-of-hormuz-crisis-us-israel-rift-iran-war-10611328/",
+      "fullAnalysis": "As the Iran-Israel war stretches into its fifth week, cracks are widening between Washington and Tel Aviv; and the world\u2019s most critical oil chokepoint is caught in the middle. The Strait of Hormuz has become the defining fault line of a war that has already reshaped global energy markets, tested th",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran war: Pete Hegseth says he visited US troops in Middle East",
+      "detail": "US Defence Secretary Pete Hegseth said the coming days would be decisive in the war against Iran, revealing on Tuesday that he visited American troops in the Middle East over the weekend to witness ongoing military operations and assess the situation on the ground. Hegseth, speaking alongside Chairm",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/iran-war-us-defence-secretary-pete-hegseth-says-he-visited-us-troops-in-middle-east-10611787/",
+      "fullAnalysis": "US Defence Secretary Pete Hegseth said the coming days would be decisive in the war against Iran, revealing on Tuesday that he visited American troops in the Middle East over the weekend to witness ongoing military operations and assess the situation on the ground. Hegseth, speaking alongside Chairm",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-03-31 12:43 UTC"
+}
