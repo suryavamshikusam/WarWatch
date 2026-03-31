@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 08:44 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war wipes $120bn off Dubai, Abu Dhabi stock markets. Iran war: What is happening on day 32 of US-Israel attacks?. South Korean president promises maximum response to energy crisis. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran war wipes $120bn off Dubai, Abu Dhabi stock markets",
+      "detail": "The United Arab Emirates\u2019 stock markets in Dubai and Abu Dhabi have lost around $120bn in value since the start of the US-Israel war on Iran, placing them among the hardest-hit financial markets worldwide. Dubai and Abu Dhabi\u2019s benchmark\u00a0indexes have plunged\u00a0about\u00a016 percent\u00a0and 9 percent, respectiv",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/31/iran-war-wipes-120bn-off-dubai-abu-dhabi-stock-markets?traffic_source=rss",
+      "fullAnalysis": "The United Arab Emirates\u2019 stock markets in Dubai and Abu Dhabi have lost around $120bn in value since the start of the US-Israel war on Iran, placing them among the hardest-hit financial markets worldwide. Dubai and Abu Dhabi\u2019s benchmark\u00a0indexes have plunged\u00a0about\u00a016 percent\u00a0and 9 percent, respectiv",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Iran war: What is happening on day 32 of US-Israel attacks?",
+      "detail": "As the war on Iran enters day 32 , US and Israeli air strikes continue across Iran, with powerful explosions reported in Tehran and Isfahan. In an exclusive interview with Al Jazeera, United States Secretary of State Marco Rubio said communication between Tehran and Washington is ongoing, mostly thr",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/31/iran-war-what-is-happening-on-day-32-of-us-israel-attacks?traffic_source=rss",
+      "fullAnalysis": "As the war on Iran enters day 32 , US and Israeli air strikes continue across Iran, with powerful explosions reported in Tehran and Isfahan. In an exclusive interview with Al Jazeera, United States Secretary of State Marco Rubio said communication between Tehran and Washington is ongoing, mostly thr",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "South Korean president promises maximum response to energy crisis",
+      "detail": "South Korean president promises maximum response to energy crisis South Korean president Lee Jae Myung vowed to respond to the energy crisis caused by the US-Israeli war on Iran to the fullest extent possible, and to accelerate the transition way from fossil fuels.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/31/south-korean-president-promises-maximum-response-to-energy-crisis?traffic_source=rss",
+      "fullAnalysis": "South Korean president promises maximum response to energy crisis South Korean president Lee Jae Myung vowed to respond to the energy crisis caused by the US-Israeli war on Iran to the fullest extent possible, and to accelerate the transition way from fossil fuels.",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-31 08:44 UTC"
+}

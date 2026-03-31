@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 07:47 UTC",
+  "generatedAt": "2026-03-31 08:44 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Six wounded in Israel following Iranian missile fire \u00b7 Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballis\u2026",
-    "Other: How Israel is waging war on bearing witness in Lebanon \u00b7 After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV re\u2026",
-    "Other: US amphibious assault ship with 1,800 Marines deployed to Indian Ocean \u00b7 A US amphibious assault ship carrying about 1,800 Marines is operating in the In\u2026"
+    "Other: Iran war wipes $120bn off Dubai, Abu Dhabi stock markets \u00b7 The United Arab Emirates\u2019 stock markets in Dubai and Abu Dhabi have lost around \u2026",
+    "Other: Iran war: What is happening on day 32 of US-Israel attacks? \u00b7 As the war on Iran enters day 32 , US and Israeli air strikes continue across Ir\u2026",
+    "Other: South Korean president promises maximum response to energy crisis \u00b7 South Korean president promises maximum response to energy crisis South Korean p\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-03-31 07:47 UTC",
+    "updatesToday": 5,
+    "lastUpdated": "2026-03-31 08:44 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -51,15 +51,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Six wounded in Israel following Iranian missile fire",
-      "summary": "Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballistic missiles, Haaretz reported, citing the Magen David Adom emergency medical service. Several impact sites were reported in Tel Aviv and the cities of Bnei Brak and Petah Tikva in central Israel following the missile at",
+      "headline": "Iran war wipes $120bn off Dubai, Abu Dhabi stock markets",
+      "summary": "The United Arab Emirates\u2019 stock markets in Dubai and Abu Dhabi have lost around $120bn in value since the start of the US-Israel war on Iran, placing them among the hardest-hit financial markets worldwide. Dubai and Abu Dhabi\u2019s benchmark\u00a0indexes have plunged\u00a0about\u00a016 percent\u00a0and 9 percent, respectiv",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballistic missiles, Haaretz reported, citing the Magen David Adom emergency medical service. Several impact sites were reported in Tel Aviv and the cities of Bnei Brak and Petah Tikva in central Israel following the missile at",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/six-wounded-israel-following-iranian-missile-fire",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "The United Arab Emirates\u2019 stock markets in Dubai and Abu Dhabi have lost around $120bn in value since the start of the US-Israel war on Iran, placing them among the hardest-hit financial markets worldwide. Dubai and Abu Dhabi\u2019s benchmark\u00a0indexes have plunged\u00a0about\u00a016 percent\u00a0and 9 percent, respectiv",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/3/31/iran-war-wipes-120bn-off-dubai-abu-dhabi-stock-markets?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-crit",
@@ -67,15 +67,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "How Israel is waging war on bearing witness in Lebanon",
-      "summary": "After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV reporter Fatima Ftouni was traveling with colleagues on the Kfarhouna\u2013Jezzine road in southern Lebanon when an Israeli drone began its attack on Saturday. The first missile struck near the clearly marked press vehicle. Fat",
+      "headline": "Iran war: What is happening on day 32 of US-Israel attacks?",
+      "summary": "As the war on Iran enters day 32 , US and Israeli air strikes continue across Iran, with powerful explosions reported in Tehran and Isfahan. In an exclusive interview with Al Jazeera, United States Secretary of State Marco Rubio said communication between Tehran and Washington is ongoing, mostly thr",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV reporter Fatima Ftouni was traveling with colleagues on the Kfarhouna\u2013Jezzine road in southern Lebanon when an Israeli drone began its attack on Saturday. The first missile struck near the clearly marked press vehicle. Fat",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/how-israel-waging-war-bearing-witness-lebanon",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "As the war on Iran enters day 32 , US and Israeli air strikes continue across Iran, with powerful explosions reported in Tehran and Isfahan. In an exclusive interview with Al Jazeera, United States Secretary of State Marco Rubio said communication between Tehran and Washington is ongoing, mostly thr",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/3/31/iran-war-what-is-happening-on-day-32-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-crit",
@@ -83,15 +83,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "US amphibious assault ship with 1,800 Marines deployed to Indian Ocean",
-      "summary": "A US amphibious assault ship carrying about 1,800 Marines is operating in the Indian Ocean as speculation grows over a possible ground operation against Iran, US Central Command said. The USS Tripoli, part of an amphibious ready group, was shown in a recent image sailing in the region, though its ex",
+      "headline": "South Korean president promises maximum response to energy crisis",
+      "summary": "South Korean president promises maximum response to energy crisis South Korean president Lee Jae Myung vowed to respond to the energy crisis caused by the US-Israeli war on Iran to the fullest extent possible, and to accelerate the transition way from fossil fuels.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A US amphibious assault ship carrying about 1,800 Marines is operating in the Indian Ocean as speculation grows over a possible ground operation against Iran, US Central Command said. The USS Tripoli, part of an amphibious ready group, was shown in a recent image sailing in the region, though its ex",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-amphibious-assault-ship-1800-marines-deployed-indian-ocean",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "South Korean president promises maximum response to energy crisis South Korean president Lee Jae Myung vowed to respond to the energy crisis caused by the US-Israeli war on Iran to the fullest extent possible, and to accelerate the transition way from fossil fuels.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/3/31/south-korean-president-promises-maximum-response-to-energy-crisis?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -129,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 21:29 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 22:24 UTC",
       "l": "HIGH",
@@ -228,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 07:47 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 08:44 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Six wounded in Israel following Iranian missile fire. How Israel is waging war on bearing witness in Lebanon. US amphibious assault ship with 1,800 Marines deployed to Indian Ocean. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war wipes $120bn off Dubai, Abu Dhabi stock markets. Iran war: What is happening on day 32 of US-Israel attacks?. South Korean president promises maximum response to energy crisis. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
