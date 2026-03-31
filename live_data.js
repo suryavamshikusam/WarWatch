@@ -1,16 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 18:39 UTC",
+  "generatedAt": "2026-03-31 19:42 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian missiles don't pose a threat to the US, Pete Hegseth admits \u00b7 In his first briefing since 19 March, and more than one month into the US- Israe\u2026",
-    "Other: UNDP warns war could wipe up to $194bn from regional economy \u00b7 The United Nations Development Programme has warned of severe economic fallout f\u2026",
-    "Other: Last 24 hours saw \u2018lowest number\u2019 of Iranian missile and drone attacks, Hegseth  \u00b7 Iran launched fewer missiles and drones in the past day than in any previous 24-\u2026"
+    "Other: Why Iran believes it can outlast the US \u00b7 Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can thi\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-03-31 18:39 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 14,
+    "lastUpdated": "2026-03-31 19:42 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -50,58 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iranian missiles don't pose a threat to the US, Pete Hegseth admits",
-      "summary": "In his first briefing since 19 March, and more than one month into the US- Israeli war on Iran , US Secretary of War Pete Hegseth openly conceded that Iranian ballistic missiles do not pose a threat to the US mainland, undercutting talk of the \"imminent threat\" repeated by the White House. Because o",
+      "time": "7 min ago",
+      "headline": "Why Iran believes it can outlast the US",
+      "summary": "Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can this war end before it widens? Iran appears to believe it can survive this war. That calculation may be shaping its stance on a ceasefire, even as strikes continue and talk of US troops on the ground is growing. Why does Ir",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "In his first briefing since 19 March, and more than one month into the US- Israeli war on Iran , US Secretary of War Pete Hegseth openly conceded that Iranian ballistic missiles do not pose a threat to the US mainland, undercutting talk of the \"imminent threat\" repeated by the White House. Because o",
-      "sourceUrl": "https://www.middleeasteye.net/news/iranian-missiles-dont-pose-threat-to-us-pete-hegseth-admits",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "UNDP warns war could wipe up to $194bn from regional economy",
-      "summary": "The United Nations Development Programme has warned of severe economic fallout from the US-Israeli war on Iran. In a new report, it said a localised conflict risks becoming a \u201csystemic regional shock\u201d. Regional GDP could shrink by between 3.7 and 6 percent, amounting to losses of up to $194bn, drive",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "The United Nations Development Programme has warned of severe economic fallout from the US-Israeli war on Iran. In a new report, it said a localised conflict risks becoming a \u201csystemic regional shock\u201d. Regional GDP could shrink by between 3.7 and 6 percent, amounting to losses of up to $194bn, drive",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/undp-warns-war-could-wipe-194bn-regional-economy",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Last 24 hours saw \u2018lowest number\u2019 of Iranian missile and drone attacks, Hegseth ",
-      "summary": "Iran launched fewer missiles and drones in the past day than in any previous 24-hour period since the U. S. and Israel started their war,Defense Secretary Pete Hegseth said Tuesday during a press briefing at the Pentagon. But the secretary declined to quantify progress toward the administration\u2019s ob",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran launched fewer missiles and drones in the past day than in any previous 24-hour period since the U. S. and Israel started their war,Defense Secretary Pete Hegseth said Tuesday during a press briefing at the Pentagon. But the secretary declined to quantify progress toward the administration\u2019s ob",
-      "sourceUrl": "https://www.defenseone.com/policy/2026/03/last-24-hours-saw-lowest-number-iranian-missile-and-drone-attacks-hegseth-says/412521/",
-      "sourceLabel": "Defense One"
+      "fullAnalysis": "Iran is preparing for deeper US escalation while insisting it\u2019s winning. Can this war end before it widens? Iran appears to believe it can survive this war. That calculation may be shaping its stance on a ceasefire, even as strikes continue and talk of US troops on the ground is growing. Why does Ir",
+      "sourceUrl": "https://www.aljazeera.com/video/the-take-2/2026/3/31/aje-onl-tt_irn_whatcouldendthewar_av_v2-310326?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 14:04 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 15:41 UTC",
       "l": "HIGH",
@@ -228,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 18:39 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 19:42 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missiles don't pose a threat to the US, Pete Hegseth admits. UNDP warns war could wipe up to $194bn from regional economy. Last 24 hours saw \u2018lowest number\u2019 of Iranian missile and drone attacks, Hegseth . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Why Iran believes it can outlast the US. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
