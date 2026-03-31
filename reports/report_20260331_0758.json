@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-03-31 07:47 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Six wounded in Israel following Iranian missile fire. How Israel is waging war on bearing witness in Lebanon. US amphibious assault ship with 1,800 Marines deployed to Indian Ocean. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Six wounded in Israel following Iranian missile fire",
+      "detail": "Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballistic missiles, Haaretz reported, citing the Magen David Adom emergency medical service. Several impact sites were reported in Tel Aviv and the cities of Bnei Brak and Petah Tikva in central Israel following the missile at",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/six-wounded-israel-following-iranian-missile-fire",
+      "fullAnalysis": "Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballistic missiles, Haaretz reported, citing the Magen David Adom emergency medical service. Several impact sites were reported in Tel Aviv and the cities of Bnei Brak and Petah Tikva in central Israel following the missile at",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "How Israel is waging war on bearing witness in Lebanon",
+      "detail": "After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV reporter Fatima Ftouni was traveling with colleagues on the Kfarhouna\u2013Jezzine road in southern Lebanon when an Israeli drone began its attack on Saturday. The first missile struck near the clearly marked press vehicle. Fat",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/how-israel-waging-war-bearing-witness-lebanon",
+      "fullAnalysis": "After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV reporter Fatima Ftouni was traveling with colleagues on the Kfarhouna\u2013Jezzine road in southern Lebanon when an Israeli drone began its attack on Saturday. The first missile struck near the clearly marked press vehicle. Fat",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US amphibious assault ship with 1,800 Marines deployed to Indian Ocean",
+      "detail": "A US amphibious assault ship carrying about 1,800 Marines is operating in the Indian Ocean as speculation grows over a possible ground operation against Iran, US Central Command said. The USS Tripoli, part of an amphibious ready group, was shown in a recent image sailing in the region, though its ex",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-amphibious-assault-ship-1800-marines-deployed-indian-ocean",
+      "fullAnalysis": "A US amphibious assault ship carrying about 1,800 Marines is operating in the Indian Ocean as speculation grows over a possible ground operation against Iran, US Central Command said. The USS Tripoli, part of an amphibious ready group, was shown in a recent image sailing in the region, though its ex",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-03-31 07:47 UTC"
+}

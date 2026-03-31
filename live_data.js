@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 06:17 UTC",
+  "generatedAt": "2026-03-31 07:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Morning update \u00b7 Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said fiv\u2026",
-    "Other: Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat \u00b7 Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crosse\u2026",
-    "Other: Trump tells aides he is willing to end Iran war without reopening Hormuz: Report \u00b7 US President Donald Trump has told aides he is willing to end the military campa\u2026"
+    "Other: Six wounded in Israel following Iranian missile fire \u00b7 Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballis\u2026",
+    "Other: How Israel is waging war on bearing witness in Lebanon \u00b7 After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV re\u2026",
+    "Other: US amphibious assault ship with 1,800 Marines deployed to Indian Ocean \u00b7 A US amphibious assault ship carrying about 1,800 Marines is operating in the In\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-03-31 06:17 UTC",
+    "updatesToday": 4,
+    "lastUpdated": "2026-03-31 07:47 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -51,14 +51,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Morning update",
-      "summary": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Israeli military said on Tuesday four soldiers had been killed in combat in southern Lebanon where its forces are clashing with\u00a0Hezbollah. Thousands of I",
+      "headline": "Six wounded in Israel following Iranian missile fire",
+      "summary": "Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballistic missiles, Haaretz reported, citing the Magen David Adom emergency medical service. Several impact sites were reported in Tel Aviv and the cities of Bnei Brak and Petah Tikva in central Israel following the missile at",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Saudi Arabia said five drones were intercepted and destroyed in the past few hours: The Israeli military said on Tuesday four soldiers had been killed in combat in southern Lebanon where its forces are clashing with\u00a0Hezbollah. Thousands of I",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-504",
+      "fullAnalysis": "Six people were lightly wounded in Petah Tikva in Israel after Iran fired ballistic missiles, Haaretz reported, citing the Magen David Adom emergency medical service. Several impact sites were reported in Tel Aviv and the cities of Bnei Brak and Petah Tikva in central Israel following the missile at",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/six-wounded-israel-following-iranian-missile-fire",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,15 +67,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat",
-      "summary": "Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crossed the halfway mark but declined to give a timeline for when it may end, in remarks to US network Newsmax. \u201cIt\u2019s definitely beyond the halfway point. But I don\u2019t want to put a schedule on it,\u201d Netanyahu said. He said the ",
+      "headline": "How Israel is waging war on bearing witness in Lebanon",
+      "summary": "After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV reporter Fatima Ftouni was traveling with colleagues on the Kfarhouna\u2013Jezzine road in southern Lebanon when an Israeli drone began its attack on Saturday. The first missile struck near the clearly marked press vehicle. Fat",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel\u2019s Prime Minister Benjamin Netanyahu has said the war with Iran has crossed the halfway mark but declined to give a timeline for when it may end, in remarks to US network Newsmax. \u201cIt\u2019s definitely beyond the halfway point. But I don\u2019t want to put a schedule on it,\u201d Netanyahu said. He said the ",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/netanyahu-no-schedule-iran-war-trump-energy-facility-threats-10610465/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "After a day of documenting destroyed families and their homes,\u00a0Al Mayadeen TV reporter Fatima Ftouni was traveling with colleagues on the Kfarhouna\u2013Jezzine road in southern Lebanon when an Israeli drone began its attack on Saturday. The first missile struck near the clearly marked press vehicle. Fat",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/how-israel-waging-war-bearing-witness-lebanon",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
@@ -83,15 +83,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Trump tells aides he is willing to end Iran war without reopening Hormuz: Report",
-      "summary": "US President Donald Trump has told aides he is willing to end the military campaign against Iran even if the Strait of Hormuz remains largely closed, according to a Wall Street Journal report citing administration officials. The report said Trump is considering ending the war first and dealing with ",
+      "headline": "US amphibious assault ship with 1,800 Marines deployed to Indian Ocean",
+      "summary": "A US amphibious assault ship carrying about 1,800 Marines is operating in the Indian Ocean as speculation grows over a possible ground operation against Iran, US Central Command said. The USS Tripoli, part of an amphibious ready group, was shown in a recent image sailing in the region, though its ex",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump has told aides he is willing to end the military campaign against Iran even if the Strait of Hormuz remains largely closed, according to a Wall Street Journal report citing administration officials. The report said Trump is considering ending the war first and dealing with ",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-told-aides-he-is-willing-to-end-the-military-campaign-against-iran-10610552/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "A US amphibious assault ship carrying about 1,800 Marines is operating in the Indian Ocean as speculation grows over a possible ground operation against Iran, US Central Command said. The USS Tripoli, part of an amphibious ready group, was shown in a recent image sailing in the region, though its ex",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-amphibious-assault-ship-1800-marines-deployed-indian-ocean",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -129,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-29 20:58 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-29 21:29 UTC",
       "l": "HIGH",
@@ -228,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 06:17 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-03-31 07:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. Netanyahu says he won\u2019t \u2018put a schedule\u2019 on end to war as Trump makes new threat. Trump tells aides he is willing to end Iran war without reopening Hormuz: Report. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Six wounded in Israel following Iranian missile fire. How Israel is waging war on bearing witness in Lebanon. US amphibious assault ship with 1,800 Marines deployed to Indian Ocean. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
