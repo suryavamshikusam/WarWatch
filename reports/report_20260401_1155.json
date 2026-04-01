@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 11:47 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war: What is happening on day 33 of US-Israel attacks?. \u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran war: What is happening on day 33 of US-Israel attacks?",
+      "detail": "United States President Donald Trump has said Tehran does not have to make a deal for him to end the war, adding that the conflict could end in two to three weeks , but Iran\u2019s Foreign Minister Abbas Araghchi said he has no faith in talks with Washington. US-Israeli attacks continue across Iran, with",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-is-happening-on-day-33-of-us-israel-attacks?traffic_source=rss",
+      "fullAnalysis": "United States President Donald Trump has said Tehran does not have to make a deal for him to end the war, adding that the conflict could end in two to three weeks , but Iran\u2019s Foreign Minister Abbas Araghchi said he has no faith in talks with Washington. US-Israeli attacks continue across Iran, with",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "\u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as",
+      "detail": "British Prime Minister Keir Starmer said on Wednesday that the UK is coordinating with a coalition of nations to safeguard maritime security in the Gulf and push for the reopening of the Strait of Hormuz, a global energy route, amid the US-Israel war against Iran . Starmer, at a press briefing, anno",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/keir-starmer-trump-nato-us-israel-iran-war-uk-strait-of-hormuz-10613366/",
+      "fullAnalysis": "British Prime Minister Keir Starmer said on Wednesday that the UK is coordinating with a coalition of nations to safeguard maritime security in the Gulf and push for the reopening of the Strait of Hormuz, a global energy route, amid the US-Israel war against Iran . Starmer, at a press briefing, anno",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-01 11:47 UTC"
+}

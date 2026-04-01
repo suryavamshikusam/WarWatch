@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 10:51 UTC",
+  "generatedAt": "2026-04-01 11:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: France's President Macron reaffirms importance of freedom of navigation in Hormu \u00b7 French President Emmanuel Macron said on Wednesday that he shared Japanese Prime\u2026",
-    "Other: Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE \u00b7 \u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones\u2026"
+    "Other: Iran war: What is happening on day 33 of US-Israel attacks? \u00b7 United States President Donald Trump has said Tehran does not have to make a dea\u2026",
+    "Other: \u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as \u00b7 British Prime Minister Keir Starmer said on Wednesday that the UK is coordinatin\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-04-01 10:51 UTC",
+    "updatesToday": 8,
+    "lastUpdated": "2026-04-01 11:47 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "8 min ago",
-      "headline": "France's President Macron reaffirms importance of freedom of navigation in Hormu",
-      "summary": "French President Emmanuel Macron said on Wednesday that he shared Japanese Prime Minister Sanae Takaichi's position on the need to restore freedom of navigation in the Strait of Hormuz, speaking alongside her in Tokyo. The US\u2013Israeli war with Iran has rattled global markets and effectively shut the ",
+      "headline": "Iran war: What is happening on day 33 of US-Israel attacks?",
+      "summary": "United States President Donald Trump has said Tehran does not have to make a deal for him to end the war, adding that the conflict could end in two to three weeks , but Iran\u2019s Foreign Minister Abbas Araghchi said he has no faith in talks with Washington. US-Israeli attacks continue across Iran, with",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "French President Emmanuel Macron said on Wednesday that he shared Japanese Prime Minister Sanae Takaichi's position on the need to restore freedom of navigation in the Strait of Hormuz, speaking alongside her in Tokyo. The US\u2013Israeli war with Iran has rattled global markets and effectively shut the ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/french-president-macron-reaffirms-importance-freedom-navigation-hormuz",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "United States President Donald Trump has said Tehran does not have to make a deal for him to end the war, adding that the conflict could end in two to three weeks , but Iran\u2019s Foreign Minister Abbas Araghchi said he has no faith in talks with Washington. US-Israeli attacks continue across Iran, with",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-is-happening-on-day-33-of-us-israel-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-crit",
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "8 min ago",
-      "headline": "Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE",
-      "summary": "\u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones have hit fuel tanks at Kuwait\u2019s international airport, causing a large blaze, and authorities in Bahrain have reported a fire at an undisclosed company facility, as the United States-Israel war on Iran continues for a f",
+      "headline": "\u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as",
+      "summary": "British Prime Minister Keir Starmer said on Wednesday that the UK is coordinating with a coalition of nations to safeguard maritime security in the Gulf and push for the reopening of the Strait of Hormuz, a global energy route, amid the US-Israel war against Iran . Starmer, at a press briefing, anno",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "\u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones have hit fuel tanks at Kuwait\u2019s international airport, causing a large blaze, and authorities in Bahrain have reported a fire at an undisclosed company facility, as the United States-Israel war on Iran continues for a f",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-attacks-cause-fire-in-kuwait-bahrain-kill-man-in-uae?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "British Prime Minister Keir Starmer said on Wednesday that the UK is coordinating with a coalition of nations to safeguard maritime security in the Gulf and push for the reopening of the Strait of Hormuz, a global energy route, amid the US-Israel war against Iran . Starmer, at a press briefing, anno",
+      "sourceUrl": "https://indianexpress.com/article/world/keir-starmer-trump-nato-us-israel-iran-war-uk-strait-of-hormuz-10613366/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 08:44 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 09:47 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 10:51 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 11:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: France's President Macron reaffirms importance of freedom of navigation in Hormu. Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war: What is happening on day 33 of US-Israel attacks?. \u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
