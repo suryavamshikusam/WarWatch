@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 07:13 UTC",
+  "generatedAt": "2026-04-01 08:43 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Netanyahu says building 'new alliances with important countries' in West Asia am \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
-    "Other: Iranian missile attack injures six in central Israel \u00b7 Six people, including an 11-year-old girl, were wounded in an Iranian missile at\u2026"
+    "Other: Strange figures and unexplained killings: The clues Mossad infiltrated Iran\u2019s pr \u00b7 January feels an age away for Iranians . The dangers of the authorities\u2019 crackdo\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-04-01 07:13 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 5,
+    "lastUpdated": "2026-04-01 08:43 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,31 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Netanyahu says building 'new alliances with important countries' in West Asia am",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "7 min ago",
+      "headline": "Strange figures and unexplained killings: The clues Mossad infiltrated Iran\u2019s pr",
+      "summary": "January feels an age away for Iranians . The dangers of the authorities\u2019 crackdown on anti-government protests have been replaced with a month of incessant US and Israeli strikes and the threat of a looming ground invasion. Yet for many, the memory of odd, unexplained incidents during the wave of de",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/netanyahu-says-building-new-alliances-with-important-countries-in-west-asia-amid-iran-war/articleshow/129938640.cms",
-      "sourceLabel": "Times of India"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iranian missile attack injures six in central Israel",
-      "summary": "Six people, including an 11-year-old girl, were wounded in an Iranian missile attack on central Israel on Wednesday, according to emergency services. Magen David Adom said the girl was taken to the hospital with shrapnel injuries, while others injured included a 13-year-old boy, a 39-year-old woman,",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Six people, including an 11-year-old girl, were wounded in an Iranian missile attack on central Israel on Wednesday, according to emergency services. Magen David Adom said the girl was taken to the hospital with shrapnel injuries, while others injured included a 13-year-old boy, a 39-year-old woman,",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attack-injures-six-central-israel",
+      "fullAnalysis": "January feels an age away for Iranians . The dangers of the authorities\u2019 crackdown on anti-government protests have been replaced with a month of incessant US and Israeli strikes and the threat of a looming ground invasion. Yet for many, the memory of odd, unexplained incidents during the wave of de",
+      "sourceUrl": "https://www.middleeasteye.net/news/strange-figures-and-unexplained-killings-clues-mossad-infiltrated-irans-protests",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 04:59 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 06:17 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 07:13 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 08:43 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says building 'new alliances with important countries' in West Asia am. Iranian missile attack injures six in central Israel. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Strange figures and unexplained killings: The clues Mossad infiltrated Iran\u2019s pr. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
