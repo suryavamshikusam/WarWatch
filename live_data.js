@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-03-31 23:40 UTC",
+  "generatedAt": "2026-04-01 00:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: \u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a \u00b7 US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflic\u2026"
+    "Other: Iran shifts to strategic targets as Hezbollah barrages intensify, reports say \u00b7 Iranian missile strikes are shifting toward higher-value targets in Israel, even\u2026",
+    "Other: Iran rejects ceasefire, demands complete end to hostilities across region \u00b7 Iran\u2019s foreign minister said Tehran will not accept a ceasefire and instead is s\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-03-31 23:40 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 1,
+    "lastUpdated": "2026-04-01 00:06 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "\u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a",
-      "summary": "US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflict with Iran would be \u201cdecisive\u201d, as he revealed he made an unannounced visit to American troops in the Middle East over the weekend and witnessed missile interceptions and strike preparations firsthand. Speaking alongsid",
+      "time": "9 min ago",
+      "headline": "Iran shifts to strategic targets as Hezbollah barrages intensify, reports say",
+      "summary": "Iranian missile strikes are shifting toward higher-value targets in Israel, even as the number of launches declines, according to reports from the region. Al Jazeera reported that recent strikes hit key infrastructure, including an oil refinery in Haifa, a chemical facility in Beersheba and a major ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US Defence Secretary Pete Hegseth on Tuesday said the coming days in the conflict with Iran would be \u201cdecisive\u201d, as he revealed he made an unannounced visit to American troops in the Middle East over the weekend and witnessed missile interceptions and strike preparations firsthand. Speaking alongsid",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/pete-hegseth-unannounced-middle-east-visit-operation-epic-fury-iran-decisive-days-10611986/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Iranian missile strikes are shifting toward higher-value targets in Israel, even as the number of launches declines, according to reports from the region. Al Jazeera reported that recent strikes hit key infrastructure, including an oil refinery in Haifa, a chemical facility in Beersheba and a major ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-shifts-strategic-targets-hezbollah-barrages-intensify-reports-say",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Iran rejects ceasefire, demands complete end to hostilities across region",
+      "summary": "Iran\u2019s foreign minister said Tehran will not accept a ceasefire and instead is seeking a complete cessation of hostilities across the region, in comments to Al Jazeera. Abbas Araghchi said current contacts with Washington do not amount to negotiations but are limited to exchanges of messages, either",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran\u2019s foreign minister said Tehran will not accept a ceasefire and instead is seeking a complete cessation of hostilities across the region, in comments to Al Jazeera. Abbas Araghchi said current contacts with Washington do not amount to negotiations but are limited to exchanges of messages, either",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-rejects-ceasefire-demands-complete-end-hostilities-across-region",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-30 19:43 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-30 21:58 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-03-31 23:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 00:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018More bombs, sir\u2019: Pete Hegseth reveals what US troops told him in Middle East a. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran shifts to strategic targets as Hezbollah barrages intensify, reports say. Iran rejects ceasefire, demands complete end to hostilities across region. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
