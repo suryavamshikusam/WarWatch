@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 11:47 UTC",
+  "generatedAt": "2026-04-01 12:46 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran war: What is happening on day 33 of US-Israel attacks? \u00b7 United States President Donald Trump has said Tehran does not have to make a dea\u2026",
-    "Other: \u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as \u00b7 British Prime Minister Keir Starmer said on Wednesday that the UK is coordinatin\u2026"
+    "Other: How are NATO allies pushing back against Trump\u2019s Iran war demands? \u00b7 United States President Donald Trump\u2019s already fraught relationship with NATO al\u2026",
+    "Other: Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove \u00b7 Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-04-01 11:47 UTC",
+    "updatesToday": 9,
+    "lastUpdated": "2026-04-01 12:46 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "8 min ago",
-      "headline": "Iran war: What is happening on day 33 of US-Israel attacks?",
-      "summary": "United States President Donald Trump has said Tehran does not have to make a deal for him to end the war, adding that the conflict could end in two to three weeks , but Iran\u2019s Foreign Minister Abbas Araghchi said he has no faith in talks with Washington. US-Israeli attacks continue across Iran, with",
+      "headline": "How are NATO allies pushing back against Trump\u2019s Iran war demands?",
+      "summary": "United States President Donald Trump\u2019s already fraught relationship with NATO allies is fraying further as the US-Israel war on Iran is in its second month. A growing number of partners are resisting Washington\u2019s requests for support in the conflict, deepening a transatlantic rift. From the deployme",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "United States President Donald Trump has said Tehran does not have to make a deal for him to end the war, adding that the conflict could end in two to three weeks , but Iran\u2019s Foreign Minister Abbas Araghchi said he has no faith in talks with Washington. US-Israeli attacks continue across Iran, with",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-is-happening-on-day-33-of-us-israel-attacks?traffic_source=rss",
+      "fullAnalysis": "United States President Donald Trump\u2019s already fraught relationship with NATO allies is fraying further as the US-Israel war on Iran is in its second month. A growing number of partners are resisting Washington\u2019s requests for support in the conflict, deepening a transatlantic rift. From the deployme",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/how-are-nato-allies-pushing-back-against-trumps-iran-war-demands?traffic_source=rss",
       "sourceLabel": "Al Jazeera"
     },
     {
@@ -66,14 +66,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "8 min ago",
-      "headline": "\u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as",
-      "summary": "British Prime Minister Keir Starmer said on Wednesday that the UK is coordinating with a coalition of nations to safeguard maritime security in the Gulf and push for the reopening of the Strait of Hormuz, a global energy route, amid the US-Israel war against Iran . Starmer, at a press briefing, anno",
+      "headline": "Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove",
+      "summary": "Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019s military establishment has led to what insiders describe as a \u201ccomplete political stalemate\u201d. And now, the Islamic Revolutionary Guard Corps (IRGC) has taken de facto control over key areas of governance, according to ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "British Prime Minister Keir Starmer said on Wednesday that the UK is coordinating with a coalition of nations to safeguard maritime security in the Gulf and push for the reopening of the Strait of Hormuz, a global energy route, amid the US-Israel war against Iran . Starmer, at a press briefing, anno",
-      "sourceUrl": "https://indianexpress.com/article/world/keir-starmer-trump-nato-us-israel-iran-war-uk-strait-of-hormuz-10613366/",
+      "fullAnalysis": "Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019s military establishment has led to what insiders describe as a \u201ccomplete political stalemate\u201d. And now, the Islamic Revolutionary Guard Corps (IRGC) has taken de facto control over key areas of governance, according to ",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-political-stalemate-irgc-pezeshkian-control-10613347/",
       "sourceLabel": "Indian Express"
     },
     {
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 09:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 10:49 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 11:47 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 12:46 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war: What is happening on day 33 of US-Israel attacks?. \u2018Not our war\u2019: Starmer defies Trump\u2019s \u2018paper tiger\u2019 NATO jab, turns to Europe as. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: How are NATO allies pushing back against Trump\u2019s Iran war demands?. Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

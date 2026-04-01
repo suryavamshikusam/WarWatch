@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 12:46 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: How are NATO allies pushing back against Trump\u2019s Iran war demands?. Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "How are NATO allies pushing back against Trump\u2019s Iran war demands?",
+      "detail": "United States President Donald Trump\u2019s already fraught relationship with NATO allies is fraying further as the US-Israel war on Iran is in its second month. A growing number of partners are resisting Washington\u2019s requests for support in the conflict, deepening a transatlantic rift. From the deployme",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/how-are-nato-allies-pushing-back-against-trumps-iran-war-demands?traffic_source=rss",
+      "fullAnalysis": "United States President Donald Trump\u2019s already fraught relationship with NATO allies is fraying further as the US-Israel war on Iran is in its second month. A growing number of partners are resisting Washington\u2019s requests for support in the conflict, deepening a transatlantic rift. From the deployme",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove",
+      "detail": "Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019s military establishment has led to what insiders describe as a \u201ccomplete political stalemate\u201d. And now, the Islamic Revolutionary Guard Corps (IRGC) has taken de facto control over key areas of governance, according to ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-political-stalemate-irgc-pezeshkian-control-10613347/",
+      "fullAnalysis": "Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019s military establishment has led to what insiders describe as a \u201ccomplete political stalemate\u201d. And now, the Islamic Revolutionary Guard Corps (IRGC) has taken de facto control over key areas of governance, according to ",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-01 12:46 UTC"
+}
