@@ -1,0 +1,126 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 03:46 UTC",
+  "executive_summary": "Latest updates from 7 sources covering the US-Israel-Iran conflict. Monitoring 7 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Rubio says US may review Nato ties after Iran war. Hezbollah fires missiles as Israel strikes Beirut with air strikes. Resistance will continue against US, Israel: Iran\u2019s supreme leader Mojtaba Khame. Middle East Crisis Live Updates: Saudi Arabia intercepts, destroys Iranian drone. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Rubio says US may review Nato ties after Iran war",
+      "detail": "Secretary of State Marco Rubio said the United States may need to reassess its relationship with Nato after the war with Iran, citing frustration over allies\u2019 lack of support. \u201cThe president and our country will have to re-examine all of this after this operation is over,\u201d Rubio said, questioning wh",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/rubio-says-us-may-review-nato-ties-after-iran-war",
+      "fullAnalysis": "Secretary of State Marco Rubio said the United States may need to reassess its relationship with Nato after the war with Iran, citing frustration over allies\u2019 lack of support. \u201cThe president and our country will have to re-examine all of this after this operation is over,\u201d Rubio said, questioning wh",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Hezbollah fires missiles as Israel strikes Beirut with air strikes",
+      "detail": "Hezbollah said it launched missiles at targets in northern Israel, including the Mahanim camp east of Safed and a military industries site near Haifa. The development came amid continued cross-border exchanges between the group and Israeli forces. The Israeli military said it carried out two airstri",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/hezbollah-fires-missiles-israel-strikes-beirut-air-strikes",
+      "fullAnalysis": "Hezbollah said it launched missiles at targets in northern Israel, including the Mahanim camp east of Safed and a military industries site near Haifa. The development came amid continued cross-border exchanges between the group and Israeli forces. The Israeli military said it carried out two airstri",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Resistance will continue against US, Israel: Iran\u2019s supreme leader Mojtaba Khame",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/resistance-will-continue-against-us-israel-irans-supreme-leader-mojtaba-khamenei-to-hezbollah-chief/articleshow/129940182.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Middle East Crisis Live Updates: Saudi Arabia intercepts, destroys Iranian drone",
+      "detail": "Middle East Crisis Live Updates: Saudi Arabia\u2019s Ministry of Defence intercepted and destroyed two drones during the past hour, said spokesperson Turki Al-Malki. \u201cThe official spokesperson for Ministry_of_Defense: Interception and destruction of two drones during the past hours,\u201d said the post on min",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/middle-east-crisis-live-updatesdubai-uae-iran-war-israel-us-strikes-drones-drones-10612687/",
+      "fullAnalysis": "Middle East Crisis Live Updates: Saudi Arabia\u2019s Ministry of Defence intercepted and destroyed two drones during the past hour, said spokesperson Turki Al-Malki. \u201cThe official spokesperson for Ministry_of_Defense: Interception and destruction of two drones during the past hours,\u201d said the post on min",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Systematically crushing Iran, forging alliances with important countries in West",
+      "detail": "Updated - April 01, 2026 07:15 am IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu speaks during a Plenum session of the Knesset, Israel's Parliament.\n                                          | Photo Credit: Reuters Lauding \"enormous accomplishments\" in the war against Iran , Israel Prime ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/systematically-crushing-iran-forging-alliances-with-important-countries-in-west-asia-netanyahu/article70809745.ece",
+      "fullAnalysis": "Updated - April 01, 2026 07:15 am IST - Jerusalem Israeli Prime Minister Benjamin Netanyahu speaks during a Plenum session of the Knesset, Israel's Parliament.\n                                          | Photo Credit: Reuters Lauding \"enormous accomplishments\" in the war against Iran , Israel Prime ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Channel 13: Israel turns to alternative air defences amid attacks",
+      "detail": "Israel has begun using air defence systems not originally designed to intercept Iranian missiles as it faces mounting challenges in countering incoming attacks, Channel 13 reported. The report said the military has expanded its use of available systems amid the increasing scale and complexity of mis",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/channel-13-israel-turns-alternative-air-defences-amid-attacks",
+      "fullAnalysis": "Israel has begun using air defence systems not originally designed to intercept Iranian missiles as it faces mounting challenges in countering incoming attacks, Channel 13 reported. The report said the military has expanded its use of available systems amid the increasing scale and complexity of mis",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war live: Trump says conflict to end in 2-3 weeks; Kuwait airport hit",
+      "detail": "Iran war live: Trump says conflict to end in 2-3 weeks; Kuwait airport hit",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/1/iran-live-trump-says-no-deal-needed-to-end-war-isfahan-steel-plants-hit?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Trump says conflict to end in 2-3 weeks; Kuwait airport hit",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 7,
+  "generated_at": "2026-04-01 03:46 UTC"
+}
