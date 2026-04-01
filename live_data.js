@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 16:47 UTC",
+  "generatedAt": "2026-04-01 17:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: IRGC says Hormuz under its control amid Trump ceasefire remarks \u00b7 Iran\u2019s Islamic Revolutionary Guard Corps said the Strait of Hormuz is \u201cfirmly an\u2026"
+    "Other: Trump says ceasefire tied to Hormuz reopening, vows continued strikes \u00b7 US President Donald Trump said he would consider a ceasefire with Iran only if t\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-04-01 16:47 UTC",
+    "updatesToday": 13,
+    "lastUpdated": "2026-04-01 17:45 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "IRGC says Hormuz under its control amid Trump ceasefire remarks",
-      "summary": "Iran\u2019s Islamic Revolutionary Guard Corps said the Strait of Hormuz is \u201cfirmly and dominantly\u201d under its control and will not be opened to what it described as US pressure. In a statement, the IRGC said the waterway \u201cwill not be opened to the enemies of this nation by the ridiculous displays of the U",
+      "headline": "Trump says ceasefire tied to Hormuz reopening, vows continued strikes",
+      "summary": "US President Donald Trump said he would consider a ceasefire with Iran only if the Strait of Hormuz is \u201copen, free, and clear\u201d. In a social media post, Trump said: \u201cUntil then, we are blasting Iran into oblivion.\u201d",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps said the Strait of Hormuz is \u201cfirmly and dominantly\u201d under its control and will not be opened to what it described as US pressure. In a statement, the IRGC said the waterway \u201cwill not be opened to the enemies of this nation by the ridiculous displays of the U",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-hormuz-firmly-under-its-control-amid-trump-ceasefire-remarks",
+      "fullAnalysis": "US President Donald Trump said he would consider a ceasefire with Iran only if the Strait of Hormuz is \u201copen, free, and clear\u201d. In a social media post, Trump said: \u201cUntil then, we are blasting Iran into oblivion.\u201d",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-ceasefire-tied-hormuz-reopening-vows-continued-strikes",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 14:16 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 15:39 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 16:47 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 17:45 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC says Hormuz under its control amid Trump ceasefire remarks. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump says ceasefire tied to Hormuz reopening, vows continued strikes. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
