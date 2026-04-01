@@ -1,17 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 15:53 UTC",
+  "generatedAt": "2026-04-01 16:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Largest Iranian missile salvo since beginning of war fired at central Israel \u00b7 Iran has fired some 10 ballistic missiles at central Israel - the largest salvo \u2026",
-    "Other: Iran denies Trump\u2019s claim Iranian president requested ceasefire \u00b7 A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2026",
-    "Other: Israeli army detects another Iran missile attack \u00b7 Israel's military said it has detected another ballistic missile attack launch f\u2026",
-    "Other: Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms \u00b7 The United States is continuing to build its military presence in the Gulf as it\u2026"
+    "Other: IRGC says Hormuz under its control amid Trump ceasefire remarks \u00b7 Iran\u2019s Islamic Revolutionary Guard Corps said the Strait of Hormuz is \u201cfirmly an\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-04-01 15:53 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 12,
+    "lastUpdated": "2026-04-01 16:47 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -51,74 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Largest Iranian missile salvo since beginning of war fired at central Israel",
-      "summary": "Iran has fired some 10 ballistic missiles at central Israel - the largest salvo launched since the early days of the war, according to the Israeli military. The army reported that most of the missiles were intercepted by air defences, although some were allowed to hit open areas, \"according to proto",
+      "time": "7 min ago",
+      "headline": "IRGC says Hormuz under its control amid Trump ceasefire remarks",
+      "summary": "Iran\u2019s Islamic Revolutionary Guard Corps said the Strait of Hormuz is \u201cfirmly and dominantly\u201d under its control and will not be opened to what it described as US pressure. In a statement, the IRGC said the waterway \u201cwill not be opened to the enemies of this nation by the ridiculous displays of the U",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran has fired some 10 ballistic missiles at central Israel - the largest salvo launched since the early days of the war, according to the Israeli military. The army reported that most of the missiles were intercepted by air defences, although some were allowed to hit open areas, \"according to proto",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/largest-iranian-missile-salvo-beginning-war-fired-central-israel",
+      "fullAnalysis": "Iran\u2019s Islamic Revolutionary Guard Corps said the Strait of Hormuz is \u201cfirmly and dominantly\u201d under its control and will not be opened to what it described as US pressure. In a statement, the IRGC said the waterway \u201cwill not be opened to the enemies of this nation by the ridiculous displays of the U",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-hormuz-firmly-under-its-control-amid-trump-ceasefire-remarks",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran denies Trump\u2019s claim Iranian president requested ceasefire",
-      "summary": "A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2019s \u201cnew regime president\u201d has asked for a ceasefire, as the United States and Israel continue their war on the country . Reporting from the Iranian capital on Wednesday, Al Jazeera\u2019s Ali Hashem said a senior Iranian offi",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2019s \u201cnew regime president\u201d has asked for a ceasefire, as the United States and Israel continue their war on the country . Reporting from the Iranian capital on Wednesday, Al Jazeera\u2019s Ali Hashem said a senior Iranian offi",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-denies-trumps-claim-iranian-president-requested-ceasefire?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Israeli army detects another Iran missile attack",
-      "summary": "Israel's military said it has detected another ballistic missile attack launch from Iran heading towards central Israel. This shortly follows the launch of around 10 missiles at the same area - most of them downed by air defences.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Israel's military said it has detected another ballistic missile attack launch from Iran heading towards central Israel. This shortly follows the launch of around 10 missiles at the same area - most of them downed by air defences.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-detects-another-iran-missile-attack",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms",
-      "summary": "The United States is continuing to build its military presence in the Gulf as its war with Iran enters its second month. The February 28 launch of \u201cOperation Epic Fury\u201d, the joint US-Israeli air campaign targeting Iranian military and nuclear infrastructure, has continued for more than four weeks wi",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "The United States is continuing to build its military presence in the Gulf as its war with Iran enters its second month. The February 28 launch of \u201cOperation Epic Fury\u201d, the joint US-Israeli air campaign targeting Iranian military and nuclear infrastructure, has continued for more than four weeks wi",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-a-marine-expeditionary-unit-is-and-other-us-military-terms?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 12:43 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 14:16 UTC",
       "l": "HIGH",
@@ -245,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 15:53 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 16:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Largest Iranian missile salvo since beginning of war fired at central Israel. Iran denies Trump\u2019s claim Iranian president requested ceasefire. Israeli army detects another Iran missile attack. Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC says Hormuz under its control amid Trump ceasefire remarks. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
