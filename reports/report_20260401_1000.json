@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 09:52 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Syrian President Sharaa says no involvement in Iran war unless 'targeted'. Australia\u2019s Albanese says war's economic shock will be felt for months; urges us. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Syrian President Sharaa says no involvement in Iran war unless 'targeted'",
+      "detail": "Syria 's President Ahmed al-Sharaa said Damascus will stay out of the Israeli - US war on Iran unless his country comes under attack, during a visit to London on Tuesday. Speaking at the Chatham House think tank in central London, Sharaa repeatedly stressed his desire to keep Syria out of a new conf",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/syrian-president-ahmed-sharaa-no-involvement-iran-war-unless-targeted",
+      "fullAnalysis": "Syria 's President Ahmed al-Sharaa said Damascus will stay out of the Israeli - US war on Iran unless his country comes under attack, during a visit to London on Tuesday. Speaking at the Chatham House think tank in central London, Sharaa repeatedly stressed his desire to keep Syria out of a new conf",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Australia\u2019s Albanese says war's economic shock will be felt for months; urges us",
+      "detail": "Updated - April 01, 2026 03:14 pm IST - SYDNEY Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026. Photo: AAP/ Mick Tsikas/via Reuters Australian Prime Minister Anthony Albanese warned the",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/australias-albanese-says-wars-economic-shock-will-be-felt-for-months-urges-using-public-transport/article70810777.ece",
+      "fullAnalysis": "Updated - April 01, 2026 03:14 pm IST - SYDNEY Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026. Photo: AAP/ Mick Tsikas/via Reuters Australian Prime Minister Anthony Albanese warned the",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-01 09:52 UTC"
+}
