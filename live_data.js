@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 19:45 UTC",
+  "generatedAt": "2026-04-01 21:09 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump mulls Nato withdrawal, stopping weapons to Ukraine over Europe's response  \u00b7 US President Donald Trump plans to lambast Nato in his address at the White Hous\u2026"
+    "Other: Iranian leader says Israel will fight 'to last US tax dollar', as US mulls invas \u00b7 Israel plans to fight Iran \u201cto the last American soldier and the last American t\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-04-01 19:45 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-04-01 21:09 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Trump mulls Nato withdrawal, stopping weapons to Ukraine over Europe's response ",
-      "summary": "US President Donald Trump plans to lambast Nato in his address at the White House on Wednesday night local time, in the latest sign that the US-Israeli war on Iran is causing fissures in the West's premier alliance. Trump will announce during his primetime address that he is considering withdrawing ",
+      "headline": "Iranian leader says Israel will fight 'to last US tax dollar', as US mulls invas",
+      "summary": "Israel plans to fight Iran \u201cto the last American soldier and the last American taxpayer dollar\u201d, Iranian President Masoud Pezeshkian wrote in an open letter released on Wednesday, hours before US President Donald Trump is set to deliver a primetime address on the war. Pezeshkian's letter addressed t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump plans to lambast Nato in his address at the White House on Wednesday night local time, in the latest sign that the US-Israeli war on Iran is causing fissures in the West's premier alliance. Trump will announce during his primetime address that he is considering withdrawing ",
-      "sourceUrl": "https://www.middleeasteye.net/news/trump-mulls-nato-withdrawal-stopping-weapons-ukraine-support-iran-war",
+      "fullAnalysis": "Israel plans to fight Iran \u201cto the last American soldier and the last American taxpayer dollar\u201d, Iranian President Masoud Pezeshkian wrote in an open letter released on Wednesday, hours before US President Donald Trump is set to deliver a primetime address on the war. Pezeshkian's letter addressed t",
+      "sourceUrl": "https://www.middleeasteye.net/news/iranian-leader-says-israel-will-fight-last-us-tax-dollar-us-mulls-invasion",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 16:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 18:39 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 19:45 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 21:09 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump mulls Nato withdrawal, stopping weapons to Ukraine over Europe's response . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian leader says Israel will fight 'to last US tax dollar', as US mulls invas. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
