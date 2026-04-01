@@ -1,16 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 14:20 UTC",
+  "generatedAt": "2026-04-01 15:53 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Starmer insists 'this is not our war' as Iran weighs up attacking UK bases \u00b7 Another week of the war on Iran , another address from the British prime ministe\u2026",
-    "Other: Palestinians in West Bank strike after Israel passes death penalty law \u00b7 Palestinians across the occupied West Bank observed a general strike on Wednesda\u2026",
-    "Other: Trump claims Iran's 'new regime president' asked for a ceasefire \u00b7 US President Donald Trump has claimed in a social media post that \"Iran's new re\u2026",
-    "Other: Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a \u00b7 Vali Nasr, professor at Johns Hopkins University School of Advanced Internationa\u2026"
+    "Other: Largest Iranian missile salvo since beginning of war fired at central Israel \u00b7 Iran has fired some 10 ballistic missiles at central Israel - the largest salvo \u2026",
+    "Other: Iran denies Trump\u2019s claim Iranian president requested ceasefire \u00b7 A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2026",
+    "Other: Israeli army detects another Iran missile attack \u00b7 Israel's military said it has detected another ballistic missile attack launch f\u2026",
+    "Other: Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms \u00b7 The United States is continuing to build its military presence in the Gulf as it\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-04-01 14:20 UTC",
+    "updatesToday": 11,
+    "lastUpdated": "2026-04-01 15:53 UTC",
     "sourcesUsed": 4
   },
   "tensionMeters": [
@@ -52,14 +52,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Starmer insists 'this is not our war' as Iran weighs up attacking UK bases",
-      "summary": "Another week of the war on Iran , another address from the British prime minister, as Keir Starmer told the nation once more that the UK has not been dragged into the US-Israeli operation. Starmer, wearing a sober blue tie and flanked by two Union Jacks, appeared tired and solemn as he spoke from a ",
+      "headline": "Largest Iranian missile salvo since beginning of war fired at central Israel",
+      "summary": "Iran has fired some 10 ballistic missiles at central Israel - the largest salvo launched since the early days of the war, according to the Israeli military. The army reported that most of the missiles were intercepted by air defences, although some were allowed to hit open areas, \"according to proto",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Another week of the war on Iran , another address from the British prime minister, as Keir Starmer told the nation once more that the UK has not been dragged into the US-Israeli operation. Starmer, wearing a sober blue tie and flanked by two Union Jacks, appeared tired and solemn as he spoke from a ",
-      "sourceUrl": "https://www.middleeasteye.net/news/uk-keir-starmer-not-our-war-iran-british-bases",
+      "fullAnalysis": "Iran has fired some 10 ballistic missiles at central Israel - the largest salvo launched since the early days of the war, according to the Israeli military. The army reported that most of the missiles were intercepted by air defences, although some were allowed to hit open areas, \"according to proto",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/largest-iranian-missile-salvo-beginning-war-fired-central-israel",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -68,14 +68,30 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Palestinians in West Bank strike after Israel passes death penalty law",
-      "summary": "Palestinians across the occupied West Bank observed a general strike on Wednesday in protest against a new Israeli law allowing the execution of prisoners, as international condemnation mounted. Fatah, the movement led by Palestinian Authority President Mahmoud Abbas, called for the strike, describi",
+      "headline": "Iran denies Trump\u2019s claim Iranian president requested ceasefire",
+      "summary": "A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2019s \u201cnew regime president\u201d has asked for a ceasefire, as the United States and Israel continue their war on the country . Reporting from the Iranian capital on Wednesday, Al Jazeera\u2019s Ali Hashem said a senior Iranian offi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Palestinians across the occupied West Bank observed a general strike on Wednesday in protest against a new Israeli law allowing the execution of prisoners, as international condemnation mounted. Fatah, the movement led by Palestinian Authority President Mahmoud Abbas, called for the strike, describi",
-      "sourceUrl": "https://www.middleeasteye.net/news/general-strike-leaves-west-bank-streets-empty-over-death-penalty-bill",
+      "fullAnalysis": "A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2019s \u201cnew regime president\u201d has asked for a ceasefire, as the United States and Israel continue their war on the country . Reporting from the Iranian capital on Wednesday, Al Jazeera\u2019s Ali Hashem said a senior Iranian offi",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-denies-trumps-claim-iranian-president-requested-ceasefire?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Israeli army detects another Iran missile attack",
+      "summary": "Israel's military said it has detected another ballistic missile attack launch from Iran heading towards central Israel. This shortly follows the launch of around 10 missiles at the same area - most of them downed by air defences.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israel's military said it has detected another ballistic missile attack launch from Iran heading towards central Israel. This shortly follows the launch of around 10 missiles at the same area - most of them downed by air defences.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-detects-another-iran-missile-attack",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -84,31 +100,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "13 min ago",
-      "headline": "Trump claims Iran's 'new regime president' asked for a ceasefire",
-      "summary": "US President Donald Trump has claimed in a social media post that \"Iran's new regime president\" asked for a ceasefire. Ahead of a television address tonight, Trump said that\u00a0the US \"will consider when Hormuz Strait is open, free, and clear. Until then, we are blasting Iran into oblivion or, as they ",
+      "headline": "Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms",
+      "summary": "The United States is continuing to build its military presence in the Gulf as its war with Iran enters its second month. The February 28 launch of \u201cOperation Epic Fury\u201d, the joint US-Israeli air campaign targeting Iranian military and nuclear infrastructure, has continued for more than four weeks wi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump has claimed in a social media post that \"Iran's new regime president\" asked for a ceasefire. Ahead of a television address tonight, Trump said that\u00a0the US \"will consider when Hormuz Strait is open, free, and clear. Until then, we are blasting Iran into oblivion or, as they ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-claims-irans-new-regime-president-asked-ceasefire",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a",
-      "summary": "Vali Nasr, professor at Johns Hopkins University School of Advanced International Studies, and a former U.S. State Department Adviser, speaks during an interview with The Hindu. Picture: Videograb U.S. President Donald Trump has no solution for the chokehold that Iran is putting on global markets an",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Vali Nasr, professor at Johns Hopkins University School of Advanced International Studies, and a former U.S. State Department Adviser, speaks during an interview with The Hindu. Picture: Videograb U.S. President Donald Trump has no solution for the chokehold that Iran is putting on global markets an",
-      "sourceUrl": "https://www.thehindu.com/news/international/trump-is-at-a-strategic-dead-end-on-iran-the-war-will-reshape-gulfs-security-architecture-vali-nasr/article70811259.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "The United States is continuing to build its military presence in the Gulf as its war with Iran enters its second month. The February 28 launch of \u201cOperation Epic Fury\u201d, the joint US-Israeli air campaign targeting Iranian military and nuclear infrastructure, has continued for more than four weeks wi",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-a-marine-expeditionary-unit-is-and-other-us-military-terms?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -146,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 11:45 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 12:43 UTC",
       "l": "HIGH",
@@ -245,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 14:20 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 15:53 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Starmer insists 'this is not our war' as Iran weighs up attacking UK bases. Palestinians in West Bank strike after Israel passes death penalty law. Trump claims Iran's 'new regime president' asked for a ceasefire. Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Largest Iranian missile salvo since beginning of war fired at central Israel. Iran denies Trump\u2019s claim Iranian president requested ceasefire. Israeli army detects another Iran missile attack. Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

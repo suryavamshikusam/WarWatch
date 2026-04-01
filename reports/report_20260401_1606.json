@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 15:53 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Largest Iranian missile salvo since beginning of war fired at central Israel. Iran denies Trump\u2019s claim Iranian president requested ceasefire. Israeli army detects another Iran missile attack. Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Largest Iranian missile salvo since beginning of war fired at central Israel",
+      "detail": "Iran has fired some 10 ballistic missiles at central Israel - the largest salvo launched since the early days of the war, according to the Israeli military. The army reported that most of the missiles were intercepted by air defences, although some were allowed to hit open areas, \"according to proto",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/largest-iranian-missile-salvo-beginning-war-fired-central-israel",
+      "fullAnalysis": "Iran has fired some 10 ballistic missiles at central Israel - the largest salvo launched since the early days of the war, according to the Israeli military. The army reported that most of the missiles were intercepted by air defences, although some were allowed to hit open areas, \"according to proto",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran denies Trump\u2019s claim Iranian president requested ceasefire",
+      "detail": "A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2019s \u201cnew regime president\u201d has asked for a ceasefire, as the United States and Israel continue their war on the country . Reporting from the Iranian capital on Wednesday, Al Jazeera\u2019s Ali Hashem said a senior Iranian offi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-denies-trumps-claim-iranian-president-requested-ceasefire?traffic_source=rss",
+      "fullAnalysis": "A senior Iranian official has denied US President Donald Trump\u2019s claim that Iran\u2019s \u201cnew regime president\u201d has asked for a ceasefire, as the United States and Israel continue their war on the country . Reporting from the Iranian capital on Wednesday, Al Jazeera\u2019s Ali Hashem said a senior Iranian offi",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Israeli army detects another Iran missile attack",
+      "detail": "Israel's military said it has detected another ballistic missile attack launch from Iran heading towards central Israel. This shortly follows the launch of around 10 missiles at the same area - most of them downed by air defences.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-army-detects-another-iran-missile-attack",
+      "fullAnalysis": "Israel's military said it has detected another ballistic missile attack launch from Iran heading towards central Israel. This shortly follows the launch of around 10 missiles at the same area - most of them downed by air defences.",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran War: What a Marine Expeditionary Unit is \u2013 and other US military terms",
+      "detail": "The United States is continuing to build its military presence in the Gulf as its war with Iran enters its second month. The February 28 launch of \u201cOperation Epic Fury\u201d, the joint US-Israeli air campaign targeting Iranian military and nuclear infrastructure, has continued for more than four weeks wi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-war-what-a-marine-expeditionary-unit-is-and-other-us-military-terms?traffic_source=rss",
+      "fullAnalysis": "The United States is continuing to build its military presence in the Gulf as its war with Iran enters its second month. The February 28 launch of \u201cOperation Epic Fury\u201d, the joint US-Israeli air campaign targeting Iranian military and nuclear infrastructure, has continued for more than four weeks wi",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-01 15:53 UTC"
+}
