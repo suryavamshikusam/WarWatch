@@ -1,15 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 12:46 UTC",
+  "generatedAt": "2026-04-01 14:20 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: How are NATO allies pushing back against Trump\u2019s Iran war demands? \u00b7 United States President Donald Trump\u2019s already fraught relationship with NATO al\u2026",
-    "Other: Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove \u00b7 Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019\u2026"
+    "Other: Starmer insists 'this is not our war' as Iran weighs up attacking UK bases \u00b7 Another week of the war on Iran , another address from the British prime ministe\u2026",
+    "Other: Palestinians in West Bank strike after Israel passes death penalty law \u00b7 Palestinians across the occupied West Bank observed a general strike on Wednesda\u2026",
+    "Other: Trump claims Iran's 'new regime president' asked for a ceasefire \u00b7 US President Donald Trump has claimed in a social media post that \"Iran's new re\u2026",
+    "Other: Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a \u00b7 Vali Nasr, professor at Johns Hopkins University School of Advanced Internationa\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-04-01 12:46 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 10,
+    "lastUpdated": "2026-04-01 14:20 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -49,42 +51,74 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "How are NATO allies pushing back against Trump\u2019s Iran war demands?",
-      "summary": "United States President Donald Trump\u2019s already fraught relationship with NATO allies is fraying further as the US-Israel war on Iran is in its second month. A growing number of partners are resisting Washington\u2019s requests for support in the conflict, deepening a transatlantic rift. From the deployme",
+      "time": "13 min ago",
+      "headline": "Starmer insists 'this is not our war' as Iran weighs up attacking UK bases",
+      "summary": "Another week of the war on Iran , another address from the British prime minister, as Keir Starmer told the nation once more that the UK has not been dragged into the US-Israeli operation. Starmer, wearing a sober blue tie and flanked by two Union Jacks, appeared tired and solemn as he spoke from a ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "United States President Donald Trump\u2019s already fraught relationship with NATO allies is fraying further as the US-Israel war on Iran is in its second month. A growing number of partners are resisting Washington\u2019s requests for support in the conflict, deepening a transatlantic rift. From the deployme",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/how-are-nato-allies-pushing-back-against-trumps-iran-war-demands?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Another week of the war on Iran , another address from the British prime minister, as Keir Starmer told the nation once more that the UK has not been dragged into the US-Israeli operation. Starmer, wearing a sober blue tie and flanked by two Union Jacks, appeared tired and solemn as he spoke from a ",
+      "sourceUrl": "https://www.middleeasteye.net/news/uk-keir-starmer-not-our-war-iran-british-bases",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove",
-      "summary": "Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019s military establishment has led to what insiders describe as a \u201ccomplete political stalemate\u201d. And now, the Islamic Revolutionary Guard Corps (IRGC) has taken de facto control over key areas of governance, according to ",
+      "time": "13 min ago",
+      "headline": "Palestinians in West Bank strike after Israel passes death penalty law",
+      "summary": "Palestinians across the occupied West Bank observed a general strike on Wednesday in protest against a new Israeli law allowing the execution of prisoners, as international condemnation mounted. Fatah, the movement led by Palestinian Authority President Mahmoud Abbas, called for the strike, describi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Mounting friction between President Masoud Pezeshkian\u2019s administration and Iran\u2019s military establishment has led to what insiders describe as a \u201ccomplete political stalemate\u201d. And now, the Islamic Revolutionary Guard Corps (IRGC) has taken de facto control over key areas of governance, according to ",
-      "sourceUrl": "https://indianexpress.com/article/world/iran-political-stalemate-irgc-pezeshkian-control-10613347/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "Palestinians across the occupied West Bank observed a general strike on Wednesday in protest against a new Israeli law allowing the execution of prisoners, as international condemnation mounted. Fatah, the movement led by Palestinian Authority President Mahmoud Abbas, called for the strike, describi",
+      "sourceUrl": "https://www.middleeasteye.net/news/general-strike-leaves-west-bank-streets-empty-over-death-penalty-bill",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Trump claims Iran's 'new regime president' asked for a ceasefire",
+      "summary": "US President Donald Trump has claimed in a social media post that \"Iran's new regime president\" asked for a ceasefire. Ahead of a television address tonight, Trump said that\u00a0the US \"will consider when Hormuz Strait is open, free, and clear. Until then, we are blasting Iran into oblivion or, as they ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US President Donald Trump has claimed in a social media post that \"Iran's new regime president\" asked for a ceasefire. Ahead of a television address tonight, Trump said that\u00a0the US \"will consider when Hormuz Strait is open, free, and clear. Until then, we are blasting Iran into oblivion or, as they ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-claims-irans-new-regime-president-asked-ceasefire",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a",
+      "summary": "Vali Nasr, professor at Johns Hopkins University School of Advanced International Studies, and a former U.S. State Department Adviser, speaks during an interview with The Hindu. Picture: Videograb U.S. President Donald Trump has no solution for the chokehold that Iran is putting on global markets an",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Vali Nasr, professor at Johns Hopkins University School of Advanced International Studies, and a former U.S. State Department Adviser, speaks during an interview with The Hindu. Picture: Videograb U.S. President Donald Trump has no solution for the chokehold that Iran is putting on global markets an",
+      "sourceUrl": "https://www.thehindu.com/news/international/trump-is-at-a-strategic-dead-end-on-iran-the-war-will-reshape-gulfs-security-architecture-vali-nasr/article70811259.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 10:49 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 11:45 UTC",
       "l": "HIGH",
@@ -211,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 12:46 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 14:20 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: How are NATO allies pushing back against Trump\u2019s Iran war demands?. Amid Middle East war, IRGC takes de facto control of President Pezeshkian\u2019s gove. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Starmer insists 'this is not our war' as Iran weighs up attacking UK bases. Palestinians in West Bank strike after Israel passes death penalty law. Trump claims Iran's 'new regime president' asked for a ceasefire. Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

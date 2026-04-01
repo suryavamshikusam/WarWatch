@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 14:20 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Starmer insists 'this is not our war' as Iran weighs up attacking UK bases. Palestinians in West Bank strike after Israel passes death penalty law. Trump claims Iran's 'new regime president' asked for a ceasefire. Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Starmer insists 'this is not our war' as Iran weighs up attacking UK bases",
+      "detail": "Another week of the war on Iran , another address from the British prime minister, as Keir Starmer told the nation once more that the UK has not been dragged into the US-Israeli operation. Starmer, wearing a sober blue tie and flanked by two Union Jacks, appeared tired and solemn as he spoke from a ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/uk-keir-starmer-not-our-war-iran-british-bases",
+      "fullAnalysis": "Another week of the war on Iran , another address from the British prime minister, as Keir Starmer told the nation once more that the UK has not been dragged into the US-Israeli operation. Starmer, wearing a sober blue tie and flanked by two Union Jacks, appeared tired and solemn as he spoke from a ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Palestinians in West Bank strike after Israel passes death penalty law",
+      "detail": "Palestinians across the occupied West Bank observed a general strike on Wednesday in protest against a new Israeli law allowing the execution of prisoners, as international condemnation mounted. Fatah, the movement led by Palestinian Authority President Mahmoud Abbas, called for the strike, describi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/general-strike-leaves-west-bank-streets-empty-over-death-penalty-bill",
+      "fullAnalysis": "Palestinians across the occupied West Bank observed a general strike on Wednesday in protest against a new Israeli law allowing the execution of prisoners, as international condemnation mounted. Fatah, the movement led by Palestinian Authority President Mahmoud Abbas, called for the strike, describi",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump claims Iran's 'new regime president' asked for a ceasefire",
+      "detail": "US President Donald Trump has claimed in a social media post that \"Iran's new regime president\" asked for a ceasefire. Ahead of a television address tonight, Trump said that\u00a0the US \"will consider when Hormuz Strait is open, free, and clear. Until then, we are blasting Iran into oblivion or, as they ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-claims-irans-new-regime-president-asked-ceasefire",
+      "fullAnalysis": "US President Donald Trump has claimed in a social media post that \"Iran's new regime president\" asked for a ceasefire. Ahead of a television address tonight, Trump said that\u00a0the US \"will consider when Hormuz Strait is open, free, and clear. Until then, we are blasting Iran into oblivion or, as they ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump is at a strategic dead end on Iran; the war will reshape Gulf\u2019s security a",
+      "detail": "Vali Nasr, professor at Johns Hopkins University School of Advanced International Studies, and a former U.S. State Department Adviser, speaks during an interview with The Hindu. Picture: Videograb U.S. President Donald Trump has no solution for the chokehold that Iran is putting on global markets an",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/trump-is-at-a-strategic-dead-end-on-iran-the-war-will-reshape-gulfs-security-architecture-vali-nasr/article70811259.ece",
+      "fullAnalysis": "Vali Nasr, professor at Johns Hopkins University School of Advanced International Studies, and a former U.S. State Department Adviser, speaks during an interview with The Hindu. Picture: Videograb U.S. President Donald Trump has no solution for the chokehold that Iran is putting on global markets an",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-01 14:20 UTC"
+}
