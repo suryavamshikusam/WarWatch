@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 07:13 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says building 'new alliances with important countries' in West Asia am. Iranian missile attack injures six in central Israel. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Netanyahu says building 'new alliances with important countries' in West Asia am",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/netanyahu-says-building-new-alliances-with-important-countries-in-west-asia-amid-iran-war/articleshow/129938640.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Iranian missile attack injures six in central Israel",
+      "detail": "Six people, including an 11-year-old girl, were wounded in an Iranian missile attack on central Israel on Wednesday, according to emergency services. Magen David Adom said the girl was taken to the hospital with shrapnel injuries, while others injured included a 13-year-old boy, a 39-year-old woman,",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attack-injures-six-central-israel",
+      "fullAnalysis": "Six people, including an 11-year-old girl, were wounded in an Iranian missile attack on central Israel on Wednesday, according to emergency services. Magen David Adom said the girl was taken to the hospital with shrapnel injuries, while others injured included a 13-year-old boy, a 39-year-old woman,",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-01 07:13 UTC"
+}

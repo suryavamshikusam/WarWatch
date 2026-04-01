@@ -1,17 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 05:50 UTC",
+  "generatedAt": "2026-04-01 07:13 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Morning update \u00b7 Here are the latest updates on the US-Israeli war on Iran: A Bangladeshi nationa\u2026",
-    "Other: How Canada's double standards on Iran put the world at risk \u00b7 Canadian Prime Minister Mark Carney generated considerable international praise \u2026",
-    "Other: Will UAE enter Iran war? Abu Dhabi pushes US, allies to reopen Strait of Hormuz  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
-    "Other: Iran-Israel war LIVE updates: Israel carries out 'wide-scale' wave of strikes on \u00b7 Security personnel stand guard as Houthi supporters gather during a rally in sol\u2026"
+    "Other: Netanyahu says building 'new alliances with important countries' in West Asia am \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
+    "Other: Iranian missile attack injures six in central Israel \u00b7 Six people, including an 11-year-old girl, were wounded in an Iranian missile at\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-04-01 05:50 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 4,
+    "lastUpdated": "2026-04-01 07:13 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -51,47 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Morning update",
-      "summary": "Here are the latest updates on the US-Israeli war on Iran: A Bangladeshi national was killed by falling shrapnel after a drone interception in the United Arab Emirates, the official WAM news agency said on Wednesday. A tanker struck off Qatar was hit by two projectiles, one causing a fire that has s",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: A Bangladeshi national was killed by falling shrapnel after a drone interception in the United Arab Emirates, the official WAM news agency said on Wednesday. A tanker struck off Qatar was hit by two projectiles, one causing a fire that has s",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-505",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "How Canada's double standards on Iran put the world at risk",
-      "summary": "Canadian Prime Minister Mark Carney generated considerable international praise for his 20 January speech at Davos. He called for intermediate powers such as Canada to work together to build a new world order based on values like respect for human rights, sustainable development, solidarity, soverei",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Canadian Prime Minister Mark Carney generated considerable international praise for his 20 January speech at Davos. He called for intermediate powers such as Canada to work together to build a new world order based on values like respect for human rights, sustainable development, solidarity, soverei",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/canada-double-standards-iran-put-world-risk-how",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Will UAE enter Iran war? Abu Dhabi pushes US, allies to reopen Strait of Hormuz ",
+      "time": "9 min ago",
+      "headline": "Netanyahu says building 'new alliances with important countries' in West Asia am",
       "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
       "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/will-uae-enter-iran-war-abu-dhabi-pushes-us-allies-to-reopen-strait-of-hormuz-by-force/articleshow/129940567.cms",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/netanyahu-says-building-new-alliances-with-important-countries-in-west-asia-amid-iran-war/articleshow/129938640.cms",
       "sourceLabel": "Times of India"
     },
     {
@@ -99,26 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran-Israel war LIVE updates: Israel carries out 'wide-scale' wave of strikes on",
-      "summary": "Security personnel stand guard as Houthi supporters gather during a rally in solidarity with Iran and Lebanon, amid the US-Israeli war with Iran, in the Yemeni capital Sanaa on March 27, 2026. \n                                                  | Photo Credit:  \n                          AFP T he Isr",
+      "time": "9 min ago",
+      "headline": "Iranian missile attack injures six in central Israel",
+      "summary": "Six people, including an 11-year-old girl, were wounded in an Iranian missile attack on central Israel on Wednesday, according to emergency services. Magen David Adom said the girl was taken to the hospital with shrapnel injuries, while others injured included a 13-year-old boy, a 39-year-old woman,",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Security personnel stand guard as Houthi supporters gather during a rally in solidarity with Iran and Lebanon, amid the US-Israeli war with Iran, in the Yemeni capital Sanaa on March 27, 2026. \n                                                  | Photo Credit:  \n                          AFP T he Isr",
-      "sourceUrl": "https://www.thehindu.com/news/international/us-israel-iran-war-updates-live-april-1-2026/article70809746.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "Six people, including an 11-year-old girl, were wounded in an Iranian missile attack on central Israel on Wednesday, according to emergency services. Magen David Adom said the girl was taken to the hospital with shrapnel injuries, while others injured included a 13-year-old boy, a 39-year-old woman,",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attack-injures-six-central-israel",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 02:24 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 04:59 UTC",
       "l": "HIGH",
@@ -245,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 05:50 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 07:13 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. How Canada's double standards on Iran put the world at risk. Will UAE enter Iran war? Abu Dhabi pushes US, allies to reopen Strait of Hormuz . Iran-Israel war LIVE updates: Israel carries out 'wide-scale' wave of strikes on. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu says building 'new alliances with important countries' in West Asia am. Iranian missile attack injures six in central Israel. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
