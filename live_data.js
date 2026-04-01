@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 09:52 UTC",
+  "generatedAt": "2026-04-01 10:51 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Syrian President Sharaa says no involvement in Iran war unless 'targeted' \u00b7 Syria 's President Ahmed al-Sharaa said Damascus will stay out of the Israeli - \u2026",
-    "Other: Australia\u2019s Albanese says war's economic shock will be felt for months; urges us \u00b7 Updated - April 01, 2026 03:14 pm IST - SYDNEY Prime Minister Anthony Albanese r\u2026"
+    "Other: France's President Macron reaffirms importance of freedom of navigation in Hormu \u00b7 French President Emmanuel Macron said on Wednesday that he shared Japanese Prime\u2026",
+    "Other: Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE \u00b7 \u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-04-01 09:52 UTC",
+    "updatesToday": 7,
+    "lastUpdated": "2026-04-01 10:51 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "8 min ago",
-      "headline": "Syrian President Sharaa says no involvement in Iran war unless 'targeted'",
-      "summary": "Syria 's President Ahmed al-Sharaa said Damascus will stay out of the Israeli - US war on Iran unless his country comes under attack, during a visit to London on Tuesday. Speaking at the Chatham House think tank in central London, Sharaa repeatedly stressed his desire to keep Syria out of a new conf",
+      "headline": "France's President Macron reaffirms importance of freedom of navigation in Hormu",
+      "summary": "French President Emmanuel Macron said on Wednesday that he shared Japanese Prime Minister Sanae Takaichi's position on the need to restore freedom of navigation in the Strait of Hormuz, speaking alongside her in Tokyo. The US\u2013Israeli war with Iran has rattled global markets and effectively shut the ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Syria 's President Ahmed al-Sharaa said Damascus will stay out of the Israeli - US war on Iran unless his country comes under attack, during a visit to London on Tuesday. Speaking at the Chatham House think tank in central London, Sharaa repeatedly stressed his desire to keep Syria out of a new conf",
-      "sourceUrl": "https://www.middleeasteye.net/news/syrian-president-ahmed-sharaa-no-involvement-iran-war-unless-targeted",
+      "fullAnalysis": "French President Emmanuel Macron said on Wednesday that he shared Japanese Prime Minister Sanae Takaichi's position on the need to restore freedom of navigation in the Strait of Hormuz, speaking alongside her in Tokyo. The US\u2013Israeli war with Iran has rattled global markets and effectively shut the ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/french-president-macron-reaffirms-importance-freedom-navigation-hormuz",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "8 min ago",
-      "headline": "Australia\u2019s Albanese says war's economic shock will be felt for months; urges us",
-      "summary": "Updated - April 01, 2026 03:14 pm IST - SYDNEY Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026. Photo: AAP/ Mick Tsikas/via Reuters Australian Prime Minister Anthony Albanese warned the",
+      "headline": "Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE",
+      "summary": "\u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones have hit fuel tanks at Kuwait\u2019s international airport, causing a large blaze, and authorities in Bahrain have reported a fire at an undisclosed company facility, as the United States-Israel war on Iran continues for a f",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Updated - April 01, 2026 03:14 pm IST - SYDNEY Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026. Photo: AAP/ Mick Tsikas/via Reuters Australian Prime Minister Anthony Albanese warned the",
-      "sourceUrl": "https://www.thehindu.com/news/international/australias-albanese-says-wars-economic-shock-will-be-felt-for-months-urges-using-public-transport/article70810777.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "\u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones have hit fuel tanks at Kuwait\u2019s international airport, causing a large blaze, and authorities in Bahrain have reported a fire at an undisclosed company facility, as the United States-Israel war on Iran continues for a f",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-attacks-cause-fire-in-kuwait-bahrain-kill-man-in-uae?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 07:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 08:44 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 09:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 10:51 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Syrian President Sharaa says no involvement in Iran war unless 'targeted'. Australia\u2019s Albanese says war's economic shock will be felt for months; urges us. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: France's President Macron reaffirms importance of freedom of navigation in Hormu. Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

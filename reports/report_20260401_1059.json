@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 10:51 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: France's President Macron reaffirms importance of freedom of navigation in Hormu. Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "France's President Macron reaffirms importance of freedom of navigation in Hormu",
+      "detail": "French President Emmanuel Macron said on Wednesday that he shared Japanese Prime Minister Sanae Takaichi's position on the need to restore freedom of navigation in the Strait of Hormuz, speaking alongside her in Tokyo. The US\u2013Israeli war with Iran has rattled global markets and effectively shut the ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/french-president-macron-reaffirms-importance-freedom-navigation-hormuz",
+      "fullAnalysis": "French President Emmanuel Macron said on Wednesday that he shared Japanese Prime Minister Sanae Takaichi's position on the need to restore freedom of navigation in the Strait of Hormuz, speaking alongside her in Tokyo. The US\u2013Israeli war with Iran has rattled global markets and effectively shut the ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran attacks cause fire in Kuwait, Bahrain; kill man in UAE",
+      "detail": "\u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones have hit fuel tanks at Kuwait\u2019s international airport, causing a large blaze, and authorities in Bahrain have reported a fire at an undisclosed company facility, as the United States-Israel war on Iran continues for a f",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/1/iran-attacks-cause-fire-in-kuwait-bahrain-kill-man-in-uae?traffic_source=rss",
+      "fullAnalysis": "\u2018Large fire\u2019 at Kuwait airport after \u2018brazen attack\u2019 on fuel tanks Iran\u2019s drones have hit fuel tanks at Kuwait\u2019s international airport, causing a large blaze, and authorities in Bahrain have reported a fire at an undisclosed company facility, as the United States-Israel war on Iran continues for a f",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-01 10:51 UTC"
+}
