@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 17:45 UTC",
+  "generatedAt": "2026-04-01 19:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump says ceasefire tied to Hormuz reopening, vows continued strikes \u00b7 US President Donald Trump said he would consider a ceasefire with Iran only if t\u2026"
+    "Other: Trump mulls Nato withdrawal, stopping weapons to Ukraine over Europe's response  \u00b7 US President Donald Trump plans to lambast Nato in his address at the White Hous\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-04-01 17:45 UTC",
+    "updatesToday": 14,
+    "lastUpdated": "2026-04-01 19:45 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Trump says ceasefire tied to Hormuz reopening, vows continued strikes",
-      "summary": "US President Donald Trump said he would consider a ceasefire with Iran only if the Strait of Hormuz is \u201copen, free, and clear\u201d. In a social media post, Trump said: \u201cUntil then, we are blasting Iran into oblivion.\u201d",
+      "headline": "Trump mulls Nato withdrawal, stopping weapons to Ukraine over Europe's response ",
+      "summary": "US President Donald Trump plans to lambast Nato in his address at the White House on Wednesday night local time, in the latest sign that the US-Israeli war on Iran is causing fissures in the West's premier alliance. Trump will announce during his primetime address that he is considering withdrawing ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump said he would consider a ceasefire with Iran only if the Strait of Hormuz is \u201copen, free, and clear\u201d. In a social media post, Trump said: \u201cUntil then, we are blasting Iran into oblivion.\u201d",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-says-ceasefire-tied-hormuz-reopening-vows-continued-strikes",
+      "fullAnalysis": "US President Donald Trump plans to lambast Nato in his address at the White House on Wednesday night local time, in the latest sign that the US-Israeli war on Iran is causing fissures in the West's premier alliance. Trump will announce during his primetime address that he is considering withdrawing ",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-mulls-nato-withdrawal-stopping-weapons-ukraine-support-iran-war",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 15:39 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 16:40 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 17:45 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 19:45 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump says ceasefire tied to Hormuz reopening, vows continued strikes. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump mulls Nato withdrawal, stopping weapons to Ukraine over Europe's response . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
