@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-01 21:58 UTC",
+  "generatedAt": "2026-04-01 22:36 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian leader says Israel will fight 'to last US tax dollar' as US weighs invas \u00b7 Israel plans to fight Iran \u201cto the last American soldier and the last American t\u2026"
+    "Other: \u2018No deal needed, US will exit Iran war in 2-3 weeks\u2019: How Trump shifted goalpost \u00b7 Thirty days into a conflict that was supposed to last four to six weeks, the US \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-04-01 21:58 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-04-01 22:36 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Iranian leader says Israel will fight 'to last US tax dollar' as US weighs invas",
-      "summary": "Israel plans to fight Iran \u201cto the last American soldier and the last American taxpayer dollar\u201d, Iranian President Masoud Pezeshkian wrote in an open letter released on Wednesday, hours before US President Donald Trump is set to deliver a primetime address on the war. Pezeshkian's letter, addressed ",
+      "time": "6 min ago",
+      "headline": "\u2018No deal needed, US will exit Iran war in 2-3 weeks\u2019: How Trump shifted goalpost",
+      "summary": "Thirty days into a conflict that was supposed to last four to six weeks, the US war objectives in the Iran war have shifted so dramatically that what the Trump administration once threatened to bomb Iran over, it now says isn\u2019t even its problem. Moreover, Trump has now said that the US will exit the",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel plans to fight Iran \u201cto the last American soldier and the last American taxpayer dollar\u201d, Iranian President Masoud Pezeshkian wrote in an open letter released on Wednesday, hours before US President Donald Trump is set to deliver a primetime address on the war. Pezeshkian's letter, addressed ",
-      "sourceUrl": "https://www.middleeasteye.net/news/iranian-leader-says-israel-will-fight-last-us-tax-dollar-us-weighs-invasion",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Thirty days into a conflict that was supposed to last four to six weeks, the US war objectives in the Iran war have shifted so dramatically that what the Trump administration once threatened to bomb Iran over, it now says isn\u2019t even its problem. Moreover, Trump has now said that the US will exit the",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/no-deal-needed-us-will-exit-iran-war-in-2-3-weeks-trump-shifted-goalposts-10612828/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 19:42 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-03-31 21:03 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-01 21:58 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-01 22:36 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian leader says Israel will fight 'to last US tax dollar' as US weighs invas. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: \u2018No deal needed, US will exit Iran war in 2-3 weeks\u2019: How Trump shifted goalpost. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
