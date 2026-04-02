@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 04:16 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli. Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli. Iran launches attacks on Israel after Trump address ends. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli",
+      "detail": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. The remarks echo those of Secretary of State Marco Rubio, who suggested in the e",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-admits-iran-war-was-only-behest-allies-gives-no-timetable-withdrawal",
+      "fullAnalysis": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. The remarks echo those of Secretary of State Marco Rubio, who suggested in the e",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli",
+      "detail": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. \"We're now totally independent of the Middle East, and yet, we are there to help",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-admits-iran-war-was-only-behest-allies-gives-no-withdrawal",
+      "fullAnalysis": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. \"We're now totally independent of the Middle East, and yet, we are there to help",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran launches attacks on Israel after Trump address ends",
+      "detail": "The Israeli military said air defences were responding to an Iranian missile salvo, shortly after US President Donald Trump delivered an address. Air raid sirens sounded across northern Israel, according to the Home Front Command. The latest launch of strikes is the third wave of Iranian attacks on ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-attacks-israel-after-trump-address-ends",
+      "fullAnalysis": "The Israeli military said air defences were responding to an Iranian missile salvo, shortly after US President Donald Trump delivered an address. Air raid sirens sounded across northern Israel, according to the Home Front Command. The latest launch of strikes is the third wave of Iranian attacks on ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-02 04:16 UTC"
+}

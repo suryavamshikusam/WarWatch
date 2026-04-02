@@ -1,17 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 01:46 UTC",
+  "generatedAt": "2026-04-02 04:16 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Countries should show 'courage' and seize Hormuz Strait, Trump urges \u00b7 US President Donald Trump in his address said countries that receive oil through\u2026",
-    "Other: UAE, Saudi Arabia intercepting attacks \u00b7 The UAE defence ministry said that its air defences are dealing with missile and\u2026",
-    "Other: Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019 \u00b7 Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
-    "Other: Russian envoy dismisses speculation around Mojtaba Khamenei\u2019s location; Iran Sup \u00b7 Iran\u2019s new Supreme Leader Mojtaba Khamenei is in the country and not undergoing \u2026"
+    "Other: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli \u00b7 US President Donald Trump revealed on Wednesday that the US only launched its wa\u2026",
+    "Other: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli \u00b7 US President Donald Trump revealed on Wednesday that the US only launched its wa\u2026",
+    "Other: Iran launches attacks on Israel after Trump address ends \u00b7 The Israeli military said air defences were responding to an Iranian missile sal\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-04-02 01:46 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 2,
+    "lastUpdated": "2026-04-02 04:16 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -51,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Countries should show 'courage' and seize Hormuz Strait, Trump urges",
-      "summary": "US President Donald Trump in his address said countries that receive oil through the Strait of Hormuz should show \"courage\" and seize the key waterway. \"Just take it, protect it, use it for yourselves,\" he said. Over a month since Israel and the US began their attack on Iran, Trump exclaims that Teh",
+      "time": "11 min ago",
+      "headline": "Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli",
+      "summary": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. The remarks echo those of Secretary of State Marco Rubio, who suggested in the e",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump in his address said countries that receive oil through the Strait of Hormuz should show \"courage\" and seize the key waterway. \"Just take it, protect it, use it for yourselves,\" he said. Over a month since Israel and the US began their attack on Iran, Trump exclaims that Teh",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/countries-should-show-courage-and-seize-hormuz-strait-trump-urges-0",
+      "fullAnalysis": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. The remarks echo those of Secretary of State Marco Rubio, who suggested in the e",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-admits-iran-war-was-only-behest-allies-gives-no-timetable-withdrawal",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,15 +66,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "UAE, Saudi Arabia intercepting attacks",
-      "summary": "The UAE defence ministry said that its air defences are dealing with missile and drone attacks coming from Iran. Meanwhile, Saudi Arabia announced that it intercepted and destroyed a ballistic missile that was headed towards the Eastern Province.",
+      "time": "11 min ago",
+      "headline": "Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli",
+      "summary": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. \"We're now totally independent of the Middle East, and yet, we are there to help",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The UAE defence ministry said that its air defences are dealing with missile and drone attacks coming from Iran. Meanwhile, Saudi Arabia announced that it intercepted and destroyed a ballistic missile that was headed towards the Eastern Province.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-saudi-arabia-intercepting-attacks",
+      "fullAnalysis": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. \"We're now totally independent of the Middle East, and yet, we are there to help",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-admits-iran-war-was-only-behest-allies-gives-no-withdrawal",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -83,42 +82,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
-      "summary": "Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
+      "time": "11 min ago",
+      "headline": "Iran launches attacks on Israel after Trump address ends",
+      "summary": "The Israeli military said air defences were responding to an Iranian missile salvo, shortly after US President Donald Trump delivered an address. Air raid sirens sounded across northern Israel, according to the Home Front Command. The latest launch of strikes is the third wave of Iranian attacks on ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/2/iran-war-live-trump-to-address-nation-tehran-denies-seeking-ceasefire?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Russian envoy dismisses speculation around Mojtaba Khamenei\u2019s location; Iran Sup",
-      "summary": "Iran\u2019s new Supreme Leader Mojtaba Khamenei is in the country and not undergoing treatment abroad, Russia\u2019s ambassador to Tehran has said, dismissing speculation about his whereabouts. The Times of Israel reported that Ambassador Alexey Dedov told Russian-language outlet RTVI Iranian authorities have",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran\u2019s new Supreme Leader Mojtaba Khamenei is in the country and not undergoing treatment abroad, Russia\u2019s ambassador to Tehran has said, dismissing speculation about his whereabouts. The Times of Israel reported that Ambassador Alexey Dedov told Russian-language outlet RTVI Iranian authorities have",
-      "sourceUrl": "https://indianexpress.com/article/world/where-is-mojtaba-khamenei-russian-envoy-iran-supreme-leader-hails-hezbollah-10613286/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "The Israeli military said air defences were responding to an Iranian missile salvo, shortly after US President Donald Trump delivered an address. Air raid sirens sounded across northern Israel, according to the Home Front Command. The latest launch of strikes is the third wave of Iranian attacks on ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-attacks-israel-after-trump-address-ends",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-03-31 23:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 00:06 UTC",
       "l": "HIGH",
@@ -245,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 01:46 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 04:16 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Countries should show 'courage' and seize Hormuz Strait, Trump urges. UAE, Saudi Arabia intercepting attacks. Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019. Russian envoy dismisses speculation around Mojtaba Khamenei\u2019s location; Iran Sup. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli. Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli. Iran launches attacks on Israel after Trump address ends. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
