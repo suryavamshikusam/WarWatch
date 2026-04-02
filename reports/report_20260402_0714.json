@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 07:05 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran, Israel-US War Live News Updates: Indian Navy safely escorting our tankers . Iran-Israel war LIVE: Israel reports Iranian missile attacks after Trump\u2019s speec. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran, Israel-US War Live News Updates: Indian Navy safely escorting our tankers ",
+      "detail": "Defence Minister Rajnath Singh on Thursday said that there is \"no dearth of fuel or gas in the country\" and India was ready to deal with any energy crisis resulting out of the West Asia conflict. Singh, speaking at a Sainik Samman Sammelan in poll-bound Kerala, said that Indian Navy ships were safel",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/donald-trump-address-tonation-speech-live-updates-us-exit-iran-war-israel-10614528/",
+      "fullAnalysis": "Defence Minister Rajnath Singh on Thursday said that there is \"no dearth of fuel or gas in the country\" and India was ready to deal with any energy crisis resulting out of the West Asia conflict. Singh, speaking at a Sainik Samman Sammelan in poll-bound Kerala, said that Indian Navy ships were safel",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran-Israel war LIVE: Israel reports Iranian missile attacks after Trump\u2019s speec",
+      "detail": "U.S. President Donald Trump speaks about the Iran war from the Cross Hall of the White House in Washington, D.C., on April 1, 2026.\n                                                  | Photo Credit:  \n                          AP I srael\u2019s military said air defences responded to waves of Iranian miss",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/donald-trump-addresses-nation-on-iran-israel-war-live-updates-world-news/article70813995.ece",
+      "fullAnalysis": "U.S. President Donald Trump speaks about the Iran war from the Cross Hall of the White House in Washington, D.C., on April 1, 2026.\n                                                  | Photo Credit:  \n                          AP I srael\u2019s military said air defences responded to waves of Iranian miss",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-02 07:05 UTC"
+}
