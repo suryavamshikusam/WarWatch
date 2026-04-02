@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 07:05 UTC",
+  "generatedAt": "2026-04-02 08:16 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran, Israel-US War Live News Updates: Indian Navy safely escorting our tankers  \u00b7 Defence Minister Rajnath Singh on Thursday said that there is \"no dearth of fuel\u2026",
-    "Other: Iran-Israel war LIVE: Israel reports Iranian missile attacks after Trump\u2019s speec \u00b7 U.S. President Donald Trump speaks about the Iran war from the Cross Hall of the\u2026"
+    "Other: Netanyahu rejects the gospel of Christ for the doctrine of Genghis Khan \u00b7 During the most sacred days of the Christian calendar, Israeli authorities preve\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-04-02 07:05 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 5,
+    "lastUpdated": "2026-04-02 08:16 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran, Israel-US War Live News Updates: Indian Navy safely escorting our tankers ",
-      "summary": "Defence Minister Rajnath Singh on Thursday said that there is \"no dearth of fuel or gas in the country\" and India was ready to deal with any energy crisis resulting out of the West Asia conflict. Singh, speaking at a Sainik Samman Sammelan in poll-bound Kerala, said that Indian Navy ships were safel",
+      "time": "6 min ago",
+      "headline": "Netanyahu rejects the gospel of Christ for the doctrine of Genghis Khan",
+      "summary": "During the most sacred days of the Christian calendar, Israeli authorities prevented the Catholic Patriarch of Jerusalem from entering the Church of the Holy Sepulchre. Palm Sunday, which commemorates the entry of Jesus Christ into Jerusalem, passed not with open worship, but with barriers , delays ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Defence Minister Rajnath Singh on Thursday said that there is \"no dearth of fuel or gas in the country\" and India was ready to deal with any energy crisis resulting out of the West Asia conflict. Singh, speaking at a Sainik Samman Sammelan in poll-bound Kerala, said that Indian Navy ships were safel",
-      "sourceUrl": "https://indianexpress.com/article/world/us-news/donald-trump-address-tonation-speech-live-updates-us-exit-iran-war-israel-10614528/",
-      "sourceLabel": "Indian Express"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran-Israel war LIVE: Israel reports Iranian missile attacks after Trump\u2019s speec",
-      "summary": "U.S. President Donald Trump speaks about the Iran war from the Cross Hall of the White House in Washington, D.C., on April 1, 2026.\n                                                  | Photo Credit:  \n                          AP I srael\u2019s military said air defences responded to waves of Iranian miss",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "U.S. President Donald Trump speaks about the Iran war from the Cross Hall of the White House in Washington, D.C., on April 1, 2026.\n                                                  | Photo Credit:  \n                          AP I srael\u2019s military said air defences responded to waves of Iranian miss",
-      "sourceUrl": "https://www.thehindu.com/news/international/donald-trump-addresses-nation-on-iran-israel-war-live-updates-world-news/article70813995.ece",
-      "sourceLabel": "The Hindu"
+      "fullAnalysis": "During the most sacred days of the Christian calendar, Israeli authorities prevented the Catholic Patriarch of Jerusalem from entering the Church of the Holy Sepulchre. Palm Sunday, which commemorates the entry of Jesus Christ into Jerusalem, passed not with open worship, but with barriers , delays ",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/netanyahu-rejects-gospel-christ-doctrine-genghis-khan",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 05:50 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 07:13 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 07:05 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 08:16 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran, Israel-US War Live News Updates: Indian Navy safely escorting our tankers . Iran-Israel war LIVE: Israel reports Iranian missile attacks after Trump\u2019s speec. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu rejects the gospel of Christ for the doctrine of Genghis Khan. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
