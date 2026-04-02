@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 18:37 UTC",
+  "generatedAt": "2026-04-02 19:37 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UK convenes 40 countries to discuss reopening Strait of Hormuz \u00b7 The UK is bringing together foreign ministers from 40 countries to explore optio\u2026"
+    "Other: 'They call me king': Highlights from Trump's unusual Easter lunch speech \u00b7 Wednesday's White House Easter lunch with handpicked Christian leaders was desig\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-04-02 18:37 UTC",
+    "updatesToday": 15,
+    "lastUpdated": "2026-04-02 19:37 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "UK convenes 40 countries to discuss reopening Strait of Hormuz",
-      "summary": "The UK is bringing together foreign ministers from 40 countries to explore options for reopening the Strait of Hormuz, which has effectively been blocked by Iran during the US-Israeli war on Iran. Prime Minister Keir Starmer said the virtual summit, chaired by Foreign Secretary Yvette Cooper, will a",
+      "headline": "'They call me king': Highlights from Trump's unusual Easter lunch speech",
+      "summary": "Wednesday's White House Easter lunch with handpicked Christian leaders was designated as a \"closed press\" event on US President Donald Trump's schedule, meaning no reporters were to be in the room. That decision was not particularly unusual. But just after 12:30pm local time in Washington, the White",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The UK is bringing together foreign ministers from 40 countries to explore options for reopening the Strait of Hormuz, which has effectively been blocked by Iran during the US-Israeli war on Iran. Prime Minister Keir Starmer said the virtual summit, chaired by Foreign Secretary Yvette Cooper, will a",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-convenes-40-countries-discuss-reopening-strait-hormuz",
+      "fullAnalysis": "Wednesday's White House Easter lunch with handpicked Christian leaders was designated as a \"closed press\" event on US President Donald Trump's schedule, meaning no reporters were to be in the room. That decision was not particularly unusual. But just after 12:30pm local time in Washington, the White",
+      "sourceUrl": "https://www.middleeasteye.net/news/they-call-me-king-highlights-trumps-candid-easter-lunch-speech",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 17:45 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 19:45 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 18:37 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 19:37 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UK convenes 40 countries to discuss reopening Strait of Hormuz. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'They call me king': Highlights from Trump's unusual Easter lunch speech. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
