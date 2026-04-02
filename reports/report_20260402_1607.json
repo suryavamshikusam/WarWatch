@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 15:56 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: This Passover, Israel embraces the politics of execution. UK elections: Here's where Greens, Your Party and independents will challenge La. Tehran-Karaj bridge hit again by US-Israeli strike while medics attend to injure. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "This Passover, Israel embraces the politics of execution",
+      "detail": "It\u2019s the first day of\u00a0Passover, the Jewish holiday commemorating the Exodus of the Israelites from slavery in Egypt - a festival often described as a celebration of freedom. Between the sounds of sirens piercing the city noise, families rush to complete last-minute grocery shopping for the evening\u2019s",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/passover-israel-embraces-politics-execution",
+      "fullAnalysis": "It\u2019s the first day of\u00a0Passover, the Jewish holiday commemorating the Exodus of the Israelites from slavery in Egypt - a festival often described as a celebration of freedom. Between the sounds of sirens piercing the city noise, families rush to complete last-minute grocery shopping for the evening\u2019s",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "UK elections: Here's where Greens, Your Party and independents will challenge La",
+      "detail": "Keir Starmer will be fighting for his career at the 7 May local elections, which many will interpret as a\u00a0referendum on his premiership. His Labour Party is defending over half of the 5,000 council seats being contested across England in 136 councils next month, in the most crucial electoral contest",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/heres-where-greens-your-party-and-independents-are-poised-win-big-may-elections",
+      "fullAnalysis": "Keir Starmer will be fighting for his career at the 7 May local elections, which many will interpret as a\u00a0referendum on his premiership. His Labour Party is defending over half of the 5,000 council seats being contested across England in 136 councils next month, in the most crucial electoral contest",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Tehran-Karaj bridge hit again by US-Israeli strike while medics attend to injure",
+      "detail": "Two people were killed and several more injured in a US-Israeli strike on a bridge in Karaj, a city near Tehran. The highway bridge was targeted for a second time while rescue forces were at the scene to help people wounded in the previous strike, Iran\u2019s Fars news agency reports. Alborz provincial o",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/tehran-karaj-bridge-hit-again-us-israeli-strike-while-medics-attend",
+      "fullAnalysis": "Two people were killed and several more injured in a US-Israeli strike on a bridge in Karaj, a city near Tehran. The highway bridge was targeted for a second time while rescue forces were at the scene to help people wounded in the previous strike, Iran\u2019s Fars news agency reports. Alborz provincial o",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-02 15:56 UTC"
+}
