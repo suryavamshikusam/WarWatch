@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 10:31 UTC",
+  "generatedAt": "2026-04-02 11:27 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran war Day 34 | \u2018Back to the Stone Age\u2019: Trump sets 2-week deadline to \u2018finish \u00b7 Iran war Day 34: In his first address to the nation since the war began on Febru\u2026",
-    "Other: Iran warns strike on Bushehr nuclear plant would be a \u2018war crime\u2019 \u00b7 Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant\u2026",
-    "Other: Iran war: What is happening on day 34 of US-Israel attacks? \u00b7 Iran has launched a new wave of missiles at Israel after United States President\u2026"
+    "Other: Iran\u2019s chief foreign affairs strategist \u2018gravely wounded\u2019 in US-Israeli attack \u00b7 The head of Iran\u2019 s Strategic Council on Foreign Relations, Kamal Kharrazi, was \u2026",
+    "Other: Iraq revives Syria land route to export oil to Europe \u00b7 Iraq has restarted overland oil exports through Syria , marking a significant sh\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-04-02 10:31 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 8,
+    "lastUpdated": "2026-04-02 11:27 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,31 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran war Day 34 | \u2018Back to the Stone Age\u2019: Trump sets 2-week deadline to \u2018finish",
-      "summary": "Iran war Day 34: In his first address to the nation since the war began on February 28, US President Donald Trump said Wednesday night local time the war is \u201cnearing completion.\u201d He added that the US is going to hit Iran \u201cvery hard\u201d in the next two weeks , bringing them \u201cback to the Stone Age where ",
+      "time": "9 min ago",
+      "headline": "Iran\u2019s chief foreign affairs strategist \u2018gravely wounded\u2019 in US-Israeli attack",
+      "summary": "The head of Iran\u2019 s Strategic Council on Foreign Relations, Kamal Kharrazi, was wounded in a reported US - Israeli strike on his home on Wednesday that also killed his wife, Iranian state media said. Kharrazi, a 81-year-old former foreign minister, reportedly sustained serious injuries and has been ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran war Day 34: In his first address to the nation since the war began on February 28, US President Donald Trump said Wednesday night local time the war is \u201cnearing completion.\u201d He added that the US is going to hit Iran \u201cvery hard\u201d in the next two weeks , bringing them \u201cback to the Stone Age where ",
-      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-middle-east-trump-speech-day-34-war-updates-10615191/",
-      "sourceLabel": "Indian Express"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran warns strike on Bushehr nuclear plant would be a \u2018war crime\u2019",
-      "summary": "Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog told AFP on Thursday. Reza Najafi, Iran\u2019s ambassador to the International Atomic Energy Agency, also rejected claims that Tehr",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog told AFP on Thursday. Reza Najafi, Iran\u2019s ambassador to the International Atomic Energy Agency, also rejected claims that Tehr",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-strike-bushehr-nuclear-plant-would-be-war-crime",
+      "fullAnalysis": "The head of Iran\u2019 s Strategic Council on Foreign Relations, Kamal Kharrazi, was wounded in a reported US - Israeli strike on his home on Wednesday that also killed his wife, Iranian state media said. Kharrazi, a 81-year-old former foreign minister, reportedly sustained serious injuries and has been ",
+      "sourceUrl": "https://www.middleeasteye.net/news/irans-chief-foreign-affairs-strategist-gravely-wounded-us-israeli-attack",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -82,26 +65,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran war: What is happening on day 34 of US-Israel attacks?",
-      "summary": "Iran has launched a new wave of missiles at Israel after United States President Donald Trump said Washington had \u201cdestroyed the Iranian military\u201d and was close to achieving its war objectives. Trump\u2019s address to the nation came hours after he said Tehran had asked for a ceasefire, a claim Iran deni",
+      "time": "9 min ago",
+      "headline": "Iraq revives Syria land route to export oil to Europe",
+      "summary": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran has launched a new wave of missiles at Israel after United States President Donald Trump said Washington had \u201cdestroyed the Iranian military\u201d and was close to achieving its war objectives. Trump\u2019s address to the nation came hours after he said Tehran had asked for a ceasefire, a claim Iran deni",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/2/iran-war-what-is-happening-on-day-34-of-us-israel-attacks?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iraq-revives-syria-land-route-export-oil-europe",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -129,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 09:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 10:51 UTC",
       "l": "HIGH",
@@ -228,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 10:31 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 11:27 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war Day 34 | \u2018Back to the Stone Age\u2019: Trump sets 2-week deadline to \u2018finish. Iran warns strike on Bushehr nuclear plant would be a \u2018war crime\u2019. Iran war: What is happening on day 34 of US-Israel attacks?. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran\u2019s chief foreign affairs strategist \u2018gravely wounded\u2019 in US-Israeli attack. Iraq revives Syria land route to export oil to Europe. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
