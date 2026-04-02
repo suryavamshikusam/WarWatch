@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 09:18 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning recap. Iraq revives Syria land route to export oil to Europe. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Morning recap",
+      "detail": "Here are the latest updates on the US-Israeli war on Iran: US President Donald Trump said in a televised address to the nation said that the war on Iran has left it \"decimated\" vowing to send the country back to the \"stone age...where it belongs\" US President Donald Trump in his address said countri",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-137",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: US President Donald Trump said in a televised address to the nation said that the war on Iran has left it \"decimated\" vowing to send the country back to the \"stone age...where it belongs\" US President Donald Trump in his address said countri",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iraq revives Syria land route to export oil to Europe",
+      "detail": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iraq-revives-syria-land-route-export-oil-europe",
+      "fullAnalysis": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-02 09:18 UTC"
+}

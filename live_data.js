@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 08:16 UTC",
+  "generatedAt": "2026-04-02 09:18 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Netanyahu rejects the gospel of Christ for the doctrine of Genghis Khan \u00b7 During the most sacred days of the Christian calendar, Israeli authorities preve\u2026"
+    "Other: Morning recap \u00b7 Here are the latest updates on the US-Israeli war on Iran: US President Donald T\u2026",
+    "Other: Iraq revives Syria land route to export oil to Europe \u00b7 Iraq has restarted overland oil exports through Syria , marking a significant sh\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-04-02 08:16 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 6,
+    "lastUpdated": "2026-04-02 09:18 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,15 +49,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Netanyahu rejects the gospel of Christ for the doctrine of Genghis Khan",
-      "summary": "During the most sacred days of the Christian calendar, Israeli authorities prevented the Catholic Patriarch of Jerusalem from entering the Church of the Holy Sepulchre. Palm Sunday, which commemorates the entry of Jesus Christ into Jerusalem, passed not with open worship, but with barriers , delays ",
+      "time": "8 min ago",
+      "headline": "Morning recap",
+      "summary": "Here are the latest updates on the US-Israeli war on Iran: US President Donald Trump said in a televised address to the nation said that the war on Iran has left it \"decimated\" vowing to send the country back to the \"stone age...where it belongs\" US President Donald Trump in his address said countri",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "During the most sacred days of the Christian calendar, Israeli authorities prevented the Catholic Patriarch of Jerusalem from entering the Church of the Holy Sepulchre. Palm Sunday, which commemorates the entry of Jesus Christ into Jerusalem, passed not with open worship, but with barriers , delays ",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/netanyahu-rejects-gospel-christ-doctrine-genghis-khan",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: US President Donald Trump said in a televised address to the nation said that the war on Iran has left it \"decimated\" vowing to send the country back to the \"stone age...where it belongs\" US President Donald Trump in his address said countri",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-137",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "8 min ago",
+      "headline": "Iraq revives Syria land route to export oil to Europe",
+      "summary": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
+      "sourceUrl": "https://www.middleeasteye.net/news/iraq-revives-syria-land-route-export-oil-europe",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 07:13 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 08:43 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 08:16 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 09:18 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Netanyahu rejects the gospel of Christ for the doctrine of Genghis Khan. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning recap. Iraq revives Syria land route to export oil to Europe. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
