@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 21:32 UTC",
+  "generatedAt": "2026-04-02 22:05 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role \u00b7 Iran appears to have shot down a Chinese Wing Loong II drone in the southern reg\u2026"
+    "Other: Oil shock triggers global price spikes as Iran war drags on \u00b7 Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the\u2026",
+    "Other: Houthis claim missile attack on Israel, vow further escalation \u00b7 Yemen\u2019s Houthi group said it carried out a military operation using a barrage of\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-04-02 21:32 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 17,
+    "lastUpdated": "2026-04-02 22:05 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,15 +49,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role",
-      "summary": "Iran appears to have shot down a Chinese Wing Loong II drone in the southern region of Shiraz, sparking questions among open-source intelligence analysts about whether Gulf states like Saudi Arabia or the UAE had joined offensive operations against Iran. Images of the destroyed drone were originally",
+      "time": "9 min ago",
+      "headline": "Oil shock triggers global price spikes as Iran war drags on",
+      "summary": "Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. From Nigeria to Vietnam and India, workers face soaring costs, longer hours and lost jobs amid a deepening global energy ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran appears to have shot down a Chinese Wing Loong II drone in the southern region of Shiraz, sparking questions among open-source intelligence analysts about whether Gulf states like Saudi Arabia or the UAE had joined offensive operations against Iran. Images of the destroyed drone were originally",
-      "sourceUrl": "https://www.middleeasteye.net/news/chinese-drone-downed-iran-sparking-questions-about-uae-and-saudi-arabian-role",
+      "fullAnalysis": "Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. From Nigeria to Vietnam and India, workers face soaring costs, longer hours and lost jobs amid a deepening global energy ",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/2/oil-shock-triggers-global-price-spikes-as-iran-war-drags-on?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Houthis claim missile attack on Israel, vow further escalation",
+      "summary": "Yemen\u2019s Houthi group said it carried out a military operation using a barrage of ballistic missiles targeting what it described as \u201cvital Israeli\u201d sites. In a statement carried by Al Masirah, the group said the attack was coordinated with Iran and Hezbollah in Lebanon and had \u201csuccessfully achieved ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Yemen\u2019s Houthi group said it carried out a military operation using a barrage of ballistic missiles targeting what it described as \u201cvital Israeli\u201d sites. In a statement carried by Al Masirah, the group said the attack was coordinated with Iran and Hezbollah in Lebanon and had \u201csuccessfully achieved ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-missile-attack-israel-vow-further-escalation",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,10 +81,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 21:09 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 21:58 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 21:32 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 22:05 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oil shock triggers global price spikes as Iran war drags on. Houthis claim missile attack on Israel, vow further escalation. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 22:05 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oil shock triggers global price spikes as Iran war drags on. Houthis claim missile attack on Israel, vow further escalation. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Oil shock triggers global price spikes as Iran war drags on",
+      "detail": "Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. From Nigeria to Vietnam and India, workers face soaring costs, longer hours and lost jobs amid a deepening global energy ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/2/oil-shock-triggers-global-price-spikes-as-iran-war-drags-on?traffic_source=rss",
+      "fullAnalysis": "Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. From Nigeria to Vietnam and India, workers face soaring costs, longer hours and lost jobs amid a deepening global energy ",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Houthis claim missile attack on Israel, vow further escalation",
+      "detail": "Yemen\u2019s Houthi group said it carried out a military operation using a barrage of ballistic missiles targeting what it described as \u201cvital Israeli\u201d sites. In a statement carried by Al Masirah, the group said the attack was coordinated with Iran and Hezbollah in Lebanon and had \u201csuccessfully achieved ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-missile-attack-israel-vow-further-escalation",
+      "fullAnalysis": "Yemen\u2019s Houthi group said it carried out a military operation using a barrage of ballistic missiles targeting what it described as \u201cvital Israeli\u201d sites. In a statement carried by Al Masirah, the group said the attack was coordinated with Iran and Hezbollah in Lebanon and had \u201csuccessfully achieved ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-02 22:05 UTC"
+}
