@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 21:32 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role",
+      "detail": "Iran appears to have shot down a Chinese Wing Loong II drone in the southern region of Shiraz, sparking questions among open-source intelligence analysts about whether Gulf states like Saudi Arabia or the UAE had joined offensive operations against Iran. Images of the destroyed drone were originally",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/chinese-drone-downed-iran-sparking-questions-about-uae-and-saudi-arabian-role",
+      "fullAnalysis": "Iran appears to have shot down a Chinese Wing Loong II drone in the southern region of Shiraz, sparking questions among open-source intelligence analysts about whether Gulf states like Saudi Arabia or the UAE had joined offensive operations against Iran. Images of the destroyed drone were originally",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-04-02 21:32 UTC"
+}

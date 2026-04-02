@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 19:37 UTC",
+  "generatedAt": "2026-04-02 21:32 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'They call me king': Highlights from Trump's unusual Easter lunch speech \u00b7 Wednesday's White House Easter lunch with handpicked Christian leaders was desig\u2026"
+    "Other: Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role \u00b7 Iran appears to have shot down a Chinese Wing Loong II drone in the southern reg\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-04-02 19:37 UTC",
+    "updatesToday": 16,
+    "lastUpdated": "2026-04-02 21:32 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,15 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "'They call me king': Highlights from Trump's unusual Easter lunch speech",
-      "summary": "Wednesday's White House Easter lunch with handpicked Christian leaders was designated as a \"closed press\" event on US President Donald Trump's schedule, meaning no reporters were to be in the room. That decision was not particularly unusual. But just after 12:30pm local time in Washington, the White",
+      "time": "6 min ago",
+      "headline": "Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role",
+      "summary": "Iran appears to have shot down a Chinese Wing Loong II drone in the southern region of Shiraz, sparking questions among open-source intelligence analysts about whether Gulf states like Saudi Arabia or the UAE had joined offensive operations against Iran. Images of the destroyed drone were originally",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Wednesday's White House Easter lunch with handpicked Christian leaders was designated as a \"closed press\" event on US President Donald Trump's schedule, meaning no reporters were to be in the room. That decision was not particularly unusual. But just after 12:30pm local time in Washington, the White",
-      "sourceUrl": "https://www.middleeasteye.net/news/they-call-me-king-highlights-trumps-candid-easter-lunch-speech",
+      "fullAnalysis": "Iran appears to have shot down a Chinese Wing Loong II drone in the southern region of Shiraz, sparking questions among open-source intelligence analysts about whether Gulf states like Saudi Arabia or the UAE had joined offensive operations against Iran. Images of the destroyed drone were originally",
+      "sourceUrl": "https://www.middleeasteye.net/news/chinese-drone-downed-iran-sparking-questions-about-uae-and-saudi-arabian-role",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,7 +64,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 19:45 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 21:09 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 19:37 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 21:32 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'They call me king': Highlights from Trump's unusual Easter lunch speech. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Chinese drone downed in Iran, sparking questions about UAE or Saudi Arabian role. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
