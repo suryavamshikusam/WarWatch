@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 04:16 UTC",
+  "generatedAt": "2026-04-02 05:52 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli \u00b7 US President Donald Trump revealed on Wednesday that the US only launched its wa\u2026",
-    "Other: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli \u00b7 US President Donald Trump revealed on Wednesday that the US only launched its wa\u2026",
-    "Other: Iran launches attacks on Israel after Trump address ends \u00b7 The Israeli military said air defences were responding to an Iranian missile sal\u2026"
+    "Other: Australia PM says Iran war objectives met, 'not clear' what more to achieve \u00b7 Published - April 02, 2026 11:03 am IST - Sydney Prime Minister Anthony Albanese\u2026",
+    "Other: Oil prices climb after Trump's speech, brent crude reaches $106, WTI tops $103 \u00b7 The TOI Business Desk is a vigilant and dedicated team of journalists committed \u2026",
+    "Other: Trump urges countries \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel \u00b7 Trump urges countries to \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel Du\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-04-02 04:16 UTC",
+    "updatesToday": 3,
+    "lastUpdated": "2026-04-02 05:52 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -51,15 +51,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli",
-      "summary": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. The remarks echo those of Secretary of State Marco Rubio, who suggested in the e",
+      "headline": "Australia PM says Iran war objectives met, 'not clear' what more to achieve",
+      "summary": "Published - April 02, 2026 11:03 am IST - Sydney Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026.\n                                          | Photo Credit: Reuters Australian Prime Mini",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. The remarks echo those of Secretary of State Marco Rubio, who suggested in the e",
-      "sourceUrl": "https://www.middleeasteye.net/news/trump-admits-iran-war-was-only-behest-allies-gives-no-timetable-withdrawal",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Published - April 02, 2026 11:03 am IST - Sydney Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026.\n                                          | Photo Credit: Reuters Australian Prime Mini",
+      "sourceUrl": "https://www.thehindu.com/news/international/australia-pm-says-iran-war-objectives-met-not-clear-what-more-to-achieve/article70814341.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-crit",
@@ -67,15 +67,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli",
-      "summary": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. \"We're now totally independent of the Middle East, and yet, we are there to help",
+      "headline": "Oil prices climb after Trump's speech, brent crude reaches $106, WTI tops $103",
+      "summary": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump revealed on Wednesday that the US only launched its war on Iran to assist its partners in the region, a statement that likely references a long-held Israeli bid for Washington to attack Tehran. \"We're now totally independent of the Middle East, and yet, we are there to help",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-admits-iran-war-was-only-behest-allies-gives-no-withdrawal",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "sourceUrl": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-climb-today-on-april-2-2026-after-trumps-speech-brent-crude-reaches-106-wti-tops-103/articleshow/129965171.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-crit",
@@ -83,15 +83,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Iran launches attacks on Israel after Trump address ends",
-      "summary": "The Israeli military said air defences were responding to an Iranian missile salvo, shortly after US President Donald Trump delivered an address. Air raid sirens sounded across northern Israel, according to the Home Front Command. The latest launch of strikes is the third wave of Iranian attacks on ",
+      "headline": "Trump urges countries \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel",
+      "summary": "Trump urges countries to \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel During a speech about the war on Iran, US President Donald Trump says nations that rely on oil from the Strait of Hormuz should \u201cbuild up some delayed courage\u201d and get involved in its security.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli military said air defences were responding to an Iranian missile salvo, shortly after US President Donald Trump delivered an address. Air raid sirens sounded across northern Israel, according to the Home Front Command. The latest launch of strikes is the third wave of Iranian attacks on ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-launches-attacks-israel-after-trump-address-ends",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Trump urges countries to \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel During a speech about the war on Iran, US President Donald Trump says nations that rely on oil from the Strait of Hormuz should \u201cbuild up some delayed courage\u201d and get involved in its security.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/2/trump-urges-countries-get-involved-in-war-on-iran-if-they-cant-get-fuel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
@@ -129,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 00:06 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 03:46 UTC",
       "l": "HIGH",
@@ -228,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 04:16 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 05:52 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli. Trump admits Iran war was only at behest of 'allies', gives no withdrawal timeli. Iran launches attacks on Israel after Trump address ends. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Australia PM says Iran war objectives met, 'not clear' what more to achieve. Oil prices climb after Trump's speech, brent crude reaches $106, WTI tops $103. Trump urges countries \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

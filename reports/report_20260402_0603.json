@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 05:52 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Australia PM says Iran war objectives met, 'not clear' what more to achieve. Oil prices climb after Trump's speech, brent crude reaches $106, WTI tops $103. Trump urges countries \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Australia PM says Iran war objectives met, 'not clear' what more to achieve",
+      "detail": "Published - April 02, 2026 11:03 am IST - Sydney Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026.\n                                          | Photo Credit: Reuters Australian Prime Mini",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/australia-pm-says-iran-war-objectives-met-not-clear-what-more-to-achieve/article70814341.ece",
+      "fullAnalysis": "Published - April 02, 2026 11:03 am IST - Sydney Prime Minister Anthony Albanese reacts after delivering a pre-recorded address to the nation in his office at Parliament House, Canberra, Australia, April 1, 2026.\n                                          | Photo Credit: Reuters Australian Prime Mini",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Oil prices climb after Trump's speech, brent crude reaches $106, WTI tops $103",
+      "detail": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-climb-today-on-april-2-2026-after-trumps-speech-brent-crude-reaches-106-wti-tops-103/articleshow/129965171.cms",
+      "fullAnalysis": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Trump urges countries \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel",
+      "detail": "Trump urges countries to \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel During a speech about the war on Iran, US President Donald Trump says nations that rely on oil from the Strait of Hormuz should \u201cbuild up some delayed courage\u201d and get involved in its security.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/2/trump-urges-countries-get-involved-in-war-on-iran-if-they-cant-get-fuel?traffic_source=rss",
+      "fullAnalysis": "Trump urges countries to \u2018get involved\u2019 in war on Iran if they can\u2019t get fuel During a speech about the war on Iran, US President Donald Trump says nations that rely on oil from the Strait of Hormuz should \u201cbuild up some delayed courage\u201d and get involved in its security.",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-02 05:52 UTC"
+}
