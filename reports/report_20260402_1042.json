@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 10:31 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war Day 34 | \u2018Back to the Stone Age\u2019: Trump sets 2-week deadline to \u2018finish. Iran warns strike on Bushehr nuclear plant would be a \u2018war crime\u2019. Iran war: What is happening on day 34 of US-Israel attacks?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran war Day 34 | \u2018Back to the Stone Age\u2019: Trump sets 2-week deadline to \u2018finish",
+      "detail": "Iran war Day 34: In his first address to the nation since the war began on February 28, US President Donald Trump said Wednesday night local time the war is \u201cnearing completion.\u201d He added that the US is going to hit Iran \u201cvery hard\u201d in the next two weeks , bringing them \u201cback to the Stone Age where ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-middle-east-trump-speech-day-34-war-updates-10615191/",
+      "fullAnalysis": "Iran war Day 34: In his first address to the nation since the war began on February 28, US President Donald Trump said Wednesday night local time the war is \u201cnearing completion.\u201d He added that the US is going to hit Iran \u201cvery hard\u201d in the next two weeks , bringing them \u201cback to the Stone Age where ",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran warns strike on Bushehr nuclear plant would be a \u2018war crime\u2019",
+      "detail": "Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog told AFP on Thursday. Reza Najafi, Iran\u2019s ambassador to the International Atomic Energy Agency, also rejected claims that Tehr",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-strike-bushehr-nuclear-plant-would-be-war-crime",
+      "fullAnalysis": "Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog told AFP on Thursday. Reza Najafi, Iran\u2019s ambassador to the International Atomic Energy Agency, also rejected claims that Tehr",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war: What is happening on day 34 of US-Israel attacks?",
+      "detail": "Iran has launched a new wave of missiles at Israel after United States President Donald Trump said Washington had \u201cdestroyed the Iranian military\u201d and was close to achieving its war objectives. Trump\u2019s address to the nation came hours after he said Tehran had asked for a ceasefire, a claim Iran deni",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/2/iran-war-what-is-happening-on-day-34-of-us-israel-attacks?traffic_source=rss",
+      "fullAnalysis": "Iran has launched a new wave of missiles at Israel after United States President Donald Trump said Washington had \u201cdestroyed the Iranian military\u201d and was close to achieving its war objectives. Trump\u2019s address to the nation came hours after he said Tehran had asked for a ceasefire, a claim Iran deni",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-02 10:31 UTC"
+}
