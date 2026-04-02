@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 01:46 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Countries should show 'courage' and seize Hormuz Strait, Trump urges. UAE, Saudi Arabia intercepting attacks. Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019. Russian envoy dismisses speculation around Mojtaba Khamenei\u2019s location; Iran Sup. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Countries should show 'courage' and seize Hormuz Strait, Trump urges",
+      "detail": "US President Donald Trump in his address said countries that receive oil through the Strait of Hormuz should show \"courage\" and seize the key waterway. \"Just take it, protect it, use it for yourselves,\" he said. Over a month since Israel and the US began their attack on Iran, Trump exclaims that Teh",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/countries-should-show-courage-and-seize-hormuz-strait-trump-urges-0",
+      "fullAnalysis": "US President Donald Trump in his address said countries that receive oil through the Strait of Hormuz should show \"courage\" and seize the key waterway. \"Just take it, protect it, use it for yourselves,\" he said. Over a month since Israel and the US began their attack on Iran, Trump exclaims that Teh",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "UAE, Saudi Arabia intercepting attacks",
+      "detail": "The UAE defence ministry said that its air defences are dealing with missile and drone attacks coming from Iran. Meanwhile, Saudi Arabia announced that it intercepted and destroyed a ballistic missile that was headed towards the Eastern Province.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uae-saudi-arabia-intercepting-attacks",
+      "fullAnalysis": "The UAE defence ministry said that its air defences are dealing with missile and drone attacks coming from Iran. Meanwhile, Saudi Arabia announced that it intercepted and destroyed a ballistic missile that was headed towards the Eastern Province.",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
+      "detail": "Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/2/iran-war-live-trump-to-address-nation-tehran-denies-seeking-ceasefire?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Trump claims goals nearing completion, vows to \u2018finish job\u2019",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Russian envoy dismisses speculation around Mojtaba Khamenei\u2019s location; Iran Sup",
+      "detail": "Iran\u2019s new Supreme Leader Mojtaba Khamenei is in the country and not undergoing treatment abroad, Russia\u2019s ambassador to Tehran has said, dismissing speculation about his whereabouts. The Times of Israel reported that Ambassador Alexey Dedov told Russian-language outlet RTVI Iranian authorities have",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/where-is-mojtaba-khamenei-russian-envoy-iran-supreme-leader-hails-hezbollah-10613286/",
+      "fullAnalysis": "Iran\u2019s new Supreme Leader Mojtaba Khamenei is in the country and not undergoing treatment abroad, Russia\u2019s ambassador to Tehran has said, dismissing speculation about his whereabouts. The Times of Israel reported that Ambassador Alexey Dedov told Russian-language outlet RTVI Iranian authorities have",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-02 01:46 UTC"
+}
