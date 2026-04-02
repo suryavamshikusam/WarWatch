@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 17:45 UTC",
+  "generatedAt": "2026-04-02 18:37 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz \u00b7 The UK and its allies have agreed to explore using sanctions to pressure Iran in\u2026",
-    "Other: Putin calls for end to war in talks with Saudi crown prince \u00b7 Russian President Vladimir Putin called for intensified political and diplomatic\u2026"
+    "Other: UK convenes 40 countries to discuss reopening Strait of Hormuz \u00b7 The UK is bringing together foreign ministers from 40 countries to explore optio\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-04-02 17:45 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 14,
+    "lastUpdated": "2026-04-02 18:37 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,31 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz",
-      "summary": "The UK and its allies have agreed to explore using sanctions to pressure Iran into reopening the Strait of Hormuz, according to Foreign Secretary Yvette Cooper. Representatives from more than 40 countries took part in a virtual summit on Thursday billed as the beginning of efforts to assemble a coal",
+      "time": "7 min ago",
+      "headline": "UK convenes 40 countries to discuss reopening Strait of Hormuz",
+      "summary": "The UK is bringing together foreign ministers from 40 countries to explore options for reopening the Strait of Hormuz, which has effectively been blocked by Iran during the US-Israeli war on Iran. Prime Minister Keir Starmer said the virtual summit, chaired by Foreign Secretary Yvette Cooper, will a",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The UK and its allies have agreed to explore using sanctions to pressure Iran into reopening the Strait of Hormuz, according to Foreign Secretary Yvette Cooper. Representatives from more than 40 countries took part in a virtual summit on Thursday billed as the beginning of efforts to assemble a coal",
-      "sourceUrl": "https://www.bbc.com/news/articles/cx2d0md89v2o?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Putin calls for end to war in talks with Saudi crown prince",
-      "summary": "Russian President Vladimir Putin called for intensified political and diplomatic efforts to end the war on Iran during a phone call with Saudi Crown Prince Mohammed bin Salman. According to a Kremlin readout, both sides stressed the need for a swift halt to hostilities and a push towards a long-term",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Russian President Vladimir Putin called for intensified political and diplomatic efforts to end the war on Iran during a phone call with Saudi Crown Prince Mohammed bin Salman. According to a Kremlin readout, both sides stressed the need for a swift halt to hostilities and a push towards a long-term",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/putin-calls-end-war-talks-saudi-crown-prince",
+      "fullAnalysis": "The UK is bringing together foreign ministers from 40 countries to explore options for reopening the Strait of Hormuz, which has effectively been blocked by Iran during the US-Israeli war on Iran. Prime Minister Keir Starmer said the virtual summit, chaired by Foreign Secretary Yvette Cooper, will a",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-convenes-40-countries-discuss-reopening-strait-hormuz",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +64,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 16:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 17:45 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 17:45 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 18:37 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz. Putin calls for end to war in talks with Saudi crown prince. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UK convenes 40 countries to discuss reopening Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
