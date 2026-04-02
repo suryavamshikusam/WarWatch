@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 13:58 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Afternoon recap. Germany urges China to help push Iran to reopen Hormuz. Israeli violence threatens Christians\u2019 future in Jerusalem, report warns. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Afternoon recap",
+      "detail": "If you are just joining us, here are the latest updates on the US-Israeli war on Iran: Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog said\u00a0on Thursday. The Philippines said ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/afternoon-recap-6",
+      "fullAnalysis": "If you are just joining us, here are the latest updates on the US-Israeli war on Iran: Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog said\u00a0on Thursday. The Philippines said ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Germany urges China to help push Iran to reopen Hormuz",
+      "detail": "The German minister for foreign affairs, Johann Wadephul, held a call with Chinese foreign minister Wang Yi to discuss how to resolve the conflict in the Middle East, according to a post on X from the German foreign ministry. Both countries said they wanted to see free navigation through the Strait ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/germany-urges-china-help-push-iran-reopen-hormuz",
+      "fullAnalysis": "The German minister for foreign affairs, Johann Wadephul, held a call with Chinese foreign minister Wang Yi to discuss how to resolve the conflict in the Middle East, according to a post on X from the German foreign ministry. Both countries said they wanted to see free navigation through the Strait ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israeli violence threatens Christians\u2019 future in Jerusalem, report warns",
+      "detail": "Harassment and violence against Christians call into question their long-term presence in Palestine and Israel , a respected Jerusalem think tank has warned. In a shocking report, the Rossing Center, which aims to foster Jewish-Christian relations, records a \u201ccontinued and expanding pattern of intim",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-violence-threatens-christians-future-jerusalem-report-warns",
+      "fullAnalysis": "Harassment and violence against Christians call into question their long-term presence in Palestine and Israel , a respected Jerusalem think tank has warned. In a shocking report, the Rossing Center, which aims to foster Jewish-Christian relations, records a \u201ccontinued and expanding pattern of intim",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-02 13:58 UTC"
+}

@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 12:06 UTC",
+  "generatedAt": "2026-04-02 13:58 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UAE and Bahrain only Middle East states joining UK coalition to pressure Iran ov \u00b7 Britain is set to host a summit on Thursday aimed at forming an international co\u2026",
-    "Other: Exclusive: Greek ships secretly supplying Israel with oil and military cargo \u00b7 Greek shipping companies have been secretly transporting oil, coal and military \u2026"
+    "Other: Afternoon recap \u00b7 If you are just joining us, here are the latest updates on the US-Israeli war on\u2026",
+    "Other: Germany urges China to help push Iran to reopen Hormuz \u00b7 The German minister for foreign affairs, Johann Wadephul, held a call with Chine\u2026",
+    "Other: Israeli violence threatens Christians\u2019 future in Jerusalem, report warns \u00b7 Harassment and violence against Christians call into question their long-term pr\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-04-02 12:06 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 10,
+    "lastUpdated": "2026-04-02 13:58 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,15 +50,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "UAE and Bahrain only Middle East states joining UK coalition to pressure Iran ov",
-      "summary": "Britain is set to host a summit on Thursday aimed at forming an international coalition to pressure Iran into reopening the Strait of Hormuz, after US President Donald Trump said the UK and other countries should \"go get their own oil\". Key countries in the region, including Saudi Arabia , Oman , Qa",
+      "time": "10 min ago",
+      "headline": "Afternoon recap",
+      "summary": "If you are just joining us, here are the latest updates on the US-Israeli war on Iran: Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog said\u00a0on Thursday. The Philippines said ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Britain is set to host a summit on Thursday aimed at forming an international coalition to pressure Iran into reopening the Strait of Hormuz, after US President Donald Trump said the UK and other countries should \"go get their own oil\". Key countries in the region, including Saudi Arabia , Oman , Qa",
-      "sourceUrl": "https://www.middleeasteye.net/news/uae-and-bahrain-only-middle-east-states-join-british-coalition-pressure-iran-over-hormuz",
+      "fullAnalysis": "If you are just joining us, here are the latest updates on the US-Israeli war on Iran: Iran has warned that any US or Israeli strike on its Bushehr nuclear power plant would amount to a \u201cwar crime\u201d under international law, its envoy to the UN\u2019s atomic watchdog said\u00a0on Thursday. The Philippines said ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/afternoon-recap-6",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,15 +66,31 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Exclusive: Greek ships secretly supplying Israel with oil and military cargo",
-      "summary": "Greek shipping companies have been secretly transporting oil, coal and military cargo to Israel , Middle East Eye can reveal. According to a new report, produced by the No Harbour for Genocide campaign and seen exclusively by MEE, at least 57 covert crude oil shipments were delivered to Israeli port",
+      "time": "10 min ago",
+      "headline": "Germany urges China to help push Iran to reopen Hormuz",
+      "summary": "The German minister for foreign affairs, Johann Wadephul, held a call with Chinese foreign minister Wang Yi to discuss how to resolve the conflict in the Middle East, according to a post on X from the German foreign ministry. Both countries said they wanted to see free navigation through the Strait ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Greek shipping companies have been secretly transporting oil, coal and military cargo to Israel , Middle East Eye can reveal. According to a new report, produced by the No Harbour for Genocide campaign and seen exclusively by MEE, at least 57 covert crude oil shipments were delivered to Israeli port",
-      "sourceUrl": "https://www.middleeasteye.net/news/exclusive-greek-ships-secretly-supplying-israel-oil-and-military-cargo",
+      "fullAnalysis": "The German minister for foreign affairs, Johann Wadephul, held a call with Chinese foreign minister Wang Yi to discuss how to resolve the conflict in the Middle East, according to a post on X from the German foreign ministry. Both countries said they wanted to see free navigation through the Strait ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/germany-urges-china-help-push-iran-reopen-hormuz",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "10 min ago",
+      "headline": "Israeli violence threatens Christians\u2019 future in Jerusalem, report warns",
+      "summary": "Harassment and violence against Christians call into question their long-term presence in Palestine and Israel , a respected Jerusalem think tank has warned. In a shocking report, the Rossing Center, which aims to foster Jewish-Christian relations, records a \u201ccontinued and expanding pattern of intim",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Harassment and violence against Christians call into question their long-term presence in Palestine and Israel , a respected Jerusalem think tank has warned. In a shocking report, the Rossing Center, which aims to foster Jewish-Christian relations, records a \u201ccontinued and expanding pattern of intim",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-violence-threatens-christians-future-jerusalem-report-warns",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -81,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "10 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 11:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 12:46 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 12:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 13:58 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UAE and Bahrain only Middle East states joining UK coalition to pressure Iran ov. Exclusive: Greek ships secretly supplying Israel with oil and military cargo. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Afternoon recap. Germany urges China to help push Iran to reopen Hormuz. Israeli violence threatens Christians\u2019 future in Jerusalem, report warns. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
