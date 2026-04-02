@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 16:52 UTC",
+  "generatedAt": "2026-04-02 17:45 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UK to convene meeting of 40 countries to discuss how to reopen Hormuz \u00b7 The UK\u2019s Ministry of Defence (MoD) has confirmed that military planners will mee\u2026",
-    "Other: \u2018Can\u2019t keep contradicting himself every day\u2019: Macron jabs Trump for Iran flip-fl \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz \u00b7 The UK and its allies have agreed to explore using sanctions to pressure Iran in\u2026",
+    "Other: Putin calls for end to war in talks with Saudi crown prince \u00b7 Russian President Vladimir Putin called for intensified political and diplomatic\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-04-02 16:52 UTC",
+    "updatesToday": 13,
+    "lastUpdated": "2026-04-02 17:45 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "UK to convene meeting of 40 countries to discuss how to reopen Hormuz",
-      "summary": "The UK\u2019s Ministry of Defence (MoD) has confirmed that military planners will meet at the UK\u2019s Permanent Joint Headquarters to take action on resolving the block on the Strait of Hormuz. The meeting next week will be to \u201cdiscuss viable options to make the Strait of Hormuz accessible and safe for navi",
+      "headline": "UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz",
+      "summary": "The UK and its allies have agreed to explore using sanctions to pressure Iran into reopening the Strait of Hormuz, according to Foreign Secretary Yvette Cooper. Representatives from more than 40 countries took part in a virtual summit on Thursday billed as the beginning of efforts to assemble a coal",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The UK\u2019s Ministry of Defence (MoD) has confirmed that military planners will meet at the UK\u2019s Permanent Joint Headquarters to take action on resolving the block on the Strait of Hormuz. The meeting next week will be to \u201cdiscuss viable options to make the Strait of Hormuz accessible and safe for navi",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-convene-meeting-40-countries-discuss-how-reopen-hormuz",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "The UK and its allies have agreed to explore using sanctions to pressure Iran into reopening the Strait of Hormuz, according to Foreign Secretary Yvette Cooper. Representatives from more than 40 countries took part in a virtual summit on Thursday billed as the beginning of efforts to assemble a coal",
+      "sourceUrl": "https://www.bbc.com/news/articles/cx2d0md89v2o?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-crit",
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "\u2018Can\u2019t keep contradicting himself every day\u2019: Macron jabs Trump for Iran flip-fl",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "headline": "Putin calls for end to war in talks with Saudi crown prince",
+      "summary": "Russian President Vladimir Putin called for intensified political and diplomatic efforts to end the war on Iran during a phone call with Saudi Crown Prince Mohammed bin Salman. According to a Kremlin readout, both sides stressed the need for a swift halt to hostilities and a push towards a long-term",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/cant-keep-contradicting-himself-every-day-macron-jabs-trump-for-iran-flip-flops/articleshow/129978063.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "Russian President Vladimir Putin called for intensified political and diplomatic efforts to end the war on Iran during a phone call with Saudi Crown Prince Mohammed bin Salman. According to a Kremlin readout, both sides stressed the need for a swift halt to hostilities and a push towards a long-term",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/putin-calls-end-war-talks-saudi-crown-prince",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 15:53 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 16:47 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 16:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 17:45 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UK to convene meeting of 40 countries to discuss how to reopen Hormuz. \u2018Can\u2019t keep contradicting himself every day\u2019: Macron jabs Trump for Iran flip-fl. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UK and allies discuss sanctions to stop Iran blocking Strait of Hormuz. Putin calls for end to war in talks with Saudi crown prince. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
