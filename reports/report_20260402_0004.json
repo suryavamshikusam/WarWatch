@@ -1,0 +1,60 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-01 23:57 UTC",
+  "executive_summary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump Speech Live: Trump to address Iran war, Tehran rejects ceasefire claim as . Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Trump Speech Live: Trump to address Iran war, Tehran rejects ceasefire claim as ",
+      "detail": "Iran's embassy in the UK is praising British Prime Minister Keir Starmer for not joining the US-Israeli military campaign against Iran, calling it a welcome stance against \"illegal aggression\". The embassy hopes the UK will maintain this position and not allow the US to use its territory for attacks",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/middle-east-war-live-updates-us-iran-israel-conflict-us-trump-netanyahu-10612662/",
+      "fullAnalysis": "Iran's embassy in the UK is praising British Prime Minister Keir Starmer for not joining the US-Israeli military campaign against Iran, calling it a welcome stance against \"illegal aggression\". The embassy hopes the UK will maintain this position and not allow the US to use its territory for attacks",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 1,
+  "generated_at": "2026-04-01 23:57 UTC"
+}
