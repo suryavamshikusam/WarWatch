@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-02 16:52 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UK to convene meeting of 40 countries to discuss how to reopen Hormuz. \u2018Can\u2019t keep contradicting himself every day\u2019: Macron jabs Trump for Iran flip-fl. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "UK to convene meeting of 40 countries to discuss how to reopen Hormuz",
+      "detail": "The UK\u2019s Ministry of Defence (MoD) has confirmed that military planners will meet at the UK\u2019s Permanent Joint Headquarters to take action on resolving the block on the Strait of Hormuz. The meeting next week will be to \u201cdiscuss viable options to make the Strait of Hormuz accessible and safe for navi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/uk-convene-meeting-40-countries-discuss-how-reopen-hormuz",
+      "fullAnalysis": "The UK\u2019s Ministry of Defence (MoD) has confirmed that military planners will meet at the UK\u2019s Permanent Joint Headquarters to take action on resolving the block on the Strait of Hormuz. The meeting next week will be to \u201cdiscuss viable options to make the Strait of Hormuz accessible and safe for navi",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "\u2018Can\u2019t keep contradicting himself every day\u2019: Macron jabs Trump for Iran flip-fl",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/cant-keep-contradicting-himself-every-day-macron-jabs-trump-for-iran-flip-flops/articleshow/129978063.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-02 16:52 UTC"
+}
