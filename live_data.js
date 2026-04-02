@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 11:27 UTC",
+  "generatedAt": "2026-04-02 12:06 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran\u2019s chief foreign affairs strategist \u2018gravely wounded\u2019 in US-Israeli attack \u00b7 The head of Iran\u2019 s Strategic Council on Foreign Relations, Kamal Kharrazi, was \u2026",
-    "Other: Iraq revives Syria land route to export oil to Europe \u00b7 Iraq has restarted overland oil exports through Syria , marking a significant sh\u2026"
+    "Other: UAE and Bahrain only Middle East states joining UK coalition to pressure Iran ov \u00b7 Britain is set to host a summit on Thursday aimed at forming an international co\u2026",
+    "Other: Exclusive: Greek ships secretly supplying Israel with oil and military cargo \u00b7 Greek shipping companies have been secretly transporting oil, coal and military \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-04-02 11:27 UTC",
+    "updatesToday": 9,
+    "lastUpdated": "2026-04-02 12:06 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,14 +50,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Iran\u2019s chief foreign affairs strategist \u2018gravely wounded\u2019 in US-Israeli attack",
-      "summary": "The head of Iran\u2019 s Strategic Council on Foreign Relations, Kamal Kharrazi, was wounded in a reported US - Israeli strike on his home on Wednesday that also killed his wife, Iranian state media said. Kharrazi, a 81-year-old former foreign minister, reportedly sustained serious injuries and has been ",
+      "headline": "UAE and Bahrain only Middle East states joining UK coalition to pressure Iran ov",
+      "summary": "Britain is set to host a summit on Thursday aimed at forming an international coalition to pressure Iran into reopening the Strait of Hormuz, after US President Donald Trump said the UK and other countries should \"go get their own oil\". Key countries in the region, including Saudi Arabia , Oman , Qa",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The head of Iran\u2019 s Strategic Council on Foreign Relations, Kamal Kharrazi, was wounded in a reported US - Israeli strike on his home on Wednesday that also killed his wife, Iranian state media said. Kharrazi, a 81-year-old former foreign minister, reportedly sustained serious injuries and has been ",
-      "sourceUrl": "https://www.middleeasteye.net/news/irans-chief-foreign-affairs-strategist-gravely-wounded-us-israeli-attack",
+      "fullAnalysis": "Britain is set to host a summit on Thursday aimed at forming an international coalition to pressure Iran into reopening the Strait of Hormuz, after US President Donald Trump said the UK and other countries should \"go get their own oil\". Key countries in the region, including Saudi Arabia , Oman , Qa",
+      "sourceUrl": "https://www.middleeasteye.net/news/uae-and-bahrain-only-middle-east-states-join-british-coalition-pressure-iran-over-hormuz",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -66,14 +66,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Iraq revives Syria land route to export oil to Europe",
-      "summary": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
+      "headline": "Exclusive: Greek ships secretly supplying Israel with oil and military cargo",
+      "summary": "Greek shipping companies have been secretly transporting oil, coal and military cargo to Israel , Middle East Eye can reveal. According to a new report, produced by the No Harbour for Genocide campaign and seen exclusively by MEE, at least 57 covert crude oil shipments were delivered to Israeli port",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iraq has restarted overland oil exports through Syria , marking a significant shift in regional energy logistics as the US-Israeli war on Iran continues to wreak havoc on traditional shipping routes through the Strait of Hormuz . Ali Nazar, director general of Iraq\u2019s state oil marketer Somo, said on",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iraq-revives-syria-land-route-export-oil-europe",
+      "fullAnalysis": "Greek shipping companies have been secretly transporting oil, coal and military cargo to Israel , Middle East Eye can reveal. According to a new report, produced by the No Harbour for Genocide campaign and seen exclusively by MEE, at least 57 covert crude oil shipments were delivered to Israeli port",
+      "sourceUrl": "https://www.middleeasteye.net/news/exclusive-greek-ships-secretly-supplying-israel-oil-and-military-cargo",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 10:51 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 11:47 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 11:27 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-02 12:06 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran\u2019s chief foreign affairs strategist \u2018gravely wounded\u2019 in US-Israeli attack. Iraq revives Syria land route to export oil to Europe. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UAE and Bahrain only Middle East states joining UK coalition to pressure Iran ov. Exclusive: Greek ships secretly supplying Israel with oil and military cargo. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
