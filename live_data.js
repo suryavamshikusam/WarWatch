@@ -1,15 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 11:54 UTC",
+  "generatedAt": "2026-04-03 12:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: These are Iran\u2019s key islands in the Gulf \u00b7 While most of its roughly 400 islands are small and uninhabited, several of them\u2026",
-    "Other: Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers \u00b7 The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calva\u2026",
-    "Other: Iran, US-Israel War News Live Updates: French-linked container ship transits Str \u00b7 A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its jo\u2026"
+    "Other: F-35 jet shot down by Iran came from British base in Suffolk, says IRGC \u00b7 It has been widely reported that US bombers have been using a base in Gloucester\u2026",
+    "Other: UK deploys Rapid Sentry anti-drone air defence system to Kuwait \u00b7 Britain has deployed its Rapid Sentry air defence system to Kuwait to help prote\u2026",
+    "Other: Israel plans 'Yellow Line' model in Lebanon by razing southern villages \u00b7 The Israeli army is proposing to replicate its Gaza \u201cYellow Line\u201d model in south\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 8,
-    "lastUpdated": "2026-04-03 11:54 UTC",
+    "updatesToday": 9,
+    "lastUpdated": "2026-04-03 12:47 UTC",
     "sourcesUsed": 3
   },
   "tensionMeters": [
@@ -51,14 +51,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "These are Iran\u2019s key islands in the Gulf",
-      "summary": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
+      "headline": "F-35 jet shot down by Iran came from British base in Suffolk, says IRGC",
+      "summary": "It has been widely reported that US bombers have been using a base in Gloucestershire in southwest England, RAF Fairford, to launch bombing missions over Iran. But a new incident has put a spotlight on another, less well-known, base in England that the US military is also believed to be using to att",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/these-are-irans-key-islands-gulf",
+      "fullAnalysis": "It has been widely reported that US bombers have been using a base in Gloucestershire in southwest England, RAF Fairford, to launch bombing missions over Iran. But a new incident has put a spotlight on another, less well-known, base in England that the US military is also believed to be using to att",
+      "sourceUrl": "https://www.middleeasteye.net/news/f-35-jet-shot-down-iran-came-british-owned-base-suffolk-says-irgc",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -67,14 +67,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers",
-      "summary": "The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calvary in the Church of the Holy Sepulchre, amid Israeli restrictions on attendance. Only around 15 clergy members took part in the Liturgy of the Passion of Christ inside the basilica, traditionally believed to be the site ",
+      "headline": "UK deploys Rapid Sentry anti-drone air defence system to Kuwait",
+      "summary": "Britain has deployed its Rapid Sentry air defence system to Kuwait to help protect British and Kuwaiti interests, the UK has announced. A drone strike hit a power and desalination plant in Kuwait on Friday morning, following an attack overnight on the Mina al-Ahmadi oil refinery in the country, whic",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calvary in the Church of the Holy Sepulchre, amid Israeli restrictions on attendance. Only around 15 clergy members took part in the Liturgy of the Passion of Christ inside the basilica, traditionally believed to be the site ",
-      "sourceUrl": "https://www.middleeasteye.net/news/limited-good-friday-ceremony-held-holy-sepulchre-israel-bans-worshippers",
+      "fullAnalysis": "Britain has deployed its Rapid Sentry air defence system to Kuwait to help protect British and Kuwaiti interests, the UK has announced. A drone strike hit a power and desalination plant in Kuwait on Friday morning, following an attack overnight on the Mina al-Ahmadi oil refinery in the country, whic",
+      "sourceUrl": "https://www.middleeasteye.net/news/uk-deploys-rapid-sentry-anti-drone-air-defence-system-kuwait",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -83,15 +83,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "11 min ago",
-      "headline": "Iran, US-Israel War News Live Updates: French-linked container ship transits Str",
-      "summary": "A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its joint owner Mitsui \u2060O.S.K. \u200bLines said on Friday. Crew members on the \u200bPanama-flagged ship, \"SOHAR \u200bLNG\", remain safe, \u2060a Mitsui O.S.K. Lines spokesperson \u200ctold Reuters, while declining to disclose when it crossed the stra",
+      "headline": "Israel plans 'Yellow Line' model in Lebanon by razing southern villages",
+      "summary": "The Israeli army is proposing to replicate its Gaza \u201cYellow Line\u201d model in southern Lebanon by seizing territory and destroying entire villages. In a briefing to Israeli media on Friday, military officials said disarming Hezbollah was not a realistic objective, and instead called for the creation of",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its joint owner Mitsui \u2060O.S.K. \u200bLines said on Friday. Crew members on the \u200bPanama-flagged ship, \"SOHAR \u200bLNG\", remain safe, \u2060a Mitsui O.S.K. Lines spokesperson \u200ctold Reuters, while declining to disclose when it crossed the stra",
-      "sourceUrl": "https://indianexpress.com/article/world/iran-us-israel-war-news-live-updates-middle-east-crisis-trump-iran-drone-missile-attack-10616529/",
-      "sourceLabel": "Indian Express"
+      "fullAnalysis": "The Israeli army is proposing to replicate its Gaza \u201cYellow Line\u201d model in southern Lebanon by seizing territory and destroying entire villages. In a briefing to Israeli media on Friday, military officials said disarming Hezbollah was not a realistic objective, and instead called for the creation of",
+      "sourceUrl": "https://www.middleeasteye.net/news/israel-plans-yellow-line-model-lebanon-razing-southern-villages",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
@@ -129,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 09:18 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 10:31 UTC",
       "l": "HIGH",
@@ -228,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 11:54 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 12:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: These are Iran\u2019s key islands in the Gulf. Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers. Iran, US-Israel War News Live Updates: French-linked container ship transits Str. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: F-35 jet shot down by Iran came from British base in Suffolk, says IRGC. UK deploys Rapid Sentry anti-drone air defence system to Kuwait. Israel plans 'Yellow Line' model in Lebanon by razing southern villages. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
