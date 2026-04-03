@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 06:11 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning recap. Iran warns UN action on Hormuz could escalate tensions. Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019. Dubai News Iran War Live Updates: Kuwait air defences intercepting missiles, dro. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Morning recap",
+      "detail": "Here are the latest updates on the US-Israeli war on Iran: Emergency medical needs in Iran are rising sharply, with trauma kits and other supplies at risk of running low if the US-Israeli war on Iran continues, the head of the International Federation of Red Cross and Red Crescent Societies delegati",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-138",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Emergency medical needs in Iran are rising sharply, with trauma kits and other supplies at risk of running low if the US-Israeli war on Iran continues, the head of the International Federation of Red Cross and Red Crescent Societies delegati",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran warns UN action on Hormuz could escalate tensions",
+      "detail": "Iran\u2019s Foreign Minister Abbas Araghchi has warned against any \u201cprovocative action\u201d ahead of an expected UN Security Council vote on the possible use of force in the Strait of Hormuz. Tehran has effectively blocked the key global energy route in response to the American-Israeli attack on its territor",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-un-action-hormuz-could-escalate-tensions",
+      "fullAnalysis": "Iran\u2019s Foreign Minister Abbas Araghchi has warned against any \u201cprovocative action\u201d ahead of an expected UN Security Council vote on the possible use of force in the Strait of Hormuz. Tehran has effectively blocked the key global energy route in response to the American-Israeli attack on its territor",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+      "detail": "Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/3/iran-war-live-trump-warns-assault-on-infrastructure-hasnt-even-started?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Dubai News Iran War Live Updates: Kuwait air defences intercepting missiles, dro",
+      "detail": "Dubai News Iran War Live Updates: The Middle East war is escalating by the day and its ripples are being felt in nations not directly involved in the conflict. A draft resolution put forward by Bahrain at the UN Security Council would permit countries to use \u201call necessary defensive measures\u201d to ens",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-uae-news-iran-us-israel-trump-hormuz-strait-bahrain-live-updates-10616515/",
+      "fullAnalysis": "Dubai News Iran War Live Updates: The Middle East war is escalating by the day and its ripples are being felt in nations not directly involved in the conflict. A draft resolution put forward by Bahrain at the UN Security Council would permit countries to use \u201call necessary defensive measures\u201d to ens",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-03 06:11 UTC"
+}

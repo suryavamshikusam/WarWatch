@@ -1,14 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 04:57 UTC",
+  "generatedAt": "2026-04-03 06:11 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'They'll stop when I stop': Trump asserts Israel will stop strikes on Iran when  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Morning recap \u00b7 Here are the latest updates on the US-Israeli war on Iran: Emergency medical nee\u2026",
+    "Other: Iran warns UN action on Hormuz could escalate tensions \u00b7 Iran\u2019s Foreign Minister Abbas Araghchi has warned against any \u201cprovocative actio\u2026",
+    "Other: Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019 \u00b7 Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+    "Other: Dubai News Iran War Live Updates: Kuwait air defences intercepting missiles, dro \u00b7 Dubai News Iran War Live Updates: The Middle East war is escalating by the day a\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-04-03 04:57 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 3,
+    "lastUpdated": "2026-04-03 06:11 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -48,26 +51,74 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "'They'll stop when I stop': Trump asserts Israel will stop strikes on Iran when ",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "13 min ago",
+      "headline": "Morning recap",
+      "summary": "Here are the latest updates on the US-Israeli war on Iran: Emergency medical needs in Iran are rising sharply, with trauma kits and other supplies at risk of running low if the US-Israeli war on Iran continues, the head of the International Federation of Red Cross and Red Crescent Societies delegati",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/theyll-stop-when-i-stop-trump-asserts-israel-will-stop-strikes-on-iran-when-he-tells-them-to/articleshow/129993065.cms",
-      "sourceLabel": "Times of India"
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Emergency medical needs in Iran are rising sharply, with trauma kits and other supplies at risk of running low if the US-Israeli war on Iran continues, the head of the International Federation of Red Cross and Red Crescent Societies delegati",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-recap-138",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran warns UN action on Hormuz could escalate tensions",
+      "summary": "Iran\u2019s Foreign Minister Abbas Araghchi has warned against any \u201cprovocative action\u201d ahead of an expected UN Security Council vote on the possible use of force in the Strait of Hormuz. Tehran has effectively blocked the key global energy route in response to the American-Israeli attack on its territor",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran\u2019s Foreign Minister Abbas Araghchi has warned against any \u201cprovocative action\u201d ahead of an expected UN Security Council vote on the possible use of force in the Strait of Hormuz. Tehran has effectively blocked the key global energy route in response to the American-Israeli attack on its territor",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-un-action-hormuz-could-escalate-tensions",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+      "summary": "Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/3/iran-war-live-trump-warns-assault-on-infrastructure-hasnt-even-started?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Dubai News Iran War Live Updates: Kuwait air defences intercepting missiles, dro",
+      "summary": "Dubai News Iran War Live Updates: The Middle East war is escalating by the day and its ripples are being felt in nations not directly involved in the conflict. A draft resolution put forward by Bahrain at the UN Security Council would permit countries to use \u201call necessary defensive measures\u201d to ens",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Dubai News Iran War Live Updates: The Middle East war is escalating by the day and its ripples are being felt in nations not directly involved in the conflict. A draft resolution put forward by Bahrain at the UN Security Council would permit countries to use \u201call necessary defensive measures\u201d to ens",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-uae-news-iran-us-israel-trump-hormuz-strait-bahrain-live-updates-10616515/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 23:57 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 01:46 UTC",
       "l": "HIGH",
@@ -194,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 04:57 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 06:11 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'They'll stop when I stop': Trump asserts Israel will stop strikes on Iran when . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning recap. Iran warns UN action on Hormuz could escalate tensions. Iran war live: Trump warns assault on infrastructure \u2018hasn\u2019t even started\u2019. Dubai News Iran War Live Updates: Kuwait air defences intercepting missiles, dro. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
