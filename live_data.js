@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 14:40 UTC",
+  "generatedAt": "2026-04-03 15:30 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Over 100 US-based legal experts declare Trump's strikes on Iran as possible war  \u00b7 Over 100 US -based legal experts and practitioners have signed a letter declarin\u2026",
-    "Other: Israel's campaign against Unrwa could set precedent to dismantle other UN agenci \u00b7 If UN member states allow Israel to dismantle the only agency that provides educ\u2026"
+    "Other: Iran-Israel war LIVE: Netanyahu claims 70% of Iran's steel production capacity d \u00b7 U.S. President Donald Trump. File \n                                             \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-04-03 14:40 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 11,
+    "lastUpdated": "2026-04-03 15:30 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Over 100 US-based legal experts declare Trump's strikes on Iran as possible war ",
-      "summary": "Over 100 US -based legal experts and practitioners have signed a letter declaring the war launched by President Donald Trump, jointly with Israel, on Iran a violation of international law, with the strikes potentially constituting war crimes. The letter emphasised that the war was illegal from its v",
+      "time": "6 min ago",
+      "headline": "Iran-Israel war LIVE: Netanyahu claims 70% of Iran's steel production capacity d",
+      "summary": "U.S. President Donald Trump. File \n                                                  | Photo Credit:  \n                          AP T he White House sent a spending proposal to lawmakers on Friday (April 3, 2026), calling for a massive $1.5 trillion U.S. defence budget next year as it faces increase",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Over 100 US -based legal experts and practitioners have signed a letter declaring the war launched by President Donald Trump, jointly with Israel, on Iran a violation of international law, with the strikes potentially constituting war crimes. The letter emphasised that the war was illegal from its v",
-      "sourceUrl": "https://www.middleeasteye.net/news/over-100-us-based-legal-experts-say-trumps-war-iran-may-amount-war-crimes",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Israel's campaign against Unrwa could set precedent to dismantle other UN agenci",
-      "summary": "If UN member states allow Israel to dismantle the only agency that provides education and health services to Palestinians, all other UN agencies could face the same fate,\u00a0the outgoing commissioner general of the United Nations Relief and Works Agency (Unrwa) has told Middle East Eye. In his final in",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "If UN member states allow Israel to dismantle the only agency that provides education and health services to Palestinians, all other UN agencies could face the same fate,\u00a0the outgoing commissioner general of the United Nations Relief and Works Agency (Unrwa) has told Middle East Eye. In his final in",
-      "sourceUrl": "https://www.middleeasteye.net/news/unrwa-chief-warns-israel-campaign-could-set-precedent-dismantle-un-agencies",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "U.S. President Donald Trump. File \n                                                  | Photo Credit:  \n                          AP T he White House sent a spending proposal to lawmakers on Friday (April 3, 2026), calling for a massive $1.5 trillion U.S. defence budget next year as it faces increase",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-live-updates-april-3-2026-west-asia-crisis-conflict/article70818422.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 11:27 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 12:06 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 14:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 15:30 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Over 100 US-based legal experts declare Trump's strikes on Iran as possible war . Israel's campaign against Unrwa could set precedent to dismantle other UN agenci. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war LIVE: Netanyahu claims 70% of Iran's steel production capacity d. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
