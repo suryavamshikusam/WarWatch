@@ -1,17 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 16:59 UTC",
+  "generatedAt": "2026-04-03 17:34 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran still maintains half its missile launchers and drones, US assessment finds: \u00b7 More than a month into the joint US-Israeli war on Iran , the Iranian military i\u2026",
-    "Other: Iran war: Why US allies are suffering more than its enemies \u00b7 In war, economic consequences often follow a logic distinct from military object\u2026",
-    "Other: Drone footage shows a factory in Israel damaged by Iranian missile debris \u00b7 Drone footage shows a factory in Israel damaged by Iranian missile debris Drone \u2026",
-    "Other: French-owned container ship transits Hormuz Strait in first since Iran war \u00b7 A container ship belonging to French shipping giant CMA CGM has crossed \u2060\u2060throug\u2026"
+    "Other: Iran still maintains half its missile launchers and drones, US assessment finds: \u00b7 More than a month into the joint US-Israeli war on Iran, the Iranian military is\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-04-03 16:59 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 14,
+    "lastUpdated": "2026-04-03 17:34 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -51,74 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
+      "time": "6 min ago",
       "headline": "Iran still maintains half its missile launchers and drones, US assessment finds:",
-      "summary": "More than a month into the joint US-Israeli war on Iran , the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblit",
+      "summary": "More than a month into the joint US-Israeli war on Iran, the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblite",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "More than a month into the joint US-Israeli war on Iran , the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblit",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-still-maintains-half-its-missile-launchers-and-drones-us-assessment-finds-report",
+      "fullAnalysis": "More than a month into the joint US-Israeli war on Iran, the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblite",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-still-maintains-half-its-missile-launchers-and-drones-us-assessment",
       "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran war: Why US allies are suffering more than its enemies",
-      "summary": "In war, economic consequences often follow a logic distinct from military objectives. The unprovoked and illegal US - Israeli attack on Iran that began on 28 February is a striking case study. Among the several objectives raised by the two aggressors - goals, incidentally, that have constantly shift",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "In war, economic consequences often follow a logic distinct from military objectives. The unprovoked and illegal US - Israeli attack on Iran that began on 28 February is a striking case study. Among the several objectives raised by the two aggressors - goals, incidentally, that have constantly shift",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/iran-war-why-us-allies-are-suffering-more-its-enemies",
-      "sourceLabel": "Middle East Eye"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Drone footage shows a factory in Israel damaged by Iranian missile debris",
-      "summary": "Drone footage shows a factory in Israel damaged by Iranian missile debris Drone footage from Israel shows damage to a factory in Petah Tikva after debris from an intercepted Iranian missile struck the site. The attack comes as Israel says it continues to intercept incoming missiles, on the 35th day ",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Drone footage shows a factory in Israel damaged by Iranian missile debris Drone footage from Israel shows damage to a factory in Petah Tikva after debris from an intercepted Iranian missile struck the site. The attack comes as Israel says it continues to intercept incoming missiles, on the 35th day ",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/3/drone-footage-shows-a-factory-in-israel-damaged-by-iranian-missile-debris?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "French-owned container ship transits Hormuz Strait in first since Iran war",
-      "summary": "A container ship belonging to French shipping giant CMA CGM has crossed \u2060\u2060through the Strait of Hormuz , the first such passage by a Western vessel since Iran effectively closed the waterway, the Marine Traffic vessel website shows. The Malta-flagged Kribi, owned by CMA CGM, crossed the Strait on Ap",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "A container ship belonging to French shipping giant CMA CGM has crossed \u2060\u2060through the Strait of Hormuz , the first such passage by a Western vessel since Iran effectively closed the waterway, the Marine Traffic vessel website shows. The Malta-flagged Kribi, owned by CMA CGM, crossed the Strait on Ap",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/3/french-owned-container-ship-transits-hormuz-strait-in-first-since-iran-war?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -146,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 15:56 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 16:52 UTC",
       "l": "HIGH",
@@ -245,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 16:59 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 17:34 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran still maintains half its missile launchers and drones, US assessment finds:. Iran war: Why US allies are suffering more than its enemies. Drone footage shows a factory in Israel damaged by Iranian missile debris. French-owned container ship transits Hormuz Strait in first since Iran war. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran still maintains half its missile launchers and drones, US assessment finds:. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
