@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 20:30 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Second US combat plane targeted by Iran crashes near Strait of Hormuz: Report. Iran says it rejects Trump offer of 48-hour ceasefire: Report. White House seeks $1.5 trillion defence budget as Iran war drives costs. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Second US combat plane targeted by Iran crashes near Strait of Hormuz: Report",
+      "detail": "Another US combat plane crashed on Friday, an A-10 Warthog, The New York Times reported , citing two anonymous US officials. Iranian state media reported that the country's air defence systems targeted an \"enemy\" A-10 aircraft near the Strait of Hormuz. The lone pilot of the aircraft was rescued, ac",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/second-us-combat-plane-targeted-iran-crashes-near-strait-hormuz-report",
+      "fullAnalysis": "Another US combat plane crashed on Friday, an A-10 Warthog, The New York Times reported , citing two anonymous US officials. Iranian state media reported that the country's air defence systems targeted an \"enemy\" A-10 aircraft near the Strait of Hormuz. The lone pilot of the aircraft was rescued, ac",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran says it rejects Trump offer of 48-hour ceasefire: Report",
+      "detail": "Iran said it has rejected the US proposal for a 48-hour ceasefire between both sides, the Fars News Agency said on Friday, citing an unnamed official source. It's unclear whether Israel would also have been part of that agreement. Fars' source said the US proposal was made on Wednesday through a thi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-says-it-rejects-trump-offer-48-hour-ceasefire-report",
+      "fullAnalysis": "Iran said it has rejected the US proposal for a 48-hour ceasefire between both sides, the Fars News Agency said on Friday, citing an unnamed official source. It's unclear whether Israel would also have been part of that agreement. Fars' source said the US proposal was made on Wednesday through a thi",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "White House seeks $1.5 trillion defence budget as Iran war drives costs",
+      "detail": "US President Donald Trump on Friday asked lawmakers to approve a massive $1.5 trillion defence budget for 2027, as the US faces rising costs from its war on Iran\u00a0and mounting global security commitments. The proposal would lift Pentagon spending by more than 40 percent in a single year - the sharpes",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/white-house-seeks-15-trillion-defense-budget-iran-war-drives-costs",
+      "fullAnalysis": "US President Donald Trump on Friday asked lawmakers to approve a massive $1.5 trillion defence budget for 2027, as the US faces rising costs from its war on Iran\u00a0and mounting global security commitments. The proposal would lift Pentagon spending by more than 40 percent in a single year - the sharpes",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-03 20:30 UTC"
+}

@@ -1,14 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 17:34 UTC",
+  "generatedAt": "2026-04-03 20:30 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran still maintains half its missile launchers and drones, US assessment finds: \u00b7 More than a month into the joint US-Israeli war on Iran, the Iranian military is\u2026"
+    "Other: Second US combat plane targeted by Iran crashes near Strait of Hormuz: Report \u00b7 Another US combat plane crashed on Friday, an A-10 Warthog, The New York Times r\u2026",
+    "Other: Iran says it rejects Trump offer of 48-hour ceasefire: Report \u00b7 Iran said it has rejected the US proposal for a 48-hour ceasefire between both s\u2026",
+    "Other: White House seeks $1.5 trillion defence budget as Iran war drives costs \u00b7 US President Donald Trump on Friday asked lawmakers to approve a massive $1.5 tr\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-04-03 17:34 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 15,
+    "lastUpdated": "2026-04-03 20:30 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -48,15 +50,47 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Iran still maintains half its missile launchers and drones, US assessment finds:",
-      "summary": "More than a month into the joint US-Israeli war on Iran, the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblite",
+      "time": "11 min ago",
+      "headline": "Second US combat plane targeted by Iran crashes near Strait of Hormuz: Report",
+      "summary": "Another US combat plane crashed on Friday, an A-10 Warthog, The New York Times reported , citing two anonymous US officials. Iranian state media reported that the country's air defence systems targeted an \"enemy\" A-10 aircraft near the Strait of Hormuz. The lone pilot of the aircraft was rescued, ac",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "More than a month into the joint US-Israeli war on Iran, the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblite",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-still-maintains-half-its-missile-launchers-and-drones-us-assessment",
+      "fullAnalysis": "Another US combat plane crashed on Friday, an A-10 Warthog, The New York Times reported , citing two anonymous US officials. Iranian state media reported that the country's air defence systems targeted an \"enemy\" A-10 aircraft near the Strait of Hormuz. The lone pilot of the aircraft was rescued, ac",
+      "sourceUrl": "https://www.middleeasteye.net/news/second-us-combat-plane-targeted-iran-crashes-near-strait-hormuz-report",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Iran says it rejects Trump offer of 48-hour ceasefire: Report",
+      "summary": "Iran said it has rejected the US proposal for a 48-hour ceasefire between both sides, the Fars News Agency said on Friday, citing an unnamed official source. It's unclear whether Israel would also have been part of that agreement. Fars' source said the US proposal was made on Wednesday through a thi",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran said it has rejected the US proposal for a 48-hour ceasefire between both sides, the Fars News Agency said on Friday, citing an unnamed official source. It's unclear whether Israel would also have been part of that agreement. Fars' source said the US proposal was made on Wednesday through a thi",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-says-it-rejects-trump-offer-48-hour-ceasefire-report",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "White House seeks $1.5 trillion defence budget as Iran war drives costs",
+      "summary": "US President Donald Trump on Friday asked lawmakers to approve a massive $1.5 trillion defence budget for 2027, as the US faces rising costs from its war on Iran\u00a0and mounting global security commitments. The proposal would lift Pentagon spending by more than 40 percent in a single year - the sharpes",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US President Donald Trump on Friday asked lawmakers to approve a massive $1.5 trillion defence budget for 2027, as the US faces rising costs from its war on Iran\u00a0and mounting global security commitments. The proposal would lift Pentagon spending by more than 40 percent in a single year - the sharpes",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/white-house-seeks-15-trillion-defense-budget-iran-war-drives-costs",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 16:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 17:45 UTC",
       "l": "HIGH",
@@ -194,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 17:34 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 20:30 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran still maintains half its missile launchers and drones, US assessment finds:. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Second US combat plane targeted by Iran crashes near Strait of Hormuz: Report. Iran says it rejects Trump offer of 48-hour ceasefire: Report. White House seeks $1.5 trillion defence budget as Iran war drives costs. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
