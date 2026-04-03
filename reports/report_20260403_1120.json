@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 11:11 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: These are Iran\u2019s key islands in the Gulf. Iran says it shot down second US F-35 jet over Tehran. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "These are Iran\u2019s key islands in the Gulf",
+      "detail": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/these-are-irans-key-islands-gulf",
+      "fullAnalysis": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran says it shot down second US F-35 jet over Tehran",
+      "detail": "Iran said on Friday that the Islamic Revolutionary Guard Corps (IRGC) air defences had shot\u00a0down a US F-35 fighter jet over central Iran. A spokesperson for Iran\u2019s Khatam al-Anbiya central headquarters said the jet had been \u201ccompletely destroyed\u201d and that the pilot\u2019s chances of survival were low, in",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-shot-down-second-us-f-35-jet-over-tehran",
+      "fullAnalysis": "Iran said on Friday that the Islamic Revolutionary Guard Corps (IRGC) air defences had shot\u00a0down a US F-35 fighter jet over central Iran. A spokesperson for Iran\u2019s Khatam al-Anbiya central headquarters said the jet had been \u201ccompletely destroyed\u201d and that the pilot\u2019s chances of survival were low, in",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-03 11:11 UTC"
+}
