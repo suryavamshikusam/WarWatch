@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-02 22:05 UTC",
+  "generatedAt": "2026-04-03 02:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Oil shock triggers global price spikes as Iran war drags on \u00b7 Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the\u2026",
-    "Other: Houthis claim missile attack on Israel, vow further escalation \u00b7 Yemen\u2019s Houthi group said it carried out a military operation using a barrage of\u2026"
+    "Other: Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent \u00b7 The TOI Business Desk is a vigilant and dedicated team of journalists committed \u2026",
+    "Other: Does Iran have a path to the bomb? \u00b7 Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-04-02 22:05 UTC",
+    "updatesToday": 1,
+    "lastUpdated": "2026-04-03 02:40 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -50,15 +50,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Oil shock triggers global price spikes as Iran war drags on",
-      "summary": "Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. From Nigeria to Vietnam and India, workers face soaring costs, longer hours and lost jobs amid a deepening global energy ",
+      "headline": "Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent",
+      "summary": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Oil shock triggers global price spikes as Iran war drags on Fuel shocks from the US-Israel war on Iran are rippling worldwide, as Strait of Hormuz disruptions push prices higher. From Nigeria to Vietnam and India, workers face soaring costs, longer hours and lost jobs amid a deepening global energy ",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/2/oil-shock-triggers-global-price-spikes-as-iran-war-drags-on?traffic_source=rss",
-      "sourceLabel": "Al Jazeera"
+      "fullAnalysis": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "sourceUrl": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-april-3-2026-crude-jumps-as-trump-dashes-hopes-of-quick-iran-war-end-brent-tops-111/articleshow/129992325.cms",
+      "sourceLabel": "Times of India"
     },
     {
       "badgeClass": "b-crit",
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "9 min ago",
-      "headline": "Houthis claim missile attack on Israel, vow further escalation",
-      "summary": "Yemen\u2019s Houthi group said it carried out a military operation using a barrage of ballistic missiles targeting what it described as \u201cvital Israeli\u201d sites. In a statement carried by Al Masirah, the group said the attack was coordinated with Iran and Hezbollah in Lebanon and had \u201csuccessfully achieved ",
+      "headline": "Does Iran have a path to the bomb?",
+      "summary": "Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n                                          | Photo Credit: AP Iran is expected to have around 500 kg of uranium enriched to 60%. U-235 is the isotope of uranium conventionally used in nuclear weapons and nuclear reactors.",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Yemen\u2019s Houthi group said it carried out a military operation using a barrage of ballistic missiles targeting what it described as \u201cvital Israeli\u201d sites. In a statement carried by Al Masirah, the group said the attack was coordinated with Iran and Hezbollah in Lebanon and had \u201csuccessfully achieved ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-missile-attack-israel-vow-further-escalation",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n                                          | Photo Credit: AP Iran is expected to have around 500 kg of uranium enriched to 60%. U-235 is the isotope of uranium conventionally used in nuclear weapons and nuclear reactors.",
+      "sourceUrl": "https://www.thehindu.com/sci-tech/science/does-iran-have-a-path-to-the-bomb/article70816768.ece",
+      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
@@ -112,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 21:58 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 22:36 UTC",
       "l": "HIGH",
@@ -211,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-02 22:05 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 02:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Oil shock triggers global price spikes as Iran war drags on. Houthis claim missile attack on Israel, vow further escalation. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent. Does Iran have a path to the bomb?. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

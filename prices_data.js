@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-02 23:59 UTC",
+  "fetchedAt": "2026-04-03 02:49 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -45,51 +45,51 @@ window.WARWATCH_PRICES = {
     },
     "INR=X": {
       "name": "USD / INR",
-      "price": 92.6426,
-      "formatted": "\u20b992.64",
-      "day_pct": -0.9,
-      "war_pct": 12.84
+      "price": 92.944,
+      "formatted": "\u20b992.94",
+      "day_pct": 0.33,
+      "war_pct": 13.21
     },
     "IOC.NS": {
       "name": "IOC",
-      "price": 135.72,
-      "formatted": "\u20b9135.72",
-      "day_pct": 0.24,
-      "war_pct": -15.44
+      "price": 134.13,
+      "formatted": "\u20b9134.13",
+      "day_pct": -1.17,
+      "war_pct": -16.43
     },
     "ADANIPORTS.NS": {
       "name": "Adani Ports",
-      "price": 1385.4,
-      "formatted": "\u20b91,385.4",
-      "day_pct": 5.55,
-      "war_pct": 12.36
+      "price": 1377.6,
+      "formatted": "\u20b91,377.6",
+      "day_pct": -0.56,
+      "war_pct": 11.73
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 140071,
-      "formatted": "\u20b9140,071",
+      "price": 140527,
+      "formatted": "\u20b9140,527",
       "day_pct": -1.68,
-      "war_pct": 87.26
+      "war_pct": 87.87
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
-      "price": 10382,
-      "formatted": "\u20b910,382",
+      "price": 10415,
+      "formatted": "\u20b910,415",
       "day_pct": 11.93,
-      "war_pct": 63.5
+      "war_pct": 64.02
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 217939,
-      "formatted": "\u20b9217,939",
+      "price": 218648,
+      "formatted": "\u20b9218,648",
       "day_pct": -3.55,
-      "war_pct": 138.18
+      "war_pct": 138.96
     }
   },
   "india": {
     "petrolPump": {
-      "formatted": "\u20b9126.8",
-      "war_change": 27.4,
+      "formatted": "\u20b9127.0",
+      "war_change": 27.6,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
     "goldSilverRatio": 64.3
@@ -416,6 +416,20 @@ window.WARWATCH_PRICES = {
       "mcx_silver": 217939,
       "ioc": 135.7,
       "adani": 1385
+    },
+    {
+      "date": "2026-04-03",
+      "brent": 109.05,
+      "wti": 112.06,
+      "ng": 2.807,
+      "gold": 4703,
+      "wheat": 598,
+      "inr": 92.94,
+      "mcx_crude": 10415,
+      "mcx_gold": 140527,
+      "mcx_silver": 218648,
+      "ioc": 134.1,
+      "adani": 1378
     }
   ]
 };

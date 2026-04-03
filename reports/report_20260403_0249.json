@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 02:40 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent. Does Iran have a path to the bomb?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent",
+      "detail": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-april-3-2026-crude-jumps-as-trump-dashes-hopes-of-quick-iran-war-end-brent-tops-111/articleshow/129992325.cms",
+      "fullAnalysis": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Does Iran have a path to the bomb?",
+      "detail": "Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n                                          | Photo Credit: AP Iran is expected to have around 500 kg of uranium enriched to 60%. U-235 is the isotope of uranium conventionally used in nuclear weapons and nuclear reactors.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/sci-tech/science/does-iran-have-a-path-to-the-bomb/article70816768.ece",
+      "fullAnalysis": "Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n                                          | Photo Credit: AP Iran is expected to have around 500 kg of uranium enriched to 60%. U-235 is the isotope of uranium conventionally used in nuclear weapons and nuclear reactors.",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-03 02:40 UTC"
+}
