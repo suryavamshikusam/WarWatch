@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 16:59 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran still maintains half its missile launchers and drones, US assessment finds:. Iran war: Why US allies are suffering more than its enemies. Drone footage shows a factory in Israel damaged by Iranian missile debris. French-owned container ship transits Hormuz Strait in first since Iran war. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran still maintains half its missile launchers and drones, US assessment finds:",
+      "detail": "More than a month into the joint US-Israeli war on Iran , the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblit",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-still-maintains-half-its-missile-launchers-and-drones-us-assessment-finds-report",
+      "fullAnalysis": "More than a month into the joint US-Israeli war on Iran , the Iranian military is still in possession of about half of its missile launchers and half of its suicide drones, a US intelligence assessment said, first reported by CNN on Thursday. The assessment flies in the face of the language of oblit",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war: Why US allies are suffering more than its enemies",
+      "detail": "In war, economic consequences often follow a logic distinct from military objectives. The unprovoked and illegal US - Israeli attack on Iran that began on 28 February is a striking case study. Among the several objectives raised by the two aggressors - goals, incidentally, that have constantly shift",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/iran-war-why-us-allies-are-suffering-more-its-enemies",
+      "fullAnalysis": "In war, economic consequences often follow a logic distinct from military objectives. The unprovoked and illegal US - Israeli attack on Iran that began on 28 February is a striking case study. Among the several objectives raised by the two aggressors - goals, incidentally, that have constantly shift",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Drone footage shows a factory in Israel damaged by Iranian missile debris",
+      "detail": "Drone footage shows a factory in Israel damaged by Iranian missile debris Drone footage from Israel shows damage to a factory in Petah Tikva after debris from an intercepted Iranian missile struck the site. The attack comes as Israel says it continues to intercept incoming missiles, on the 35th day ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/3/drone-footage-shows-a-factory-in-israel-damaged-by-iranian-missile-debris?traffic_source=rss",
+      "fullAnalysis": "Drone footage shows a factory in Israel damaged by Iranian missile debris Drone footage from Israel shows damage to a factory in Petah Tikva after debris from an intercepted Iranian missile struck the site. The attack comes as Israel says it continues to intercept incoming missiles, on the 35th day ",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "French-owned container ship transits Hormuz Strait in first since Iran war",
+      "detail": "A container ship belonging to French shipping giant CMA CGM has crossed \u2060\u2060through the Strait of Hormuz , the first such passage by a Western vessel since Iran effectively closed the waterway, the Marine Traffic vessel website shows. The Malta-flagged Kribi, owned by CMA CGM, crossed the Strait on Ap",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/3/french-owned-container-ship-transits-hormuz-strait-in-first-since-iran-war?traffic_source=rss",
+      "fullAnalysis": "A container ship belonging to French shipping giant CMA CGM has crossed \u2060\u2060through the Strait of Hormuz , the first such passage by a Western vessel since Iran effectively closed the waterway, the Marine Traffic vessel website shows. The Malta-flagged Kribi, owned by CMA CGM, crossed the Strait on Ap",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-03 16:59 UTC"
+}
