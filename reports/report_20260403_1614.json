@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 16:03 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Three tankers, including one Japanese-owned, cross Strait of Hormuz near Oman. Trump says U.S. can take Strait of Hormuz with more time. French, South Korean leaders say they'll work together on Strait of Hormuz. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Three tankers, including one Japanese-owned, cross Strait of Hormuz near Oman",
+      "detail": "Three tankers, including one co-owned by a Japanese company, crossed the Strait of Hormuz on Thursday by hugging close to Oman's shore, a rare transit route as\u00a0Iran\u00a0maintains a chokehold on the key war-torn passageway. Before the war which started more than a month ago, about a fifth of global oil a",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/three-tankers-including-one-japanese-owned-cross-strait-hormuz-near-oman",
+      "fullAnalysis": "Three tankers, including one co-owned by a Japanese company, crossed the Strait of Hormuz on Thursday by hugging close to Oman's shore, a rare transit route as\u00a0Iran\u00a0maintains a chokehold on the key war-torn passageway. Before the war which started more than a month ago, about a fifth of global oil a",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump says U.S. can take Strait of Hormuz with more time",
+      "detail": "U.S. President Donald Trump. File\n                                          | Photo Credit: Reuters U.S. President Donald Trump on \u200bFriday said the U.S. can open the \u200cStrait of Hormuz with a \u200blittle more time, as pressure \u2060mounts for his administration to find a quick resolution to a war against \u200cIr",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/trump-says-us-can-take-strait-of-hormuz-with-more-time/article70819945.ece",
+      "fullAnalysis": "U.S. President Donald Trump. File\n                                          | Photo Credit: Reuters U.S. President Donald Trump on \u200bFriday said the U.S. can open the \u200cStrait of Hormuz with a \u200blittle more time, as pressure \u2060mounts for his administration to find a quick resolution to a war against \u200cIr",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "French, South Korean leaders say they'll work together on Strait of Hormuz",
+      "detail": "Updated - April 03, 2026 03:11 pm IST - Seoul French President Emmanuel Macron, left, shakes hands with South Korean President Lee Jae Myung, right, during a joint press conference after their meeting at the presidential Blue House in Seoul Friday, April 3, 2026.\n                                    ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/french-south-korean-leaders-say-theyll-work-together-on-strait-of-hormuz/article70819110.ece",
+      "fullAnalysis": "Updated - April 03, 2026 03:11 pm IST - Seoul French President Emmanuel Macron, left, shakes hands with South Korean President Lee Jae Myung, right, during a joint press conference after their meeting at the presidential Blue House in Seoul Friday, April 3, 2026.\n                                    ",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-03 16:03 UTC"
+}

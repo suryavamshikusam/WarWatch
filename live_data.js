@@ -1,14 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 15:30 UTC",
+  "generatedAt": "2026-04-03 16:03 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran-Israel war LIVE: Netanyahu claims 70% of Iran's steel production capacity d \u00b7 U.S. President Donald Trump. File \n                                             \u2026"
+    "Other: Three tankers, including one Japanese-owned, cross Strait of Hormuz near Oman \u00b7 Three tankers, including one co-owned by a Japanese company, crossed the Strait \u2026",
+    "Other: Trump says U.S. can take Strait of Hormuz with more time \u00b7 U.S. President Donald Trump. File\n                                          | Ph\u2026",
+    "Other: French, South Korean leaders say they'll work together on Strait of Hormuz \u00b7 Updated - April 03, 2026 03:11 pm IST - Seoul French President Emmanuel Macron, \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-04-03 15:30 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 12,
+    "lastUpdated": "2026-04-03 16:03 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -48,15 +50,47 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Iran-Israel war LIVE: Netanyahu claims 70% of Iran's steel production capacity d",
-      "summary": "U.S. President Donald Trump. File \n                                                  | Photo Credit:  \n                          AP T he White House sent a spending proposal to lawmakers on Friday (April 3, 2026), calling for a massive $1.5 trillion U.S. defence budget next year as it faces increase",
+      "time": "11 min ago",
+      "headline": "Three tankers, including one Japanese-owned, cross Strait of Hormuz near Oman",
+      "summary": "Three tankers, including one co-owned by a Japanese company, crossed the Strait of Hormuz on Thursday by hugging close to Oman's shore, a rare transit route as\u00a0Iran\u00a0maintains a chokehold on the key war-torn passageway. Before the war which started more than a month ago, about a fifth of global oil a",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "U.S. President Donald Trump. File \n                                                  | Photo Credit:  \n                          AP T he White House sent a spending proposal to lawmakers on Friday (April 3, 2026), calling for a massive $1.5 trillion U.S. defence budget next year as it faces increase",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-live-updates-april-3-2026-west-asia-crisis-conflict/article70818422.ece",
+      "fullAnalysis": "Three tankers, including one co-owned by a Japanese company, crossed the Strait of Hormuz on Thursday by hugging close to Oman's shore, a rare transit route as\u00a0Iran\u00a0maintains a chokehold on the key war-torn passageway. Before the war which started more than a month ago, about a fifth of global oil a",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/three-tankers-including-one-japanese-owned-cross-strait-hormuz-near-oman",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Trump says U.S. can take Strait of Hormuz with more time",
+      "summary": "U.S. President Donald Trump. File\n                                          | Photo Credit: Reuters U.S. President Donald Trump on \u200bFriday said the U.S. can open the \u200cStrait of Hormuz with a \u200blittle more time, as pressure \u2060mounts for his administration to find a quick resolution to a war against \u200cIr",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "U.S. President Donald Trump. File\n                                          | Photo Credit: Reuters U.S. President Donald Trump on \u200bFriday said the U.S. can open the \u200cStrait of Hormuz with a \u200blittle more time, as pressure \u2060mounts for his administration to find a quick resolution to a war against \u200cIr",
+      "sourceUrl": "https://www.thehindu.com/news/international/trump-says-us-can-take-strait-of-hormuz-with-more-time/article70819945.ece",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "French, South Korean leaders say they'll work together on Strait of Hormuz",
+      "summary": "Updated - April 03, 2026 03:11 pm IST - Seoul French President Emmanuel Macron, left, shakes hands with South Korean President Lee Jae Myung, right, during a joint press conference after their meeting at the presidential Blue House in Seoul Friday, April 3, 2026.\n                                    ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Updated - April 03, 2026 03:11 pm IST - Seoul French President Emmanuel Macron, left, shakes hands with South Korean President Lee Jae Myung, right, during a joint press conference after their meeting at the presidential Blue House in Seoul Friday, April 3, 2026.\n                                    ",
+      "sourceUrl": "https://www.thehindu.com/news/international/french-south-korean-leaders-say-theyll-work-together-on-strait-of-hormuz/article70819110.ece",
       "sourceLabel": "The Hindu"
     },
     {
@@ -64,10 +98,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 12:06 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 13:58 UTC",
       "l": "HIGH",
@@ -194,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 15:30 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 16:03 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran-Israel war LIVE: Netanyahu claims 70% of Iran's steel production capacity d. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Three tankers, including one Japanese-owned, cross Strait of Hormuz near Oman. Trump says U.S. can take Strait of Hormuz with more time. French, South Korean leaders say they'll work together on Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
