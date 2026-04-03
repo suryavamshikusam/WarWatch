@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 11:54 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: These are Iran\u2019s key islands in the Gulf. Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers. Iran, US-Israel War News Live Updates: French-linked container ship transits Str. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "These are Iran\u2019s key islands in the Gulf",
+      "detail": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/these-are-irans-key-islands-gulf",
+      "fullAnalysis": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers",
+      "detail": "The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calvary in the Church of the Holy Sepulchre, amid Israeli restrictions on attendance. Only around 15 clergy members took part in the Liturgy of the Passion of Christ inside the basilica, traditionally believed to be the site ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/limited-good-friday-ceremony-held-holy-sepulchre-israel-bans-worshippers",
+      "fullAnalysis": "The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calvary in the Church of the Holy Sepulchre, amid Israeli restrictions on attendance. Only around 15 clergy members took part in the Liturgy of the Passion of Christ inside the basilica, traditionally believed to be the site ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran, US-Israel War News Live Updates: French-linked container ship transits Str",
+      "detail": "A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its joint owner Mitsui \u2060O.S.K. \u200bLines said on Friday. Crew members on the \u200bPanama-flagged ship, \"SOHAR \u200bLNG\", remain safe, \u2060a Mitsui O.S.K. Lines spokesperson \u200ctold Reuters, while declining to disclose when it crossed the stra",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-us-israel-war-news-live-updates-middle-east-crisis-trump-iran-drone-missile-attack-10616529/",
+      "fullAnalysis": "A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its joint owner Mitsui \u2060O.S.K. \u200bLines said on Friday. Crew members on the \u200bPanama-flagged ship, \"SOHAR \u200bLNG\", remain safe, \u2060a Mitsui O.S.K. Lines spokesperson \u200ctold Reuters, while declining to disclose when it crossed the stra",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-03 11:54 UTC"
+}

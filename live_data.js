@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 11:11 UTC",
+  "generatedAt": "2026-04-03 11:54 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
     "Other: These are Iran\u2019s key islands in the Gulf \u00b7 While most of its roughly 400 islands are small and uninhabited, several of them\u2026",
-    "Other: Iran says it shot down second US F-35 jet over Tehran \u00b7 Iran said on Friday that the Islamic Revolutionary Guard Corps (IRGC) air defenc\u2026"
+    "Other: Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers \u00b7 The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calva\u2026",
+    "Other: Iran, US-Israel War News Live Updates: French-linked container ship transits Str \u00b7 A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its jo\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 7,
-    "lastUpdated": "2026-04-03 11:11 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 8,
+    "lastUpdated": "2026-04-03 11:54 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,7 +50,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
+      "time": "11 min ago",
       "headline": "These are Iran\u2019s key islands in the Gulf",
       "summary": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
       "whyTxt": "Conflict ongoing.",
@@ -57,7 +58,7 @@ window.WARWATCH_LIVE = {
         "Other"
       ],
       "fullAnalysis": "While most of its roughly 400 islands are small and uninhabited, several of them are large and strategically important. The most significant of these islands lie in the Gulf, across from Iran's neighbours in the Arabian peninsula, and in the Strait of Hormuz. The latter waterway, which connects the ",
-      "sourceUrl": "https://www.middleeasteye.net/news/these-are-irans-key-islands-gulf",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/these-are-irans-key-islands-gulf",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -65,26 +66,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran says it shot down second US F-35 jet over Tehran",
-      "summary": "Iran said on Friday that the Islamic Revolutionary Guard Corps (IRGC) air defences had shot\u00a0down a US F-35 fighter jet over central Iran. A spokesperson for Iran\u2019s Khatam al-Anbiya central headquarters said the jet had been \u201ccompletely destroyed\u201d and that the pilot\u2019s chances of survival were low, in",
+      "time": "11 min ago",
+      "headline": "Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers",
+      "summary": "The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calvary in the Church of the Holy Sepulchre, amid Israeli restrictions on attendance. Only around 15 clergy members took part in the Liturgy of the Passion of Christ inside the basilica, traditionally believed to be the site ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran said on Friday that the Islamic Revolutionary Guard Corps (IRGC) air defences had shot\u00a0down a US F-35 fighter jet over central Iran. A spokesperson for Iran\u2019s Khatam al-Anbiya central headquarters said the jet had been \u201ccompletely destroyed\u201d and that the pilot\u2019s chances of survival were low, in",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-shot-down-second-us-f-35-jet-over-tehran",
+      "fullAnalysis": "The Latin Patriarch of Jerusalem led a scaled-down Good Friday ceremony at Calvary in the Church of the Holy Sepulchre, amid Israeli restrictions on attendance. Only around 15 clergy members took part in the Liturgy of the Passion of Christ inside the basilica, traditionally believed to be the site ",
+      "sourceUrl": "https://www.middleeasteye.net/news/limited-good-friday-ceremony-held-holy-sepulchre-israel-bans-worshippers",
       "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Iran, US-Israel War News Live Updates: French-linked container ship transits Str",
+      "summary": "A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its joint owner Mitsui \u2060O.S.K. \u200bLines said on Friday. Crew members on the \u200bPanama-flagged ship, \"SOHAR \u200bLNG\", remain safe, \u2060a Mitsui O.S.K. Lines spokesperson \u200ctold Reuters, while declining to disclose when it crossed the stra",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "A Japanese liquefied natural gas tanker has crossed the Strait of Hormuz, its joint owner Mitsui \u2060O.S.K. \u200bLines said on Friday. Crew members on the \u200bPanama-flagged ship, \"SOHAR \u200bLNG\", remain safe, \u2060a Mitsui O.S.K. Lines spokesperson \u200ctold Reuters, while declining to disclose when it crossed the stra",
+      "sourceUrl": "https://indianexpress.com/article/world/iran-us-israel-war-news-live-updates-middle-east-crisis-trump-iran-drone-missile-attack-10616529/",
+      "sourceLabel": "Indian Express"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 08:16 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 09:18 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 11:11 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 11:54 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: These are Iran\u2019s key islands in the Gulf. Iran says it shot down second US F-35 jet over Tehran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: These are Iran\u2019s key islands in the Gulf. Limited Good Friday ceremony held at Holy Sepulchre as Israel bans worshippers. Iran, US-Israel War News Live Updates: French-linked container ship transits Str. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
