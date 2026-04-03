@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 02:40 UTC",
+  "generatedAt": "2026-04-03 04:57 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent \u00b7 The TOI Business Desk is a vigilant and dedicated team of journalists committed \u2026",
-    "Other: Does Iran have a path to the bomb? \u00b7 Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n\u2026"
+    "Other: 'They'll stop when I stop': Trump asserts Israel will stop strikes on Iran when  \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-04-03 02:40 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 2,
+    "lastUpdated": "2026-04-03 04:57 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,42 +48,26 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent",
-      "summary": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
+      "time": "7 min ago",
+      "headline": "'They'll stop when I stop': Trump asserts Israel will stop strikes on Iran when ",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The TOI Business Desk is a vigilant and dedicated team of journalists committed to delivering the latest and most relevant business news from around the world to readers of The Times of India. The primary focus of the TOI Business Desk is to keep a watchful eye on the global business landscape, cove",
-      "sourceUrl": "https://timesofindia.indiatimes.com/business/international-business/oil-prices-today-april-3-2026-crude-jumps-as-trump-dashes-hopes-of-quick-iran-war-end-brent-tops-111/articleshow/129992325.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/theyll-stop-when-i-stop-trump-asserts-israel-will-stop-strikes-on-iran-when-he-tells-them-to/articleshow/129993065.cms",
       "sourceLabel": "Times of India"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Does Iran have a path to the bomb?",
-      "summary": "Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n                                          | Photo Credit: AP Iran is expected to have around 500 kg of uranium enriched to 60%. U-235 is the isotope of uranium conventionally used in nuclear weapons and nuclear reactors.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Centrifuges seen inside the Natanz uranium enrichment facility in central Iran.\n                                          | Photo Credit: AP Iran is expected to have around 500 kg of uranium enriched to 60%. U-235 is the isotope of uranium conventionally used in nuclear weapons and nuclear reactors.",
-      "sourceUrl": "https://www.thehindu.com/sci-tech/science/does-iran-have-a-path-to-the-bomb/article70816768.ece",
-      "sourceLabel": "The Hindu"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-01 22:36 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-01 23:57 UTC",
       "l": "HIGH",
@@ -211,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 02:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-03 04:57 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Oil prices today: Crude jumps as Trump dashes hopes of quick Iran war end; Brent. Does Iran have a path to the bomb?. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'They'll stop when I stop': Trump asserts Israel will stop strikes on Iran when . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
