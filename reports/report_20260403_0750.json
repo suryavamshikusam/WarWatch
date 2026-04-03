@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-03 07:39 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump threatens expanded US strikes on Iran civilian infrastructure. Iran warns UN Security Council against \u2018provocative action\u2019 on Hormuz. Iran war: What is happening on day 35 of US-Israeli attacks?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Trump threatens expanded US strikes on Iran civilian infrastructure",
+      "detail": "US President Donald Trump has warned that Washington \u201chasn't even started destroying what's left in Iran\u201d, signalling a potential escalation in attacks on infrastructure as efforts continue to restore energy flows through the Strait of Hormuz. Nearly five weeks after the war began with a joint US-Is",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-threatens-expanded-us-strikes-iran-civilian-infrastructure",
+      "fullAnalysis": "US President Donald Trump has warned that Washington \u201chasn't even started destroying what's left in Iran\u201d, signalling a potential escalation in attacks on infrastructure as efforts continue to restore energy flows through the Strait of Hormuz. Nearly five weeks after the war began with a joint US-Is",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran warns UN Security Council against \u2018provocative action\u2019 on Hormuz",
+      "detail": "Updated - April 03, 2026 12:42 pm IST - Tehran Iran's Foreign Minister Seyed Abbas Araghchi. File photo credit: The Hindu Iran warned the UN Security Council against any \"provocative action\", ahead of a scheduled vote on a draft resolution on the Strait of Hormuz that ended up being postponed. \"Any ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-un-security-council-against-provocative-action-on-hormuz/article70818943.ece",
+      "fullAnalysis": "Updated - April 03, 2026 12:42 pm IST - Tehran Iran's Foreign Minister Seyed Abbas Araghchi. File photo credit: The Hindu Iran warned the UN Security Council against any \"provocative action\", ahead of a scheduled vote on a draft resolution on the Strait of Hormuz that ended up being postponed. \"Any ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Iran war: What is happening on day 35 of US-Israeli attacks?",
+      "detail": "The United States and Israel are widening their attacks on Iran, hitting infrastructure in and around the capital, as Washington ramps up pressure on Tehran and the conflict spreads across the region. Meanwhile, US Defense Secretary Pete Hegseth has abruptly fired the US Army\u2019s top general and two o",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/3/iran-war-what-is-happening-on-day-35-of-us-israeli-attacks?traffic_source=rss",
+      "fullAnalysis": "The United States and Israel are widening their attacks on Iran, hitting infrastructure in and around the capital, as Washington ramps up pressure on Tehran and the conflict spreads across the region. Meanwhile, US Defense Secretary Pete Hegseth has abruptly fired the US Army\u2019s top general and two o",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-03 07:39 UTC"
+}
