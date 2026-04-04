@@ -1,14 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 00:04 UTC",
+  "generatedAt": "2026-04-04 03:17 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iranian missile attacks spark fires, damage in central and southern Israel \u00b7 Iranian missile attacks caused fires and damage in parts of central and southern\u2026"
+    "Other: Damage spreads across central Israel after missile interceptions \u00b7 Fragments from intercepted Iranian missiles caused damage across central Israel,\u2026",
+    "Other: Iranian missile attack hits residential areas in central Israel \u00b7 Iranian missile attack hits residential areas in central Israel An Iranian missi\u2026",
+    "Other: Iran war live: Tehran downs 2 US warplanes; Israel bombs Lebanon bridges \u00b7 Iran war live: Tehran downs 2 US warplanes; Israel bombs Lebanon bridges",
+    "Other: Cluster bomb attack collapses building in Israel, electricity line damaged \u00b7 An Iranian cluster bomb attack caused a building to collapse in Ramat Gan, accor\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-04-04 00:04 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 2,
+    "lastUpdated": "2026-04-04 03:17 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -48,15 +51,63 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Iranian missile attacks spark fires, damage in central and southern Israel",
-      "summary": "Iranian missile attacks caused fires and damage in parts of central and southern Israel, according to Israeli media reports. The YNet news outlet said a fire broke out in an apartment in Rosh Haayin, while a building in Petah Tikva and streets in Tel Aviv were damaged. Emergency crews were also depl",
+      "time": "13 min ago",
+      "headline": "Damage spreads across central Israel after missile interceptions",
+      "summary": "Fragments from intercepted Iranian missiles caused damage across central Israel, with one person injured by glass shards in Bnei Brak near Tel Aviv, according to Israel\u2019s Walla news agency. The report said debris fell across 17 sites, while an impact in a residential area of Rosh Haayin caused signi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iranian missile attacks caused fires and damage in parts of central and southern Israel, according to Israeli media reports. The YNet news outlet said a fire broke out in an apartment in Rosh Haayin, while a building in Petah Tikva and streets in Tel Aviv were damaged. Emergency crews were also depl",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attacks-spark-fires-damage-central-and-southern-israel",
+      "fullAnalysis": "Fragments from intercepted Iranian missiles caused damage across central Israel, with one person injured by glass shards in Bnei Brak near Tel Aviv, according to Israel\u2019s Walla news agency. The report said debris fell across 17 sites, while an impact in a residential area of Rosh Haayin caused signi",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/damage-spreads-across-central-israel-after-missile-interceptions",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iranian missile attack hits residential areas in central Israel",
+      "summary": "Iranian missile attack hits residential areas in central Israel An Iranian missile attack has caused damage across residential areas in central Israel, according to Israeli media. Cluster munitions were reportedly seen over Israel, leaving one person injured in Tel Aviv.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iranian missile attack hits residential areas in central Israel An Iranian missile attack has caused damage across residential areas in central Israel, according to Israeli media. Cluster munitions were reportedly seen over Israel, leaving one person injured in Tel Aviv.",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/4/iranian-missile-attack-hits-residential-areas-in-central-israel?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran war live: Tehran downs 2 US warplanes; Israel bombs Lebanon bridges",
+      "summary": "Iran war live: Tehran downs 2 US warplanes; Israel bombs Lebanon bridges",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran war live: Tehran downs 2 US warplanes; Israel bombs Lebanon bridges",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/4/iran-war-live-tehran-downs-2-us-warplanes-israel-bombs-lebanon-bridges?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Cluster bomb attack collapses building in Israel, electricity line damaged",
+      "summary": "An Iranian cluster bomb attack caused a building to collapse in Ramat Gan, according to Israel\u2019s Fire and Rescue services, Israeli media\u00a0reported. Times of Israel reported that the\u00a0strike also damaged a high-voltage electricity line in Rosh Ha\u2019ayin, triggering a power outage in parts of the city, it",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "An Iranian cluster bomb attack caused a building to collapse in Ramat Gan, according to Israel\u2019s Fire and Rescue services, Israeli media\u00a0reported. Times of Israel reported that the\u00a0strike also damaged a high-voltage electricity line in Rosh Ha\u2019ayin, triggering a power outage in parts of the city, it",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/cluster-bomb-attack-collapses-building-israel-electricity-line-damaged",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -64,10 +115,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +146,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 19:37 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 21:32 UTC",
       "l": "HIGH",
@@ -194,11 +240,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 00:04 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 03:17 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missile attacks spark fires, damage in central and southern Israel. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Damage spreads across central Israel after missile interceptions. Iranian missile attack hits residential areas in central Israel. Iran war live: Tehran downs 2 US warplanes; Israel bombs Lebanon bridges. Cluster bomb attack collapses building in Israel, electricity line damaged. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
