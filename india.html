@@ -12,10 +12,8 @@ html{scroll-behavior:smooth}
 body{font-family:'IBM Plex Sans',sans-serif;font-size:15px;line-height:1.75;background:#141414;color:#ddd}
 @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
 @keyframes fadeUp{from{opacity:0;transform:translateY(14px)}to{opacity:1;transform:translateY(0)}}
-@keyframes aiDot{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:1}}
 @keyframes dashMove{to{stroke-dashoffset:-20}}
 
-/* ── HEADER ── */
 header{background:#1a1a1a;padding:23px 32px;position:sticky;top:0;z-index:200;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #2a2a2a}
 .masthead{font-size:22px;font-weight:900;letter-spacing:-.02em;display:flex;align-items:center;line-height:1}
 .masthead-war{background:#c41e3a;color:#fff;padding:3px 10px}
@@ -26,13 +24,11 @@ nav{display:flex;align-items:center}
 .nav-item:hover{color:#fff}
 .nav-item.live{color:#c41e3a}
 .nav-item.active{color:#c41e3a}
-.ai-sum-badge{background:#1a1a1a;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
 .ai-sum-badge{background:transparent;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
 .live-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#c41e3a;margin-right:4px;animation:pulse 1.5s infinite}
 
-.page-wrap{max-width:1200px;margin:0 auto;padding:0 24px 60px}
+.page-wrap{max-width:1280px;margin:0 auto;padding:0 24px 60px}
 
-/* ── HERO ── */
 .hero-card{background:#1e1e1e;border-radius:8px;border:1px solid #2a2a2a;border-bottom:3px solid #c41e3a;padding:24px 28px;margin:22px 0;display:flex;align-items:flex-end;justify-content:space-between;gap:20px}
 .hero-eye{font-size:11px;color:#c41e3a;text-transform:uppercase;letter-spacing:.14em;font-weight:500;margin-bottom:6px;font-family:'IBM Plex Mono',monospace;display:flex;align-items:center;gap:6px}
 .hero-title{font-size:28px;font-weight:700;color:#eee;line-height:1.18;font-family:'Lora',serif}
@@ -42,99 +38,108 @@ nav{display:flex;align-items:center}
 .hs-n{font-size:20px;font-weight:700;font-family:'IBM Plex Mono',monospace}
 .hs-l{font-size:9px;color:#555;text-transform:uppercase;letter-spacing:.06em;margin-top:2px}
 
-/* ── TOP TWO COLUMN ── */
-.top-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:16px}
-.panel-box{background:#1e1e1e;border:1px solid #2a2a2a;border-radius:8px;padding:20px 22px}
-.panel-hdr{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#555;margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.panel-hdr::after{content:'';flex:1;height:1px;background:#2a2a2a}
-
-/* impact list */
-.impact-list{display:flex;flex-direction:column;gap:10px}
-.ic{background:#141414;border:1px solid #252525;border-radius:6px;padding:11px 13px;opacity:0;animation:fadeUp .4s ease forwards}
-.ic-meta{display:flex;align-items:center;gap:6px;margin-bottom:4px}
-.ic-cat{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#555;text-transform:uppercase;letter-spacing:.07em}
-.bc{background:#a32d2d;color:#fff;font-size:8px;font-weight:700;padding:2px 5px;border-radius:2px;text-transform:uppercase;letter-spacing:.04em;font-family:'IBM Plex Mono',monospace}
-.bh{background:#7a530a;color:#fff;font-size:8px;font-weight:700;padding:2px 5px;border-radius:2px;font-family:'IBM Plex Mono',monospace}
-.bg{background:#1d6e42;color:#fff;font-size:8px;font-weight:700;padding:2px 5px;border-radius:2px;font-family:'IBM Plex Mono',monospace}
-.ic-hl{font-size:13px;font-weight:700;color:#ccc;line-height:1.35;margin-bottom:3px;font-family:'Lora',serif}
-.ic-det{font-size:11px;color:#555;line-height:1.6}
-
-/* ai summary */
-.ai-lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:#555;margin-bottom:16px;display:flex;align-items:center;gap:8px}
-.ai-lbl::after{content:'';flex:1;height:1px;background:#2a2a2a}
-.ai-dot{display:inline-flex;gap:3px;align-items:center}
-.ai-dot span{display:inline-block;width:3px;height:3px;border-radius:50%;background:#c41e3a;animation:aiDot 1.2s ease-in-out infinite}
-.ai-dot span:nth-child(2){animation-delay:.2s}
-.ai-dot span:nth-child(3){animation-delay:.4s}
-.sum-para{font-size:13px;line-height:1.85;color:#777;margin-bottom:12px;font-weight:300}
-.sum-para:last-child{margin-bottom:0}
-.sum-ts{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#333;margin-top:14px;padding-top:10px;border-top:1px solid #252525}
-
-/* ── DIVIDER ── */
-.divider-bar{background:#1e1e1e;border-radius:8px;border:1px solid #2a2a2a;padding:14px 20px;display:flex;align-items:center;gap:14px;margin-bottom:16px}
+.divider-bar{background:#1e1e1e;border-radius:8px;border:1px solid #2a2a2a;padding:14px 20px;display:flex;align-items:center;gap:14px;margin-bottom:20px}
 .div-badge{background:#c41e3a;color:#fff;font-size:11px;font-weight:700;padding:5px 14px;border-radius:3px;letter-spacing:.08em;text-transform:uppercase;font-family:'IBM Plex Mono',monospace;white-space:nowrap}
 .div-title{font-size:20px;font-weight:700;color:#eee;font-family:'Lora',serif;white-space:nowrap}
 .div-sub{font-size:12px;color:#555;font-family:'IBM Plex Mono',monospace}
 .div-line{flex:1;height:1px;background:#2a2a2a}
 
-/* ── TIMELINE ── */
-.tl-outer{background:#1e1e1e;border-radius:8px;border:1px solid #2a2a2a;padding:20px 20px;position:relative}
-.tl-track{display:flex;flex-direction:column;position:relative}
-.tl-track::before{content:none}
+/* TODAY PINNED */
+.today-section{background:#1c1010;border:1px solid rgba(196,30,58,.5);border-radius:10px;padding:20px 22px;margin-bottom:24px;position:relative;overflow:hidden}
+.today-section::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,#c41e3a,rgba(196,30,58,.2))}
+.today-hdr{display:flex;align-items:center;gap:10px;margin-bottom:16px}
+.today-live-badge{display:flex;align-items:center;gap:6px;background:#c41e3a;color:#fff;font-family:'IBM Plex Mono',monospace;font-size:10px;font-weight:700;padding:4px 12px;border-radius:3px;letter-spacing:.1em;text-transform:uppercase}
+.today-date-lbl{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#c41e3a;font-weight:700;letter-spacing:.06em;text-transform:uppercase}
+.today-sub-lbl{font-family:'IBM Plex Mono',monospace;font-size:10px;color:#555;margin-left:auto}
+.today-row{display:grid;grid-template-columns:1fr 1fr;gap:16px}
 
-.entry{position:relative;opacity:0;transform:translateY(14px);transition:opacity .5s ease,transform .5s ease;display:flex;align-items:flex-start;gap:16px}
-.entry.vis{opacity:1;transform:translateY(0)}
+/* COLUMN HEADERS — big, no line */
+.col-headers{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:14px;padding:0 2px}
+.col-hdr{display:flex;align-items:center;gap:8px}
+.col-hdr-dot{width:8px;height:8px;border-radius:50%;flex-shrink:0}
+.col-hdr-label{font-family:'Lora',serif;font-size:20px;font-weight:700;letter-spacing:-.01em}
+.col-hdr-label.challenge-lbl{color:#c06060}
+.col-hdr-label.response-lbl{color:#3daa72}
 
-.yr{font-family:'IBM Plex Mono',monospace;font-size:24px;font-weight:700;color:#3a3a3a;min-width:100px;flex-shrink:0;padding-top:12px;text-align:right;line-height:1.1;letter-spacing:-.02em;opacity:0;transform:scale(0.7);transition:opacity .5s ease,transform .5s cubic-bezier(0.34,1.56,0.64,1),color .3s;user-select:none}
-.entry.vis .yr{opacity:1;transform:scale(1)}
-.entry:hover .yr{color:#c41e3a;transform:scale(1.06)}
+/* TIMELINE */
+.day-block{display:flex;flex-direction:column;gap:0}
+.day-row{display:grid;grid-template-columns:1fr 1fr;gap:16px;align-items:stretch;margin-bottom:6px}
 
-.card{background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;overflow:hidden;transition:transform .25s ease,border-color .2s;flex:1}
-.entry:hover .card{border-color:#c41e3a;transform:translateX(6px)}
-.entry:last-child .card{border-color:rgba(196,30,58,.35);background:#1c1010}
-.body{padding:18px 22px;flex:1}
-.meta{display:flex;align-items:center;gap:8px;margin-bottom:8px;flex-wrap:wrap}
+/* date label — dot + text, no line */
+.day-label-row{display:flex;align-items:center;gap:10px;margin-bottom:8px;margin-top:18px}
+.day-label-row:first-child{margin-top:0}
+.day-dot{width:7px;height:7px;border-radius:50%;background:#333;flex-shrink:0}
+.day-tag{font-family:'IBM Plex Mono',monospace;font-size:11px;font-weight:700;color:#444;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
 
-.tag-day{background:transparent;color:#555;font-size:10px;font-weight:500;padding:0;border:none;text-transform:uppercase;letter-spacing:.1em;font-family:'IBM Plex Mono',monospace;opacity:0;transform:translateY(5px);transition:opacity .35s ease .08s,transform .4s cubic-bezier(0.34,1.56,0.64,1) .08s,color .2s}
-.entry.vis .tag-day{opacity:1;transform:translateY(0)}
-.entry:hover .tag-day{color:#c41e3a}
+/* CARDS — pop on hover */
+.ch-card{
+  background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:14px 16px;
+  opacity:0;
+  transition:opacity .45s ease, transform .24s cubic-bezier(0.34,1.56,0.64,1), border-color .18s, box-shadow .24s;
+  height:100%;cursor:default;
+}
+.ch-card:hover{
+  border-color:rgba(196,30,58,.75);
+  transform:scale(1.028) translateY(-4px);
+  box-shadow:0 10px 36px rgba(196,30,58,.2),0 3px 10px rgba(0,0,0,.55);
+  z-index:2;position:relative;
+}
+.re-card{
+  background:#1a1a1a;border:1px solid #2a2a2a;border-radius:8px;padding:14px 16px;
+  opacity:0;
+  transition:opacity .45s ease, transform .24s cubic-bezier(0.34,1.56,0.64,1), border-color .18s, box-shadow .24s;
+  height:100%;cursor:default;
+}
+.re-card:hover{
+  border-color:rgba(61,170,114,.75);
+  transform:scale(1.028) translateY(-4px);
+  box-shadow:0 10px 36px rgba(61,170,114,.18),0 3px 10px rgba(0,0,0,.55);
+  z-index:2;position:relative;
+}
 
-.tag-ch{background:rgba(196,30,58,.1);color:#c06060;font-size:9px;font-weight:700;padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace}
-.tag-re{background:rgba(61,170,114,.1);color:#3daa72;font-size:9px;font-weight:700;padding:2px 7px;border-radius:2px;text-transform:uppercase;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace}
-.tag-cat{background:transparent;color:#444;font-size:9px;font-weight:500;padding:0;text-transform:uppercase;letter-spacing:.08em;font-family:'IBM Plex Mono',monospace}
+/* TODAY cards — always visible, hover still pops */
+.ch-card.today-card{background:#1c1010;border-color:rgba(196,30,58,.4);opacity:1}
+.re-card.today-card{background:#0e1c10;border-color:rgba(61,170,114,.35);opacity:1}
+.ch-card.today-card:hover{background:#221010}
+.re-card.today-card:hover{background:#0e2010}
 
-.c-title{font-size:15px;font-weight:700;color:#ddd;line-height:1.35;margin-bottom:8px;font-family:'Lora',serif;opacity:0;transform:translateY(10px);transition:opacity .45s ease .15s,transform .5s cubic-bezier(0.34,1.56,0.64,1) .15s,color .2s}
-.entry.vis .c-title{opacity:1;transform:translateY(0)}
-.entry:hover .c-title{color:#fff;transform:translateY(-1px)}
-.entry:last-child .c-title{color:#c41e3a}
+.card-type{font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;letter-spacing:.1em;text-transform:uppercase;margin-bottom:6px;display:flex;align-items:center;gap:6px;flex-wrap:wrap}
+.card-type.challenge{color:#c06060}
+.card-type.response{color:#3daa72}
+.card-type-dot{width:5px;height:5px;border-radius:50%;flex-shrink:0}
+.challenge .card-type-dot{background:#c41e3a}
+.response .card-type-dot{background:#3daa72}
 
-.c-desc{font-size:12px;color:#666;line-height:1.75;margin-bottom:0}
+.cat-pill{font-size:8px;font-weight:700;padding:2px 6px;border-radius:2px;text-transform:uppercase;letter-spacing:.05em;font-family:'IBM Plex Mono',monospace}
+.cat-energy{background:rgba(212,137,42,.15);color:#d4a94a;border:0.5px solid rgba(212,137,42,.25)}
+.cat-diaspora{background:rgba(26,95,196,.15);color:#7aabee;border:0.5px solid rgba(26,95,196,.3)}
+.cat-diplomacy{background:rgba(127,119,221,.15);color:#a89fe0;border:0.5px solid rgba(127,119,221,.25)}
+.cat-trade{background:rgba(212,137,42,.12);color:#d4a94a;border:0.5px solid rgba(212,137,42,.2)}
+.cat-security{background:rgba(196,30,58,.1);color:#e07070;border:0.5px solid rgba(196,30,58,.2)}
+.cat-aviation{background:rgba(26,95,196,.12);color:#7aabee;border:0.5px solid rgba(26,95,196,.25)}
+.cat-finance{background:rgba(61,170,114,.1);color:#5ccc8e;border:0.5px solid rgba(61,170,114,.2)}
 
-.resp-divider{display:flex;align-items:center;gap:10px;margin:14px 0 12px}
-.resp-divider::before,.resp-divider::after{content:'';flex:1;height:1px;background:#252525}
-.resp-arrow{font-family:'IBM Plex Mono',monospace;font-size:9px;color:#3daa72;text-transform:uppercase;letter-spacing:.08em;white-space:nowrap;display:flex;align-items:center;gap:4px}
+.bc{background:#a32d2d;color:#fff;font-size:8px;font-weight:700;padding:2px 5px;border-radius:2px;text-transform:uppercase;letter-spacing:.04em;font-family:'IBM Plex Mono',monospace}
+.bh{background:#7a530a;color:#fff;font-size:8px;font-weight:700;padding:2px 5px;border-radius:2px;font-family:'IBM Plex Mono',monospace}
 
-.c-desc-2{font-size:12px;color:#555;line-height:1.75}
+.card-hl{font-size:13px;font-weight:700;color:#ccc;line-height:1.35;margin-bottom:5px;font-family:'Lora',serif}
+.ch-card.today-card .card-hl{color:#e07070}
+.re-card.today-card .card-hl{color:#5dcc8e}
+.card-det{font-size:11px;color:#555;line-height:1.65}
 
-/* now */
-.now-lbl{display:flex;align-items:center;gap:6px;margin-bottom:8px}
-.now-t{font-size:9px;font-weight:700;color:#c41e3a;text-transform:uppercase;letter-spacing:.12em;font-family:'IBM Plex Mono',monospace}
+/* RED ARROWS */
+.row-connector{display:flex;justify-content:center;align-items:center;height:22px;margin-bottom:2px}
+.row-connector svg{overflow:visible;width:100%}
+.arr-path{stroke:#c41e3a;stroke-width:1.5;fill:none;stroke-dasharray:6 4;stroke-dashoffset:0;animation:dashMove 1.4s linear infinite;opacity:.5}
+.arr-head{fill:#c41e3a;opacity:.75}
 
-/* arrow connectors */
-.arrow-connector{display:flex;align-items:center;justify-content:center;height:32px;padding-left:116px}
-.arrow-connector svg{overflow:visible}
-.arrow-path{stroke:#c41e3a;stroke-width:1.5;fill:none;stroke-dasharray:6 4;stroke-dashoffset:0;animation:dashMove 1.4s linear infinite;opacity:.35}
-.arrow-head{fill:#c41e3a;opacity:.5}
-
-/* footer */
-footer{padding:18px 24px;border:1px solid #2a2a2a;background:#1a1a1a;border-radius:6px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:10px}
+footer{padding:18px 24px;border:1px solid #2a2a2a;background:#1a1a1a;border-radius:6px;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-top:16px}
 .footer-logo{font-family:'IBM Plex Mono',monospace;font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:#888}
 .footer-logo span{color:#c41e3a}
 .footer-meta{font-family:'IBM Plex Mono',monospace;font-size:11px;color:#555;text-align:right;line-height:1.7}
 
-@media(max-width:900px){.top-grid{grid-template-columns:1fr}}
-@media(max-width:600px){header{padding:12px 16px}.masthead{font-size:18px}.page-wrap{padding:0 14px 40px}.yr{font-size:16px;min-width:70px}}
-.ai-sum-badge{background:transparent;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
+@media(max-width:900px){.day-row,.today-row,.col-headers{grid-template-columns:1fr}}
+@media(max-width:600px){header{padding:12px 16px}.masthead{font-size:18px}.page-wrap{padding:0 14px 40px}}
 </style>
 </head>
 <body>
@@ -156,65 +161,20 @@ footer{padding:18px 24px;border:1px solid #2a2a2a;background:#1a1a1a;border-radi
 
 <div class="page-wrap">
 
-<!-- HERO -->
 <div class="hero-card">
   <div>
     <div class="hero-eye"><span style="width:6px;height:6px;border-radius:50%;background:#c41e3a;animation:pulse 1.5s infinite;display:inline-block;flex-shrink:0"></span>War &amp; India — Day by day</div>
     <div class="hero-title">India Since The War Began</div>
-    <div class="hero-sub">Today's impact · AI analysis · Challenges &amp; responses · Mar 10 onwards</div>
+    <div class="hero-sub">Challenges India faced · Government responses · Mar 10, 2026 onwards</div>
   </div>
   <div class="hero-stats">
-    <div class="hs"><div class="hs-n" style="color:#e05555">10</div><div class="hs-l">Days Active</div></div>
-    <div class="hs"><div class="hs-n" style="color:#d4892a" id="stat-impacts">4</div><div class="hs-l">Impact Areas</div></div>
+    <div class="hs"><div class="hs-n" style="color:#e05555">25</div><div class="hs-l">Days Active</div></div>
+    <div class="hs"><div class="hs-n" style="color:#d4892a" id="stat-impacts">6</div><div class="hs-l">Impact Areas</div></div>
     <div class="hs"><div class="hs-n" style="color:#3daa72">8.9M</div><div class="hs-l">Gulf Diaspora</div></div>
     <div class="hs"><div class="hs-n" style="color:#555" id="stat-sources">17</div><div class="hs-l">Sources</div></div>
   </div>
 </div>
 
-<!-- TOP TWO COLUMN -->
-<div class="top-grid">
-
-  <!-- LEFT: TODAY'S IMPACT -->
-  <div class="panel-box">
-    <div class="panel-hdr"><span class="live-dot"></span>Today's Impact</div>
-    <div class="impact-list" id="today-grid">
-      <div class="ic" style="animation-delay:.05s">
-        <div class="ic-meta"><span class="bc">High</span><span class="ic-cat">Energy</span></div>
-        <div class="ic-hl">India scrambles for oil as Chabahar and Hormuz threatened</div>
-        <div class="ic-det">60%+ of crude imports transit Hormuz. 30-day strategic reserves ordered.</div>
-      </div>
-      <div class="ic" style="animation-delay:.10s">
-        <div class="ic-meta"><span class="bc">High</span><span class="ic-cat">Diaspora</span></div>
-        <div class="ic-hl">3.5M Indians in UAE on alert after Dubai airport strike</div>
-        <div class="ic-det">MEA opened 24-hour control room. Air India rerouting 4,200 passengers.</div>
-      </div>
-      <div class="ic" style="animation-delay:.15s">
-        <div class="ic-meta"><span class="bh">Medium</span><span class="ic-cat">Diplomacy</span></div>
-        <div class="ic-hl">India walks tightrope between Iran, Israel and US</div>
-        <div class="ic-det">India abstained from UN votes. PM Modi has issued no public statement yet.</div>
-      </div>
-      <div class="ic" style="animation-delay:.20s">
-        <div class="ic-meta"><span class="bc">High</span><span class="ic-cat">Trade</span></div>
-        <div class="ic-hl">Chabahar operations disrupted — Central Asia route cut off</div>
-        <div class="ic-det">India's $85M port investment paralysed. Cargo diverted to Mundra port.</div>
-      </div>
-    </div>
-  </div>
-
-  <!-- RIGHT: AI SUMMARY -->
-  <div class="panel-box">
-    <div class="ai-lbl"><div class="ai-dot"><span></span><span></span><span></span></div>AI India Summary</div>
-    <div id="india-summary-text">
-      <p class="sum-para">India is caught at every pressure point in this conflict. Its oil supply, 8.9M diaspora in the Gulf, Chabahar investment, and carefully balanced diplomatic relationships with all combatants are simultaneously under stress.</p>
-      <p class="sum-para">For ordinary Indians, the most immediate impact is at the petrol pump. Crude above $97 means fuel price hikes are likely within weeks. Families in Kerala, Andhra Pradesh and Tamil Nadu are watching with particular anxiety.</p>
-      <p class="sum-para">The government is managing quietly — working back channels intensively. Priority: protecting nationals, securing energy alternatives, and avoiding forced diplomatic choices between Washington, Tel Aviv and Tehran.</p>
-    </div>
-    <div class="sum-ts" id="summary-time"></div>
-  </div>
-
-</div>
-
-<!-- DIVIDER -->
 <div class="divider-bar">
   <div class="div-badge">Since The War Began</div>
   <div class="div-title">Day by Day</div>
@@ -222,89 +182,197 @@ footer{padding:18px 24px;border:1px solid #2a2a2a;background:#1a1a1a;border-radi
   <div class="div-line"></div>
 </div>
 
-<!-- TIMELINE -->
-<div class="tl-outer">
-<div class="tl-track" id="tl-track">
-
-  <div class="entry">
-    <div class="yr">Mar 10</div>
-    <div class="card"><div class="body">
-      <div class="meta"><span class="tag-day">Day 1 · War Begins</span><span class="tag-ch">Challenge</span><span class="tag-cat">Energy</span></div>
-      <div class="c-title">Brent crude spikes — India's $200B oil import bill threatened overnight</div>
-      <div class="c-desc">US strikes on Iran sent Brent surging past $84. Every $10/barrel rise costs India ~$15B/year and pushes fuel prices ₹5–6/litre at the pump. India's energy security ministry convened emergency calls with Gulf suppliers within hours of the first strike.</div>
-      <div class="resp-divider"><div class="resp-arrow">↓ India's Response</div></div>
-      <div class="meta"><span class="tag-re">Response</span><span class="tag-cat">Energy Security</span></div>
-      <div class="c-desc-2">Ministry of Petroleum ordered 30-day strategic reserve buildup. Fast-tracked crude deals with US, UAE and Iraqi suppliers. Indian refiners directed to activate emergency procurement protocols and identify non-Hormuz alternatives.</div>
-    </div></div>
+<!-- TODAY PINNED TOP -->
+<div class="today-section">
+  <div class="today-hdr">
+    <div class="today-live-badge"><span style="width:5px;height:5px;border-radius:50%;background:#fff;display:inline-block;animation:pulse 1.5s infinite"></span>Live</div>
+    <div class="today-date-lbl" id="today-date-lbl">Apr 4, 2026 · Today</div>
+    <div class="today-sub-lbl">Moves to timeline below when new news arrives tomorrow</div>
   </div>
-
-  <div class="entry">
-    <div class="yr">Mar 11</div>
-    <div class="card"><div class="body">
-      <div class="meta"><span class="tag-day">Day 2 · Diaspora Alert</span><span class="tag-ch">Challenge</span><span class="tag-cat">Diaspora</span></div>
-      <div class="c-title">3.5M Indians in UAE on alert as conflict spreads to Gulf</div>
-      <div class="c-desc">With Iran striking UAE-proximate targets, India's largest overseas community faced immediate uncertainty. Gulf remittances — $125B/year — at risk. Kerala, Andhra Pradesh and Tamil Nadu hit hardest as families flooded MEA helplines seeking news.</div>
-      <div class="resp-divider"><div class="resp-arrow">↓ India's Response</div></div>
-      <div class="meta"><span class="tag-re">Response</span><span class="tag-cat">Aviation · Advisory</span></div>
-      <div class="c-desc-2">MEA issued travel advisory urging Indians to avoid Iran, Israel and Lebanon. Air India and IndiGo began rerouting 1,200 affected passengers. DGCA granted temporary pilot duty relaxation to handle the surge in emergency travel demand.</div>
-    </div></div>
+  <div class="today-row">
+    <div class="ch-card today-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-security">Three Fronts Simultaneously</span> <span class="bc">High</span></div>
+      <div class="card-hl">Chabahar, Hormuz and Dubai pressures hit India simultaneously in 12 hours</div>
+      <div class="card-det">The most intense period of the war for Indian interests. Energy supply, diaspora safety and diplomatic channels all under maximum pressure at once. Iran launches fresh missiles at Israel even as talks are claimed. NSA Doval chairs emergency Cabinet Security Committee briefing. Rupee at ₹93.8, straining import costs hard.</div>
+    </div>
+    <div class="re-card today-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-security">Security · Evacuation</span></div>
+      <div class="card-hl">India assesses three evacuation scenarios, Navy on Gulf standby</div>
+      <div class="card-det">Three scenarios assessed: partial Hormuz closure, full closure, and normalisation. Indian Navy vessels positioned for mass Gulf evacuation if required. Emergency fuel rationing protocols drafted. India's most complex diplomatic moment since the 1990 Gulf War — 1.7L Indians evacuated then, 8.9M at risk now.</div>
+    </div>
   </div>
-
-  <div class="entry">
-    <div class="yr">Mar 12</div>
-    <div class="card"><div class="body">
-      <div class="meta"><span class="tag-day">Day 3 · Hormuz Blockade</span><span class="tag-ch">Challenge</span><span class="tag-cat">Energy · Trade</span></div>
-      <div class="c-title">Hormuz blockaded — 60% of India's crude imports cut off for 4 hours</div>
-      <div class="c-desc">Over 60% of India's crude oil imports pass through the Strait of Hormuz. The 4-hour blockade triggered emergency calls with Gulf energy partners and panicked Indian refiners who had no alternative routing. Brent hit $94 — petrol pump hikes became inevitable.</div>
-      <div class="resp-divider"><div class="resp-arrow">↓ India's Response</div></div>
-      <div class="meta"><span class="tag-re">Response</span><span class="tag-cat">Diplomacy · Trade</span></div>
-      <div class="c-desc-2">India used its unique relationship with Tehran to negotiate passage guarantees for Indian-flagged vessels. Quiet talks opened on releasing seized tankers in exchange for diplomatic goodwill — India's rare neutral position used as direct leverage.</div>
-    </div></div>
-  </div>
-
-  <div class="entry">
-    <div class="yr">Mar 13</div>
-    <div class="card"><div class="body">
-      <div class="meta"><span class="tag-day">Day 4 · Dubai Strike</span><span class="tag-ch">Challenge</span><span class="tag-cat">Security · Diaspora</span></div>
-      <div class="c-title">Drone hits Dubai airport — 200,000 Indians in direct blast radius</div>
-      <div class="c-desc">A Shahed drone detonated near Dubai International cargo terminal. Indian nationals make up the single largest expat group in the UAE. Flights halted, panic calls flooded MEA helplines, and the question of mass evacuation became real for the first time.</div>
-      <div class="resp-divider"><div class="resp-arrow">↓ India's Response</div></div>
-      <div class="meta"><span class="tag-re">Response</span><span class="tag-cat">Consular · Evacuation</span></div>
-      <div class="c-desc-2">India deployed 3 emergency Air India flights to Dubai within 6 hours. MEA's consular crisis cell activated. Helpline set up — 4,200 Indians registered for priority evacuation. NDRF placed on standby for mass casualty protocol.</div>
-    </div></div>
-  </div>
-
-  <div class="entry">
-    <div class="yr">Mar 15–16</div>
-    <div class="card"><div class="body">
-      <div class="meta"><span class="tag-day">Days 5–6 · Chabahar at Risk</span><span class="tag-ch">Challenge</span><span class="tag-cat">Trade · Investment</span></div>
-      <div class="c-title">US strikes near Chabahar — India's $85M port investment directly threatened</div>
-      <div class="c-desc">Strikes near Bandar Abbas disrupted Chabahar free zone operations — India's key strategic access route to Central Asia bypassing Pakistan. A decade of diplomatic work and $85M investment now paralysed overnight. Cargo diverted to Mundra.</div>
-      <div class="resp-divider"><div class="resp-arrow">↓ India's Response</div></div>
-      <div class="meta"><span class="tag-re">Response</span><span class="tag-cat">Diplomacy</span></div>
-      <div class="c-desc-2">PM Modi called both Netanyahu and Khamenei — India's rare dual-channel diplomacy praised internationally. MEA reiterated: no war, protect civilians, resume dialogue. India refused to be forced into choosing sides between Washington, Tel Aviv and Tehran.</div>
-    </div></div>
-  </div>
-
-  <div class="entry">
-    <div class="yr">Mar 20</div>
-    <div class="card"><div class="body">
-      <div class="now-lbl"><span style="width:6px;height:6px;border-radius:50%;background:#c41e3a;animation:pulse 1s infinite;display:inline-block"></span><div class="now-t">Now — Peak Intensity</div></div>
-      <div class="meta"><span class="tag-day">Today · Three Simultaneous Fronts</span><span class="tag-ch">Challenge</span></div>
-      <div class="c-title">Three simultaneous threats — Chabahar, Hormuz, Dubai — within 12 hours</div>
-      <div class="c-desc">The most intense 12-hour period of the war for Indian interests. Energy supply, diaspora safety and diplomatic channels all under maximum pressure simultaneously. NSA Doval chairs emergency Cabinet Security Committee briefing.</div>
-      <div class="resp-divider"><div class="resp-arrow">↓ India's Response</div></div>
-      <div class="meta"><span class="tag-re">Response</span><span class="tag-cat">Security · Energy</span></div>
-      <div class="c-desc-2">Three evacuation scenarios assessed: partial Hormuz closure, full closure, and normalisation. Indian Navy placed on standby for Gulf mass evacuation. Emergency fuel rationing protocols drafted. India's most complex diplomatic moment since 1990 Gulf War evacuation.</div>
-    </div></div>
-  </div>
-
 </div>
+
+<!-- COLUMN HEADERS -->
+<div class="col-headers">
+  <div class="col-hdr">
+    <span class="col-hdr-dot" style="background:#c41e3a"></span>
+    <span class="col-hdr-label challenge-lbl">Challenge</span>
+  </div>
+  <div class="col-hdr">
+    <span class="col-hdr-dot" style="background:#3daa72"></span>
+    <span class="col-hdr-label response-lbl">India's Response</span>
+  </div>
 </div>
+
+<!-- HISTORICAL TIMELINE (newest first → Mar 10 at bottom) -->
+<div class="day-block">
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 19–23 · Days 10–14 · Diplomacy Window</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-diplomacy">Diplomacy · Economy</span> <span class="bh">Medium</span></div>
+      <div class="card-hl">US–Iran talks signal — India caught between ceasefire push and ally loyalty</div>
+      <div class="card-det">US–Iran back-channel contacts via Pakistan raised hopes but complicated India's position. If talks succeed without India's involvement, its Gulf influence could diminish. USD/INR hit ₹93.8, straining import bills further.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-finance">Diplomacy · Finance</span></div>
+      <div class="card-hl">RBI intervenes in forex market, India signals willingness to host ceasefire talks</div>
+      <div class="card-det">RBI sold dollars to stem rupee depreciation. MEA quietly signalled India's readiness to host neutral talks, leveraging its standing with both Washington and Tehran. India's SCO presidency used as diplomatic platform.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 17–18 · Days 8–9 · Kharg Island Threat</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-energy">Energy · Markets</span> <span class="bc">High</span></div>
+      <div class="card-hl">Kharg Island on IDF strike list — India's crude supply chain in existential danger</div>
+      <div class="card-det">90% of Iran's crude threatened. Brent hit $97. Indian refinery stockpiles fell to 18-day cover. IOC shares dropped 3%. A petrol price hike of ₹8–10/litre was modelled by the ministry.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-energy">Energy Security</span></div>
+      <div class="card-hl">Strategic petroleum reserve tapped, ONGC Videsh activates emergency procurement</div>
+      <div class="card-det">First SPR tap since COVID. Fast-tracked crude from US Gulf Coast, Nigeria and Kazakhstan. Indian Navy placed on Gulf standby for tanker escort protocol if Hormuz supply lines broke down further.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 15–16 · Days 6–7 · Chabahar at Risk</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-trade">Trade · Investment</span> <span class="bc">High</span></div>
+      <div class="card-hl">US strikes near Chabahar — India's $85M port investment directly paralysed</div>
+      <div class="card-det">Strikes near Bandar Abbas disrupted Chabahar free zone — India's key route to Central Asia bypassing Pakistan. A decade of diplomatic work and $85M investment overnight at risk. Cargo diverted to Mundra port.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-diplomacy">Diplomacy</span></div>
+      <div class="card-hl">PM Modi calls both Netanyahu and Khamenei — rare dual-channel diplomacy praised internationally</div>
+      <div class="card-det">MEA reiterated: no war, protect civilians, resume dialogue. India refused to be forced into choosing sides between Washington, Tel Aviv and Tehran — non-alignment used as genuine diplomatic leverage.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 14 · Day 5 · Sleeper Cells Activated</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-security">Security</span> <span class="bh">Medium</span></div>
+      <div class="card-hl">IRGC sleeper cells activated in US — Indian IT diaspora in Silicon Valley alarmed</div>
+      <div class="card-det">FBI detecting IRGC activation signals across US cities raised concern among 4.4M Indian-Americans, especially in tech hubs. H-1B holders contacted Indian consulates fearing lockdowns or emergency travel restrictions.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-diplomacy">Consular</span></div>
+      <div class="card-hl">Indian consulates in New York, San Francisco and Houston issue precautionary advisories</div>
+      <div class="card-det">MEA coordinated with US State Department to ensure Indian nationals' security. Visa extension processes expedited for those unable to travel. Emergency helplines opened in all three cities.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 13 · Day 4 · Dubai Strike</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-security">Security · Diaspora</span> <span class="bc">High</span></div>
+      <div class="card-hl">Drone hits Dubai airport — 200,000 Indians in direct blast radius</div>
+      <div class="card-det">A Shahed drone detonated near Dubai International cargo terminal. Indians are the single largest expat group in UAE. Flights halted, panic calls flooded MEA helplines, mass evacuation became a real contingency for the first time.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-aviation">Consular · Evacuation</span></div>
+      <div class="card-hl">3 emergency Air India flights to Dubai within 6 hours, NDRF on mass casualty standby</div>
+      <div class="card-det">MEA's consular crisis cell activated. 24-hour helpline set up — 4,200 Indians registered for priority evacuation. Air India waived rebooking fees for all Gulf routes. NDRF placed on standby for mass casualty protocol.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 12 · Day 3 · Hormuz Blockade</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-energy">Energy · Trade</span> <span class="bc">High</span></div>
+      <div class="card-hl">Hormuz blockaded — 60% of India's crude imports cut off for 4 hours</div>
+      <div class="card-det">Over 60% of India's crude oil imports pass through the Strait of Hormuz. The 4-hour blockade triggered emergency calls with Gulf energy partners and panicked Indian refiners. Brent hit $94 — petrol pump hikes became inevitable.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-diplomacy">Diplomacy</span></div>
+      <div class="card-hl">India negotiates passage guarantees for Indian-flagged vessels via Tehran back-channel</div>
+      <div class="card-det">India's unique relationship with Tehran deployed to negotiate passage guarantees. Quiet talks opened on releasing seized tankers in exchange for diplomatic goodwill — India's rare neutral position used as direct leverage.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 11 · Day 2</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-diaspora">Diaspora</span> <span class="bc">High</span></div>
+      <div class="card-hl">3.5M Indians in UAE on alert as conflict spreads to Gulf states</div>
+      <div class="card-det">Iran striking UAE-proximate targets put India's largest overseas community in immediate uncertainty. Gulf remittances — $125B/year — at risk. Families in Kerala, Andhra Pradesh and Tamil Nadu flooded MEA helplines.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-aviation">Aviation · Advisory</span></div>
+      <div class="card-hl">MEA issues travel advisory, Air India and IndiGo begin emergency rerouting</div>
+      <div class="card-det">Advisory urging Indians to avoid Iran, Israel and Lebanon. Air India and IndiGo rerouted 1,200 affected passengers. DGCA granted temporary pilot duty relaxation to handle the surge in emergency travel demand.</div>
+    </div>
+  </div>
+
+  <div class="row-connector"><svg height="22" viewBox="0 0 600 22" preserveAspectRatio="none"><path class="arr-path" d="M300 0 L300 14"/><polygon class="arr-head" points="300,21 295,12 305,12"/></svg></div>
+
+  <div class="day-label-row">
+    <div class="day-dot"></div>
+    <div class="day-tag">Mar 10 · Day 1 · War Begins</div>
+  </div>
+  <div class="day-row">
+    <div class="ch-card">
+      <div class="card-type challenge"><span class="card-type-dot"></span>Challenge <span class="cat-pill cat-energy">Energy</span> <span class="bc">High</span></div>
+      <div class="card-hl">Brent crude spikes — India's $200B oil import bill threatened overnight</div>
+      <div class="card-det">US strikes on Iran sent Brent surging past $84. Every $10/barrel rise costs India ~$15B/year and pushes fuel prices ₹5–6/litre at the pump. Energy security ministry convened emergency calls with Gulf suppliers within hours of the first strike.</div>
+    </div>
+    <div class="re-card">
+      <div class="card-type response"><span class="card-type-dot"></span>India's Response <span class="cat-pill cat-energy">Energy Security</span></div>
+      <div class="card-hl">Ministry of Petroleum orders 30-day strategic reserve buildup, fast-tracks Gulf crude deals</div>
+      <div class="card-det">Fast-tracked crude deals with US, UAE and Iraqi suppliers. Indian refiners directed to activate emergency procurement protocols and identify non-Hormuz alternatives. Diplomatic outreach to all Gulf producers within 24 hours.</div>
+    </div>
+  </div>
+
+</div><!-- /day-block -->
 
 <footer>
   <div class="footer-logo">War<span>Watch</span> — India</div>
-  <div class="footer-meta">Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel · Iran International<br>AI Summariser</div>
+  <div class="footer-meta">Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel · Iran International<br>AI Summariser · Updated every 15 min</div>
 </footer>
 
 </div>
@@ -312,49 +380,32 @@ footer{padding:18px 24px;border:1px solid #2a2a2a;background:#1a1a1a;border-radi
 <script src="live_data.js" onerror="void 0"></script>
 <script>
 (function(){
-  var d=new Date();
+  var d = new Date();
   var DAYS=['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
   var MONS=['January','February','March','April','May','June','July','August','September','October','November','December'];
-  document.getElementById('header-date').textContent=DAYS[d.getDay()]+', '+MONS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
-})();
+  document.getElementById('header-date').textContent = DAYS[d.getDay()]+', '+MONS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear();
 
-var D=window.WARWATCH_LIVE;
-if(D){
-  if(D.heroStats&&D.heroStats.sourcesUsed) document.getElementById('stat-sources').textContent=D.heroStats.sourcesUsed;
-  if(D.indiaImpact&&D.indiaImpact.length) document.getElementById('stat-impacts').textContent=D.indiaImpact.length;
-  if(D.generatedAt) document.getElementById('summary-time').textContent='Updated: '+D.generatedAt;
-  if(D.indiaImpact&&D.indiaImpact.length){
-    var grid=document.getElementById('today-grid');
-    var SEV={HIGH:'<span class="bc">High</span>',MEDIUM:'<span class="bh">Medium</span>',LOW:'<span class="bg">Low</span>'};
-    grid.innerHTML=D.indiaImpact.slice(0,5).map(function(item,i){
-      return '<div class="ic" style="animation-delay:'+(i*.07).toFixed(2)+'s">'
-        +'<div class="ic-meta">'+(SEV[item.significance]||SEV.MEDIUM)+'<span class="ic-cat">'+(item.category||'')+'</span></div>'
-        +'<div class="ic-hl">'+item.headline+'</div>'
-        +'<div class="ic-det">'+(item.detail||'').slice(0,120)+'</div>'
-        +'</div>';
-    }).join('');
-  }
-  if(D.indiaSummary&&D.indiaSummary.trim()){
-    document.getElementById('india-summary-text').innerHTML=D.indiaSummary.split(/\n\n+/).filter(Boolean).map(function(p){
-      return '<p class="sum-para">'+p.trim()+'</p>';
-    }).join('');
-  }
-}
+  var todayLbl = document.getElementById('today-date-lbl');
+  if(todayLbl) todayLbl.textContent = MONS[d.getMonth()]+' '+d.getDate()+', '+d.getFullYear()+' · Today';
 
-window.addEventListener('load',function(){
-  var track=document.getElementById('tl-track');
-  Array.from(track.querySelectorAll('.entry')).forEach(function(entry,i,arr){
-    if(i===arr.length-1) return;
-    var a=document.createElement('div');
-    a.className='arrow-connector';
-    a.innerHTML='<svg width="40" height="32" viewBox="0 0 40 32"><path class="arrow-path" d="M20 0 L20 20"/><polygon class="arrow-head" points="20,30 14,17 26,17"/></svg>';
-    entry.after(a);
+  var D = window.WARWATCH_LIVE;
+  if(D){
+    if(D.heroStats&&D.heroStats.sourcesUsed) document.getElementById('stat-sources').textContent = D.heroStats.sourcesUsed;
+    if(D.indiaImpact&&D.indiaImpact.length) document.getElementById('stat-impacts').textContent = D.indiaImpact.length;
+  }
+
+  // Fade in historical cards on scroll
+  window.addEventListener('load', function(){
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if(e.isIntersecting) e.target.style.opacity = '1';
+      });
+    }, {threshold:.08});
+    document.querySelectorAll('.ch-card:not(.today-card), .re-card:not(.today-card)').forEach(function(el){
+      obs.observe(el);
+    });
   });
-  var obs=new IntersectionObserver(function(entries){
-    entries.forEach(function(e){if(e.isIntersecting){e.target.classList.add('vis');obs.unobserve(e.target);}});
-  },{threshold:.1});
-  document.querySelectorAll('.entry').forEach(function(el){obs.observe(el);});
-});
+})();
 </script>
 </body>
 </html>
