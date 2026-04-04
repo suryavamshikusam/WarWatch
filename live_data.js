@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 17:26 UTC",
+  "generatedAt": "2026-04-04 18:33 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: UAE condemns pro-Palestine protests targeting its embassy in Syria \u00b7 Pro- Palestine protests in Damascus have spilled over into anger directed at the\u2026",
-    "Other: Trump says Iran has 48 hours to make deal as search for US pilot continues \u00b7 United States President Donald Trump has issued another threat to Iran, writing \u2026"
+    "Other: All hell will \u2018reign down\u2019: Trump\u2019s 48-hour deadline to Iran over Strait of Horm \u00b7 US President Donald Trump on Saturday issued a stark warning, reminding Iran tha\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 14,
-    "lastUpdated": "2026-04-04 17:26 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 15,
+    "lastUpdated": "2026-04-04 18:33 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,33 +48,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "UAE condemns pro-Palestine protests targeting its embassy in Syria",
-      "summary": "Pro- Palestine protests in Damascus have spilled over into anger directed at the United Arab Emirates (UAE), with demonstrators targeting its embassy over the country\u2019s support for Israel amid the ongoing genocide in Gaza. Dozens gathered outside the UAE embassy on Friday, some chanting \"the Zionist",
+      "time": "7 min ago",
+      "headline": "All hell will \u2018reign down\u2019: Trump\u2019s 48-hour deadline to Iran over Strait of Horm",
+      "summary": "US President Donald Trump on Saturday issued a stark warning, reminding Iran that \u201ctime is running out\u201d as the April 6 deadline for Tehran to reopen the Strait of Hormuz approaches. The ultimatum comes in the backdrop of a massive US troop buildup in West Asia and recurring reports of a potential gr",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Pro- Palestine protests in Damascus have spilled over into anger directed at the United Arab Emirates (UAE), with demonstrators targeting its embassy over the country\u2019s support for Israel amid the ongoing genocide in Gaza. Dozens gathered outside the UAE embassy on Friday, some chanting \"the Zionist",
-      "sourceUrl": "https://www.middleeasteye.net/news/uae-condemns-pro-palestine-protests-syria-targeted-its-embassy-over-israel-ties-0",
-      "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Trump says Iran has 48 hours to make deal as search for US pilot continues",
-      "summary": "United States President Donald Trump has issued another threat to Iran, writing that it has two days to \u201cmake a deal or open up the Hormuz Strait\u201d. Saturday\u2019s brief, three-sentence post on Truth Social did not reference the ongoing search for a US pilot who is believed to have ejected over Iran afte",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "United States President Donald Trump has issued another threat to Iran, writing that it has two days to \u201cmake a deal or open up the Hormuz Strait\u201d. Saturday\u2019s brief, three-sentence post on Truth Social did not reference the ongoing search for a US pilot who is believed to have ejected over Iran afte",
-      "sourceUrl": "https://www.aljazeera.com/news/2026/4/4/trump-says-iran-has-48-hours-to-make-deal-as-search-for-us-pilot-continues?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
+      "fullAnalysis": "US President Donald Trump on Saturday issued a stark warning, reminding Iran that \u201ctime is running out\u201d as the April 6 deadline for Tehran to reopen the Strait of Hormuz approaches. The ultimatum comes in the backdrop of a massive US troop buildup in West Asia and recurring reports of a potential gr",
+      "sourceUrl": "https://indianexpress.com/article/world/donald-trump-iran-threat-strait-of-hormuz-kharg-island-oil-exports-10619185/",
+      "sourceLabel": "Indian Express",
       "type": "war"
     },
     {
@@ -83,10 +65,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +97,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 15:30 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 16:03 UTC",
       "l": "HIGH",
@@ -214,11 +191,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 17:26 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 18:33 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: UAE condemns pro-Palestine protests targeting its embassy in Syria. Trump says Iran has 48 hours to make deal as search for US pilot continues. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: All hell will \u2018reign down\u2019: Trump\u2019s 48-hour deadline to Iran over Strait of Horm. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
