@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 07:19 UTC",
+  "generatedAt": "2026-04-04 08:03 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israeli military says it hit military sites in Iran \u00b7 The Israeli military said it carried out air strikes on military sites in Tehran\u2026"
+    "Other: 'Be serious... don't speak every day': Macron criticises Trump approach to Iran  \u00b7 The Iran war requires a \"serious\" approach that does not change every day, Emman\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-04-04 07:19 UTC",
+    "updatesToday": 6,
+    "lastUpdated": "2026-04-04 08:03 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,23 +48,23 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "Israeli military says it hit military sites in Iran",
-      "summary": "The Israeli military said it carried out air strikes on military sites in Tehran on Friday, targeting what it described as key defence and weapons facilities. In a statement, it said the air force struck \u201cregime aerial defence sites, including an IRGC aerial defence site where missiles intended to t",
+      "time": "7 min ago",
+      "headline": "'Be serious... don't speak every day': Macron criticises Trump approach to Iran ",
+      "summary": "The Iran war requires a \"serious\" approach that does not change every day, Emmanuel Macron has said, in an apparent reference to US President Donald Trump's seemingly contradictory remarks about the conflict. \"This is not a show. We are talking about war and peace and the lives of men and women,\" th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli military said it carried out air strikes on military sites in Tehran on Friday, targeting what it described as key defence and weapons facilities. In a statement, it said the air force struck \u201cregime aerial defence sites, including an IRGC aerial defence site where missiles intended to t",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-it-hit-military-sites-iran",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "The Iran war requires a \"serious\" approach that does not change every day, Emmanuel Macron has said, in an apparent reference to US President Donald Trump's seemingly contradictory remarks about the conflict. \"This is not a show. We are talking about war and peace and the lives of men and women,\" th",
+      "sourceUrl": "https://www.bbc.com/news/articles/cevk0e4ykwko?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 04:57 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 06:11 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 07:19 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 08:03 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli military says it hit military sites in Iran. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Be serious... don't speak every day': Macron criticises Trump approach to Iran . Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
