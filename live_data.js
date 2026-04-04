@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 16:03 UTC",
+  "generatedAt": "2026-04-04 17:26 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Relatives of Qassem Soleimani arrested in US \u00b7 Two family members of assassinated Iranian military commander Qassem Soleimani h\u2026",
-    "Other: Sirens activated across Israel after detected attacks from Iran, Lebanon \u00b7 The Israeli Home Front Command announced that sirens sounded in various areas af\u2026"
+    "Other: UAE condemns pro-Palestine protests targeting its embassy in Syria \u00b7 Pro- Palestine protests in Damascus have spilled over into anger directed at the\u2026",
+    "Other: Trump says Iran has 48 hours to make deal as search for US pilot continues \u00b7 United States President Donald Trump has issued another threat to Iran, writing \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 13,
-    "lastUpdated": "2026-04-04 16:03 UTC",
+    "updatesToday": 14,
+    "lastUpdated": "2026-04-04 17:26 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Relatives of Qassem Soleimani arrested in US",
-      "summary": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded. \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fe",
+      "time": "8 min ago",
+      "headline": "UAE condemns pro-Palestine protests targeting its embassy in Syria",
+      "summary": "Pro- Palestine protests in Damascus have spilled over into anger directed at the United Arab Emirates (UAE), with demonstrators targeting its embassy over the country\u2019s support for Israel amid the ongoing genocide in Gaza. Dozens gathered outside the UAE embassy on Friday, some chanting \"the Zionist",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded. \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fe",
-      "sourceUrl": "https://www.middleeasteye.net/news/relatives-qassem-soleimani-arrested-us",
+      "fullAnalysis": "Pro- Palestine protests in Damascus have spilled over into anger directed at the United Arab Emirates (UAE), with demonstrators targeting its embassy over the country\u2019s support for Israel amid the ongoing genocide in Gaza. Dozens gathered outside the UAE embassy on Friday, some chanting \"the Zionist",
+      "sourceUrl": "https://www.middleeasteye.net/news/uae-condemns-pro-palestine-protests-syria-targeted-its-embassy-over-israel-ties-0",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -66,16 +66,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Sirens activated across Israel after detected attacks from Iran, Lebanon",
-      "summary": "The Israeli Home Front Command announced that sirens sounded in various areas after a drone infiltration\u00a0was detected nearby the boundary with Lebanon. Similarly, it also noted the detection of an Iranian missile attack targeting Jerusalem and Ashdod, with several news outlets reporting explosions a",
+      "time": "8 min ago",
+      "headline": "Trump says Iran has 48 hours to make deal as search for US pilot continues",
+      "summary": "United States President Donald Trump has issued another threat to Iran, writing that it has two days to \u201cmake a deal or open up the Hormuz Strait\u201d. Saturday\u2019s brief, three-sentence post on Truth Social did not reference the ongoing search for a US pilot who is believed to have ejected over Iran afte",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli Home Front Command announced that sirens sounded in various areas after a drone infiltration\u00a0was detected nearby the boundary with Lebanon. Similarly, it also noted the detection of an Iranian missile attack targeting Jerusalem and Ashdod, with several news outlets reporting explosions a",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/sirens-activated-across-israel-after-detected-attacks-iran-lebanon",
-      "sourceLabel": "Middle East Eye",
+      "fullAnalysis": "United States President Donald Trump has issued another threat to Iran, writing that it has two days to \u201cmake a deal or open up the Hormuz Strait\u201d. Saturday\u2019s brief, three-sentence post on Truth Social did not reference the ongoing search for a US pilot who is believed to have ejected over Iran afte",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/4/trump-says-iran-has-48-hours-to-make-deal-as-search-for-us-pilot-continues?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
       "type": "war"
     },
     {
@@ -83,7 +83,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "8 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -115,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 14:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 15:30 UTC",
       "l": "HIGH",
@@ -214,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 16:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 17:26 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Relatives of Qassem Soleimani arrested in US. Sirens activated across Israel after detected attacks from Iran, Lebanon. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: UAE condemns pro-Palestine protests targeting its embassy in Syria. Trump says Iran has 48 hours to make deal as search for US pilot continues. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
