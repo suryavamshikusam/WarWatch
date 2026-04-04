@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 15:00 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: For Trump, the cost of Iran war is rising. Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "For Trump, the cost of Iran war is rising",
+      "detail": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/cost-of-iran-war-rising-donald-trump-us/article70823412.ece",
+      "fullAnalysis": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours",
+      "detail": "In a post on Truth Social, US President Donald Trump said Iran had 48 hours left to make a deal on opening the Strait of Hormuz or face \"Hell\". \"Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT,\" Trump wrote on Saturday. \"Time is running out \u2013 48 hours before all Hell w",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-threaten-unleash-hell-iran-if-no-deal-made-within-48-hours",
+      "fullAnalysis": "In a post on Truth Social, US President Donald Trump said Iran had 48 hours left to make a deal on opening the Strait of Hormuz or face \"Hell\". \"Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT,\" Trump wrote on Saturday. \"Time is running out \u2013 48 hours before all Hell w",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-04 15:00 UTC"
+}

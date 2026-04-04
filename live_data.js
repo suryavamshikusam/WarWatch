@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 12:40 UTC",
+  "generatedAt": "2026-04-04 15:00 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Iran targets US sites in Gulf, amid UAE interception efforts \u00b7 Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equip\u2026",
-    "Other: New Iranian attack on Israel leaves vehicles on fire, buildings damaged \u00b7 The Israeli military announced that more Iranian missiles have been launched tow\u2026",
-    "Other: Iranian targeting of Israel-linked ship causes fire onboard \u00b7 Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulte\u2026"
+    "Other: For Trump, the cost of Iran war is rising \u00b7 President Donald Trump said the U.S. was completing all of its objectives of the\u2026",
+    "Other: Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours \u00b7 In a post on Truth Social, US President Donald Trump said Iran had 48 hours left\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-04-04 12:40 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 11,
+    "lastUpdated": "2026-04-04 15:00 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,16 +49,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran targets US sites in Gulf, amid UAE interception efforts",
-      "summary": "Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equipment\" on Kuwait's\u00a0Bubiyan Island as well as\u00a0Bahrain's\u00a0Patriot missile systems. Iranian strikes on US-Israeli infrastructure across the region have intensified in recent days. Earlier, the UAE defence ministry announced t",
+      "time": "9 min ago",
+      "headline": "For Trump, the cost of Iran war is rising",
+      "summary": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equipment\" on Kuwait's\u00a0Bubiyan Island as well as\u00a0Bahrain's\u00a0Patriot missile systems. Iranian strikes on US-Israeli infrastructure across the region have intensified in recent days. Earlier, the UAE defence ministry announced t",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-targets-us-sites-gulf-amid-uae-interception-efforts",
-      "sourceLabel": "Middle East Eye",
+      "fullAnalysis": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
+      "sourceUrl": "https://www.thehindu.com/news/international/cost-of-iran-war-rising-donald-trump-us/article70823412.ece",
+      "sourceLabel": "The Hindu",
       "type": "war"
     },
     {
@@ -67,32 +66,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "New Iranian attack on Israel leaves vehicles on fire, buildings damaged",
-      "summary": "The Israeli military announced that more Iranian missiles have been launched towards Israel. According to Israeli media, several vehicles caught fire alongside damage to structures \u2013 including a residential building \u2013 as a result of the latest attack.",
+      "time": "9 min ago",
+      "headline": "Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours",
+      "summary": "In a post on Truth Social, US President Donald Trump said Iran had 48 hours left to make a deal on opening the Strait of Hormuz or face \"Hell\". \"Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT,\" Trump wrote on Saturday. \"Time is running out \u2013 48 hours before all Hell w",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli military announced that more Iranian missiles have been launched towards Israel. According to Israeli media, several vehicles caught fire alongside damage to structures \u2013 including a residential building \u2013 as a result of the latest attack.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/new-iranian-attack-israel-leaves-vehicles-fire-buildings-damages",
-      "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iranian targeting of Israel-linked ship causes fire onboard",
-      "summary": "Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulted in a fire onboard, state media said on Saturday, citing the commander of the Revolutionary Guard navy.",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulted in a fire onboard, state media said on Saturday, citing the commander of the Revolutionary Guard navy.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-targeting-israel-linked-ship-causes-fire-onboard",
+      "fullAnalysis": "In a post on Truth Social, US President Donald Trump said Iran had 48 hours left to make a deal on opening the Strait of Hormuz or face \"Hell\". \"Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT,\" Trump wrote on Saturday. \"Time is running out \u2013 48 hours before all Hell w",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-threaten-unleash-hell-iran-if-no-deal-made-within-48-hours",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -101,10 +83,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -133,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 11:11 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 11:54 UTC",
       "l": "HIGH",
@@ -232,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 12:40 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 15:00 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran targets US sites in Gulf, amid UAE interception efforts. New Iranian attack on Israel leaves vehicles on fire, buildings damaged. Iranian targeting of Israel-linked ship causes fire onboard. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: For Trump, the cost of Iran war is rising. Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
