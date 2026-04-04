@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 12:40 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran targets US sites in Gulf, amid UAE interception efforts. New Iranian attack on Israel leaves vehicles on fire, buildings damaged. Iranian targeting of Israel-linked ship causes fire onboard. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran targets US sites in Gulf, amid UAE interception efforts",
+      "detail": "Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equipment\" on Kuwait's\u00a0Bubiyan Island as well as\u00a0Bahrain's\u00a0Patriot missile systems. Iranian strikes on US-Israeli infrastructure across the region have intensified in recent days. Earlier, the UAE defence ministry announced t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-targets-us-sites-gulf-amid-uae-interception-efforts",
+      "fullAnalysis": "Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equipment\" on Kuwait's\u00a0Bubiyan Island as well as\u00a0Bahrain's\u00a0Patriot missile systems. Iranian strikes on US-Israeli infrastructure across the region have intensified in recent days. Earlier, the UAE defence ministry announced t",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "New Iranian attack on Israel leaves vehicles on fire, buildings damaged",
+      "detail": "The Israeli military announced that more Iranian missiles have been launched towards Israel. According to Israeli media, several vehicles caught fire alongside damage to structures \u2013 including a residential building \u2013 as a result of the latest attack.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/new-iranian-attack-israel-leaves-vehicles-fire-buildings-damages",
+      "fullAnalysis": "The Israeli military announced that more Iranian missiles have been launched towards Israel. According to Israeli media, several vehicles caught fire alongside damage to structures \u2013 including a residential building \u2013 as a result of the latest attack.",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iranian targeting of Israel-linked ship causes fire onboard",
+      "detail": "Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulted in a fire onboard, state media said on Saturday, citing the commander of the Revolutionary Guard navy.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-targeting-israel-linked-ship-causes-fire-onboard",
+      "fullAnalysis": "Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulted in a fire onboard, state media said on Saturday, citing the commander of the Revolutionary Guard navy.",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-04 12:40 UTC"
+}

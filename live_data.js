@@ -1,14 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 12:00 UTC",
+  "generatedAt": "2026-04-04 12:40 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: IRGC claims attack on Israel-linked vessel in Strait of Hormuz \u00b7 Iran's\u00a0Islamic Revolutionary Guard Corps says it has targeted an Israel-linked v\u2026"
+    "Other: Iran targets US sites in Gulf, amid UAE interception efforts \u00b7 Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equip\u2026",
+    "Other: New Iranian attack on Israel leaves vehicles on fire, buildings damaged \u00b7 The Israeli military announced that more Iranian missiles have been launched tow\u2026",
+    "Other: Iranian targeting of Israel-linked ship causes fire onboard \u00b7 Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulte\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-04-04 12:00 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 10,
+    "lastUpdated": "2026-04-04 12:40 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -48,15 +50,49 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "IRGC claims attack on Israel-linked vessel in Strait of Hormuz",
-      "summary": "Iran's\u00a0Islamic Revolutionary Guard Corps says it has targeted an Israel-linked vessel in the Strait of Hormuz.",
+      "time": "11 min ago",
+      "headline": "Iran targets US sites in Gulf, amid UAE interception efforts",
+      "summary": "Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equipment\" on Kuwait's\u00a0Bubiyan Island as well as\u00a0Bahrain's\u00a0Patriot missile systems. Iranian strikes on US-Israeli infrastructure across the region have intensified in recent days. Earlier, the UAE defence ministry announced t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran's\u00a0Islamic Revolutionary Guard Corps says it has targeted an Israel-linked vessel in the Strait of Hormuz.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-claims-attack-israel-linked-vessel-hormuz-strait",
+      "fullAnalysis": "Iran\u2019s Revolutionary Guard said it launched attacks on \"American sites and equipment\" on Kuwait's\u00a0Bubiyan Island as well as\u00a0Bahrain's\u00a0Patriot missile systems. Iranian strikes on US-Israeli infrastructure across the region have intensified in recent days. Earlier, the UAE defence ministry announced t",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-targets-us-sites-gulf-amid-uae-interception-efforts",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "New Iranian attack on Israel leaves vehicles on fire, buildings damaged",
+      "summary": "The Israeli military announced that more Iranian missiles have been launched towards Israel. According to Israeli media, several vehicles caught fire alongside damage to structures \u2013 including a residential building \u2013 as a result of the latest attack.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "The Israeli military announced that more Iranian missiles have been launched towards Israel. According to Israeli media, several vehicles caught fire alongside damage to structures \u2013 including a residential building \u2013 as a result of the latest attack.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/new-iranian-attack-israel-leaves-vehicles-fire-buildings-damages",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Iranian targeting of Israel-linked ship causes fire onboard",
+      "summary": "Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulted in a fire onboard, state media said on Saturday, citing the commander of the Revolutionary Guard navy.",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran's targeting of an Israeli-linked vessel in the\u00a0Strait of Hormuz has resulted in a fire onboard, state media said on Saturday, citing the commander of the Revolutionary Guard navy.",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-targeting-israel-linked-ship-causes-fire-onboard",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -65,10 +101,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -97,11 +133,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 09:40 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 11:11 UTC",
       "l": "HIGH",
@@ -196,11 +227,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 12:00 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 12:40 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: IRGC claims attack on Israel-linked vessel in Strait of Hormuz. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran targets US sites in Gulf, amid UAE interception efforts. New Iranian attack on Israel leaves vehicles on fire, buildings damaged. Iranian targeting of Israel-linked ship causes fire onboard. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
