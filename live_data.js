@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 18:33 UTC",
+  "generatedAt": "2026-04-04 20:57 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: All hell will \u2018reign down\u2019: Trump\u2019s 48-hour deadline to Iran over Strait of Horm \u00b7 US President Donald Trump on Saturday issued a stark warning, reminding Iran tha\u2026"
+    "Other: Houthis claim joint operation with Iran targeting Israel sites \u00b7 Yemen\u2019s Houthi movement has claimed it carried out a joint military operation wi\u2026",
+    "Other: How bankers, bureaucrats and bystanders sustain Israel's genocide in Gaza \u00b7 Human beings are, relatively speaking, absent from the scene of perpetrating gen\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-04-04 18:33 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 16,
+    "lastUpdated": "2026-04-04 20:57 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,16 +49,33 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "All hell will \u2018reign down\u2019: Trump\u2019s 48-hour deadline to Iran over Strait of Horm",
-      "summary": "US President Donald Trump on Saturday issued a stark warning, reminding Iran that \u201ctime is running out\u201d as the April 6 deadline for Tehran to reopen the Strait of Hormuz approaches. The ultimatum comes in the backdrop of a massive US troop buildup in West Asia and recurring reports of a potential gr",
+      "time": "9 min ago",
+      "headline": "Houthis claim joint operation with Iran targeting Israel sites",
+      "summary": "Yemen\u2019s Houthi movement has claimed it carried out a joint military operation with Iranian forces and Hezbollah targeting sites in Israel, including Ben Gurion Airport. In a statement posted on X, Houthi military spokesperson Yahya Saree said the group coordinated with Iran\u2019s Revolutionary Guard, th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump on Saturday issued a stark warning, reminding Iran that \u201ctime is running out\u201d as the April 6 deadline for Tehran to reopen the Strait of Hormuz approaches. The ultimatum comes in the backdrop of a massive US troop buildup in West Asia and recurring reports of a potential gr",
-      "sourceUrl": "https://indianexpress.com/article/world/donald-trump-iran-threat-strait-of-hormuz-kharg-island-oil-exports-10619185/",
-      "sourceLabel": "Indian Express",
+      "fullAnalysis": "Yemen\u2019s Houthi movement has claimed it carried out a joint military operation with Iranian forces and Hezbollah targeting sites in Israel, including Ben Gurion Airport. In a statement posted on X, Houthi military spokesperson Yahya Saree said the group coordinated with Iran\u2019s Revolutionary Guard, th",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-joint-operation-iran-targeting-israel-sites",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "How bankers, bureaucrats and bystanders sustain Israel's genocide in Gaza",
+      "summary": "Human beings are, relatively speaking, absent from the scene of perpetrating genocide in its \"modern\" form, and only the victims are visible. This evolved form of genocide conceals its perpetrators and those complicit in it. It operates through policies, procedures and the instruments of mechanised,",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Human beings are, relatively speaking, absent from the scene of perpetrating genocide in its \"modern\" form, and only the victims are visible. This evolved form of genocide conceals its perpetrators and those complicit in it. It operates through policies, procedures and the instruments of mechanised,",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/how-bankers-bureaucrats-and-bystanders-sustain-israel-genocide-gaza",
+      "sourceLabel": "Middle East Eye",
       "type": "war"
     },
     {
@@ -65,10 +83,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -97,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 16:03 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 16:59 UTC",
       "l": "HIGH",
@@ -196,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 18:33 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 20:57 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: All hell will \u2018reign down\u2019: Trump\u2019s 48-hour deadline to Iran over Strait of Horm. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Houthis claim joint operation with Iran targeting Israel sites. How bankers, bureaucrats and bystanders sustain Israel's genocide in Gaza. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
