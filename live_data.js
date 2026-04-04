@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 21:27 UTC",
+  "generatedAt": "2026-04-04 22:24 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: How will Pakistan deal with the fallout from Iran war? \u00b7 War in the Middle East is worsening economic crisis in Pakistan. Soon after the \u2026"
+    "Other: Israel claims over 200 strikes on Iran and Hezbollah targets \u00b7 The Israeli military says it has carried out more than 200 air strikes over the \u2026",
+    "Other: US and Iran trade threats to unleash 'hell' as search for missing US airman cont \u00b7 US President Donald Trump has threatened that \"all hell would rain down on\" Iran\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 17,
-    "lastUpdated": "2026-04-04 21:27 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 18,
+    "lastUpdated": "2026-04-04 22:24 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,16 +49,33 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "How will Pakistan deal with the fallout from Iran war?",
-      "summary": "War in the Middle East is worsening economic crisis in Pakistan. Soon after the war between the US, Israel and Iran began, its ripple effects were evident. Pakistan stands out as one of the countries paying a heavy price. It\u2019s heavily dependent on energy supplies from the Gulf. And with the Strait o",
+      "time": "9 min ago",
+      "headline": "Israel claims over 200 strikes on Iran and Hezbollah targets",
+      "summary": "The Israeli military says it has carried out more than 200 air strikes over the weekend targeting sites in Iran and Lebanon. It said the attacks in Iran hit air defence systems, ballistic missile production facilities and an IRGC weapons storage site. In Lebanon, the military said it struck a Hezbol",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "War in the Middle East is worsening economic crisis in Pakistan. Soon after the war between the US, Israel and Iran began, its ripple effects were evident. Pakistan stands out as one of the countries paying a heavy price. It\u2019s heavily dependent on energy supplies from the Gulf. And with the Strait o",
-      "sourceUrl": "https://www.aljazeera.com/video/inside-story/2026/4/4/how-will-pakistan-deal-with-the-fallout-from-iran-war?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
+      "fullAnalysis": "The Israeli military says it has carried out more than 200 air strikes over the weekend targeting sites in Iran and Lebanon. It said the attacks in Iran hit air defence systems, ballistic missile production facilities and an IRGC weapons storage site. In Lebanon, the military said it struck a Hezbol",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-claims-over-200-strikes-iran-and-hezbollah-targets",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "US and Iran trade threats to unleash 'hell' as search for missing US airman cont",
+      "summary": "US President Donald Trump has threatened that \"all hell would rain down on\" Iran if it did not make a deal, prompting Tehran to respond with similar rhetoric. An Iranian military spokesman warned that the entire region would become \"hell\" if the US and Israel continued to escalate the conflict. On S",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US President Donald Trump has threatened that \"all hell would rain down on\" Iran if it did not make a deal, prompting Tehran to respond with similar rhetoric. An Iranian military spokesman warned that the entire region would become \"hell\" if the US and Israel continued to escalate the conflict. On S",
+      "sourceUrl": "https://www.bbc.com/news/articles/c5y90jl8veyo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC",
       "type": "war"
     },
     {
@@ -65,10 +83,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -97,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 17:34 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 20:30 UTC",
       "l": "HIGH",
@@ -196,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 21:27 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 22:24 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: How will Pakistan deal with the fallout from Iran war?. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel claims over 200 strikes on Iran and Hezbollah targets. US and Iran trade threats to unleash 'hell' as search for missing US airman cont. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

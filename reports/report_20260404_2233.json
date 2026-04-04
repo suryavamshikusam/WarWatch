@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 22:24 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israel claims over 200 strikes on Iran and Hezbollah targets. US and Iran trade threats to unleash 'hell' as search for missing US airman cont. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Israel claims over 200 strikes on Iran and Hezbollah targets",
+      "detail": "The Israeli military says it has carried out more than 200 air strikes over the weekend targeting sites in Iran and Lebanon. It said the attacks in Iran hit air defence systems, ballistic missile production facilities and an IRGC weapons storage site. In Lebanon, the military said it struck a Hezbol",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-claims-over-200-strikes-iran-and-hezbollah-targets",
+      "fullAnalysis": "The Israeli military says it has carried out more than 200 air strikes over the weekend targeting sites in Iran and Lebanon. It said the attacks in Iran hit air defence systems, ballistic missile production facilities and an IRGC weapons storage site. In Lebanon, the military said it struck a Hezbol",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US and Iran trade threats to unleash 'hell' as search for missing US airman cont",
+      "detail": "US President Donald Trump has threatened that \"all hell would rain down on\" Iran if it did not make a deal, prompting Tehran to respond with similar rhetoric. An Iranian military spokesman warned that the entire region would become \"hell\" if the US and Israel continued to escalate the conflict. On S",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "BBC",
+      "sourceUrl": "https://www.bbc.com/news/articles/c5y90jl8veyo?at_medium=RSS&at_campaign=rss",
+      "fullAnalysis": "US President Donald Trump has threatened that \"all hell would rain down on\" Iran if it did not make a deal, prompting Tehran to respond with similar rhetoric. An Iranian military spokesman warned that the entire region would become \"hell\" if the US and Israel continued to escalate the conflict. On S",
+      "sourceLabel": "BBC"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-04 22:24 UTC"
+}
