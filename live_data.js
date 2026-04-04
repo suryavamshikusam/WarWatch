@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 15:00 UTC",
+  "generatedAt": "2026-04-04 15:36 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: For Trump, the cost of Iran war is rising \u00b7 President Donald Trump said the U.S. was completing all of its objectives of the\u2026",
-    "Other: Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours \u00b7 In a post on Truth Social, US President Donald Trump said Iran had 48 hours left\u2026"
+    "Other: Relatives of Qassam Soleimani arrested in US \u00b7 Two family members of assassinated Iranian military commander Qassem Soleimani h\u2026",
+    "Other: Iran announces new air defence used to down US fighter jet \u00b7 Iran has unveiled a new air defence system which it said was used in the downing\u2026",
+    "Other: Is Donald Trump\u2019s triumphal tone on Iran facing a reality check? \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 11,
-    "lastUpdated": "2026-04-04 15:00 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 12,
+    "lastUpdated": "2026-04-04 15:36 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,16 +50,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "For Trump, the cost of Iran war is rising",
-      "summary": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
+      "time": "11 min ago",
+      "headline": "Relatives of Qassam Soleimani arrested in US",
+      "summary": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fed",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
-      "sourceUrl": "https://www.thehindu.com/news/international/cost-of-iran-war-rising-donald-trump-us/article70823412.ece",
-      "sourceLabel": "The Hindu",
+      "fullAnalysis": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fed",
+      "sourceUrl": "https://www.middleeasteye.net/news/relatives-qassam-soleimani-arrested-us",
+      "sourceLabel": "Middle East Eye",
       "type": "war"
     },
     {
@@ -66,16 +67,33 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours",
-      "summary": "In a post on Truth Social, US President Donald Trump said Iran had 48 hours left to make a deal on opening the Strait of Hormuz or face \"Hell\". \"Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT,\" Trump wrote on Saturday. \"Time is running out \u2013 48 hours before all Hell w",
+      "time": "11 min ago",
+      "headline": "Iran announces new air defence used to down US fighter jet",
+      "summary": "Iran has unveiled a new air defence system which it said was used in the downing of a US fighter jet on Friday. A spokesperson for Iran's Khatam al-Anbiya joint military command said Tehran would achieve full control over its airspace. \"The enemy should know that we will achieve the complete control",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "In a post on Truth Social, US President Donald Trump said Iran had 48 hours left to make a deal on opening the Strait of Hormuz or face \"Hell\". \"Remember when I gave Iran ten days to MAKE A DEAL or OPEN UP THE HORMUZ STRAIT,\" Trump wrote on Saturday. \"Time is running out \u2013 48 hours before all Hell w",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-threaten-unleash-hell-iran-if-no-deal-made-within-48-hours",
+      "fullAnalysis": "Iran has unveiled a new air defence system which it said was used in the downing of a US fighter jet on Friday. A spokesperson for Iran's Khatam al-Anbiya joint military command said Tehran would achieve full control over its airspace. \"The enemy should know that we will achieve the complete control",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-announces-new-air-defence-used-down-us-fighter-jet",
       "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "11 min ago",
+      "headline": "Is Donald Trump\u2019s triumphal tone on Iran facing a reality check?",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/is-donald-trumps-triumphal-tone-on-iran-facing-a-reality-check/articleshow/130021719.cms",
+      "sourceLabel": "Times of India",
       "type": "war"
     },
     {
@@ -83,10 +101,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "11 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +133,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 11:54 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 12:47 UTC",
       "l": "HIGH",
@@ -214,11 +227,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 15:00 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 15:36 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: For Trump, the cost of Iran war is rising. Trump threatens to unleash 'hell' on Iran if no deal made within 48 hours. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Relatives of Qassam Soleimani arrested in US. Iran announces new air defence used to down US fighter jet. Is Donald Trump\u2019s triumphal tone on Iran facing a reality check?. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

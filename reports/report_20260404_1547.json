@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 15:36 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Relatives of Qassam Soleimani arrested in US. Iran announces new air defence used to down US fighter jet. Is Donald Trump\u2019s triumphal tone on Iran facing a reality check?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Relatives of Qassam Soleimani arrested in US",
+      "detail": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fed",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/relatives-qassam-soleimani-arrested-us",
+      "fullAnalysis": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fed",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran announces new air defence used to down US fighter jet",
+      "detail": "Iran has unveiled a new air defence system which it said was used in the downing of a US fighter jet on Friday. A spokesperson for Iran's Khatam al-Anbiya joint military command said Tehran would achieve full control over its airspace. \"The enemy should know that we will achieve the complete control",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/iran-announces-new-air-defence-used-down-us-fighter-jet",
+      "fullAnalysis": "Iran has unveiled a new air defence system which it said was used in the downing of a US fighter jet on Friday. A spokesperson for Iran's Khatam al-Anbiya joint military command said Tehran would achieve full control over its airspace. \"The enemy should know that we will achieve the complete control",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Is Donald Trump\u2019s triumphal tone on Iran facing a reality check?",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/is-donald-trumps-triumphal-tone-on-iran-facing-a-reality-check/articleshow/130021719.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-04 15:36 UTC"
+}
