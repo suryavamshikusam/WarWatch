@@ -1,0 +1,137 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 11:24 UTC",
+  "executive_summary": "Latest updates from 30 sources covering the US-Israel-Iran conflict. Monitoring 8 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Vietnam's Israel defence ties complicate historic Palestinian solidarity. Israeli military says it hit military sites in Iran. Morning update. US-Israel-Iran War: UN Chief Guterres Urges End to War, Warns on Strait of Hormu. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Vietnam's Israel defence ties complicate historic Palestinian solidarity",
+      "detail": "Vietnam\u2019s historical support for Palestine goes back to its revered founding leader, the revolutionary and statesman Ho Chi Minh. In recent years, this support has been complicated by developing military ties with Israel . Vietnam, a one-party communist state with a population of over 100 million, i",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/vietnam-israel-defence-ties-palestine-solidarity",
+      "fullAnalysis": "Vietnam\u2019s historical support for Palestine goes back to its revered founding leader, the revolutionary and statesman Ho Chi Minh. In recent years, this support has been complicated by developing military ties with Israel . Vietnam, a one-party communist state with a population of over 100 million, i",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Israeli military says it hit military sites in Iran",
+      "detail": "The Israeli military said it carried out air strikes on military sites in Tehran on Friday, targeting what it described as key defence and weapons facilities. In a statement, it said the air force struck \u201cregime aerial defence sites, including an IRGC aerial defence site where missiles intended to t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-military-says-it-hit-military-sites-iran",
+      "fullAnalysis": "The Israeli military said it carried out air strikes on military sites in Tehran on Friday, targeting what it described as key defence and weapons facilities. In a statement, it said the air force struck \u201cregime aerial defence sites, including an IRGC aerial defence site where missiles intended to t",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Morning update",
+      "detail": "Here are the latest updates on the US-Israeli war on Iran: The Israeli military says it hit military sites in Iran and a petrochemical plant\u00a0in the southern region. According to Iranian local media,\u00a0five people were injured in the attack on the special petrochemical zone in Mahshahr and Bandar Imam,",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-506",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: The Israeli military says it hit military sites in Iran and a petrochemical plant\u00a0in the southern region. According to Iranian local media,\u00a0five people were injured in the attack on the special petrochemical zone in Mahshahr and Bandar Imam,",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US-Israel-Iran War: UN Chief Guterres Urges End to War, Warns on Strait of Hormu",
+      "detail": "Iran vs Israel-US War LIVE Updates: Ant\u00f3nio Guterres, Secretary-General of the United Nations, said, \"The prolonged closure of the Strait of Hormuz is choking the movement of oil, gas & fertiliser at a critical moment in the global planting season.  Across the region & beyond, civilians are enduring",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-trump-power-plant-strike-delay-ghalibaf-fake-news-10597551/",
+      "fullAnalysis": "Iran vs Israel-US War LIVE Updates: Ant\u00f3nio Guterres, Secretary-General of the United Nations, said, \"The prolonged closure of the Strait of Hormuz is choking the movement of oil, gas & fertiliser at a critical moment in the global planting season.  Across the region & beyond, civilians are enduring",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran war: How can US military forcibly reopen Strait of Hormuz",
+      "detail": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-iran-conflict-trump-kharg-island-ground-troops-oil-prices-10610253/",
+      "fullAnalysis": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran warns UN Security Council against \u2018provocative action\u2019 on Hormuz",
+      "detail": "Updated - April 03, 2026 12:42 pm IST - Tehran Iran's Foreign Minister Seyed Abbas Araghchi. File photo credit: The Hindu Iran warned the UN Security Council against any \"provocative action\", ahead of a scheduled vote on a draft resolution on the Strait of Hormuz that ended up being postponed. \"Any ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-warns-un-security-council-against-provocative-action-on-hormuz/article70818943.ece",
+      "fullAnalysis": "Updated - April 03, 2026 12:42 pm IST - Tehran Iran's Foreign Minister Seyed Abbas Araghchi. File photo credit: The Hindu Iran warned the UN Security Council against any \"provocative action\", ahead of a scheduled vote on a draft resolution on the Strait of Hormuz that ended up being postponed. \"Any ",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Iran war Day 34 | \u2018Back to the Stone Age\u2019: Trump sets 2-week deadline to \u2018finish",
+      "detail": "Iran war Day 34: In his first address to the nation since the war began on February 28, US President Donald Trump said Wednesday night local time the war is \u201cnearing completion.\u201d He added that the US is going to hit Iran \u201cvery hard\u201d in the next two weeks , bringing them \u201cback to the Stone Age where ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-middle-east-trump-speech-day-34-war-updates-10615191/",
+      "fullAnalysis": "Iran war Day 34: In his first address to the nation since the war began on February 28, US President Donald Trump said Wednesday night local time the war is \u201cnearing completion.\u201d He added that the US is going to hit Iran \u201cvery hard\u201d in the next two weeks , bringing them \u201cback to the Stone Age where ",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "US-Iran War Day 31: Trump eyes Kharg island for oil as Pakistan gears up to medi",
+      "detail": "As the US-Israel conflict with Iran entered day 31, US President Donald Trump said he would like to \u201ctake the oil in Iran\u201d in an interview with the Financial Times, even as Pakistan prepares to host talks aimed at easing tensions. Meanwhile, Kuwait reported that an Indian worker was killed in an Ira",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-iran-war-day-31-trump-iran-kharg-island-for-oil-pakistan-emerges-as-mediator-for-de-escalation-10609325/",
+      "fullAnalysis": "As the US-Israel conflict with Iran entered day 31, US President Donald Trump said he would like to \u201ctake the oil in Iran\u201d in an interview with the Financial Times, even as Pakistan prepares to host talks aimed at easing tensions. Meanwhile, Kuwait reported that an Indian worker was killed in an Ira",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 30,
+  "generated_at": "2026-04-04 11:24 UTC"
+}
