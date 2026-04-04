@@ -1,1575 +1,447 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
 <meta charset="UTF-8">
-
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
 <title>WarWatch — Live</title>
-
 <link rel="preconnect" href="https://fonts.googleapis.com">
-
 <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=IBM+Plex+Sans:ital,wght@0,300;0,400;0,500;0,600;1,300&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
-
 <style>
-
 *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
-
 html { scroll-behavior: smooth; }
-
 body { background: #141414; color: #e0e0dc; font-family: 'IBM Plex Sans', sans-serif; font-size: 16px; line-height: 1.75; }
 
-
-
-/* ── HEADER ── */
-
 header { background: #1a1a1a; padding: 23px 32px; position: sticky; top: 0; z-index: 200; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #2a2a2a; }
-
 .masthead { font-size: 22px; font-weight: 900; letter-spacing: -0.02em; display: flex; align-items: center; line-height: 1; }
-
 .masthead-war { background: #c41e3a; color: #fff; padding: 3px 10px; }
-
 .masthead-watch { color: #fff; padding: 3px 5px; }
-
 .header-date { font-size: 11px; color: #888; letter-spacing: 0.06em; font-family: 'IBM Plex Mono', monospace; }
-
 nav { display: flex; align-items: center; gap: 0; }
-
 .nav-item { color: #aaa; text-decoration: none; padding: 0 16px; font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; font-weight: 500; border-right: 1px solid #444; transition: color 0.2s; white-space: nowrap; }
-
 .nav-item:last-child { border-right: none; padding-right: 0; }
-
 .nav-item:hover { color: #fff; }
-
 .nav-item.live { color: #c41e3a; }
-
 .nav-item.active { color: #c41e3a; }
-
 @keyframes pulse { 0%,100%{opacity:1} 50%{opacity:0.3} }
-
 .live-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; margin-right: 4px; animation: pulse 1.5s infinite; }
-
-.ai-sum-badge{background:transparent;border:1px solid #c41e3a;color:#c41e3a;font-family:'IBM Plex Mono',monospace;font-size:9px;font-weight:700;padding:3px 9px;letter-spacing:.1em;text-transform:uppercase;border-radius:2px;white-space:nowrap}
-
-
-
-/* ── ALERT BAR ── */
+.ai-sum-badge { background: transparent; border: 1px solid #c41e3a; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 9px; font-weight: 700; padding: 3px 9px; letter-spacing: .1em; text-transform: uppercase; border-radius: 2px; white-space: nowrap; }
 
 .alert-bar { background: #2c2c2c; padding: 7px 24px; display: flex; align-items: center; gap: 12px; }
-
 .alert-badge { padding: 3px 10px; border-radius: 2px; font-size: 10px; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: #fff; background: #a32d2d; flex-shrink: 0; font-family: 'IBM Plex Mono', monospace; }
-
 .alert-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #e05555; animation: pulse 1.5s infinite; flex-shrink: 0; }
-
 .alerts-scroll { flex: 1; overflow: hidden; }
-
 .alerts-text { font-size: 13px; color: #ddd; white-space: nowrap; }
-
 .typewriter-cursor { display: inline-block; width: 2px; height: 13px; background: #e05555; margin-left: 2px; animation: blink 0.8s step-end infinite; vertical-align: middle; }
-
 @keyframes blink { 0%,100%{opacity:1} 50%{opacity:0} }
 
-
-
-/* ── HERO IMAGE ── */
-
 .hero-img-wrap { position: relative; width: 100%; background: #1a1a1a; overflow: hidden; }
-
 .hero-img-wrap::before { content: ''; display: block; padding-top: 30%; }
-
 .hero-img-inner { position: absolute; inset: 0; }
-
 .hero-img-inner img { width: 100%; height: 100%; object-fit: cover; object-position: center 40%; display: block; }
-
 .hero-overlay { position: absolute; inset: 0; background: linear-gradient(to bottom, rgba(0,0,0,0.08) 0%, transparent 40%, rgba(0,0,0,0.6) 100%); }
-
 .hero-caption { position: absolute; bottom: 0; left: 0; right: 0; padding: 14px 24px; display: flex; align-items: flex-end; justify-content: space-between; gap: 12px; }
-
 .hero-caption-txt { font-size: 11px; color: rgba(255,255,255,0.45); font-family: 'IBM Plex Mono', monospace; letter-spacing: 0.06em; }
-
 .hero-live-pill { display: flex; align-items: center; gap: 5px; background: rgba(164,30,48,0.88); color: #fff; font-size: 10px; font-weight: 700; padding: 4px 10px; border-radius: 2px; letter-spacing: 0.1em; text-transform: uppercase; font-family: 'IBM Plex Mono', monospace; }
-
-
-
-/* ── PAGE BODY ── */
 
 .page-sections { display: flex; flex-direction: column; gap: 14px; padding: 14px 24px 40px; max-width: 1660px; margin: 0 auto; }
 
-
-
-/* ── ECONOMY STRIP ── */
-
-@keyframes econSlideUp{from{opacity:0;transform:translateY(7px)}to{opacity:1;transform:translateY(0)}}
-
-@keyframes econSlideDn{from{opacity:0;transform:translateY(-7px)}to{opacity:1;transform:translateY(0)}}
-
-@keyframes econTriUp{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(-3px);opacity:.5}}
-
-@keyframes econTriDn{0%,100%{transform:translateY(0);opacity:1}50%{transform:translateY(3px);opacity:.5}}
-
-.econ-strip { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; padding: 0; cursor: pointer; transition: border-color .2s; overflow: hidden; text-decoration: none; display: block; }
-
+.econ-strip { background: #1a1a1a; border: 1px solid #2a2a2a; border-radius: 6px; cursor: pointer; transition: border-color .2s; overflow: hidden; text-decoration: none; display: block; }
 .econ-strip:hover { border-color: #c41e3a; }
-
-.econ-strip-inner { display: flex; align-items: center; gap: 0; }
-
+.econ-strip-inner { display: flex; align-items: center; }
 .econ-strip-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; letter-spacing: .14em; text-transform: uppercase; color: #666; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 6px; padding: 10px 16px; border-right: 1px solid #2a2a2a; }
-
 .econ-cells { display: flex; flex: 1; overflow: hidden; }
-
 .econ-cell { flex: 1; padding: 7px 14px; border-right: 1px solid #222; min-width: 0; }
-
 .econ-cell:last-child { border-right: none; }
-
 .econ-cell-ticker { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: .06em; margin-bottom: 2px; }
-
 .econ-cell-val { font-family: 'IBM Plex Mono', monospace; font-size: 14px; font-weight: 700; color: #ccc; line-height: 1; display: inline-block; }
-
 .econ-cell-chg { font-family: 'IBM Plex Mono', monospace; font-size: 9px; margin-top: 2px; }
-
 .econ-cell-chg.up { color: #c41e3a; }
-
 .econ-cell-chg.dn { color: #3daa72; }
-
 .econ-strip-cta { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #c41e3a; letter-spacing: .1em; text-transform: uppercase; padding: 10px 14px; white-space: nowrap; flex-shrink: 0; display: flex; align-items: center; gap: 5px; border-left: 1px solid #2a2a2a; }
-
 .econ-strip-cta::after { content: '→'; }
 
-
-
-/* ── THREE-COLUMN GRID ── */
-
-.newspaper-grid { display: grid; grid-template-columns: 360px 1fr 260px; border: 1px solid #2a2a2a; background: #1a1a1a; height: clamp(560px, calc(100vh - 180px), 820px); border-radius: 8px; overflow: hidden; }
-
-
-
-/* ── LEFT: AI SUMMARY ── */
-
-.col-left { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; background: #1e1e1e; min-height: 0; overflow: hidden; }
-
-.ai-summary-box { padding: 20px 20px; flex: 1; display: flex; flex-direction: column; border-bottom: 1px solid #2a2a2a; min-height: 0; overflow: hidden; }
-
-.ai-summary-label { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; font-weight: 500; margin-bottom: 10px; display: flex; align-items: center; gap: 8px; flex-shrink: 0; }
-
-.ai-speaking-dot { display: inline-flex; gap: 3px; align-items: center; }
-
-.ai-speaking-dot span { display: inline-block; width: 3px; height: 3px; border-radius: 50%; background: #c41e3a; animation: aiDotBounce 1.2s ease-in-out infinite; }
-
-.ai-speaking-dot span:nth-child(2) { animation-delay: 0.2s; }
-
-.ai-speaking-dot span:nth-child(3) { animation-delay: 0.4s; }
-
-@keyframes aiDotBounce { 0%,60%,100%{transform:translateY(0);opacity:0.4} 30%{transform:translateY(-4px);opacity:1} }
-
-.ai-summary-text { font-size: 13px; color: #bbb; line-height: 1.75; font-weight: 300; flex: 1; overflow-y: auto; min-height: 0; height: 0; }
-
-.ai-summary-text::-webkit-scrollbar { width: 3px; }
-
-.ai-summary-text::-webkit-scrollbar-thumb { background: #333; border-radius: 2px; }
-
-.ai-refresh-note { font-size: 10px; color: #444; font-family: 'IBM Plex Mono', monospace; margin-top: 8px; }
-
-.escalation-block { display: flex; align-items: center; justify-content: space-between; padding-top: 12px; border-top: 1px solid #2a2a2a; margin-top: 16px; }
-
-.escalation-label { font-family: 'IBM Plex Mono', monospace; font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; }
-
-.escalation-badge { padding: 5px 14px; border-radius: 2px; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; color: #fff; }
-
-
-
-/* ── CENTER: ROTATOR ── */
-
-.col-center { border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; overflow: hidden; }
-
-.rot-topbar { display: flex; align-items: center; gap: 8px; padding: 10px 18px; border-bottom: 1px solid #2a2a2a; flex-shrink: 0; background: #1a1a1a; }
-
-.live-badge { display: inline-flex; align-items: center; gap: 6px; color: #c41e3a; font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
-
-.live-badge::before { content: ''; display: inline-block; width: 6px; height: 6px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; }
-
-.rot-counter { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #555; margin-left: auto; }
-
-.rot-stage { position: relative; flex: 1; overflow: hidden; }
-
-.rot-card { position: absolute; inset: 0; padding: 14px 18px 10px; display: flex; flex-direction: column; gap: 6px; transition: transform 0.52s cubic-bezier(0.4,0,0.2,1), opacity 0.52s ease; overflow-y: auto; }
-
-.rot-card::-webkit-scrollbar { width: 3px; }
-
-.rot-card::-webkit-scrollbar-thumb { background: #333; }
-
-.rot-card.rot-prev { transform: translateX(-100%); opacity: 0; }
-
-.rot-card.rot-active { transform: translateX(0); opacity: 1; }
-
-.rot-card.rot-next { transform: translateX(100%); opacity: 0; }
-
-.rot-source { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: 0.1em; color: #555; text-transform: uppercase; flex-shrink: 0; }
-
-.rot-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
-
-.rot-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
-
-.rot-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 6px; border-radius: 2px; font-weight: 700; text-transform: uppercase; letter-spacing: 0.06em; display: inline-block; }
-
-.rot-headline { font-family: 'Lora', serif; font-size: 19px; font-weight: 700; color: #eee; line-height: 1.28; letter-spacing: -0.01em; flex-shrink: 0; }
-
-.rot-summary { font-size: 13px; color: #888; line-height: 1.65; font-weight: 300; flex-shrink: 0; }
-
-.ai-analysis-box { background: rgba(127,119,221,0.08); border: 0.5px solid rgba(127,119,221,0.25); border-radius: 6px; padding: 12px 14px; flex-shrink: 0; }
-
-.ai-analysis-lbl { font-size: 10px; color: #7f77dd; text-transform: uppercase; letter-spacing: 0.1em; font-weight: 500; margin-bottom: 7px; display: flex; align-items: center; gap: 6px; font-family: 'IBM Plex Mono', monospace; }
-
-.ai-analysis-txt { font-size: 12px; color: #a89fe0; line-height: 1.75; }
-
-.ai-analysis-txt p { margin-bottom: 8px; }
-
-.ai-analysis-txt p:last-child { margin-bottom: 0; }
-
-.loading-dots { display: inline-flex; gap: 4px; align-items: center; }
-
-.loading-dots span { width: 5px; height: 5px; border-radius: 50%; background: #7f77dd; animation: aiDotBounce 1.1s infinite; }
-
-.loading-dots span:nth-child(2) { animation-delay: 0.18s; }
-
-.loading-dots span:nth-child(3) { animation-delay: 0.36s; }
-
-.rot-read-row { display: flex; align-items: center; gap: 5px; font-size: 11px; color: #555; padding-top: 4px; flex-shrink: 0; }
-
-.rot-channel-link { font-family: 'IBM Plex Mono', monospace; font-size: 11px; font-weight: 700; color: #c41e3a; text-decoration: none; border-bottom: 1px dashed #c41e3a; letter-spacing: 0.04em; }
-
-.rot-channel-link:hover { opacity: 0.7; }
-
-.rot-navrow { display: flex; align-items: center; justify-content: center; gap: 10px; padding: 8px 14px; border-top: 1px solid #2a2a2a; flex-shrink: 0; }
-
-.rot-btn { background: none; border: 0.5px solid #333; border-radius: 6px; padding: 3px 12px; font-size: 13px; color: #888; cursor: pointer; transition: background 0.15s; }
-
-.rot-btn:hover { background: #2a2a2a; }
-
-.rot-dots { display: flex; gap: 5px; }
-
-.rot-dots span { width: 6px; height: 6px; border-radius: 50%; background: #333; cursor: pointer; transition: background 0.2s; }
-
-.rot-dots span.on { background: #c41e3a; }
-
-
-
-/* ── RIGHT: TIMELINE ── */
-
-.col-right { display: flex; flex-direction: column; background: #1e1e1e; overflow: hidden; min-height: 0; }
-
-.latest-title { font-family: 'Lora', serif; font-size: 14px; font-weight: 700; color: #c41e3a; padding: 12px 16px; border-bottom: 1px solid #2a2a2a; letter-spacing: -0.01em; flex-shrink: 0; display: flex; align-items: center; gap: 7px; }
-
-.latest-title-dot { width: 7px; height: 7px; border-radius: 50%; background: #c41e3a; animation: pulse 1.5s infinite; flex-shrink: 0; }
-
-.timeline { flex: 1; overflow-y: scroll; min-height: 0; height: 0; }
-
-.timeline::-webkit-scrollbar { width: 4px; }
-
-.timeline::-webkit-scrollbar-track { background: #1a1a1a; }
-
-.timeline::-webkit-scrollbar-thumb { background: #3a3a3a; border-radius: 2px; }
-
-.timeline-item { padding: 10px 14px; position: relative; cursor: pointer; border-bottom: 1px solid #2a2a2a; transition: background 0.15s; }
-
-.timeline-item:hover { background: #252525; }
-
-.timeline-item.active { background: #222; border-left: 3px solid #c41e3a; padding-left: 11px; }
-
-.timeline-item:last-child { border-bottom: none; }
-
-.tl-meta { display: flex; align-items: center; gap: 5px; margin-bottom: 4px; flex-wrap: wrap; }
-
-.tl-time { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #555; }
-
-.tl-src { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #666; text-transform: uppercase; letter-spacing: 0.04em; }
-
-.tl-headline { font-family: 'Lora', serif; font-size: 13px; font-weight: 600; color: #ccc; line-height: 1.38; }
-
-.tl-tag-d { background: rgba(163,45,45,0.2); border: 0.5px solid rgba(163,45,45,0.4); color: #e07070; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
-
-.tl-tag-i { background: rgba(26,87,198,0.15); border: 0.5px solid rgba(26,87,198,0.3); color: #7aabee; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
-
-.tl-tag-e { background: rgba(180,120,10,0.15); border: 0.5px solid rgba(180,120,10,0.3); color: #d4a94a; font-size: 9px; padding: 1px 5px; border-radius: 2px; font-weight: 700; }
-
-.read-more-btn { padding: 12px 16px; text-align: center; border-top: 1px solid #2a2a2a; font-family: 'IBM Plex Mono', monospace; font-weight: 700; font-size: 10px; letter-spacing: 0.12em; text-transform: uppercase; color: #555; cursor: pointer; transition: color 0.2s, background 0.2s; background: #1a1a1a; flex-shrink: 0; }
-
-.read-more-btn:hover { color: #c41e3a; background: #222; }
-
-
-
-/* ── DAILY DIGEST SECTION ── */
-
-@keyframes fadeIn{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:translateY(0)}}
-
-@keyframes aiDot{0%,60%,100%{transform:translateY(0);opacity:.4}30%{transform:translateY(-4px);opacity:1}}
-
-
+@keyframes fadeIn { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
+@keyframes aiDot { 0%,60%,100%{transform:translateY(0);opacity:.4} 30%{transform:translateY(-4px);opacity:1} }
 
 .digest-section { border-radius: 8px; overflow: hidden; border: 1px solid #2a2a2a; }
-
 .digest-ribbon { background: #1a1a1a; padding: 14px 24px; border-bottom: 1px solid #2a2a2a; display: flex; align-items: center; gap: 12px; }
-
 .digest-ribbon h2 { font-family: 'Lora', serif; font-size: 18px; font-weight: 700; color: #eee; }
-
 .digest-ribbon-tag { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; letter-spacing: 0.08em; text-transform: uppercase; }
-
-
 
 .digest-main { display: flex; background: #141414; height: clamp(500px, 65vh, 760px); }
 
-
-
-/* sidebar */
-
 .dig-sidebar { width: 200px; flex-shrink: 0; background: #1a1a1a; border-right: 1px solid #2a2a2a; display: flex; flex-direction: column; overflow-y: auto; }
-
 .dig-sidebar-hdr { padding: 12px 16px 8px; font-family: 'IBM Plex Mono', monospace; font-size: 9px; letter-spacing: .14em; text-transform: uppercase; color: #444; border-bottom: 1px solid #222; }
-
 .cat-item { display: flex; align-items: center; gap: 10px; padding: 14px 16px; cursor: pointer; border-bottom: 1px solid #1e1e1e; transition: background .15s; border-left: 2px solid transparent; }
-
 .cat-item:hover { background: #1e1e1e; }
-
 .cat-item.active { background: #1e1e1e; border-left-color: var(--cc); }
-
 .cat-pip { width: 8px; height: 8px; border-radius: 50%; flex-shrink: 0; background: var(--cc); }
-
 .cat-name { font-family: 'IBM Plex Mono', monospace; font-size: 10px; font-weight: 500; text-transform: uppercase; letter-spacing: .07em; color: #555; transition: color .15s; }
-
 .cat-item:hover .cat-name, .cat-item.active .cat-name { color: #ddd; }
-
 .cat-count { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #333; margin-left: auto; }
-
 .cat-item.active .cat-count { color: #666; }
 
-
-
-/* stories col */
-
 .dig-stories { width: 420px; flex-shrink: 0; border-right: 1px solid #2a2a2a; overflow-y: auto; display: flex; flex-direction: column; background: #181818; }
-
 .dig-stories-hdr { padding: 12px 16px; border-bottom: 1px solid #2a2a2a; display: flex; align-items: center; gap: 8px; flex-shrink: 0; background: #1a1a1a; position: sticky; top: 0; z-index: 5; }
-
 .dig-stories-title { font-family: 'Lora', serif; font-size: 15px; font-weight: 700; color: #eee; }
-
 .dig-stories-pip { width: 7px; height: 7px; border-radius: 50%; background: var(--cc); flex-shrink: 0; }
-
 .dig-stories-count { font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #444; margin-left: auto; }
 
-
-
 .story-item { padding: 14px 16px; border-bottom: 1px solid #222; cursor: pointer; transition: background .12s, border-left-color .15s; border-left: 2px solid transparent; animation: fadeIn .3s ease forwards; opacity: 0; }
-
 .story-item:hover { background: #1e1e1e; }
-
 .story-item.active { background: #1e1e1e; border-left-color: var(--cc); }
-
 .story-item.active .story-hl { color: #fff; }
-
 .story-meta { display: flex; align-items: center; gap: 5px; flex-wrap: wrap; margin-bottom: 5px; }
-
 .story-src { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; text-transform: uppercase; letter-spacing: .04em; }
-
 .story-time { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #333; }
-
 .story-hl { font-family: 'Lora', serif; font-size: 13px; font-weight: 700; color: #999; line-height: 1.4; margin-bottom: 4px; transition: color .15s; }
-
 .story-det { font-size: 11px; color: #555; line-height: 1.6; }
-
 .stag { font-size: 9px; font-weight: 700; padding: 2px 5px; border-radius: 2px; text-transform: uppercase; letter-spacing: .05em; font-family: 'IBM Plex Mono', monospace; }
 
-
-
-/* analysis col */
-
 .dig-analysis { flex: 1; overflow-y: auto; background: #141414; min-width: 0; }
-
 .dig-analysis-inner { padding: 28px 36px; max-width: 800px; }
-
 .an-empty { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 10px; color: #2a2a2a; font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .1em; text-transform: uppercase; min-height: 400px; }
-
 .an-top { display: flex; align-items: center; gap: 8px; margin-bottom: 16px; }
-
 .an-pip { width: 7px; height: 7px; border-radius: 50%; background: var(--cc); flex-shrink: 0; }
-
 .an-cat { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #555; text-transform: uppercase; letter-spacing: .12em; }
-
 .an-src { font-family: 'IBM Plex Mono', monospace; font-size: 9px; color: #444; margin-left: auto; }
-
 .an-hl { font-family: 'Lora', serif; font-size: 24px; font-weight: 700; color: #eee; line-height: 1.25; margin-bottom: 18px; }
-
 .an-divider { height: 1px; background: #222; margin-bottom: 20px; }
-
 .an-ai-lbl { font-family: 'IBM Plex Mono', monospace; font-size: 10px; letter-spacing: .14em; text-transform: uppercase; color: #555; margin-bottom: 14px; display: flex; align-items: center; gap: 6px; }
-
 .ai-dot-sm { display: inline-flex; gap: 2px; align-items: center; }
-
 .ai-dot-sm span { width: 3px; height: 3px; border-radius: 50%; background: #7f77dd; animation: aiDot 1.2s infinite; }
-
 .ai-dot-sm span:nth-child(2){animation-delay:.2s}
-
 .ai-dot-sm span:nth-child(3){animation-delay:.4s}
-
 .an-body { font-size: 14px; line-height: 1.9; color: #888; font-weight: 300; }
-
 .an-body p { margin-bottom: 14px; }
-
 .an-body p:last-child { margin-bottom: 0; }
-
 .an-link { display: inline-flex; align-items: center; gap: 6px; margin-top: 20px; font-family: 'IBM Plex Mono', monospace; font-size: 10px; color: #c41e3a; text-decoration: none; border-bottom: 1px dashed rgba(196,30,58,.3); padding-bottom: 2px; letter-spacing: .04em; }
-
-
-
-/* ── FOOTER ── */
+.loading-dots { display: inline-flex; gap: 4px; align-items: center; }
+.loading-dots span { width: 5px; height: 5px; border-radius: 50%; background: #7f77dd; animation: aiDot 1.1s infinite; }
+.loading-dots span:nth-child(2) { animation-delay: 0.18s; }
+.loading-dots span:nth-child(3) { animation-delay: 0.36s; }
 
 footer { padding: 18px 24px; border: 1px solid #2a2a2a; background: #1a1a1a; border-radius: 6px; display: flex; align-items: center; justify-content: space-between; gap: 16px; flex-wrap: wrap; margin-top: 10px; }
-
 .footer-logo { font-family: 'IBM Plex Mono', monospace; font-size: 12px; font-weight: 500; letter-spacing: 0.08em; text-transform: uppercase; color: #888; }
-
 .footer-logo span { color: #c41e3a; }
-
 .footer-meta { font-family: 'IBM Plex Mono', monospace; font-size: 11px; color: #555; text-align: right; line-height: 1.7; }
 
-
-
-@media (max-width: 900px) { .newspaper-grid { grid-template-columns: 1fr; } .col-left, .col-right { display: none; } .dig-sidebar { display: none; } .dig-stories { width: 260px; } }
-
+@media (max-width: 900px) { .dig-sidebar { display: none; } .dig-stories { width: 260px; } }
 @media (max-width: 600px) { header { padding: 10px 16px; } .masthead { font-size: 18px; } .nav-item { padding: 0 10px; font-size: 10px; } .dig-stories { display: none; } }
-
 </style>
-
 </head>
-
 <body>
 
-
-
 <header>
-
   <div style="display:flex;flex-direction:column;gap:0">
-
     <div style="display:flex;align-items:center;gap:10px">
-
       <h1 class="masthead"><span class="masthead-war">WAR</span><span class="masthead-watch">WATCH</span></h1>
-
       <span class="ai-sum-badge">AI Summariser</span>
-
     </div>
-
     <div class="header-date" id="header-date" style="font-size:9px;color:#555;letter-spacing:.06em;font-family:'IBM Plex Mono',monospace;margin-top:3px"></div>
-
   </div>
-
   <nav>
-
     <a class="nav-item live active" href="index.html"><span class="live-dot"></span>Live</a>
-
     <a class="nav-item" href="india.html">India</a>
-
     <a class="nav-item" href="economy.html">Economy</a>
-
     <a class="nav-item" href="records.html">Records</a>
-
     <a class="nav-item" href="warwatch.html">War Context</a>
-
   </nav>
-
 </header>
 
-
-
 <div class="alert-bar">
-
   <div class="alert-badge" id="alert-escalation">CRITICAL</div>
-
   <div class="alert-dot"></div>
-
   <div class="alerts-scroll">
-
-    <div class="alerts-text">
-
-      <span id="typewriter-output"></span><span class="typewriter-cursor"></span>
-
-    </div>
-
+    <div class="alerts-text"><span id="typewriter-output"></span><span class="typewriter-cursor"></span></div>
   </div>
-
 </div>
-
-
-
-<!-- 16:9 HERO IMAGE -->
 
 <div class="hero-img-wrap">
-
-  <div class="hero-img-inner">
-
-    <img src="war.png" alt="War Monitor" onerror="this.parentElement.style.background='#1a1a1a'"/>
-
-  </div>
-
+  <div class="hero-img-inner"><img src="war.png" alt="War Monitor" onerror="this.parentElement.style.background='#1a1a1a'"/></div>
   <div class="hero-overlay"></div>
-
   <div class="hero-caption">
-
     <div class="hero-caption-txt">WarWatch · AI-powered conflict monitor · 17 sources</div>
-
     <div class="hero-live-pill"><span class="live-dot" style="margin-right:0"></span>Live</div>
-
   </div>
-
 </div>
-
-
 
 <div class="page-sections">
 
-
-
 <!-- ECONOMY STRIP -->
-
 <a class="econ-strip" href="economy.html">
-
   <div class="econ-strip-inner">
-
     <div class="econ-strip-label"><span style="width:5px;height:5px;border-radius:50%;background:#d4892a;display:inline-block;flex-shrink:0"></span>Markets</div>
-
     <div class="econ-cells" id="econ-strip-cells">
-
       <div class="econ-cell"><div class="econ-cell-ticker">Brent</div><div class="econ-cell-val" id="es-brent">$94.8</div><div class="econ-cell-chg up" id="es-brent-chg">+24.7% since war</div></div>
-
       <div class="econ-cell"><div class="econ-cell-ticker">WTI</div><div class="econ-cell-val" id="es-wti">$91.3</div><div class="econ-cell-chg up" id="es-wti-chg">+22.1% since war</div></div>
-
       <div class="econ-cell"><div class="econ-cell-ticker">Gold USD</div><div class="econ-cell-val" id="es-gold">$3,082</div><div class="econ-cell-chg up" id="es-gold-chg">+14.6% since war</div></div>
-
       <div class="econ-cell"><div class="econ-cell-ticker">USD/INR</div><div class="econ-cell-val" id="es-inr">₹85.42</div><div class="econ-cell-chg dn" id="es-inr-chg">-4.1% since war</div></div>
-
       <div class="econ-cell"><div class="econ-cell-ticker">MCX Crude</div><div class="econ-cell-val" id="es-mcx">₹7,842</div><div class="econ-cell-chg up" id="es-mcx-chg">+23.4% since war</div></div>
-
       <div class="econ-cell"><div class="econ-cell-ticker">Petrol est.</div><div class="econ-cell-val" id="es-petrol">₹97.4</div><div class="econ-cell-chg up" id="es-petrol-chg">+₹4.2 since war</div></div>
-
     </div>
-
     <div class="econ-strip-cta">Full Economy</div>
-
   </div>
-
 </a>
 
-
-
-<!-- THREE-COLUMN GRID -->
-
-<div class="newspaper-grid" id="live">
-
-  <!-- LEFT: AI SUMMARY -->
-
-  <div class="col-left">
-
-    <div class="ai-summary-box">
-
-      <div class="ai-summary-label">AI Summary · <div class="ai-speaking-dot"><span></span><span></span><span></span></div> — <span id="summary-time">—</span></div>
-
-      <div class="ai-summary-text" id="summary-text-inner">
-
-        <div class="loading-dots"><span></span><span></span><span></span></div>
-
-      </div>
-
-      <div class="ai-refresh-note" id="ai-refresh-note"></div>
-
-      <div class="escalation-block">
-
-        <div class="escalation-label">Tone</div>
-
-        <div class="escalation-badge" id="tone-badge" style="background:#e05555">Volatile</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- CENTER: LIVE ROTATOR -->
-
-  <div class="col-center">
-
-    <div class="rot-topbar">
-
-      <div class="live-badge">Live</div>
-
-      <span class="rot-counter" id="rot-counter">1 / 8</span>
-
-    </div>
-
-    <div class="rot-stage" id="rot-stage"></div>
-
-    <div class="rot-navrow">
-
-      <button class="rot-btn" id="rot-prev">&#8592;</button>
-
-      <div class="rot-dots" id="rot-dots"></div>
-
-      <button class="rot-btn" id="rot-next">&#8594;</button>
-
-    </div>
-
-  </div>
-
-
-
-  <!-- RIGHT: TIMELINE -->
-
-  <div class="col-right">
-
-    <div class="latest-title"><span class="latest-title-dot"></span>Latest News</div>
-
-    <div class="timeline" id="timeline"></div>
-
-    <div class="read-more-btn" onclick="window.location.href='records.html'">Read more stories &rarr;</div>
-
-  </div>
-
-</div>
-
-
-
-<!-- DAILY DIGEST (merged) -->
-
+<!-- DAILY DIGEST -->
 <div class="digest-section">
-
   <div class="digest-ribbon">
-
     <h2>Daily Digest</h2>
-
     <span class="digest-ribbon-tag">Stories by category · AI analysis on every item</span>
-
   </div>
-
   <div class="digest-main">
-
-    <!-- Sidebar -->
-
     <div class="dig-sidebar">
-
       <div class="dig-sidebar-hdr">Categories</div>
-
       <div id="dig-cat-list"></div>
-
     </div>
-
-    <!-- Stories -->
-
     <div class="dig-stories" id="dig-stories-col">
-
       <div class="dig-stories-hdr" id="dig-stories-hdr" style="--cc:#c41e3a">
-
         <div class="dig-stories-pip"></div>
-
         <div class="dig-stories-title" id="dig-stories-title">War</div>
-
         <div class="dig-stories-count" id="dig-stories-count"></div>
-
       </div>
-
       <div id="dig-stories-list"></div>
-
     </div>
-
-    <!-- Analysis -->
-
     <div class="dig-analysis" id="dig-analysis">
-
       <div class="dig-analysis-inner" id="dig-analysis-inner">
-
         <div class="an-empty" id="dig-an-empty">
-
           <svg width="40" height="40" viewBox="0 0 40 40" fill="none"><rect x="6" y="8" width="28" height="4" rx="2" fill="currentColor"/><rect x="6" y="18" width="20" height="3" rx="1.5" fill="currentColor"/><rect x="6" y="27" width="14" height="3" rx="1.5" fill="currentColor"/></svg>
-
           Select a story to read analysis
-
         </div>
-
       </div>
-
     </div>
-
   </div>
-
 </div>
-
-
 
 </div><!-- /page-sections -->
 
-
-
 <div style="padding: 0 24px 32px; max-width: 1660px; margin: 0 auto;">
-
 <footer>
-
   <div class="footer-logo">War<span>Watch</span></div>
-
-  <div class="footer-meta" id="footer-meta">
-
-    Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel · Iran International<br>
-
-    AI Summariser
-
-  </div>
-
+  <div class="footer-meta" id="footer-meta">Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel · Iran International<br>AI Summariser</div>
 </footer>
-
 </div>
 
-
-
 <script src="live_data.js" onerror="void 0"></script>
-
 <script src="prices_data.js" onerror="void 0"></script>
-
 <script>
-
 (function () {
-
   var LEVEL_COLOR = { LOW:'#3daa72', MEDIUM:'#d4892a', HIGH:'#c87830', CRITICAL:'#a32d2d' };
 
-  var TONE_COLOR  = { VOLATILE:'#e05555', ESCALATING:'#f5a623', TENSE:'#d4892a', STABLE:'#3daa72', 'DE-ESCALATING':'#1d9e75' };
-
-
-
   var d = new Date();
-
   var DAYS = ['Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday'];
-
   var MONTHS = ['January','February','March','April','May','June','July','August','September','October','November','December'];
-
   document.getElementById('header-date').textContent = DAYS[d.getDay()] + ', ' + MONTHS[d.getMonth()] + ' ' + d.getDate() + ', ' + d.getFullYear();
 
-
-
   var D = window.WARWATCH_LIVE;
-
-
 
   if (D && D.escalationLevel) {
-
     var badge = document.getElementById('alert-escalation');
-
     badge.textContent = D.escalationLevel;
-
     badge.style.background = LEVEL_COLOR[D.escalationLevel] || '#a32d2d';
-
   }
-
   if (D && D.alerts && D.alerts.length) window._alertHeadlines = D.alerts;
 
-
-
-  if (D && D.sentiment && D.sentiment.overall_tone) {
-
-    var tone = D.sentiment.overall_tone;
-
-    var tb = document.getElementById('tone-badge');
-
-    tb.textContent = tone.charAt(0) + tone.slice(1).toLowerCase();
-
-    tb.style.background = TONE_COLOR[tone] || '#d4892a';
-
-  }
-
-
-
-  if (D && D.generatedAt) document.getElementById('summary-time').textContent = D.generatedAt;
-
-  window._rotatorCards = (D && D.newsCards && D.newsCards.length) ? D.newsCards.slice(0, 8) : null;
-
-  if (window._initRotator) window._initRotator();
-
-
-
-  var tl = document.getElementById('timeline');
-
-  var NEWS_ITEMS = window._rotatorCards || [];
-
-  if (NEWS_ITEMS.length && tl) {
-
-    tl.innerHTML = NEWS_ITEMS.map(function(card, idx) {
-
-      var src = card.sourceLabel || (card.orgs && card.orgs[0] ? card.orgs[0] : 'News');
-
-      return '<div class="timeline-item' + (idx === 0 ? ' active' : '') + '" onclick="pickStory(' + idx + ')">'
-
-        + '<div class="tl-meta"><span class="tl-tag-d">War</span><span class="tl-time">' + (card.time || '') + '</span><span class="tl-src">' + src.toUpperCase() + '</span></div>'
-
-        + '<div class="tl-headline">' + card.headline + '</div>'
-
-        + '</div>';
-
-    }).join('');
-
-  }
-
-
-
   var fm = document.getElementById('footer-meta');
-
   if (fm && D && D.generatedAt) {
-
     fm.innerHTML = 'Sources: NDTV · BBC · Reuters · Al Jazeera · Times of Israel<br>Last updated: ' + D.generatedAt + (D.totalReports ? ' · ' + D.totalReports + ' reports logged' : '');
-
   }
-
 })();
-
-
-
-/* ── LIVE AI SUMMARY ── */
-
-var _summaryRefreshTimer = null;
-
-async function fetchAISummary() {
-
-  var D = window.WARWATCH_LIVE;
-
-  var headlines = '';
-
-  if (D && D.newsCards) {
-
-    headlines = D.newsCards.slice(0, 4).map(function(c){ return c.headline; }).join('\n');
-
-  } else {
-
-    headlines = 'US strikes Iranian facilities near Chabahar\nIranian drones hit Dubai airport\nIDF places Kharg Island on active target list\nBrent crude surges past $97';
-
-  }
-
-  var escalation = (D && D.escalationLevel) ? D.escalationLevel : 'CRITICAL';
-
-  var prompt = 'You are a senior conflict analyst. The current escalation level is ' + escalation + '.\n\nTop stories:\n' + headlines + '\n\nWrite exactly 3 short paragraphs (no headings, no bullets). Para 1: what is happening now. Para 2: consequences for region, oil, India. Para 3: next 24 hours. Max 55 words each.';
-
-  var inner = document.getElementById('summary-text-inner');
-
-  var noteEl = document.getElementById('ai-refresh-note');
-
-  inner.innerHTML = '<div class="loading-dots"><span></span><span></span><span></span></div>';
-
-  try {
-
-    var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-
-      method: 'POST',
-
-      headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + (window.GROQ_API_KEY || '') },
-
-      body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 500, messages: [{ role: 'user', content: prompt }] })
-
-    });
-
-    if (!res.ok) throw new Error('API ' + res.status);
-
-    var data = await res.json();
-
-    var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
-
-    var paras = txt.split(/\n\n+/).filter(function(p){ return p.trim().length > 20; }).slice(0, 3);
-
-    inner.innerHTML = paras.map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
-
-    var now = new Date();
-
-    if (noteEl) noteEl.textContent = 'Refreshed at ' + now.getHours().toString().padStart(2,'0') + ':' + now.getMinutes().toString().padStart(2,'0');
-
-  } catch(e) {
-
-    var D2 = window.WARWATCH_LIVE;
-
-    var fallback = (D2 && (D2.execSummaryRich || D2.execSummary || D2.executive_summary)) || 'The US-Israel-Iran conflict is at critical escalation.';
-
-    var parts = fallback.split('\n\n').filter(Boolean);
-
-    if (parts.length < 2) { var s = fallback.match(/[^.!?]+[.!?]+/g) || [fallback]; var ch = Math.ceil(s.length/3); parts = [s.slice(0,ch).join(' '),s.slice(ch,ch*2).join(' '),s.slice(ch*2).join(' ')].filter(function(p){return p.trim().length>10;}); }
-
-    inner.innerHTML = parts.slice(0,3).map(function(p){ return '<p style="margin:0 0 10px 0;line-height:1.75;">' + p.trim() + '</p>'; }).join('');
-
-    if (noteEl) noteEl.textContent = 'Live AI unavailable — showing last report';
-
-  }
-
-}
-
-window.addEventListener('load', function() { setTimeout(fetchAISummary, 600); setInterval(fetchAISummary, 15 * 60 * 1000); });
-
-
 
 /* ── ECONOMY STRIP ── */
-
-(function() {
-
-  window.addEventListener('load', function() {
-
-    var cells = document.querySelectorAll('.econ-cell');
-
-    cells.forEach(function(c, i) {
-
-      var val = c.querySelector('.econ-cell-val');
-
-      if (val) { val.style.opacity = '0'; setTimeout(function() { val.style.opacity = '1'; val.style.transition = 'opacity .3s ease'; }, 200 + i * 80); }
-
-    });
-
-    var P = window.WARWATCH_PRICES;
-
-    if (!P) return;
-
-    var pr = P.prices || {};
-
-    var ind = P.india || {};
-
-    function setV(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; }
-
-    function setC(id, pct, pre) { var el = document.getElementById(id); if (!el) return; el.textContent = (pre||'') + (pct>0?'+':'') + pct.toFixed(1) + '% since war'; el.className = 'econ-cell-chg ' + (pct>0?'up':'dn'); }
-
-    var b = pr['BZ=F']; if (b) { setV('es-brent', b.formatted); setC('es-brent-chg', b.war_pct); }
-
-    var w = pr['CL=F']; if (w) { setV('es-wti', w.formatted); setC('es-wti-chg', w.war_pct); }
-
-    var g = pr['GC=F']; if (g) { setV('es-gold', g.formatted); setC('es-gold-chg', g.war_pct); }
-
-    var i = pr['INR=X']; if (i) { setV('es-inr', i.formatted); setC('es-inr-chg', i.war_pct); }
-
-    var mc = pr['CRUDEOIL.MCX']; if (mc) { setV('es-mcx', mc.formatted); setC('es-mcx-chg', mc.war_pct); }
-
-    var pet = ind && ind.petrolPump; if (pet) { setV('es-petrol', pet.formatted || '₹97.4'); var wc = pet.war_change||0; var pe = document.getElementById('es-petrol-chg'); if(pe){pe.textContent=(wc>0?'+':'')+'₹'+Math.abs(wc).toFixed(1)+' since war';pe.className='econ-cell-chg '+(wc>0?'up':'dn');} }
-
-  });
-
-})();
-
-
+window.addEventListener('load', function() {
+  var P = window.WARWATCH_PRICES;
+  if (!P) return;
+  var pr = P.prices || {}, ind = P.india || {};
+  function setV(id, val) { var el = document.getElementById(id); if (el) el.textContent = val; }
+  function setC(id, pct) { var el = document.getElementById(id); if (!el) return; el.textContent = (pct>0?'+':'') + pct.toFixed(1) + '% since war'; el.className = 'econ-cell-chg ' + (pct>0?'up':'dn'); }
+  var b = pr['BZ=F']; if (b) { setV('es-brent', b.formatted); setC('es-brent-chg', b.war_pct); }
+  var w = pr['CL=F']; if (w) { setV('es-wti', w.formatted); setC('es-wti-chg', w.war_pct); }
+  var g = pr['GC=F']; if (g) { setV('es-gold', g.formatted); setC('es-gold-chg', g.war_pct); }
+  var i = pr['INR=X']; if (i) { setV('es-inr', i.formatted); setC('es-inr-chg', i.war_pct); }
+  var mc = pr['CRUDEOIL.MCX']; if (mc) { setV('es-mcx', mc.formatted); setC('es-mcx-chg', mc.war_pct); }
+  var pet = ind && ind.petrolPump;
+  if (pet) {
+    setV('es-petrol', pet.formatted || '₹97.4');
+    var wc = pet.war_change || 0;
+    var pe = document.getElementById('es-petrol-chg');
+    if (pe) { pe.textContent = (wc>0?'+':'') + '₹' + Math.abs(wc).toFixed(1) + ' since war'; pe.className = 'econ-cell-chg ' + (wc>0?'up':'dn'); }
+  }
+});
 
 /* ── TYPEWRITER ── */
-
 (function() {
-
   var DEFAULT = ['US strikes Iranian facilities near Chabahar','Iranian drones hit Dubai airport perimeter','IDF places Kharg Island on active target list','Brent crude surges past $97/barrel','Pakistan warns against airspace use for Iran strikes'];
-
   var TYPE_SPEED = 30, ERASE_SPEED = 18, PAUSE_AFTER = 3200, PAUSE_BEFORE = 400;
-
   var output = document.getElementById('typewriter-output');
-
   var idx = 0, charIdx = 0, erasing = false;
-
   function getH() { return (window._alertHeadlines && window._alertHeadlines.length) ? window._alertHeadlines : DEFAULT; }
-
   function tick() {
-
-    var hs = getH(); var cur = hs[idx % hs.length];
-
+    var hs = getH(), cur = hs[idx % hs.length];
     if (!erasing) {
-
       output.textContent = cur.slice(0, charIdx + 1); charIdx++;
-
       if (charIdx >= cur.length) { erasing = true; setTimeout(tick, PAUSE_AFTER); } else setTimeout(tick, TYPE_SPEED);
-
     } else {
-
       output.textContent = cur.slice(0, charIdx - 1); charIdx--;
-
       if (charIdx <= 0) { erasing = false; idx = (idx + 1) % hs.length; setTimeout(tick, PAUSE_BEFORE); } else setTimeout(tick, ERASE_SPEED);
-
     }
-
   }
-
   setTimeout(tick, 800);
-
 })();
-
-
-
-/* ── LIVE NEWS ROTATOR ── */
-
-(function() {
-
-  var DEFAULT_CARDS = [
-
-    { headline:'US jets strike Iranian facilities near Chabahar trade zone', summary:'American carrier-based aircraft struck two IRGC logistics depots near the Chabahar free-trade zone overnight. Iran called the strikes an act of war.', sourceLabel:'NDTV', time:'2 hrs ago', sourceUrl:'https://www.ndtv.com', type:'direct' },
-
-    { headline:'Iranian drones strike near Dubai International Airport', summary:'Drone strikes caused a large fire near Dubai airport perimeter. UAE authorities confirmed no runway damage but flights were diverted for several hours.', sourceLabel:'BBC', time:'4 hrs ago', sourceUrl:'https://www.bbc.com', type:'direct' },
-
-    { headline:'IDF places Kharg Island on active target list', summary:'Israel formally added Kharg Island — responsible for 90% of Iranian oil exports — to its active military target list, raising fears of an oil price shock.', sourceLabel:'Reuters', time:'6 hrs ago', sourceUrl:'https://www.reuters.com', type:'direct' },
-
-    { headline:"Pakistan warns it will not allow territory used for strikes on Iran", summary:"Pakistan's foreign ministry issued a strong statement refusing to permit any country to use Pakistani airspace or territory for military operations against Iran.", sourceLabel:'Dawn', time:'3 hrs ago', sourceUrl:'https://www.dawn.com', type:'indirect' },
-
-    { headline:"Russia calls US strikes on Iran 'illegal aggression,' demands UN session", summary:"Russia condemned the US airstrikes as illegal aggression and demanded an emergency UN Security Council session.", sourceLabel:'TASS', time:'5 hrs ago', sourceUrl:'https://tass.com', type:'indirect' },
-
-    { headline:'Houthi rebels resume Red Sea shipping attacks in solidarity with Iran', summary:"Yemen's Houthi movement announced it is resuming attacks on Red Sea shipping in solidarity with Iran.", sourceLabel:'Al Jazeera', time:'7 hrs ago', sourceUrl:'https://www.aljazeera.com', type:'indirect' },
-
-    { headline:'Brent crude surges past $97 as Strait of Hormuz closure fears spike', summary:"Oil markets opened sharply higher as Hormuz closure fears spiked. Analysts warn $120/barrel is possible if the strait is disrupted.", sourceLabel:'Bloomberg', time:'8 hrs ago', sourceUrl:'https://www.bloomberg.com', type:'markets' },
-
-    { headline:'China urges maximum restraint, offers to mediate between US and Iran', summary:"Beijing issued an unusually direct call for maximum restraint from all parties and offered to play a mediating role between Washington and Tehran.", sourceLabel:'The Hindu', time:'9 hrs ago', sourceUrl:'https://www.thehindu.com', type:'indirect' }
-
-  ];
-
-  var TYPE_TAG = { direct:'rot-tag-d', indirect:'rot-tag-i', markets:'rot-tag-e' };
-
-  var TYPE_LBL = { direct:'War', indirect:'Wider War', markets:'Markets' };
-
-  var aiCache = {};
-
-  var stage, dotsEl, counterEl, rotCards, els = [], cur = 0, animating = false;
-
-
-
-  function buildRotator(cards) {
-
-    rotCards = cards;
-
-    stage = document.getElementById('rot-stage');
-
-    dotsEl = document.getElementById('rot-dots');
-
-    counterEl = document.getElementById('rot-counter');
-
-    if (!stage) return;
-
-    stage.innerHTML = ''; dotsEl.innerHTML = ''; els = [];
-
-    cards.forEach(function(c, i) {
-
-      var el = document.createElement('div');
-
-      el.className = 'rot-card ' + (i === 0 ? 'rot-active' : 'rot-next');
-
-      var tagCls = TYPE_TAG[c.type || 'direct'] || 'rot-tag-d';
-
-      var tagLbl = TYPE_LBL[c.type || 'direct'] || 'War';
-
-      var articleUrl = c.sourceUrl || '#';
-
-      var channelName = c.sourceLabel || 'Source';
-
-      var timeLbl = c.time ? (channelName.toUpperCase() + ' · ' + c.time) : channelName.toUpperCase();
-
-      el.innerHTML =
-
-        '<div class="rot-source">' + timeLbl + ' <span class="' + tagCls + '">' + tagLbl + '</span></div>' +
-
-        '<div class="rot-headline">' + (c.headline || '') + '</div>' +
-
-        '<div class="rot-summary">' + (c.summary || '') + '</div>' +
-
-        '<div class="ai-analysis-box" id="ai-box-' + i + '">' +
-
-          '<div class="ai-analysis-lbl">AI Analysis · Live <div class="ai-speaking-dot"><span></span><span></span><span></span></div></div>' +
-
-          '<div class="ai-analysis-txt" id="ai-txt-' + i + '"><div class="loading-dots"><span></span><span></span><span></span></div></div>' +
-
-        '</div>' +
-
-        '<div class="rot-read-row">Read on &nbsp;<a class="rot-channel-link" href="' + articleUrl + '" target="_blank">' + channelName + '</a></div>';
-
-      stage.appendChild(el); els.push(el);
-
-      var dot = document.createElement('span');
-
-      dot.className = i === 0 ? 'on' : '';
-
-      (function(idx2) { dot.onclick = function() { if (!animating) goTo(idx2, idx2 > cur ? 1 : -1); }; })(i);
-
-      dotsEl.appendChild(dot);
-
-    });
-
-    counterEl.textContent = '1 / ' + cards.length;
-
-    loadAI(0);
-
-  }
-
-
-
-  async function loadAI(idx) {
-
-    var box = document.getElementById('ai-txt-' + idx);
-
-    if (!box) return;
-
-    if (aiCache[idx]) { box.innerHTML = aiCache[idx]; return; }
-
-    var c = rotCards[idx];
-
-    if (c.fullAnalysis && c.fullAnalysis.length > 80) {
-
-      var pre = c.fullAnalysis.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,3);
-
-      var preHtml = pre.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
-
-      aiCache[idx] = preHtml; box.innerHTML = preHtml; return;
-
-    }
-
-    var prompt = c.headline+' — '+c.summary+'\n\nWrite 3 short paragraphs (no headings, no bullets): what happened, broader consequences for region/India, what happens next. Max 50 words each.';
-
-    var key = window.GROQ_API_KEY || '';
-
-    if (key) {
-
-      try {
-
-        var res = await fetch('https://api.groq.com/openai/v1/chat/completions', {
-
-          method: 'POST', headers: { 'Content-Type': 'application/json', 'Authorization': 'Bearer ' + key },
-
-          body: JSON.stringify({ model: 'llama-3.3-70b-versatile', max_tokens: 450, messages: [{ role: 'user', content: prompt }] })
-
-        });
-
-        var data = await res.json();
-
-        var txt = (data.choices && data.choices[0] && data.choices[0].message && data.choices[0].message.content) || '';
-
-        var paras = txt.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,3);
-
-        if (paras.length) { var html = paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join(''); aiCache[idx]=html; box.innerHTML=html; return; }
-
-      } catch(e) {}
-
-    }
-
-    var fb = '<p>' + (c.summary || 'Analysis loading...') + '</p>';
-
-    aiCache[idx] = fb; box.innerHTML = fb;
-
-  }
-
-
-
-  function goTo(idx, dir) {
-
-    if (animating || !els.length) return;
-
-    var next = (idx + rotCards.length) % rotCards.length;
-
-    if (next === cur) return;
-
-    animating = true;
-
-    var prev = cur; cur = next;
-
-    els[cur].className = 'rot-card ' + (dir > 0 ? 'rot-next' : 'rot-prev');
-
-    void els[cur].offsetWidth;
-
-    els[prev].className = 'rot-card ' + (dir > 0 ? 'rot-prev' : 'rot-next');
-
-    els[cur].className = 'rot-card rot-active';
-
-    dotsEl.querySelectorAll('span').forEach(function(d, i) { d.className = i === cur ? 'on' : ''; });
-
-    counterEl.textContent = (cur + 1) + ' / ' + rotCards.length;
-
-    setTimeout(function() { animating = false; loadAI(cur); }, 560);
-
-    document.querySelectorAll('.timeline-item').forEach(function(el, i){ el.classList.toggle('active', i === cur); });
-
-  }
-
-
-
-  function pickStory(idx) { goTo(idx, idx > cur ? 1 : -1); }
-
-  window.pickStory = pickStory;
-
-
-
-  document.addEventListener('DOMContentLoaded', function() {
-
-    var cards = window._rotatorCards || DEFAULT_CARDS;
-
-    buildRotator(cards);
-
-    document.getElementById('rot-next').onclick = function() { if (!animating) goTo(cur + 1, 1); };
-
-    document.getElementById('rot-prev').onclick = function() { if (!animating) goTo(cur - 1, -1); };
-
-    var tl = document.getElementById('timeline');
-
-    if (tl && (!window.WARWATCH_LIVE || !window.WARWATCH_LIVE.newsCards)) {
-
-      tl.innerHTML = cards.map(function(c, i) {
-
-        var tagCls = 'tl-tag-' + (c.type === 'markets' ? 'e' : c.type === 'indirect' ? 'i' : 'd');
-
-        var tagLbl = TYPE_LBL[c.type || 'direct'] || 'War';
-
-        return '<div class="timeline-item' + (i === 0 ? ' active' : '') + '" onclick="pickStory(' + i + ')">'
-
-          + '<div class="tl-meta"><span class="' + tagCls + '">' + tagLbl + '</span><span class="tl-time">' + (c.time || '') + '</span><span class="tl-src">' + (c.sourceLabel || '').toUpperCase() + '</span></div>'
-
-          + '<div class="tl-headline">' + c.headline + '</div>'
-
-          + '</div>';
-
-      }).join('');
-
-    }
-
-  });
-
-
-
-  window._initRotator = function() { var cards = window._rotatorCards || DEFAULT_CARDS; if (stage) { buildRotator(cards); } };
-
-})();
-
-
 
 /* ── DAILY DIGEST ── */
-
 (function(){
-
   var SECTIONS=[
-
     {key:'war',       label:'War',          color:'#c41e3a', tagBg:'rgba(196,30,58,.15)',   tagColor:'#e07070'},
-
     {key:'military',  label:'Military',      color:'#7f77dd', tagBg:'rgba(127,119,221,.15)', tagColor:'#a89fe0'},
-
     {key:'diplomacy', label:'Diplomacy',     color:'#3daa72', tagBg:'rgba(61,170,114,.15)',  tagColor:'#5ccc8e'},
-
     {key:'wider_war', label:'Wider War',     color:'#7aabee', tagBg:'rgba(26,87,198,.15)',   tagColor:'#7aabee'},
-
     {key:'markets',   label:'Markets & Oil', color:'#d4892a', tagBg:'rgba(212,137,42,.15)',  tagColor:'#d4a94a'},
-
     {key:'india',     label:'India Impact',  color:'#c41e3a', tagBg:'rgba(196,30,58,.12)',   tagColor:'#e07070', isIndia:true}
-
   ];
 
-
-
   var FALLBACK={
-
     war:[
-
       {headline:'US launches Operation Midnight Hammer — strikes Iran nuclear sites',summary:'B-2 bombers hit Fordow, Natanz and Isfahan overnight.',fullAnalysis:'US B-2 stealth bombers conducted simultaneous strikes on Iran\'s three most hardened nuclear facilities. This is the largest US military action against Iran in history.\n\nThe strikes represent a shift from sanctions and diplomacy to direct confrontation. Iran\'s Supreme Leader immediately declared an act of war.\n\nWatch for IRGC naval movement toward Hormuz in the next 24–48 hours.',actor:'US',sourceLabel:'NDTV',time:'2h ago',sourceUrl:'https://www.ndtv.com',type:'war'},
-
       {headline:'IDF places Kharg Island on active target list — Brent surges',summary:'Israel formally added Kharg Island — 90% of Iran\'s crude exports — to its approved strike list.',fullAnalysis:'The IDF have formally declared Kharg Island an approved military target. The island processes over 90% of Iran\'s crude oil exports.\n\nA Kharg strike would trigger a global energy crisis. Brent would reach $120–$140 within days.\n\nThe listing is a pressure tactic designed to force Iran to the negotiating table.',actor:'Israel',sourceLabel:'Reuters',time:'4h ago',sourceUrl:'https://www.ndtv.com',type:'war'}
-
     ],
-
     military:[
-
       {headline:'USS Gerald Ford repositions — 180 miles from Iranian coast',summary:'The Gerald Ford carrier group has moved significantly closer to Iran.',fullAnalysis:'The repositioning of the Gerald Ford battle group to within 180 miles of the Iranian coast is the clearest US military signal yet.\n\nTwo full US carrier battle groups are now in the region — a level not seen since 2003.\n\nFor India, the US naval presence deters Iranian aggression against Gulf shipping, but raises risk of naval confrontation.',actor:'US Navy',sourceLabel:'USNI News',time:'3h ago',sourceUrl:'#',type:'military'}
-
     ],
-
     diplomacy:[
-
       {headline:'Qatar mediating US–Iran back-channel — 72-hour pause on table',summary:'Qatari officials are shuttling messages between Washington and Tehran.',fullAnalysis:'Qatar has activated its longstanding role as US-Iran intermediary. Officials have made three trips to Tehran and two to Washington in 48 hours.\n\nThe 72-hour pause proposal would freeze all military operations. Iran\'s condition is a public US acknowledgment that strikes violated international law.\n\nFor India a ceasefire would immediately ease oil price pressure.',actor:'Qatar',sourceLabel:'Al Jazeera',time:'5h ago',sourceUrl:'https://www.aljazeera.com',type:'diplomacy'}
-
     ],
-
     wider_war:[
-
       {headline:'Russia calls strikes "illegal aggression" — demands UN emergency session',summary:'Russia condemned the US airstrikes and demanded an emergency UNSC session.',fullAnalysis:'Russia\'s language was unusually direct — calling the strikes state terrorism. Moscow has moved two warships from Tartus closer to Iranian waters.\n\nAt the UN, Russia and China have co-signed a call for an emergency UNSC session.\n\nFor India the Russia-China alignment creates a diplomatic opportunity — positioning India as a neutral power.',actor:'Russia',sourceLabel:'TASS',time:'6h ago',sourceUrl:'#',type:'wider_war'},
-
       {headline:'Houthis resume Red Sea attacks — insurance premiums surge 600%',summary:'Houthis reopened Red Sea shipping attacks in solidarity with Iran.',fullAnalysis:'The Houthi resumption opens a parallel front against global trade. Major shipping lines have diverted vessels around the Cape of Good Hope.\n\nLloyd\'s of London insurance premiums for Red Sea transits jumped 600% in 24 hours.\n\nIndian exports to Europe via Suez are directly affected.',actor:'Houthis',sourceLabel:'Al Jazeera',time:'7h ago',sourceUrl:'https://www.aljazeera.com',type:'wider_war'}
-
     ],
-
     markets:[
-
       {headline:'Brent at $97 — analysts warn $120 if Hormuz disrupted',summary:'Oil markets surged as Hormuz closure fears spiked. Goldman raised 90-day target to $115.',fullAnalysis:'The oil price spike reflects a growing probability of Hormuz disruption. At $97 Brent, India\'s annual oil import bill rises by roughly ₹1.8 lakh crore.\n\nGold surged to $3,080. The Indian rupee weakened to 85.4 against the dollar.\n\nFor Indian households a sustained $10/barrel rise translates to ₹5–6/litre at the petrol pump.',actor:'Markets',sourceLabel:'Bloomberg',time:'8h ago',sourceUrl:'#',type:'markets'}
-
     ],
-
     india:[
-
       {headline:'8.9M Indians at risk as Gulf conflict spreads',summary:'Indians across UAE, Saudi Arabia, Kuwait and Bahrain face evacuation risk.',fullAnalysis:'The Indian diaspora in the Gulf is the largest community directly at risk. UAE alone has 3.5M Indian nationals. Gulf remittances account for ~40% of India\'s total $55B annual inflow.\n\nMEA has opened a 24-hour consular hotline and asked Indians in UAE, Saudi Arabia and Bahrain to register.\n\nFor families in Kerala, Andhra Pradesh and Tamil Nadu the anxiety is acute.',category:'Diaspora',significance:'HIGH',sourceUrl:'https://www.ndtv.com',source:'NDTV',time:'Today',type:'india'},
-
       {headline:'India\'s Chabahar investment frozen as US strikes hit near port',summary:'US strikes near Bandar Abbas have suspended Chabahar operations.',fullAnalysis:'India\'s $85M Chabahar investment has been effectively frozen. Operations at the Shahid Beheshti terminal are suspended.\n\nChabahar is central to India\'s connectivity strategy with Afghanistan and Central Asia.\n\nIn the medium term India faces a painful choice: press Washington for Chabahar assurances, or accept the investment may be lost.',category:'Trade',significance:'HIGH',sourceUrl:'https://www.ndtv.com',source:'NDTV',time:'Today',type:'india'}
-
     ]
-
   };
 
-
-
   var D = window.WARWATCH_LIVE;
-
   var groups = {};
-
   SECTIONS.forEach(function(s){ groups[s.key] = []; });
 
-
-
   if (D && D.newsCards && D.newsCards.length) {
-
     D.newsCards.forEach(function(c) {
-
       var t = (c.type || 'war').toLowerCase().replace(/ /g,'_');
-
       if (groups[t]) groups[t].push(c); else groups.war.push(c);
-
     });
-
   }
-
   if (D && D.indiaImpact && D.indiaImpact.length) {
-
     groups.india = D.indiaImpact.map(function(i) {
-
       return {headline:i.headline, summary:i.detail, fullAnalysis:i.full_detail||i.detail,
-
         category:i.category, significance:i.significance, sourceUrl:i.sourceUrl, source:i.source, time:'Today', type:'india'};
-
     });
-
   }
-
   SECTIONS.forEach(function(s){ if (!groups[s.key].length) groups[s.key] = FALLBACK[s.key] || []; });
-
-
 
   var _analysisCache = {};
 
-  var currentSec = null;
-
-
-
   function showAnalysis(card, sec) {
-
     var inner = document.getElementById('dig-analysis-inner');
-
     var srcLbl = card.sourceLabel || card.source || 'Source';
-
     var srcUrl = card.sourceUrl || '#';
-
     var catLbl = card.category || sec.label;
-
     var cacheKey = card.headline;
 
-
-
     inner.style.cssText = '--cc:' + sec.color;
-
     inner.innerHTML =
-
       '<div class="an-top" style="--cc:' + sec.color + '">' +
-
         '<div class="an-pip"></div>' +
-
         '<div class="an-cat">' + catLbl + '</div>' +
-
         '<div class="an-src">' + srcLbl + ' · ' + (card.time || '') + '</div>' +
-
       '</div>' +
-
       '<div class="an-hl">' + card.headline + '</div>' +
-
       '<div class="an-divider"></div>' +
-
       '<div class="an-ai-lbl">AI Analysis <div class="ai-dot-sm"><span></span><span></span><span></span></div></div>' +
-
       '<div class="an-body" id="dig-an-body"><div class="loading-dots"><span></span><span></span><span></span></div></div>' +
-
       (srcUrl !== '#' ? '<a class="an-link" href="' + srcUrl + '" target="_blank">Read → ' + srcLbl + ' ↗</a>' : '');
-
-
 
     if (_analysisCache[cacheKey]) { document.getElementById('dig-an-body').innerHTML = _analysisCache[cacheKey]; return; }
 
-
-
     var context = card.fullAnalysis || card.full_detail || card.detail || card.summary || '';
-
     if (context && context.length > 100) {
-
       var paras = context.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,5);
-
       if (!paras.length) paras = [context];
-
       var html = paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
-
       _analysisCache[cacheKey] = html;
-
       var el = document.getElementById('dig-an-body'); if (el) el.innerHTML = html; return;
-
     }
 
-
-
-    var key = window.GROQ_API_KEY || '';
-
-    if (!key) {
-
-      var fb = '<p>' + (card.summary || card.detail || '') + '</p>';
-
-      var elFb = document.getElementById('dig-an-body'); if (elFb) elFb.innerHTML = fb; return;
-
-    }
-
-    var prompt = 'You are a senior geopolitical analyst covering the US-Israel-Iran war of 2026.\n\nHeadline: ' + card.headline + '\nContext: ' + context + '\n\nWrite exactly 5 paragraphs of analysis (no headings, no bullets, plain prose). Para 1: what happened. Para 2: strategic significance. Para 3: regional consequences. Para 4: India angle. Para 5: next 24-48h scenario. Each 50-70 words.';
-
-    fetch('https://api.groq.com/openai/v1/chat/completions', {
-
-      method: 'POST', headers: {'Content-Type':'application/json','Authorization':'Bearer '+key},
-
-      body: JSON.stringify({model:'llama-3.3-70b-versatile',max_tokens:700,messages:[{role:'user',content:prompt}]})
-
-    }).then(function(r){return r.json();}).then(function(data){
-
-      var txt = (data.choices&&data.choices[0]&&data.choices[0].message&&data.choices[0].message.content)||context;
-
-      var paras = txt.split(/\n\n+/).filter(function(p){return p.trim().length>20;}).slice(0,5);
-
-      while(paras.length<3){paras.push(paras[paras.length-1]||context);}
-
-      var html = paras.map(function(p){return '<p>'+p.trim()+'</p>';}).join('');
-
-      _analysisCache[cacheKey] = html;
-
-      var el = document.getElementById('dig-an-body'); if (el) { el.style.animation='fadeIn .4s ease'; el.innerHTML=html; }
-
-    }).catch(function(){
-
-      var el = document.getElementById('dig-an-body'); if (el) el.innerHTML = '<p>' + (card.summary || '') + '</p>';
-
-    });
-
+    var fb = '<p>' + (card.summary || card.detail || '') + '</p>';
+    _analysisCache[cacheKey] = fb;
+    var elFb = document.getElementById('dig-an-body'); if (elFb) elFb.innerHTML = fb;
   }
 
-
-
   function loadSection(sec) {
-
-    currentSec = sec;
-
     var cards = groups[sec.key] || [];
-
     var hdr = document.getElementById('dig-stories-hdr');
-
     if (hdr) hdr.style.cssText = '--cc:' + sec.color;
-
     var pip = hdr ? hdr.querySelector('.dig-stories-pip') : null;
-
     if (pip) pip.style.background = sec.color;
-
     var title = document.getElementById('dig-stories-title');
-
     var count = document.getElementById('dig-stories-count');
-
     if (title) title.textContent = sec.label;
-
     if (count) count.textContent = cards.length + ' stories';
 
-
-
     var list = document.getElementById('dig-stories-list');
-
     list.innerHTML = '';
-
     cards.forEach(function(card, i) {
-
       var item = document.createElement('div');
-
       item.className = 'story-item' + (i === 0 ? ' active' : '');
-
       item.style.cssText = '--cc:' + sec.color + ';animation-delay:' + (i * 0.05).toFixed(2) + 's';
-
       var sig = card.significance;
-
       var sigBadge = '';
-
       if (sec.isIndia && sig) {
-
         var sigStyle = sig === 'HIGH' ? 'background:#c41e3a;color:#fff' : sig === 'MEDIUM' ? 'background:#8b5e0a;color:#fff' : 'background:#1d6e42;color:#fff';
-
         sigBadge = '<span class="stag" style="' + sigStyle + '">' + sig + '</span>';
-
       }
-
       var catBadge = '<span class="stag" style="background:' + sec.tagBg + ';color:' + sec.tagColor + '">' + (sec.isIndia && card.category ? card.category : sec.label) + '</span>';
-
       item.innerHTML =
-
         '<div class="story-meta">' + sigBadge + catBadge +
-
           (card.time ? '<span class="story-time">' + card.time + '</span>' : '') +
-
           (card.sourceLabel || card.source ? '<span class="story-src">' + (card.sourceLabel || card.source || '').toUpperCase() + '</span>' : '') +
-
         '</div>' +
-
         '<div class="story-hl">' + card.headline + '</div>' +
-
         '<div class="story-det">' + (card.summary || card.detail || '').slice(0, 120) + '</div>';
-
       (function(c, idx){ item.onclick = function(){
-
         list.querySelectorAll('.story-item').forEach(function(el,j){el.classList.toggle('active',j===idx);});
-
         showAnalysis(c, sec);
-
       }; })(card, i);
-
       list.appendChild(item);
-
     });
 
     if (cards.length) showAnalysis(cards[0], sec);
-
     else { document.getElementById('dig-analysis-inner').innerHTML = '<div class="an-empty">No stories in this section</div>'; }
-
   }
 
-
-
   var catList = document.getElementById('dig-cat-list');
-
   SECTIONS.forEach(function(sec, i) {
-
     var item = document.createElement('div');
-
     item.className = 'cat-item' + (i === 0 ? ' active' : '');
-
     item.style.cssText = '--cc:' + sec.color;
-
     item.innerHTML =
-
       '<div class="cat-pip"></div>' +
-
       '<div class="cat-name">' + sec.label + '</div>' +
-
       '<div class="cat-count">' + (groups[sec.key] || []).length + '</div>';
-
     item.onclick = function() {
-
       catList.querySelectorAll('.cat-item').forEach(function(el){ el.classList.remove('active'); });
-
       item.classList.add('active');
-
       loadSection(sec);
-
     };
-
     catList.appendChild(item);
-
   });
 
-
-
   loadSection(SECTIONS[0]);
-
 })();
-
 </script>
-
 </body>
-
 </html>
