@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 16:03 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Relatives of Qassem Soleimani arrested in US. Sirens activated across Israel after detected attacks from Iran, Lebanon. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Relatives of Qassem Soleimani arrested in US",
+      "detail": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded. \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fe",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/relatives-qassem-soleimani-arrested-us",
+      "fullAnalysis": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded. \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fe",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Sirens activated across Israel after detected attacks from Iran, Lebanon",
+      "detail": "The Israeli Home Front Command announced that sirens sounded in various areas after a drone infiltration\u00a0was detected nearby the boundary with Lebanon. Similarly, it also noted the detection of an Iranian missile attack targeting Jerusalem and Ashdod, with several news outlets reporting explosions a",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/sirens-activated-across-israel-after-detected-attacks-iran-lebanon",
+      "fullAnalysis": "The Israeli Home Front Command announced that sirens sounded in various areas after a drone infiltration\u00a0was detected nearby the boundary with Lebanon. Similarly, it also noted the detection of an Iranian missile attack targeting Jerusalem and Ashdod, with several news outlets reporting explosions a",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-04 16:03 UTC"
+}

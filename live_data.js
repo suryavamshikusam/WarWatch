@@ -1,16 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 15:36 UTC",
+  "generatedAt": "2026-04-04 16:03 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Relatives of Qassam Soleimani arrested in US \u00b7 Two family members of assassinated Iranian military commander Qassem Soleimani h\u2026",
-    "Other: Iran announces new air defence used to down US fighter jet \u00b7 Iran has unveiled a new air defence system which it said was used in the downing\u2026",
-    "Other: Is Donald Trump\u2019s triumphal tone on Iran facing a reality check? \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Relatives of Qassem Soleimani arrested in US \u00b7 Two family members of assassinated Iranian military commander Qassem Soleimani h\u2026",
+    "Other: Sirens activated across Israel after detected attacks from Iran, Lebanon \u00b7 The Israeli Home Front Command announced that sirens sounded in various areas af\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 12,
-    "lastUpdated": "2026-04-04 15:36 UTC",
-    "sourcesUsed": 3
+    "updatesToday": 13,
+    "lastUpdated": "2026-04-04 16:03 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -50,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Relatives of Qassam Soleimani arrested in US",
-      "summary": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fed",
+      "time": "9 min ago",
+      "headline": "Relatives of Qassem Soleimani arrested in US",
+      "summary": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded. \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fe",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fed",
-      "sourceUrl": "https://www.middleeasteye.net/news/relatives-qassam-soleimani-arrested-us",
+      "fullAnalysis": "Two family members of assassinated Iranian military commander Qassem Soleimani have been arrested in the United States after their residency permits were rescinded. \"Last night, the niece and grand niece of deceased Iranian Revolutionary Guard Corps Major General Qassem Soleimani were arrested by fe",
+      "sourceUrl": "https://www.middleeasteye.net/news/relatives-qassem-soleimani-arrested-us",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -67,33 +66,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Iran announces new air defence used to down US fighter jet",
-      "summary": "Iran has unveiled a new air defence system which it said was used in the downing of a US fighter jet on Friday. A spokesperson for Iran's Khatam al-Anbiya joint military command said Tehran would achieve full control over its airspace. \"The enemy should know that we will achieve the complete control",
+      "time": "9 min ago",
+      "headline": "Sirens activated across Israel after detected attacks from Iran, Lebanon",
+      "summary": "The Israeli Home Front Command announced that sirens sounded in various areas after a drone infiltration\u00a0was detected nearby the boundary with Lebanon. Similarly, it also noted the detection of an Iranian missile attack targeting Jerusalem and Ashdod, with several news outlets reporting explosions a",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran has unveiled a new air defence system which it said was used in the downing of a US fighter jet on Friday. A spokesperson for Iran's Khatam al-Anbiya joint military command said Tehran would achieve full control over its airspace. \"The enemy should know that we will achieve the complete control",
-      "sourceUrl": "https://www.middleeasteye.net/news/iran-announces-new-air-defence-used-down-us-fighter-jet",
+      "fullAnalysis": "The Israeli Home Front Command announced that sirens sounded in various areas after a drone infiltration\u00a0was detected nearby the boundary with Lebanon. Similarly, it also noted the detection of an Iranian missile attack targeting Jerusalem and Ashdod, with several news outlets reporting explosions a",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/sirens-activated-across-israel-after-detected-attacks-iran-lebanon",
       "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "11 min ago",
-      "headline": "Is Donald Trump\u2019s triumphal tone on Iran facing a reality check?",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/is-donald-trumps-triumphal-tone-on-iran-facing-a-reality-check/articleshow/130021719.cms",
-      "sourceLabel": "Times of India",
       "type": "war"
     },
     {
@@ -101,10 +83,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "11 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -133,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 12:47 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 14:40 UTC",
       "l": "HIGH",
@@ -232,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 15:36 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 16:03 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Relatives of Qassam Soleimani arrested in US. Iran announces new air defence used to down US fighter jet. Is Donald Trump\u2019s triumphal tone on Iran facing a reality check?. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Relatives of Qassem Soleimani arrested in US. Sirens activated across Israel after detected attacks from Iran, Lebanon. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
