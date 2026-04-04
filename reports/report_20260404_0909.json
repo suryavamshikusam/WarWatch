@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-04 09:00 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Vietnam's Israel defence ties complicate historic Palestinian solidarity. Morning update. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Vietnam's Israel defence ties complicate historic Palestinian solidarity",
+      "detail": "Vietnam\u2019s historical support for Palestine goes back to its revered founding leader, the revolutionary and statesman Ho Chi Minh. In recent years, this support has been complicated by developing military ties with Israel . Vietnam, a one-party communist state with a population of over 100 million, i",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/vietnam-israel-defence-ties-palestine-solidarity",
+      "fullAnalysis": "Vietnam\u2019s historical support for Palestine goes back to its revered founding leader, the revolutionary and statesman Ho Chi Minh. In recent years, this support has been complicated by developing military ties with Israel . Vietnam, a one-party communist state with a population of over 100 million, i",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Morning update",
+      "detail": "Here are the latest updates on the US-Israeli war on Iran: Israeli military says it hit military sites in Iran and a petrochemical plants in the southern region. According to Iranian local media, there were\u00a0five injured in the attack on the special petrochemical zone in Mahshahr and Bandar Imam,\u00a0Khu",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-506",
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Israeli military says it hit military sites in Iran and a petrochemical plants in the southern region. According to Iranian local media, there were\u00a0five injured in the attack on the special petrochemical zone in Mahshahr and Bandar Imam,\u00a0Khu",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-04 09:00 UTC"
+}

@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 08:03 UTC",
+  "generatedAt": "2026-04-04 09:00 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: 'Be serious... don't speak every day': Macron criticises Trump approach to Iran  \u00b7 The Iran war requires a \"serious\" approach that does not change every day, Emman\u2026"
+    "Other: Vietnam's Israel defence ties complicate historic Palestinian solidarity \u00b7 Vietnam\u2019s historical support for Palestine goes back to its revered founding lea\u2026",
+    "Other: Morning update \u00b7 Here are the latest updates on the US-Israeli war on Iran: Israeli military says\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-04-04 08:03 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 7,
+    "lastUpdated": "2026-04-04 09:00 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,26 +49,42 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "'Be serious... don't speak every day': Macron criticises Trump approach to Iran ",
-      "summary": "The Iran war requires a \"serious\" approach that does not change every day, Emmanuel Macron has said, in an apparent reference to US President Donald Trump's seemingly contradictory remarks about the conflict. \"This is not a show. We are talking about war and peace and the lives of men and women,\" th",
+      "time": "9 min ago",
+      "headline": "Vietnam's Israel defence ties complicate historic Palestinian solidarity",
+      "summary": "Vietnam\u2019s historical support for Palestine goes back to its revered founding leader, the revolutionary and statesman Ho Chi Minh. In recent years, this support has been complicated by developing military ties with Israel . Vietnam, a one-party communist state with a population of over 100 million, i",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Iran war requires a \"serious\" approach that does not change every day, Emmanuel Macron has said, in an apparent reference to US President Donald Trump's seemingly contradictory remarks about the conflict. \"This is not a show. We are talking about war and peace and the lives of men and women,\" th",
-      "sourceUrl": "https://www.bbc.com/news/articles/cevk0e4ykwko?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC"
+      "fullAnalysis": "Vietnam\u2019s historical support for Palestine goes back to its revered founding leader, the revolutionary and statesman Ho Chi Minh. In recent years, this support has been complicated by developing military ties with Israel . Vietnam, a one-party communist state with a population of over 100 million, i",
+      "sourceUrl": "https://www.middleeasteye.net/news/vietnam-israel-defence-ties-palestine-solidarity",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Morning update",
+      "summary": "Here are the latest updates on the US-Israeli war on Iran: Israeli military says it hit military sites in Iran and a petrochemical plants in the southern region. According to Iranian local media, there were\u00a0five injured in the attack on the special petrochemical zone in Mahshahr and Bandar Imam,\u00a0Khu",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Here are the latest updates on the US-Israeli war on Iran: Israeli military says it hit military sites in Iran and a petrochemical plants in the southern region. According to Iranian local media, there were\u00a0five injured in the attack on the special petrochemical zone in Mahshahr and Bandar Imam,\u00a0Khu",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-506",
+      "sourceLabel": "Middle East Eye"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -95,11 +112,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 06:11 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 07:39 UTC",
       "l": "HIGH",
@@ -194,11 +206,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 08:03 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 09:00 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: 'Be serious... don't speak every day': Macron criticises Trump approach to Iran . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Vietnam's Israel defence ties complicate historic Palestinian solidarity. Morning update. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
