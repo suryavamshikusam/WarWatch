@@ -1,1 +1,14 @@
-live_data.js
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.env
+venv/
+.venv/
+
+# Secrets — NEVER commit these
+.env.local
+secrets.json
+
+# Large/generated files — keep prices_history since it's useful data
+# DO NOT add live_data.js here — it must be committed for GitHub Pages to serve it
