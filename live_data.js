@@ -1,15 +1,16 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 05:05 UTC",
+  "generatedAt": "2026-04-04 06:14 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Damage reported as missiles hit residential areas in central Israel \u00b7 An Iranian missile attack caused damage across residential areas in central Isra\u2026",
-    "Other: First Western vessel crosses Hormuz amid tight restrictions \u00b7 A French ship has become the first Western vessel to transit the Strait of Hormu\u2026"
+    "Other: Iran war: What is happening on day 36 of US-Israeli attacks? \u00b7 Iran has claimed responsibility for shooting down two US warplanes. Two American\u2026",
+    "Other: Will force be used to reopen Strait of Hormuz? \u00b7 Some countries threaten action against Iran\u2019s blockade of waterway. When the US \u2026",
+    "Other: Experts dispute US account of deadly Iran sports hall strike in Lamerd \u00b7 Multiple weapons experts have disputed a US claim that Iran may have been respon\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-04-04 05:05 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 4,
+    "lastUpdated": "2026-04-04 06:14 UTC",
+    "sourcesUsed": 3
   },
   "tensionMeters": [
     {
@@ -49,42 +50,58 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Damage reported as missiles hit residential areas in central Israel",
-      "summary": "An Iranian missile attack caused damage across residential areas in central Israel, Israeli media reported, with one person injured in Tel Aviv. Reports said cluster munitions were seen over parts of the country during the strike.",
+      "time": "10 min ago",
+      "headline": "Iran war: What is happening on day 36 of US-Israeli attacks?",
+      "summary": "Iran has claimed responsibility for shooting down two US warplanes. Two American crewmembers were rescued and one airman remains missing after a F-15E Strike Eagle went down over the Kohgiluyeh and Boyer-Ahmad provinces and an A-10 Warthog crashed into the Gulf, according to US media reports. Irania",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "An Iranian missile attack caused damage across residential areas in central Israel, Israeli media reported, with one person injured in Tel Aviv. Reports said cluster munitions were seen over parts of the country during the strike.",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/damage-reported-missiles-hit-residential-areas-central-israel",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Iran has claimed responsibility for shooting down two US warplanes. Two American crewmembers were rescued and one airman remains missing after a F-15E Strike Eagle went down over the Kohgiluyeh and Boyer-Ahmad provinces and an A-10 Warthog crashed into the Gulf, according to US media reports. Irania",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/4/iran-war-what-is-happening-on-day-36-of-us-israeli-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
     },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "First Western vessel crosses Hormuz amid tight restrictions",
-      "summary": "A French ship has become the first Western vessel to transit the Strait of Hormuz since the war began, passing through on Friday after weeks of restricted access. Without an agreed protocol in place, Iran has tightly controlled which vessels can pass through the Strait of Hormuz. Iran has allowed so",
+      "time": "10 min ago",
+      "headline": "Will force be used to reopen Strait of Hormuz?",
+      "summary": "Some countries threaten action against Iran\u2019s blockade of waterway. When the US and Israel launched their joint offensive on Iran more than a month ago, Tehran moved quickly to block the Strait of Hormuz. Since then, the Revolutionary Guard has allowed some vessels to transit. But the majority, abou",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A French ship has become the first Western vessel to transit the Strait of Hormuz since the war began, passing through on Friday after weeks of restricted access. Without an agreed protocol in place, Iran has tightly controlled which vessels can pass through the Strait of Hormuz. Iran has allowed so",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/first-western-vessel-crosses-hormuz-amid-tight-restrictions",
-      "sourceLabel": "Middle East Eye"
+      "fullAnalysis": "Some countries threaten action against Iran\u2019s blockade of waterway. When the US and Israel launched their joint offensive on Iran more than a month ago, Tehran moved quickly to block the Strait of Hormuz. Since then, the Revolutionary Guard has allowed some vessels to transit. But the majority, abou",
+      "sourceUrl": "https://www.aljazeera.com/video/inside-story/2026/4/3/will-force-be-used-to-reopen-strait-of-hormuz?traffic_source=rss",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "10 min ago",
+      "headline": "Experts dispute US account of deadly Iran sports hall strike in Lamerd",
+      "summary": "Multiple weapons experts have disputed a US claim that Iran may have been responsible for a deadly strike on the town of Lamerd on the first day of the war. Six experts - who examined footage of the strike and all commented independently - contested the US suggestion that it was an Iranian missile, ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Multiple weapons experts have disputed a US claim that Iran may have been responsible for a deadly strike on the town of Lamerd on the first day of the war. Six experts - who examined footage of the strike and all commented independently - contested the US suggestion that it was an Iranian missile, ",
+      "sourceUrl": "https://www.bbc.com/news/articles/c4gx8e1x5j3o?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC"
     },
     {
       "badgeClass": "b-gray",
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "10 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -112,11 +129,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 22:05 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 02:40 UTC",
       "l": "HIGH",
@@ -211,11 +223,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 05:05 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 06:14 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Damage reported as missiles hit residential areas in central Israel. First Western vessel crosses Hormuz amid tight restrictions. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran war: What is happening on day 36 of US-Israeli attacks?. Will force be used to reopen Strait of Hormuz?. Experts dispute US account of deadly Iran sports hall strike in Lamerd. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
