@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-03 23:02 UTC",
+  "generatedAt": "2026-04-04 00:04 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Opinion: Iran war: Why US allies are suffering more than its enemies \u00b7 In war, economic consequences often follow a logic distinct from military object\u2026"
+    "Other: Iranian missile attacks spark fires, damage in central and southern Israel \u00b7 Iranian missile attacks caused fires and damage in parts of central and southern\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-04-03 23:02 UTC",
+    "updatesToday": 1,
+    "lastUpdated": "2026-04-04 00:04 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Opinion: Iran war: Why US allies are suffering more than its enemies",
-      "summary": "In war, economic consequences often follow a logic distinct from military objectives. The unprovoked and illegal US - Israeli attack on Iran that began on 28 February is a striking case study. Among the several objectives raised by the two aggressors - goals, incidentally, that have constantly shift",
+      "headline": "Iranian missile attacks spark fires, damage in central and southern Israel",
+      "summary": "Iranian missile attacks caused fires and damage in parts of central and southern Israel, according to Israeli media reports. The YNet news outlet said a fire broke out in an apartment in Rosh Haayin, while a building in Petah Tikva and streets in Tel Aviv were damaged. Emergency crews were also depl",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "In war, economic consequences often follow a logic distinct from military objectives. The unprovoked and illegal US - Israeli attack on Iran that began on 28 February is a striking case study. Among the several objectives raised by the two aggressors - goals, incidentally, that have constantly shift",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-iran-war-why-us-allies-are-suffering-more-its-enemies",
+      "fullAnalysis": "Iranian missile attacks caused fires and damage in parts of central and southern Israel, according to Israeli media reports. The YNet news outlet said a fire broke out in an apartment in Rosh Haayin, while a building in Petah Tikva and streets in Tel Aviv were damaged. Emergency crews were also depl",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attacks-spark-fires-damage-central-and-southern-israel",
       "sourceLabel": "Middle East Eye"
     },
     {
@@ -95,11 +95,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-02 18:37 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-02 19:37 UTC",
       "l": "HIGH",
@@ -194,11 +189,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-03 23:02 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-04 00:04 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Opinion: Iran war: Why US allies are suffering more than its enemies. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iranian missile attacks spark fires, damage in central and southern Israel. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
