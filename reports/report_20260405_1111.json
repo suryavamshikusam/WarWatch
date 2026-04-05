@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 11:02 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Kuwait Petroleum Corporation says Iranian hit causes 'severe' damage to units. Oman and Iran hold meeting on Strait of Hormuz. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Kuwait Petroleum Corporation says Iranian hit causes 'severe' damage to units",
+      "detail": "Kuwait Petroleum Corporation reported \"severe material damage\" on Sunday, following an Iranian drone attack which set ablaze operating units. No injuries were reported, the statement added, noting that teams are working to keep the fires under control and to prevent them spreading to other facilitie",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-petroleum-corporation-says-iranian-hit-causes-severe-damage-units",
+      "fullAnalysis": "Kuwait Petroleum Corporation reported \"severe material damage\" on Sunday, following an Iranian drone attack which set ablaze operating units. No injuries were reported, the statement added, noting that teams are working to keep the fires under control and to prevent them spreading to other facilitie",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Oman and Iran hold meeting on Strait of Hormuz",
+      "detail": "Oman and Iran held talks on easing passage through the Strait of Hormuz, the Omani state news agency reported on Sunday. \"Oman and the Islamic Republic of Iran held a meeting at the deputy ministers level in the foreign ministries of the two countries, with the attendance of specialists from both si",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oman-and-iran-hold-meeting-hormuz-strait",
+      "fullAnalysis": "Oman and Iran held talks on easing passage through the Strait of Hormuz, the Omani state news agency reported on Sunday. \"Oman and the Islamic Republic of Iran held a meeting at the deputy ministers level in the foreign ministries of the two countries, with the attendance of specialists from both si",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-05 11:02 UTC"
+}
