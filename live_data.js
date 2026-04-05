@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 14:06 UTC",
+  "generatedAt": "2026-04-05 14:55 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump warns 'crazy bastards' in Iran to open the 'fuckin' strait' in Truth Socia \u00b7 US President Donald Trump has told the \"crazy bastards\" in Iran to open the \"fuc\u2026",
-    "Other: Iran-Israel war LIVE: In expletives-laden social media post, Trump threatens to  \u00b7 President Donald Trump arrives to speak about the Iran war from the Cross Hall o\u2026"
+    "Other: To secure a ceasefire with Iran, the US must abandon ideological war \u00b7 Any war launched in violation of international law is inherently dangerous becau\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 9,
-    "lastUpdated": "2026-04-05 14:06 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 10,
+    "lastUpdated": "2026-04-05 14:55 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,33 +48,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Trump warns 'crazy bastards' in Iran to open the 'fuckin' strait' in Truth Socia",
-      "summary": "US President Donald Trump has told the \"crazy bastards\" in Iran to open the \"fuckin' Strait\" of Hormuz or face \"hell\" in an expletive-laden Truth Social rant. In an apparent indication that tensions over the crucial waterway have yet to cool, the US president unleashed a volley of abuse towards the ",
+      "time": "6 min ago",
+      "headline": "To secure a ceasefire with Iran, the US must abandon ideological war",
+      "summary": "Any war launched in violation of international law is inherently dangerous because it undermines the order built upon those principles. Yet even more dangerous is a war devoid of strategic rationality. Today, both the American public and much of the world are asking a simple question: by what logic ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump has told the \"crazy bastards\" in Iran to open the \"fuckin' Strait\" of Hormuz or face \"hell\" in an expletive-laden Truth Social rant. In an apparent indication that tensions over the crucial waterway have yet to cool, the US president unleashed a volley of abuse towards the ",
-      "sourceUrl": "https://www.middleeasteye.net/news/trump-tells-crazy-bastards-iran-open-fuckin-strait-or-face-hell-truth-social-rant",
+      "fullAnalysis": "Any war launched in violation of international law is inherently dangerous because it undermines the order built upon those principles. Yet even more dangerous is a war devoid of strategic rationality. Today, both the American public and much of the world are asking a simple question: by what logic ",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/secure-ceasefire-iran-us-must-abandon-ideological-war",
       "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Iran-Israel war LIVE: In expletives-laden social media post, Trump threatens to ",
-      "summary": "President Donald Trump arrives to speak about the Iran war from the Cross Hall of the White House on April 1, 2026, in Washington.\n                                                  | Photo Credit:  \n                          Alex Brandon The United States has rescued \u200can airman whose F-15 jet \u2060was d",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "President Donald Trump arrives to speak about the Iran war from the Cross Hall of the White House on April 1, 2026, in Washington.\n                                                  | Photo Credit:  \n                          Alex Brandon The United States has rescued \u200can airman whose F-15 jet \u2060was d",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-april-5-2026-live-updates/article70825713.ece",
-      "sourceLabel": "The Hindu",
       "type": "war"
     },
     {
@@ -83,10 +65,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +97,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 11:24 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 12:00 UTC",
       "l": "HIGH",
@@ -214,11 +191,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 14:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 14:55 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump warns 'crazy bastards' in Iran to open the 'fuckin' strait' in Truth Socia. Iran-Israel war LIVE: In expletives-laden social media post, Trump threatens to . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: To secure a ceasefire with Iran, the US must abandon ideological war. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
