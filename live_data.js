@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 20:26 UTC",
+  "generatedAt": "2026-04-05 21:57 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Analysis: Trump declares victory in Iran war after rescue, but threats to US ope \u00b7 US President Donald Trump was swift to declare victory after the second crew mem\u2026"
+    "Other: 'We are at the edge of a battlefield': BBC reports near Strait of Hormuz \u00b7 The BBC's senior international correspondent Orla Guerin has travelled to the ed\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 16,
-    "lastUpdated": "2026-04-05 20:26 UTC",
+    "updatesToday": 17,
+    "lastUpdated": "2026-04-05 21:57 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,14 +49,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Analysis: Trump declares victory in Iran war after rescue, but threats to US ope",
-      "summary": "US President Donald Trump was swift to declare victory after the second crew member of an F-15 downed over Iran was recovered, claiming on Sunday that the successful rescue \"proves, once again, that we have achieved overwhelming air dominance and superiority\". Observers, however, paint a more compli",
+      "headline": "'We are at the edge of a battlefield': BBC reports near Strait of Hormuz",
+      "summary": "The BBC's senior international correspondent Orla Guerin has travelled to the edge of the Strait of Hormuz in Oman, which Iran has put a stranglehold on since the war broke out. The critical artery is normally used for 20% of the world's oil and liquefied natural gas. By leaving ships stranded in th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump was swift to declare victory after the second crew member of an F-15 downed over Iran was recovered, claiming on Sunday that the successful rescue \"proves, once again, that we have achieved overwhelming air dominance and superiority\". Observers, however, paint a more compli",
-      "sourceUrl": "https://www.bbc.com/news/articles/cy01vg7x5ppo?at_medium=RSS&at_campaign=rss",
+      "fullAnalysis": "The BBC's senior international correspondent Orla Guerin has travelled to the edge of the Strait of Hormuz in Oman, which Iran has put a stranglehold on since the war broke out. The critical artery is normally used for 20% of the world's oil and liquefied natural gas. By leaving ships stranded in th",
+      "sourceUrl": "https://www.bbc.com/news/videos/c3r3vw4j38do?at_medium=RSS&at_campaign=rss",
       "sourceLabel": "BBC",
       "type": "war"
     },
@@ -97,11 +97,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 18:33 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 20:57 UTC",
       "l": "HIGH",
@@ -196,11 +191,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 20:26 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 21:57 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Analysis: Trump declares victory in Iran war after rescue, but threats to US ope. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'We are at the edge of a battlefield': BBC reports near Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
