@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 14:06 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Trump warns 'crazy bastards' in Iran to open the 'fuckin' strait' in Truth Socia. Iran-Israel war LIVE: In expletives-laden social media post, Trump threatens to . Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Trump warns 'crazy bastards' in Iran to open the 'fuckin' strait' in Truth Socia",
+      "detail": "US President Donald Trump has told the \"crazy bastards\" in Iran to open the \"fuckin' Strait\" of Hormuz or face \"hell\" in an expletive-laden Truth Social rant. In an apparent indication that tensions over the crucial waterway have yet to cool, the US president unleashed a volley of abuse towards the ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/trump-tells-crazy-bastards-iran-open-fuckin-strait-or-face-hell-truth-social-rant",
+      "fullAnalysis": "US President Donald Trump has told the \"crazy bastards\" in Iran to open the \"fuckin' Strait\" of Hormuz or face \"hell\" in an expletive-laden Truth Social rant. In an apparent indication that tensions over the crucial waterway have yet to cool, the US president unleashed a volley of abuse towards the ",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran-Israel war LIVE: In expletives-laden social media post, Trump threatens to ",
+      "detail": "President Donald Trump arrives to speak about the Iran war from the Cross Hall of the White House on April 1, 2026, in Washington.\n                                                  | Photo Credit:  \n                          Alex Brandon The United States has rescued \u200can airman whose F-15 jet \u2060was d",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-israel-war-west-asia-conflict-april-5-2026-live-updates/article70825713.ece",
+      "fullAnalysis": "President Donald Trump arrives to speak about the Iran war from the Cross Hall of the White House on April 1, 2026, in Washington.\n                                                  | Photo Credit:  \n                          Alex Brandon The United States has rescued \u200can airman whose F-15 jet \u2060was d",
+      "sourceLabel": "The Hindu"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-05 14:06 UTC"
+}
