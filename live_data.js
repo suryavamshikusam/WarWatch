@@ -1,17 +1,19 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 01:52 UTC",
+  "generatedAt": "2026-04-05 04:34 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport \u00b7 Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination w\u2026",
-    "Other: Trump warns Iran deadline nearing, says strikes killed leaders \u00b7 President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait \u2026",
-    "Other: Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex \u00b7 Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
-    "Other: Kuwait says drone attacks hit oil, government sites \u00b7 A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with\u2026"
+    "Other: Iran drone strike on US Embassy in Saudi Arabia hit CIA station: Report \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
+    "Other: Iran says Iraqi ships can pass Strait of Hormuz as transits tick up \u00b7 Iran has announced that Iraqi ships are free to pass the Strait of Hormuz, the l\u2026",
+    "Other: Iran warns of 'big surprise' for US, Israel \u00b7 An Iranian security official warned of \u201ca big surprise\u201d for the United States an\u2026",
+    "Other: Drone attacks damage Kuwait power, water plants \u00b7 Iranian drone attacks caused \u201cserious material damage\u201d at two electricity and wa\u2026",
+    "Other: US, Israel, Iran War Live Updates: \u2018We got him\u2019: Trump confirms on Truth Social  \u00b7 US Ambassador to the United Nations Mike Waltz has weighed in on the rescue. \u201cAm\u2026",
+    "Other: \u2018Unbalanced\u2019: Tehran rejects Trump\u2019s 48-hour ultimatum on reopening Strait of Ho \u00b7 Soon after US President Donald Trump warned Iran with a 48-hour deadline to reop\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 1,
-    "lastUpdated": "2026-04-05 01:52 UTC",
-    "sourcesUsed": 4
+    "updatesToday": 2,
+    "lastUpdated": "2026-04-05 04:34 UTC",
+    "sourcesUsed": 6
   },
   "tensionMeters": [
     {
@@ -51,16 +53,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport",
-      "summary": "Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination with Iran and Hezbollah, with its military spokesman Yahya Saree announcing a joint operation targeting Ben Gurion Airport. Saree said a fifth operation involved a ballistic missile and several drones targeting Lod Airpor",
+      "time": "16 min ago",
+      "headline": "Iran drone strike on US Embassy in Saudi Arabia hit CIA station: Report",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination with Iran and Hezbollah, with its military spokesman Yahya Saree announcing a joint operation targeting Ben Gurion Airport. Saree said a fifth operation involved a ballistic missile and several drones targeting Lod Airpor",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-joint-attacks-iran-hezbollah-targeting-ben-gurion-airport",
-      "sourceLabel": "Middle East Eye",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/iran-drone-strike-on-us-embassy-in-saudi-arabia-hit-cia-station-report/articleshow/130032655.cms",
+      "sourceLabel": "Times of India",
       "type": "war"
     },
     {
@@ -68,32 +70,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Trump warns Iran deadline nearing, says strikes killed leaders",
-      "summary": "President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait of Hormuz ahead of his 6 April deadline, warning of consequences if Tehran fails to act. The remarks come as tensions remain high over access to the key global shipping route. \u201cOur massive strikes in Tehran have ended th",
+      "time": "16 min ago",
+      "headline": "Iran says Iraqi ships can pass Strait of Hormuz as transits tick up",
+      "summary": "Iran has announced that Iraqi ships are free to pass the Strait of Hormuz, the latest sign of Tehran easing its stranglehold on the critical conduit for global energy supplies. Iraq will be exempt from all restrictions in the strait, with controls only applying to \u201cenemy countries\u201d, Iran\u2019s Khatam al",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait of Hormuz ahead of his 6 April deadline, warning of consequences if Tehran fails to act. The remarks come as tensions remain high over access to the key global shipping route. \u201cOur massive strikes in Tehran have ended th",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-warns-iran-deadline-nearing-says-strikes-killed-leaders",
-      "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
-      "summary": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/5/iran-war-live-tehran-rejects-trumps-ultimatum-fire-at-kuwait-oil-complex?traffic_source=rss",
+      "fullAnalysis": "Iran has announced that Iraqi ships are free to pass the Strait of Hormuz, the latest sign of Tehran easing its stranglehold on the critical conduit for global energy supplies. Iraq will be exempt from all restrictions in the strait, with controls only applying to \u201cenemy countries\u201d, Iran\u2019s Khatam al",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/4/5/iran-says-iraqi-ships-can-pass-strait-of-hormuz-as-transits-tick-up?traffic_source=rss",
       "sourceLabel": "Al Jazeera",
       "type": "war"
     },
@@ -102,16 +87,67 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "13 min ago",
-      "headline": "Kuwait says drone attacks hit oil, government sites",
-      "summary": "A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with no injuries reported, according to state news agency KUNA. Firefighting and emergency teams were deployed to contain the blaze following the incident. In a separate development, Kuwait said an Iranian drone attack cause",
+      "time": "16 min ago",
+      "headline": "Iran warns of 'big surprise' for US, Israel",
+      "summary": "An Iranian security official warned of \u201ca big surprise\u201d for the United States and Israel, saying Tehran is advancing according to its plans and a \u201cspecific target bank\", Fars news reported. \u201cWe have a big surprise for America and the regime. It only takes a little time,\u201d the official said. He also c",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with no injuries reported, according to state news agency KUNA. Firefighting and emergency teams were deployed to contain the blaze following the incident. In a separate development, Kuwait said an Iranian drone attack cause",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-says-drone-attacks-hit-oil-government-sites",
+      "fullAnalysis": "An Iranian security official warned of \u201ca big surprise\u201d for the United States and Israel, saying Tehran is advancing according to its plans and a \u201cspecific target bank\", Fars news reported. \u201cWe have a big surprise for America and the regime. It only takes a little time,\u201d the official said. He also c",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-big-surprise-us-israel",
       "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Drone attacks damage Kuwait power, water plants",
+      "summary": "Iranian drone attacks caused \u201cserious material damage\u201d at two electricity and water distillation plants in Kuwait, the country\u2019s Ministry of Electricity, Water and Renewable Energy said. Spokesperson Fatima Abbas Johar Hayat said the \u201ccriminal aggression\u201d led to the outage of two power-generating un",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iranian drone attacks caused \u201cserious material damage\u201d at two electricity and water distillation plants in Kuwait, the country\u2019s Ministry of Electricity, Water and Renewable Energy said. Spokesperson Fatima Abbas Johar Hayat said the \u201ccriminal aggression\u201d led to the outage of two power-generating un",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/drone-attacks-damage-kuwait-power-water-plants",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "US, Israel, Iran War Live Updates: \u2018We got him\u2019: Trump confirms on Truth Social ",
+      "summary": "US Ambassador to the United Nations Mike Waltz has weighed in on the rescue. \u201cAmerica breathes a sigh of relief,\u201d Waltz, a former officer in the US Army Special Forces, said in a post on X. \u201cMore amazing work by my special operations brothers.\u201d America breathes a sigh of relief. More amazing work by",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US Ambassador to the United Nations Mike Waltz has weighed in on the rescue. \u201cAmerica breathes a sigh of relief,\u201d Waltz, a former officer in the US Army Special Forces, said in a post on X. \u201cMore amazing work by my special operations brothers.\u201d America breathes a sigh of relief. More amazing work by",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-donald-trump-ultimatum-hormuz-oil-jet-crew-10619557/",
+      "sourceLabel": "Indian Express",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "\u2018Unbalanced\u2019: Tehran rejects Trump\u2019s 48-hour ultimatum on reopening Strait of Ho",
+      "summary": "Soon after US President Donald Trump warned Iran with a 48-hour deadline to reopen the Strait of Hormuz or face attacks, Tehran dismissed the ultimatum as \u201cunbalanced\u201d and said it would not succumb to pressure, according to Reuters. The US\u2019s warning comes as the United States and Israel increase pre",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Soon after US President Donald Trump warned Iran with a 48-hour deadline to reopen the Strait of Hormuz or face attacks, Tehran dismissed the ultimatum as \u201cunbalanced\u201d and said it would not succumb to pressure, according to Reuters. The US\u2019s warning comes as the United States and Israel increase pre",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-iran-hormuz-48-hour-deadline-tehran-ultimatum-rejected-10619491/",
+      "sourceLabel": "Indian Express",
       "type": "war"
     },
     {
@@ -119,10 +155,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "13 min ago",
+      "time": "16 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 6 sources covering the US-Israel-Iran conflict. Monitoring 6 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -151,11 +187,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 23:02 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 00:04 UTC",
       "l": "HIGH",
@@ -250,11 +281,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 01:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 04:34 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 6 sources covering the US-Israel-Iran conflict. Monitoring 6 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport. Trump warns Iran deadline nearing, says strikes killed leaders. Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex. Kuwait says drone attacks hit oil, government sites. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran drone strike on US Embassy in Saudi Arabia hit CIA station: Report. Iran says Iraqi ships can pass Strait of Hormuz as transits tick up. Iran warns of 'big surprise' for US, Israel. Drone attacks damage Kuwait power, water plants. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

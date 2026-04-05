@@ -1,0 +1,115 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 04:34 UTC",
+  "executive_summary": "Latest updates from 6 sources covering the US-Israel-Iran conflict. Monitoring 6 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran drone strike on US Embassy in Saudi Arabia hit CIA station: Report. Iran says Iraqi ships can pass Strait of Hormuz as transits tick up. Iran warns of 'big surprise' for US, Israel. Drone attacks damage Kuwait power, water plants. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran drone strike on US Embassy in Saudi Arabia hit CIA station: Report",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/iran-drone-strike-on-us-embassy-in-saudi-arabia-hit-cia-station-report/articleshow/130032655.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    },
+    {
+      "headline": "Iran says Iraqi ships can pass Strait of Hormuz as transits tick up",
+      "detail": "Iran has announced that Iraqi ships are free to pass the Strait of Hormuz, the latest sign of Tehran easing its stranglehold on the critical conduit for global energy supplies. Iraq will be exempt from all restrictions in the strait, with controls only applying to \u201cenemy countries\u201d, Iran\u2019s Khatam al",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/economy/2026/4/5/iran-says-iraqi-ships-can-pass-strait-of-hormuz-as-transits-tick-up?traffic_source=rss",
+      "fullAnalysis": "Iran has announced that Iraqi ships are free to pass the Strait of Hormuz, the latest sign of Tehran easing its stranglehold on the critical conduit for global energy supplies. Iraq will be exempt from all restrictions in the strait, with controls only applying to \u201cenemy countries\u201d, Iran\u2019s Khatam al",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Iran warns of 'big surprise' for US, Israel",
+      "detail": "An Iranian security official warned of \u201ca big surprise\u201d for the United States and Israel, saying Tehran is advancing according to its plans and a \u201cspecific target bank\", Fars news reported. \u201cWe have a big surprise for America and the regime. It only takes a little time,\u201d the official said. He also c",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-warns-big-surprise-us-israel",
+      "fullAnalysis": "An Iranian security official warned of \u201ca big surprise\u201d for the United States and Israel, saying Tehran is advancing according to its plans and a \u201cspecific target bank\", Fars news reported. \u201cWe have a big surprise for America and the regime. It only takes a little time,\u201d the official said. He also c",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Drone attacks damage Kuwait power, water plants",
+      "detail": "Iranian drone attacks caused \u201cserious material damage\u201d at two electricity and water distillation plants in Kuwait, the country\u2019s Ministry of Electricity, Water and Renewable Energy said. Spokesperson Fatima Abbas Johar Hayat said the \u201ccriminal aggression\u201d led to the outage of two power-generating un",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/drone-attacks-damage-kuwait-power-water-plants",
+      "fullAnalysis": "Iranian drone attacks caused \u201cserious material damage\u201d at two electricity and water distillation plants in Kuwait, the country\u2019s Ministry of Electricity, Water and Renewable Energy said. Spokesperson Fatima Abbas Johar Hayat said the \u201ccriminal aggression\u201d led to the outage of two power-generating un",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US, Israel, Iran War Live Updates: \u2018We got him\u2019: Trump confirms on Truth Social ",
+      "detail": "US Ambassador to the United Nations Mike Waltz has weighed in on the rescue. \u201cAmerica breathes a sigh of relief,\u201d Waltz, a former officer in the US Army Special Forces, said in a post on X. \u201cMore amazing work by my special operations brothers.\u201d America breathes a sigh of relief. More amazing work by",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/us-israel-iran-war-live-updates-donald-trump-ultimatum-hormuz-oil-jet-crew-10619557/",
+      "fullAnalysis": "US Ambassador to the United Nations Mike Waltz has weighed in on the rescue. \u201cAmerica breathes a sigh of relief,\u201d Waltz, a former officer in the US Army Special Forces, said in a post on X. \u201cMore amazing work by my special operations brothers.\u201d America breathes a sigh of relief. More amazing work by",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "\u2018Unbalanced\u2019: Tehran rejects Trump\u2019s 48-hour ultimatum on reopening Strait of Ho",
+      "detail": "Soon after US President Donald Trump warned Iran with a 48-hour deadline to reopen the Strait of Hormuz or face attacks, Tehran dismissed the ultimatum as \u201cunbalanced\u201d and said it would not succumb to pressure, according to Reuters. The US\u2019s warning comes as the United States and Israel increase pre",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-news/trump-iran-hormuz-48-hour-deadline-tehran-ultimatum-rejected-10619491/",
+      "fullAnalysis": "Soon after US President Donald Trump warned Iran with a 48-hour deadline to reopen the Strait of Hormuz or face attacks, Tehran dismissed the ultimatum as \u201cunbalanced\u201d and said it would not succumb to pressure, according to Reuters. The US\u2019s warning comes as the United States and Israel increase pre",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 6,
+  "generated_at": "2026-04-05 04:34 UTC"
+}
