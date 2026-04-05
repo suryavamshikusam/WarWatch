@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 19:24 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US was arming Iranian dissidents through Kurds while negotiating with Tehran, Tr. Video captures Iranian missile striking residential building in Haifa. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "US was arming Iranian dissidents through Kurds while negotiating with Tehran, Tr",
+      "detail": "Donald Trump spent Easter Sunday making a series of explosive admissions about the Iran war - revealing that the United States covertly armed protesters inside the country weeks before launching military strikes, even as American negotiators were sitting across the table from senior Iranian official",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-was-arming-iranian-dissidents-through-kurds-while-negotiating-tehran-trump-reveals",
+      "fullAnalysis": "Donald Trump spent Easter Sunday making a series of explosive admissions about the Iran war - revealing that the United States covertly armed protesters inside the country weeks before launching military strikes, even as American negotiators were sitting across the table from senior Iranian official",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Video captures Iranian missile striking residential building in Haifa",
+      "detail": "Video captures Iranian missile striking residential building in Haifa Video captured the moment of a direct hit by an Iranian missile on a residential building in Israel\u2019s Haifa. Multiple injuries were reported and some people are feared trapped under the rubble of the partially collapsed structure.",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/5/video-captures-iranian-missile-striking-residential-building-in-haifa?traffic_source=rss",
+      "fullAnalysis": "Video captures Iranian missile striking residential building in Haifa Video captured the moment of a direct hit by an Iranian missile on a residential building in Israel\u2019s Haifa. Multiple injuries were reported and some people are feared trapped under the rubble of the partially collapsed structure.",
+      "sourceLabel": "Al Jazeera"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-05 19:24 UTC"
+}
