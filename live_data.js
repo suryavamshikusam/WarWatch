@@ -1,15 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 11:02 UTC",
+  "generatedAt": "2026-04-05 11:46 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Kuwait Petroleum Corporation says Iranian hit causes 'severe' damage to units \u00b7 Kuwait Petroleum Corporation reported \"severe material damage\" on Sunday, follow\u2026",
-    "Other: Oman and Iran hold meeting on Strait of Hormuz \u00b7 Oman and Iran held talks on easing passage through the Strait of Hormuz, the Oma\u2026"
+    "Other: Oman and Iran hold talks on reopening Strait of Hormuz \u00b7 Oman has spoken with Iran about reopening the Strait of Hormuz, according to the\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 6,
-    "lastUpdated": "2026-04-05 11:02 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 7,
+    "lastUpdated": "2026-04-05 11:46 UTC",
+    "sourcesUsed": 1
   },
   "tensionMeters": [
     {
@@ -49,32 +48,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Kuwait Petroleum Corporation says Iranian hit causes 'severe' damage to units",
-      "summary": "Kuwait Petroleum Corporation reported \"severe material damage\" on Sunday, following an Iranian drone attack which set ablaze operating units. No injuries were reported, the statement added, noting that teams are working to keep the fires under control and to prevent them spreading to other facilitie",
+      "time": "6 min ago",
+      "headline": "Oman and Iran hold talks on reopening Strait of Hormuz",
+      "summary": "Oman has spoken with Iran about reopening the Strait of Hormuz, according to the sultanate's official news agency. The meeting involved members of the foreign ministries of both countries, who presented possible \"options\" for reopening the passage. \"Oman and the Islamic Republic of Iran held a meeti",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Kuwait Petroleum Corporation reported \"severe material damage\" on Sunday, following an Iranian drone attack which set ablaze operating units. No injuries were reported, the statement added, noting that teams are working to keep the fires under control and to prevent them spreading to other facilitie",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-petroleum-corporation-says-iranian-hit-causes-severe-damage-units",
-      "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Oman and Iran hold meeting on Strait of Hormuz",
-      "summary": "Oman and Iran held talks on easing passage through the Strait of Hormuz, the Omani state news agency reported on Sunday. \"Oman and the Islamic Republic of Iran held a meeting at the deputy ministers level in the foreign ministries of the two countries, with the attendance of specialists from both si",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Oman and Iran held talks on easing passage through the Strait of Hormuz, the Omani state news agency reported on Sunday. \"Oman and the Islamic Republic of Iran held a meeting at the deputy ministers level in the foreign ministries of the two countries, with the attendance of specialists from both si",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/oman-and-iran-hold-meeting-hormuz-strait",
+      "fullAnalysis": "Oman has spoken with Iran about reopening the Strait of Hormuz, according to the sultanate's official news agency. The meeting involved members of the foreign ministries of both countries, who presented possible \"options\" for reopening the passage. \"Oman and the Islamic Republic of Iran held a meeti",
+      "sourceUrl": "https://www.middleeasteye.net/news/oman-and-iran-hold-talks-reopening-strait-hormuz",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -83,10 +65,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "6 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +97,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 07:19 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 08:03 UTC",
       "l": "HIGH",
@@ -214,11 +191,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 11:02 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 11:46 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Kuwait Petroleum Corporation says Iranian hit causes 'severe' damage to units. Oman and Iran hold meeting on Strait of Hormuz. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Oman and Iran hold talks on reopening Strait of Hormuz. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
