@@ -1,14 +1,15 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 06:06 UTC",
+  "generatedAt": "2026-04-05 07:24 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel says it hit 120 Iranian air defense systems in 24 hours \u00b7 The Israeli military said its air force struck more than 120 targets in central \u2026"
+    "Other: Video: Israeli activist arrested as police disperse anti-war protest \u00b7 Israeli activist Alon-Lee Green was arrested after police moved in on an anti-wa\u2026",
+    "Other: Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp \u00b7 Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspen\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 3,
-    "lastUpdated": "2026-04-05 06:06 UTC",
-    "sourcesUsed": 1
+    "updatesToday": 4,
+    "lastUpdated": "2026-04-05 07:24 UTC",
+    "sourcesUsed": 2
   },
   "tensionMeters": [
     {
@@ -48,16 +49,33 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "7 min ago",
-      "headline": "Israel says it hit 120 Iranian air defense systems in 24 hours",
-      "summary": "The Israeli military said its air force struck more than 120 targets in central and western Iran over the past 24 hours, including air defence systems and missile infrastructure. In a statement, it said the targets included \u201cballistic missile array sites in the IRGC, UAV production and launching sit",
+      "time": "9 min ago",
+      "headline": "Video: Israeli activist arrested as police disperse anti-war protest",
+      "summary": "Israeli activist Alon-Lee Green was arrested after police moved in on an anti-war protest in Tel Aviv, detaining multiple demonstrators as officers forcibly dispersed the gathering. Green, a leading figure in the Jewish-Arab movement Standing Together, had joined protesters opposing Israel\u2019s ongoing",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli military said its air force struck more than 120 targets in central and western Iran over the past 24 hours, including air defence systems and missile infrastructure. In a statement, it said the targets included \u201cballistic missile array sites in the IRGC, UAV production and launching sit",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-it-hit-120-iranian-air-defense-systems-24-hours",
+      "fullAnalysis": "Israeli activist Alon-Lee Green was arrested after police moved in on an anti-war protest in Tel Aviv, detaining multiple demonstrators as officers forcibly dispersed the gathering. Green, a leading figure in the Jewish-Arab movement Standing Together, had joined protesters opposing Israel\u2019s ongoing",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-israeli-activist-arrested-police-disperse-anti-war-protest",
       "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "9 min ago",
+      "headline": "Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp",
+      "summary": "Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspended flights to and from Doha, Riyadh, and Kuwait until April 12, the airline wrote on X. However, the carrier has continued to operate flights to and from Jeddah and Ahmedabad, Bengaluru, Mumbai, Kochi and Kozhikode, it ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspended flights to and from Doha, Riyadh, and Kuwait until April 12, the airline wrote on X. However, the carrier has continued to operate flights to and from Jeddah and Ahmedabad, Bengaluru, Mumbai, Kochi and Kozhikode, it ",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-uae-news-iran-us-israel-trump-hormuz-strait-bahrain-live-updates-10616515/",
+      "sourceLabel": "Indian Express",
       "type": "war"
     },
     {
@@ -65,10 +83,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "7 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -97,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 03:17 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 05:05 UTC",
       "l": "HIGH",
@@ -196,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 06:06 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 07:24 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel says it hit 120 Iranian air defense systems in 24 hours. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Video: Israeli activist arrested as police disperse anti-war protest. Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {

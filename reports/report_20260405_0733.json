@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 07:24 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Video: Israeli activist arrested as police disperse anti-war protest. Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Video: Israeli activist arrested as police disperse anti-war protest",
+      "detail": "Israeli activist Alon-Lee Green was arrested after police moved in on an anti-war protest in Tel Aviv, detaining multiple demonstrators as officers forcibly dispersed the gathering. Green, a leading figure in the Jewish-Arab movement Standing Together, had joined protesters opposing Israel\u2019s ongoing",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-israeli-activist-arrested-police-disperse-anti-war-protest",
+      "fullAnalysis": "Israeli activist Alon-Lee Green was arrested after police moved in on an anti-war protest in Tel Aviv, detaining multiple demonstrators as officers forcibly dispersed the gathering. Green, a leading figure in the Jewish-Arab movement Standing Together, had joined protesters opposing Israel\u2019s ongoing",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp",
+      "detail": "Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspended flights to and from Doha, Riyadh, and Kuwait until April 12, the airline wrote on X. However, the carrier has continued to operate flights to and from Jeddah and Ahmedabad, Bengaluru, Mumbai, Kochi and Kozhikode, it ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-uae-news-iran-us-israel-trump-hormuz-strait-bahrain-live-updates-10616515/",
+      "fullAnalysis": "Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspended flights to and from Doha, Riyadh, and Kuwait until April 12, the airline wrote on X. However, the carrier has continued to operate flights to and from Jeddah and Ahmedabad, Bengaluru, Mumbai, Kochi and Kozhikode, it ",
+      "sourceLabel": "Indian Express"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-05 07:24 UTC"
+}
