@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 14:55 UTC",
+  "generatedAt": "2026-04-05 15:27 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: To secure a ceasefire with Iran, the US must abandon ideological war \u00b7 Any war launched in violation of international law is inherently dangerous becau\u2026"
+    "Other: 'Will blow everything up and take the oil': Trump if Iran doesn't make a deal \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 10,
-    "lastUpdated": "2026-04-05 14:55 UTC",
+    "updatesToday": 11,
+    "lastUpdated": "2026-04-05 15:27 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -48,16 +48,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "6 min ago",
-      "headline": "To secure a ceasefire with Iran, the US must abandon ideological war",
-      "summary": "Any war launched in violation of international law is inherently dangerous because it undermines the order built upon those principles. Yet even more dangerous is a war devoid of strategic rationality. Today, both the American public and much of the world are asking a simple question: by what logic ",
+      "time": "7 min ago",
+      "headline": "'Will blow everything up and take the oil': Trump if Iran doesn't make a deal",
+      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Any war launched in violation of international law is inherently dangerous because it undermines the order built upon those principles. Yet even more dangerous is a war devoid of strategic rationality. Today, both the American public and much of the world are asking a simple question: by what logic ",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/secure-ceasefire-iran-us-must-abandon-ideological-war",
-      "sourceLabel": "Middle East Eye",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/middle-east-crisis-donald-trump-threatens-to-blow-everything-up-and-take-the-oil-if-iran-doesnt-make-a-deal/articleshow/130041414.cms",
+      "sourceLabel": "Times of India",
       "type": "war"
     },
     {
@@ -65,7 +65,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "6 min ago",
+      "time": "7 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
@@ -97,11 +97,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 12:00 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 12:40 UTC",
       "l": "HIGH",
@@ -196,11 +191,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 14:55 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 15:27 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: To secure a ceasefire with Iran, the US must abandon ideological war. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: 'Will blow everything up and take the oil': Trump if Iran doesn't make a deal. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
