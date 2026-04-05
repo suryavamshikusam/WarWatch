@@ -1,0 +1,82 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 13:23 UTC",
+  "executive_summary": "Latest updates from 3 sources covering the US-Israel-Iran conflict. Monitoring 3 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Iran\u2019s ex-FM Zarif proposes peace roadmap; Gulf points at erosion of trust. Oman, Iran discuss smooth transit in Strait of Hormuz, Muscat says. Trump vows 'hell' on Iran if Strait of Hormuz not opened. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Iran\u2019s ex-FM Zarif proposes peace roadmap; Gulf points at erosion of trust",
+      "detail": "Former Iranian Foreign Minister Mohammad Javad Zarif has proposed a roadmap for ending the United States-Israeli war on Iran as tensions escalate across the Middle East. Zarif\u2019s plan was published by Foreign Affairs magazine on Friday and goes \u201cbeyond a temporary ceasefire\u201d. The war, which erupted o",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/5/irans-former-fm-zarif-proposes-peace-roadmap-gulf-states-voice-exclusion?traffic_source=rss",
+      "fullAnalysis": "Former Iranian Foreign Minister Mohammad Javad Zarif has proposed a roadmap for ending the United States-Israeli war on Iran as tensions escalate across the Middle East. Zarif\u2019s plan was published by Foreign Affairs magazine on Friday and goes \u201cbeyond a temporary ceasefire\u201d. The war, which erupted o",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Oman, Iran discuss smooth transit in Strait of Hormuz, Muscat says",
+      "detail": "Oman and \u2060\u2060Iran \u2060\u2060have held deputy foreign \u2060\u2060minister-level talks, discussing \u2060\u2060options to ensure the smooth transit of vessels through the Strait \u200c\u200cof Hormuz, according to the Omani Foreign Ministry. The meeting was held on Saturday \u201cat the level of undersecretaries in the foreign ministries of the",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/5/oman-iran-discuss-smooth-transit-in-the-strait-of-hormuz-muscat-says?traffic_source=rss",
+      "fullAnalysis": "Oman and \u2060\u2060Iran \u2060\u2060have held deputy foreign \u2060\u2060minister-level talks, discussing \u2060\u2060options to ensure the smooth transit of vessels through the Strait \u200c\u200cof Hormuz, according to the Omani Foreign Ministry. The meeting was held on Saturday \u201cat the level of undersecretaries in the foreign ministries of the",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Trump vows 'hell' on Iran if Strait of Hormuz not opened",
+      "detail": "US President Donald Trump threatened \"hell\" on Iran in a Truth Social post if curbs on the Strait of Hormuz continue. \"Tuesday will be Power Plant Day, and Bridge Day, all wrapped up in one, in Iran,\" he wrote on Sunday. \"There will be nothing like it!!! Open the Fuckin\u2019 Strait, you crazy bastards, ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-vows-hell-iran-if-hormuz-strait-not-opened",
+      "fullAnalysis": "US President Donald Trump threatened \"hell\" on Iran in a Truth Social post if curbs on the Strait of Hormuz continue. \"Tuesday will be Power Plant Day, and Bridge Day, all wrapped up in one, in Iran,\" he wrote on Sunday. \"There will be nothing like it!!! Open the Fuckin\u2019 Strait, you crazy bastards, ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 3,
+  "generated_at": "2026-04-05 13:23 UTC"
+}
