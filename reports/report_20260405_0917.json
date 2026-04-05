@@ -1,0 +1,104 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 09:02 UTC",
+  "executive_summary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. US rescues downed fighter pilot from Iran in 'daring' operation. Dubai Iran War News Live Updates: Iranian drones target Bahrain\u2019s Gulf petrochem. Iran war: What is happening on day 37 of US-Israeli attacks?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Morning update",
+      "detail": "A sharp escalation across the Middle East is driving rising casualties, expanding strikes and growing regional instability, with major developments spanning Iran, Israel, Lebanon and Gulf states overnight. Rescue operations, infrastructure hits and civilian tolls continue to shape the conflict. Here",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-508",
+      "fullAnalysis": "A sharp escalation across the Middle East is driving rising casualties, expanding strikes and growing regional instability, with major developments spanning Iran, Israel, Lebanon and Gulf states overnight. Rescue operations, infrastructure hits and civilian tolls continue to shape the conflict. Here",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "US rescues downed fighter pilot from Iran in 'daring' operation",
+      "detail": "The US announced the rescue of a downed fighter pilot from Iran in what it called a \"daring\" operation. Iranian media said five people were killed in strikes during the rescue operation. The aircraft was shot down over Khuzestan province,\u00a0a key hub for Iran\u2019s oil, gas and steel production. The provi",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-rescues-downed-fighter-pilot-iran-daring-operation",
+      "fullAnalysis": "The US announced the rescue of a downed fighter pilot from Iran in what it called a \"daring\" operation. Iranian media said five people were killed in strikes during the rescue operation. The aircraft was shot down over Khuzestan province,\u00a0a key hub for Iran\u2019s oil, gas and steel production. The provi",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Dubai Iran War News Live Updates: Iranian drones target Bahrain\u2019s Gulf petrochem",
+      "detail": "Bahrain's Gulf Petrochemical Industries Company said a fire at its operating units \u2060after \u200ban Iranian drone attack was brought under \u200bcontrol, the \u200bBahraini state \u2060news agency reported on Sunday. No \u200cinjuries were reported, with teams currently conducting an assessment of \u2060damage \u2060from the incident,",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-iran-war-news-live-updates-power-plants-distillation-kuwait-uae-10619581/",
+      "fullAnalysis": "Bahrain's Gulf Petrochemical Industries Company said a fire at its operating units \u2060after \u200ban Iranian drone attack was brought under \u200bcontrol, the \u200bBahraini state \u2060news agency reported on Sunday. No \u200cinjuries were reported, with teams currently conducting an assessment of \u2060damage \u2060from the incident,",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran war: What is happening on day 37 of US-Israeli attacks?",
+      "detail": "The missing crew member from a US F-15E jet shot down in Iran on Friday has been found and rescued after a dramatic firefight as United States President Donald Trump set a 48-hour deadline to open the Strait of Hormuz. The waterway through which 20 percent of the oil and gas passes has been under a ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/5/iran-war-what-is-happening-on-day-37-of-us-israeli-attacks?traffic_source=rss",
+      "fullAnalysis": "The missing crew member from a US F-15E jet shot down in Iran on Friday has been found and rescued after a dramatic firefight as United States President Donald Trump set a 48-hour deadline to open the Strait of Hormuz. The waterway through which 20 percent of the oil and gas passes has been under a ",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "US-Israeli strikes kill five IRGC fighters",
+      "detail": "US-Israeli strikes on Iran killed five fighters from Iran's Islamic Revolutionary Guard Corp (IRGC), state media reported. \"Following the brutal attacks of the American\u2013Israeli enemy on the Moghan Plain... five IRGC fighters have attained martyrdom,\" said Iran's official IRNA news agency, citing a s",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-israeli-strikes-kill-five-irgc-fighters",
+      "fullAnalysis": "US-Israeli strikes on Iran killed five fighters from Iran's Islamic Revolutionary Guard Corp (IRGC), state media reported. \"Following the brutal attacks of the American\u2013Israeli enemy on the Moghan Plain... five IRGC fighters have attained martyrdom,\" said Iran's official IRNA news agency, citing a s",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 5,
+  "generated_at": "2026-04-05 09:02 UTC"
+}

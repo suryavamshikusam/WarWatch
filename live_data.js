@@ -1,15 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 07:24 UTC",
+  "generatedAt": "2026-04-05 09:02 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Video: Israeli activist arrested as police disperse anti-war protest \u00b7 Israeli activist Alon-Lee Green was arrested after police moved in on an anti-wa\u2026",
-    "Other: Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp \u00b7 Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspen\u2026"
+    "Other: Morning update \u00b7 A sharp escalation across the Middle East is driving rising casualties, expandin\u2026",
+    "Other: US rescues downed fighter pilot from Iran in 'daring' operation \u00b7 The US announced the rescue of a downed fighter pilot from Iran in what it calle\u2026",
+    "Other: Dubai Iran War News Live Updates: Iranian drones target Bahrain\u2019s Gulf petrochem \u00b7 Bahrain's Gulf Petrochemical Industries Company said a fire at its operating uni\u2026",
+    "Other: Iran war: What is happening on day 37 of US-Israeli attacks? \u00b7 The missing crew member from a US F-15E jet shot down in Iran on Friday has been\u2026",
+    "Other: US-Israeli strikes kill five IRGC fighters \u00b7 US-Israeli strikes on Iran killed five fighters from Iran's Islamic Revolutionar\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-04-05 07:24 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 5,
+    "lastUpdated": "2026-04-05 09:02 UTC",
+    "sourcesUsed": 5
   },
   "tensionMeters": [
     {
@@ -49,15 +52,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Video: Israeli activist arrested as police disperse anti-war protest",
-      "summary": "Israeli activist Alon-Lee Green was arrested after police moved in on an anti-war protest in Tel Aviv, detaining multiple demonstrators as officers forcibly dispersed the gathering. Green, a leading figure in the Jewish-Arab movement Standing Together, had joined protesters opposing Israel\u2019s ongoing",
+      "time": "15 min ago",
+      "headline": "Morning update",
+      "summary": "A sharp escalation across the Middle East is driving rising casualties, expanding strikes and growing regional instability, with major developments spanning Iran, Israel, Lebanon and Gulf states overnight. Rescue operations, infrastructure hits and civilian tolls continue to shape the conflict. Here",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israeli activist Alon-Lee Green was arrested after police moved in on an anti-war protest in Tel Aviv, detaining multiple demonstrators as officers forcibly dispersed the gathering. Green, a leading figure in the Jewish-Arab movement Standing Together, had joined protesters opposing Israel\u2019s ongoing",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/video-israeli-activist-arrested-police-disperse-anti-war-protest",
+      "fullAnalysis": "A sharp escalation across the Middle East is driving rising casualties, expanding strikes and growing regional instability, with major developments spanning Iran, Israel, Lebanon and Gulf states overnight. Rescue operations, infrastructure hits and civilian tolls continue to shape the conflict. Here",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/morning-update-508",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -66,16 +69,67 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp",
-      "summary": "Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspended flights to and from Doha, Riyadh, and Kuwait until April 12, the airline wrote on X. However, the carrier has continued to operate flights to and from Jeddah and Ahmedabad, Bengaluru, Mumbai, Kochi and Kozhikode, it ",
+      "time": "15 min ago",
+      "headline": "US rescues downed fighter pilot from Iran in 'daring' operation",
+      "summary": "The US announced the rescue of a downed fighter pilot from Iran in what it called a \"daring\" operation. Iranian media said five people were killed in strikes during the rescue operation. The aircraft was shot down over Khuzestan province,\u00a0a key hub for Iran\u2019s oil, gas and steel production. The provi",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Dubai Iran War Highlights: In view of the war in West Asia, Akasa Air has suspended flights to and from Doha, Riyadh, and Kuwait until April 12, the airline wrote on X. However, the carrier has continued to operate flights to and from Jeddah and Ahmedabad, Bengaluru, Mumbai, Kochi and Kozhikode, it ",
-      "sourceUrl": "https://indianexpress.com/article/world/dubai-uae-news-iran-us-israel-trump-hormuz-strait-bahrain-live-updates-10616515/",
+      "fullAnalysis": "The US announced the rescue of a downed fighter pilot from Iran in what it called a \"daring\" operation. Iranian media said five people were killed in strikes during the rescue operation. The aircraft was shot down over Khuzestan province,\u00a0a key hub for Iran\u2019s oil, gas and steel production. The provi",
+      "sourceUrl": "https://www.middleeasteye.net/news/us-rescues-downed-fighter-pilot-iran-daring-operation",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "15 min ago",
+      "headline": "Dubai Iran War News Live Updates: Iranian drones target Bahrain\u2019s Gulf petrochem",
+      "summary": "Bahrain's Gulf Petrochemical Industries Company said a fire at its operating units \u2060after \u200ban Iranian drone attack was brought under \u200bcontrol, the \u200bBahraini state \u2060news agency reported on Sunday. No \u200cinjuries were reported, with teams currently conducting an assessment of \u2060damage \u2060from the incident,",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Bahrain's Gulf Petrochemical Industries Company said a fire at its operating units \u2060after \u200ban Iranian drone attack was brought under \u200bcontrol, the \u200bBahraini state \u2060news agency reported on Sunday. No \u200cinjuries were reported, with teams currently conducting an assessment of \u2060damage \u2060from the incident,",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-iran-war-news-live-updates-power-plants-distillation-kuwait-uae-10619581/",
       "sourceLabel": "Indian Express",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "15 min ago",
+      "headline": "Iran war: What is happening on day 37 of US-Israeli attacks?",
+      "summary": "The missing crew member from a US F-15E jet shot down in Iran on Friday has been found and rescued after a dramatic firefight as United States President Donald Trump set a 48-hour deadline to open the Strait of Hormuz. The waterway through which 20 percent of the oil and gas passes has been under a ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "The missing crew member from a US F-15E jet shot down in Iran on Friday has been found and rescued after a dramatic firefight as United States President Donald Trump set a 48-hour deadline to open the Strait of Hormuz. The waterway through which 20 percent of the oil and gas passes has been under a ",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/5/iran-war-what-is-happening-on-day-37-of-us-israeli-attacks?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "15 min ago",
+      "headline": "US-Israeli strikes kill five IRGC fighters",
+      "summary": "US-Israeli strikes on Iran killed five fighters from Iran's Islamic Revolutionary Guard Corp (IRGC), state media reported. \"Following the brutal attacks of the American\u2013Israeli enemy on the Moghan Plain... five IRGC fighters have attained martyrdom,\" said Iran's official IRNA news agency, citing a s",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "US-Israeli strikes on Iran killed five fighters from Iran's Islamic Revolutionary Guard Corp (IRGC), state media reported. \"Following the brutal attacks of the American\u2013Israeli enemy on the Moghan Plain... five IRGC fighters have attained martyrdom,\" said Iran's official IRNA news agency, citing a s",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/us-israeli-strikes-kill-five-irgc-fighters",
+      "sourceLabel": "Middle East Eye",
       "type": "war"
     },
     {
@@ -83,10 +137,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "15 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +169,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 05:05 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 06:14 UTC",
       "l": "HIGH",
@@ -214,11 +263,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 07:24 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 09:02 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Video: Israeli activist arrested as police disperse anti-war protest. Dubai Iran War News Highlights: Fire erupts in Kuwait\u2019s Shuwaikh oil sector comp. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Morning update. US rescues downed fighter pilot from Iran in 'daring' operation. Dubai Iran War News Live Updates: Iranian drones target Bahrain\u2019s Gulf petrochem. Iran war: What is happening on day 37 of US-Israeli attacks?. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
