@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 23:35 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Hamas backs Iran and says disarmament is not on the table while Israel continues. IRGC says Hormuz will \u2018never return to former state\u2019 for US and Isreal. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Hamas backs Iran and says disarmament is not on the table while Israel continues",
+      "detail": "Hamas's military spokesman Abu Obaida has delivered a statement backing Iran's strikes on Israel , mourning the death of Supreme Leader Ali Khamenei, and accusing ceasefire mediators of applying pressure on Palestinian resistance while turning a blind eye to Israeli violations. Speaking in a video m",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/news/hamas-backs-iran-and-says-disarmament-not-table-while-israel-continues-genocide",
+      "fullAnalysis": "Hamas's military spokesman Abu Obaida has delivered a statement backing Iran's strikes on Israel , mourning the death of Supreme Leader Ali Khamenei, and accusing ceasefire mediators of applying pressure on Palestinian resistance while turning a blind eye to Israeli violations. Speaking in a video m",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "IRGC says Hormuz will \u2018never return to former state\u2019 for US and Isreal",
+      "detail": "Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever return to its former state, especially for the US and Israel. The statement said Iran is in the final stages of operational preparations for what officials describe as a \u201cnew order\u201d in the Gulf. The remarks follow moves in ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-hormuz-will-never-return-former-state-us-and-isreal",
+      "fullAnalysis": "Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever return to its former state, especially for the US and Israel. The statement said Iran is in the final stages of operational preparations for what officials describe as a \u201cnew order\u201d in the Gulf. The remarks follow moves in ",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-05 23:35 UTC"
+}
