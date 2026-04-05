@@ -1,13 +1,13 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 19:56 UTC",
+  "generatedAt": "2026-04-05 20:26 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Trump threatens Iran in expletive-filled social media post \u00b7 Trump threatens Iran in expletive-filled social media post Donald Trump unleashe\u2026"
+    "Other: Analysis: Trump declares victory in Iran war after rescue, but threats to US ope \u00b7 US President Donald Trump was swift to declare victory after the second crew mem\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 15,
-    "lastUpdated": "2026-04-05 19:56 UTC",
+    "updatesToday": 16,
+    "lastUpdated": "2026-04-05 20:26 UTC",
     "sourcesUsed": 1
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "7 min ago",
-      "headline": "Trump threatens Iran in expletive-filled social media post",
-      "summary": "Trump threatens Iran in expletive-filled social media post Donald Trump unleashed a vulgar online tirade against Iran\u2019s leaders as his deadline for reopening the Strait of Hormuz approaches.",
+      "headline": "Analysis: Trump declares victory in Iran war after rescue, but threats to US ope",
+      "summary": "US President Donald Trump was swift to declare victory after the second crew member of an F-15 downed over Iran was recovered, claiming on Sunday that the successful rescue \"proves, once again, that we have achieved overwhelming air dominance and superiority\". Observers, however, paint a more compli",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Trump threatens Iran in expletive-filled social media post Donald Trump unleashed a vulgar online tirade against Iran\u2019s leaders as his deadline for reopening the Strait of Hormuz approaches.",
-      "sourceUrl": "https://www.aljazeera.com/video/newsfeed/2026/4/5/trump-threatens-iran-in-expletive-filled-social-media-post?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
+      "fullAnalysis": "US President Donald Trump was swift to declare victory after the second crew member of an F-15 downed over Iran was recovered, claiming on Sunday that the successful rescue \"proves, once again, that we have achieved overwhelming air dominance and superiority\". Observers, however, paint a more compli",
+      "sourceUrl": "https://www.bbc.com/news/articles/cy01vg7x5ppo?at_medium=RSS&at_campaign=rss",
+      "sourceLabel": "BBC",
       "type": "war"
     },
     {
@@ -97,11 +97,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 17:26 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 18:33 UTC",
       "l": "HIGH",
@@ -196,11 +191,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 19:56 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 20:26 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 1 sources covering the US-Israel-Iran conflict. Monitoring 1 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Trump threatens Iran in expletive-filled social media post. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Analysis: Trump declares victory in Iran war after rescue, but threats to US ope. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
