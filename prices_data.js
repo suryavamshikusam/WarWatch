@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-04 23:53 UTC",
+  "fetchedAt": "2026-04-05 02:05 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -14,13 +14,6 @@ window.WARWATCH_PRICES = {
       "formatted": "$111.54",
       "day_pct": 11.41,
       "war_pct": 52.59
-    },
-    "NG=F": {
-      "name": "Natural Gas",
-      "price": 2.8,
-      "formatted": "$2.800",
-      "day_pct": -0.67,
-      "war_pct": -2.78
     },
     "GC=F": {
       "name": "Gold USD",
@@ -436,6 +429,20 @@ window.WARWATCH_PRICES = {
       "brent": 109.03,
       "wti": 111.54,
       "ng": 2.8,
+      "gold": 4652,
+      "wheat": 598,
+      "inr": 92.67,
+      "mcx_crude": 10336,
+      "mcx_gold": 138587,
+      "mcx_silver": 216707,
+      "ioc": 134.1,
+      "adani": 1378
+    },
+    {
+      "date": "2026-04-05",
+      "brent": 109.03,
+      "wti": 111.54,
+      "ng": 0,
       "gold": 4652,
       "wheat": 598,
       "inr": 92.67,

@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-05 01:52 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport. Trump warns Iran deadline nearing, says strikes killed leaders. Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex. Kuwait says drone attacks hit oil, government sites. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport",
+      "detail": "Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination with Iran and Hezbollah, with its military spokesman Yahya Saree announcing a joint operation targeting Ben Gurion Airport. Saree said a fifth operation involved a ballistic missile and several drones targeting Lod Airpor",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-joint-attacks-iran-hezbollah-targeting-ben-gurion-airport",
+      "fullAnalysis": "Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination with Iran and Hezbollah, with its military spokesman Yahya Saree announcing a joint operation targeting Ben Gurion Airport. Saree said a fifth operation involved a ballistic missile and several drones targeting Lod Airpor",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Trump warns Iran deadline nearing, says strikes killed leaders",
+      "detail": "President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait of Hormuz ahead of his 6 April deadline, warning of consequences if Tehran fails to act. The remarks come as tensions remain high over access to the key global shipping route. \u201cOur massive strikes in Tehran have ended th",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-warns-iran-deadline-nearing-says-strikes-killed-leaders",
+      "fullAnalysis": "President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait of Hormuz ahead of his 6 April deadline, warning of consequences if Tehran fails to act. The remarks come as tensions remain high over access to the key global shipping route. \u201cOur massive strikes in Tehran have ended th",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+      "detail": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Al Jazeera",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/5/iran-war-live-tehran-rejects-trumps-ultimatum-fire-at-kuwait-oil-complex?traffic_source=rss",
+      "fullAnalysis": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+      "sourceLabel": "Al Jazeera"
+    },
+    {
+      "headline": "Kuwait says drone attacks hit oil, government sites",
+      "detail": "A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with no injuries reported, according to state news agency KUNA. Firefighting and emergency teams were deployed to contain the blaze following the incident. In a separate development, Kuwait said an Iranian drone attack cause",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-says-drone-attacks-hit-oil-government-sites",
+      "fullAnalysis": "A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with no injuries reported, according to state news agency KUNA. Firefighting and emergency teams were deployed to contain the blaze following the incident. In a separate development, Kuwait said an Iranian drone attack cause",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-05 01:52 UTC"
+}

@@ -1,15 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-04 22:24 UTC",
+  "generatedAt": "2026-04-05 01:52 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Israel claims over 200 strikes on Iran and Hezbollah targets \u00b7 The Israeli military says it has carried out more than 200 air strikes over the \u2026",
-    "Other: US and Iran trade threats to unleash 'hell' as search for missing US airman cont \u00b7 US President Donald Trump has threatened that \"all hell would rain down on\" Iran\u2026"
+    "Other: Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport \u00b7 Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination w\u2026",
+    "Other: Trump warns Iran deadline nearing, says strikes killed leaders \u00b7 President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait \u2026",
+    "Other: Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex \u00b7 Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+    "Other: Kuwait says drone attacks hit oil, government sites \u00b7 A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 18,
-    "lastUpdated": "2026-04-04 22:24 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 1,
+    "lastUpdated": "2026-04-05 01:52 UTC",
+    "sourcesUsed": 4
   },
   "tensionMeters": [
     {
@@ -49,15 +51,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Israel claims over 200 strikes on Iran and Hezbollah targets",
-      "summary": "The Israeli military says it has carried out more than 200 air strikes over the weekend targeting sites in Iran and Lebanon. It said the attacks in Iran hit air defence systems, ballistic missile production facilities and an IRGC weapons storage site. In Lebanon, the military said it struck a Hezbol",
+      "time": "13 min ago",
+      "headline": "Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport",
+      "summary": "Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination with Iran and Hezbollah, with its military spokesman Yahya Saree announcing a joint operation targeting Ben Gurion Airport. Saree said a fifth operation involved a ballistic missile and several drones targeting Lod Airpor",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "The Israeli military says it has carried out more than 200 air strikes over the weekend targeting sites in Iran and Lebanon. It said the attacks in Iran hit air defence systems, ballistic missile production facilities and an IRGC weapons storage site. In Lebanon, the military said it struck a Hezbol",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-claims-over-200-strikes-iran-and-hezbollah-targets",
+      "fullAnalysis": "Yemen\u2019s Houthi group said it would carry out attacks on Israel in coordination with Iran and Hezbollah, with its military spokesman Yahya Saree announcing a joint operation targeting Ben Gurion Airport. Saree said a fifth operation involved a ballistic missile and several drones targeting Lod Airpor",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/houthis-claim-joint-attacks-iran-hezbollah-targeting-ben-gurion-airport",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -66,16 +68,50 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "US and Iran trade threats to unleash 'hell' as search for missing US airman cont",
-      "summary": "US President Donald Trump has threatened that \"all hell would rain down on\" Iran if it did not make a deal, prompting Tehran to respond with similar rhetoric. An Iranian military spokesman warned that the entire region would become \"hell\" if the US and Israel continued to escalate the conflict. On S",
+      "time": "13 min ago",
+      "headline": "Trump warns Iran deadline nearing, says strikes killed leaders",
+      "summary": "President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait of Hormuz ahead of his 6 April deadline, warning of consequences if Tehran fails to act. The remarks come as tensions remain high over access to the key global shipping route. \u201cOur massive strikes in Tehran have ended th",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "US President Donald Trump has threatened that \"all hell would rain down on\" Iran if it did not make a deal, prompting Tehran to respond with similar rhetoric. An Iranian military spokesman warned that the entire region would become \"hell\" if the US and Israel continued to escalate the conflict. On S",
-      "sourceUrl": "https://www.bbc.com/news/articles/c5y90jl8veyo?at_medium=RSS&at_campaign=rss",
-      "sourceLabel": "BBC",
+      "fullAnalysis": "President Donald Trump said \u201ctime is running out\u201d for Iran to reopen the Strait of Hormuz ahead of his 6 April deadline, warning of consequences if Tehran fails to act. The remarks come as tensions remain high over access to the key global shipping route. \u201cOur massive strikes in Tehran have ended th",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/trump-warns-iran-deadline-nearing-says-strikes-killed-leaders",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+      "summary": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex",
+      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/5/iran-war-live-tehran-rejects-trumps-ultimatum-fire-at-kuwait-oil-complex?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "13 min ago",
+      "headline": "Kuwait says drone attacks hit oil, government sites",
+      "summary": "A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with no injuries reported, according to state news agency KUNA. Firefighting and emergency teams were deployed to contain the blaze following the incident. In a separate development, Kuwait said an Iranian drone attack cause",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "A drone attack sparked a fire at the Shuwaikh Oil Sector Complex in Kuwait, with no injuries reported, according to state news agency KUNA. Firefighting and emergency teams were deployed to contain the blaze following the incident. In a separate development, Kuwait said an Iranian drone attack cause",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/kuwait-says-drone-attacks-hit-oil-government-sites",
+      "sourceLabel": "Middle East Eye",
       "type": "war"
     },
     {
@@ -83,10 +119,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "13 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +151,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-03 20:30 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-03 23:02 UTC",
       "l": "HIGH",
@@ -214,11 +245,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-04 22:24 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-05 01:52 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Israel claims over 200 strikes on Iran and Hezbollah targets. US and Iran trade threats to unleash 'hell' as search for missing US airman cont. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Houthis claim joint attacks with Iran, Hezbollah targeting Ben Gurion Airport. Trump warns Iran deadline nearing, says strikes killed leaders. Iran war live: Tehran rejects Trump\u2019s ultimatum; fire at Kuwait oil complex. Kuwait says drone attacks hit oil, government sites. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
