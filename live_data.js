@@ -1,17 +1,17 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-06 07:22 UTC",
+  "generatedAt": "2026-04-06 08:53 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Has US war on Iran killed the 'Gulf moment'? \u00b7 In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf M\u2026",
-    "Other: Israel says 163 injured in past 24 hours amid Iran, Hezbollah attacks \u00b7 Israel\u2019s health ministry said 163 people were taken to hospitals over the past 2\u2026",
-    "Other: Iran, US receive plan to end hostilities, immediate ceasefire, source says \u00b7 Iran\u00a0and the United States have received a plan to end hostilities that could co\u2026",
-    "Other: Israeli rescuers search for missing in building strike by Iranian missile, two d \u00b7 Published - April 06, 2026 11:23 am IST - Haifa Israeli rescue teams search for \u2026",
-    "Other: A new regional order for the Strait of Hormuz \u00b7 The ongoing war of choice launched by the United States and Israel against Iran \u2026"
+    "Other: Israeli soldiers given Temple-themed board game ahead of Passover \u00b7 Israeli reservists created and distributed a Temple-themed board game to fellow \u2026",
+    "Other: Iran war: What is happening on day 38 of US-Israeli attacks? \u00b7 Israeli rescue teams comb through debris after Iranian attack on Haifa Tensions \u2026",
+    "Other: Hamas rules out disarmament before Israel meets ceasefire terms \u00b7 Hamas\u2019s military spokesman Abu Obaida said on Sunday that the group\u2019s disarmamen\u2026",
+    "Other: Israeli soldiers given Temple-themed board game ahead of Passover \u00b7 Israeli reservists created and distributed a Temple-themed board game to fellow \u2026",
+    "Other: Iran refuses to reopen Strait of Hormuz for \u2018temporary ceasefire\u2019 \u00b7 With a day left to meet US President Donald Trump\u2019s deadline for reopening of St\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 5,
-    "lastUpdated": "2026-04-06 07:22 UTC",
+    "updatesToday": 6,
+    "lastUpdated": "2026-04-06 08:53 UTC",
     "sourcesUsed": 5
   },
   "tensionMeters": [
@@ -53,14 +53,14 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "16 min ago",
-      "headline": "Has US war on Iran killed the 'Gulf moment'?",
-      "summary": "In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf Moment , arguing that states such as the UAE , Qatar and Saudi Arabia had eclipsed countries such as Egypt and Iraq - the historical core of the region - and were now projecting political, economic and cultural power on t",
+      "headline": "Israeli soldiers given Temple-themed board game ahead of Passover",
+      "summary": "Israeli reservists created and distributed a Temple-themed board game to fellow soldiers last week ahead of Passover, according to the army. The gifts were first reported by journalist Or Kashti last week , who said that the game - titled From Egypt to Jerusalem - tasks players with reaching the Tem",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf Moment , arguing that states such as the UAE , Qatar and Saudi Arabia had eclipsed countries such as Egypt and Iraq - the historical core of the region - and were now projecting political, economic and cultural power on t",
-      "sourceUrl": "https://www.middleeasteye.net/opinion/has-war-iran-killed-gulf-moment",
+      "fullAnalysis": "Israeli reservists created and distributed a Temple-themed board game to fellow soldiers last week ahead of Passover, according to the army. The gifts were first reported by journalist Or Kashti last week , who said that the game - titled From Egypt to Jerusalem - tasks players with reaching the Tem",
+      "sourceUrl": "https://www.middleeasteye.net/news/israeli-soldiers-given-temple-themed-board-game-ahead-passover",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -70,66 +70,66 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "16 min ago",
-      "headline": "Israel says 163 injured in past 24 hours amid Iran, Hezbollah attacks",
-      "summary": "Israel\u2019s health ministry said 163 people were taken to hospitals over the past 24 hours with injuries linked to the conflict with Iran and Hezbollah, The Times of Israel reported. An 82-year-old man seriously injured in a recent Iranian ballistic missile strike underwent surgery and remains sedated ",
+      "headline": "Iran war: What is happening on day 38 of US-Israeli attacks?",
+      "summary": "Israeli rescue teams comb through debris after Iranian attack on Haifa Tensions continue to escalate as United States President Donald Trump\u2019s Tuesday deadline for Iran to open the Strait of Hormuz or face bombing raids on its power plants and bridges approaches. Tehran has threatened to hit back, a",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Israel\u2019s health ministry said 163 people were taken to hospitals over the past 24 hours with injuries linked to the conflict with Iran and Hezbollah, The Times of Israel reported. An 82-year-old man seriously injured in a recent Iranian ballistic missile strike underwent surgery and remains sedated ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-163-injured-past-24-hours-amid-iran-hezbollah-attacks",
-      "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "16 min ago",
-      "headline": "Iran, US receive plan to end hostilities, immediate ceasefire, source says",
-      "summary": "Iran\u00a0and the United States have received a plan to end hostilities that could come into effect on Monday and reopen the Strait of Hormuz, a source aware of the proposals said on Monday. A framework to end hostilities\u00a0has been put together\u00a0by Pakistan and exchanged with\u00a0Iran\u00a0and the US overnight, the",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran\u00a0and the United States have received a plan to end hostilities that could come into effect on Monday and reopen the Strait of Hormuz, a source aware of the proposals said on Monday. A framework to end hostilities\u00a0has been put together\u00a0by Pakistan and exchanged with\u00a0Iran\u00a0and the US overnight, the",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-us-receive-plan-end-hostilities-immediate-ceasefire-source-says",
-      "sourceLabel": "Middle East Eye",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "16 min ago",
-      "headline": "Israeli rescuers search for missing in building strike by Iranian missile, two d",
-      "summary": "Published - April 06, 2026 11:23 am IST - Haifa Israeli rescue teams search for missing people amid the rubble of a residential building a day after it was struck by an Iranian missile in Haifa, Israel, on Monday, April 6, 2026.\n                                          | Photo Credit: AP Israeli fi",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Published - April 06, 2026 11:23 am IST - Haifa Israeli rescue teams search for missing people amid the rubble of a residential building a day after it was struck by an Iranian missile in Haifa, Israel, on Monday, April 6, 2026.\n                                          | Photo Credit: AP Israeli fi",
-      "sourceUrl": "https://www.thehindu.com/news/international/iran-missile-strike-on-israel-haifa-monday-april-6/article70829094.ece",
-      "sourceLabel": "The Hindu",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "16 min ago",
-      "headline": "A new regional order for the Strait of Hormuz",
-      "summary": "The ongoing war of choice launched by the United States and Israel against Iran has shattered the geopolitical status quo in our region. As Washington finds itself entangled in another Middle Eastern quagmire, reports suggest that US President Donald Trump\u2019s administration is increasingly in need of",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "The ongoing war of choice launched by the United States and Israel against Iran has shattered the geopolitical status quo in our region. As Washington finds itself entangled in another Middle Eastern quagmire, reports suggest that US President Donald Trump\u2019s administration is increasingly in need of",
-      "sourceUrl": "https://www.aljazeera.com/opinions/2026/4/6/a-new-regional-order-for-the-strait-of-hormuz?traffic_source=rss",
+      "fullAnalysis": "Israeli rescue teams comb through debris after Iranian attack on Haifa Tensions continue to escalate as United States President Donald Trump\u2019s Tuesday deadline for Iran to open the Strait of Hormuz or face bombing raids on its power plants and bridges approaches. Tehran has threatened to hit back, a",
+      "sourceUrl": "https://www.aljazeera.com/news/2026/4/6/iran-war-what-is-happening-on-day-38-of-us-israeli-attacks?traffic_source=rss",
       "sourceLabel": "Al Jazeera",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Hamas rules out disarmament before Israel meets ceasefire terms",
+      "summary": "Hamas\u2019s military spokesman Abu Obaida said on Sunday that the group\u2019s disarmament in Gaza would not be discussed before Israel fulfils its obligations under the first phase of the US-led ceasefire agreement. In a pre-recorded speech, Abu Obaida also expressed support for Iran\u2019s strikes on Israel, mo",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Hamas\u2019s military spokesman Abu Obaida said on Sunday that the group\u2019s disarmament in Gaza would not be discussed before Israel fulfils its obligations under the first phase of the US-led ceasefire agreement. In a pre-recorded speech, Abu Obaida also expressed support for Iran\u2019s strikes on Israel, mo",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/hamas-rules-out-disarmament-israel-meets-ceasefire-terms",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Israeli soldiers given Temple-themed board game ahead of Passover",
+      "summary": "Israeli reservists created and distributed a Temple-themed board game to fellow soldiers last week ahead of Passover, according to the army. The gifts were first reported by journalist Or Kashti last week , who said that the game - titled From Egypt to Jerusalem - tasks players with reaching the Tem",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli reservists created and distributed a Temple-themed board game to fellow soldiers last week ahead of Passover, according to the army. The gifts were first reported by journalist Or Kashti last week , who said that the game - titled From Egypt to Jerusalem - tasks players with reaching the Tem",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israeli-soldiers-given-temple-themed-board-game-ahead-passover",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Iran refuses to reopen Strait of Hormuz for \u2018temporary ceasefire\u2019",
+      "summary": "With a day left to meet US President Donald Trump\u2019s deadline for reopening of Strait of Hormuz, Iran Monday declared that it will not accept pressure or deadlines to make a decision. Speaking to news agency Reuters, a senior Iranian official said Tehran will not reopen the Strait of Hormuz over a te",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "With a day left to meet US President Donald Trump\u2019s deadline for reopening of Strait of Hormuz, Iran Monday declared that it will not accept pressure or deadlines to make a decision. Speaking to news agency Reuters, a senior Iranian official said Tehran will not reopen the Strait of Hormuz over a te",
+      "sourceUrl": "https://indianexpress.com/article/world/tehran-strait-of-hormuz-temporary-ceasefire-iran-us-10621653/",
+      "sourceLabel": "Indian Express",
       "type": "war"
     },
     {
@@ -169,11 +169,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-05 07:24 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-05 09:02 UTC",
       "l": "HIGH",
@@ -268,11 +263,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-06 07:22 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-06 08:53 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Has US war on Iran killed the 'Gulf moment'?. Israel says 163 injured in past 24 hours amid Iran, Hezbollah attacks. Iran, US receive plan to end hostilities, immediate ceasefire, source says. Israeli rescuers search for missing in building strike by Iranian missile, two d. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Israeli soldiers given Temple-themed board game ahead of Passover. Iran war: What is happening on day 38 of US-Israeli attacks?. Hamas rules out disarmament before Israel meets ceasefire terms. Israeli soldiers given Temple-themed board game ahead of Passover. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
