@@ -1,15 +1,18 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-06 05:52 UTC",
+  "generatedAt": "2026-04-06 07:22 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: China moves to expand role in Iran war diplomacy; U.S. seems sceptical \u00b7 Published - April 06, 2026 10:59 am IST - WASHINGTON Cautious steps:\u00a0Though Chin\u2026",
-    "Other: Donald Trump asks Tehran to open Strait of Hormuz; Iran says 'lost the keys': Wh \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026"
+    "Other: Has US war on Iran killed the 'Gulf moment'? \u00b7 In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf M\u2026",
+    "Other: Israel says 163 injured in past 24 hours amid Iran, Hezbollah attacks \u00b7 Israel\u2019s health ministry said 163 people were taken to hospitals over the past 2\u2026",
+    "Other: Iran, US receive plan to end hostilities, immediate ceasefire, source says \u00b7 Iran\u00a0and the United States have received a plan to end hostilities that could co\u2026",
+    "Other: Israeli rescuers search for missing in building strike by Iranian missile, two d \u00b7 Published - April 06, 2026 11:23 am IST - Haifa Israeli rescue teams search for \u2026",
+    "Other: A new regional order for the Strait of Hormuz \u00b7 The ongoing war of choice launched by the United States and Israel against Iran \u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 4,
-    "lastUpdated": "2026-04-06 05:52 UTC",
-    "sourcesUsed": 2
+    "updatesToday": 5,
+    "lastUpdated": "2026-04-06 07:22 UTC",
+    "sourcesUsed": 5
   },
   "tensionMeters": [
     {
@@ -49,15 +52,66 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "China moves to expand role in Iran war diplomacy; U.S. seems sceptical",
-      "summary": "Published - April 06, 2026 10:59 am IST - WASHINGTON Cautious steps:\u00a0Though China has a large strategic petrol reserve, a protracted war can be costly to its vulnerable economy.\u00a0File.\n                                          | Photo Credit: REUTERS China is stepping up its diplomacy on the Iran war",
+      "time": "16 min ago",
+      "headline": "Has US war on Iran killed the 'Gulf moment'?",
+      "summary": "In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf Moment , arguing that states such as the UAE , Qatar and Saudi Arabia had eclipsed countries such as Egypt and Iraq - the historical core of the region - and were now projecting political, economic and cultural power on t",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Published - April 06, 2026 10:59 am IST - WASHINGTON Cautious steps:\u00a0Though China has a large strategic petrol reserve, a protracted war can be costly to its vulnerable economy.\u00a0File.\n                                          | Photo Credit: REUTERS China is stepping up its diplomacy on the Iran war",
-      "sourceUrl": "https://www.thehindu.com/news/international/china-moves-to-expand-role-in-iran-war-diplomacy-us-seems-sceptical/article70829027.ece",
+      "fullAnalysis": "In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf Moment , arguing that states such as the UAE , Qatar and Saudi Arabia had eclipsed countries such as Egypt and Iraq - the historical core of the region - and were now projecting political, economic and cultural power on t",
+      "sourceUrl": "https://www.middleeasteye.net/opinion/has-war-iran-killed-gulf-moment",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Israel says 163 injured in past 24 hours amid Iran, Hezbollah attacks",
+      "summary": "Israel\u2019s health ministry said 163 people were taken to hospitals over the past 24 hours with injuries linked to the conflict with Iran and Hezbollah, The Times of Israel reported. An 82-year-old man seriously injured in a recent Iranian ballistic missile strike underwent surgery and remains sedated ",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israel\u2019s health ministry said 163 people were taken to hospitals over the past 24 hours with injuries linked to the conflict with Iran and Hezbollah, The Times of Israel reported. An 82-year-old man seriously injured in a recent Iranian ballistic missile strike underwent surgery and remains sedated ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/israel-says-163-injured-past-24-hours-amid-iran-hezbollah-attacks",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Iran, US receive plan to end hostilities, immediate ceasefire, source says",
+      "summary": "Iran\u00a0and the United States have received a plan to end hostilities that could come into effect on Monday and reopen the Strait of Hormuz, a source aware of the proposals said on Monday. A framework to end hostilities\u00a0has been put together\u00a0by Pakistan and exchanged with\u00a0Iran\u00a0and the US overnight, the",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Iran\u00a0and the United States have received a plan to end hostilities that could come into effect on Monday and reopen the Strait of Hormuz, a source aware of the proposals said on Monday. A framework to end hostilities\u00a0has been put together\u00a0by Pakistan and exchanged with\u00a0Iran\u00a0and the US overnight, the",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-us-receive-plan-end-hostilities-immediate-ceasefire-source-says",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "16 min ago",
+      "headline": "Israeli rescuers search for missing in building strike by Iranian missile, two d",
+      "summary": "Published - April 06, 2026 11:23 am IST - Haifa Israeli rescue teams search for missing people amid the rubble of a residential building a day after it was struck by an Iranian missile in Haifa, Israel, on Monday, April 6, 2026.\n                                          | Photo Credit: AP Israeli fi",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Published - April 06, 2026 11:23 am IST - Haifa Israeli rescue teams search for missing people amid the rubble of a residential building a day after it was struck by an Iranian missile in Haifa, Israel, on Monday, April 6, 2026.\n                                          | Photo Credit: AP Israeli fi",
+      "sourceUrl": "https://www.thehindu.com/news/international/iran-missile-strike-on-israel-haifa-monday-april-6/article70829094.ece",
       "sourceLabel": "The Hindu",
       "type": "war"
     },
@@ -66,16 +120,16 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "9 min ago",
-      "headline": "Donald Trump asks Tehran to open Strait of Hormuz; Iran says 'lost the keys': Wh",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "time": "16 min ago",
+      "headline": "A new regional order for the Strait of Hormuz",
+      "summary": "The ongoing war of choice launched by the United States and Israel against Iran has shattered the geopolitical status quo in our region. As Washington finds itself entangled in another Middle Eastern quagmire, reports suggest that US President Donald Trump\u2019s administration is increasingly in need of",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/donald-trump-asks-tehran-to-open-strait-of-hormuz-iran-says-lost-the-keys-where-things-stand-after-a-month-of-war/articleshow/130049907.cms",
-      "sourceLabel": "Times of India",
+      "fullAnalysis": "The ongoing war of choice launched by the United States and Israel against Iran has shattered the geopolitical status quo in our region. As Washington finds itself entangled in another Middle Eastern quagmire, reports suggest that US President Donald Trump\u2019s administration is increasingly in need of",
+      "sourceUrl": "https://www.aljazeera.com/opinions/2026/4/6/a-new-regional-order-for-the-strait-of-hormuz?traffic_source=rss",
+      "sourceLabel": "Al Jazeera",
       "type": "war"
     },
     {
@@ -83,10 +137,10 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "9 min ago",
+      "time": "16 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -115,11 +169,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-05 06:06 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-05 07:24 UTC",
       "l": "HIGH",
@@ -214,11 +263,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-06 05:52 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-06 07:22 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 5 sources covering the US-Israel-Iran conflict. Monitoring 5 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: China moves to expand role in Iran war diplomacy; U.S. seems sceptical. Donald Trump asks Tehran to open Strait of Hormuz; Iran says 'lost the keys': Wh. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Has US war on Iran killed the 'Gulf moment'?. Israel says 163 injured in past 24 hours amid Iran, Hezbollah attacks. Iran, US receive plan to end hostilities, immediate ceasefire, source says. Israeli rescuers search for missing in building strike by Iranian missile, two d. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
