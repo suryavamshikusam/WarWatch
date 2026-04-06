@@ -1,0 +1,71 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-06 05:52 UTC",
+  "executive_summary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: China moves to expand role in Iran war diplomacy; U.S. seems sceptical. Donald Trump asks Tehran to open Strait of Hormuz; Iran says 'lost the keys': Wh. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "China moves to expand role in Iran war diplomacy; U.S. seems sceptical",
+      "detail": "Published - April 06, 2026 10:59 am IST - WASHINGTON Cautious steps:\u00a0Though China has a large strategic petrol reserve, a protracted war can be costly to its vulnerable economy.\u00a0File.\n                                          | Photo Credit: REUTERS China is stepping up its diplomacy on the Iran war",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "The Hindu",
+      "sourceUrl": "https://www.thehindu.com/news/international/china-moves-to-expand-role-in-iran-war-diplomacy-us-seems-sceptical/article70829027.ece",
+      "fullAnalysis": "Published - April 06, 2026 10:59 am IST - WASHINGTON Cautious steps:\u00a0Though China has a large strategic petrol reserve, a protracted war can be costly to its vulnerable economy.\u00a0File.\n                                          | Photo Credit: REUTERS China is stepping up its diplomacy on the Iran war",
+      "sourceLabel": "The Hindu"
+    },
+    {
+      "headline": "Donald Trump asks Tehran to open Strait of Hormuz; Iran says 'lost the keys': Wh",
+      "detail": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Times of India",
+      "sourceUrl": "https://timesofindia.indiatimes.com/world/us/donald-trump-asks-tehran-to-open-strait-of-hormuz-iran-says-lost-the-keys-where-things-stand-after-a-month-of-war/articleshow/130049907.cms",
+      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "sourceLabel": "Times of India"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 2,
+  "generated_at": "2026-04-06 05:52 UTC"
+}
