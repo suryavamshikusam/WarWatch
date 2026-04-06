@@ -1,19 +1,19 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-06 03:41 UTC",
+  "generatedAt": "2026-04-06 04:47 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
+    "Other: For Trump, the cost of Iran war is rising \u00b7 President Donald Trump said the U.S. was completing all of its objectives of the\u2026",
+    "Other: Iranian missile attacks hit central Israel and Haifa, injuries reported \u00b7 Israeli rescue services said they were responding to impacts in central Israel f\u2026",
     "Other: Iran warns wider shipping lanes at risk beyond Hormuz \u00b7 A senior adviser to Iran\u2019s supreme leader warned that key global shipping routes\u2026",
     "Other: Vietnam\u2019s gig workers slammed by rising fuel costs amid fallout of Iran war \u00b7 Ho Chi Minh City, Vietnam \u2013 After a long day of ferrying passengers to and fro r\u2026",
     "Other: Beijing, Moscow push for ceasefire,\u00a0Hormuz stability \u00b7 China\u2019s foreign minister, Wang Yi, and Russia\u2019s foreign minister, Sergey Lavrov,\u2026",
-    "Other: \u2018Never returning to former state\u2019: IRGC warns US and Israel of a permanent \u2018new  \u00b7 Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever ret\u2026",
-    "Other: 'Dragging US towards living hell': Iran slams Trump's 'Tuesday threat' over Stra \u00b7 At TOI World Desk, our dedicated team of seasoned journalists and passionate wri\u2026",
-    "Other: Iran-Israel war LIVE:  Israeli army says completed wave of strikes against Iran, \u00b7 Debris lies scattered in a room damaged by, according to Iranian authorities, a \u2026"
+    "Other: \u2018Never returning to former state\u2019: IRGC warns US and Israel of a permanent \u2018new  \u00b7 Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever ret\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 2,
-    "lastUpdated": "2026-04-06 03:41 UTC",
-    "sourcesUsed": 9
+    "updatesToday": 3,
+    "lastUpdated": "2026-04-06 04:47 UTC",
+    "sourcesUsed": 30
   },
   "tensionMeters": [
     {
@@ -48,6 +48,40 @@ window.WARWATCH_LIVE = {
     }
   ],
   "newsCards": [
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "15 min ago",
+      "headline": "For Trump, the cost of Iran war is rising",
+      "summary": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "President Donald Trump said the U.S. was completing all of its objectives of the war. File\n                                          | Photo Credit: AP \u201cWe are roaming free over Tehran, can do whatever,\u201d U.S. President Donald Trump said on March 25. \u201cWe literally have planes flying over Tehran... th",
+      "sourceUrl": "https://www.thehindu.com/news/international/cost-of-iran-war-rising-donald-trump-us/article70823412.ece",
+      "sourceLabel": "The Hindu",
+      "type": "war"
+    },
+    {
+      "badgeClass": "b-crit",
+      "badgeLabel": "High",
+      "actorClass": "p-gray",
+      "actor": "Other",
+      "time": "15 min ago",
+      "headline": "Iranian missile attacks hit central Israel and Haifa, injuries reported",
+      "summary": "Israeli rescue services said they were responding to impacts in central Israel following Iran\u2019s latest ballistic missile attack, with the military assessing that at least one missile carried a cluster munition warhead, Times of Israel reported. In Haifa, damage was reported from suspected cluster bo",
+      "whyTxt": "Conflict ongoing.",
+      "orgs": [
+        "Other"
+      ],
+      "fullAnalysis": "Israeli rescue services said they were responding to impacts in central Israel following Iran\u2019s latest ballistic missile attack, with the military assessing that at least one missile carried a cluster munition warhead, Times of Israel reported. In Haifa, damage was reported from suspected cluster bo",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iranian-missile-attacks-hit-central-israel-and-haifa-injuries-reported",
+      "sourceLabel": "Middle East Eye",
+      "type": "war"
+    },
     {
       "badgeClass": "b-crit",
       "badgeLabel": "High",
@@ -122,15 +156,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "15 min ago",
-      "headline": "'Dragging US towards living hell': Iran slams Trump's 'Tuesday threat' over Stra",
-      "summary": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
+      "headline": "UAE Iran War News Live Updates: Trump\u2019s deadline for Iran to open Strait of Horm",
+      "summary": "Dubai Iran War News Live Updates: The UAE said that its air defense systems were dealing with missile attacks and incoming drones from Iran, with the Ministry of Defense confirming that the sounds heard were the result of aerial interceptions. \u062a\u062a\u0639\u0627\u0645\u0644 \u062d\u0627\u0644\u064a\u0627\u064b \u0627\u0644\u062f\u0641\u0627\u0639\u0627\u062a \u0627\u0644\u062c\u0648\u064a\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a\u0629 \u0645\u0639 \u0627\u0639\u062a\u062f\u0627\u0621\u0627\u062a \u0635\u0627\u0631",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "At TOI World Desk, our dedicated team of seasoned journalists and passionate writers tirelessly sifts through the vast tapestry of global events to bring you the latest news and diverse perspectives round the clock. With an unwavering commitment to accuracy, depth, and timeliness, we strive to keep ",
-      "sourceUrl": "https://timesofindia.indiatimes.com/world/middle-east/dragging-us-towards-living-hell-iran-slams-trumps-tuesday-threat-over-strait-of-hormuz-closure/articleshow/130048984.cms",
-      "sourceLabel": "Times of India",
+      "fullAnalysis": "Dubai Iran War News Live Updates: The UAE said that its air defense systems were dealing with missile attacks and incoming drones from Iran, with the Ministry of Defense confirming that the sounds heard were the result of aerial interceptions. \u062a\u062a\u0639\u0627\u0645\u0644 \u062d\u0627\u0644\u064a\u0627\u064b \u0627\u0644\u062f\u0641\u0627\u0639\u0627\u062a \u0627\u0644\u062c\u0648\u064a\u0629 \u0627\u0644\u0625\u0645\u0627\u0631\u0627\u062a\u064a\u0629 \u0645\u0639 \u0627\u0639\u062a\u062f\u0627\u0621\u0627\u062a \u0635\u0627\u0631",
+      "sourceUrl": "https://indianexpress.com/article/world/dubai-iran-war-news-live-updates-power-plants-distillation-kuwait-uae-10619581/",
+      "sourceLabel": "Indian Express",
       "type": "war"
     },
     {
@@ -139,49 +173,15 @@ window.WARWATCH_LIVE = {
       "actorClass": "p-gray",
       "actor": "Other",
       "time": "15 min ago",
-      "headline": "Iran-Israel war LIVE:  Israeli army says completed wave of strikes against Iran,",
-      "summary": "Debris lies scattered in a room damaged by, according to Iranian authorities, a nearby airstrike during U.S.-Israeli strikes in early March at the Golestan Palace, a UNESCO World Heritage site, in Tehran, Iran, on Sunday, April 5, 2026.\n                                                  | Photo Credi",
+      "headline": "Iran war: How can US military forcibly reopen Strait of Hormuz",
+      "summary": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Debris lies scattered in a room damaged by, according to Iranian authorities, a nearby airstrike during U.S.-Israeli strikes in early March at the Golestan Palace, a UNESCO World Heritage site, in Tehran, Iran, on Sunday, April 5, 2026.\n                                                  | Photo Credi",
-      "sourceUrl": "https://www.thehindu.com/news/international/us-israel-iran-war-trump-strait-of-hormuz-live-updates-april-6-2026/article70828678.ece",
-      "sourceLabel": "The Hindu",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "15 min ago",
-      "headline": "Iran war live: Tehran rejects Trump\u2019s Hormuz deadline; 2 killed in Haifa",
-      "summary": "Iran war live: Tehran rejects Trump\u2019s Hormuz deadline; 2 killed in Haifa",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "Iran war live: Tehran rejects Trump\u2019s Hormuz deadline; 2 killed in Haifa",
-      "sourceUrl": "https://www.aljazeera.com/news/liveblog/2026/4/6/iran-war-live-tehran-rejects-trumps-tuesday-deadline-on-strait-of-hormuz?traffic_source=rss",
-      "sourceLabel": "Al Jazeera",
-      "type": "war"
-    },
-    {
-      "badgeClass": "b-crit",
-      "badgeLabel": "High",
-      "actorClass": "p-gray",
-      "actor": "Other",
-      "time": "15 min ago",
-      "headline": "Two Israelis\u00a0dead in Haifa missile strike, two still feared trapped",
-      "summary": "The bodies of two people have been recovered from the rubble of a residential building in Haifa struck by an Iranian missile, Israeli rescue services said. The Fire and Rescue Service said crews \u201crescued two trapped individuals who were found under the rubble without signs of life\u201d after hours of ef",
-      "whyTxt": "Conflict ongoing.",
-      "orgs": [
-        "Other"
-      ],
-      "fullAnalysis": "The bodies of two people have been recovered from the rubble of a residential building in Haifa struck by an Iranian missile, Israeli rescue services said. The Fire and Rescue Service said crews \u201crescued two trapped individuals who were found under the rubble without signs of life\u201d after hours of ef",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/two-israelis-dead-haifa-missile-strike-two-still-feared-trapped",
-      "sourceLabel": "Middle East Eye",
+      "fullAnalysis": "As US President Donald Trump rakes up pressure on Iran to sign a deal and end the conflict in West Asia which started when US-Israel launched joint operation against Tehran on February 28, Pentagon is lining up a wide range of military options which could potentially put US troops on ground. Choking",
+      "sourceUrl": "https://indianexpress.com/article/world/us-iran-conflict-trump-kharg-island-ground-troops-oil-prices-10610253/",
+      "sourceLabel": "Indian Express",
       "type": "war"
     },
     {
@@ -192,7 +192,7 @@ window.WARWATCH_LIVE = {
       "time": "15 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
-      "whyTxt": "Latest updates from 9 sources covering the US-Israel-Iran conflict. Monitoring 8 key developments. AI analysis refreshing shortly.",
+      "whyTxt": "Latest updates from 30 sources covering the US-Israel-Iran conflict. Monitoring 8 key developments. AI analysis refreshing shortly.",
       "orgs": [],
       "fullAnalysis": "",
       "sourceUrl": "#",
@@ -221,11 +221,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-05 01:52 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-05 04:34 UTC",
       "l": "HIGH",
@@ -320,11 +315,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-06 03:41 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-06 04:47 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
-  "execSummary": "Latest updates from 9 sources covering the US-Israel-Iran conflict. Monitoring 8 key developments. AI analysis refreshing shortly.",
+  "execSummary": "Latest updates from 30 sources covering the US-Israel-Iran conflict. Monitoring 8 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Iran warns wider shipping lanes at risk beyond Hormuz. Vietnam\u2019s gig workers slammed by rising fuel costs amid fallout of Iran war. Beijing, Moscow push for ceasefire,\u00a0Hormuz stability. \u2018Never returning to former state\u2019: IRGC warns US and Israel of a permanent \u2018new . Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: For Trump, the cost of Iran war is rising. Iranian missile attacks hit central Israel and Haifa, injuries reported. Iran warns wider shipping lanes at risk beyond Hormuz. Vietnam\u2019s gig workers slammed by rising fuel costs amid fallout of Iran war. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
