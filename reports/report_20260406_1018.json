@@ -1,0 +1,93 @@
+{
+  "report_title": "War Monitor \u2014 2026-04-06 10:05 UTC",
+  "executive_summary": "Latest updates from 4 sources covering the US-Israel-Iran conflict. Monitoring 4 key developments. AI analysis refreshing shortly.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: US-Israel-Iran war Day 38: Trump issues 48-hour ultimatum to Tehran as IRGC inte. Iran rejects deadlines, any immediate move to reopen the Strait of Hormuz. Iran says it has formulated diplomatic response to US, to announce in due course. Opinion: Has US war on Iran killed the 'Gulf moment'?. Situation remains active.",
+  "escalation_level": "HIGH",
+  "escalation_reason": "Conflict ongoing.",
+  "key_developments": [
+    {
+      "headline": "US-Israel-Iran war Day 38: Trump issues 48-hour ultimatum to Tehran as IRGC inte",
+      "detail": "US-Israel-Iran war Day 38: The tensions between the US, Israel and Iran further escalated on the 38th day of the war. The confict showed no signs of a let-up with exchange of fire on both sides \u2014 as sounds of explosions and plumes of smoke covered the skies of both Tehran, Jerusalem and Gulf Arab ne",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Indian Express",
+      "sourceUrl": "https://indianexpress.com/article/world/us-israel-iran-war-day-38-trump-issues-48-hour-ultimatum-to-tehran-as-irgc-intelligence-chief-is-killed-will-the-45-day-ceasefire-hold-10621643/",
+      "fullAnalysis": "US-Israel-Iran war Day 38: The tensions between the US, Israel and Iran further escalated on the 38th day of the war. The confict showed no signs of a let-up with exchange of fire on both sides \u2014 as sounds of explosions and plumes of smoke covered the skies of both Tehran, Jerusalem and Gulf Arab ne",
+      "sourceLabel": "Indian Express"
+    },
+    {
+      "headline": "Iran rejects deadlines, any immediate move to reopen the Strait of Hormuz",
+      "detail": "Tehran rejected any immediate move to reopen the Strait of Hormuz as the US deadline approaching and the United States and Iran received the framework of a plan to end their five\u2011week-old war. President Donald Trump has threatened to\u00a0rain \"hell\" on Tehran if it did not make a deal by the end of Tues",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-rejects-deadlines-any-immediate-move-reopen-strait-hormuz",
+      "fullAnalysis": "Tehran rejected any immediate move to reopen the Strait of Hormuz as the US deadline approaching and the United States and Iran received the framework of a plan to end their five\u2011week-old war. President Donald Trump has threatened to\u00a0rain \"hell\" on Tehran if it did not make a deal by the end of Tues",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Iran says it has formulated diplomatic response to US, to announce in due course",
+      "detail": "We earlier reported that Iran and the United States \u200bhave received a plan to end war and \u200creopen the Strait of Hormuz. Iran\u2019s foreign ministry spokesperson,\u00a0Esmail Baghaei, says Tehran has formulated its diplomatic response to the US and will announce it in due time. The proposal, dubbed the 'Islama",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/iran-says-it-has-formulated-diplomatic-response-us-announce-due-course",
+      "fullAnalysis": "We earlier reported that Iran and the United States \u200bhave received a plan to end war and \u200creopen the Strait of Hormuz. Iran\u2019s foreign ministry spokesperson,\u00a0Esmail Baghaei, says Tehran has formulated its diplomatic response to the US and will announce it in due time. The proposal, dubbed the 'Islama",
+      "sourceLabel": "Middle East Eye"
+    },
+    {
+      "headline": "Opinion: Has US war on Iran killed the 'Gulf moment'?",
+      "detail": "In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf Moment , arguing that states such as the UAE , Qatar and Saudi Arabia had eclipsed countries such as Egypt and Iraq - the historical core of the region - and were now projecting political, economic and cultural power on t",
+      "actor": "Other",
+      "type": "war",
+      "significance": "HIGH",
+      "source": "Middle East Eye",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/opinion-has-us-war-iran-killed-gulf-moment",
+      "fullAnalysis": "In 2018, Emirati academic Abdulkhaleq Abdulla published a book titled The Gulf Moment , arguing that states such as the UAE , Qatar and Saudi Arabia had eclipsed countries such as Egypt and Iraq - the historical core of the region - and were now projecting political, economic and cultural power on t",
+      "sourceLabel": "Middle East Eye"
+    }
+  ],
+  "sentiment": {
+    "overall_tone": "ESCALATING",
+    "us_stance": "",
+    "israel_stance": "",
+    "iran_stance": ""
+  },
+  "terminology_explained": [
+    {
+      "term": "IRGC",
+      "simple_explanation": "Iran's elite Revolutionary Guard \u2014 controls missiles and drones."
+    },
+    {
+      "term": "Strait of Hormuz",
+      "simple_explanation": "Narrow waterway \u2014 20% of world oil passes through it."
+    },
+    {
+      "term": "IDF",
+      "simple_explanation": "Israel Defense Forces \u2014 Israel's military."
+    }
+  ],
+  "what_to_watch_next": "Monitor live feeds for breaking developments.",
+  "india_impact": [
+    {
+      "headline": "India Monitors Gulf Conflict",
+      "detail": "India's energy security tied to Gulf stability.",
+      "category": "Energy",
+      "significance": "HIGH",
+      "source": "WarWatch",
+      "sourceUrl": "#",
+      "full_detail": "India imports 85% of crude oil from Gulf. Strait of Hormuz disruption would immediately impact supply."
+    }
+  ],
+  "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
+  "indiaMeter": {
+    "pct": 72,
+    "lvl": "High",
+    "color": "#d4892a"
+  },
+  "sources_used": 4,
+  "generated_at": "2026-04-06 10:05 UTC"
+}
