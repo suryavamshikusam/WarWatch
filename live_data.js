@@ -1,14 +1,14 @@
 window.WARWATCH_LIVE = {
-  "generatedAt": "2026-04-05 23:35 UTC",
+  "generatedAt": "2026-04-06 00:05 UTC",
   "escalationLevel": "HIGH",
   "alerts": [
-    "Other: Hamas backs Iran and says disarmament is not on the table while Israel continues \u00b7 Hamas's military spokesman Abu Obaida has delivered a statement backing Iran's s\u2026",
-    "Other: IRGC says Hormuz will \u2018never return to former state\u2019 for US and Isreal \u00b7 Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever ret\u2026"
+    "Other: Fars: 15 ships pass through Hormuz in 24 hours with permission from Iran \u00b7 Fifteen ships passed through the Strait of Hormuz over the past 24 hours with pe\u2026",
+    "Other: Missile hits Haifa building, people trapped under rubble, Israeli media reports \u00b7 Rescue teams were working to reach people trapped under the rubble of a building\u2026"
   ],
   "heroStats": {
     "tension": "HIGH",
-    "updatesToday": 18,
-    "lastUpdated": "2026-04-05 23:35 UTC",
+    "updatesToday": 1,
+    "lastUpdated": "2026-04-06 00:05 UTC",
     "sourcesUsed": 2
   },
   "tensionMeters": [
@@ -49,15 +49,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "Hamas backs Iran and says disarmament is not on the table while Israel continues",
-      "summary": "Hamas's military spokesman Abu Obaida has delivered a statement backing Iran's strikes on Israel , mourning the death of Supreme Leader Ali Khamenei, and accusing ceasefire mediators of applying pressure on Palestinian resistance while turning a blind eye to Israeli violations. Speaking in a video m",
+      "time": "9 min ago",
+      "headline": "Fars: 15 ships pass through Hormuz in 24 hours with permission from Iran",
+      "summary": "Fifteen ships passed through the Strait of Hormuz over the past 24 hours with permission from Iran, the IRGC-affiliated Fars news agency reported. The figures come as access to the strategic waterway remains restricted. Maritime traffic through the strait is about 90% lower than before the start of ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Hamas's military spokesman Abu Obaida has delivered a statement backing Iran's strikes on Israel , mourning the death of Supreme Leader Ali Khamenei, and accusing ceasefire mediators of applying pressure on Palestinian resistance while turning a blind eye to Israeli violations. Speaking in a video m",
-      "sourceUrl": "https://www.middleeasteye.net/news/hamas-backs-iran-and-says-disarmament-not-table-while-israel-continues-genocide",
+      "fullAnalysis": "Fifteen ships passed through the Strait of Hormuz over the past 24 hours with permission from Iran, the IRGC-affiliated Fars news agency reported. The figures come as access to the strategic waterway remains restricted. Maritime traffic through the strait is about 90% lower than before the start of ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/fars-15-ships-pass-through-hormuz-24-hours-permission-iran",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -66,15 +66,15 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "High",
       "actorClass": "p-gray",
       "actor": "Other",
-      "time": "8 min ago",
-      "headline": "IRGC says Hormuz will \u2018never return to former state\u2019 for US and Isreal",
-      "summary": "Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever return to its former state, especially for the US and Israel. The statement said Iran is in the final stages of operational preparations for what officials describe as a \u201cnew order\u201d in the Gulf. The remarks follow moves in ",
+      "time": "9 min ago",
+      "headline": "Missile hits Haifa building, people trapped under rubble, Israeli media reports",
+      "summary": "Rescue teams were working to reach people trapped under the rubble of a building in Haifa after an Iranian missile strike, Israeli media reported. Channel 12, citing a fire and rescue official, said crews were making \u201cgreat efforts\u201d to reach those trapped, describing the situation as among the most ",
       "whyTxt": "Conflict ongoing.",
       "orgs": [
         "Other"
       ],
-      "fullAnalysis": "Iran\u2019s Revolutionary Guard Navy (IRGC) said the Strait of Hormuz will \u201cnever return to its former state, especially for the US and Israel. The statement said Iran is in the final stages of operational preparations for what officials describe as a \u201cnew order\u201d in the Gulf. The remarks follow moves in ",
-      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/irgc-says-hormuz-will-never-return-former-state-us-and-isreal",
+      "fullAnalysis": "Rescue teams were working to reach people trapped under the rubble of a building in Haifa after an Iranian missile strike, Israeli media reported. Channel 12, citing a fire and rescue official, said crews were making \u201cgreat efforts\u201d to reach those trapped, describing the situation as among the most ",
+      "sourceUrl": "https://www.middleeasteye.net/live-blog/live-blog-update/missile-hits-haifa-building-people-trapped-under-rubble-israeli-media",
       "sourceLabel": "Middle East Eye",
       "type": "war"
     },
@@ -83,7 +83,7 @@ window.WARWATCH_LIVE = {
       "badgeLabel": "Analysis",
       "actorClass": "p-gray",
       "actor": "Monitor",
-      "time": "8 min ago",
+      "time": "9 min ago",
       "headline": "What to watch in the next 6 hours",
       "summary": "Monitor live feeds for breaking developments.",
       "whyTxt": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
@@ -115,11 +115,6 @@ window.WARWATCH_LIVE = {
     }
   ],
   "history": [
-    {
-      "t": "2026-04-04 21:27 UTC",
-      "l": "HIGH",
-      "tone": "ESCALATING"
-    },
     {
       "t": "2026-04-04 22:24 UTC",
       "l": "HIGH",
@@ -214,11 +209,16 @@ window.WARWATCH_LIVE = {
       "t": "2026-04-05 23:35 UTC",
       "l": "HIGH",
       "tone": "ESCALATING"
+    },
+    {
+      "t": "2026-04-06 00:05 UTC",
+      "l": "HIGH",
+      "tone": "ESCALATING"
     }
   ],
   "execSummary": "Latest updates from 2 sources covering the US-Israel-Iran conflict. Monitoring 2 key developments. AI analysis refreshing shortly.",
   "totalReports": 48,
-  "execSummaryRich": "Escalation: HIGH. Key developments: Hamas backs Iran and says disarmament is not on the table while Israel continues. IRGC says Hormuz will \u2018never return to former state\u2019 for US and Isreal. Situation remains active.",
+  "execSummaryRich": "Escalation: HIGH. Key developments: Fars: 15 ships pass through Hormuz in 24 hours with permission from Iran. Missile hits Haifa building, people trapped under rubble, Israeli media reports. Situation remains active.",
   "indiaSummary": "India continues to monitor the US-Israel-Iran conflict closely given its significant dependence on Gulf energy imports and the large Indian diaspora. Oil price volatility directly impacts petrol prices for Indian consumers.",
   "indiaImpact": [
     {
