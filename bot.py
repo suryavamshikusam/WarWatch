@@ -52,7 +52,7 @@ def _live_data_age_hours() -> float:
 def run_pipeline(articles: list):
     """Build live_data.js from articles. No AI needed."""
     print(f"\n[1/2] Building dashboard from {len(articles)} articles...")
-    build_dashboard(articles)
+    build_dashboard()
 
     print(f"\n[2/2] Fetching live prices...")
     try:
