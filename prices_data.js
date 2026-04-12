@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-12 12:43 UTC",
+  "fetchedAt": "2026-04-12 13:47 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -47,7 +47,7 @@ window.WARWATCH_PRICES = {
       "name": "USD / INR",
       "price": 93.048,
       "formatted": "\u20b993.05",
-      "day_pct": 0.84,
+      "day_pct": 0.63,
       "war_pct": 13.33
     },
     "IOC.NS": {
