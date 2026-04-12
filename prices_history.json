@@ -432,5 +432,19 @@
     "mcx_silver": 228328,
     "ioc": 143.0,
     "adani": 1475
+  },
+  {
+    "date": "2026-04-12",
+    "brent": 95.2,
+    "wti": 96.57,
+    "ng": 2.648,
+    "gold": 0,
+    "wheat": 571,
+    "inr": 93.05,
+    "mcx_crude": 8986,
+    "mcx_gold": 0,
+    "mcx_silver": 228328,
+    "ioc": 143.0,
+    "adani": 1475
   }
 ]
