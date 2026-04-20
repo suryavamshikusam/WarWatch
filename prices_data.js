@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-19 23:20 UTC",
+  "fetchedAt": "2026-04-20 00:00 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -24,17 +24,17 @@ window.WARWATCH_PRICES = {
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4797.1001,
-      "formatted": "$4,797",
-      "day_pct": -1.25,
-      "war_pct": 78.33
+      "price": 4764.2002,
+      "formatted": "$4,764",
+      "day_pct": -1.92,
+      "war_pct": 77.11
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 79.635,
-      "formatted": "$79.635",
-      "day_pct": -2.57,
-      "war_pct": 179.42
+      "price": 78.795,
+      "formatted": "$78.795",
+      "day_pct": -3.6,
+      "war_pct": 176.47
     },
     "ZW=F": {
       "name": "Wheat",
@@ -66,10 +66,10 @@ window.WARWATCH_PRICES = {
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 142779,
-      "formatted": "\u20b9142,779",
-      "day_pct": -1.25,
-      "war_pct": 90.88
+      "price": 141799,
+      "formatted": "\u20b9141,799",
+      "day_pct": -1.92,
+      "war_pct": 89.57
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
@@ -80,10 +80,10 @@ window.WARWATCH_PRICES = {
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 237022,
-      "formatted": "\u20b9237,022",
-      "day_pct": -2.57,
-      "war_pct": 159.04
+      "price": 234522,
+      "formatted": "\u20b9234,522",
+      "day_pct": -3.6,
+      "war_pct": 156.31
     }
   },
   "india": {
@@ -92,7 +92,7 @@ window.WARWATCH_PRICES = {
       "war_change": 8.8,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
-    "goldSilverRatio": 60.2
+    "goldSilverRatio": 60.5
   },
   "history": [
     {
@@ -638,6 +638,20 @@ window.WARWATCH_PRICES = {
       "mcx_crude": 7646,
       "mcx_gold": 142779,
       "mcx_silver": 237022,
+      "ioc": 145.9,
+      "adani": 1573
+    },
+    {
+      "date": "2026-04-20",
+      "brent": 90.38,
+      "wti": 82.59,
+      "ng": 2.674,
+      "gold": 4764,
+      "wheat": 599,
+      "inr": 92.58,
+      "mcx_crude": 7646,
+      "mcx_gold": 141799,
+      "mcx_silver": 234522,
       "ioc": 145.9,
       "adani": 1573
     }
