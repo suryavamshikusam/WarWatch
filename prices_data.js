@@ -1,19 +1,19 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-21 05:53 UTC",
+  "fetchedAt": "2026-04-21 07:24 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
-      "price": 94.14,
-      "formatted": "$94.14",
-      "day_pct": -1.4,
-      "war_pct": 23.54
+      "price": 95.16,
+      "formatted": "$95.16",
+      "day_pct": -0.34,
+      "war_pct": 24.88
     },
     "CL=F": {
       "name": "WTI Crude",
-      "price": 85.91,
-      "formatted": "$85.91",
-      "day_pct": -4.13,
-      "war_pct": 17.52
+      "price": 86.91,
+      "formatted": "$86.91",
+      "day_pct": -3.01,
+      "war_pct": 18.89
     },
     "NG=F": {
       "name": "Natural Gas",
@@ -24,75 +24,75 @@ window.WARWATCH_PRICES = {
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4815.2998,
-      "formatted": "$4,815",
-      "day_pct": 0.18,
-      "war_pct": 79.01
+      "price": 4801.5,
+      "formatted": "$4,802",
+      "day_pct": -0.11,
+      "war_pct": 78.49
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 79.36,
-      "formatted": "$79.360",
-      "day_pct": -0.74,
-      "war_pct": 178.46
+      "price": 78.945,
+      "formatted": "$78.945",
+      "day_pct": -1.26,
+      "war_pct": 177.0
     },
     "ZW=F": {
       "name": "Wheat",
-      "price": 606.25,
-      "formatted": "606\u00a2",
-      "day_pct": 1.55,
-      "war_pct": 13.32
+      "price": 609.75,
+      "formatted": "610\u00a2",
+      "day_pct": 2.14,
+      "war_pct": 13.97
     },
     "INR=X": {
       "name": "USD / INR",
-      "price": 93.361,
-      "formatted": "\u20b993.36",
-      "day_pct": 0.82,
-      "war_pct": 13.72
+      "price": 93.4625,
+      "formatted": "\u20b993.46",
+      "day_pct": 0.93,
+      "war_pct": 13.84
     },
     "IOC.NS": {
       "name": "IOC",
-      "price": 147.31,
-      "formatted": "\u20b9147.31",
-      "day_pct": 0.3,
-      "war_pct": -8.22
+      "price": 147.4,
+      "formatted": "\u20b9147.4",
+      "day_pct": 0.36,
+      "war_pct": -8.16
     },
     "ADANIPORTS.NS": {
       "name": "Adani Ports",
-      "price": 1603.9,
-      "formatted": "\u20b91,603.9",
-      "day_pct": 1.62,
-      "war_pct": 30.08
+      "price": 1602.3,
+      "formatted": "\u20b91,602.3",
+      "day_pct": 1.51,
+      "war_pct": 29.95
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 144537,
-      "formatted": "\u20b9144,537",
-      "day_pct": 0.18,
-      "war_pct": 93.23
+      "price": 144280,
+      "formatted": "\u20b9144,280",
+      "day_pct": -0.11,
+      "war_pct": 92.89
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
-      "price": 8021,
-      "formatted": "\u20b98,021",
-      "day_pct": -4.13,
-      "war_pct": 26.31
+      "price": 8123,
+      "formatted": "\u20b98,123",
+      "day_pct": -3.01,
+      "war_pct": 27.92
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 238209,
-      "formatted": "\u20b9238,209",
-      "day_pct": -0.74,
-      "war_pct": 160.34
+      "price": 237221,
+      "formatted": "\u20b9237,221",
+      "day_pct": -1.26,
+      "war_pct": 159.26
     }
   },
   "india": {
     "petrolPump": {
-      "formatted": "\u20b9110.8",
-      "war_change": 11.4,
+      "formatted": "\u20b9111.5",
+      "war_change": 12.0,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
-    "goldSilverRatio": 60.7
+    "goldSilverRatio": 60.8
   },
   "history": [
     {
@@ -657,17 +657,17 @@ window.WARWATCH_PRICES = {
     },
     {
       "date": "2026-04-21",
-      "brent": 94.14,
-      "wti": 85.91,
+      "brent": 95.16,
+      "wti": 86.91,
       "ng": 2.657,
-      "gold": 4815,
-      "wheat": 606,
-      "inr": 93.36,
-      "mcx_crude": 8021,
-      "mcx_gold": 144537,
-      "mcx_silver": 238209,
-      "ioc": 147.3,
-      "adani": 1604
+      "gold": 4802,
+      "wheat": 610,
+      "inr": 93.46,
+      "mcx_crude": 8123,
+      "mcx_gold": 144280,
+      "mcx_silver": 237221,
+      "ioc": 147.4,
+      "adani": 1602
     }
   ]
 };
