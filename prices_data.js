@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-26 11:55 UTC",
+  "fetchedAt": "2026-04-26 12:50 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -35,6 +35,13 @@ window.WARWATCH_PRICES = {
       "formatted": "$76.414",
       "day_pct": 1.26,
       "war_pct": 168.12
+    },
+    "ZW=F": {
+      "name": "Wheat",
+      "price": 616.75,
+      "formatted": "617\u00a2",
+      "day_pct": 0.98,
+      "war_pct": 15.28
     },
     "INR=X": {
       "name": "USD / INR",
@@ -724,7 +731,7 @@ window.WARWATCH_PRICES = {
       "wti": 94.4,
       "ng": 2.683,
       "gold": 4741,
-      "wheat": 0,
+      "wheat": 617,
       "inr": 94.22,
       "mcx_crude": 8894,
       "mcx_gold": 143613,
