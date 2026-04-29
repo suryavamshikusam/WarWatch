@@ -673,15 +673,15 @@
   },
   {
     "date": "2026-04-29",
-    "brent": 111.43,
-    "wti": 107.91,
-    "ng": 2.646,
-    "gold": 4553,
+    "brent": 111.49,
+    "wti": 107.97,
+    "ng": 2.647,
+    "gold": 4558,
     "wheat": 653,
     "inr": 94.82,
-    "mcx_crude": 10232,
-    "mcx_gold": 138787,
-    "mcx_silver": 219540,
+    "mcx_crude": 10238,
+    "mcx_gold": 138940,
+    "mcx_silver": 218976,
     "ioc": 145.4,
     "adani": 1638
   }
