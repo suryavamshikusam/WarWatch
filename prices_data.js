@@ -1,98 +1,98 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-04-29 23:47 UTC",
+  "fetchedAt": "2026-04-30 02:12 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
-      "price": 111.75,
-      "formatted": "$111.75",
-      "day_pct": 0.44,
-      "war_pct": 46.65
+      "price": 110.84,
+      "formatted": "$110.84",
+      "day_pct": -0.38,
+      "war_pct": 45.46
     },
     "CL=F": {
       "name": "WTI Crude",
-      "price": 108.1,
-      "formatted": "$108.10",
-      "day_pct": 8.18,
-      "war_pct": 47.88
+      "price": 107.36,
+      "formatted": "$107.36",
+      "day_pct": 7.44,
+      "war_pct": 46.87
     },
     "NG=F": {
       "name": "Natural Gas",
-      "price": 2.639,
-      "formatted": "$2.639",
-      "day_pct": 3.13,
-      "war_pct": -8.37
+      "price": 2.63,
+      "formatted": "$2.630",
+      "day_pct": 2.77,
+      "war_pct": -8.68
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4565.2002,
-      "formatted": "$4,565",
-      "day_pct": -0.57,
-      "war_pct": 69.71
+      "price": 4591.7998,
+      "formatted": "$4,592",
+      "day_pct": 0.01,
+      "war_pct": 70.7
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 72.135,
-      "formatted": "$72.135",
-      "day_pct": -1.46,
-      "war_pct": 153.11
+      "price": 73.385,
+      "formatted": "$73.385",
+      "day_pct": 0.25,
+      "war_pct": 157.49
     },
     "ZW=F": {
       "name": "Wheat",
-      "price": 653.0,
-      "formatted": "653\u00a2",
-      "day_pct": 0.62,
-      "war_pct": 22.06
+      "price": 652.25,
+      "formatted": "652\u00a2",
+      "day_pct": 0.5,
+      "war_pct": 21.92
     },
     "INR=X": {
       "name": "USD / INR",
-      "price": 94.6455,
-      "formatted": "\u20b994.65",
-      "day_pct": 0.41,
-      "war_pct": 15.28
+      "price": 94.83,
+      "formatted": "\u20b994.83",
+      "day_pct": 0.19,
+      "war_pct": 15.51
     },
     "IOC.NS": {
       "name": "IOC",
-      "price": 145.39,
-      "formatted": "\u20b9145.39",
-      "day_pct": -0.59,
-      "war_pct": -9.41
+      "price": 144.19,
+      "formatted": "\u20b9144.19",
+      "day_pct": -0.83,
+      "war_pct": -10.16
     },
     "ADANIPORTS.NS": {
       "name": "Adani Ports",
-      "price": 1637.6,
-      "formatted": "\u20b91,637.6",
-      "day_pct": 0.56,
-      "war_pct": 32.81
+      "price": 1661.1,
+      "formatted": "\u20b91,661.1",
+      "day_pct": 1.44,
+      "war_pct": 34.72
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 138915,
-      "formatted": "\u20b9138,915",
-      "day_pct": -0.57,
-      "war_pct": 85.72
+      "price": 139997,
+      "formatted": "\u20b9139,997",
+      "day_pct": 0.01,
+      "war_pct": 87.16
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
-      "price": 10231,
-      "formatted": "\u20b910,231",
-      "day_pct": 8.18,
-      "war_pct": 61.12
+      "price": 10181,
+      "formatted": "\u20b910,181",
+      "day_pct": 7.44,
+      "war_pct": 60.33
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 219501,
-      "formatted": "\u20b9219,501",
-      "day_pct": -1.46,
-      "war_pct": 139.89
+      "price": 223740,
+      "formatted": "\u20b9223,740",
+      "day_pct": 0.25,
+      "war_pct": 144.52
     }
   },
   "india": {
     "petrolPump": {
-      "formatted": "\u20b9125.8",
-      "war_change": 26.4,
+      "formatted": "\u20b9125.5",
+      "war_change": 26.0,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
-    "goldSilverRatio": 63.3
+    "goldSilverRatio": 62.6
   },
   "history": [
     {
@@ -780,6 +780,20 @@ window.WARWATCH_PRICES = {
       "mcx_silver": 219501,
       "ioc": 145.4,
       "adani": 1638
+    },
+    {
+      "date": "2026-04-30",
+      "brent": 110.84,
+      "wti": 107.36,
+      "ng": 2.63,
+      "gold": 4592,
+      "wheat": 652,
+      "inr": 94.83,
+      "mcx_crude": 10181,
+      "mcx_gold": 139997,
+      "mcx_silver": 223740,
+      "ioc": 144.2,
+      "adani": 1661
     }
   ]
 };
