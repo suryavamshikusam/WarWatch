@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-05-01 23:06 UTC",
+  "fetchedAt": "2026-05-02 00:04 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -797,6 +797,20 @@ window.WARWATCH_PRICES = {
     },
     {
       "date": "2026-05-01",
+      "brent": 108.83,
+      "wti": 102.5,
+      "ng": 2.789,
+      "gold": 4626,
+      "wheat": 636,
+      "inr": 94.88,
+      "mcx_crude": 9725,
+      "mcx_gold": 141102,
+      "mcx_silver": 231347,
+      "ioc": 142.2,
+      "adani": 1657
+    },
+    {
+      "date": "2026-05-02",
       "brent": 108.83,
       "wti": 102.5,
       "ng": 2.789,
