@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-05-03 00:06 UTC",
+  "fetchedAt": "2026-05-03 04:09 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -24,24 +24,24 @@ window.WARWATCH_PRICES = {
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4629.8999,
-      "formatted": "$4,630",
-      "day_pct": 0.33,
-      "war_pct": 72.12
+      "price": 4644.5,
+      "formatted": "$4,644",
+      "day_pct": 0.65,
+      "war_pct": 72.66
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 75.951,
-      "formatted": "$75.951",
-      "day_pct": 3.29,
-      "war_pct": 166.49
+      "price": 76.431,
+      "formatted": "$76.431",
+      "day_pct": 3.94,
+      "war_pct": 168.18
     },
     "ZW=F": {
       "name": "Wheat",
-      "price": 624.5,
-      "formatted": "624\u00a2",
-      "day_pct": 0.12,
-      "war_pct": 16.73
+      "price": 637.75,
+      "formatted": "638\u00a2",
+      "day_pct": 2.24,
+      "war_pct": 19.21
     },
     "INR=X": {
       "name": "USD / INR",
@@ -66,10 +66,10 @@ window.WARWATCH_PRICES = {
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 141233,
-      "formatted": "\u20b9141,233",
-      "day_pct": 0.33,
-      "war_pct": 88.81
+      "price": 141679,
+      "formatted": "\u20b9141,679",
+      "day_pct": 0.65,
+      "war_pct": 89.41
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
@@ -80,10 +80,10 @@ window.WARWATCH_PRICES = {
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 231685,
-      "formatted": "\u20b9231,685",
-      "day_pct": 3.29,
-      "war_pct": 153.21
+      "price": 233150,
+      "formatted": "\u20b9233,150",
+      "day_pct": 3.94,
+      "war_pct": 154.81
     }
   },
   "india": {
@@ -92,7 +92,7 @@ window.WARWATCH_PRICES = {
       "war_change": 22.6,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
-    "goldSilverRatio": 61.0
+    "goldSilverRatio": 60.8
   },
   "history": [
     {
@@ -828,12 +828,12 @@ window.WARWATCH_PRICES = {
       "brent": 108.17,
       "wti": 101.94,
       "ng": 2.78,
-      "gold": 4630,
-      "wheat": 624,
+      "gold": 4644,
+      "wheat": 638,
       "inr": 94.88,
       "mcx_crude": 9672,
-      "mcx_gold": 141233,
-      "mcx_silver": 231685,
+      "mcx_gold": 141679,
+      "mcx_silver": 233150,
       "ioc": 142.2,
       "adani": 1657
     }
