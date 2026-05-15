@@ -1,47 +1,47 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-05-15 17:14 UTC",
+  "fetchedAt": "2026-05-15 18:55 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
-      "price": 109.03,
-      "formatted": "$109.03",
-      "day_pct": 3.13,
-      "war_pct": 43.08
+      "price": 109.43,
+      "formatted": "$109.43",
+      "day_pct": 3.51,
+      "war_pct": 43.61
     },
     "CL=F": {
       "name": "WTI Crude",
-      "price": 100.52,
-      "formatted": "$100.52",
-      "day_pct": -0.64,
-      "war_pct": 37.51
+      "price": 101.12,
+      "formatted": "$101.12",
+      "day_pct": -0.05,
+      "war_pct": 38.33
     },
     "NG=F": {
       "name": "Natural Gas",
-      "price": 2.964,
-      "formatted": "$2.964",
-      "day_pct": 2.42,
-      "war_pct": 2.92
+      "price": 2.967,
+      "formatted": "$2.967",
+      "day_pct": 2.52,
+      "war_pct": 3.02
     },
     "GC=F": {
       "name": "Gold USD",
-      "price": 4554.5,
-      "formatted": "$4,554",
-      "day_pct": -2.64,
-      "war_pct": 69.31
+      "price": 4561.7998,
+      "formatted": "$4,562",
+      "day_pct": -2.49,
+      "war_pct": 69.58
     },
     "SI=F": {
       "name": "Silver USD",
-      "price": 76.9,
-      "formatted": "$76.900",
-      "day_pct": -9.44,
-      "war_pct": 169.82
+      "price": 77.28,
+      "formatted": "$77.280",
+      "day_pct": -8.99,
+      "war_pct": 171.16
     },
     "ZW=F": {
       "name": "Wheat",
-      "price": 634.75,
-      "formatted": "635\u00a2",
-      "day_pct": -1.89,
-      "war_pct": 18.64
+      "price": 635.5,
+      "formatted": "636\u00a2",
+      "day_pct": -1.78,
+      "war_pct": 18.79
     },
     "INR=X": {
       "name": "USD / INR",
@@ -52,47 +52,47 @@ window.WARWATCH_PRICES = {
     },
     "IOC.NS": {
       "name": "IOC",
-      "price": 134.48,
-      "formatted": "\u20b9134.48",
-      "day_pct": -4.12,
-      "war_pct": -16.21
+      "price": 140.26,
+      "formatted": "\u20b9140.26",
+      "day_pct": -1.01,
+      "war_pct": -12.61
     },
     "ADANIPORTS.NS": {
       "name": "Adani Ports",
-      "price": 1795.1,
-      "formatted": "\u20b91,795.1",
-      "day_pct": 1.22,
-      "war_pct": 45.59
+      "price": 1773.4,
+      "formatted": "\u20b91,773.4",
+      "day_pct": 2.05,
+      "war_pct": 43.83
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
-      "price": 140507,
-      "formatted": "\u20b9140,507",
-      "day_pct": -2.64,
-      "war_pct": 87.84
+      "price": 140733,
+      "formatted": "\u20b9140,733",
+      "day_pct": -2.49,
+      "war_pct": 88.15
     },
     "CRUDEOIL.MCX": {
       "name": "MCX Crude",
-      "price": 9645,
-      "formatted": "\u20b99,645",
-      "day_pct": -0.64,
-      "war_pct": 51.89
+      "price": 9703,
+      "formatted": "\u20b99,703",
+      "day_pct": -0.05,
+      "war_pct": 52.8
     },
     "SILVER.MCX": {
       "name": "MCX Silver",
-      "price": 237238,
-      "formatted": "\u20b9237,238",
-      "day_pct": -9.44,
-      "war_pct": 159.28
+      "price": 238410,
+      "formatted": "\u20b9238,410",
+      "day_pct": -8.99,
+      "war_pct": 160.56
     }
   },
   "india": {
     "petrolPump": {
-      "formatted": "\u20b9121.8",
-      "war_change": 22.4,
+      "formatted": "\u20b9122.2",
+      "war_change": 22.8,
       "formula": "MCX crude \u00f7 159L \u00d7 1.08 + \u20b952.5 taxes + \u20b93.8 margins \u00b7 Delhi est."
     },
-    "goldSilverRatio": 59.2
+    "goldSilverRatio": 59.0
   },
   "history": [
     {
@@ -923,17 +923,17 @@ window.WARWATCH_PRICES = {
     },
     {
       "date": "2026-05-15",
-      "brent": 109.03,
-      "wti": 100.52,
-      "ng": 2.964,
-      "gold": 4554,
-      "wheat": 635,
+      "brent": 109.43,
+      "wti": 101.12,
+      "ng": 2.967,
+      "gold": 4562,
+      "wheat": 636,
       "inr": 95.95,
-      "mcx_crude": 9645,
-      "mcx_gold": 140507,
-      "mcx_silver": 237238,
-      "ioc": 134.5,
-      "adani": 1795
+      "mcx_crude": 9703,
+      "mcx_gold": 140733,
+      "mcx_silver": 238410,
+      "ioc": 140.3,
+      "adani": 1773
     }
   ]
 };
