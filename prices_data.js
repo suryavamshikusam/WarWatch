@@ -1,5 +1,5 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-05-15 23:28 UTC",
+  "fetchedAt": "2026-05-16 01:15 UTC",
   "prices": {
     "BZ=F": {
       "name": "Brent Crude",
@@ -52,17 +52,17 @@ window.WARWATCH_PRICES = {
     },
     "IOC.NS": {
       "name": "IOC",
-      "price": 140.26,
-      "formatted": "\u20b9140.26",
-      "day_pct": -1.01,
-      "war_pct": -12.61
+      "price": 134.48,
+      "formatted": "\u20b9134.48",
+      "day_pct": -4.12,
+      "war_pct": -16.21
     },
     "ADANIPORTS.NS": {
       "name": "Adani Ports",
-      "price": 1773.4,
-      "formatted": "\u20b91,773.4",
-      "day_pct": 2.05,
-      "war_pct": 43.83
+      "price": 1795.1,
+      "formatted": "\u20b91,795.1",
+      "day_pct": 1.22,
+      "war_pct": 45.59
     },
     "GOLD.MCX": {
       "name": "MCX Gold",
@@ -95,20 +95,6 @@ window.WARWATCH_PRICES = {
     "goldSilverRatio": 59.6
   },
   "history": [
-    {
-      "date": "2026-03-15",
-      "brent": 89.5,
-      "wti": 86.1,
-      "ng": 3.04,
-      "gold": 2830,
-      "wheat": 549,
-      "inr": 83.6,
-      "mcx_crude": 7430,
-      "mcx_gold": 78200,
-      "mcx_silver": 96800,
-      "ioc": 148.6,
-      "adani": 1261
-    },
     {
       "date": "2026-03-16",
       "brent": 91.8,
@@ -934,6 +920,20 @@ window.WARWATCH_PRICES = {
       "mcx_silver": 235372,
       "ioc": 140.3,
       "adani": 1773
+    },
+    {
+      "date": "2026-05-16",
+      "brent": 109.24,
+      "wti": 101.16,
+      "ng": 2.961,
+      "gold": 4544,
+      "wheat": 636,
+      "inr": 95.95,
+      "mcx_crude": 9707,
+      "mcx_gold": 140171,
+      "mcx_silver": 235372,
+      "ioc": 134.5,
+      "adani": 1795
     }
   ]
 };
