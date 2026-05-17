@@ -1,6 +1,13 @@
 window.WARWATCH_PRICES = {
-  "fetchedAt": "2026-05-17 07:21 UTC",
+  "fetchedAt": "2026-05-17 09:18 UTC",
   "prices": {
+    "BZ=F": {
+      "name": "Brent Crude",
+      "price": 109.26,
+      "formatted": "$109.26",
+      "day_pct": 3.35,
+      "war_pct": 43.39
+    },
     "CL=F": {
       "name": "WTI Crude",
       "price": 101.02,
@@ -916,7 +923,7 @@ window.WARWATCH_PRICES = {
     },
     {
       "date": "2026-05-17",
-      "brent": 0,
+      "brent": 109.26,
       "wti": 101.02,
       "ng": 2.96,
       "gold": 4562,
