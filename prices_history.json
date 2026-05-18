@@ -1,19 +1,5 @@
 [
   {
-    "date": "2026-03-17",
-    "brent": 94.1,
-    "wti": 90.6,
-    "ng": 3.1,
-    "gold": 2921,
-    "wheat": 554,
-    "inr": 84.5,
-    "mcx_crude": 7812,
-    "mcx_gold": 82400,
-    "mcx_silver": 100200,
-    "ioc": 144.1,
-    "adani": 1274
-  },
-  {
     "date": "2026-03-18",
     "brent": 92.7,
     "wti": 89.1,
@@ -836,6 +822,20 @@
     "mcx_crude": 9851,
     "mcx_gold": 140125,
     "mcx_silver": 236158,
+    "ioc": 134.5,
+    "adani": 1795
+  },
+  {
+    "date": "2026-05-18",
+    "brent": 111.75,
+    "wti": 104.03,
+    "ng": 3.038,
+    "gold": 4510,
+    "wheat": 653,
+    "inr": 95.95,
+    "mcx_crude": 9982,
+    "mcx_gold": 139131,
+    "mcx_silver": 230343,
     "ioc": 134.5,
     "adani": 1795
   }
